@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1468,"applicationTime":504,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git と Subversion</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B">使い始める</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">バージョン管理に関して</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E7%95%A5%E5%8F%B2">Git略史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E5%9F%BA%E6%9C%AC">Gitの基本</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Gitのインストール</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90">最初のGitの構成</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%98%E3%83%AB%E3%83%97%E3%82%92%E8%A6%8B%E3%82%8B">ヘルプを見る</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC">Git の基本</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git リポジトリの取得</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%B8%E3%81%AE%E8%A8%98%E9%8C%B2">変更内容のリポジトリへの記録</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4%E3%81%AE%E9%96%B2%E8%A6%A7">コミット履歴の閲覧</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E4%BD%9C%E6%A5%AD%E3%81%AE%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%97">作業のやり直し</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD">リモートでの作業</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%BF%E3%82%B0">タグ</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%92%E3%83%B3%E3%83%88%E3%81%A8%E8%A3%8F%E6%8A%80">ヒントと裏技</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD">Git のブランチ機能</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">ブランチとは</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC">ブランチとマージの基本</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E7%AE%A1%E7%90%86">ブランチの管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">ブランチでの作業の流れ</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">リモートブランチ</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9">リベース</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">Git サーバー</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">プロトコル</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%94%A8%E3%81%AE-Git-%E3%81%AE%E5%8F%96%E5%BE%97">サーバー用の Git の取得</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-SSH-%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E4%BD%9C%E6%88%90">SSH 公開鍵の作成</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">サーバーのセットアップ</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E4%B8%80%E8%88%AC%E5%85%AC%E9%96%8B">一般公開</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3">Git デーモン</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%81%AE%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">Git のホスティング</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD">Git での分散作業</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">分散作業の流れ</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E9%81%8B%E5%96%B6">プロジェクトの運営</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB">Git のさまざまなツール</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">リビジョンの選択</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0">対話的なステージング</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E3%82%92%E9%9A%A0%E3%81%99">作業を隠す</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88">歴史の書き換え</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">Git によるデバッグ</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">サブモジュール</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%84%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B8">サブツリーマージ</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA">Git のカスタマイズ</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git の設定</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E5%B1%9E%E6%80%A7">Git の属性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">Git フック</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E5%AE%9F%E6%96%BD%E4%BE%8B">Git ポリシーの実施例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA">Gitとその他のシステムの連携</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%A8-Subversion">Git と Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C">Git への移行</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4">Gitの内側</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">配管（Plumbing）と磁器（Porcelain）</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">Gitオブジェクト</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%81%AE%E5%8F%82%E7%85%A7">Gitの参照</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">パックファイル</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E5%8F%82%E7%85%A7%E4%BB%95%E6%A7%98%EF%BC%88Refspec%EF%BC%89">参照仕様（Refspec）</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">トランスファープロトコル</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA">メインテナンスとデータリカバリ</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E8%A6%81%E7%B4%84">要約</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>8.1 Gitとその他のシステムの連携 - Git と Subversion</h1>
+  <div><h2>Git と Subversion</h2>
+
+<p>現在のところ、オープンソースや企業のプロジェクトの大多数が、ソースコードの管理に Subversion を利用しています。Subversion は最も人気のあるオープンソースのVCSで、10年近く前から使われています。Subversion 以前は CVS がソースコード管理に広く用いられていたのですが、多くの点で両者はよく似ています。</p>
+
+<p>Git の素晴しい機能のひとつに、Git と Subversion を双方向にブリッジする <code>git svn</code> があります。このツールを使うと、Subversion のクライアントとして Git を使うことができます。つまり、ローカルの作業では Git の機能を十分に活用することができて、あたかも Subversion を使っているかのように Subversion サーバーに変更をコミットすることができます。共同作業をしている人達が古き良き方法を使っているのと
+同時に、ローカルでのブランチ作成やマージ、ステージング・エリア、リベース、チェリーピックなどの Git の機能を使うことができるということです。共同の作業環境に Git を忍び込ませておいて、仲間の開発者たちが Git より効率良く作業できるように手助けをしつつ、Git の全面的な採用のための根回しをしてゆく、というのが賢いやり方です。Subversion ブリッジは、分散VCS の素晴しい世界へのゲートウェイ・ドラッグといえるでしょう。</p>
+
+<h3 id="git-svn"><a href="#git-svn">git svn</a></h3>
+
+<p>Git と Subversion の橋渡しをするコマンド群のベースとなるコマンドが <code>git svn</code> です。すべてはここから始めることができます。この後に続くコマンドはかなりたくさんあるので、いくつかのワークフローを通して一般的なものから身につけていきましょう。</p>
+
+<p>注意すべきことは、<code>git svn</code> を使っているときは Subversion を相手にしているのだということです。これは、Git ほど洗練されてはいません。ローカルでのブランチ作成やマージは簡単にできますが、作業内容をリベースするなどして歴史をできるだけ一直線に保つようにし、Git リモートリポジトリを相手にするときのように考えるのは避けましょう。</p>
+
+<p>歴史を書き換えてもう一度プッシュしようなどとしてはいけません。また、他の開発者との共同作業のために複数の Git リポジトリに並行してプッシュするのもいけません。Subversion が扱えるのは一本の直線上の歴史だけで、ちょっとしたことですぐに混乱してしまいます。チームのメンバーの中に SVN を使う人と Git を使う人がいる場合は、全員が SVN サーバーを使って共同作業するようにしましょう。そうすれば、少しは生きやすくなります。</p>
+
+<h3 id="準備"><a href="#準備">準備</a></h3>
+
+<p>この機能を説明するには、書き込みアクセス権を持つ標準的な SVN リポジトリが必要です。もしこのサンプルをコピーして試したいのなら、私のテスト用リポジトリの書き込み可能なコピーを作らなければなりません。これを簡単に行うには、<code>svnsync</code> というツールを使います。最近のバージョンの Subversion、少なくとも 1.4 以降に付属しているツールです。テスト用として、新しい Subversion リポジトリを Google code 上に作りました。これは <code>protobuf</code> プロジェクトの一部で、<code>protobuf</code> は構造化されたデータを符号化してネットワーク上で転送するためのツールです。</p>
+
+<p>まずはじめに、新しいローカル Subversion リポジトリを作ります。</p>
+
+<pre><code>$ mkdir /tmp/test-svn
+$ svnadmin create /tmp/test-svn
+</code></pre>
+
+<p>そして、すべてのユーザーが revprop を変更できるようにします。簡単な方法は、常に 0 で終了する pre-revprop-change スクリプトを追加することです。</p>
+
+<pre><code>$ cat /tmp/test-svn/hooks/pre-revprop-change
+#!/bin/sh
+exit 0;
+$ chmod +x /tmp/test-svn/hooks/pre-revprop-change
+</code></pre>
+
+<p>これで、ローカルマシンにこのプロジェクトを同期できるようになりました。同期元と同期先のリポジトリを指定して <code>svnsync init</code> を実行します。</p>
+
+<pre><code>$ svnsync init file:///tmp/test-svn http://progit-example.googlecode.com/svn/
+</code></pre>
+
+<p>このコマンドは、同期を実行するためのプロパティを設定します。次に、このコマンドでコードをコピーします。</p>
+
+<pre><code>$ svnsync sync file:///tmp/test-svn
+Committed revision 1.
+Copied properties for revision 1.
+Committed revision 2.
+Copied properties for revision 2.
+Committed revision 3.
+...
+</code></pre>
+
+<p>この操作は数分で終わりますが、もし元のリポジトリのコピー先がローカルではなく別のリモートリポジトリだった場合、この処理には約一時間かかります。総コミット数はたかだか 100 にも満たないにもかかわらず。Subversion では、リビジョンごとにクローンを作ってコピー先のリポジトリに投入していかなければなりません。これはばかばかしいほど非効率的ですが、簡単に済ませるにはこの方法しかないのです。</p>
+
+<h3 id="はじめましょう"><a href="#はじめましょう">はじめましょう</a></h3>
+
+<p>書き込み可能な Subversion リポジトリが手に入ったので、一般的なワークフローに沿って進めましょう。まずは <code>git svn clone</code> コマンドを実行します。このコマンドは、Subversion リポジトリ全体をローカルの Git リポジトリにインポートします。どこかにホストされている実際の Subversion リポジトリから取り込む場合は <code>file:///tmp/test-svn</code> の部分を Subversion リポジトリの URL に変更しましょう。</p>
+
+<pre><code>$ git svn clone file:///tmp/test-svn -T trunk -b branches -t tags
+Initialized empty Git repository in /Users/schacon/projects/testsvnsync/svn/.git/
+r1 = b4e387bc68740b5af56c2a5faf4003ae42bd135c (trunk)
+      A    m4/acx_pthread.m4
+      A    m4/stl_hash.m4
+...
+r75 = d1957f3b307922124eec6314e15bcda59e3d9610 (trunk)
+Found possible branch point: file:///tmp/test-svn/trunk =&gt; \
+    file:///tmp/test-svn /branches/my-calc-branch, 75
+Found branch parent: (my-calc-branch) d1957f3b307922124eec6314e15bcda59e3d9610
+Following parent with do_switch
+Successfully followed parent
+r76 = 8624824ecc0badd73f40ea2f01fce51894189b01 (my-calc-branch)
+Checked out HEAD:
+ file:///tmp/test-svn/branches/my-calc-branch r76
+</code></pre>
+
+<p>これは、指定した URL に対して <code>git svn init</code> に続けて <code>git svn fetch</code> を実行するのと同じ意味です。しばらく時間がかかります。test プロジェクトには 75 のコミットしかなくてコードベースもそれほど大きくないので、数分しかかかりません。しかし、Git は各バージョンをそれぞれチェックアウトしては個別にコミットしています。もし数百数千のコミットがあるプロジェクトで試すと、終わるまでには数時間から下手をすると数日かかってしまうかもしれません。</p>
+
+<p><code>-T trunk -b branches -t tags</code> の部分は、この Subversion リポジトリが標準的なブランチとタグの規約に従っていることを表しています。trunk、branches、tags にもし別の名前をつけているのなら、この部分を変更します。この規約は一般に使われているものなので、単に <code>-s</code> とだけ指定することもできます。これは、先の 3 つのオプションを指定したのと同じ標準のレイアウトを表します。つまり、次のようにしても同じ意味になるということです。</p>
+
+<pre><code>$ git svn clone file:///tmp/test-svn -s
+</code></pre>
+
+<p>これで、ブランチやタグも取り込んだ Git リポジトリができあがりました。</p>
+
+<pre><code>$ git branch -a
+* master
+  my-calc-branch
+  tags/2.0.2
+  tags/release-2.0.1
+  tags/release-2.0.2
+  tags/release-2.0.2rc1
+  trunk
+</code></pre>
+
+<p>このツールがリモート参照を取り込むときの名前空間が通常と異なることに注意しましょう。Git リポジトリのクローンを作成した場合は、リモートサーバー上のすべてのブランチが <code>origin/[branch]</code> のような形式で取り込まれます。つまりリモートの名前で名前空間が作られます。しかし、<code>git svn</code> はリモートが複数あることを想定しておらず、すべてのリモートサーバーを名前空間なしに保存します。Git のコマンド <code>show-ref</code> を使うと、すべての参照名を完全な形式で見ることができます。</p>
+
+<pre><code>$ git show-ref
+1cbd4904d9982f386d87f88fce1c24ad7c0f0471 refs/heads/master
+aee1ecc26318164f355a883f5d99cff0c852d3c4 refs/remotes/my-calc-branch
+03d09b0e2aad427e34a6d50ff147128e76c0e0f5 refs/remotes/tags/2.0.2
+50d02cc0adc9da4319eeba0900430ba219b9c376 refs/remotes/tags/release-2.0.1
+4caaa711a50c77879a91b8b90380060f672745cb refs/remotes/tags/release-2.0.2
+1c4cb508144c513ff1214c3488abe66dcb92916f refs/remotes/tags/release-2.0.2rc1
+1cbd4904d9982f386d87f88fce1c24ad7c0f0471 refs/remotes/trunk
+</code></pre>
+
+<p>通常の Git リポジトリは、このようになります。</p>
+
+<pre><code>$ git show-ref
+83e38c7a0af325a9722f2fdc56b10188806d83a1 refs/heads/master
+3e15e38c198baac84223acfc6224bb8b99ff2281 refs/remotes/gitserver/master
+0a30dd3b0c795b80212ae723640d4e5d48cabdff refs/remotes/origin/master
+25812380387fdd55f916652be4881c6f11600d6f refs/remotes/origin/testing
+</code></pre>
+
+<p>2 つのリモートサーバーがあり、一方の <code>gitserver</code> には <code>master</code> ブランチが、そしてもう一方の <code>origin</code> には <code>master</code> と <code>testing</code> の 2 つのブランチがあります。</p>
+
+<p>サンプルのリモート参照が <code>git svn</code> でどのように取り込まれたかに注目しましょう。タグはリモートブランチとして取り込まれており、Git のタグにはなっていません。Subversion から取り込んだ内容は、まるで tags という名前のリモートからブランチを取り込んだように見えます。</p>
+
+<h3 id="Subversion-へのコミットの書き戻し"><a href="#Subversion-へのコミットの書き戻し">Subversion へのコミットの書き戻し</a></h3>
+
+<p>作業リポジトリを手に入れたあなたはプロジェクト上で何らかの作業を終え、コミットを上流に書き戻すことになりました。Git を SVN クライアントとして使います。どれかひとつのファイルを変更してコミットした時点では、Git上でローカルに存在するそのコミットはSubversionサーバー上には存在しません。</p>
+
+<pre><code>$ git commit -am &#39;Adding git-svn instructions to the README&#39;
+[master 97031e5] Adding git-svn instructions to the README
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>次に、これをプッシュして上流を変更しなければなりません。この変更が Subversion に対してどのように作用するのかに注意しましょう。オフラインで行った複数のコミットを、すべて一度に Subversion サーバーにプッシュすることができます。Subversion サーバーにプッシュするには <code>git svn dcommit</code> コマンドを使います。</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      README.txt
+Committed r79
+       M      README.txt
+r79 = 938b1a547c2cc92033b74d32030e86468294a5c8 (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+</code></pre>
+
+<p>このコマンドは、Subversionサーバーからのコード上で行われたすべてのコミットに対して個別に Subversion 上にコミットし、ローカルの Git のコミットを書き換えて一意な識別子を含むようにします。ここで重要なのは、書き換えによってすべてのローカルコミットの SHA-1 チェックサムが変化するということです。この理由もあって、Git ベースのリモートリポジトリにあるプロジェクトと Subversion サーバーを同時に使うことはおすすめできません。直近のコミットを調べれば、新たに <code>git-svn-id</code> が追記されたことがわかります。</p>
+
+<pre><code>$ git log -1
+commit 938b1a547c2cc92033b74d32030e86468294a5c8
+Author: schacon &lt;schacon@4c93b258-373f-11de-be05-5f7a86268029&gt;
+Date:   Sat May 2 22:06:44 2009 +0000
+
+    Adding git-svn instructions to the README
+
+    git-svn-id: file:///tmp/test-svn/trunk@79 4c93b258-373f-11de-be05-5f7a86268029
+</code></pre>
+
+<p>元のコミットの SHA チェックサムが <code>97031e5</code> で始まっていたのに対して今は <code>938b1a5</code> に変わっていることに注目しましょう。Git と Subversion の両方のサーバーにプッシュしたい場合は、まず Subversion サーバーにプッシュ (<code>dcommit</code>) してから Git のほうにプッシュしなければなりません。dcommit でコミットデータが書き換わるからです。</p>
+
+<h3 id="新しい変更の取り込み"><a href="#新しい変更の取り込み">新しい変更の取り込み</a></h3>
+
+<p>複数の開発者と作業をしていると、遅かれ早かれ、誰かがプッシュしたあとに他の人がプッシュしようとして衝突を起こすということが発生します。他の人の作業をマージするまで、その変更は却下されます。<code>git svn</code> では、このようになります。</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+Merge conflict during commit: Your file or directory &#39;README.txt&#39; is probably \
+out-of-date: resource out of date; try updating at /Users/schacon/libexec/git-\
+core/git-svn line 482
+</code></pre>
+
+<p>この状態を解決するには <code>git svn rebase</code> を実行します。これは、サーバー上の変更のうちまだ取り込んでいない変更をすべて取り込んでから、自分の作業をリベースします。</p>
+
+<pre><code>$ git svn rebase
+       M      README.txt
+r80 = ff829ab914e8775c7c025d741beb3d523ee30bc4 (trunk)
+First, rewinding head to replay your work on top of it...
+Applying: first user change
+</code></pre>
+
+<p>これで手元の作業が Subversion サーバー上の最新状態の上でなされたことになったので、無事に <code>dcommit</code> することができます。</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      README.txt
+Committed r81
+       M      README.txt
+r81 = 456cbe6337abe49154db70106d1836bc1332deed (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+</code></pre>
+
+<p>ここで注意すべき点は、Git の場合は上流での変更をすべてマージしてからでなければプッシュできないけれど、<code>git svn</code> の場合は衝突さえしなければマージしなくてもプッシュできるということです。だれかがあるファイルを変更した後で自分が別のファイルを変更してプッシュしても、<code>dcommit</code> は正しく動作します。</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      configure.ac
+Committed r84
+       M      autogen.sh
+r83 = 8aa54a74d452f82eee10076ab2584c1fc424853b (trunk)
+       M      configure.ac
+r84 = cdbac939211ccb18aa744e581e46563af5d962d0 (trunk)
+W: d2f23b80f67aaaa1f6f5aaef48fce3263ac71a92 and refs/remotes/trunk differ, \
+  using rebase:
+:100755 100755 efa5a59965fbbb5b2b0a12890f1b351bb5493c18 \
+  015e4c98c482f0fa71e4d5434338014530b37fa6 M   autogen.sh
+First, rewinding head to replay your work on top of it...
+Nothing to do.
+</code></pre>
+
+<p>これは忘れずに覚えておきましょう。というのも、プッシュした後の結果はどの開発者の作業環境にも存在しない状態になっているからです。たまたま衝突しなかっただけで互換性のない変更をプッシュしてしまったときに、その問題を見つけるのが難しくなります。これが、Git サーバーを使う場合と異なる点です。Git の場合はクライアントの状態をチェックしてからでないと変更を公開できませんが、SVN の場合はコミットの直前とコミット後の状態が同等であるかどうかすら確かめられないのです。</p>
+
+<p>もし自分のコミット準備がまだできていなくても、Subversion から変更を取り込むときにもこのコマンドを使わなければなりません。<code>git svn fetch</code> でも新しいデータを取得することはできますが、<code>git svn rebase</code> はデータを取得するだけでなくローカルのコミットの更新も行います。</p>
+
+<pre><code>$ git svn rebase
+       M      generate_descriptor_proto.sh
+r82 = bd16df9173e424c6f52c337ab6efa7f7643282f1 (trunk)
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to refs/remotes/trunk.
+</code></pre>
+
+<p><code>git svn rebase</code> をときどき実行しておけば、手元のコードを常に最新の状態に保っておけます。しかし、このコマンドを実行するときには作業ディレクトリがクリーンな状態であることを確認しておく必要があります。手元で変更をしている場合は、stash で作業を退避させるか一時的にコミットしてからでないと <code>git svn rebase</code> を実行してはいけません。さもないと、もしリベースの結果としてマージが衝突すればコマンドの実行が止まってしまいます。</p>
+
+<h3 id="Git-でのブランチに関する問題"><a href="#Git-でのブランチに関する問題">Git でのブランチに関する問題</a></h3>
+
+<p>Git のワークフローに慣れてくると、トピックブランチを作ってそこで作業を行い、それをマージすることもあるでしょう。<code>git svn</code> を使って Subversion サーバーにプッシュする場合は、それらのブランチをまとめてプッシュするのではなく一つのブランチ上にリベースしてからプッシュしたくなるかもしれません。リベースしたほうがよい理由は、Subversion はリニアに歴史を管理していて Git のようなマージができないからです。<code>git svn</code> がスナップショットを Subversion のコミットに変換するときには、最初の親だけに続けます。</p>
+
+<p>歴史が次のような状態になっているものとしましょう。<code>experiment</code> ブランチを作ってそこで 2 回のコミットを済ませ、それを <code>master</code> にマージしたところです。ここで <code>dcommit</code> すると、出力はこのようになります。</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      CHANGES.txt
+Committed r85
+       M      CHANGES.txt
+r85 = 4bfebeec434d156c36f2bcd18f4e3d97dc3269a2 (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+COPYING.txt: locally modified
+INSTALL.txt: locally modified
+       M      COPYING.txt
+       M      INSTALL.txt
+Committed r86
+       M      INSTALL.txt
+       M      COPYING.txt
+r86 = 2647f6b86ccfcaad4ec58c520e369ec81f7c283c (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+</code></pre>
+
+<p>歴史をマージしたブランチで <code>dcommit</code> を実行してもうまく動作します。ただし、Git プロジェクト上での歴史を見ると、<code>experiment</code> ブランチ上でのコミットは書き換えられていません。そこでのすべての変更は、SVN 上での単一のマージコミットとなっています。</p>
+
+<p>他の人がその作業をクローンしたときには、すべての作業をひとまとめにしたマージコミットしか見ることができません。そのコミットがどこから来たのか、そしていつコミットされたのかを知ることができないのです。</p>
+
+<h3 id="Subversion-のブランチ"><a href="#Subversion-のブランチ">Subversion のブランチ</a></h3>
+
+<p>Subversion のブランチは Git のブランチとは異なります。可能ならば、Subversion のブランチは使わないようにするのがベストでしょう。しかし、Subversion のブランチの作成やコミットも、<code>git svn</code> を使ってすることができます。</p>
+
+<h4>新しい SVN ブランチの作成</h4>
+
+<p>Subversion に新たなブランチを作るには <code>git svn branch [branchname]</code> を実行します。</p>
+
+<pre><code>$ git svn branch opera
+Copying file:///tmp/test-svn/trunk at r87 to file:///tmp/test-svn/branches/opera...
+Found possible branch point: file:///tmp/test-svn/trunk =&gt; \
+  file:///tmp/test-svn/branches/opera, 87
+Found branch parent: (opera) 1f6bfe471083cbca06ac8d4176f7ad4de0d62e5f
+Following parent with do_switch
+Successfully followed parent
+r89 = 9b6fe0b90c5c9adf9165f700897518dbc54a7cbf (opera)
+</code></pre>
+
+<p>これは Subversion の <code>svn copy trunk branches/opera</code> コマンドと同じ意味で、Subversion サーバー上で実行されます。ここで注意すべき点は、このコマンドを実行しても新しいブランチに入ったことにはならないということです。この後コミットをすると、そのコミットはサーバーの <code>trunk</code> に対して行われます。<code>opera</code> ではありません。</p>
+
+<h3 id="アクティブなブランチの切り替え"><a href="#アクティブなブランチの切り替え">アクティブなブランチの切り替え</a></h3>
+
+<p>Git が dcommit の行き先のブランチを決めるときには、あなたの手元の歴史上にある Subversion ブランチのいずれかのヒントを使います。手元にはひとつしかないはずで、それは現在のブランチの歴史上の直近のコミットにある <code>git-svn-id</code> です。</p>
+
+<p>複数のブランチを同時に操作するときは、ローカルブランチを <code>dcommit</code> でその Subversion ブランチにコミットするのかを設定することができます。そのためには、Subversion のブランチをインポートしてローカルブランチを作ります。<code>opera</code> ブランチを個別に操作したい場合は、このようなコマンドを実行します。</p>
+
+<pre><code>$ git branch opera remotes/opera
+</code></pre>
+
+<p>これで、<code>opera</code> ブランチを <code>trunk</code> (手元の <code>master</code> ブランチ) にマージするときに通常の <code>git merge</code> が使えるようになりました。しかし、そのときには適切なコミットメッセージを (<code>-m</code> で) 指定しなければなりません。さもないと、有用な情報ではなく単なる &quot;Merge branch opera&quot; というメッセージになってしまいます。</p>
+
+<p><code>git merge</code> を使ってこの操作を行ったとしても、そしてそれが Subversion でのマージよりもずっと簡単だったとしても (Git は自動的に適切なマージベースを検出してくれるからね)、これは通常の Git のマージコミットとは違うということを覚えておきましょう。このデータを Subversion に書き戻すことになりますが Subversion では複数の親を持つコミットは処理できません。そのため、プッシュした後は、別のブランチ上で行ったすべての操作をひとまとめにした単一のコミットに見えてしまいます。あるブランチを別のブランチにマージしたら、元のブランチに戻って作業を続けるのは困難です。Git なら簡単なのですが。<code>dcommit</code> コマンドを実行すると、どのブランチからマージしたのかという情報はすべて消えてしまいます。そのため、それ以降のマージ元の算出は間違ったものとなります。dcommit は、<code>git merge</code> の結果をまるで <code>git merge --squash</code> を実行したのと同じ状態にしてしまうのです。残念ながら、これを回避するよい方法はありません。Subversion 側にこの情報を保持する方法がないからです。Subversion をサーバーに使う以上は、常にこの制約に縛られることになります。問題を回避するには、trunk にマージしたらローカルブランチ (この場合は <code>opera</code>) を削除しなければなりません。</p>
+
+<h3 id="Subversion-コマンド"><a href="#Subversion-コマンド">Subversion コマンド</a></h3>
+
+<p><code>git svn</code> ツールセットには、Git への移行をしやすくするための多くのコマンドが用意されています。Subversion で使い慣れていたのと同等の機能を提供するコマンド群です。その中からいくつかを紹介します。</p>
+
+<h4>SVN 形式のログ</h4>
+
+<p>Subversion に慣れているので SVN が出力する形式で歴史を見たい、という場合は <code>git svn log</code> を実行しましょう。すると、コミットの歴史が SVN 形式で表示されます。</p>
+
+<pre><code>$ git svn log
+------------------------------------------------------------------------
+r87 | schacon | 2009-05-02 16:07:37 -0700 (Sat, 02 May 2009) | 2 lines
+
+autogen change
+
+------------------------------------------------------------------------
+r86 | schacon | 2009-05-02 16:00:21 -0700 (Sat, 02 May 2009) | 2 lines
+
+Merge branch &#39;experiment&#39;
+
+------------------------------------------------------------------------
+r85 | schacon | 2009-05-02 16:00:09 -0700 (Sat, 02 May 2009) | 2 lines
+
+updated the changelog
+</code></pre>
+
+<p><code>git svn log</code> に関して知っておくべき重要なことがふたつあります。まず。このコマンドはオフラインで動作します。実際の <code>svn log</code> コマンドのように Subversion サーバーにデータを問い合わせたりしません。次に、すでに Subversion サーバーにコミット済みのコミットしか表示されません。つまり、ローカルの Git へのコミットのうちまだ dcommit していないものは表示されないし、その間に他の人が Subversion サーバーにコミットした内容も表示されません。最後に Subversion サーバーの状態を調べたときのログが表示されると考えればよいでしょう。</p>
+
+<h4>SVN アノテーション</h4>
+
+<p><code>git svn log</code> コマンドが <code>svn log</code> コマンドをオフラインでシミュレートしているのと同様に、<code>svn annotate</code> と同様のことを <code>git svn blame [FILE]</code> で実現できます。出力は、このようになります。</p>
+
+<pre><code>$ git svn blame README.txt
+ 2   temporal Protocol Buffers - Google&#39;s data interchange format
+ 2   temporal Copyright 2008 Google Inc.
+ 2   temporal http://code.google.com/apis/protocolbuffers/
+ 2   temporal
+22   temporal C++ Installation - Unix
+22   temporal =======================
+ 2   temporal
+79    schacon Committing in git-svn.
+78    schacon
+ 2   temporal To build and install the C++ Protocol Buffer runtime and the Protocol
+ 2   temporal Buffer compiler (protoc) execute the following:
+ 2   temporal
+</code></pre>
+
+<p>先ほどと同様、このコマンドも Git にローカルにコミットした内容や他から Subversion にプッシュされていたコミットは表示できません。</p>
+
+<h4>SVN サーバ情報</h4>
+
+<p><code>svn info</code> と同様のサーバー情報を取得するには <code>git svn info</code> を実行します。</p>
+
+<pre><code>$ git svn info
+Path: .
+URL: https://schacon-test.googlecode.com/svn/trunk
+Repository Root: https://schacon-test.googlecode.com/svn
+Repository UUID: 4c93b258-373f-11de-be05-5f7a86268029
+Revision: 87
+Node Kind: directory
+Schedule: normal
+Last Changed Author: schacon
+Last Changed Rev: 87
+Last Changed Date: 2009-05-02 16:07:37 -0700 (Sat, 02 May 2009)
+</code></pre>
+
+<p><code>blame</code> や <code>log</code> と同様にこれもオフラインで動作し、最後に Subversion サーバーと通信した時点での情報しか表示されません。</p>
+
+<h4>Subversion が無視するものを無視する</h4>
+
+<p>どこかに <code>svn:ignore</code> プロパティが設定されている Subversion リポジトリをクローンした場合は、対応する <code>.gitignore</code> ファイルを用意したくなることでしょう。コミットすべきではないファイルを誤ってコミットしてしまうことを防ぐためにです。<code>git svn</code> には、この問題に対応するためのコマンドが二つ用意されています。まず最初が <code>git svn create-ignore</code> で、これは、対応する <code>.gitignore</code> ファイルを自動生成して次のコミットに含めます。</p>
+
+<p>もうひとつは <code>git svn show-ignore</code> で、これは <code>.gitignore</code> に書き込む内容を標準出力に送ります。この出力を、プロジェクトの exclude ファイルにリダイレクトしましょう。</p>
+
+<pre><code>$ git svn show-ignore &gt; .git/info/exclude
+</code></pre>
+
+<p>これで、プロジェクトに <code>.gitignore</code> ファイルを散らかさなくてもよくなります。Subversion 使いのチームの中で Git を使うのが自分だけだという場合、他のメンバーにとっては <code>.gitignore</code> ファイルは目障りでしょう。そのような場合はこの方法が使えます。</p>
+
+<h3 id="Git-Svn-のまとめ"><a href="#Git-Svn-のまとめ">Git-Svn のまとめ</a></h3>
+
+<p><code>git svn</code> ツール群は、Subversion サーバーに行き詰まっている場合や使っている開発環境が Subversion サーバー前提になっている場合などに便利です。Git のできそこないだと感じるかもしれません。また、他のメンバーとの間で混乱が起こるかもしれません。トラブルを避けるために、次のガイドラインに従いましょう。</p>
+
+<ul>
+<li>Git の歴史をリニアに保ち続け、<code>git merge</code> によるマージコミットを含めないようにする。本流以外のブランチでの作業を書き戻すときは、マージではなくリベースすること。</li>
+<li>Git サーバーを別途用意したりしないこと、新しい開発者がクローンするときのスピードをあげるためにサーバーを用意することはあるでしょうが、そこに <code>git-svn-id</code> エントリを持たないコミットをプッシュしてはいけません。<code>pre-receive</code> フックを追加してコミットメッセージをチェックし、<code>git-svn-id</code> がなければプッシュを拒否するようにしてもよいでしょう。</li>
+</ul>
+
+<p>これらのガイドラインを守れば、Subversion サーバーでの作業にも耐えられることでしょう。しかし、もし本物の Git サーバーに移行できるのなら、そうしたほうがチームにとってずっと利益になります。</p>
+
+<div id="nav"><a href="/book/ja/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA">prev</a> | <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

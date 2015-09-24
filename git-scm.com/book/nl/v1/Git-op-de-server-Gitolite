@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1,"applicationTime":206,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Gitolite</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v1/Aan-de-slag">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v1/Aan-de-slag-Het-wat-en-waarom-van-versiebeheer">Het wat en waarom van versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v1/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v1/Aan-de-slag-De-basis-van-Git">De basis van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v1/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v1/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v1/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v1/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v1/De-basis-van-Git">De basis van Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v1/De-basis-van-Git-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v1/De-basis-van-Git-Wijzigingen-aan-het-repository-vastleggen">Wijzigingen aan het repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v1/De-basis-van-Git-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v1/De-basis-van-Git-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v1/De-basis-van-Git-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v1/De-basis-van-Git-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v1/De-basis-van-Git-Tips-en-trucs">Tips en trucs</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v1/De-basis-van-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v1/Branchen-in-Git">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v1/Branchen-in-Git-Wat-is-een-branch">Wat is een branch</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v1/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v1/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v1/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v1/Branchen-in-Git-Remote-branches">Remote branches</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v1/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v1/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v1/Git-op-de-server">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v1/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v1/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v1/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v1/Git-op-de-server-De-Server-Opzetten">De Server Opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v1/Git-op-de-server-Publieke-toegang">Publieke toegang</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v1/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v1/Git-op-de-server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v1/Git-op-de-server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v1/Git-op-de-server-Git-daemon">Git daemon</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v1/Git-op-de-server-Gehoste-Git">Gehoste Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/nl/v1/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v1/Gedistribueerd-Git">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v1/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v1/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v1/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v1/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v1/Git-tools">Git tools</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v1/Git-tools-Revisie-selectie">Revisie selectie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v1/Git-tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v1/Git-tools-Stashen">Stashen</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v1/Git-tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v1/Git-tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v1/Git-tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/nl/v1/Git-tools-Subboom-mergen">Subboom mergen</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/nl/v1/Git-tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v1/Git-op-maat-maken">Git op maat maken</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-haken-hooks">Git haken (hooks)</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v1/Git-op-maat-maken-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v1/Git-op-maat-maken-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v1/Git-en-andere-systemen">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v1/Git-en-andere-systemen-Git-en-Subversion">Git en Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v1/Git-en-andere-systemen-Naar-Git-migreren">Naar Git migreren</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v1/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v1/Het-binnenwerk-van-Git">Het binnenwerk van Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Sanitaire-voorzieningen-en-porselein">Sanitaire voorzieningen en porselein</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Git-referenties">Git referenties</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-De-refspec">De refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Overdracht-protocollen">Overdracht protocollen</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Onderhoud-en-het-herstellen-van-gegevens">Onderhoud en het herstellen van gegevens</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>4.8 Git op de server - Gitolite</h1>
+  <div><h2>Gitolite</h2>
+
+<p>Deze paragraaf fungeerrt als een snelle introductie tot Gitolite, en geeft korte installatie en setup instructies. Het kan echter niet de enoreme hoeveelheid <a href="http://sitaramc.github.com/Gitolite/master-toc.html">documentatie</a> vervangen waar Gitolite mee wordt geleverd. Er kunnen ook af en toe wijzigingen in deze paragraaf worden gemaakt, dus je kunt wellicht ook <a href="http://sitaramc.github.com/Gitolite/progit.html">hier</a> kijken voor de laatste versie.</p>
+
+<p>Gitolite is een autorisatie-laag boven op Git, waar op <code>sshd</code> of <code>httpd</code> wordt vertrouwd voor authenticatie. (Recapitulatie: authenticatie is het identificeren wie de gebruiker is, autoriseren is het besluiten of hetgeen wat deze gebruiker probeert te doen toegestaan is).</p>
+
+<p>Gitolite stelt je in staat de permissies niet alleen per repository, maar ook per branch of tag naam binnen elke repository. Dus, je kunt aangeven dat bepaalde mensen (of groepen van mensen) alleen maar bepaalde &quot;refs&quot; (branches of tags) kunnen pushen maar niet andere.</p>
+
+<h3 id="Installatie"><a href="#Installatie">Installatie</a></h3>
+
+<p>Het installeren van Gitolite is zeer eenvoudig, zelfs als je de uitgebreide documentatie, dat erbij geleverd wordt, niet leest. Je hebt een account op een Unix(achtige) server nodig. Je hebt geen root toegang nodig, aangenomen dat Git, perl, en een OpenSSH compatible SSH server al zijn geïnstalleerd. In de onderstaande voorbeelden zullen we het <code>git</code> account gebruiken op een host genaamd <code>gitserver</code>.</p>
+
+<p>Gitolite is nogal ongebruikelijk in de zin van &quot;server&quot; software - toegang gaat via SSH, en elke userid op de server is in potentie een &quot;Gitolite host&quot;. We zullen de eenvoudigste installatie methode beschrijven in dit artikel. Voor de overige methodes verwijzen we je naar de documentatie.</p>
+
+<p>Om te beginnen: maak een gebruiker genaamd <code>git</code> aan op je server en log met deze gebruiker in. Kopieer je SSH publieke sleutel (een bestand genaamd <code>~/.ssh/id_rsa.pub</code> als je een gewone <code>ssh-keygen</code> met alle standaardwaarden gedaan hebt) van je werkstation, en hernoem deze naar <code>&lt;jouwnaam&gt;.pub</code> (we zullen <code>scott.pub</code> gebruiken in onze voorbeelden). En voer dan deze commando&#39;s  uit:</p>
+
+<pre><code>$ git clone git://github.com/sitaramc/Gitolite
+$ Gitolite/install -ln
+    # assumes $HOME/bin exists and is in your $PATH
+$ Gitolite setup -pk $HOME/scott.public
+</code></pre>
+
+<p>Dat laatste commando maakt een nieuwe Git repostory genaamd <code>Gitolite-admin</code> op de server aan.</p>
+
+<p>Als laatste, terug op jouw werkstation, voer je het commando <code>git clone git@gitserver:Gitolite-admin</code> uit. En klaar is Kees! Gitolite is nu geinstalleerd op de server, en jij hebt nu een gloednieuwe repository genaamd <code>Gitolite-admin</code> op jouw werkstation. Jij beheert je Gitolite opstelling door veranderingen in deze repository te maken en die te pushen.</p>
+
+<h3 id="De-Installatie-Aanpassen"><a href="#De-Installatie-Aanpassen">De Installatie Aanpassen</a></h3>
+
+<p>Hoewel de standaard, snelle, installatie werkt voor de meeste mensen, zijn er een aantal manieren om de installatie aan te passen als dat nodig is. Sommige wijzigingen kunnen simpleweg gemaakt worden door het rc bestand te wijzigen, maar als dat niet volstaat is er documentatie over het aanpassen van Gitolite beschikbaar.</p>
+
+<h3 id="Config-bestand-en-Beheer-van-Toegangsregels"><a href="#Config-bestand-en-Beheer-van-Toegangsregels">Config bestand en Beheer van Toegangsregels</a></h3>
+
+<p>Zodra de installatie afgerond is, schakel je over naar de <code>Gitolite-admin</code> repository die je zojuist op je werkstation gemaakt hebt, en begin je rond te snuffelen om te zien wat je daar hebt:</p>
+
+<pre><code>$ cd ~/Gitolite-admin/
+$ ls
+conf/  keydir/
+$ find conf keydir -type f
+conf/Gitolite.conf
+keydir/scott.pub
+$ cat conf/Gitolite.conf
+
+repo Gitolite-admin
+    RW+                 = scott
+
+repo testing
+    RW+                 = @all
+</code></pre>
+
+<p>Merk op dat &quot;scott&quot; (de naam van de pubkey in het <code>Gitolite setup</code> commando dat je eerder gebruikt hebt) lees- en schrijfrechten heeft op de <code>Gitolite-admin</code> repository en een publiek sleutelbestand met dezelfde naam.</p>
+
+<p>Gebruikers toevoegen is eenvoudig. Om een gebruiker genaamd &quot;alice&quot; toe te voegen, verkrijg haar publieke sleutel, noem deze <code>alice.pub</code>, en zet deze in de <code>keyir</code> directory van de clone van de <code>Gitolite-admin</code> repositroy die je zojuist op je werkstation gemaakt hebt. Voeg de wijziging toe, commit en push de wijziging en de gebruiker is toegevoegd.</p>
+
+<p>De syntax van het config bestand voor Gitolite is ruimhartig van documentatie voorzien in, dus we zullen ons beperken tot wat hoofdpunten.</p>
+
+<p>Je kunt voor het gemak gebruikers of repositories groeperen. De groepnamen zijn vergelijkbaar met macros: als je ze definieert maakt het niet uit of het projecten of gebruikers zijn. Dat onderscheid wordt pas gemaakt als je de &quot;macro&quot; gaat <em>gebruiken</em>.</p>
+
+<pre><code>@oss_repos      = linux perl rakudo git Gitolite
+@secret_repos   = fenestra pear
+
+@admins         = scott
+@interns        = ashok
+@engineers      = sitaram dilbert wally alice
+@staff          = @admins @engineers @interns
+</code></pre>
+
+<p>Je kunt de permissies beheren op het &quot;ref&quot; niveau. In het volgende voorbeeld kunnen stagieres (interns) alleen maar naar de &quot;int&quot; branch pushen. Techneuten (engineers) kunnen naar elke branch pushen waarvan de naam begint met &quot;eng-&quot;, en tags die beginnen met &quot;rc&quot; gevolgd door een getal. En de admins kunnen alles (inclusief terugdraaien) naar elke ref.</p>
+
+<pre><code>repo @oss_repos
+    RW  int$                = @interns
+    RW  eng-                = @engineers
+    RW  refs/tags/rc[0-9]   = @engineers
+    RW+                     = @admins
+</code></pre>
+
+<p>De expressie achter de <code>RW</code> of <code>RW+</code> is een zgn. regular expression (regex) waartegen de refname (ref) die wordt gepusht wordt vergeleken. Dus we gaan we deze uiteraard een &quot;refex&quot; noemen! En natuurlijk kan een refex veel krachtiger zijn dan hier wordt getoond, dus ga het niet overdrijven als je niet al te goed in de Perl regexen zit.</p>
+
+<p>Zoals je wellicht al geraden hebt, gebruikt Gitolite de prefix <code>refs/heads/</code> als een syntactische handigheid indien de refex niet begint met <code>refs/</code>.</p>
+
+<p>Een belangrijke eigenschap van de syntax van het config bestand is dat alle regels van een repository niet op één plek hoeft te staan. Je kunt al het generieke spul bij elkaar houden, zoals de regels voor alle <code>oss_repos</code> zoals ze hier boven staan, en dan op een latere plaats specifieke regels voor specifieke gevallen, zoals hier:</p>
+
+<pre><code>repo Gitolite
+    RW+                     = sitaram
+</code></pre>
+
+<p>Deze regel wordt gewoon toegevoegd aan de set met regels voor de <code>Gitolite</code> repository.</p>
+
+<p>Je zou je op dit punt kunnen afvragen hoe de toegangsregels eigenlijk worden toegepast, laten we dat kort behandelen.</p>
+
+<p>Er zijn twee niveaus van toegangsbeheer in Gitolite. De eerste is op repository niveau. Als je lees- of schrijfrechten hebt tot <em>enige</em> ref in de repository, dan heb je lees (of schrijf)rechten tot de repository. Dit is de enige toegangsbeheer dat Gitosis had.</p>
+
+<p>Het tweede niveau, alleen van toepassing voor &quot;schrijf&quot; toegang, is per branch of tag binnen een repository. De gebruikersnaam, het type toegang wat wordt gevraagd (<code>W</code> of &#39;+&#39;), en de refname dat wordt gewijzigd (geüpdate) zijn bekend. De toegangsregels worden gecontroleerd in volgorde van voorkomst in het config bestand, en er wordt gekeken naar een treffer voor deze combinatie (maar onthoudt dat de refname middels een regex wordt vergeleken, niet een simpele string-vergelijking). Als er een treffer is, dan slaagt de push. Als er geen treffer wordt gevonden (fallthrough) dan wordt toegang geweigerd.</p>
+
+<h3 id="Geavanceerde-Toegangs-Controle-met-&quot;deny&quot;-regels"><a href="#Geavanceerde-Toegangs-Controle-met-&quot;deny&quot;-regels">Geavanceerde Toegangs Controle met &quot;deny&quot; regels</a></h3>
+
+<p>Tot zover hebben we alleen permissies gezien uit het rijtje <code>R</code>, <code>RW</code> of <code>RW+</code>. Echter, Gitolite kent een andere permissie: <code>-</code>, wat staat voor &quot;deny&quot; (ontken). Dit geeft je veel meer macht, tegen kosten van wat hogere complexiteit omdat een fallthrough nu niet de <em>enige</em> manier is waarop toegang kan worden geweigerd; nu wordt <em>de volgorde van regels belangrijk</em>!</p>
+
+<p>Stel dat, in de onderstaande situatie, we de techneuten in staat willen stellen elke branch te laten terugdraaien <em>behalve</em> master en integ. Dit is de manier om dat te doen:</p>
+
+<pre><code>    RW  master integ    = @engineers
+    -   master integ    = @engineers
+    RW+                 = @engineers
+</code></pre>
+
+<p>Nogmaals, je hoeft slechts de regels van boven naar beneden af te lopen tot je een treffer hebt voor je gevraagde toegangswijze, of een afwijzing. Een push die niets terugdraait naar master of integ wordt door de eerste regel toegestaan. Een terugdraai-push naar deze refs geeft geen treffer op de eerste regel en valt door naar de tweede regel en wordt daarom geweigerd. Elke push (terugdraaiend of niet) naar refs anders dan master of integ zullen op de eerste twee regels zowiezo niet treffen en de derde regel staat dit toe.</p>
+
+<h3 id="Beperken-van-pushes-bij-gewijzigde-bestanden"><a href="#Beperken-van-pushes-bij-gewijzigde-bestanden">Beperken van pushes bij gewijzigde bestanden</a></h3>
+
+<p>Bovenop het beperken van pushrechten op branches voor een gebruiker, kan je ook de rechten van gebruikers beperken op bestanden. Als voorbeeld, misschien is de Makefile (of een ander programma) niet echt bedoeld om door iedereen te worden gewijzigd, omdat een groot aantal dingen afhankelijk ervan zijn of omdat het stuk loopt als de wijzigingen niet <em>precies goed</em> gebeuren. Je kunt het Gitolite duidelijk maken:</p>
+
+<pre><code>repo foo
+    RW                      =   @junior_devs @senior_devs
+
+    -   VREF/NAME/Makefile  =   @junior_devs
+</code></pre>
+
+<p>Gebruikers die migreren van de oudere versie van Gitolite moeten opmerken dat er een significant verschil in het gedrag wat betreft deze eigenschap; zie de migratiegids voor meer details.</p>
+
+<h3 id="Persoonlijke-branches"><a href="#Persoonlijke-branches">Persoonlijke branches</a></h3>
+
+<p>Gitolite heeft ook een mogelijkheid van &quot;persoonlijke branches&quot; (of liever gezegd &quot;persoonlijke branch namespace&quot;) wat erg nuttig kan zijn in een bedrijfssituatie.</p>
+
+<p>Veel van de code-uitwisselingen in de Git-wereld verlopen via zgn. &quot;please pull&quot; aanvragen. In een bedrijfsomgeving echter is ongeauthoriseerde toegang taboe, en het werkstation van een ontwikkelaar kan geen authenticatie doen, dus je moet naar de centrale server pushen en iemand vragen daarvandaan te pullen.</p>
+
+<p>Dit zou normaalgesproken een gelijksoortige branch-brij veroorzaken als in een gecentraliseerde versiebeheersysteem, en daarbij wordt het opzetten van permissies een vervelende klus voor de administrator.</p>
+
+<p>Gitolite stelt je in staat een &quot;personal&quot; of &quot;scratch&quot; namespace prefix voor elke ontwikkelaar te definiëren (bijvoorbeeld <code>refs/personal/&lt;devname&gt;/*</code>); we verwijzen naar de documentatie voor details.</p>
+
+<h3 id="&quot;Wildcard&quot;-repositores"><a href="#&quot;Wildcard&quot;-repositores">&quot;Wildcard&quot; repositores</a></h3>
+
+<p>Gitolite laat je repositories specificeren met wildcards (eigenlijk Perl regex expressies), zoals bijvoorbeeld <code>assignments/s[0-9][0-9]/a[0-9][0-9]</code>, om maar een willekeurig voorbeeld te nemen. Dit stelt je in staat om een nieuwe permissie modus (<code>C</code>) toe te wijzen die gebruikers in staat stelt repositories te maken op basis van zulk wildcards, automatisch eigenaarschap toe te wijzen aan de gebruiker die hem heeft aangemaakt, staat deze gebruiker toe om &quot;R&quot; en &quot;RW&quot; permissies aan anderen toe te wijzen om samen te werken, etc. Nogmaals: zie de documentatie voor meer details.</p>
+
+<h3 id="Andere-eigenschappen"><a href="#Andere-eigenschappen">Andere eigenschappen</a></h3>
+
+<p>We ronden deze uiteenzetting af met een passe partout van andere eigenschappen, welke alle (en nog vele andere) tot in de kleinste detail zijn beschreven in de documentatie.</p>
+
+<p><strong>Logging</strong>: Gitolite logt alle succesvolle toegangspogingen. Als je wat te los bent geweest in het toekennen van terugdraai permissies (<code>RW+</code>) en een of andere bijdehand heeft &quot;master&quot; vernaggelt, is de log-file een redder in de nood in de zin van snel en eenvoudig achterhalen van de SHA die verdwenen is.</p>
+
+<p><strong>Rapportage van toegangsrechten</strong>: Nog zo&#39;n handige eigenschap is wat er gebeurt als je gewoon met ssh naar de server gaat. Gitolite laat zien welke repositories je toegang toe hebt en welke soort toegang dat dan is. Hier is een voorbeeld:</p>
+
+<pre><code>    hello scott, this is git@git running gitolite3 v3.01-18-g9609868 on git 1.7.4.4
+
+         R     anu-wsd
+         R     entrans
+         R  W  git-notes
+         R  W  gitolite
+         R  W  gitolite-admin
+         R     indic_web_input
+         R     shreelipi_converter
+</code></pre>
+
+<p><strong>Delegeren</strong>: Voor extreem grote installaties kan je de verantwoordelijkheid voor groepen van repositories delegeren aan verschillende mensen en hen het beheer van die delen onafhankelijk laten regelen. Dit vermindert de werkdruk van de hoofd-beheerder, en maakt van hem minder een faalpunt. </p>
+
+<p><strong>Mirroring</strong>: Gitolite kan je ondersteunen bij het beheren van meerdere mirrors, en het eenvoudig daartussen overschakelen als de primaire server uitvalt.</p>
+
+<div id="nav"><a href="/book/nl/Git-op-de-server-Gitosis">prev</a> | <a href="/book/nl/v1/Git-op-de-server-Git-daemon">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1,"applicationTime":119,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Gitolite</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/it/v1/Per-Iniziare">Per Iniziare</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/it/v1/Per-Iniziare-Il-Controllo-di-Versione">Il Controllo di Versione</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/it/v1/Per-Iniziare-Una-Breve-Storia-di-Git">Una Breve Storia di Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/it/v1/Per-Iniziare-Basi-di-Git">Basi di Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/it/v1/Per-Iniziare-Installare-Git">Installare Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/it/v1/Per-Iniziare-Prima-Configurazione-di-Git">Prima Configurazione di Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/it/v1/Per-Iniziare-Ottieni-aiuto">Ottieni aiuto</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/it/v1/Per-Iniziare-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/it/v1/Basi-di-Git">Basi di Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/it/v1/Basi-di-Git-Repository-Git">Repository Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/it/v1/Basi-di-Git-Salvare-le-modifiche-sul-repository">Salvare le modifiche sul repository</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/it/v1/Basi-di-Git-Vedere-la-cronologia-delle-commit">Vedere la cronologia delle commit</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/it/v1/Basi-di-Git-Annullare-qualcosa">Annullare qualcosa</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/it/v1/Basi-di-Git-Lavorare-coi-server-remote">Lavorare coi server remote</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/it/v1/Basi-di-Git-Suggerimenti">Suggerimenti</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/it/v1/Basi-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/it/v1/Diramazioni-in-Git">Diramazioni in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/it/v1/Diramazioni-in-Git-Cos-%C3%A8-un-Ramo">Cos&#39;è un Ramo</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/it/v1/Diramazioni-in-Git-Basi-di-Diramazione-e-Fusione">Basi di Diramazione e Fusione</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/it/v1/Diramazioni-in-Git-Amministrazione-dei-Rami">Amministrazione dei Rami</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/it/v1/Diramazioni-in-Git-Flusso-di-Lavoro-con-le-Ramificazioni">Flusso di Lavoro con le Ramificazioni</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/it/v1/Diramazioni-in-Git-Rami-Remoti">Rami Remoti</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/it/v1/Diramazioni-in-Git-Rifondazione">Rifondazione</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/it/v1/Diramazioni-in-Git-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/it/v1/Git-sul-Server">Git sul Server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/it/v1/Git-sul-Server-I-Protocolli">I Protocolli</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/it/v1/Git-sul-Server-Mettere-Git-su-di-un-server">Mettere Git su di un server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/it/v1/Git-sul-Server-Generare-la-Propria-Chiave-Pubblica-SSH">Generare la Propria Chiave Pubblica SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/it/v1/Git-sul-Server-Configurare-il-Server">Configurare il Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/it/v1/Git-sul-Server-Accesso-Pubblico">Accesso Pubblico</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/it/v1/Git-sul-Server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/it/v1/Git-sul-Server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/it/v1/Git-sul-Server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/it/v1/Git-sul-Server-Demone-Git">Demone Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/it/v1/Git-sul-Server-Hosting-Git">Hosting Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/it/v1/Git-sul-Server-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/it/v1/Git-distribuito">Git distribuito</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/it/v1/Git-distribuito-Workflows-distribuiti">Workflows distribuiti</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/it/v1/Git-distribuito-Contribuire-a-un-Progetto">Contribuire a un Progetto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/it/v1/Git-distribuito-Mantenere-un-Progetto">Mantenere un Progetto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/it/v1/Git-distribuito-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/it/v1/Strumenti-di-Git">Strumenti di Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/it/v1/Strumenti-di-Git-Selezione-della-revisione">Selezione della revisione</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/it/v1/Strumenti-di-Git-Assemblaggio-interattivo">Assemblaggio interattivo</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/it/v1/Strumenti-di-Git-Accantonare">Accantonare</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/it/v1/Strumenti-di-Git-Riscrivere-la-storia">Riscrivere la storia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/it/v1/Strumenti-di-Git-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/it/v1/Strumenti-di-Git-Moduli">Moduli</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/it/v1/Strumenti-di-Git-Subtree-Merging">Subtree Merging</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/it/v1/Strumenti-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/it/v1/Personalizzare-Git">Personalizzare Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/it/v1/Personalizzare-Git-Configurazione-di-Git">Configurazione di Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/it/v1/Personalizzare-Git-Attributi-di-Git">Attributi di Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/it/v1/Personalizzare-Git-Git-Hooks">Git Hooks</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/it/v1/Git-e-altri-sistemi">Git e altri sistemi</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/it/v1/Git-e-altri-sistemi-Git-e-Subversion">Git e Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/it/v1/Git-e-altri-sistemi-Migrare-a-Git">Migrare a Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/it/v1/Git-e-altri-sistemi-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/it/v1/I-comandi-interni-di-Git">I comandi interni di Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Impianto-e-sanitari-%3Cem%3EPlumbing%3C%2Fem%3E-e-%3Cem%3EPorcelain%3C%2Fem%3E">Impianto e sanitari (<em>Plumbing</em> e <em>Porcelain</em>)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Gli-oggetti-di-Git">Gli oggetti di Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/it/v1/I-comandi-interni-di-Git-I-riferimenti-di-Git">I riferimenti di Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Pacchetti-di-file">Pacchetti di file</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Le-specifiche-di-riferimento-%3Cem%3Erefspec%3C%2Fem%3E">Le specifiche di riferimento (<em>refspec</em>)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Protocolli-di-trasferimento">Protocolli di trasferimento</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Manutenzione-e-recupero-dei-dati">Manutenzione e recupero dei dati</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>4.8 Git sul Server - Gitolite</h1>
+  <div><h2>Gitolite</h2>
+
+<p>Questa sezione serve come veloce introduzione a Gitolite, e fornisce basilari istruzioni di installazione e setup. Non può, tuttavia, sostituire l&#39;enorme quantità di <a href="http://sitaramc.github.com/gitolite/master-toc.html">documentazionee</a> che è fornita con Gitolite. Potrebbero anche esserci occasionali cambiamenti a questa stessa sezione, pertanto potresti volere guardare l&#39;ultima versione <a href="http://sitaramc.github.com/gitolite/progit.html">qui</a>.</p>
+
+<p>Gitolite è un livello di autorizzazione sopra Git, affidandosi su <code>sshd</code> o <code>httpd</code> per l&#39;autenticazione. (Riepilogo: autenticazione significa identificare chi sia l&#39;utente, autorizzazione significa decidere se ad egli è consentito di fare ciò che sta provando a fare).</p>
+
+<p>Gitolite ti permette di specificare non solo i permessi per un repository, ma anche per i rami o le etichette di ogni repository. Così si può specificare che certe persone (o gruppi di persone) possono solo inviare ad alcuni &quot;refs&quot; (rami o etichette) ma non su altri.</p>
+
+<h3 id="Installazione"><a href="#Installazione">Installazione</a></h3>
+
+<p>Installare Gitolite è davvero molto semplice, anche se non hai letto tutta la documentazione con cui è rilasciato. Quello di cui hai bisogno è un account su un server Unix di qualche tipo. Non hai bisogno di un accesso root, supponendo che Git, Perl ed un server SSH compatibile con OpenSSH siano già installati. Nell&#39;esempio di seguito, utilizzeremo l&#39;account <code>git</code> sull&#39;host chiamato <code>gitserver</code>.</p>
+
+<p>Gitolite è qualche cosa di inusuale rispetto ai conosciuti software &quot;server&quot; — l&#39;accesso è via SSH, e pertanto ogni userid sul server è potenzialmente un &quot;host gitolite&quot;. Descriveremo il metodo di installazione più semplice in questo articolo; per gli altri metodi vedi la documentazione.</p>
+
+<p>Per iniziare, crea un utente chiamato <code>git</code> sul tuo server ed entra come questo utente. Copia la tua chiave pubblica SSH (un file chiamato <code>~/.ssh/id_rsa.pub</code> se hai eseguito un semplice <code>ssh-keygen</code> con tutti i valori predefiniti) dalla tua postazione di lavoro, rinominala come <code>&lt;tuonome&gt;.pub</code> (useremo <code>scott.pub</code> in questi esempi). Quindi esegui questi comandi:</p>
+
+<pre><code>$ git clone git://github.com/sitaramc/gitolite
+$ gitolite/install -ln
+    # presuppone che $HOME/bin esista e sia nel tuo $PATH
+$ gitolite setup -pk $HOME/scott.pub
+</code></pre>
+
+<p>L&#39;ultimo comando crea un nuovo repository Git chiamato <code>gitolite-admin</code> sul server.</p>
+
+<p>Infine, torna alla tua postazione di lavoro, esegui <code>git clone git@gitserver:gitolite-admin</code>. Ed è fatta! Gitolite adesso è installato sul server, e tu ora hai un nuovo repository chiamato <code>gitolite-admin</code> nella tua postazione di lavoro.  Amministri il tuo setup Gitolite facendo cambiamenti a questo repository ed inviandoli.</p>
+
+<h3 id="Personalizzare-l&#39;Installazione"><a href="#Personalizzare-l&#39;Installazione">Personalizzare l&#39;Installazione</a></h3>
+
+<p>Mentre di base, l&#39;installazione veloce va bene per la maggior parte delle persone, ci sono alcuni modi per personalizzare l&#39;installazione se ne hai bisogno. Alcuni cambiamenti possono essere fatti semplicemente modificando il file rc, ma se questo non è sufficiente, c&#39;è la documentazione su come personalizzare Gitolite.</p>
+
+<h3 id="File-di-Configurazione-e-Regole-per-il-Controllo-dell&#39;Accesso"><a href="#File-di-Configurazione-e-Regole-per-il-Controllo-dell&#39;Accesso">File di Configurazione e Regole per il Controllo dell&#39;Accesso</a></h3>
+
+<p>Una volta che l&#39;installazione è fatta, puoi spostarti nel repository <code>gitolite-admin</code> (posizionato nella tua directory HOME) e curiosare in giro per vedere cosa c&#39;è:</p>
+
+<pre><code>$ cd ~/gitolite-admin/
+$ ls
+conf/  keydir/
+$ find conf keydir -type f
+conf/gitolite.conf
+keydir/scott.pub
+$ cat conf/gitolite.conf
+
+repo gitolite-admin
+    RW+                 = scott
+
+repo testing
+    RW+                 = @all
+</code></pre>
+
+<p>Osserva che &quot;scott&quot; (il nome della pubkey nel comando <code>gitolite setup</code> che hai usato precedentemente) ha permessi di scrittura-lettura per la repository <code>gitolite-admin</code> così come un file con la chiave pubblica con lo stesso nome.</p>
+
+<p>Aggiungere utenti è semplice. Per aggiungere un utente chiamato &quot;alice&quot;, procurati la sua chiave pubblica, chiamala <code>alice.pub</code>, e mettila nella directory <code>keydir</code> del clone della repository <code>gitolite-admin</code> che hai appena fatto sulla tua postazione di lavoro. Aggiungi, affida, ed invia la modifica, e l&#39;utente è stato aggiunto.</p>
+
+<p>La sintassi del file di configurazione di Gitolite è ben documentata, pertanto qui menzioneremo solo alcuni aspetti importanti.</p>
+
+<p>Puoi raggruppare utenti o i repo per convenienza. Il nome del gruppo è come una macro; quando le definisci, non importa nemmeno se sono progetti o utenti; la distinzione è fatta solamente quando tu <em>usi</em> la &quot;macro&quot;.</p>
+
+<pre><code>@oss_repos      = linux perl rakudo git gitolite
+@secret_repos   = fenestra pear
+
+@admins         = scott
+@interns        = ashok
+@engineers      = sitaram dilbert wally alice
+@staff          = @admins @engineers @interns
+</code></pre>
+
+<p>Puoi controllare i permessi a livello &quot;ref&quot;. Nel seguente esempio, gli interni possono solo fare il push al ramo &quot;int&quot;. Gli ingegneri possono fare il push ad ogni ramo che inizia con &quot;eng-&quot;, e i tag che iniziano con &quot;rc&quot; e finiscono con un numero. E gli amministratori possono fare tutto (incluso il rewind) per ogni ref.</p>
+
+<pre><code>repo @oss_repos
+    RW  int$                = @interns
+    RW  eng-                = @engineers
+    RW  refs/tags/rc[0-9]   = @engineers
+    RW+                     = @admins
+</code></pre>
+
+<p>L&#39;espressione dopo <code>RW</code> o <code>RW+</code> è una espressione regolare (regex) contro cui il nome di riferimento (refname) che viene inviato viene controllato. Così la chiameremo &quot;refex&quot;! Certamente, una refex può essere più complessa di quella mostrata, quindi non strafare se non sei pratico con le regex perl.</p>
+
+<p>Inoltre, come avrai supposto, i prefissi Gitolite <code>refs/heads/</code> sono convenienze sintattiche se la refex non inizia con <code>refs/</code>.</p>
+
+<p>Una funzione importante nella sintassi di configurazione è che tutte le regole per un repository non necessariamente devono essere in un unico posto. Puoi tenere tutte le regole comuni insieme, come le regole per tutti <code>oss_repos</code> mostrati di seguito, e poi aggiungere specifiche regole per specifici casi successivamente, come segue:</p>
+
+<pre><code>repo gitolite
+    RW+                     = sitaram
+</code></pre>
+
+<p>Questa regola sarà aggiunta nella serie delle regole per il solo repository <code>gitolite</code>.</p>
+
+<p>A questo punto ti starai chiedendo come le regole di controllo degli accessi sono impostate, le vediamo brevemente.</p>
+
+<p>Ci sono due livelli di controllo degli accessi in gitolite. Il primo è a livello di repository; se hai un accesso in lettura (o scrittura) a <em>qualsiasi</em> ref del repository, allora hai accesso in lettura (o scrittura) al repository.</p>
+
+<p>Il secondo livello, applica gli accessi di sola &quot;scrittura&quot;, è per i rami o le etichette del repository. Il nome utente, l&#39;accesso (<code>W</code> o <code>+</code>), e il refname in fase di aggiornamento è noto. Le regole dell&#39;accesso sono impostate in ordine di apparizione nel file di configurazione, per cercare un controllo per questa combinazione (ma ricorda che il refname è una espressione regolare, non una semplice stringa). Se un controllo è stato trovato, l&#39;invio avviene. Tutto il resto non ha alcun tipo di accesso.</p>
+
+<h3 id="Controllo-Avanzato-degli-Accessi-con-le-Regole-&quot;deny&quot;"><a href="#Controllo-Avanzato-degli-Accessi-con-le-Regole-&quot;deny&quot;">Controllo Avanzato degli Accessi con le Regole &quot;deny&quot;</a></h3>
+
+<p>Finora abbiamo visto solo che i permessi possono essere <code>R</code>, <code>RW</code> o<code>RW+</code>. Ovviamente, gitolite permette altri permessi: <code>-</code>, che sta per &quot;deny&quot;. Questo ti da molto più potere, a scapito di una certa complessità, perché non è l&#39;<em>unico</em> modo per negare l&#39;accesso, quindi <em>l&#39;ordine delle regole ora conta</em>!</p>
+
+<p>Diciamo, nella situazione seguente, vogliamo gli ingegneri in grado di fare il rewind di ogni ramo <em>eccetto</em> master ed integ. Qui vediamo come:</p>
+
+<pre><code>    RW  master integ    = @engineers
+    -   master integ    = @engineers
+    RW+                 = @engineers
+</code></pre>
+
+<p>Ancora, devi semplicemente seguire le regole da cima a fondo fino a quando non inserisci una corrispondenza per il tipo di accesso, o di negazione. Un invio non-rewind non corrisponde alla prima regola, scende alla seconda, ed è quindi negato. Qualsiasi invio (rewind o non-rewind) ad un ref diverso da master o integ non corrisponde alle prime due regole comunque, e la terza regola lo permette.</p>
+
+<h3 id="Restringere-Invii-in-Base-ai-File-Modificati"><a href="#Restringere-Invii-in-Base-ai-File-Modificati">Restringere Invii in Base ai File Modificati</a></h3>
+
+<p>In aggiunta alle restrizioni per l&#39;invio a specifici rami, puoi restringere ulteriormente a quali file sono permesse le modifiche. Per esempio, probabilmente il Makefile (o altri programmi) non dovrebbe essere modificato da nessuno, perché molte cose dipendono da esso e potrebbero esserci problemi se le modifiche non sono fatte <em>correttamente</em>. Puoi dire a gitolite:</p>
+
+<pre><code>repo foo
+    RW                      =   @junior_devs @senior_devs
+
+    -   VREF/NAME/Makefile  =   @junior_devs
+</code></pre>
+
+<p>L&#39;utente che sta migrando dal vecchio Gitolite dovrebbe osservare che c&#39;è un significativo cambiamento nel comportamento di questa caratteristica; guardare la guida alla migrazione per i dettagli.</p>
+
+<h3 id="Rami-Personali"><a href="#Rami-Personali">Rami Personali</a></h3>
+
+<p>Gitolite ha anche una funzionalità che è chiamata &quot;rami personali&quot; (o piuttosto, &quot;spazio dei nomi dei rami personali&quot;) che è molto utile in un ambiente aziendale.</p>
+
+<p>Moltissimo codice nel mondo git è scambiato per mezzo di richieste &quot;please pull&quot;. In un ambiente aziendale, comunque, un accesso non autenticato è un no-no, e una macchina di sviluppo non può fare autenticazioni, così devi inviare al server centrale e poi chiedere a qualcuno di scaricarsi le modifiche da lì.</p>
+
+<p>Questo normalmente causa lo stesso disordine nel ramo come in un VCS centralizzato, inoltre impostare le autorizzazioni per questo diventa un fastidio per l&#39;amministratore.</p>
+
+<p>Gitolite ti permette di definire un prefisso per lo spazio dei nomi &quot;personale&quot; e &quot;nuovo&quot; per ogni sviluppatore (per esempio, <code>refs/personal/&lt;devname&gt;/*</code>); vedi la sezione &quot;personal branches&quot; in <code>doc/3-faq-tips-etc.mkd</code> per i dettagli.</p>
+
+<h3 id="Repository-&quot;Wildcard&quot;"><a href="#Repository-&quot;Wildcard&quot;">Repository &quot;Wildcard&quot;</a></h3>
+
+<p>Gitolite ti permette di specificare repository con il wildcard (nei fatti espressioni regolari perl), come, per esempio <code>assignments/s[0-9][0-9]/a[0-9][0-9]</code>, per prendere un esempio a caso. Ti permette anche di assegnare un nuovo modo di permesso (&quot;C&quot;) per permettere agli utenti di creare repository basati su questi schemi, assegnando automaticamente il proprietario allo specifico utente che lo ha creato, permettendogli di gestire i permessi di R e RW per gli altri utenti per collaborazione, etc. Di nuovo, vedi la documentazione per i dettagli.</p>
+
+<h3 id="Altre-funzionalità"><a href="#Altre-funzionalità">Altre funzionalità</a></h3>
+
+<p>Concludiamo questa discussione con un elenco di altre funzioni, ognuna delle quali, e molte altre, sono descritte in grande dettagli nella documentazione.</p>
+
+<p><strong>Logging</strong>: Gitolite registra tutti gli accessi riusciti. Se hai dato tranquillamente il permesso di rewind (<code>RW+</code>) alle persone e qualcuno ha spazzato via il &quot;master&quot;, il log è un toccasana per ritrovare lo SHA di chi ha fatto il casino.</p>
+
+<p><strong>Rapporto sui diritti di accesso</strong>: Un&#39;altra funzione conveniente è quando provi ad entrare via ssh sul server. Gitolite ti mostrerà a quali repo hai accesso, e che tipo di accesso hai. Ecco un esempio:</p>
+
+<pre><code>    hello scott, this is git@git running gitolite3 v3.01-18-g9609868 on git 1.7.4.4
+
+         R     anu-wsd
+         R     entrans
+         R  W  git-notes
+         R  W  gitolite
+         R  W  gitolite-admin
+         R     indic_web_input
+         R     shreelipi_converter
+</code></pre>
+
+<p><strong>Delega</strong>: Per un&#39;istallazione davvero grande, puoi delegare la responsabilità di alcuni gruppi di repository a varie persone e dare a loro l&#39;amministrazione di questi pezzi in modo indipendente. Questo riduce il carico dell&#39;amministrazione centrale, e lo rende meno il collo di bottiglia. </p>
+
+<p><strong>Mirroring</strong>: Gitolite può aiutarti a mantenere mirror multipli, e spostarti fra di loro facilmente se il server primario va giù.</p>
+
+<div id="nav"><a href="/book/it/Git-sul-Server-Gitosis">prev</a> | <a href="/book/it/v1/Git-sul-Server-Demone-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

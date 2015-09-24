@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":323,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Configuration de Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">Démarrage rapide</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">À propos de la gestion de version</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Une-rapide-histoire-de-Git">Une rapide histoire de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git">Rudiments de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-La-ligne-de-commande">La ligne de commande</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git">Installation de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Paramétrage à la première utilisation de Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Obtenir-de-l%E2%80%99aide">Obtenir de l’aide</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Les bases de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Démarrer un dépôt Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/fr/v2/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Enregistrer des modifications dans le dépôt</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/fr/v2/Les-bases-de-Git-Visualiser-l%E2%80%99historique-des-validations">Visualiser l’historique des validations</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/fr/v2/Les-bases-de-Git-Annuler-des-actions">Annuler des actions</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">Travailler avec des dépôts distants</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/fr/v2/Les-bases-de-Git-%C3%89tiquetage">Étiquetage</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/fr/v2/Les-bases-de-Git-Les-alias-Git">Les alias Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/fr/v2/Les-bases-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">Les branches avec Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">Les branches en bref</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/fr/v2/Les-branches-avec-Git-Branches-et-fusions%C2%A0%3A-les-bases">Branches et fusions : les bases</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/fr/v2/Les-branches-avec-Git-Gestion-des-branches">Gestion des branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/fr/v2/Les-branches-avec-Git-Travailler-avec-les-branches">Travailler avec les branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/fr/v2/Les-branches-avec-Git-Branches-distantes">Branches distantes</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing">Rebaser (Rebasing)</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/fr/v2/Les-branches-avec-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/fr/v2/Git-sur-le-serveur-Protocoles">Git sur le serveur</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/fr/v2/Git-sur-le-serveur-Protocoles">Protocoles</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/fr/v2/Git-sur-le-serveur-Installation-de-Git-sur-un-serveur">Installation de Git sur un serveur</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/fr/v2/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH">Génération des clés publiques SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/fr/v2/Git-sur-le-serveur-Mise-en-place-du-serveur">Mise en place du serveur</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/fr/v2/Git-sur-le-serveur-D%C3%A9mon-Daemon-Git">Démon (Daemon) Git</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/fr/v2/Git-sur-le-serveur-HTTP-intelligent">HTTP intelligent</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/fr/v2/Git-sur-le-serveur-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/fr/v2/Git-sur-le-serveur-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/fr/v2/Git-sur-le-serveur-Git-h%C3%A9berg%C3%A9">Git hébergé</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/fr/v2/Git-sur-le-serveur-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/fr/v2/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Git distribué</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/fr/v2/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Développements distribués</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/fr/v2/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/fr/v2/Git-distribu%C3%A9-Maintenance-d%E2%80%99un-projet">Maintenance d’un projet</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/fr/v2/Git-distribu%C3%A9-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte">Configuration et paramétrage d’un compte</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/fr/v2/GitHub-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/fr/v2/GitHub-Maintenance-d%E2%80%99un-projet">Maintenance d’un projet</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/fr/v2/GitHub-Gestion-d%E2%80%99un-regroupement">Gestion d’un regroupement</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/fr/v2/GitHub-%C3%89criture-de-scripts-pour-GitHub">Écriture de scripts pour GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/fr/v2/GitHub-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/fr/v2/Utilitaires-Git-S%C3%A9lection-des-versions">Utilitaires Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/fr/v2/Utilitaires-Git-S%C3%A9lection-des-versions">Sélection des versions</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/fr/v2/Utilitaires-Git-Indexation-interactive">Indexation interactive</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/fr/v2/Utilitaires-Git-Remisage-et-nettoyage">Remisage et nettoyage</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/fr/v2/Utilitaires-Git-Signer-votre-travail">Signer votre travail</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/fr/v2/Utilitaires-Git-Recherche">Recherche</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/fr/v2/Utilitaires-Git-R%C3%A9%C3%A9crire-l%E2%80%99historique">Réécrire l’historique</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/fr/v2/Utilitaires-Git-Reset-d%C3%A9mystifi%C3%A9">Reset démystifié</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/fr/v2/Utilitaires-Git-Fusion-avanc%C3%A9e">Fusion avancée</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/fr/v2/Utilitaires-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/fr/v2/Utilitaires-Git-D%C3%A9boguer-avec-Git">Déboguer avec Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/fr/v2/Utilitaires-Git-Sous-modules">Sous-modules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/fr/v2/Utilitaires-Git-Empaquetage-bundling">Empaquetage (bundling)</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/fr/v2/Utilitaires-Git-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/fr/v2/Utilitaires-Git-Stockage-des-identifiants">Stockage des identifiants</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/fr/v2/Utilitaires-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git">Personnalisation de Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git">Configuration de Git</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/fr/v2/Personnalisation-de-Git-Attributs-Git">Attributs Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/fr/v2/Personnalisation-de-Git-Crochets-Git">Crochets Git</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/fr/v2/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">Exemple de politique gérée par Git</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/fr/v2/Personnalisation-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Git-comme-client">Git et les autres systèmes</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Git-comme-client">Git comme client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine">Les tripes de Git</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine">Plomberie et porcelaine</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-objets-de-Git">Les objets de Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/fr/v2/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git">Références Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/fr/v2/Les-tripes-de-Git-Fichiers-group%C3%A9s">Fichiers groupés</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/fr/v2/Les-tripes-de-Git-La-refspec">La refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-protocoles-de-transfert">Les protocoles de transfert</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/fr/v2/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">Maintenance et récupération de données</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-variables-d%E2%80%99environnement">Les variables d’environnement</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/fr/v2/Les-tripes-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/fr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/fr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/fr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/fr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/fr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/fr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/fr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/fr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/fr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/fr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/fr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/fr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/fr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/fr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/fr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/fr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/fr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/fr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/fr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/fr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/fr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/fr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/fr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/fr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>8.1 Personnalisation de Git - Configuration de Git</h1>
+  <div><a id="_customizing_git"></a><p>Jusqu’ici, nous avons traité les bases du fonctionnement et de l’utilisation de Git et introduit un certain nombre d’outils fournis par Git pour travailler plus facilement et plus efficacement.
+Dans ce chapitre, nous aborderons quelques opérations permettant d’utiliser Git de manière plus personnalisée en vous présentant quelques paramètres de configuration importants et le système d’interceptions.
+Grâce à ces outils, il devient enfantin de faire fonctionner Git exactement comme vous, votre société ou votre communauté en avez besoin.</p><a id="_git_config"></a><h2>Configuration de Git</h2>
+
+<p><a data-type="indexterm" data-primary="commandes git" data-secondary="config" id="id-3gVH5"></a>
+Comme vous avez pu l’entrevoir dans <a data-type="xref" href="1-introduction/_getting_started">Démarrage rapide</a>, vous pouvez spécifier les paramètres de configuration de Git avec la commande <code>git config</code>.
+Une des premières choses que vous avez faites a été de paramétrer votre nom et votre adresse de courriel :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global user.name <code class="s2">"John Doe"</code>
+<code class="gp">$</code> git config --global user.email johndoe@example.com
+</pre>
+
+<p>À présent, vous allez apprendre quelques-unes des options similaires les plus intéressantes pour paramétrer votre usage de Git.</p>
+
+<p>Vous avez vu des détails de configuration simple de Git au premier chapitre, mais nous allons les réviser.
+Git utilise une série de fichiers de configuration pour déterminer son comportement selon votre personnalisation.
+Le premier endroit que Git visite est le fichier <code>/etc/gitconfig</code> qui contient des valeurs pour tous les utilisateurs du système et tous leurs dépôts.
+Si vous passez l’option <code>--system</code> à <code>git config</code>, il lit et écrit ce fichier.</p>
+
+<p>L’endroit suivant visité par Git est le fichier <code>~/.gitconfig</code> qui est spécifique à chaque utilisateur.
+Vous pouvez faire lire et écrire Git dans ce fichier au moyen de l’option <code>--global</code>.</p>
+
+<p>Enfin, Git recherche des valeurs de configuration dans le fichier de configuration du répertoire Git (<code>.git/config</code>) du dépôt en cours d’utilisation.
+Ces valeurs sont spécifiques à un unique dépôt.</p>
+
+<p>Chaque niveau surcharge le niveau précédent, ce qui signifie que les valeurs dans <code>.git/config</code> écrasent celles dans <code>/etc/gitconfig</code>.</p>
+<div data-type="note" id="id-1GWT9">
+<h6>Note</h6>
+<p>Ces fichiers de configuration Git sont des fichiers texte, donc vous pouvez positionner ces valeurs manuellement en éditant le fichier et en utilisant la syntaxe correcte, mais il reste généralement plus facile de lancer la commande <code>git config</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="configuration-de-base-dun-client-1NvU9"><h3 id="Configuration-de-base-d’un-client"><a href="#Configuration-de-base-d’un-client">Configuration de base d’un client</a></h3>
+
+<p>Les options de configuration reconnues par Git tombent dans deux catégories : côté client et côté serveur.
+La grande majorité se situe côté client pour coller à vos préférences personnelles de travail.
+Parmi les tonnes d’options disponibles, seules les plus communes ou affectant significativement la manière de travailler seront couvertes.
+De nombreuses options ne s’avèrent utiles qu’en de rares cas et ne seront pas traitées.
+Pour voir la liste de toutes les options que votre version de Git reconnaît, vous pouvez lancer :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> man git-config
+</pre>
+
+<p>Cette commande affiche toutes les options disponibles avec quelques détails.
+Vous pouvez aussi trouver des informations de référence sur <a href="http://git-scm.com/docs/git-config.html"><em class="hyperlink">http://git-scm.com/docs/git-config.html</em></a>.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="coreeditor-XqPuQ"><h4><code>core.editor</code></h4>
+
+<p><a data-type="indexterm" data-primary="$EDITOR" id="id-myJFW"></a><a data-type="indexterm" data-primary="$VISUAL" data-secondary="voir $EDITOR" id="id-m02CA"></a>
+Par défaut, Git utilise votre éditeur par défaut (<code>$VISUAL</code> ou <code>$EDITOR</code>) ou se replie sur l’éditeur Vi pour la création et l’édition des messages de validation et d’étiquetage.
+Pour modifier ce programme par défaut pour un autre, vous pouvez utiliser le paramètre <code>core.editor</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.editor emacs
+</pre>
+
+<p>Maintenant, quel que soit votre éditeur par défaut, Git démarrera Emacs pour éditer les messages.</p>
+</section><section data-type="sect3" id="committemplate-bpWf0"><h4><code>commit.template</code></h4>
+
+<p><a data-type="indexterm" data-primary="modèles de message de validation" id="id-xgQcO"></a>
+Si vous réglez ceci sur le chemin d’un fichier sur votre système, Git utilisera ce fichier comme message par défaut quand vous validez.
+Par exemple, supposons que vous créiez un fichier modèle dans <code>$HOME/.gitmessage.txt</code> qui ressemble à ceci :</p>
+
+<pre data-type="programlisting">ligne de sujet
+
+description
+
+[ticket: X]</pre>
+
+<p>Pour indiquer à Git de l’utiliser pour le message par défaut qui apparaîtra dans votre éditeur quand vous lancerez <code>git commit</code>, réglez le paramètre de configuration <code>commit.template</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global commit.template ~/.gitmessage.txt
+<code class="gp">$</code> git commit
+</pre>
+
+<p>Ainsi, votre éditeur ouvrira quelque chose ressemblant à ceci comme modèle de message de validation :</p>
+
+<pre data-type="programlisting">ligne de sujet
+
+description
+
+[ticket: X]
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+# modified:   lib/test.rb
+#
+~
+~
+".git/COMMIT_EDITMSG" 14L, 297C</pre>
+
+<p>Si vous avez une règle de messages de validation, placez un modèle de cette règle sur votre système et configurez Git pour qu’il l’utilise par défaut, cela améliorera les chances que cette règle soit effectivement suivie.</p>
+</section><section data-type="sect3" id="corepager-Dn2ub"><h4><code>core.pager</code></h4>
+
+<p><a data-type="indexterm" data-primary="pager" id="id-GG8Fj"></a>
+Le paramètre <code>core.pager</code> détermine quel <em>pager</em> est utilisé lorsque des pages de Git sont émises, par exemple lors d’un <code>log</code> ou d’un <code>diff</code>.
+Vous pouvez le fixer à <code>more</code> ou à votre <em>pager</em> favori (par défaut, il vaut <code>less</code>) ou vous pouvez le désactiver en fixant sa valeur à une chaîne vide :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.pager <code class="s1">''</code>
+</pre>
+
+<p>Si vous lancez cela, Git affichera la totalité du résultat de toutes les commandes d’une traite, quelle que soit sa longueur.</p>
+</section><section data-type="sect3" id="usersigningkey-qKPHQ"><h4><code>user.signingkey</code></h4>
+
+<p><a data-type="indexterm" data-primary="GPG" id="id-yMJSW"></a>
+Si vous faîtes des étiquettes annotées signées (comme décrit dans <a data-type="xref" href="1-git-tools/_signing">Signer votre travail</a>), simplifiez-vous la vie en définissant votre clé GPG de signature en paramètre de configuration.
+Définissez votre ID de clé ainsi :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global user.signingkey &lt;gpg-key-id&gt;
+</pre>
+
+<p>Maintenant, vous pouvez signer vos étiquettes sans devoir spécifier votre clé à chaque fois que vous utilisez la commande <code>git tag</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tag -s &lt;nom-étiquette&gt;
+</pre>
+</section><section data-type="sect3" id="coreexcludesfile-bNWU0"><h4><code>core.excludesfile</code></h4>
+
+<p><a data-type="indexterm" data-primary="excludes" id="id-xzQFO"></a><a data-type="indexterm" data-primary=".gitignore" id="id-qYpuz"></a>
+Comme décrit dans <a data-type="xref" href="1-git-basics/_ignoring">Ignorer des fichiers</a>, vous pouvez ajouter des patrons dans le fichier <code>.gitignore</code> de votre projet pour indiquer à Git de ne pas considérer certains fichiers comme non suivis ou pour éviter de les indexer lorsque vous lancez <code>git add</code> sur eux.</p>
+
+<p>Mais vous pouvez souhaiter dans quelques cas ignorer certains fichiers dans tous vos dépôts.
+Si votre ordinateur utilise Mac OS X, vous connaissez certainement les fichiers <code>.DS_Store</code>.
+Si votre éditeur préféré est Emacs ou Vim, vous connaissez sûrement aussi les fichiers qui se terminent par <code>~</code></p>
+
+<p>Cette option vous permet d’écrire un fichier <code>.gitignore</code> global.
+Si vous créez un fichier <code>~/.gitignore_global</code> contenant ceci :</p>
+
+<pre data-type="programlisting">*~
+.DS_Store</pre>
+
+<p>et que vous lancez <code>git config --global core.excludesfile ~/.gitignore_global</code>, Git ne vous importunera plus avec ces fichiers.</p>
+</section><section data-type="sect3" id="helpautocorrect-keksw"><h4><code>help.autocorrect</code></h4>
+
+<p><a data-type="indexterm" data-primary="autocorrect" id="id-eoLhz"></a>
+Si vous avez fait une faute de frappe en tapant une commande Git, il vous affiche quelque chose comme :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git chekcout master
+<code class="go">git : 'chekcout' n'est pas une commande git. Voir 'git --help'.</code>
+
+<code class="go">Vouliez-vous dire cela ?</code>
+<code class="go">        checkout</code>
+</pre>
+
+<p>Git essaie de deviner ce que vous avez voulu dire, mais continue de refuser de le faire.
+Si vous positionnez le paramètre <code>help.autocorrect</code> à 1, Git va réellement lancer cette commande à votre place :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git chekcout master
+<code class="go">ATTENTION : vous avez invoqué une commande Git nommée 'chekcout' qui n'existe pas.</code>
+<code class="go">Continuons en supposant que vous avez voulu dire 'checkout'</code>
+<code class="go">dans 0.1 secondes automatiquement...</code>
+</pre>
+
+<p>Notez l’histoire des « 0.1 secondes ».
+<code>help.autocorrect</code> est un fait un entier qui représente des dixièmes de seconde.
+Ainsi, si vous le réglez à 50, Git vous laissera 5 secondes pour changer d’avis avant de lancer la commande qu’il aura devinée.</p>
+</section></section><section data-type="sect2" id="couleurs-dans-git-WnAH5"><h3 id="Couleurs-dans-Git"><a href="#Couleurs-dans-Git">Couleurs dans Git</a></h3>
+
+<p><a data-type="indexterm" data-primary="couleur" id="id-v62cG"></a>
+Git sait coloriser ses affichages dans votre terminal, ce qui peut faciliter le parcours visuel des résultats.
+Un certain nombre d’options peuvent vous aider à régler la colorisation à votre goût.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="colorui-MDLsV"><h4><code>color.ui</code></h4>
+
+<p>Git colorise automatiquement la plupart de ses affichages mais il existe une option globale pour désactiver ce comportement.
+Pour désactiver toute la colorisation par défaut, lancez ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global color.ui <code class="nb">false</code>
+</pre>
+
+<p>La valeur par défaut est <code>auto</code>, ce qui colorise la sortie lorsque celle-ci est destinée à un terminal, mais élimine les codes de contrôle de couleur quand la sortie est redirigée dans un fichier ou l’entrée d’une autre commande.</p>
+
+<p>Vous pouvez aussi la régler à <code>always</code> (toujours) pour activer la colorisation en permanence.
+C’est une option rarement utile.
+Dans la plupart des cas, si vous tenez vraiment à coloriser vos sorties redirigées, vous pourrez passer le drapeau <code>--color</code> à la commande Git pour la forcer à utiliser les codes de couleur.
+Le réglage par défaut est donc le plus utilisé.</p>
+</section><section data-type="sect3" id="color-rk9cE"><h4><code>color.*</code></h4>
+
+<p>Si vous souhaitez être plus spécifique concernant les commandes colorisées, Git propose des paramètres de colorisation par action.
+Chacun peut être fixé à <code>true</code>, <code>false</code> ou <code>always</code>.</p>
+
+<pre data-type="programlisting">color.branch
+color.diff
+color.interactive
+color.status</pre>
+
+<p>De plus, chacun d’entre eux dispose d’un sous-ensemble de paramètres qui permettent de surcharger les couleurs pour des parties des affichages.
+Par exemple, pour régler les couleurs de méta-informations du diff avec une écriture en bleu gras (<em>bold</em> en anglais) sur fond noir :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global color.diff.meta <code class="s2">"blue black bold"</code>
+</pre>
+
+<p>La couleur peut prendre les valeurs suivantes : <em>normal</em>, <em>black</em>, <em>red</em>, <em>green</em>, <em>yellow</em>, <em>blue</em>, <em>magenta</em>, <em>cyan</em> ou <em>white</em>.
+Si vous souhaitez ajouter un attribut de casse, les valeurs disponibles sont <em>bold</em> (gras), <em>dim</em> (léger), <em>ul</em> (<em>underlined</em>, souligné), <em>blink</em> (clignotant) et <em>reverse</em> (inversé).</p>
+</section></section><section data-type="sect2" id="_external_merge_tools"><h3 id="Outils-externes-de-fusion-et-de-différence"><a href="#Outils-externes-de-fusion-et-de-différence">Outils externes de fusion et de différence</a></h3>
+
+<p><a data-type="indexterm" data-primary="mergetool" id="id-nBLhp"></a><a data-type="indexterm" data-primary="difftool" id="id-7d5uw"></a>
+Bien que Git ait une implémentation interne de diff que vous avez déjà utilisée, vous pouvez sélectionner à la place un outil externe.
+Vous pouvez aussi sélectionner un outil graphique pour la fusion et la résolution de conflit au lieu de devoir résoudre les conflits manuellement.
+Je démontrerai le paramétrage avec Perforce Merge Tool (P4Merge) pour visualiser vos différences et résoudre vos fusions parce que c’est un outil graphique agréable et gratuit.</p>
+
+<p>Si vous voulez l’essayer, P4Merge fonctionne sur tous les principaux systèmes d’exploitation.
+Dans cet exemple, je vais utiliser la forme des chemins usitée sur Mac et Linux.
+Pour Windows, vous devrez changer <code>/usr/local/bin</code> en un chemin d’exécution d’un programme de votre environnement.</p>
+
+<p>Pour commencer, téléchargez P4Merge depuis <a href="http://www.perforce.com/downloads/Perforce/"><em class="hyperlink">http://www.perforce.com/downloads/Perforce/</em></a>.
+Ensuite, il faudra mettre en place un script d’enrobage pour lancer les commandes.
+Je vais utiliser le chemin Mac pour l’exécutable ; dans d’autres systèmes, il résidera où votre binaire <code>p4merge</code> a été installé.
+Créez un script enveloppe nommé <code>extMerge</code> qui appelle votre binaire avec tous les arguments fournis :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /usr/local/bin/extMerge
+<code class="gp">#</code>!/bin/sh
+<code class="go">/Applications/p4merge.app/Contents/MacOS/p4merge $*</code>
+</pre>
+
+<p>L’enveloppe diff s’assure que sept arguments ont été fournis et en passe deux à votre script de fusion.
+Par défaut, Git passe au programme de diff les arguments suivants :</p>
+
+<pre data-type="programlisting">chemin ancien-fichier ancien-hex ancien-mode nouveau-fichier nouveau-hex nouveau-mode</pre>
+
+<p>Comme seuls les arguments <code>ancien-fichier</code> et <code>nouveau-fichier</code> sont nécessaires, vous utilisez le script d’enveloppe pour passer ceux dont vous avez besoin.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /usr/local/bin/extDiff
+<code class="gp">#</code>!/bin/sh
+<code class="go">[ $# -eq 7 ] &amp;&amp; /usr/local/bin/extMerge "$2" "$5"</code>
+</pre>
+
+<p>Vous devez aussi vous assurer que ces fichiers sont exécutables :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> sudo chmod +x /usr/local/bin/extMerge
+<code class="gp">$</code> sudo chmod +x /usr/local/bin/extDiff
+</pre>
+
+<p>À présent, vous pouvez régler votre fichier de configuration pour utiliser vos outils personnalisés de résolution de fusion et de différence.
+Pour cela, il faut un certain nombre de personnalisations : <code>merge.tool</code> pour indiquer à Git quelle stratégie utiliser, <code>mergetool.*.cmd</code> pour spécifier comment lancer cette commande, <code>mergetool.trustExitCode</code> pour indiquer à Git si le code de sortie du programme indique une résolution de fusion réussie ou non et <code>diff.external</code> pour indiquer à Git quelle commande lancer pour les différences.
+Ainsi, vous pouvez lancer les quatre commandes :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global merge.tool extMerge
+<code class="gp">$</code> git config --global mergetool.extMerge.cmd <code class="se">\</code>
+<code class="go">  'extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'</code>
+<code class="gp">$</code> git config --global mergetool.trustExitCode <code class="nb">false</code>
+<code class="gp">$</code><code class="nb"> </code>git config --global diff.external extDiff
+</pre>
+
+<p>ou vous pouvez éditer votre fichier <code>~/.gitconfig</code> pour y ajouter ces lignes :</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[merge]</code>
+  <code class="na">tool</code> <code class="o">=</code> <code class="s">extMerge</code>
+<code class="k">[mergetool "extMerge"]</code>
+  <code class="na">cmd</code> <code class="o">=</code> <code class="s">extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"</code>
+<code class="s">  trustExitCode = false</code>
+<code class="k">[diff]</code>
+  <code class="na">external</code> <code class="o">=</code> <code class="s">extDiff</code>
+</pre>
+
+<p>Après avoir réglé tout ceci, si vous lancez des commandes de diff telles que celle-ci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff 32d1776b1^ 32d1776b1
+</pre>
+
+<p>Au lieu d’obtenir la sortie du diff dans le terminal, Git lance P4Merge, ce qui ressemble à ceci :</p>
+
+<figure id="id-7p0CD"><img src="/book/en/v2/book/08-customizing-git/images/p4merge.png" alt="P4Merge."><figcaption><span class="label">Figure 8-1. </span>P4Merge.</figcaption></figure><p>Si vous essayez de fusionner deux branches et créez des conflits de fusion, vous pouvez lancer la commande <code>git mergetool</code> qui démarrera P4Merge pour vous laisser résoudre les conflits au moyen d’un outil graphique.</p>
+
+<p>Le point agréable avec cette méthode d’enveloppe est que vous pouvez changer facilement d’outils de diff et de fusion.
+Par exemple, pour changer vos outils <code>extDiff</code> et <code>extMerge</code> pour une utilisation de l’outil KDiff3, il vous suffit d’éditer le fichier <code>extMerge</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /usr/local/bin/extMerge
+<code class="gp">#</code>!/bin/sh
+<code class="go">/Applications/kdiff3.app/Contents/MacOS/kdiff3 $*</code>
+</pre>
+
+<p>À présent, Git va utiliser l’outil KDiff3 pour visualiser les différences et résoudre les conflits de fusion.</p>
+
+<p>Git est livré préréglé avec un certain nombre d’autres outils de résolution de fusion pour vous éviter d’avoir à gérer la configuration <code>cmd</code>.
+Pour obtenir une liste des outils supporté, essayez ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git mergetool --tool-help
+<code class="go">'git mergetool --tool=&lt;tool&gt;' may be set to one of the following:</code>
+<code class="go">        emerge</code>
+<code class="go">        gvimdiff</code>
+<code class="go">        gvimdiff2</code>
+<code class="go">        opendiff</code>
+<code class="go">        p4merge</code>
+<code class="go">        vimdiff</code>
+<code class="go">        vimdiff2</code>
+
+<code class="go">The following tools are valid, but not currently available:</code>
+<code class="go">        araxis</code>
+<code class="go">        bc3</code>
+<code class="go">        codecompare</code>
+<code class="go">        deltawalker</code>
+<code class="go">        diffmerge</code>
+<code class="go">        diffuse</code>
+<code class="go">        ecmerge</code>
+<code class="go">        kdiff3</code>
+<code class="go">        meld</code>
+<code class="go">        tkdiff</code>
+<code class="go">        tortoisemerge</code>
+<code class="go">        xxdiff</code>
+
+<code class="go">Some of the tools listed above only work in a windowed</code>
+<code class="go">environment. If run in a terminal-only session, they will fail.</code>
+</pre>
+
+<p>Si KDiff3 ne vous intéresse pas pour gérer les différences mais seulement pour la résolution de fusion et qu’il est présent dans votre chemin d’exécution, vous pouvez lancer :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global merge.tool kdiff3
+</pre>
+
+<p>Si vous lancez ceci au lieu de modifier les fichiers <code>extMerge</code> ou <code>extDiff</code>, Git utilisera KDiff3 pour les résolutions de fusion et l’outil diff normal de Git pour les différences.</p>
+</section><section data-type="sect2" id="formatage-et-espaces-blancs-Vv2fn"><h3 id="Formatage-et-espaces-blancs"><a href="#Formatage-et-espaces-blancs">Formatage et espaces blancs</a></h3>
+
+<p><a data-type="indexterm" data-primary="espaces blancs" id="id-Q7PF6"></a>
+Les problèmes de formatage et de blancs sont parmi les plus subtils et frustrants que les développeurs rencontrent lorsqu’ils collaborent, spécifiquement d’une plate-forme à l’autre.
+Il est très facile d’introduire des modifications subtiles de blancs lors de soumission de patchs ou d’autres modes de collaboration, car les éditeurs de textes les insèrent silencieusement ou les programmeurs Windows ajoutent des retours chariot à la fin des lignes qu’ils modifient.
+Git dispose de quelques options de configuration pour traiter ces problèmes.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="coreautocrlf-Lw8u9"><h4><code>core.autocrlf</code></h4>
+
+<p><a data-type="indexterm" data-primary="crlf" id="id-dgzIA"></a><a data-type="indexterm" data-primary="fins de ligne" id="id-gzjS5"></a>
+Si vous programmez vous-même sous Windows ou si vous utilisez un autre système d’exploitation mais devez travailler avec des personnes travaillant sous Windows, vous rencontrerez à un moment ou à un autre des problèmes de caractères de fin de ligne.
+Ceci est dû au fait que Windows utilise pour marquer les fins de ligne dans ses fichiers un caractère « retour chariot » (<em>carriage return</em>, CR) suivi d’un caractère « saut de ligne » (<em>line feed</em>, LF), tandis que Mac et Linux utilisent seulement le caractère « saut de ligne ».
+C’est un cas subtil mais incroyablement ennuyeux de problème généré par la collaboration inter plate-forme.</p>
+
+<p>Git peut gérer ce cas en convertissant automatiquement les fins de ligne CRLF en LF lorsque vous validez, et inversement lorsqu’il extrait des fichiers sur votre système.
+Vous pouvez activer cette fonctionnalité au moyen du paramètre <code>core.autocrlf</code>.
+Si vous avez une machine Windows, positionnez-le à <code>true</code>.
+Git convertira les fins de ligne de LF en CRLF lorsque vous extrairez votre code :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.autocrlf <code class="nb">true</code>
+</pre>
+
+<p>Si vous utilisez un système Linux ou Mac qui utilise les fins de ligne LF, vous ne souhaitez sûrement pas que Git les convertisse automatiquement lorsque vous extrayez des fichiers.
+Cependant, si un fichier contenant des CRLF est accidentellement introduit en version, vous souhaitez que Git le corrige.
+Vous pouvez indiquer à Git de convertir CRLF en LF lors de la validation mais pas dans l’autre sens en fixant <code>core.autocrlf</code> à <code>input</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.autocrlf input
+</pre>
+
+<p>Ce réglage devrait donner des fins de ligne en CRLF lors d’extraction sous Windows mais en LF sous Mac et Linux et dans le dépôt.</p>
+
+<p>Si vous êtes un programmeur Windows gérant un projet spécifique à Windows, vous pouvez désactiver cette fonctionnalité et forcer l’enregistrement des « retour chariot » dans le dépôt en réglant la valeur du paramètre à <code>false</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.autocrlf <code class="nb">false</code>
+</pre>
+</section><section data-type="sect3" id="corewhitespace-O7Ocy"><h4><code>core.whitespace</code></h4>
+
+<p>Git est paramétré par défaut pour détecter et corriger certains problèmes de blancs.
+Il peut rechercher six problèmes de blancs de base.
+La correction de trois problèmes est activée par défaut et peut être désactivée et celle des trois autres n’est pas activée par défaut mais peut être activée.</p>
+
+<p>Les trois activées par défaut sont <code>blank-at-eol</code> qui détecte les espaces en fin de ligne, <code>blank-at-eof</code> qui détecte les espaces en fin de fichier et <code>space-before-tab</code> qui recherche les espaces avant les tabulations au début d’une ligne.</p>
+
+<p>Les trois autres qui sont désactivées par défaut mais peuvent être activées sont <code>indent-with-non-tab</code> qui recherche des lignes qui commencent par des espaces au lieu de tabulations (contrôlé par l’option <code>tabwidth</code>), <code>tab-in-indent</code> qui recherche les tabulations dans la portion d’indentation d’une ligne et <code>cr-at-eol</code> qui indique à Git que les « retour chariot » en fin de ligne sont acceptés.</p>
+
+<p>Vous pouvez indiquer à Git quelle correction vous voulez activer en fixant <code>core.whitespace</code> avec les valeurs que vous voulez ou non, séparées par des virgules.
+Vous pouvez désactiver des réglages en les éliminant de la chaîne de paramétrage ou en les préfixant avec un <code>-</code>.
+Par exemple, si vous souhaitez activer tout sauf <code>cr-at-eol</code>, vous pouvez lancer ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.whitespace <code class="se">\</code>
+<code class="go">    trailing-space,space-before-tab,indent-with-non-tab</code>
+</pre>
+
+<p>Git va détecter ces problèmes quand vous lancez une commande <code>git diff</code> et essayer de les coloriser pour vous permettre de les régler avant de valider.</p>
+
+<p>Il utilisera aussi ces paramètres pour vous aider quand vous appliquerez des patchs avec <code>git apply</code>.</p>
+
+<p>Quand vous appliquez des patchs, vous pouvez paramétrer Git pour qu’il vous avertisse s’il doit appliquer des patchs qui présentent les défauts de blancs :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply --whitespace<code class="o">=</code>warn &lt;patch&gt;
+</pre>
+
+<p>Ou vous pouvez indiquer à Git d’essayer de corriger automatiquement le problème avant d’appliquer le patch :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply --whitespace<code class="o">=</code>fix &lt;patch&gt;
+</pre>
+
+<p>Ces options s’appliquent aussi à <code>git rebase</code>.
+Si vous avez validé avec des problèmes de blancs mais n’avez pas encore poussé en amont, vous pouvez lancer un <code>rebase</code> avec l’option <code>--whitespace=fix</code> pour faire corriger à Git les erreurs de blancs pendant qu’il réécrit les patchs.</p>
+</section></section><section data-type="sect2" id="configuration-du-serveur-EOMfa"><h3 id="Configuration-du-serveur"><a href="#Configuration-du-serveur">Configuration du serveur</a></h3>
+
+<p>Il n’y a pas autant d’options de configuration de Git côté serveur, mais en voici quelques unes intéressantes dont il est utile de prendre note.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="receivefsckobjects-zdqTA"><h4><code>receive.fsckObjects</code></h4>
+
+<p>Git est capable de vérifier que tous les objets reçus pendant une poussée correspondent à leur somme de contrôle SHA-1 et qu’ils pointent sur des objets valides.
+Cependant, il ne le fait pas par défaut sur chaque poussée.
+C’est une opération relativement lourde qui peut énormément allonger les poussées selon la taille du dépôt ou de la poussée.
+Si vous voulez que Git vérifie la cohérence des objets à chaque poussée, vous pouvez le forcer en fixant le paramètre <code>receive.fsckObjects</code> à <code>true</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --system receive.fsckObjects <code class="nb">true</code>
+</pre>
+
+<p>Maintenant, Git va vérifier l’intégrité de votre dépôt avant que chaque poussée ne soit acceptée pour s’assurer que des clients défectueux (ou malicieux) n’introduisent pas des données corrompues.</p>
+</section><section data-type="sect3" id="receivedenynonfastforwards-wQdTe"><h4><code>receive.denyNonFastForwards</code></h4>
+
+<p>Si vous rebasez des <em>commits</em> que vous avez déjà poussés, puis essayez de pousser à nouveau, ou inversement, si vous essayez de pousser un <em>commit</em> sur une branche distante qui ne contient pas le <em>commit</em> sur lequel la branche distante pointe, votre essai échouera.
+C’est généralement une bonne politique, mais dans le cas d’un rebasage, vous pouvez décider que vous savez ce que vous faites et forcer la mise à jour de la branche distante en ajoutant l’option <code>-f</code> à votre commande.</p>
+
+<p>Pour désactiver la possibilité de forcer la mise à jour des branches distantes autres qu’en avance rapide, réglez <code>receive.denyNonFastForwards</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --system receive.denyNonFastForwards <code class="nb">true</code>
+</pre>
+
+<p>Un autre moyen de faire consiste à utiliser des crochets côté-serveur, point qui sera abordé plus loin.
+Cette autre approche permet de réaliser des traitements plus complexes comme de refuser l’avance rapide seulement à un certain groupe d’utilisateurs.</p>
+</section><section data-type="sect3" id="receivedenydeletes-MkWUV"><h4><code>receive.denyDeletes</code></h4>
+
+<p>Un des contournements possible à la politique <code>denyNonFastForwards</code> consiste à simplement effacer la branche distante et à la repousser avec les nouvelles références.
+Pour interdire ceci, réglez <code>receive.denyDeletes</code> à <code>true</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --system receive.denyDeletes <code class="nb">true</code>
+</pre>
+
+<p>Ceci interdit la suppression de branches ou d’étiquettes.
+Aucun utilisateur n’en a le droit.
+Pour pouvoir effacer des branches distantes, vous devez effacer manuellement les fichiers de référence sur le serveur.
+Il existe aussi des moyens plus intéressants de gérer cette politique utilisateur par utilisateur au moyen des listes de contrôle d’accès, point qui sera abordé dans <a data-type="xref" href="ch00/_an_example_git_enforced_policy">Exemple de politique gérée par Git</a>.</p>
+</section></section><div id="nav"><a href="/book/fr/Utilitaires-Git-R%C3%A9sum%C3%A9">prev</a> | <a href="/book/fr/v2/Personnalisation-de-Git-Attributs-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

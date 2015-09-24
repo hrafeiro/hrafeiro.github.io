@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":25,"applicationTime":336,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - GitLab</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/zh-tw/2015-07-27-05234/progit-zh-tw.604.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/zh-tw/2015-07-27-05234/progit-zh-tw.604.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/zh-tw/2015-07-27-05234/progit-zh-tw.604.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">開始</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">關於版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-Git-%E7%9A%84%E7%B0%A1%E5%8F%B2">Git 的簡史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-Git-%E5%9F%BA%E7%A4%8E%E8%A6%81%E9%BB%9E">Git 基礎要點</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E5%91%BD%E4%BB%A4%E5%88%97">命令列</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-Git-%E5%AE%89%E8%A3%9D%E6%95%99%E5%AD%B8">Git 安裝教學</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9A-Git">初次設定 Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E5%8F%96%E5%BE%97%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6">取得說明文件</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/zh-tw/v2/%E9%96%8B%E5%A7%8B-%E6%91%98%E8%A6%81">摘要</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97%E4%B8%80%E5%80%8B-Git-%E5%80%89%E5%84%B2">Git 基礎</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97%E4%B8%80%E5%80%8B-Git-%E5%80%89%E5%84%B2">取得一個 Git 倉儲</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E7%B4%80%E9%8C%84%E8%AE%8A%E6%9B%B4%E5%88%B0%E7%89%88%E6%9C%AC%E5%BA%AB">紀錄變更到版本庫</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E6%AA%A2%E8%A6%96%E6%8F%90%E4%BA%A4%E6%AD%B7%E5%8F%B2%E7%B4%80%E9%8C%84">檢視提交歷史紀錄</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F%E6%93%8D%E4%BD%9C">復原操作</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">與遠端協同工作</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E6%A8%99%E7%B1%A4">標籤</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-Git-Aliases">Git Aliases</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%B0%A1%E4%BB%8B">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%B0%A1%E4%BB%8B">分支的簡介</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E5%9F%BA%E6%9C%AC%E7%9A%84%E5%88%86%E6%94%AF%E5%92%8C%E5%90%88%E4%BD%B5">基本的分支和合併</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86">分支管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分支工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF">遠端分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-%E8%A1%8D%E5%90%88">衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh-tw/v2/Git-%E5%88%86%E6%94%AF-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A">伺服器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A">通訊協定</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E4%BD%88%E7%BD%B2-Git">在伺服器上佈署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%A2%E7%94%9F%E4%BD%A0%E7%9A%84-SSH-%E5%85%AC%E9%91%B0">產生你的 SSH 公鑰</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E8%A8%AD%E5%AE%9A%E4%BC%BA%E6%9C%8D%E5%99%A8">設定伺服器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%B8%B8%E9%A7%90%E7%A8%8B%E5%BC%8F">Git 常駐程式</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%AC%AC3%E6%96%B9-Git-%E8%A8%97%E7%AE%A1%E6%96%B9%E6%A1%88">第3方 Git 託管方案</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh-tw/v2/%E5%88%86%E6%95%A3%E5%BC%8F%E7%9A%84-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式的 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh-tw/v2/%E5%88%86%E6%95%A3%E5%BC%8F%E7%9A%84-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh-tw/v2/%E5%88%86%E6%95%A3%E5%BC%8F%E7%9A%84-Git-%E5%B0%8D%E5%B0%88%E6%A1%88%E9%80%B2%E8%A1%8C%E8%B2%A2%E7%8D%BB">對專案進行貢獻</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh-tw/v2/%E5%88%86%E6%95%A3%E5%BC%8F%E7%9A%84-Git-%E7%B6%AD%E8%AD%B7%E4%B8%80%E5%80%8B%E5%B0%88%E6%A1%88">維護一個專案</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh-tw/v2/%E5%88%86%E6%95%A3%E5%BC%8F%E7%9A%84-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh-tw/v2/GitHub-%E5%BB%BA%E7%AB%8B%E5%B8%B3%E6%88%B6%E5%8F%8A%E8%A8%AD%E5%AE%9A">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh-tw/v2/GitHub-%E5%BB%BA%E7%AB%8B%E5%B8%B3%E6%88%B6%E5%8F%8A%E8%A8%AD%E5%AE%9A">建立帳戶及設定</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh-tw/v2/GitHub-%E5%8F%83%E8%88%87%E4%B8%80%E5%80%8B%E5%B0%88%E6%A1%88">參與一個專案</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh-tw/v2/GitHub-%E7%B6%AD%E8%AD%B7%E5%B0%88%E6%A1%88">維護專案</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh-tw/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh-tw/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh-tw/v2/GitHub-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh-tw/v2/Git-Tools-Revision-Selection">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh-tw/v2/Git-Tools-Revision-Selection">Revision Selection</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh-tw/v2/Git-Tools-Interactive-Staging">Interactive Staging</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh-tw/v2/Git-Tools-Stashing-and-Cleaning">Stashing and Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh-tw/v2/Git-Tools-Signing-Your-Work">Signing Your Work</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh-tw/v2/Git-Tools-Searching">Searching</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/zh-tw/v2/Git-Tools-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/zh-tw/v2/Git-Tools-Reset-Demystified">Reset Demystified</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/zh-tw/v2/Git-Tools-Advanced-Merging">Advanced Merging</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/zh-tw/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/zh-tw/v2/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/zh-tw/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/zh-tw/v2/Git-Tools-Bundling">Bundling</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/zh-tw/v2/Git-Tools-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/zh-tw/v2/Git-Tools-Credential-Storage">Credential Storage</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/zh-tw/v2/Git-Tools-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh-tw/v2/Customizing-Git-Git-Configuration">Customizing Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh-tw/v2/Customizing-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh-tw/v2/Customizing-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh-tw/v2/Customizing-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/zh-tw/v2/Customizing-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/zh-tw/v2/Customizing-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh-tw/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh-tw/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh-tw/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh-tw/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/zh-tw/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/zh-tw/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/zh-tw/v2/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/zh-tw/v2/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/zh-tw/v2/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/zh-tw/v2/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/zh-tw/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/zh-tw/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/zh-tw/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/zh-tw/v2/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/zh-tw/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/zh-tw/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/zh-tw/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/zh-tw/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/zh-tw/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/zh-tw/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/zh-tw/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/zh-tw/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/zh-tw/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/zh-tw/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/zh-tw/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/zh-tw/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/zh-tw/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/zh-tw/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/zh-tw/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/zh-tw/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/zh-tw/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/zh-tw/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/zh-tw/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>4.8 伺服器上的 Git - GitLab</h1>
+  <div><a id="idp12222128"></a><h2>GitLab</h2>
+
+<p><a data-type="indexterm" data-primary="serving repositories" data-secondary="GitLab" id="idp12205440"></a><a data-type="indexterm" data-primary="GitLab" id="idp12206416"></a>
+GitWeb is pretty simplistic though.
+If you’re looking for a more modern, fully featured Git server, there are some several open source solutions out there that you can install instead.
+As GitLab is one of the more popular ones, we’ll cover installing and using it as an example.
+This is a bit more complex than the GitWeb option and likely requires more maintenance, but it is a much more fully featured option.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="安裝" id="idp12207776"><h3 id="安裝"><a href="#安裝">安裝</a></h3>
+
+<p>GitLab is a database-backed web application, so its installation is a bit more involved than some other git servers.
+Fortunately, this process is very well-documented and supported.</p>
+
+<p>There are a few methods you can pursue to install GitLab.
+To get something up and running quickly, you can download a virtual machine image or a one-click installer from <a href="https://bitnami.com/stack/gitlab"><em class="hyperlink">https://bitnami.com/stack/gitlab</em></a>, and tweak the configuration to match your particular environment.<a data-type="indexterm" data-primary="bitnami" id="idp12361712"></a>
+One nice touch Bitnami has included is the login screen (accessed by typing alt-→); it tells you the IP address and default username and password for the installed GitLab.</p>
+
+<figure id="bitnami"><div class="border-box"><img src="/book/en/v2/book/04-git-server/images/bitnami.png" alt="The Bitnami GitLab virtual machine login screen."></div>
+<figcaption>The Bitnami GitLab virtual machine login screen.</figcaption></figure><p>For anything else, follow the guidance in the GitLab Community Edition readme, which can be found at <a href="https://gitlab.com/gitlab-org/gitlab-ce/tree/master"><em class="hyperlink">https://gitlab.com/gitlab-org/gitlab-ce/tree/master</em></a>.
+There you’ll find assistance for installing GitLab using Chef recipes, a virtual machine on Digital Ocean, and RPM and DEB packages (which, as of this writing, are in beta).
+There’s also “unofficial” guidance on getting GitLab running with non-standard operating systems and databases, a fully-manual installation script, and many other topics.</p>
+</section><section data-type="sect2" data-pdf-bookmark="管理員權限" id="idp12177568"><h3 id="管理員權限"><a href="#管理員權限">管理員權限</a></h3>
+
+<p>GitLab’s administration interface is accessed over the web.
+Simply point your browser to the hostname or IP address where GitLab is installed, and log in as an admin user.
+The default username is <code>admin@local.host</code>, and the default password is <code>5iveL!fe</code> (which you will be prompted to change as soon as you enter it).
+Once logged in, click the “Admin area” icon in the menu at the top right.</p>
+
+<figure id="gitlab_menu"><div class="border-box"><img src="/book/en/v2/book/04-git-server/images/gitlab-menu.png" alt="The ``Admin area'' item in the GitLab menu."></div>
+<figcaption>The “Admin area” item in the GitLab menu.</figcaption></figure><section data-type="sect3" data-pdf-bookmark="使用者" id="idp12182432"><h4>使用者</h4>
+
+<p>Users in GitLab are accounts that correspond to people.
+User accounts don’t have a lot of complexity; mainly it’s a collection of personal information attached to login data.
+Each user account comes with a <strong>namespace</strong>, which is a logical grouping of projects that belong to that user.
+If the user <code>jane</code> had a project named <code>project</code>, that project’s url would be <a href="http://server/jane/project"><em class="hyperlink">http://server/jane/project</em></a>.</p>
+
+<figure id="gitlab_users"><div class="border-box"><img src="/book/en/v2/book/04-git-server/images/gitlab-users.png" alt="The GitLab user administration screen."></div>
+<figcaption>The GitLab user administration screen.</figcaption></figure><p>Removing a user can be done in two ways.
+“Blocking” a user prevents them from logging into the GitLab instance, but all of the data under that user’s namespace will be preserved, and commits signed with that user’s email address will still link back to their profile.</p>
+
+<p>“Destroying” a user, on the other hand, completely removes them from the database and filesystem.
+All projects and data in their namespace is removed, and any groups they own will also be removed.
+This is obviously a much more permanent and destructive action, and its uses are rare.</p>
+</section><section data-type="sect3" data-pdf-bookmark="群組" id="_gitlab_groups_section"><h4>群組</h4>
+
+<p>A GitLab group is an assemblage of projects, along with data about how users can access those projects.
+Each group has a project namespace (the same way that users do), so if the group <code>training</code> has a project <code>materials</code>, its url would be <a href="http://server/training/materials"><em class="hyperlink">http://server/training/materials</em></a>.</p>
+
+<figure id="gitlab_groups"><div class="border-box"><img src="/book/en/v2/book/04-git-server/images/gitlab-groups.png" alt="The GitLab group administration screen."></div>
+<figcaption>The GitLab group administration screen.</figcaption></figure><p>Each group is associated with a number of users, each of which has a level of permissions for the group’s projects and the group itself.
+These range from “Guest” (issues and chat only) to “Owner” (full control of the group, its members, and its projects).
+The types of permissions are too numerous to list here, but GitLab has a helpful link on the administration screen.</p>
+</section><section data-type="sect3" data-pdf-bookmark="專案" id="idp12405184"><h4>專案</h4>
+
+<p>A GitLab project roughly corresponds to a single git repository.
+Every project belongs to a single namespace, either a user or a group.
+If the project belongs to a user, the owner of the project has direct control over who has access to the project; if the project belongs to a group, the group’s user-level permissions will also take effect.</p>
+
+<p>Every project also has a visibility level, which controls who has read access to that project’s pages and repository.
+If a project is <em>Private</em>, the project’s owner must explicitly grant access to specific users.
+An <em>Internal</em> project is visible to any logged-in user, and a <em>Public</em> project is visible to anyone.
+Note that this controls both git “fetch” access as well as access to the web UI for that project.</p>
+</section><section data-type="sect3" data-pdf-bookmark="掛句" id="idp12409104"><h4>掛句</h4>
+
+<p>GitLab includes support for hooks, both at a project or system level.
+For either of these, the GitLab server will perform an HTTP POST with some descriptive JSON whenever relevant events occur.
+This is a great way to connect your git repositories and GitLab instance to the rest of your development automation, such as CI servers, chat rooms, or deployment tools.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="基本使用" id="idp12411072"><h3 id="基本使用"><a href="#基本使用">基本使用</a></h3>
+
+<p>The first thing you’ll want to do with GitLab is create a new project.
+This is accomplished by clicking the “+” icon on the toolbar.
+You’ll be asked for the project’s name, which namespace it should belong to, and what its visibility level should be.
+Most of what you specify here isn’t permanent, and can be re-adjusted later through the settings interface.
+Click “Create Project”, and you’re done.</p>
+
+<p>Once the project exists, you’ll probably want to connect it with a local Git repository.
+Each project is accessible over HTTPS or SSH, either of which can be used to configure a Git remote.
+The URLs are visible at the top of the project’s home page.
+For an existing local repository, this command will create a remote named <code>gitlab</code> to the hosted location:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add gitlab https://server/namespace/project.git</pre>
+
+<p>If you don’t have a local copy of the repository, you can simply do this:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://server/namespace/project.git</pre>
+
+<p>The web UI provides access to several useful views of the repository itself.
+Each project’s home page shows recent activity, and links along the top will lead you to views of the project’s files and commit log.</p>
+</section><section data-type="sect2" data-pdf-bookmark="協同工作" id="idp12416320"><h3 id="協同工作"><a href="#協同工作">協同工作</a></h3>
+
+<p>The simplest way of working together on a GitLab project is by giving another user direct push access to the git repository.
+You can add a user to a project by going to the “Members” section of that project’s settings, and associating the new user with an access level (the different access levels are discussed a bit in <a data-type="xref" href="ch00/_gitlab_groups_section">“群組”</a>).
+By giving a user an access level of “Developer” or above, that user can push commits and branches directly to the repository with impunity.</p>
+
+<p>Another, more decoupled way of collaboration is by using merge requests.
+This feature enables any user that can see a project to contribute to it in a controlled way.
+Users with direct access can simply create a branch, push commits to it, and open a merge request from their branch back into <code>master</code> or any other branch.
+Users who don’t have push permissions for a repository can “fork” it (create their own copy), push commits to <em>that</em> copy, and open a merge request from their fork back to the main project.
+This model allows the owner to be in full control of what goes into the repository and when, while allowing contributions from untrusted users.</p>
+
+<p>Merge requests and issues are the main units of long-lived discussion in GitLab.
+Each merge request allows a line-by-line discussion of the proposed change (which supports a lightweight kind of code review), as well as a general overall discussion thread.
+Both can be assigned to users, or organized into milestones.</p>
+
+<p>This section is focused mainly on the Git-related features of GitLab, but as a mature project, it provides many other features to help your team work together, such as project wikis and system maintenance tools.
+One benefit to GitLab is that, once the server is set up and running, you’ll rarely need to tweak a configuration file or access the server via SSH; most administration and general usage can be accomplished through the in-browser interface.</p>
+</section><div id="nav"><a href="/book/zh-tw/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">prev</a> | <a href="/book/zh-tw/v2/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%AC%AC3%E6%96%B9-Git-%E8%A8%97%E7%AE%A1%E6%96%B9%E6%A1%88">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

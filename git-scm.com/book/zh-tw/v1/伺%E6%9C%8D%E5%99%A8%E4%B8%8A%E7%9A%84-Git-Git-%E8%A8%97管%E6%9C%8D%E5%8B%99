@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":131,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git 託管服務</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B">開始</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">關於版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E7%9A%84%E7%B0%A1%E5%8F%B2">Git 的簡史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E5%9F%BA%E7%A4%8E%E8%A6%81%E9%BB%9E">Git 基礎要點</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit">安裝Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9AGit">初次設定Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%8F%96%E5%BE%97%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6">取得說明文件</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E">Git 基礎</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97Git%E5%84%B2%E5%AD%98%E5%BA%AB">取得Git儲存庫</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E4%BA%A4%E6%9B%B4%E6%96%B0%E5%88%B0%E5%84%B2%E5%AD%98%E5%BA%AB">提交更新到儲存庫</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%AA%A2%E8%A6%96%E6%8F%90%E4%BA%A4%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%A8%98%E9%8C%84">檢視提交的歷史記錄</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F">復原</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">與遠端協同工作</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%A8%99%E7%B1%A4">標籤</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E7%A4%BA%E5%92%8C%E6%8A%80%E5%B7%A7">提示和技巧</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E4%BD%95%E8%AC%82%E5%88%86%E6%94%AF">何謂分支</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E8%88%87%E5%90%88%E4%BD%B5">分支的新建與合併</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%AE%A1%E7%90%86">分支的管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%A9%E7%94%A8%E5%88%86%E6%94%AF%E9%80%B2%E8%A1%8C%E9%96%8B%E7%99%BC%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">利用分支進行開發的工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF">遠端分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88">分支的衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git">伺服器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%94%E8%AD%B0">協議</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2-Git">在伺服器上部署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0">生成 SSH 公開金鑰</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%9E%B6%E8%A8%AD%E4%BC%BA%E6%9C%8D%E5%99%A8">架設伺服器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%85%AC%E5%85%B1%E8%A8%AA%E5%95%8F">公共訪問</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E8%AD%B7%E9%80%B2%E7%A8%8B">Git 守護進程</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E8%A8%97%E7%AE%A1%E6%9C%8D%E5%8B%99">Git 託管服務</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git">分散式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E7%82%BA%E5%B0%88%E6%A1%88%E4%BD%9C%E8%B2%A2%E7%8D%BB">為專案作貢獻</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86">專案的管理</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7">Git 工具</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%81%B8%E6%93%87%E4%BF%AE%E8%A8%82%E7%89%88%E6%9C%AC">選擇修訂版本</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%9A%AB%E5%AD%98">互動式暫存</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing">儲藏 (Stashing)</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%AF%AB%E6%AD%B7%E5%8F%B2">重寫歷史</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E5%81%9A-Debug">使用 Git 做 Debug</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B5%84-Submodules">子模組 (Submodules)</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%B9%E5%90%88%E4%BD%B5">子樹合併</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96">Git 客製化</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E9%85%8D%E7%BD%AE">Git 配置</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%B1%AC%E6%80%A7">Git 屬性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%BC%B7%E5%88%B6%E7%AD%96%E7%95%A5%E5%AF%A6%E4%BE%8B">Git 強制策略實例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1">Git 與其他系統</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-Git-%E8%88%87-Subversion">Git 與 Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E9%81%B7%E7%A7%BB%E5%88%B0-Git">遷移到 Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86">Git 內部原理</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%A4%E5%91%BD%E4%BB%A4-Plumbing-%E5%92%8C%E9%AB%98%E5%B1%A4%E5%91%BD%E4%BB%A4-Porcelain">底層命令 (Plumbing) 和高層命令 (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E7%89%A9%E4%BB%B6">Git 物件</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%82%B3%E8%BC%B8%E5%8D%94%E8%AD%B0">傳輸協議</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B6%AD%E8%AD%B7%E5%8F%8A%E8%B3%87%E6%96%99%E5%BE%A9%E5%8E%9F">維護及資料復原</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>4.10 伺服器上的 Git - Git 託管服務</h1>
+  <div><h2>Git 託管服務</h2>
+
+<p>如果不想經歷自己架設 Git 伺服器的麻煩，網路上有幾個專業的倉庫託管服務可供選擇。這樣做有幾大優點：託管帳戶的建立通常比較省時，方便專案的啟動，而且不涉及伺服器的維護和監控。即使內部創建並運行著自己的伺服器，同時為開源項目提供一個公共託管網站還是有好處的 — 讓開源社區更方便地找到該專案，並給予幫助。</p>
+
+<p>目前，可供選擇的託管服務數量繁多，各有利弊。在 Git 官方 wiki 上的 Githosting 頁面有一個最新的託管服務清單：</p>
+
+<pre><code>https://git.wiki.kernel.org/index.php/GitHosting
+</code></pre>
+
+<p>由於本書無法全部一一介紹，而本人（譯注：指本書作者 Scott Chacon。）剛好在其中一家公司工作，所以接下來我們將會介紹如何在 GitHub 上建立新帳戶並啟動專案。至於其他託管服務大體也是這麼一個過程，基本的想法都是差不多的。</p>
+
+<p>GitHub 是目前為止最大的開源 Git 託管服務，並且還是少數同時提供公共代碼和私有代碼託管服務的網站之一，所以你可以在上面同時保存開源和商業代碼。事實上，本書就是放在 GitHub 上合作編著的。（譯注：本書的翻譯也是放在 GitHub 上廣泛協作的。）</p>
+
+<h3 id="GitHub"><a href="#GitHub">GitHub</a></h3>
+
+<p>GitHub 和大多數的代碼託管網站在處理專案命名空間的方式上略有不同。GitHub 的設計更側重於用戶，而不是完全基於專案。也就是說，如果我在 GitHub 上託管一個名為 <code>grit</code> 的項目的話，它的位址不會是 <code>github.com/grit</code>，而是按在用戶底下 <code>github.com/shacon/grit</code> （譯注：本書作者 Scott Chacon 在 GitHub 上的用戶名是 <code>shacon</code>。）。不存在所謂某個項目的官方版本，所以假如第一作者放棄了某個項目，它可以無縫轉移到其它用戶的名下。</p>
+
+<p>GitHub 同時也是一個向使用私有倉庫的用戶收取費用的商業公司，但任何人都可以方便快捷地申請到一個免費帳戶，並在上面託管數量不限的開源項目。接下來我們快速介紹一下 GitHub 的基本使用。</p>
+
+<h3 id="建立新帳戶"><a href="#建立新帳戶">建立新帳戶</a></h3>
+
+<p>首先註冊一個免費帳戶。訪問 &quot;Plans and pricing&quot; 頁面 <code>https://github.com/pricing</code> 並點擊 Free acount 裡的 Sign Up 按鈕（見圖 4-2），進入註冊頁面。</p>
+
+<p><center><img src="/figures/18333fig0402-tn.png"></center><br/>
+圖 4-2. GitHub 服務簡介頁面</p>
+
+<p>選擇一個系統中尚未使用的用戶名，提供一個與之相關聯的電郵位址，並輸入密碼（見圖 4-3）：</p>
+
+<p><center><img src="/figures/18333fig0403-tn.png"></center><br/>
+圖 4-3. GitHub 用戶註冊表單</p>
+
+<p>如果方便，現在就可以提供你的 SSH 公開金鑰。我們在前文的&quot;小型安裝&quot; 一節介紹過生成新公開金鑰的方法。把新生成的公開金鑰複製粘貼到 SSH Public Key 文字方塊中即可。要是對生成公開金鑰的步驟不太清楚，也可以點擊 &quot;explain ssh keys&quot; 連結，會顯示各個主流作業系統上完成該步驟的介紹。
+點擊 &quot;I agree，sign me up&quot; 按鈕完成使用者註冊，並轉到該使用者的 dashboard 頁面（見圖 4-4）:</p>
+
+<p><center><img src="/figures/18333fig0404-tn.png"></center><br/>
+圖 4-4. GitHub 的用戶面板</p>
+
+<p>接下來就可以建立新倉庫了。</p>
+
+<h3 id="建立新倉庫"><a href="#建立新倉庫">建立新倉庫</a></h3>
+
+<p>點擊用戶面板上倉庫旁邊的 &quot;create a new one&quot; 連結，顯示 Create a New Repository 的表單（見圖 4-5）：</p>
+
+<p><center><img src="/figures/18333fig0405-tn.png"></center><br/>
+圖 4-5. 在 GitHub 上建立新倉庫</p>
+
+<p>當然，項目名稱是必不可少的，此外也可以適當描述一下專案的情況或者給出官方網站的位址。然後點擊 &quot;Create Repository&quot; 按鈕，新倉庫就建立起來了（見圖 4-6）：</p>
+
+<p><center><img src="/figures/18333fig0406-tn.png"></center><br/>
+圖 4-6. GitHub 上各個專案的概要資訊</p>
+
+<p>由於尚未提交代碼，點擊專案位址後 GitHub 會顯示一個簡要的指南，告訴你如何新建一個專案並推送上來，如何從現有項目推送，以及如何從一個公共的 Subversion 倉庫導入項目（見圖 4-7）：</p>
+
+<p><center><img src="/figures/18333fig0407-tn.png"></center><br/>
+圖 4-7. 新倉庫指南</p>
+
+<p>該指南和本書前文介紹的類似，對於新的專案，需要先在本地初始化為 Git 專案，添加要管理的檔並作首次提交：</p>
+
+<pre><code>$ git init
+$ git add .
+$ git commit -m &#39;initial commit&#39;
+</code></pre>
+
+<p>然後在這個本地倉庫內把 GitHub 添加為遠端倉庫，並推送 master 分支上來：</p>
+
+<pre><code>$ git remote add origin git@github.com:testinguser/iphone_project.git
+$ git push origin master
+</code></pre>
+
+<p>現在該項目就託管在 GitHub 上了。你可以把它的 URL 分享給每位對此項目感興趣的人。本例的 URL 是 <code>http://github.com/testinguser/iphone_project</code>。而在專案頁面的摘要部分，你會發現有兩個 Git URL 位址（見圖 4-8）：</p>
+
+<p><center><img src="/figures/18333fig0408-tn.png"></center><br/>
+圖 4-8. 項目摘要中的公共 URL 和私有 URL</p>
+
+<p>Public Clone URL 是一個公開的，唯讀的 Git URL，任何人都可以通過它克隆該專案。可以隨意散播這個 URL，比如發佈到個人網站之類的地方等等。</p>
+
+<p>Your Clone URL 是一個基於 SSH 協議的可讀可寫 URL，只有使用與上傳的 SSH 公開金鑰對應的金鑰來連接時，才能通過它進行讀寫操作。其他使用者訪問該專案頁面時只能看到之前那個公共的 URL，看不到這個私有的 URL。</p>
+
+<h3 id="從-Subversion-導入項目"><a href="#從-Subversion-導入項目">從 Subversion 導入項目</a></h3>
+
+<p>如果想把某個公共 Subversion 項目導入 Git，GitHub 可以幫忙。在指南的最後有一個指嚮導入 Subversion 頁面的連結。點擊它會看到一個表單，包含有關導入流程的資訊以及一個用來粘貼公共 Subversion 項目連接的文字方塊（見圖 4-9）：</p>
+
+<p><center><img src="/figures/18333fig0409-tn.png"></center><br/>
+圖 4-9. Subversion 導入介面</p>
+
+<p>如果專案很大，採用非標準結構，或者是私有的，那就無法借助該工具實現導入。到第 7 章，我們會介紹如何手工導入複雜工程的具體方法。</p>
+
+<h3 id="添加協作開發者"><a href="#添加協作開發者">添加協作開發者</a></h3>
+
+<p>現在把團隊裡的其他人也加進來。如果 John，Josie 和 Jessica 都在 GitHub 註冊了帳戶，要賦予他們對該倉庫的推送許可權，可以把他們加為專案協作者。這樣他們就可以通過各自的公開金鑰訪問我的這個倉庫了。</p>
+
+<p>點擊專案頁面上方的 &quot;edit&quot; 按鈕或者頂部的 Admin 標籤，進入該專案的管理頁面（見圖 4-10）：</p>
+
+<p><center><img src="/figures/18333fig0410-tn.png"></center><br/>
+圖 4-10. GitHub 的專案管理頁面</p>
+
+<p>為了給另一個用戶添加項目的寫許可權，點擊 &quot;Add another collaborator&quot; 連結，出現一個用於輸入用戶名的表單。在輸入的同時，它會自動跳出一個符合條件的候選名單。找到正確用戶名之後，點 Add 按鈕，把該使用者設為專案協作者（見圖 4-11）：</p>
+
+<p><center><img src="/figures/18333fig0411-tn.png"></center><br/>
+圖 4-11. 為專案添加協作者</p>
+
+<p>添加完協作者之後，就可以在 Repository Collaborators 區域看到他們的名單（見圖 4-12）：</p>
+
+<p><center><img src="/figures/18333fig0412-tn.png"></center><br/>
+圖 4-12. 專案協作者名單</p>
+
+<p>如果要取消某人的訪問權，點擊 &quot;revoke&quot; 即可取消他的推送許可權。對於將來的專案，你可以從現有專案複製協作者名單，或者直接借用協作者群組。</p>
+
+<h3 id="專案頁面"><a href="#專案頁面">專案頁面</a></h3>
+
+<p>在推送或從 Subversion 導入項目之後，你會看到一個類似圖 4-13 的項目主頁：</p>
+
+<p><center><img src="/figures/18333fig0413-tn.png"></center><br/>
+圖 4-13. GitHub 上的項目主頁</p>
+
+<p>別人訪問你的專案時看到的就是這個頁面。它有若干導航標籤，Commits 標籤用於顯示提交歷史，最新的提交位於最上方，這和 <code>git log</code> 命令的輸出類似。Network 標籤展示所有派生了該專案並做出貢獻的用戶的關係圖譜。Downloads 標籤允許你上傳項目的二進位檔案，提供下載該項目各個版本的 tar/zip 包。Wiki 標籤提供了一個用於撰寫文檔或其他專案相關資訊的 wiki 網站。Graphs 標籤包含了一些視覺化的專案資訊與資料。預設打開的 Source 標籤頁面，則列出了該專案的目錄結構和概要資訊，並在下方自動展示 README 檔的內容（如果該檔存在的話），此外還會顯示最近一次提交的相關資訊。</p>
+
+<h3 id="派生項目"><a href="#派生項目">派生項目</a></h3>
+
+<p>如果要為一個自己沒有推送許可權的項目貢獻代碼，GitHub 鼓勵使用派生（fork）。到那個感興趣的項目主頁上，點擊頁面上方的 &quot;fork&quot; 按鈕，GitHub 就會為你複製一份該項目的副本到你的倉庫中，這樣你就可以向自己的這個副本推送資料了。</p>
+
+<p>採取這種辦法的好處是，專案擁有者不必忙於應付賦予他人推送許可權的工作。隨便誰都可以通過派生得到一個專案副本並在其中展開工作，事後只需要專案維護者將這些副本倉庫加為遠端倉庫，然後提取更新合併即可。</p>
+
+<p>要派生一個專案，到原始專案的頁面（本例中是 mojombo/chronic）點擊 &quot;fork&quot; 按鈕（見圖 4-14）：</p>
+
+<p><center><img src="/figures/18333fig0414-tn.png"></center><br/>
+圖 4-14. 點擊 &quot;fork&quot; 按鈕獲得任意專案的可寫副本</p>
+
+<p>幾秒鐘之後，你將進入新建的專案頁面，會顯示該專案派生自哪一個項目（見圖 4-15）：</p>
+
+<p><center><img src="/figures/18333fig0415-tn.png"></center><br/>
+圖 4-15. 派生後得到的項目副本</p>
+
+<h3 id="GitHub-小結"><a href="#GitHub-小結">GitHub 小結</a></h3>
+
+<p>關於 GitHub 就先介紹這麼多，能夠快速達成這些事情非常重要（譯注：門檻的降低和完成基本任務的簡單高效，對於推動開源專案的協作發展有著舉足輕重的意義。）。短短幾分鐘內，你就能創建一個新帳戶，添加一個專案並開始推送。如果專案是開源的，整個龐大的開發者社區都可以立即訪問它，提供各式各樣的幫助和貢獻。最起碼，這也是一種 Git 新手立即體驗嘗試 Git 的捷徑。</p>
+
+<div id="nav"><a href="/book/zh-tw/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E8%AD%B7%E9%80%B2%E7%A8%8B">prev</a> | <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%B5%90">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

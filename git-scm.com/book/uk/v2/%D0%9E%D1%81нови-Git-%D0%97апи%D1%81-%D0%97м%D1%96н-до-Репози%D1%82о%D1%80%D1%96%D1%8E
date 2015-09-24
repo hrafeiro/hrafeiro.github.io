@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":8,"applicationTime":534,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Запис Змін до Репозиторію</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/uk/2015-09-09-263af/progit-uk.822.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/uk/2015-09-09-263af/progit-uk.822.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/uk/2015-09-09-263af/progit-uk.822.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9F%D1%80%D0%BE-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8E-%D0%B2%D0%B5%D1%80%D1%81%D1%96%D0%B9">Вступ</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9F%D1%80%D0%BE-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8E-%D0%B2%D0%B5%D1%80%D1%81%D1%96%D0%B9">Про систему контролю версій</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9A%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%B0-%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F-Git">Коротка історія Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git">Основи Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-Git%2C-%D0%B7%D0%B0%D0%B7%D0%B2%D0%B8%D1%87%D0%B0%D0%B9%2C-%D1%82%D1%96%D0%BB%D1%8C%D0%BA%D0%B8-%D0%B4%D0%BE%D0%B4%D0%B0%D1%94-%D0%B4%D0%B0%D0%BD%D1%96">Git, зазвичай, тільки додає дані</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%A2%D1%80%D0%B8-%D1%81%D1%82%D0%B0%D0%BD%D0%B8">Три стани</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B8%D0%B9-%D1%80%D1%8F%D0%B4%D0%BE%D0%BA">Командний рядок</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%86%D0%BD%D1%81%D1%82%D0%B0%D0%BB%D1%8F%D1%86%D1%96%D1%8F-Git">Інсталяція Git</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9F%D0%BE%D1%87%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D0%B5-%D0%BD%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-Git">Початкове налаштування Git</a>
+          </li>
+          <li>
+            1.9
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%9E%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B8">Отримання допомоги</a>
+          </li>
+          <li>
+            1.10
+            <a href="/book/uk/v2/%D0%92%D1%81%D1%82%D1%83%D0%BF-%D0%92%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%BA">Висновок</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%A1%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D1%96%D1%82%D0%BE%D1%80%D1%96%D1%8F">Основи Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%A1%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D1%96%D1%82%D0%BE%D1%80%D1%96%D1%8F">Створення Git-репозіторія</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81-%D0%97%D0%BC%D1%96%D0%BD-%D0%B4%D0%BE-%D0%A0%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%8E">Запис Змін до Репозиторію</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BB%D1%8F%D0%B4-%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97-%D0%A4%D1%96%D0%BA%D1%81%D0%B0%D1%86%D1%96%D0%B9">Перегляд Історії Фіксацій</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%A1%D0%BA%D0%B0%D1%81%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%A0%D0%B5%D1%87%D0%B5%D0%B9">Скасування Речей</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%92%D0%B7%D0%B0%D1%94%D0%BC%D0%BE%D0%B4%D1%96%D1%8F-%D0%B7-%D0%92%D1%96%D0%B4%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%BC%D0%B8-%D0%A1%D1%85%D0%BE%D0%B2%D0%B8%D1%89%D0%B0%D0%BC%D0%B8">Взаємодія з Віддаленими Сховищами</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%9F%D0%BE%D0%B7%D0%BD%D0%B0%D1%87%D0%BA%D0%B8">Позначки</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D1%96%D0%BC%D0%B8-Git">Псевдоніми Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%9F%D1%96%D0%B4%D1%81%D1%83%D0%BC%D0%BE%D0%BA">Підсумок</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-%D0%93%D1%96%D0%BB%D0%BA%D0%B8-%D1%83-%D0%9A%D1%96%D0%BB%D1%8C%D0%BA%D0%BE%D1%85-%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Галуження в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-%D0%93%D1%96%D0%BB%D0%BA%D0%B8-%D1%83-%D0%9A%D1%96%D0%BB%D1%8C%D0%BA%D0%BE%D1%85-%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Гілки у Кількох Словах</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D1%82%D0%B0-%D0%97%D0%BB%D0%B8%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">Основи Галуження та Зливання</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F-%D0%B3%D1%96%D0%BB%D0%BA%D0%B0%D0%BC%D0%B8">Управління гілками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-%D0%9F%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%B8-%D0%A0%D0%BE%D0%B1%D0%BE%D1%82%D0%B8-%D0%B7-%D0%93%D1%96%D0%BB%D0%BA%D0%B0%D0%BC%D0%B8">Процеси Роботи з Гілками</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-%D0%92%D1%96%D0%B4%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D1%96-%D0%93%D1%96%D0%BB%D0%BA%D0%B8">Віддалені Гілки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/uk/v2/%D0%93%D0%B0%D0%BB%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B2-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8">Git на Сервері</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8">Протоколи</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%9E%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D0%BD%D0%BD%D1%8F-Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96">Отримання Git на Сервері</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%8F-%D0%92%D0%B0%D1%88%D0%BE%D0%B3%D0%BE-%D0%9F%D1%83%D0%B1%D0%BB%D1%96%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0-SSH">Генерація Вашого Публічного ключа SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%9D%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%83">Налаштування Серверу</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%94%D0%B5%D0%BC%D0%BE%D0%BD-Git">Демон Git</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BD%D0%B8%D0%B9-HTTP">Розумний HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%92%D0%B0%D1%80%D1%96%D0%B0%D0%BD%D1%82%D0%B8-%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE-%D0%A5%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3%D1%83">Варіанти Стороннього Хостингу</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/uk/v2/Git-%D0%BD%D0%B0-%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%96-%D0%9F%D1%96%D0%B4%D1%81%D1%83%D0%BC%D0%BE%D0%BA">Підсумок</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/uk/v2/Distributed-Git-Distributed-Workflows">Distributed Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/uk/v2/Distributed-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/uk/v2/Distributed-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/uk/v2/Distributed-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/uk/v2/Distributed-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/uk/v2/GitHub-%D0%A1%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-%D1%82%D0%B0-%D0%9D%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%9E%D0%B1%D0%BB%D1%96%D0%BA%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%83">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/uk/v2/GitHub-%D0%A1%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-%D1%82%D0%B0-%D0%9D%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%9E%D0%B1%D0%BB%D1%96%D0%BA%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%83">Створення та Налаштування Облікового Запису</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/uk/v2/GitHub-%D0%AF%D0%BA-%D0%97%D1%80%D0%BE%D0%B1%D0%B8%D1%82%D0%B8-%D0%92%D0%BD%D0%B5%D1%81%D0%BE%D0%BA-%D0%B4%D0%BE-%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83">Як Зробити Внесок до Проекту</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/uk/v2/GitHub-%D0%A1%D1%83%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%B6%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83">Супроводжування Проекту</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/uk/v2/GitHub-%D0%9A%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%94%D1%8E">Керування організацією</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/uk/v2/GitHub-%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-GitHub">Скриптування GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/uk/v2/GitHub-%D0%9F%D1%96%D0%B4%D1%81%D1%83%D0%BC%D0%BE%D0%BA">Підсумок</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/uk/v2/Git-Tools-Revision-Selection">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/uk/v2/Git-Tools-Revision-Selection">Revision Selection</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/uk/v2/Git-Tools-Interactive-Staging">Interactive Staging</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/uk/v2/Git-Tools-Stashing-and-Cleaning">Stashing and Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/uk/v2/Git-Tools-Signing-Your-Work">Signing Your Work</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/uk/v2/Git-Tools-Searching">Searching</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/uk/v2/Git-Tools-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/uk/v2/Git-Tools-Reset-Demystified">Reset Demystified</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/uk/v2/Git-Tools-Advanced-Merging">Advanced Merging</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/uk/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/uk/v2/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/uk/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/uk/v2/Git-Tools-Bundling">Bundling</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/uk/v2/Git-Tools-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/uk/v2/Git-Tools-Credential-Storage">Credential Storage</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/uk/v2/Git-Tools-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/uk/v2/Customizing-Git-Git-Configuration">Customizing Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/uk/v2/Customizing-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/uk/v2/Customizing-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/uk/v2/Customizing-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/uk/v2/Customizing-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/uk/v2/Customizing-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/uk/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/uk/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/uk/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/uk/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/uk/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/uk/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/uk/v2/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/uk/v2/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/uk/v2/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/uk/v2/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/uk/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/uk/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/uk/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/uk/v2/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/uk/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/uk/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/uk/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/uk/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/uk/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/uk/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/uk/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/uk/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/uk/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/uk/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/uk/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/uk/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/uk/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/uk/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/uk/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/uk/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/uk/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/uk/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/uk/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/uk/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/uk/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/uk/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/uk/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/uk/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/uk/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>2.2 Основи Git - Запис Змін до Репозиторію</h1>
+  <div><a id="zapis-zmin-do-repozitoriyu-yL7TP"></a><h2>Запис Змін до Репозиторію</h2>
+
+<p>У вас є справжній Git репозиторій та робоча тека з файлами цього проекту
+Вам треба зробити деякі зміни та зафіксувати їх у вашому репозиторії кожного разу, коли ваш проект набуває стану, що ви бажаєте зберегти.</p>
+
+<p>Пам’ятайте, що кожен файл вашої робочої теки може бути в одному з двох станів: контрольований (tracked) чи неконтрольований (untracked).
+Контрольовані файли – це файли, що були в останньому знімку. Вони можуть бути не зміненими, зміненими або доданими.
+Неконтрольовані файли це все інше – будь-які файли у вашій робочій теці, що не були у вашому останньому знімку та не існують у вашій області додавання.
+Якщо ви щойно зробили клон репозиторію, усі ваші файли контрольовані та не змінені, адже ви щойно їх отримали та не редагували нічого.</p>
+
+<p>По мірі редагування файлів, Git бачить, що вони змінені, адже ви їх змінили після останньої фіксації.
+Ви додаєте ці змінені фали та потім фіксуєте всі додані зміни, та цей цикл повторюється.</p>
+
+<figure id="id-gVLcp"><img src="/book/en/v2/book/02-git-basics/images/lifecycle.png" alt="Цикл життя статусу ваших файлів."><figcaption><span class="label">Figure 2-1. </span>The lifecycle of the status of your files.</figcaption></figure><section data-type="sect2" id="_checking_status"><h3 id="Перевірка-Статусу-Ваших-Файлів"><a href="#Перевірка-Статусу-Ваших-Файлів">Перевірка Статусу Ваших Файлів</a></h3>
+
+<p>Щоб дізнатись, в якому стані ваші файли, варто скористатись командою <code>git status</code>.<a data-type="indexterm" data-primary="git commands" data-secondary="status" id="id-pBAs8"></a>
+Якщо ви виконаєте цю команду відразу після клонування, ви маєте побачити таке:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">nothing to commit, working directory clean</code>
+</pre>
+
+<p>Це означає, що ваша робоча тека чиста – іншими словами, у вас нема контрольованих та змінених файлів.
+Git також не бачить неконтрольованих файлів, інакше він би їх тут вказав.
+Нарешті, ця команда показує вам, в якій ви зараз гілці та інформує вас про те, що вона не розбіглася з такою ж гілкою на сервері.
+Поки що, ця гілка завжди буде “master”, така гілка створюється автоматично. Це нас не обходить у цьому розділі.
+<a data-type="xref" href="1-git-branching/_git_branching">Галуження в Git</a> розповідає про гілки та посилання докладно.</p>
+
+<p>Припустимо ви додали новий файл до вашого проекту, простий файл README.
+Якщо файл раніше не існував, і ви виконаєте <code>git status</code>, ви побачите ваш неконтрольований файл так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'My Project'</code> &gt; README
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Untracked files:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to include in what will be committed)</code>
+
+<code class="go">    README</code>
+
+<code class="go">nothing added to commit but untracked files present (use "git add" to track)</code>
+</pre>
+
+<p>Ви можете бачити, що ваш новий README файл неконтрольований, адже він під заголовком “Untracked files” у статусі.
+Неконтрольований (untracked) означає, що Git бачить файл, якого нема у попередньому знімку (фіксації, commit). Git не почне включати його до ваших фіксованих знімків доки ви явно не скажете йому це зробити.
+Так зроблено щоб ви випадково не почали включати генеровані бінарні файли чи інші файли, які ви не збирались включати.
+Ви все ж таки хочете почати включати README, отже давайте почнемо контролювати файл.</p>
+</section><section data-type="sect2" id="_tracking_files"><h3 id="Контролювання-Нових-Файлів"><a href="#Контролювання-Нових-Файлів">Контролювання Нових Файлів</a></h3>
+
+<p>Щоб почати контролювати новий файл, вам треба використати команду <code>git add</code>.<a data-type="indexterm" data-primary="git commands" data-secondary="add" id="id-r6Lhw"></a>
+Почати контролювати файл README можна так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add README
+</pre>
+
+<p>Якщо ви знову виконаєте команду status, ви побачите, що ваш файл README тепер контролюється та готовий до фіксації:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+</pre>
+
+<p>Ви можете зрозуміти, що цей файл доданий, бо він під заголовком “Changes to be committed”.
+Якщо ви зафіксуєте зміни зараз, версія файлу на момент коли ви виконали <code>git add</code> буде збережена в знімку в історії.
+Ви можете пригадати, що коли ви виконали <code>git init</code> раніше, ви потім виконали <code>git add (файли)</code> – це було зроблено щоб розпочати контролювати файли у вашій теці.<a data-type="indexterm" data-primary="git commands" data-secondary="init" id="id-zpdCN"></a><a data-type="indexterm" data-primary="git commands" data-secondary="add" id="id-QpnS6"></a>
+Команда <code>git add</code> приймає шлях файлу або теки. Якщо це тека, команда додає усі вайли в цій теці рекурсивно.</p>
+</section><section data-type="sect2" id="dodavannya-zminenih-fajliv-BZkcq"><h3 id="Додавання-Змінених-Файлів"><a href="#Додавання-Змінених-Файлів">Додавання Змінених Файлів</a></h3>
+
+<p>Давайте змінимо файл, що вже контролюється.
+Якщо ви зміните файл “CONTRIBUTING.md”, що вже контролюється, та потім виконаєте команду <code>git status</code> знову, ви отримаєте щось на кшталт:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Файл “CONTRIBUTING.md” з’явився під секцією названою “Changed but not staged for commit” – це означає, що контрольований файл був редагований у робочій теці проте його не додали.
+Щоб додати його, виконайте команду <code>git add</code>. <code>git add</code> багатоцільова команда – її слід використовувати щоб почати контролювати нові файли, щоб додавати файли, та для інших речей, наприклад позначання конфліктних файлів як розв’язаних.  Про неї краще думати “Додай цей зміст до наступної фіксації” а не “додай цей файл до проекту”.<a data-type="indexterm" data-primary="git commands" data-secondary="add" id="id-BZxCb"></a>
+Давайте виконаємо <code>git add</code> зараз для додавання файлу “CONTRIBUTING.md”, а потім знову виконаємо <code>git status</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Обидва файли додані та будуть включені до наступної фіксації.
+Припустімо, що саме зараз ви пригадали маленьку зміну, яку ви хочете зробити в <code>CONTRIBUTING.md</code> до того, як зафіксувати його.
+Ви знову його відкриваєте та редагуєте, і ви готові зробити фіксацію.
+Втім, давайте ще раз виконаємо <code>git status</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> vim CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+<code class="go">    modified:   CONTRIBUTING.md</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Якого біса?
+Тепер <code>CONTRIBUTING.md</code> є як в доданих, <em>так і в</em> не доданих.
+Як таке можливо?
+Виявляється, що Git додає файл саме таким, яким він був, коли ви виконали команду <code>git add</code>.
+Якщо ви зараз зафіксуєте, в історії збережеться версія <code>CONTRIBUTING.md</code>, яка була коли ви востаннє викликали <code>git add</code>, а не поточна версія файлу з вашої робочої теки, коли ви виконаєте <code>git commit</code>.
+Якщо ви зміните файл після того, як виконаєте <code>git add</code>, вам треба знову виконати <code>git add</code> щоб додати останню версію файлу:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+</section><section data-type="sect2" id="korotkij-status-KjbFY"><h3 id="Короткий-Статус"><a href="#Короткий-Статус">Короткий Статус</a></h3>
+
+<p>Хоча вивід <code>git status</code> доволі вичерпний, він також дещо довгий. Git також пропонує опцію короткого перегляду статусу, щоб ви могли побачити свої зміни в більш компактному вигляді. Якщо ви виконаєте <code>git status -s</code> або <code>git status --short</code>, ви отримаєте набагато простіший вивід.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status -s
+<code class="go"> M README</code>
+<code class="go">MM Rakefile</code>
+<code class="go">A  lib/git.rb</code>
+<code class="go">M  lib/simplegit.rb</code>
+<code class="go">?? LICENSE.txt</code>
+</pre>
+
+<p>Нові неконтрольовані файли позначаються <code>??</code>, нові додані файли позначаються <code>A</code>, змінені файли позначаються <code>M</code> тощо.
+Результат має дві колонки – ліва означає, що файл був доданий, а права що він був змінений.
+Наприклад у цьому виводі, файл <code>README</code> змінений у робочій теці, проте не доданий, а файл <code>lib/simplegit.rb</code> змінений та доданий.
+<code>Rakefile</code> був змінений, доданий та знову змінений, тому є зміни в обох колонках.</p>
+</section><section data-type="sect2" id="_ignoring"><h3 id="Ігнорування-Файлів"><a href="#Ігнорування-Файлів">Ігнорування Файлів</a></h3>
+
+<p>Буває, що у вас є клас файлів, що ви не хочете щоб Git їх автоматично додавав чи навіть відображав як неконтрольовані.
+Зазвичай це автоматично згенеровані файли, наприклад файли лоґів або файли вироблені вашою системою збірки.
+В таких випадках, ви можете створити файл <code>.gitignore</code>, що містить взірці, яким відповідають ці файли.<a data-type="indexterm" data-primary="ignoring files" id="id-06zf3"></a>
+Ось приклад файлу <code>.gitignore</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat .gitignore
+<code class="go">*.[oa]</code>
+<code class="go">*~</code>
+</pre>
+
+<p>Перший рядок каже Git ігнорувати файли, що закінчуються на “.o” або “.a” – об’єктні та архівні файли, що можуть бути продуктами компіляції вашого коду.
+Другий рядок каже Git ігнорувати усі файли, що закінчуються на тильду (<code>~</code>), яка використовується багатьма текстовими редакторами (такими як Emacs) щоб позначати тимчасові файли.
+Ви також можете додати теки log, tmp та pid, автоматично згенеровану документацію, тощо.
+Заповнення файлу <code>.gitignore</code> до початку праці зазвичай гарна думка, адже це допоможе вам випадково не додати файли, які ви не хочете додавати до репозиторію Git.</p>
+
+<p>Правила для взірців, які ви можете додати до файлу <code>.gitignore</code>:</p>
+
+<ul>
+<li>
+<p>Пусті рядки та рядки, що починаються з <code>#</code>, ігноруються.</p>
+</li>
+<li>
+<p>Стандартні ґлоб взірці працюють.</p>
+</li>
+<li>
+<p>Ви можете завершити взірець похилою рискою (<code>/</code>) щоб позначити теку.</p>
+</li>
+<li>
+<p>Ви можете відкинути взірець, якщо почнете його зі знаку оклику (<code>!</code>).</p>
+</li>
+</ul>
+<p>Glob patterns are like simplified regular expressions that shells use.
+Ґлоб (glob) взірці – це ніби спрощені регулярні вирази, що їх використовують оболонки.
+Зірочка (<code>*</code>) відповідає нулю або більше символам. <code>[абв]</code> відповідає будь-якому з символів всередині квадратних дужок (у цьому випадку а, б або в). Знак питання (<code>?</code>) відповідає одному символу. Квадратні дужки з символами, що розділені дефісом (<code>[0-9]</code>) відповідають будь-якому символу між ними (у даному випадку від 0 до 9).
+Ви можете використовувати дві зірочки щоб позначити вкладені теки: <code>a/**/z</code> відповідає <code>a/z</code>, <code>a/b/z</code>, <code>a/b/c/z</code> тощо.</p>
+
+<p>Ось ще один приклад файлу .gitignore:</p>
+
+<p>///TODO</p>
+
+<pre data-type="programlisting"># Ніяких файлів .a
+*.a
+
+# Проте відстежувати lib.a, хоч ми й ігноруємо .a файли вище
+!lib.a
+
+# only ignore the root TODO file, not subdir/TODO
+# Ігнорувати тільки файл TODO у корені, не в інших теках subdir/TODO
+/TODO
+
+# Ігнорувати усі файли в теці build/
+build/
+
+# Ігнорувати doc/notes.txt, проте не doc/server/arch.txt
+doc/*.txt
+
+# Ігнорувати усі .txt файли в теці doc/
+doc/**/*.txt</pre>
+<div data-type="tip" id="id-6plUq">
+<h6>Tip</h6>
+<p>GitHub підтримує доволі вичерпний список гарних прикладів файлів <code>.gitignore</code> для десятків проектів та мов за адресою <a href="https://github.com/github/gitignore"><em class="hyperlink">https://github.com/github/gitignore</em></a>, якщо ви бажаєте мати зразок для свого проекту.</p>
+</div>
+</section><section data-type="sect2" id="_git_diff_staged"><h3 id="Перегляд-Ваших-Доданих-та-Недоданих-Змін"><a href="#Перегляд-Ваших-Доданих-та-Недоданих-Змін">Перегляд Ваших Доданих та Недоданих Змін</a></h3>
+
+<p>Якщо команда <code>git status</code> занадто зверхня для вас – ви хочете знати що саме ви змінили, а не просто які файли ви змінили – ви можете використати команду <code>git diff</code>.<a data-type="indexterm" data-primary="git commands" data-secondary="diff" id="id-7AKHb"></a>
+Ми докладніше розглянемо <code>git diff</code> пізніше, проте напевно найчастіше ви її будете використовувати для того щоб дізнатись дві речі: Що ви змінили, проте ще не додали?
+Та що ви додали та збираєтесь зафіксувати?
+Хоч <code>git status</code> відповідає на ці питання дуже загально – тільки показує список файлів, <code>git diff</code> показує вам усі додані та видалені рядки – патч, як він є.</p>
+
+<p>Припустімо, що ви внесли та додали зміни до файлу <code>README</code> знову, а потім змінили файл <code>CONTRIBUTING.md</code> але не додали його.
+Якщо ви виконаєте команду <code>git status</code>, ви знову побачите щось на кшталт:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Щоб побачити зміни, які ви ще не додали, наберіть <code>git diff</code> без параметрів:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md</code>
+<code class="go">index 8ebb991..643e24f 100644</code>
+<code class="go">--- a/CONTRIBUTING.md</code>
+<code class="go">+++ b/CONTRIBUTING.md</code>
+<code class="go">@@ -65,7 +65,8 @@ branch directly, things can get messy.</code>
+<code class="go"> Please include a nice description of your changes when you submit your PR;</code>
+<code class="go"> if we have to read the whole diff to figure out why you're contributing</code>
+<code class="go"> in the first place, you're less likely to get feedback and have your change</code>
+<code class="go">-merged in.</code>
+<code class="go">+merged in. Also, split your changes into comprehensive chunks if you patch is</code>
+<code class="go">+longer than a dozen lines.</code>
+
+<code class="go"> If you are starting to work on a particular area, feel free to submit a PR</code>
+<code class="go"> that highlights your work in progress (and note in the PR title that it's</code>
+</pre>
+
+<p>Ця команда порівнює вашу робочу теку з областю додавання.
+Результат показує вам зміни, котрі ви зробили проте не додали.</p>
+
+<p>Якщо ви хочете побачити, що ви додали та ввійде до вашої наступної фіксації, ви можете скористатись <code>git diff --staged</code>.
+Ця команда порівнює додані зміни з вашим останнім знімком:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --staged
+<code class="go">diff --git a/README b/README</code>
+<code class="go">new file mode 100644</code>
+<code class="go">index 0000000..03902a1</code>
+<code class="go">--- /dev/null</code>
+<code class="go">+++ b/README</code>
+<code class="go">@@ -0,0 +1 @@</code>
+<code class="go">+My Project</code>
+</pre>
+
+<p>Важливо пам’ятати, що команда <code>git diff</code> без опцій не відображає всіх змін з останньої фіксації – тільки недодані зміни.
+Це може збивати з пантелику, адже якщо ви додали всі свої зміни, вивід <code>git diff</code> буде пустим.</p>
+
+<p>Наведемо інший приклад, припустимо, що ви додали файл <code>CONTRIBUTING.md</code> та знову його відредагували, ви можете скористатись <code>git diff</code> щоб побачити додані та недодані зміни. Якщо наше середовище виглядає наступним чином:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add CONTRIBUTING.md
+<code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'test line'</code> &gt;&gt; CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Тепер ви можете використати <code>git diff</code> щоб побачити недодані зміни:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md</code>
+<code class="go">index 643e24f..87f08c8 100644</code>
+<code class="go">--- a/CONTRIBUTING.md</code>
+<code class="go">+++ b/CONTRIBUTING.md</code>
+<code class="go">@@ -119,3 +119,4 @@ at the</code>
+<code class="go"> ## Starter Projects</code>
+
+<code class="go"> See our [projects list](https://github.com/libgit2/libgit2/blob/development/PROJECTS.md).</code>
+<code class="go">+test line</code>
+</pre>
+
+<p>та <code>git diff --cached</code> щоб побачити наразі додані зміни (--staged та --cached мають однакове значення):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --cached
+<code class="go">diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md</code>
+<code class="go">index 8ebb991..643e24f 100644</code>
+<code class="go">--- a/CONTRIBUTING.md</code>
+<code class="go">+++ b/CONTRIBUTING.md</code>
+<code class="go">@@ -65,7 +65,8 @@ branch directly, things can get messy.</code>
+<code class="go"> Please include a nice description of your changes when you submit your PR;</code>
+<code class="go"> if we have to read the whole diff to figure out why you're contributing</code>
+<code class="go"> in the first place, you're less likely to get feedback and have your change</code>
+<code class="go">-merged in.</code>
+<code class="go">+merged in. Also, split your changes into comprehensive chunks if you patch is</code>
+<code class="go">+longer than a dozen lines.</code>
+
+<code class="go"> If you are starting to work on a particular area, feel free to submit a PR</code>
+<code class="go"> that highlights your work in progress (and note in the PR title that it's</code>
+</pre>
+<div data-type="note" id="git-diff-u-zovnishnij-utiliti-LkLu0">
+<h6>Note</h6>
+<h2>Git Diff у Зовнішній Утиліті.</h2>
+<p>Ми продовжимо використати команду <code>git diff</code> різноманітними шляхами в решті книги.
+Є інший шлях подивитись на різницю між файлами, якщо вам більш до смаку графічна чи зовнішня програма для відображення різниці.
+Якщо ви виконаєте <code>git difftool</code> замість <code>git diff</code>, ви зможете використати будь-яку з програм на кшталт Araxis, emerge, vimdiff тощо.
+Виконайте <code>git difftool --tool-help</code> щоб дізнатись, що доступно на вашій системі.</p>
+</div>
+</section><section data-type="sect2" id="_committing_changes"><h3 id="Фіксація-Ваших-Змін"><a href="#Фіксація-Ваших-Змін">Фіксація Ваших Змін</a></h3>
+
+<p>Припустимо, що ваша область додавання саме в стані, який ви бажаєте, та тепер ви можете зафіксувати ваші зміни.
+Пам’ятайте, що будь-які недодані зміни – будь-які файли, що ви їх створили чи змінили, але ви не виконали <code>git add</code> після їх редагування – не потраплять до цієї фіксації.
+Вони так і залишаться зміненими файлами на вашому диску.
+У цьому випадку, припустимо,  що останнього разу, коли ви виконали <code>git status</code>, ви побачили, що всі зміни додані, отже ви готові фіксувати ваші зміни.<a data-type="indexterm" data-primary="git commands" data-secondary="status" id="id-k09hm"></a>
+Найпростіший спосіб зафіксувати зміни – набрати <code>git commit</code>:<a data-type="indexterm" data-primary="git commands" data-secondary="commit" id="id-rwYsw"></a></p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit
+</pre>
+
+<p>Це запустить ваш редактор.
+(Це редактор, який встановлено в змінній середовища <code>$EDITOR</code> вашої оболонки – зазвичай vim або emacs, хоча ви можете налаштувати його як завгодно за допомогою команді <code>git config --global core.editor</code>, яку ви бачили в <a data-type="xref" href="1-introduction/_getting_started">Вступ</a>).<a data-type="indexterm" data-primary="editor" data-secondary="changing default" id="id-vxBf1"></a><a data-type="indexterm" data-primary="git commands" data-secondary="config" id="id-Rqvfo"></a></p>
+
+<p>Редактор покаже вам наступний текст (це приклад екрану Vim):</p>
+
+<pre data-type="programlisting"># Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	new file:   README
+#	modified:   CONTRIBUTING.md
+#
+~
+~
+~
+".git/COMMIT_EDITMSG" 9L, 283C</pre>
+
+<p>Ви бачите, згенероване повідомлення фіксації містить закоментований останній вивід команди <code>git status</code> та один пустий рядок нагорі.
+Ви можете видалити ці коментарі на написати своє повідомлення фіксації, або можете залишити їх, щоб вони допомогли вам пригадати що ви фіксуєте.
+(Для навіть більш докладного нагадування про ваші зміни, ви можете передати опцію <code>-v</code> до <code>git commit</code>.
+Це призведе то того, що у вашому редакторі також будуть відображені всі зміни, що ввійдуть до фіксації.)
+Коли ви виходите з редактору, Git створює фіксацію з цим повідомленням фіксації (після видалення коментарів та змін до файлів).</p>
+
+<p>Іншим чином, ви можете набрати повідомлення фіксації прямо в команді <code>commit</code>, якщо напишете її після опції -m, ось так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -m <code class="s2">"Story 182: Fix benchmarks for speed"</code>
+<code class="go">[master 463dc4f] Story 182: Fix benchmarks for speed</code>
+<code class="go"> 2 files changed, 2 insertions(+)</code>
+<code class="go"> create mode 100644 README</code>
+</pre>
+
+<p>Тепер ви створили свої першу фіксацію!
+Ви можете бачити, що команда <code>commit</code> розповіла вам дещо про фіксацію: до якої гілки ви зафіксували зміни (<code>master</code>), який SHA-1 хеш отримала фіксація (<code>463dc4f</code>), скільки файлів було змінено, та статистику щодо доданий та видалених рядків у фіксації.</p>
+
+<p>Пам’ятайте, що фіксація записує знімок, який ви створили в області додавання.
+Усе, що ви не додали, залишиться зміненим. Ви можете зробити іншу фіксацію, щоб додати ці зміни до історії.
+Щоразу ви здійснюєте фіксацію, ви записуєте знімок вашого проекту, до якого ви можете повернутися або порівняти щось пізніше.</p>
+</section><section data-type="sect2" id="obhodimo-oblast-dodavannya-0zJh4"><h3 id="Обходимо-Область-Додавання"><a href="#Обходимо-Область-Додавання">Обходимо Область Додавання</a></h3>
+
+<p><a data-type="indexterm" data-primary="staging area" data-secondary="skipping" id="id-mlju2"></a>
+Хоч область додавання може бути неперевершено корисною для підготовки фіксацій саме до потрібного вам вигляду, іноді вона може буди надто складною для ваших потреб.
+Якщо ви бажаєте обійти область додавання, Git надає вам простий короткий шлях.
+Adding the <code>-a</code> option to the <code>git commit</code> command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the <code>git add</code> part:
+Додавання опції <code>-a</code> до команди <code>git commit</code>, змушує Git автоматично додати кожен файл, що вже контролюється до фіксації, що дозволяє вам пропустити команди <code>git add</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+
+<code class="go">no changes added to commit (use "git add" and/or "git commit -a")</code>
+<code class="gp">$</code> git commit -a -m <code class="s1">'added new benchmarks'</code>
+<code class="go">[master 83e38c7] added new benchmarks</code>
+<code class="go"> 1 file changed, 5 insertions(+), 0 deletions(-)</code>
+</pre>
+
+<p>Зауважте, що вам не довелося виконувати <code>git add</code> до файлу “CONTRIBUTING.md” у цьому випадку до фіксації.</p>
+</section><section data-type="sect2" id="_removing_files"><h3 id="Removing-Files"><a href="#Removing-Files">Removing Files</a></h3>
+
+<p><a data-type="indexterm" data-primary="files" data-secondary="removing" id="id-YQmSm"></a>
+Щоб видалити файл з Git, вам треба прибрати його з контрольованих файлів (вірніше, видалити його з вашої області додавання) та зробити фіксацію.
+Команда <code>git rm</code> це робить, а також видаляє файл з вашої робочої теки, щоб наступного разу він не відображався неконтрольованим.</p>
+
+<p>Якщо ви просто видалите файл з вашої робочої теки, він з’явиться під заголовком “Changed but not updated” (тобто, <em>недоданим</em>) виводу команди <code>git status</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> rm PROJECTS.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add/rm &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">        deleted:    PROJECTS.md</code>
+
+<code class="go">no changes added to commit (use "git add" and/or "git commit -a")</code>
+</pre>
+
+<p>Потім, якщо ви виконаєте <code>git rm</code>, файл буде доданим на видалення:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm PROJECTS.md
+<code class="go">rm 'PROJECTS.md'</code>
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    deleted:    PROJECTS.md</code>
+</pre>
+
+<p>Наступної фіксацію, файл зникне та більше не буде контрольованим.
+Якщо ви редагували файл та вже додали його до індексу (область додавання), ви маєте примусово видалити його за допомогою опції <code>-f</code>.
+Це мера безпеки, щоб завадити випадковому видаленню даних, які ви не записали до знімку, і тому вони не можуть буди відновлені Git.</p>
+
+<p>Інша корисна річ, що ви можливо захочете зробити, це зберегти файл у робочій теці, проте видалити його з області додавання.
+Іншими словами, ви можете забажати зберегти файл на диску, проте більше не контролювати його Git.
+Це може бути корисним, якщо ви забули щось додати до свого файлу <code>.gitignore</code> та випадково додали, наприклад великий файл журнал чи купа скомпільованих файлів <code>.a</code>.
+Щоб це зробити, скористайтеся опцією <code>--cached</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm --cached README
+</pre>
+
+<p>Ви можете передавати команді <code>git rm</code> файли, теки або файлові ґлоб шаблони.
+Це означає, що ви можете зробити щось таке:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm log/<code class="se">\*</code>.log
+</pre>
+
+<p>Зверніть увагу на зворотню похилу (<code>\</code>) попереду <code>*</code>.
+Вона необхідна адже Git має власне розкриття шаблону на додаток до розкриття шаблону вашої оболонки.
+Ця команда видаляє всі файли, що мають <code>.log</code> розширення та знаходяться в теці <code>log/</code>.
+Або, ви можете зробити щось таке:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm <code class="se">\*</code>~
+</pre>
+
+<p>Ця команда видаляє всі файли, що закінчуються на <code>~</code>.</p>
+</section><section data-type="sect2" id="_git_mv"><h3 id="Пересування-Файлів"><a href="#Пересування-Файлів">Пересування Файлів</a></h3>
+
+<p><a data-type="indexterm" data-primary="files" data-secondary="moving" id="id-EBPIY"></a>
+На відміну від багатьох інших СКВ, Git явно не стежить за пересуванням файлів.
+Якщо ви перейменуєте файл у Git, ніяких метаданих про це не буде збережено.
+Втім, Git доволі кмітливий, та може сам зрозуміти, що перейменування відбулося вже після нього – ми повернемося до виявлення пересування файлів трохи пізніше.</p>
+
+<p>Тому присутність команди <code>mv</code> у Git трохи спантеличує.
+Якщо ви бажаєте перейменувати файл у Git, ви можете виконати щось таке:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git mv стара_назва нова_назва
+</pre>
+
+<p>і це зробить що вам треба.
+Насправді, якщо ви виконаєте щось таке і подивитесь на статус, ви побачите, що Git вважає, що перейменував файл:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git mv README.md README
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    renamed:    README.md -&gt; README</code>
+</pre>
+
+<p>Втім, це рівнозначно виконанню таких команд:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> mv README.md README
+<code class="gp">$</code> git rm README.md
+<code class="gp">$</code> git add README
+</pre>
+
+<p>Git без підказок розуміє, що це перейменування файлу, тому неважливо, чи ви перейменували файл так, або за допомогою команди <code>mv</code>.
+Єдина дійсна різниця в тому, що <code>mv</code> це одна команда замість трьох – ця команда існує тільки для зручності.
+Більш важливо, що ви можете використати будь-яку утиліту для перейменування файлу та зробити add/rm пізніше, до фіксації змін.</p>
+</section><div id="nav"><a href="/book/uk/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%A1%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D1%96%D1%82%D0%BE%D1%80%D1%96%D1%8F">prev</a> | <a href="/book/uk/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BB%D1%8F%D0%B4-%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97-%D0%A4%D1%96%D0%BA%D1%81%D0%B0%D1%86%D1%96%D0%B9">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

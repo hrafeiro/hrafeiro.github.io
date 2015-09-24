@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":788,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - 계정 만들고 설정하기</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">시작하기</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">버전 관리란?</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%A7%A7%EA%B2%8C-%EB%B3%B4%EB%8A%94-Git%EC%9D%98-%EC%97%AD%EC%82%AC">짧게 보는 Git의 역사</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88">Git 기초</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-CLI">CLI</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98">Git 설치</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95">Git 최초 설정</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%8F%84%EC%9B%80%EB%A7%90-%EB%B3%B4%EA%B8%B0">도움말 보기</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git의 기초</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git 저장소 만들기</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0">수정하고 저장소에 저장하기</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">커밋 히스토리 조회하기</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0">되돌리기</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C">리모트 저장소</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%ED%83%9C%EA%B7%B8">태그</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-Alias">Git Alias</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">Git 브랜치</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">브랜치란 무엇인가</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88">브랜치와 Merge 의 기초</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EA%B4%80%EB%A6%AC">브랜치 관리</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-Workflow">브랜치 Workflow</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98">리모트 브랜치</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0">Rebase 하기</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">Git 서버</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">프로토콜</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84%EC%97%90-Git-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">서버에 Git 설치하기</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0">SSH 공개키 만들기</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">서버 설정하기</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-Git-%EB%8D%B0%EB%AA%AC">Git 데몬</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8-HTTP">스마트 HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%84%A0%ED%83%9D%EC%A7%80%2C-%ED%98%B8%EC%8A%A4%ED%8C%85">또 다른 선택지, 호스팅</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Workflow</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">계정 만들고 설정하기</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ko/v2/GitHub-Organization-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">Organization 관리하기</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ko/v2/GitHub-GitHub-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85">GitHub 스크립팅</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ko/v2/GitHub-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">Git 도구</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">리비전 조회하기</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%8C%80%ED%99%94%ED%98%95-%EB%AA%85%EB%A0%B9">대화형 명령</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning">Stashing과 Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90-%EC%84%9C%EB%AA%85%ED%95%98%EA%B8%B0">내 작업에 서명하기</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B2%80%EC%83%89">검색</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%8B%A8%EC%9E%A5%ED%95%98%EA%B8%B0">히스토리 단장하기</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0">Reset 명확히 알고 가기</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B3%A0%EA%B8%89-Merge">고급 Merge</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Git%EC%9C%BC%EB%A1%9C-%EB%B2%84%EA%B7%B8-%EC%B0%BE%EA%B8%B0">Git으로 버그 찾기</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88">서브모듈</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Bundle">Bundle</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Credential-%EC%A0%80%EC%9E%A5%EC%86%8C">Credential 저장소</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git맞춤</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git 설정하기</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%A0%95%EC%B1%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">정책 구현하기</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git으로 이전하기</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git: 범용 Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%EC%9C%BC%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0">Git으로 옮기기</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Git의 내부</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Plumbing 명령과 Porcelain 명령</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-%EA%B0%9C%EC%B2%B4">Git 개체</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-Refs">Git Refs</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Packfile">Packfile</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Refspec">Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">데이터 전송 프로토콜</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%B4%EC%98%81-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B5%EA%B5%AC">운영 및 데이터 복구</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98">환경변수</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">다양한 환경에서 Git 사용하기</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">GUI</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Visual-Studio">Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Eclipse">Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Bash">Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Zsh">Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Powershell">Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">애플리케이션에 Git 넣기</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">Git 명령어</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">Git 명령어</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">설치와 설정</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%EC%99%80-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0">프로젝트 가져오기와 생성하기</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8A%A4%EB%83%85%EC%83%B7-%EB%8B%A4%EB%A3%A8%EA%B8%B0">스냅샷 다루기</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Branch%EC%99%80-Merge">Branch와 Merge</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B3%B5%EC%9C%A0%ED%95%98%EA%B3%A0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0">공유하고 업데이트하기</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%B3%B4%EA%B8%B0%EC%99%80-%EB%B9%84%EA%B5%90">보기와 비교</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Patch-%ED%95%98%EA%B8%B0">Patch 하기</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%8B%A4%EB%A5%B8-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C">다른 버전 관리 시스템</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B4%80%EB%A6%AC">관리</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Plumbing-%EB%AA%85%EB%A0%B9%EC%96%B4">Plumbing 명령어</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>6.1 GitHub - 계정 만들고 설정하기</h1>
+  <div><a id="_github"></a><p><a data-type="indexterm" data-primary="GitHub" id="idp14728752"></a></p><a id="idp14734416"></a><h2>계정 만들고 설정하기</h2>
+
+<p><a data-type="indexterm" data-primary="GitHub" data-secondary="user accounts" id="idp14736032"></a></p>
+
+<p>가장 먼저 할 일은 무료 사용자 계정을 만드는 일이다.
+<a href="https://github.com"><em class="hyperlink">https://github.com</em></a>에 방문해서 사용자 이름과 이메일 주소, 암호를 입력하고 “Sign up for GitHub”이라는 큰 녹색 버튼을 누른다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/signup.png" alt="GitHub 가입 폼."></div>
+<figcaption>GitHub 가입 폼.</figcaption></figure><p>다음 보이는 화면은 유료 옵션에 대한 안내 페이지인데, 지금은 무시한다.
+GitHub은 입력한 이메일 주소로 확인 메일을 보냈을 것이다.
+메일의 지시를 따르자. 나중에 살펴볼 테지만 이 과정은 매우 중요하다.</p>
+<div data-type="note">
+<p>무료 계정도 GitHub 기능을 전부 사용할 수 있다. 딱 한 가지 제약이 있는데 모든 사람이 읽을 수 있는 공개 프로젝트만 만들 수 있다.
+GitHub에 돈을 내면 비공개 프로젝트도 만들 수 있지만, 이 책에서 설명하지 않는다.</p>
+</div>
+
+<p>화면 왼쪽 꼭대기에 있는 Octocat 로고를 클릭하면 대시보드 페이지로 이동한다.
+이제 GitHub을 사용할 준비가 된 것이다.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="SSH 사용하기" id="idp14743296"><h3 id="SSH-사용하기"><a href="#SSH-사용하기">SSH 사용하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="SSH keys" data-secondary="with GitHub" id="idp14744736"></a></p>
+
+<p>이제는 <code>https://</code> 프로토콜로도 Git 저장소를 사용하는 데 부족함이 없다. 간단히 사용자 이름과 암호로 인증만 하면 된다.
+공개 프로젝트를 Clone 하는 데는 인증도 필요 없다. 우리가 만든 계정은 프로젝트를 Fork 하고 그 프로젝트에 Push 할 때가 돼야 비로소 필요하다.</p>
+
+<p>SSH 리모트를 쓰려면 공개키를 설정해야 한다.
+(아직 공개키가 없으면 <a data-type="xref" href="ch04/_generate_ssh_key">“SSH 공개키 만들기”</a>를 참고)
+아래 윈도우의 오른쪽 꼭대기에 있는 계정 설정 링크를 클릭하자.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/account-settings.png" alt="``계정 설정'' 링크."></div>
+<figcaption>“계정 설정” 링크.</figcaption></figure><p>그 왼쪽 메뉴에서 “SSH keys”를 선택한다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/ssh-keys.png" alt="``SSH keys'' 링크."></div>
+<figcaption>“SSH keys” 링크.</figcaption></figure><p>여기서 “Add an SSH key” 버튼을 클릭한다. 키 이름을 적당히 입력하고 <code>~/.ssh/id_rsa.pub</code> 파일의 내용을 입력 칸에 복사해 넣는다. 그리고 “Add key” 버튼을 클릭한다.</p>
+<div data-type="note">
+<p>SSH key 이름은 기억하기 쉬운 걸로 짓는다. “내 노트북"이나 “회사 계정"같이 구분하기 쉬운 이름으로 짓는다. 나중에 키를 삭제할 때 헷갈리지 않고 바로 알 수 있도록 짓는 것이 중요하다.</p>
+</div>
+</section><section data-type="sect2" data-pdf-bookmark="아바타" id="_personal_avatar"><h3 id="아바타"><a href="#아바타">아바타</a></h3>
+
+<p>자동으로 생성해준 아바타를 다른 아바타로 바꿀 수도 있다. “SSh Keys” 탭 위에 있는 “Profile” 탭으로 가서 “Upload new picture”를 클릭한다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/your-profile.png" alt="``Profile'' 링크."></div>
+<figcaption>“Profile” 링크.</figcaption></figure><p>여기서는 여러분의 하드디스크에 있을 Git 로고를 선택하고 필요한 만큼 자른다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/avatar-crop.png" alt="아바타 자르기."></div>
+<figcaption>아바타 자르기.</figcaption></figure><p>이제부터 GitHub 사이트에서 어디에서든 사용자 이름 옆에 아바타가 보인다.</p>
+
+<p>Gravatar 서비스에 아바타를 업로드 한 적이 있으면 자동으로 그 아바타가 사용되고 지금 이 단계를 밟을 필요가 없다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="사용자 이메일 주소" id="idp14918864"><h3 id="사용자-이메일-주소"><a href="#사용자-이메일-주소">사용자 이메일 주소</a></h3>
+
+<p>Github은 Git 커밋에 있는 이메일 주소를 보고 어떤 사용자인지 식별한다. 사용자가 이메일 주소를 여러 개 사용해서 커밋했어도 GitHub에 그 이메일을 모두 등록하기만 했으면 GitHub은 잘 처리한다. “Emails” 화면에서 모두 등록한다.</p>
+
+<figure id="_add_email_addresses"><div class="border-box"><img src="/book/en/v2/book/06-github/images/email-settings.png" alt="이메일 주소를 전부 추가하기."></div>
+<figcaption>이메일 주소 추가하기.</figcaption></figure><p><a data-type="xref" href="ch00/_add_email_addresses">Figure 6-6</a>의 이메일 주소는 각각 다른 상태다. 첫 번째 주소는 주(Primary) 주소고 이미 확인됐다. 알림이나 영수증 메일은 주 주소로 간다. 두 번째 주소는 확인한 상태라서 주 주소로 바꿀 수 있는 상태다. 마지막 주소는 아직 확인되지 않아 주 주소로 변경할 수 없다. GitHub은 저장소의 커밋 메시지에 이 주소 세 개 중의 하나가 있으면 해당 사용자 계정 페이지로 링크를 걸어준다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="투 팩터 인증" id="idp14924464"><h3 id="투-팩터-인증"><a href="#투-팩터-인증">투 팩터 인증</a></h3>
+
+<p>더 안전한 보안을 위해서 “2FA”(2 팩터 인증)을 설정한다. 2FA는 최근 들어 인기가 높아지는 인증 메커니즘이다. 암호를 도둑맞았을 때 위험을 완화하기 위해 사용한다. 2FA를 켜면 GitHub은 두 가지 방법으로 인증받도록 요구한다. 둘 중 한 가지 방법만 뚫려서는 공격자가 계정에 접근할 수 없다.</p>
+
+<p>2FA 설정 화면은 계정 설정 페이지의 Security tab에 있다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/2fa-1.png" alt="Security 탭에 있는 2FA"></div>
+<figcaption>Security 탭에 있는 2FA</figcaption></figure><p>“Set up two-factor authentication” 버튼을 클릭하면 2FA 설정 페이지로 이동한다. “TOTP(Time based One-Time 비밀번호”를 생성하는 스마트폰 앱을 사용하는 방식을 고르거나 GitHub이 인증 코드를 SMS로 전송해주는 방식을 고를 수 있다. 설정하면 로그인할 때 TOTP나 인증코드가 필요하다.</p>
+
+<p>마음에 드는 인증 방법을 고르고 지시에 따라 2FA를 설정한다. GitHub에 로그인할 때마다 한 가지 코드를 더 입력해야 한다. 이제 계정은 좀 더 안전해졌다.</p>
+</section><div id="nav"><a href="/book/ko/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EC%9A%94%EC%95%BD">prev</a> | <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

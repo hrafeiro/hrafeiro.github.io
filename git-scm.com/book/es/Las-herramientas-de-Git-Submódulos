@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":6,"applicationTime":143,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Submódulos</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/es/v1/Empezando">Empezando</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/es/v1/Empezando-Acerca-del-control-de-versiones">Acerca del control de versiones</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/es/v1/Empezando-Una-breve-historia-de-Git">Una breve historia de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/es/v1/Empezando-Fundamentos-de-Git">Fundamentos de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/es/v1/Empezando-Instalando-Git">Instalando Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/es/v1/Empezando-Configurando-Git-por-primera-vez">Configurando Git por primera vez</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/es/v1/Empezando-Obteniendo-ayuda">Obteniendo ayuda</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/es/v1/Empezando-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/es/v1/Fundamentos-de-Git">Fundamentos de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git">Obteniendo un repositorio Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio">Guardando cambios en el repositorio</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones">Viendo el histórico de confirmaciones</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/es/v1/Fundamentos-de-Git-Deshaciendo-cosas">Deshaciendo cosas</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos">Trabajando con repositorios remotos</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/es/v1/Fundamentos-de-Git-Creando-etiquetas">Creando etiquetas</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/es/v1/Fundamentos-de-Git-Consejos-y-trucos">Consejos y trucos</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/es/v1/Fundamentos-de-Git-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/es/v1/Ramificaciones-en-Git">Ramificaciones en Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/es/v1/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F">¿Qué es una rama?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/es/v1/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar">Procedimientos básicos para ramificar y fusionar</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/es/v1/Ramificaciones-en-Git-Gesti%C3%B3n-de-ramificaciones">Gestión de ramificaciones</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/es/v1/Ramificaciones-en-Git-Flujos-de-trabajo-ramificados">Flujos de trabajo ramificados</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas">Ramas Remotas</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/es/v1/Ramificaciones-en-Git-Reorganizando-el-trabajo-realizado">Reorganizando el trabajo realizado</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/es/v1/Ramificaciones-en-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/es/v1/Git-en-un-servidor">Git en un servidor</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/es/v1/Git-en-un-servidor-Los-Protocolos">Los Protocolos</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/es/v1/Git-en-un-servidor-Poniendo-Git-en-un-Servidor">Poniendo Git en un Servidor</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/es/v1/Git-en-un-servidor-Generando-tu-clave-p%C3%BAblica-SSH">Generando tu clave pública SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/es/v1/Git-en-un-servidor-Preparando-el-servidor">Preparando el servidor</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/es/v1/Git-en-un-servidor-Acceso-p%C3%BAblico">Acceso público</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/es/v1/Git-en-un-servidor-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/es/v1/Git-en-un-servidor-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/es/v1/Git-en-un-servidor-El-demonio-Git">El demonio Git</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/es/v1/Git-en-un-servidor-Git-en-un-alojamiento-externo">Git en un alojamiento externo</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/es/v1/Git-en-un-servidor-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/es/v1/Git-en-entornos-distribuidos">Git en entornos distribuidos</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">Flujos de trabajo distribuidos</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Contribuyendo-a-un-proyecto">Contribuyendo a un proyecto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto">Gestionando un proyecto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/es/v1/Las-herramientas-de-Git">Las herramientas de Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/es/v1/Las-herramientas-de-Git-Selecci%C3%B3n-de-confirmaciones-de-cambios-concretas">Selección de confirmaciones de cambios concretas</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/es/v1/Las-herramientas-de-Git-Preparaci%C3%B3n-interactiva">Preparación interactiva</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/es/v1/Las-herramientas-de-Git-Guardado-r%C3%A1pido-provisional">Guardado rápido provisional</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/es/v1/Las-herramientas-de-Git-Reescribiendo-la-historia">Reescribiendo la historia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git">Depuración con Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/es/v1/Las-herramientas-de-Git-Subm%C3%B3dulos">Submódulos</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/es/v1/Las-herramientas-de-Git-Fusi%C3%B3n-de-sub%C3%A1rboles">Fusión de subárboles</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/es/v1/Las-herramientas-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/es/v1/Personalizando-Git">Personalizando Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/es/v1/Personalizando-Git-Configuraci%C3%B3n-de-Git">Configuración de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/es/v1/Personalizando-Git-Atributos-de-Git">Atributos de Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/es/v1/Personalizando-Git-Puntos-de-enganche-Git">Puntos de enganche Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/es/v1/Personalizando-Git-Un-ejemplo-de-implantaci%C3%B3n-de-una-determinada-pol%C3%ADtica-en-Git">Un ejemplo de implantación de una determinada política en Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/es/v1/Personalizando-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/es/v1/Git-y-Otros-Sistemas">Git y Otros Sistemas</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Git-y-Subversion">Git y Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/es/v1/Los-entresijos-internos-de-Git">Los entresijos internos de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Fontaneria-y-porcelana">Fontaneria y porcelana</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Los-objetos-Git">Los objetos Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Referencias-Git">Referencias Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Archivos-empaquetadores">Archivos empaquetadores</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Las-especificaciones-para-hacer-referencia-a-refspec">Las especificaciones para hacer referencia a...  (refspec)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Protocolos-de-transferencia">Protocolos de transferencia</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Mantenimiento-y-recuperaci%C3%B3n-de-datos">Mantenimiento y recuperación de datos</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>6.6 Las herramientas de Git - Submódulos</h1>
+  <div><h2>Submódulos</h2>
+
+<p>Suele ser frecuente encontrarse con la necesidad de utilizar otro proyecto desde dentro del que se está trabajando. En ocasiones como, por ejemplo, cuando se utiliza una biblioteca de terceros, o cuando se está desarrollando una biblioteca independiente para ser utilizada en múltiples proyectos. La preocupación típica en estos escenarios suele ser la de cómo conseguir tratar ambos proyectos separadamente. Pero conservando la habilidad de utilizar uno dentro del otro.</p>
+
+<p>Un ejemplo concreto. Supongamos que se está desarrollando un site web y creando feeds Atom. En lugar de escribir código propio para generar los feeds Atom, se decide emplear una biblioteca ya existente. Y dicha biblioteca se incluye desde una biblioteca compartida tal como CPAN install o Ruby gem; o copiando directamente su código fuente en el árbol del propio proyecto. La problemática en el primer caso radica en la dificultad de personalizar la biblioteca compartida. Y en la dificultal para su despliegue; ya que es necesario que todos y cada uno de los clientes dispongan de ella.  La problemática en el segundo caso radica en las complicaciones para fusionar las personalizaciones realizadas por nosotros con futuras copias de la biblioteca original. </p>
+
+<p>Git resuelve estas problemáticas utilizando submódulos. Los submódulos permiten mantener un repositorio Git como una subcarpeta de otro repositorio Git. Esto permite clonar un segundo repositorio dentro del repositorio del proyecto en que se está trabajando, manteniendo separadamente las confirmaciones de cambios en ambos repositorios.</p>
+
+<h3 id="Trabajando-con-submódulos"><a href="#Trabajando-con-submódulos">Trabajando con submódulos</a></h3>
+
+<p>Suponiendo, por ejemplo, que se desea añadir la biblioteca Rack (un interface Ruby de pasarela de servidor web) al proyecto en que se está trabajando. Posiblemente con algunas personalizaciones, pero sin perder la capacidad de fusionar nuestros cambios con la evolución de la biblioteca original. La primera tarea a realizar es clonar el repositorio externo dento de una subcarpeta dentro del proyecto. Los proyectos externos se pueden incluir como submódulos mediante el comando <code>git submodule add</code>:</p>
+
+<pre><code>$ git submodule add git://github.com/chneukirchen/rack.git rack
+Initialized empty Git repository in /opt/subtest/rack/.git/
+remote: Counting objects: 3181, done.
+remote: Compressing objects: 100% (1534/1534), done.remote: Compressing objects: 100% (1534/1534), done.
+remote: Total 3181 (delta 1951), reused 2623 (delta 1603)
+Receiving objects: 100% (3181/3181), 675.42 KiB | 422 KiB/s, done.
+Resolving deltas: 100% (1951/1951), done.Resolving deltas: 100% (1951/1951), done.
+</code></pre>
+
+<p>A partir de este momento, el proyecto Rack está dentro de nuestro proyecto; bajo una subcarpeta denominada <code>rack</code>. En dicha subcarpeta es posible realizar cambios, añadir un repositorio propio a donde enviar (push) los cambios, recuperar (fetch) y fusionar (merge) desde el repositorio original, y mucho mas... Si se lanza <code>git status</code> nada mas añadir el submódulo, se aprecian dos cosas:</p>
+
+<pre><code>$ git status
+# On branch master
+# Changes to be committed:
+#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+#
+#      new file:   .gitmodules
+#      new file:   rack
+#
+</code></pre>
+
+<p>Una: el archivo <code>.gitmodules</code>. un archivo de configuración para almacenar las relaciones entre la URL del proyecto y la subcarpeta local donde se ha colocado este.</p>
+
+<pre><code>$ cat .gitmodules 
+[submodule &quot;rack&quot;]
+      path = rack
+      url = git://github.com/chneukirchen/rack.git
+</code></pre>
+
+<p>En caso de haber múltipes submódulos, habrá multiples entradas en este archivo. Merece destacar que este archivo está también bajo el control de versiones, como lo están otros archivos tal como <code>.gitignore</code>, por ejemplo. Y será enviado (push) y recibido (pull) junto con el resto del proyecto. Así es como otras personas que clonen el proyecto pueden saber dónde encontrar los submódulos del mismo.</p>
+
+<p>Dos: la entrada <code>rack</code>. Si se lanza un <code>git diff</code> sobre ella, se puede apreciar algo muy interesante:</p>
+
+<pre><code>$ git diff --cached rack
+diff --git a/rack b/rack
+new file mode 160000
+index 0000000..08d709f
+--- /dev/null
++++ b/rack
+@@ -0,0 +1 @@
++Subproject commit 08d709f78b8c5b0fbeb7821e37fa53e69afcf433
+</code></pre>
+
+<p>Aunque <code>rack</code> es una subcarpeta de la carpeta de trabajo, git la contempla como un submódulo y no realiza seguimiento de sus contenidos si no se está situado directamente sobre ella.  En su lugar, Git realiza confirmaciones de cambio particulares en ese repositorio. Cuando se realizan y confirman cambios en esa subcarpeta, el proyecto padre detecta el cambio en HEAD y almacena la confirmación de cambios concreta en la que se esté trabajando en ese momento. De esta forma, cuando otras personas clonen este proyecto, sabrán cómo recrear exactamente el entorno.</p>
+
+<p>Esto es importante al trabajar con submódulos: siempre son almacenados como la confirmación de cambios concreta en la que están. No es posible almacenar un submódulo en <code>master</code> o en cualquier otra referencia simbólica.</p>
+
+<p>Cuando se realiza una confirmación de cambios, se suele ver algo así como:</p>
+
+<pre><code>$ git commit -m &#39;first commit with submodule rack&#39;
+[master 0550271] first commit with submodule rack
+ 2 files changed, 4 insertions(+), 0 deletions(-)
+ create mode 100644 .gitmodules
+ create mode 160000 rack
+</code></pre>
+
+<p>Notese el modo 160000 para la entrada <code>rack</code>. Este es un modo especial de Git, un modo en el que la confirmación de cambio se almacena como una carpeta en lugar de como una subcarpeta o un archivo.</p>
+
+<p>Se puede considerar la carpeta <code>rack</code> como si fuera un proyecto separado. Y, como tal, de vez en cuando se puede actualizar el proyecto padre con un puntero a la última confirmación de cambios en dicho subproyecto. Todos los comandos Git actuan independientemente en ambas carpetas:</p>
+
+<pre><code>$ git log -1
+commit 0550271328a0038865aad6331e620cd7238601bb
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Thu Apr 9 09:03:56 2009 -0700
+
+    first commit with submodule rack
+$ cd rack/
+$ git log -1
+commit 08d709f78b8c5b0fbeb7821e37fa53e69afcf433
+Author: Christian Neukirchen &lt;chneukirchen@gmail.com&gt;
+Date:   Wed Mar 25 14:49:04 2009 +0100
+
+    Document version change
+</code></pre>
+
+<h3 id="Clonando-un-proyecto-con-submódulos"><a href="#Clonando-un-proyecto-con-submódulos">Clonando un proyecto con submódulos</a></h3>
+
+<p>Si se tiene un proyecto con submódulos dentro de él. Cuando se recibe, se reciben también las carpetas que contienen los submódulos; pero no se reciben ninguno de los archivos de dichos submódulos:</p>
+
+<pre><code>$ git clone git://github.com/schacon/myproject.git
+Initialized empty Git repository in /opt/myproject/.git/
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (6/6), done.
+$ cd myproject
+$ ls -l
+total 8
+-rw-r--r--  1 schacon  admin   3 Apr  9 09:11 README
+drwxr-xr-x  2 schacon  admin  68 Apr  9 09:11 rack
+$ ls rack/
+$
+</code></pre>
+
+<p>La carpeta <code>rack</code> está presente, pero vacia. Son necesarios otros dos comandos: <code>git submodule init</code> para inicializar el archivo de configuración local, y <code>git submodule update</code> para recuperar (fetch) todos los datos del proyecto y extraer (checkout) la confirmación de cambios adecuada desde el proyecto padre:</p>
+
+<pre><code>$ git submodule init
+Submodule &#39;rack&#39; (git://github.com/chneukirchen/rack.git) registered for path &#39;rack&#39;
+$ git submodule update
+Initialized empty Git repository in /opt/myproject/rack/.git/
+remote: Counting objects: 3181, done.
+remote: Compressing objects: 100% (1534/1534), done.remote: Compressing objects: 100% (1534/1534), done.
+remote: Total 3181 (delta 1951), reused 2623 (delta 1603)
+Receiving objects: 100% (3181/3181), 675.42 KiB | 173 KiB/s, done.
+Resolving deltas: 100% (1951/1951), done.Resolving deltas: 100% (1951/1951), done.
+Submodule path &#39;rack&#39;: checked out &#39;08d709f78b8c5b0fbeb7821e37fa53e69afcf433&#39;
+</code></pre>
+
+<p>Tras esto, la carpeta <code>rack</code> sí que está exactamente en el estado que le corresponde estar tras la última confirmación de cambios que se realizó sobre ella. Si otra persona realiza cambios en el código de <code>rack</code>, los confirma y nosotros recuperamos (pull) dicha referencia y la fusionamos (merge), se obtendrá un resultado un tanto extraño:</p>
+
+<pre><code>$ git merge origin/master
+Updating 0550271..85a3eee
+Fast forward
+ rack |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+[master*]$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+#
+#      modified:   rack
+#
+</code></pre>
+
+<p>Se ha fusionado en algo que es básicamente un cambio en el puntero al submódulo. Pero no se ha actualizado el código en la carpeta del submódulo propiamente dicha. Por lo que se muestra un estado inconsistente en la misma:</p>
+
+<pre><code>$ git diff
+diff --git a/rack b/rack
+index 6c5e70b..08d709f 160000
+--- a/rack
++++ b/rack
+@@ -1 +1 @@
+-Subproject commit 6c5e70b984a60b3cecd395edd5b48a7575bf58e0
++Subproject commit 08d709f78b8c5b0fbeb7821e37fa53e69afcf433
+</code></pre>
+
+<p>Siendo esto debido a que el puntero al submódulo que se tiene en este momento  no corresponde a lo que realmente hay en carpeta del submódulo. Para arreglarlo, es necesario lanzar de nuevo el comando <code>git submodule update</code>: </p>
+
+<pre><code>$ git submodule update
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 2 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From git@github.com:schacon/rack
+   08d709f..6c5e70b  master     -> origin/master
+Submodule path &#39;rack&#39;: checked out &#39;6c5e70b984a60b3cecd395edd5b48a7575bf58e0&#39;
+</code></pre>
+
+<p>Se necesita realizar este paso cada vez que se recupere (pull) un cambio del submódulo en el proyecto padre. Es algo extraño, pero ¡funciona!.</p>
+
+<p>Un problema típico se suele dar cuando un desarrollador realiza y confirma (commit) un cambio local en el submódulo, pero no lo envia (push) a un servidor público. Pero, sin embargo, sí que confirma (commit) y envia (push) un puntero a dicho estado dentro del proyecto padre. Cuando otros desarrolladores intenten lanzar un <code>git submodule update</code>, será imposible encontrar la confirmación de cambios a la que se refiere el submódulo, ya que esta tan solo existe en el sistema del desarrollador original. En estos casos, se suele ver un error tal como:</p>
+
+<pre><code>$ git submodule update
+fatal: reference isn’t a tree: 6c5e70b984a60b3cecd395edd5b48a7575bf58e0
+Unable to checkout &#39;6c5e70b984a60b3cecd395edd5ba7575bf58e0&#39; in submodule path &#39;rack&#39;
+</code></pre>
+
+<p>Forzandonos a mirar quién ha sido la persona que ha realizado los últimos cambios en el submódulo:</p>
+
+<pre><code>$ git log -1 rack
+commit 85a3eee996800fcfa91e2119372dd4172bf76678
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Thu Apr 9 09:19:14 2009 -0700
+
+    added a submodule reference I will never make public. hahahahaha!
+</code></pre>
+
+<p>Para enviarle un correo-e y avisarle de su despiste.</p>
+
+<h3 id="Proyectos-padre"><a href="#Proyectos-padre">Proyectos padre</a></h3>
+
+<p>Algunas veces, dependiendo del equipo de trabajo en que se encuentren, los desarrolladores suelen necesitar mantener una combinación de grandes carpetas de proyecto. Se da frecuentemente en equipos procedentes de CVS o de Subversion (donde se define una colección de módulos o carpetas), cuando desean mantener ese mismo tipo de flujo de trabajo.</p>
+
+<p>La manera más apropiada de hacer esto en Git, es la de crear diferentes repositorios, cada uno en su carpeta; para luego crear un repositorio padre que englobe múltiples submódulos, uno por cada carpeta. Un beneficio que se obtiene de esta manera de trabajar es la mayor especificidad en las relaciones entre proyectos, definidas mediante etiquetas (tag) y ramas (branch) en el proyecto padre.</p>
+
+<h3 id="Posibles-problemáticas-al-usar-submódulos"><a href="#Posibles-problemáticas-al-usar-submódulos">Posibles problemáticas al usar submódulos</a></h3>
+
+<p>El uso de submódulos tiene también sus contratiempos. El primero de los cuales es la necesidad de ser bastante cuidadoso cuando se trabaja en la carpeta de un submódulo. Al lanzar <code>git submodule update</code>, este comando comprueba la versión específica del proyecto, pero sin tener en cuenta la rama. Es lo que se conoce como &quot;trabajar con cabecera desconectada&quot; --es decir, el archivo HEAD apunta directamente a una confirmación de cambios (commit), y no a una referencia simbólica--. Este método de trabajo suele tenderse a evitar, ya que trabajando en un entorno de cabecera desconectada es bastante facil despistarse y perder cambios ya realizados. Si se realiza un <code>submodule update</code> inicial, se hacen cambios y se confirman en esa carpeta de submódulo sin haber creado antes una rama en la que trabajar. Y si, tras esto, se realiza de nuevo un <code>git submodule update</code> desde el proyecto padre, sin haber confirmado cambios en este, Git sobreescribirá cambios sin aviso previo.  Técnicamente, no se pierde nada del trabajo. Simplemente, nos quedamos sin ninguna rama apuntando a él. Con lo que resulta problemático recuperar el acceso a los cambios.</p>
+
+<p>Para evitarlo, siempre se ha de crear una rama cuando se trabaje en la carpeta de un submódulo; usando  <code>git checkout -b trabajo</code> o algo similar. Cuando se realice una actualización (update) del submódulo por segunda vez, se seguirá sobreescribiendo el trabajo; pero al menos se tendrá un apuntador para volver hasta los cambios realizados.</p>
+
+<p>Intercambiar ramas con submódulos tiene también sus peculiaridades. Si se crea una rama, se añade un submódulo en ella y luego se retorna a una rama donde dicho submódulo no exista. La carpeta del submódulo sigue existiendo, solo que ahora queda como una carpeta sin seguimiento.</p>
+
+<pre><code>$ git checkout -b rack
+Switched to a new branch &quot;rack&quot;
+$ git submodule add git@github.com:schacon/rack.git rack
+Initialized empty Git repository in /opt/myproj/rack/.git/
+...
+Receiving objects: 100% (3184/3184), 677.42 KiB | 34 KiB/s, done.
+Resolving deltas: 100% (1952/1952), done.Resolving deltas: 100% (1952/1952), done.Resolving deltas: 100% (1952/1952), done.
+$ git commit -am &#39;added rack submodule&#39;
+[rack cc49a69] added rack submodule
+ 2 files changed, 4 insertions(+), 0 deletions(-)
+ create mode 100644 .gitmodules
+ create mode 160000 rack
+$ git checkout master
+Switched to branch &quot;master&quot;
+$ git status
+# On branch master
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+#
+#      rack/
+</code></pre>
+
+<p>Forzandonos a removerla del camino. Lo cual obliga a volver a clonarla cuando se retome la rama inicial --con la consiguiente pérdida de los cambios locales si estos no habian sido enviados previamente al servidor--.</p>
+
+<p>Y una última problemática en que se suelen encontrar quienes intercambian de carpetas a submódulos. Si se ha estado trabajando en archivos de un proyecto al que luego se desea convertir en un submódulo, hay que ser muy cuidadoso o Git se resentirá. Asumiendo que se tenian archivos en una carpeta &#39;rack&#39; del proyecto, y que se desea intercambiarla por un submódulo. Si se borra la carpeta y luego se lanza un comando <code>submodule add</code>, Git avisará de &quot;carpeta ya existente en el índice&quot;:</p>
+
+<pre><code>$ rm -Rf rack/
+$ git submodule add git@github.com:schacon/rack.git rack
+&#39;rack&#39; already exists in the index
+</code></pre>
+
+<p>Para evitarlo, se debe sacar la carpeta &#39;rack&#39; del área de preparación. Después, Git permitirá la adicción del submódulo sin problemas:</p>
+
+<pre><code>$ git rm -r rack
+$ git submodule add git@github.com:schacon/rack.git rack
+Initialized empty Git repository in /opt/testsub/rack/.git/
+remote: Counting objects: 3184, done.
+remote: Compressing objects: 100% (1465/1465), done.remote: Compressing objects: 100% (1465/1465), done.
+remote: Total 3184 (delta 1952), reused 2770 (delta 1675)
+Receiving objects: 100% (3184/3184), 677.42 KiB | 88 KiB/s, done.
+Resolving deltas: 100% (1952/1952), done.Resolving deltas: 100% (1952/1952), done.Resolving deltas: 100% (1952/1952), done.
+</code></pre>
+
+<p>Tras esto, y suponiendo que ese paso ha sido realizado en una rama. Si se intenta retornar a dicha rama, cuyos archivos están aún en el árbol actual en lugar de en el submódulo, se obtendrá el siguiente error:</p>
+
+<pre><code>$ git checkout master
+error: Untracked working tree file &#39;rack/AUTHORS&#39; would be overwritten by merge.
+</code></pre>
+
+<p>Antes de cambiar a cualquier rama que no lo contenga, es necesario quitar de enmedio la carpeta del submódulo &#39;rack&#39;.</p>
+
+<pre><code>$ mv rack /tmp/
+$ git checkout master
+Switched to branch &quot;master&quot;
+$ ls
+README  rack
+</code></pre>
+
+<p>Y, cuando se retorne a la rama anterior, se tendrá una carpeta &#39;rack&#39; vacia. Ante lo cual, será necesario lanzar<code>git submodule update</code> para volver a clonarla; o, si no,  volver a restaurar la carpeta  <code>/tmp/rack</code> de vuelta sobre la carpeta vacia.</p>
+
+<div id="nav"><a href="/book/es/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git">prev</a> | <a href="/book/es/v1/Las-herramientas-de-Git-Fusi%C3%B3n-de-sub%C3%A1rboles">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

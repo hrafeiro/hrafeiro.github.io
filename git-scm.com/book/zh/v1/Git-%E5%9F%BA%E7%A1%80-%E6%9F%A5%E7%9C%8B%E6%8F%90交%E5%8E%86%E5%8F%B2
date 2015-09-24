@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":9,"applicationTime":129,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - 查看提交历史</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5">起步</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">关于版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-Git-%E7%AE%80%E5%8F%B2">Git 简史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-Git-%E5%9F%BA%E7%A1%80">Git 基础</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git">安装 Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE">初次运行 Git 前的配置</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E8%8E%B7%E5%8F%96%E5%B8%AE%E5%8A%A9">获取帮助</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%B0%8F%E7%BB%93">小结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80">Git 基础</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E5%8F%96%E5%BE%97%E9%A1%B9%E7%9B%AE%E7%9A%84-Git-%E4%BB%93%E5%BA%93">取得项目的 Git 仓库</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93">记录每次更新到仓库</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2">查看提交历史</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C">撤消操作</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8">远程仓库的使用</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE">打标签</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%8A%80%E5%B7%A7%E5%92%8C%E7%AA%8D%E9%97%A8">技巧和窍门</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E5%B0%8F%E7%BB%93">小结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E4%BD%95%E8%B0%93%E5%88%86%E6%94%AF">何谓分支</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">分支的新建与合并</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%AE%A1%E7%90%86">分支的管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%A9%E7%94%A8%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%BC%80%E5%8F%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">利用分支进行开发的工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">远程分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88">分支的衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%B0%8F%E7%BB%93">小结</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git">服务器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%8F%E8%AE%AE">协议</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2-Git">在服务器上部署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5">生成 SSH 公钥</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%9E%B6%E8%AE%BE%E6%9C%8D%E5%8A%A1%E5%99%A8">架设服务器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%85%AC%E5%85%B1%E8%AE%BF%E9%97%AE">公共访问</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B">Git 守护进程</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E6%89%98%E7%AE%A1%E6%9C%8D%E5%8A%A1">Git 托管服务</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%BB%93">小结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh/v1/%E5%88%86%E5%B8%83%E5%BC%8F-Git">分布式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh/v1/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E5%88%86%E5%B8%83%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分布式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh/v1/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E4%B8%BA%E9%A1%B9%E7%9B%AE%E4%BD%9C%E8%B4%A1%E7%8C%AE">为项目作贡献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh/v1/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%AE%A1%E7%90%86">项目的管理</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh/v1/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E5%B0%8F%E7%BB%93">小结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7">Git 工具</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BF%AE%E8%AE%A2%E7%89%88%E6%9C%AC%EF%BC%88Revision%EF%BC%89%E9%80%89%E6%8B%A9">修订版本（Revision）选择</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BA%A4%E4%BA%92%E5%BC%8F%E6%9A%82%E5%AD%98">交互式暂存</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89">储藏（Stashing）</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%86%99%E5%8E%86%E5%8F%B2">重写历史</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E8%B0%83%E8%AF%95">使用 Git 调试</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97">子模块</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A0%91%E5%90%88%E5%B9%B6">子树合并</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git">自定义 Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git">配置 Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git%E5%B1%9E%E6%80%A7">Git属性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git%E6%8C%82%E9%92%A9">Git挂钩</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E5%BC%BA%E5%88%B6%E7%AD%96%E7%95%A5%E5%AE%9E%E4%BE%8B">Git 强制策略实例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F">Git 与其他系统</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-Git-%E4%B8%8E-Subversion">Git 与 Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E8%BF%81%E7%A7%BB%E5%88%B0-Git">迁移到 Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh/v1/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86">Git 内部原理</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4-Plumbing-%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4-Porcelain">底层命令 (Plumbing) 和高层命令 (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E5%AF%B9%E8%B1%A1">Git 对象</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">传输协议</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E7%BB%B4%E6%8A%A4%E5%8F%8A%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D">维护及数据恢复</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/zh/v1/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>2.3 Git 基础 - 查看提交历史</h1>
+  <div><h2>查看提交历史</h2>
+
+<p>在提交了若干更新之后，又或者克隆了某个项目，想回顾下提交历史，可以使用 <code>git log</code> 命令查看。</p>
+
+<p>接下来的例子会用我专门用于演示的 simplegit 项目，运行下面的命令获取该项目源代码：</p>
+
+<pre><code>git clone git://github.com/schacon/simplegit-progit.git
+</code></pre>
+
+<p>然后在此项目中运行 <code>git log</code>，应该会看到下面的输出：</p>
+
+<pre><code>$ git log
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    first commit
+</code></pre>
+
+<p>默认不用任何参数的话，<code>git log</code> 会按提交时间列出所有的更新，最近的更新排在最上面。看到了吗，每次更新都有一个 SHA-1 校验和、作者的名字和电子邮件地址、提交时间，最后缩进一个段落显示提交说明。</p>
+
+<p><code>git log</code> 有许多选项可以帮助你搜寻感兴趣的提交，接下来我们介绍些最常用的。</p>
+
+<p>我们常用 <code>-p</code> 选项展开显示每次提交的内容差异，用 <code>-2</code> 则仅显示最近的两次更新：</p>
+
+<pre><code>$ git log -p -2
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -5,5 +5,5 @@ require &#39;rake/gempackagetask&#39;
+ spec = Gem::Specification.new do |s|
+     s.name      =   &quot;simplegit&quot;
+-    s.version   =   &quot;0.1.0&quot;
++    s.version   =   &quot;0.1.1&quot;
+     s.author    =   &quot;Scott Chacon&quot;
+     s.email     =   &quot;schacon@gee-mail.com
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index a0a60ae..47c6340 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -18,8 +18,3 @@ class SimpleGit
+     end
+
+ end
+-
+-if $0 == __FILE__
+-  git = SimpleGit.new
+-  puts git.show
+-end
+\ No newline at end of file
+</code></pre>
+
+<p>该选项除了显示基本信息之外，还在附带了每次 commit 的变化。当进行代码审查，或者快速浏览某个搭档提交的 commit 的变化的时候，这个参数就非常有用了。</p>
+
+<p>某些时候，单词层面的对比，比行层面的对比，更加容易观察。Git 提供了 <code>--word-diff</code> 选项。我们可以将其添加到 <code>git log -p</code> 命令的后面，从而获取单词层面上的对比。在程序代码中进行单词层面的对比常常是没什么用的。不过当你需要在书籍、论文这种很大的文本文件上进行对比的时候，这个功能就显出用武之地了。下面是一个简单的例子：</p>
+
+<pre><code>$ git log -U1 --word-diff
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -7,3 +7,3 @@ spec = Gem::Specification.new do |s|
+    s.name      =   &quot;simplegit&quot;
+    s.version   =   [-&quot;0.1.0&quot;-]{+&quot;0.1.1&quot;+}
+    s.author    =   &quot;Scott Chacon&quot;
+</code></pre>
+
+<p>如你所见，这里并没有平常看到的添加行或者删除行的信息。这里的对比显示在行间。新增加的单词被 <code>{+ +}</code> 括起来，被删除的单词被 <code>[- -]</code> 括起来。在进行单词层面的对比的时候，你可能希望上下文（ context ）行数从默认的 3 行，减为 1 行，那么可以使用 <code>-U1</code> 选项。上面的例子中，我们就使用了这个选项。 </p>
+
+<p>另外，<code>git log</code> 还提供了许多摘要选项可以用，比如 <code>--stat</code>，仅显示简要的增改行数统计：</p>
+
+<pre><code>$ git log --stat
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+ Rakefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+ lib/simplegit.rb |    5 -----
+ 1 file changed, 5 deletions(-)
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    first commit
+
+ README           |    6 ++++++
+ Rakefile         |   23 +++++++++++++++++++++++
+ lib/simplegit.rb |   25 +++++++++++++++++++++++++
+ 3 files changed, 54 insertions(+)
+</code></pre>
+
+<p>每个提交都列出了修改过的文件，以及其中添加和移除的行数，并在最后列出所有增减行数小计。
+还有个常用的 <code>--pretty</code> 选项，可以指定使用完全不同于默认格式的方式展示提交历史。比如用 <code>oneline</code> 将每个提交放在一行显示，这在提交数很大时非常有用。另外还有 <code>short</code>，<code>full</code> 和 <code>fuller</code> 可以用，展示的信息或多或少有些不同，请自己动手实践一下看看效果如何。</p>
+
+<pre><code>$ git log --pretty=oneline
+ca82a6dff817ec66f44342007202690a93763949 changed the version number
+085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test code
+a11bef06a3f659402fe7563abf99ad00de2209e6 first commit
+</code></pre>
+
+<p>但最有意思的是 <code>format</code>，可以定制要显示的记录格式，这样的输出便于后期编程提取分析，像这样：</p>
+
+<pre><code>$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;
+ca82a6d - Scott Chacon, 11 months ago : changed the version number
+085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code
+a11bef0 - Scott Chacon, 11 months ago : first commit
+</code></pre>
+
+<p>表 2-1 列出了常用的格式占位符写法及其代表的意义。</p>
+
+<!-- Attention to translators: this is a table declaration.
+The lines must be formatted as follows
+<TAB><First column text><TAB><Second column text>
+-->
+
+<table class='ref'><thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>%H</code></td>
+<td>提交对象（commit）的完整哈希字串</td>
+</tr>
+<tr>
+<td><code>%h</code></td>
+<td>提交对象的简短哈希字串</td>
+</tr>
+<tr>
+<td><code>%T</code></td>
+<td>树对象（tree）的完整哈希字串</td>
+</tr>
+<tr>
+<td><code>%t</code></td>
+<td>树对象的简短哈希字串</td>
+</tr>
+<tr>
+<td><code>%P</code></td>
+<td>父对象（parent）的完整哈希字串</td>
+</tr>
+<tr>
+<td><code>%p</code></td>
+<td>父对象的简短哈希字串</td>
+</tr>
+<tr>
+<td><code>%an</code></td>
+<td>作者（author）的名字</td>
+</tr>
+<tr>
+<td><code>%ae</code></td>
+<td>作者的电子邮件地址</td>
+</tr>
+<tr>
+<td><code>%ad</code></td>
+<td>作者修订日期（可以用 -date= 选项定制格式）</td>
+</tr>
+<tr>
+<td><code>%ar</code></td>
+<td>作者修订日期，按多久以前的方式显示</td>
+</tr>
+<tr>
+<td><code>%cn</code></td>
+<td>提交者(committer)的名字</td>
+</tr>
+<tr>
+<td><code>%ce</code></td>
+<td>提交者的电子邮件地址</td>
+</tr>
+<tr>
+<td><code>%cd</code></td>
+<td>提交日期</td>
+</tr>
+<tr>
+<td><code>%cr</code></td>
+<td>提交日期，按多久以前的方式显示</td>
+</tr>
+<tr>
+<td><code>%s</code></td>
+<td>提交说明</td>
+</tr>
+</tbody></table>
+
+<p>你一定奇怪<em>作者（author）</em>和<em>提交者（committer）</em>之间究竟有何差别，其实作者指的是实际作出修改的人，提交者指的是最后将此工作成果提交到仓库的人。所以，当你为某个项目发布补丁，然后某个核心成员将你的补丁并入项目时，你就是作者，而那个核心成员就是提交者。我们会在第五章再详细介绍两者之间的细微差别。</p>
+
+<p>用 oneline 或 format 时结合 <code>--graph</code> 选项，可以看到开头多出一些 ASCII 字符串表示的简单图形，形象地展示了每个提交所在的分支及其分化衍合情况。在我们之前提到的 Grit 项目仓库中可以看到：</p>
+
+<pre><code>$ git log --pretty=format:&quot;%h %s&quot; --graph
+* 2d3acf9 ignore errors from SIGCHLD on trap
+*  5e3ee11 Merge branch &#39;master&#39; of git://github.com/dustin/grit
+|\
+| * 420eac9 Added a method for getting the current branch.
+* | 30e367c timeout code and tests
+* | 5a09431 add timeout protection to grit
+* | e1193f8 support for heads with slashes in them
+|/
+* d6016bc require time for xmlschema
+*  11d191e Merge branch &#39;defunkt&#39; into local
+</code></pre>
+
+<p>以上只是简单介绍了一些 <code>git log</code> 命令支持的选项。表 2-2 还列出了一些其他常用的选项及其释义。</p>
+
+<!-- Attention to translators: this is a table declaration.
+The lines must be formatted as follows
+<TAB><First column text><TAB><Second column text>
+-->
+
+<table class='ref'><thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>-p</code></td>
+<td>按补丁格式显示每个更新之间的差异。</td>
+</tr>
+<tr>
+<td><code>--word-diff</code></td>
+<td>按 word diff 格式显示差异。</td>
+</tr>
+<tr>
+<td><code>--stat</code></td>
+<td>显示每次更新的文件修改统计信息。</td>
+</tr>
+<tr>
+<td><code>--shortstat</code></td>
+<td>只显示 --stat 中最后的行数修改添加移除统计。</td>
+</tr>
+<tr>
+<td><code>--name-only</code></td>
+<td>仅在提交信息后显示已修改的文件清单。</td>
+</tr>
+<tr>
+<td><code>--name-status</code></td>
+<td>显示新增、修改、删除的文件清单。</td>
+</tr>
+<tr>
+<td><code>--abbrev-commit</code></td>
+<td>仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。</td>
+</tr>
+<tr>
+<td><code>--relative-date</code></td>
+<td>使用较短的相对时间显示（比如，“2 weeks ago”）。</td>
+</tr>
+<tr>
+<td><code>--graph</code></td>
+<td>显示 ASCII 图形表示的分支合并历史。</td>
+</tr>
+<tr>
+<td><code>--pretty</code></td>
+<td>使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。</td>
+</tr>
+<tr>
+<td><code>--oneline</code></td>
+<td><code>--pretty=oneline --abbrev-commit</code> 的简化用法。</td>
+</tr>
+</tbody></table>
+
+<h3 id="限制输出长度"><a href="#限制输出长度">限制输出长度</a></h3>
+
+<p>除了定制输出格式的选项之外，<code>git log</code> 还有许多非常实用的限制输出长度的选项，也就是只输出部分提交信息。之前我们已经看到过 <code>-2</code> 了，它只显示最近的两条提交，实际上，这是 <code>-&lt;n&gt;</code> 选项的写法，其中的 <code>n</code> 可以是任何自然数，表示仅显示最近的若干条提交。不过实践中我们是不太用这个选项的，Git 在输出所有提交时会自动调用分页程序（less），要看更早的更新只需翻到下页即可。</p>
+
+<p>另外还有按照时间作限制的选项，比如 <code>--since</code> 和 <code>--until</code>。下面的命令列出所有最近两周内的提交：</p>
+
+<pre><code>$ git log --since=2.weeks
+</code></pre>
+
+<p>你可以给出各种时间格式，比如说具体的某一天（“2008-01-15”），或者是多久以前（“2 years 1 day 3 minutes ago”）。</p>
+
+<p>还可以给出若干搜索条件，列出符合的提交。用 <code>--author</code> 选项显示指定作者的提交，用 <code>--grep</code> 选项搜索提交说明中的关键字。（请注意，如果要得到同时满足这两个选项搜索条件的提交，就必须用 <code>--all-match</code> 选项。否则，满足任意一个条件的提交都会被匹配出来）</p>
+
+<p>另一个真正实用的<code>git log</code>选项是路径(path)，如果只关心某些文件或者目录的历史提交，可以在 <code>git log</code> 选项的最后指定它们的路径。因为是放在最后位置上的选项，所以用两个短划线（<code>--</code>）隔开之前的选项和后面限定的路径名。</p>
+
+<p>表 2-3 还列出了其他常用的类似选项。</p>
+
+<!-- Attention to translators: this is a table declaration.
+The lines must be formatted as follows
+<TAB><First column text><TAB><Second column text>
+-->
+
+<table class='ref'><thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>-(n)</code></td>
+<td>仅显示最近的 n 条提交</td>
+</tr>
+<tr>
+<td><code>--since, --after</code></td>
+<td>仅显示指定时间之后的提交。</td>
+</tr>
+<tr>
+<td><code>--until, --before</code></td>
+<td>仅显示指定时间之前的提交。</td>
+</tr>
+<tr>
+<td><code>--author</code></td>
+<td>仅显示指定作者相关的提交。</td>
+</tr>
+<tr>
+<td><code>--committer</code></td>
+<td>仅显示指定提交者相关的提交。</td>
+</tr>
+</tbody></table>
+
+<p>来看一个实际的例子，如果要查看 Git 仓库中，2008 年 10 月期间，Junio Hamano 提交的但未合并的测试脚本（位于项目的 t/ 目录下的文件），可以用下面的查询命令：</p>
+
+<pre><code>$ git log --pretty=&quot;%h - %s&quot; --author=gitster --since=&quot;2008-10-01&quot; \
+   --before=&quot;2008-11-01&quot; --no-merges -- t/
+5610e3b - Fix testcase failure when extended attribute
+acd3b9e - Enhance hold_lock_file_for_{update,append}()
+f563754 - demonstrate breakage of detached checkout wi
+d1a43f2 - reset --hard/read-tree --reset -u: remove un
+51a94af - Fix &quot;checkout --track -b newbranch&quot; on detac
+b0ad11e - pull: allow &quot;git pull origin $something:$cur
+</code></pre>
+
+<p>Git 项目有 20,000 多条提交，但我们给出搜索选项后，仅列出了其中满足条件的 6 条。</p>
+
+<h3 id="使用图形化工具查阅提交历史"><a href="#使用图形化工具查阅提交历史">使用图形化工具查阅提交历史</a></h3>
+
+<p>有时候图形化工具更容易展示历史提交的变化，随 Git 一同发布的 gitk 就是这样一种工具。它是用 Tcl/Tk 写成的，基本上相当于 <code>git log</code> 命令的可视化版本，凡是 <code>git log</code> 可以用的选项也都能用在 gitk 上。在项目工作目录中输入 gitk 命令后，就会启动图 2-2 所示的界面。</p>
+
+<p><center><img src="/figures/18333fig0202-tn.png"></center><br/>
+图 2-2. gitk 的图形界面</p>
+
+<p>上半个窗口显示的是历次提交的分支祖先图谱，下半个窗口显示当前点选的提交对应的具体差异。</p>
+
+<div id="nav"><a href="/book/zh/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93">prev</a> | <a href="/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

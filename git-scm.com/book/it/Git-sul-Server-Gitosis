@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":284,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Gitosis</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/it/v1/Per-Iniziare">Per Iniziare</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/it/v1/Per-Iniziare-Il-Controllo-di-Versione">Il Controllo di Versione</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/it/v1/Per-Iniziare-Una-Breve-Storia-di-Git">Una Breve Storia di Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/it/v1/Per-Iniziare-Basi-di-Git">Basi di Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/it/v1/Per-Iniziare-Installare-Git">Installare Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/it/v1/Per-Iniziare-Prima-Configurazione-di-Git">Prima Configurazione di Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/it/v1/Per-Iniziare-Ottieni-aiuto">Ottieni aiuto</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/it/v1/Per-Iniziare-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/it/v1/Basi-di-Git">Basi di Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/it/v1/Basi-di-Git-Repository-Git">Repository Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/it/v1/Basi-di-Git-Salvare-le-modifiche-sul-repository">Salvare le modifiche sul repository</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/it/v1/Basi-di-Git-Vedere-la-cronologia-delle-commit">Vedere la cronologia delle commit</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/it/v1/Basi-di-Git-Annullare-qualcosa">Annullare qualcosa</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/it/v1/Basi-di-Git-Lavorare-coi-server-remote">Lavorare coi server remote</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/it/v1/Basi-di-Git-Suggerimenti">Suggerimenti</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/it/v1/Basi-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/it/v1/Diramazioni-in-Git">Diramazioni in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/it/v1/Diramazioni-in-Git-Cos-%C3%A8-un-Ramo">Cos&#39;è un Ramo</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/it/v1/Diramazioni-in-Git-Basi-di-Diramazione-e-Fusione">Basi di Diramazione e Fusione</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/it/v1/Diramazioni-in-Git-Amministrazione-dei-Rami">Amministrazione dei Rami</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/it/v1/Diramazioni-in-Git-Flusso-di-Lavoro-con-le-Ramificazioni">Flusso di Lavoro con le Ramificazioni</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/it/v1/Diramazioni-in-Git-Rami-Remoti">Rami Remoti</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/it/v1/Diramazioni-in-Git-Rifondazione">Rifondazione</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/it/v1/Diramazioni-in-Git-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/it/v1/Git-sul-Server">Git sul Server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/it/v1/Git-sul-Server-I-Protocolli">I Protocolli</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/it/v1/Git-sul-Server-Mettere-Git-su-di-un-server">Mettere Git su di un server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/it/v1/Git-sul-Server-Generare-la-Propria-Chiave-Pubblica-SSH">Generare la Propria Chiave Pubblica SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/it/v1/Git-sul-Server-Configurare-il-Server">Configurare il Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/it/v1/Git-sul-Server-Accesso-Pubblico">Accesso Pubblico</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/it/v1/Git-sul-Server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/it/v1/Git-sul-Server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/it/v1/Git-sul-Server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/it/v1/Git-sul-Server-Demone-Git">Demone Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/it/v1/Git-sul-Server-Hosting-Git">Hosting Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/it/v1/Git-sul-Server-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/it/v1/Git-distribuito">Git distribuito</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/it/v1/Git-distribuito-Workflows-distribuiti">Workflows distribuiti</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/it/v1/Git-distribuito-Contribuire-a-un-Progetto">Contribuire a un Progetto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/it/v1/Git-distribuito-Mantenere-un-Progetto">Mantenere un Progetto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/it/v1/Git-distribuito-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/it/v1/Strumenti-di-Git">Strumenti di Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/it/v1/Strumenti-di-Git-Selezione-della-revisione">Selezione della revisione</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/it/v1/Strumenti-di-Git-Assemblaggio-interattivo">Assemblaggio interattivo</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/it/v1/Strumenti-di-Git-Accantonare">Accantonare</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/it/v1/Strumenti-di-Git-Riscrivere-la-storia">Riscrivere la storia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/it/v1/Strumenti-di-Git-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/it/v1/Strumenti-di-Git-Moduli">Moduli</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/it/v1/Strumenti-di-Git-Subtree-Merging">Subtree Merging</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/it/v1/Strumenti-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/it/v1/Personalizzare-Git">Personalizzare Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/it/v1/Personalizzare-Git-Configurazione-di-Git">Configurazione di Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/it/v1/Personalizzare-Git-Attributi-di-Git">Attributi di Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/it/v1/Personalizzare-Git-Git-Hooks">Git Hooks</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/it/v1/Git-e-altri-sistemi">Git e altri sistemi</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/it/v1/Git-e-altri-sistemi-Git-e-Subversion">Git e Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/it/v1/Git-e-altri-sistemi-Migrare-a-Git">Migrare a Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/it/v1/Git-e-altri-sistemi-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/it/v1/I-comandi-interni-di-Git">I comandi interni di Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Impianto-e-sanitari-%3Cem%3EPlumbing%3C%2Fem%3E-e-%3Cem%3EPorcelain%3C%2Fem%3E">Impianto e sanitari (<em>Plumbing</em> e <em>Porcelain</em>)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Gli-oggetti-di-Git">Gli oggetti di Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/it/v1/I-comandi-interni-di-Git-I-riferimenti-di-Git">I riferimenti di Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Pacchetti-di-file">Pacchetti di file</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Le-specifiche-di-riferimento-%3Cem%3Erefspec%3C%2Fem%3E">Le specifiche di riferimento (<em>refspec</em>)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Protocolli-di-trasferimento">Protocolli di trasferimento</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Manutenzione-e-recupero-dei-dati">Manutenzione e recupero dei dati</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>4.7 Git sul Server - Gitosis</h1>
+  <div><h2>Gitosis</h2>
+
+<p>Mantenere tutte le chiavi pubbliche degli utenti nel file <code>authorized_keys</code> funziona bene per un pochino. Quando hai centinaia di utenti, è molto più difficile amministrare questo processo. Devi collegarti al server ogni volta, e non c&#39;è un controllo degli accessi — ognuno nei file ha un accesso in lettura e scrittura ad ogni progetto.</p>
+
+<p>A questo punto, potresti voler passare ad un software maggiormente utilizzato chiamato Gitosis. Gitosis è fondamentalmente una serie di script che aiutano ad amministrare il file <code>authorized_keys</code> esattamente come implementare un sistema di controllo degli accessi. La parte davvero interessante è che l&#39;UI di questo strumento per aggiungere utenti e determinare gli accessi non è un&#39;interfaccia web ma uno speciale repository Git. Puoi impostare le informazioni in questo progetto; e quando le re-invii, Gitosis riconfigura il server basandosi su di esse, è fantastico.</p>
+
+<p>Installare Gitosis non è un&#39;operazione proprio semplice, ma non è così tanto difficile. É facilissimo usarlo su un server Linux — questo esempio usa un server Ubuntu 8.10.</p>
+
+<p>Gitosis richiede alcuni strumenti Python, così prima devi installare il pacchetto di Python setuptools, che Ubuntu fornisce tramite python-setuptools:</p>
+
+<pre><code>$ apt-get install python-setuptools
+</code></pre>
+
+<p>Poi, puoi clonare ed installare Gitosis dal progetto principale:</p>
+
+<pre><code>$ git clone https://github.com/tv42/gitosis.git
+$ cd gitosis
+$ sudo python setup.py install
+</code></pre>
+
+<p>Questo installerà una serie di eseguibili che Gitosis utilizzerà. Poi, Gitosis vuole i suoi repository in <code>/home/git</code>, che va bene. Ma hai già impostato i tuoi repository in <code>/opt/git</code>, così invece di riconfigurare tutto, puoi creare un link simbolico:</p>
+
+<pre><code>$ ln -s /opt/git /home/git/repositories
+</code></pre>
+
+<p>Gitosis amministrerà le chiavi per te, così dovrai rimuovere il file corrente, ri-aggiungere le chiavi successivamente e permettere a Gitosis il controllo automatico del file <code>authorized_keys</code>. Per ora, spostiamo <code>authorized_keys</code> così:</p>
+
+<pre><code>$ mv /home/git/.ssh/authorized_keys /home/git/.ssh/ak.bak
+</code></pre>
+
+<p>Poi devi reimpostare la shell del tuo utente &#39;git&#39;, se lo hai cambiato con il comandi <code>git-shell</code>. Le persone non sono ora in grado di fare il login, ma Gitosis controllerà questa cosa per te. Così, modifica questa linea nel tuo file <code>/etc/passwd</code></p>
+
+<pre><code>git:x:1000:1000::/home/git:/usr/bin/git-shell
+</code></pre>
+
+<p>in questa:</p>
+
+<pre><code>git:x:1000:1000::/home/git:/bin/sh
+</code></pre>
+
+<p>Ora è tempo di inizializzare Gitosis. Puoi farlo avviando il comando <code>gitosis-init</code> con la tua chiave pubblica personale. Se la tua chiave pubblica non è sul server, devi copiarla:</p>
+
+<pre><code>$ sudo -H -u git gitosis-init &lt; /tmp/id_dsa.pub
+Initialized empty Git repository in /opt/git/gitosis-admin.git/
+Reinitialized existing Git repository in /opt/git/gitosis-admin.git/
+</code></pre>
+
+<p>Questo permetterà all&#39;utente con questa chiave di modificare il repository Git principale che controlla la configurazione di Gitosis. Poi, devi manualmente impostare il bit di esecuzione nello script <code>post-update</code> per il tuo nuovo repository di controllo.</p>
+
+<pre><code>$ sudo chmod 755 /opt/git/gitosis-admin.git/hooks/post-update
+</code></pre>
+
+<p>Sei pronto per partire. Se sei configurato correttamente, puoi provare ad entrare via SSH nel tuo server come utente che ha aggiunto la chiave pubblica iniziale in Gitosis. Dovresti vedere qualcosa di simile a:</p>
+
+<pre><code>$ ssh git@gitserver
+PTY allocation request failed on channel 0
+fatal: unrecognized command &#39;gitosis-serve schacon@quaternion&#39;
+  Connection to gitserver closed.
+</code></pre>
+
+<p>Questo significa che Gitosis ti riconosce ma ti butta fuori perché stai cercando di fare un qualcosa che non è un comando Git. Allora, diamo un comando Git — cloniamo il repository di controllo Gitosis:</p>
+
+<pre><code># sul tuo computer locale
+$ git clone git@gitserver:gitosis-admin.git
+</code></pre>
+
+<p>Ora hai una directory chiamata <code>gitosis-admin</code>, formata da due parti principali:</p>
+
+<pre><code>$ cd gitosis-admin
+$ find .
+./gitosis.conf
+./keydir
+./keydir/scott.pub
+</code></pre>
+
+<p>Il file <code>gitosis.conf</code> è il file di controllo in cui specifichi gli utenti, i repository e i permessi. La directory <code>keydir</code> è dove salvi le chiavi pubbliche di tutti gli utenti che hanno un qualsiasi accesso al repository — un file per utente. Il nome del file in <code>keydir</code> (dell&#39;esempio precedente, <code>scott.pub</code>) è differente per te — Gitosis prende questo nome dalla descrizione alla fine della chiave pubblica che hai importato con lo script <code>gitosis-init</code>.</p>
+
+<p>Se guardi nel file <code>gitosis.conf</code>, dovrebbe essere solo specificata l&#39;informazione sul progetto <code>gitosis-admin</code> che hai già clonato:</p>
+
+<pre><code>$ cat gitosis.conf 
+[gitosis]
+
+[group gitosis-admin]
+writable = gitosis-admin
+members = scott
+</code></pre>
+
+<p>Mostra che l&#39;utente &#39;scott&#39; — l&#39;utente che ha inizializzato Gitosis con la sua chiave pubblica — è l&#39;unico che ha l&#39;accesso al progetto <code>gitosis-admin</code>.</p>
+
+<p>Ora, aggiungiamo un nuovo progetto. Aggiungi una nuova sezione chiamata <code>mobile</code> dove elenchi gli sviluppatori del gruppo mobile ed i progetti in cui questi sviluppatori hanno bisogno dell&#39;accesso. In quanto &#39;scott&#39; è l&#39;unico utente nel sistema al momento, aggiungerai solo lui come membro, creerai un nuovo progetto chiamato <code>iphone_project</code> su cui partire:</p>
+
+<pre><code>[group mobile]
+writable = iphone_project
+members = scott
+</code></pre>
+
+<p>Ogni volta che fai una modifica al progetto <code>gitosis-admin</code>, devi fare un commit dei cambiamenti ed un push sul server in modo che abbiano effetto.</p>
+
+<pre><code>$ git commit -am &#39;add iphone_project and mobile group&#39;
+[master]: created 8962da8: &quot;changed name&quot;
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+$ git push
+Counting objects: 5, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@gitserver:/opt/git/gitosis-admin.git
+   fb27aec..8962da8  master -&gt; master
+</code></pre>
+
+<p>Puoi ora fare il tuo push al nuovo progetto <code>iphone_project</code> aggiungendo il tuo server come sorgente remota alla tua versione locale del progetto. Non hai bisogno di creare manualmente un repository base per nuovi progetti sul server — Gitosis li crea automaticamente quando vede il loro primo invio:</p>
+
+<pre><code>$ git remote add origin git@gitserver:iphone_project.git
+$ git push origin master
+Initialized empty Git repository in /opt/git/iphone_project.git/
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 230 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@gitserver:iphone_project.git
+ * [new branch]      master -&gt; master
+</code></pre>
+
+<p>Nota che non devi specificare il percorso (infatti, se lo si fa non funziona), basta solamente la colonna e poi il nome del progetto — Gitosis farà il resto.</p>
+
+<p>Se vuoi lavorare sul progetto con i tuoi amici, devi riaggiungere le chiavi pubbliche. Ma invece di aggiungerle manualmente nel file <code>~/.ssh/authorized_keys</code> sul server, le devi aggiungere, un file per volta, nella directory <code>keydir</code>. Come nomini queste chiavi determinerà come fai riferimento agli utenti nel file <code>gitosis.conf</code>. Riaggiungiamo le chiavi pubbliche per John, Josie e Jessica:</p>
+
+<pre><code>$ cp /tmp/id_rsa.john.pub keydir/john.pub
+$ cp /tmp/id_rsa.josie.pub keydir/josie.pub
+$ cp /tmp/id_rsa.jessica.pub keydir/jessica.pub
+</code></pre>
+
+<p>Ora puoi aggiungerli al tuo team &#39;mobile&#39; così avranno accesso in lettura e scrittura a <code>iphone_project</code>:</p>
+
+<pre><code>[group mobile]
+writable = iphone_project
+members = scott john josie jessica
+</code></pre>
+
+<p>Dopo che hai fatto il commit ed l&#39;invio delle modifiche, tutti e quattro gli utenti saranno in grado di leggere e scrivere nel progetto.</p>
+
+<p>Gitosis ha un semplice controllo dell&#39;accesso. Se vuoi che John abbia solo un accesso in lettura al progetto, devi fare così:</p>
+
+<pre><code>[group mobile]
+writable = iphone_project
+members = scott josie jessica
+
+[group mobile_ro]
+readonly = iphone_project
+members = john
+</code></pre>
+
+<p>Ora John può clonare il progetto ed ottenere gli aggiornamenti, ma Gitosis non gli permetterà di inviarli al progetto. Puoi creare tutti i gruppi che vuoi, ognuno contiene gruppi di utenti e progetti differenti. Puoi anche specificare un altro gruppo con i membri di un altro (usando <code>@</code> come prefisso), per ereditarli automaticamente:</p>
+
+<pre><code>[group mobile_committers]
+members = scott josie jessica
+
+[group mobile]
+writable  = iphone_project
+members   = @mobile_committers
+
+[group mobile_2]
+writable  = another_iphone_project
+members   = @mobile_committers john
+</code></pre>
+
+<p>Se hai un qualsiasi dubbio, può essere utile aggiungere <code>loglevel=DEBUG</code> nell sezione <code>[gitosis]</code>. Se hai perso l&#39;accesso alla scrittura perché hai inviato una configurazione sbagliata, puoi risolvere la cosa manualmente sul server <code>/home/git/.gitosis.conf</code> — il file da dove Gitosis legge le informazioni. Un invio al progetto prende il file <code>gitosis.conf</code> che hai appena inviato e lo posiziona li. Se modifichi questo file manualmente, rimarrà come lo hai lasciato fino al prossimo invio andato a termine nel progetto <code>gitosis-admin</code>.</p>
+
+<div id="nav"><a href="/book/it/Git-sul-Server-GitWeb">prev</a> | <a href="/book/it/v1/Git-sul-Server-Gitolite">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

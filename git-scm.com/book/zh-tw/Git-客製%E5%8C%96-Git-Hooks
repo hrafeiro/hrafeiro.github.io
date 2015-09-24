@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":5,"applicationTime":235,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git Hooks</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B">開始</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">關於版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E7%9A%84%E7%B0%A1%E5%8F%B2">Git 的簡史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E5%9F%BA%E7%A4%8E%E8%A6%81%E9%BB%9E">Git 基礎要點</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit">安裝Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9AGit">初次設定Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%8F%96%E5%BE%97%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6">取得說明文件</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E">Git 基礎</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97Git%E5%84%B2%E5%AD%98%E5%BA%AB">取得Git儲存庫</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E4%BA%A4%E6%9B%B4%E6%96%B0%E5%88%B0%E5%84%B2%E5%AD%98%E5%BA%AB">提交更新到儲存庫</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%AA%A2%E8%A6%96%E6%8F%90%E4%BA%A4%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%A8%98%E9%8C%84">檢視提交的歷史記錄</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F">復原</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">與遠端協同工作</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%A8%99%E7%B1%A4">標籤</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E7%A4%BA%E5%92%8C%E6%8A%80%E5%B7%A7">提示和技巧</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E4%BD%95%E8%AC%82%E5%88%86%E6%94%AF">何謂分支</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E8%88%87%E5%90%88%E4%BD%B5">分支的新建與合併</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%AE%A1%E7%90%86">分支的管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%A9%E7%94%A8%E5%88%86%E6%94%AF%E9%80%B2%E8%A1%8C%E9%96%8B%E7%99%BC%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">利用分支進行開發的工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF">遠端分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88">分支的衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git">伺服器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%94%E8%AD%B0">協議</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2-Git">在伺服器上部署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0">生成 SSH 公開金鑰</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%9E%B6%E8%A8%AD%E4%BC%BA%E6%9C%8D%E5%99%A8">架設伺服器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%85%AC%E5%85%B1%E8%A8%AA%E5%95%8F">公共訪問</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E8%AD%B7%E9%80%B2%E7%A8%8B">Git 守護進程</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E8%A8%97%E7%AE%A1%E6%9C%8D%E5%8B%99">Git 託管服務</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git">分散式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E7%82%BA%E5%B0%88%E6%A1%88%E4%BD%9C%E8%B2%A2%E7%8D%BB">為專案作貢獻</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86">專案的管理</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7">Git 工具</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%81%B8%E6%93%87%E4%BF%AE%E8%A8%82%E7%89%88%E6%9C%AC">選擇修訂版本</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%9A%AB%E5%AD%98">互動式暫存</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing">儲藏 (Stashing)</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%AF%AB%E6%AD%B7%E5%8F%B2">重寫歷史</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E5%81%9A-Debug">使用 Git 做 Debug</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B5%84-Submodules">子模組 (Submodules)</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%B9%E5%90%88%E4%BD%B5">子樹合併</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96">Git 客製化</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E9%85%8D%E7%BD%AE">Git 配置</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%B1%AC%E6%80%A7">Git 屬性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%BC%B7%E5%88%B6%E7%AD%96%E7%95%A5%E5%AF%A6%E4%BE%8B">Git 強制策略實例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1">Git 與其他系統</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-Git-%E8%88%87-Subversion">Git 與 Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E9%81%B7%E7%A7%BB%E5%88%B0-Git">遷移到 Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86">Git 內部原理</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%A4%E5%91%BD%E4%BB%A4-Plumbing-%E5%92%8C%E9%AB%98%E5%B1%A4%E5%91%BD%E4%BB%A4-Porcelain">底層命令 (Plumbing) 和高層命令 (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E7%89%A9%E4%BB%B6">Git 物件</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%82%B3%E8%BC%B8%E5%8D%94%E8%AD%B0">傳輸協議</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B6%AD%E8%AD%B7%E5%8F%8A%E8%B3%87%E6%96%99%E5%BE%A9%E5%8E%9F">維護及資料復原</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>7.3 Git 客製化 - Git Hooks</h1>
+  <div><h2>Git Hooks</h2>
+
+<p>和其他版本控制系統一樣，當某些重要事件發生時，Git 有方法可以觸發自訂腳本。有兩組掛鉤(hooks)：用戶端和伺服器端。用戶端掛鉤用於用戶端的操作，如提交和合併。伺服器端掛鉤用於 Git 伺服器端的操作，如接收被推送的提交。你可以為了各種不同的原因使用這些掛鉤，下面會講解其中一些。</p>
+
+<h3 id="安裝一個-Hook"><a href="#安裝一個-Hook">安裝一個 Hook</a></h3>
+
+<p>掛鉤都被儲存在 Git 目錄下的 <code>hooks</code> 子目錄中，即大部分專案中預設的 <code>.git/hooks</code>。Git 預設會放置一些腳本範例在這個目錄中，除了可以作為掛鉤使用，這些樣本本身是可以獨立使用的。所有的樣本都是 shell 腳本，其中一些還包含了 Perl 的腳本，不過，任何正確命名的可執行腳本都可以正常使用 — 可以用 Ruby 或 Python，或其他。在 Git 1.6 版本之後，這些樣本檔名都是以 .sample 結尾，因此，你必須重新命名。在 Git 1.6 版本之前，這些樣本名都是正確的，但這些樣本不是可執行檔。 </p>
+
+<p>把一個正確命名且可執行的檔放入 Git 目錄下的 hooks 子目錄中，可以啟動該掛鉤腳本，之後他一直會被 Git 呼叫。隨後會講解主要的掛鉤腳本。 </p>
+
+<h3 id="用戶端掛鉤"><a href="#用戶端掛鉤">用戶端掛鉤</a></h3>
+
+<p>有許多用戶端掛鉤，以下把他們分為：提交工作流程掛鉤、電子郵件工作流程掛鉤及其他用戶端掛鉤。 </p>
+
+<h4>提交工作流程掛鉤</h4>
+
+<p>有四個掛鉤被用來處理提交的過程。<code>pre-commit</code> 掛鉤在鍵入提交資訊前運行，被用來檢查即將提交的快照，例如，檢查是否有東西被遺漏，確認測試是否運行，以及檢查代碼。當從該掛鉤返回非零值時，Git 放棄此次提交，但可以用 <code>git commit --no-verify</code> 來忽略。該掛鉤可以被用來檢查程式碼樣式（運行類似 lint 的程式），檢查尾部空白（預設掛鉤是這麼做的），檢查新方法（簡體中文版譯注：程式的函數）的說明。 </p>
+
+<p><code>prepare-commit-msg</code> 掛鉤在提交資訊編輯器顯示之前，預設資訊被創建之後執行。因此，可以有機會在提交作者看到預設資訊前進行編輯。該掛鉤接收一些選項：擁有提交資訊的檔案路徑，提交類型，以及提交的 SHA-1 (如果這是一個 amended 提交)。該掛鉤對通常的提交來說不是很有用，只在自動產生的預設提交資訊的情況下有作用，如提交資訊範本、合併、壓縮和 amended 提交等。可以和提交範本配合使用，以程式設計的方式插入資訊。 </p>
+
+<p><code>commit-msg</code> 掛鉤接收一個參數，此參數是包含最近提交資訊的暫存檔路徑。如果該掛鉤腳本以非零退出，Git 會放棄提交，因此，可以用來在提交通過前驗證專案狀態或提交資訊。本章上一小節已經展示了使用該掛鉤核對提交資訊是否符合特定的模式。 </p>
+
+<p><code>post-commit</code> 掛鉤在整個提交過程完成後運行，他不會接收任何參數，但可以執行 <code>git log -1 HEAD</code> 來獲得最後的提交資訊。總之，該掛鉤是作為通知之類使用的。 </p>
+
+<p>提交工作流程的用戶端掛鉤腳本可以在任何工作流程中使用，他們經常被用來實施某些策略，但值得注意的是，這些腳本在 clone 期間不會被傳送。可以在伺服器端實施策略來拒絕不符合某些策略的推送，但這完全取決於開發者在用戶端使用這些腳本的情況。所以，這些腳本對開發者是有用的，由他們自己設置和維護，而且在任何時候都可以覆蓋或修改這些腳本。 </p>
+
+<h4>E-mail 工作流掛鉤</h4>
+
+<p>有三個可用的用戶端掛鉤用於 e-mail工作流。當運行 <code>git am</code> 命令時，會呼叫他們，因此，如果你沒有在工作流中用到此命令，可以跳過本節。如果你通過 e-mail 接收由 git <code>format-patch</code> 產生的補丁，這些掛鉤也許對你有用。 </p>
+
+<p>首先執行的是 applypatch-msg 掛鉤，他接收一個參數：包含被建議提交資訊的暫存檔案名。如果該腳本以非零值退出，Git 將放棄此補丁。可以使用這個腳本確認提交資訊是否被正確格式化，或讓腳本把提交訊息編輯為正規化。</p>
+
+<p>下一個當透過 <code>git am</code> 應用補丁時執行的是 <code>pre-applypatch</code> 掛鉤。該掛鉤不接收參數，在補丁被應用之後執行，因此，可以被用來在提交前檢查快照。你能用此腳本執行測試，檢查工作樹。如果有些什麼遺漏，或測試沒通過，腳本會以非零退出，放棄此次 <code>git am</code> 的運行，補丁不會被提交。</p>
+
+<p>最後在 <code>git am</code> 操作期間執行的掛鉤是 <code>post-applypatch</code>。你可以用他來通知一個小組或該補丁的作者，但無法使用此腳本阻止打補丁的過程。</p>
+
+<h4>其他用戶端掛鉤</h4>
+
+<p><code>pre-rebase</code> 掛鉤在衍合前執行，腳本以非零退出可以中止衍合的過程。你可以使用這個掛鉤來禁止衍合已經推送的提交物件，Git 所安裝的 <code>pre-rebase</code> 掛鉤範例就是這麼做的，不過它假定 next 是你定義的分支名。因此，你可能要修改樣本，把 next 改成你定義過且穩定的分支名。 </p>
+
+<p>在 <code>git checkout</code> 成功執行後會執行 <code>post-checkout</code> 掛鉤。他可以用來為你的專案環境設置合適的工作目錄。例如：放入大的二進位檔案、自動產生的文檔或其他一切你不想納入版本控制的檔。 </p>
+
+<p>最後，在 <code>merge</code> 命令成功執行後會執行 <code>post-merge</code> 掛鉤。他可以用來在 Git 無法跟蹤的工作樹中恢復資料，例如許可權資料。該掛鉤同樣能夠驗證在 Git 控制之外的檔是否存在，當工作樹改變時，你希望可以複製進來的檔案。</p>
+
+<h3 id="伺服器端掛鉤"><a href="#伺服器端掛鉤">伺服器端掛鉤</a></h3>
+
+<p>除了用戶端掛鉤，作為系統管理員，你還可以使用兩個伺服器端的掛鉤對專案實施各種類型的策略。這些掛鉤腳本可以在提交物件推送到伺服器前執行，也可以在推送到伺服器後執行。推送到伺服器前執行的掛鉤(pre hooks)可以在任何時候以非零退出，拒絕推送、傳回錯誤訊息給用戶端；還可以如你所願設置足夠複雜的推送策略。</p>
+
+<h4>pre-receive and post-receive</h4>
+
+<p>處理來自用戶端的推送（push）操作時最先執行的腳本就是 <code>pre-receive</code> 。它從標準輸入（stdin）獲取被推送的引用(references)列表；如果它退出時的返回值不是0，那麼所有推送內容都不會被接受。利用此掛鉤腳本可以實現類似保證被更新的索引(references)都不是 non-fast-forward 類型；抑或檢查執行推送操作的用戶擁有創建、刪除或者推送的許可權，或者他是否對將要修改的每一個檔都有存取權限。</p>
+
+<p><code>post-receive</code> 掛鉤在整個過程完結以後執行，可以用來更新其他系統服務或者通知使用者。它接受與 <code>pre-receive</code> 相同的標準輸入資料。應用實例包括給某郵寄清單發信，通知即時整合資料的伺服器，或者更新軟體專案的問題追蹤系統 —— 甚至可以通過分析提交資訊來決定某個問題是否應該被開啟、修改或結案。該腳本無法停止推送程序，不過用戶端在它完成之前將保持連接狀態；所以在用它作一些長時間的操作之前請三思。</p>
+
+<h4>update</h4>
+
+<p>update 腳本和 <code>pre-receive</code> 腳本十分類似，除了它會為推送者更新的每一個分支運行一次。假如推送者同時向多個分支推送內容，<code>pre-receive</code> 只執行一次，相較之下 update 則會為每一個更新的分支運行一次。它不會從標準輸入讀取內容，而是接受三個參數：索引(reference)的名字（分支），推送前索引指向的內容的 SHA-1 值，以及使用者試圖推送內容的 SHA-1 值。如果 update 腳本退出時返回非零值，只有相應的那一個索引會被拒絕；其餘的依然會得到更新。 </p>
+
+<div id="nav"><a href="/book/zh-tw/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%B1%AC%E6%80%A7">prev</a> | <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%BC%B7%E5%88%B6%E7%AD%96%E7%95%A5%E5%AF%A6%E4%BE%8B">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

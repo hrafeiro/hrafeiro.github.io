@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":9,"applicationTime":475,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Replace</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/sr/2015-09-05-b3ce3/progit-sr.814.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/sr/2015-09-05-b3ce3/progit-sr.814.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/sr/2015-09-05-b3ce3/progit-sr.814.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/sr/v2/Po%C4%8Detak-O-kontroli-verzije">Početak</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/sr/v2/Po%C4%8Detak-O-kontroli-verzije">O kontroli verzije</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/sr/v2/Po%C4%8Detak-Kratka-istorija-Gita">Kratka istorija Gita</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/sr/v2/Po%C4%8Detak-Osnove-Gita">Osnove Gita</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/sr/v2/Po%C4%8Detak-Komandna-linija">Komandna linija</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/sr/v2/Po%C4%8Detak-Instaliranje-Gita">Instaliranje Gita</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/sr/v2/Po%C4%8Detak-Pode%C5%A1avanja-za-prvi-put">Podešavanja za prvi put</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/sr/v2/Po%C4%8Detak-Tra%C5%BEenje-pomo%C4%87i">Traženje pomoći</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/sr/v2/Po%C4%8Detak-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/sr/v2/Osnove-Gita-Pravljenje-Git-repozitorijuma">Osnove Gita</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/sr/v2/Osnove-Gita-Pravljenje-Git-repozitorijuma">Pravljenje Git repozitorijuma</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/sr/v2/Osnove-Gita-Snimanje-promena-na-repozitorijumu">Snimanje promena na repozitorijumu</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/sr/v2/Osnove-Gita-Pregled-istorije-komitova">Pregled istorije komitova</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/sr/v2/Osnove-Gita-Opovrgavanje">Opovrgavanje</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/sr/v2/Osnove-Gita-Rad-sa-rimoutovima">Rad sa rimoutovima</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/sr/v2/Osnove-Gita-Tagovanje">Tagovanje</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/sr/v2/Osnove-Gita-Alijasi">Alijasi</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/sr/v2/Osnove-Gita-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/sr/v2/Grananje-u-Gitu-Grananje-ukratko">Grananje u Gitu</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/sr/v2/Grananje-u-Gitu-Grananje-ukratko">Grananje ukratko</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/sr/v2/Grananje-u-Gitu-Osnove-grananja-i-spajanja">Osnove grananja i spajanja</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/sr/v2/Grananje-u-Gitu-Upravljanje-granama">Upravljanje granama</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/sr/v2/Grananje-u-Gitu-Tokovi-rada-sa-grananjem">Tokovi rada sa grananjem</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/sr/v2/Grananje-u-Gitu-Udaljene-grane">Udaljene grane</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/sr/v2/Grananje-u-Gitu-Rebaziranje">Rebaziranje</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/sr/v2/Grananje-u-Gitu-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/sr/v2/Git-on-the-Server-Protokoli">Git on the Server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/sr/v2/Git-on-the-Server-Protokoli">Protokoli</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/sr/v2/Git-on-the-Server-Getting-Git-on-a-Server">Getting Git on a Server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/sr/v2/Git-on-the-Server-Generisanje-javnog-SSH-klju%C4%8Da">Generisanje javnog SSH ključa</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/sr/v2/Git-on-the-Server-Setting-Up-the-Server">Setting Up the Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/sr/v2/Git-on-the-Server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/sr/v2/Git-on-the-Server-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/sr/v2/Git-on-the-Server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/sr/v2/Git-on-the-Server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/sr/v2/Git-on-the-Server-Third-Party-Hosted-Options">Third Party Hosted Options</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/sr/v2/Git-on-the-Server-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/sr/v2/Distribuirani-Git-Distribuirani-tokovi-rada">Distribuirani Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/sr/v2/Distribuirani-Git-Distribuirani-tokovi-rada">Distribuirani tokovi rada</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/sr/v2/Distribuirani-Git-Kako-doprineti-projektu">Kako doprineti projektu</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/sr/v2/Distribuirani-Git-Odr%C5%BEavanje-projekta">Održavanje projekta</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/sr/v2/Distribuirani-Git-Rezime">Rezime</a>
+          </li>
+          <li>
+            5.5
+            <a href="/book/sr/v2/Distribuirani-Git-Udaljene-grane">Udaljene grane</a>
+          </li>
+          <li>
+            5.6
+            <a href="/book/sr/v2/Distribuirani-Git-Rebaziranje">Rebaziranje</a>
+          </li>
+          <li>
+            5.7
+            <a href="/book/sr/v2/Distribuirani-Git-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/sr/v2/GitHub-Otvaranje-naloga-i-pode%C5%A1avanja">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/sr/v2/GitHub-Otvaranje-naloga-i-pode%C5%A1avanja">Otvaranje naloga i podešavanja</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/sr/v2/GitHub-Kako-doprineti-projektu">Kako doprineti projektu</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/sr/v2/GitHub-Odr%C5%BEavanje-projekta">Održavanje projekta</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/sr/v2/GitHub-Upravljanje-organizacijom">Upravljanje organizacijom</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/sr/v2/GitHub-Pisanje-skripti-za-GitHub">Pisanje skripti za GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/sr/v2/GitHub-Rezime">Rezime</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/sr/v2/GitHub-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/sr/v2/GitHub-GitLab">GitLab</a>
+          </li>
+          <li>
+            6.9
+            <a href="/book/sr/v2/GitHub-Third-Party-Hosted-Options">Third Party Hosted Options</a>
+          </li>
+          <li>
+            6.10
+            <a href="/book/sr/v2/GitHub-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/sr/v2/Git-Tools-Revision-Selection">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/sr/v2/Git-Tools-Revision-Selection">Revision Selection</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/sr/v2/Git-Tools-Interactive-Staging">Interactive Staging</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/sr/v2/Git-Tools-Stashing-and-Cleaning">Stashing and Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/sr/v2/Git-Tools-Signing-Your-Work">Signing Your Work</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/sr/v2/Git-Tools-Searching">Searching</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/sr/v2/Git-Tools-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/sr/v2/Git-Tools-Reset-Demystified">Reset Demystified</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/sr/v2/Git-Tools-Advanced-Merging">Advanced Merging</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/sr/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/sr/v2/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/sr/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/sr/v2/Git-Tools-Bundling">Bundling</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/sr/v2/Git-Tools-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/sr/v2/Git-Tools-Credential-Storage">Credential Storage</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/sr/v2/Git-Tools-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/sr/v2/Customizing-Git-Git-Configuration">Customizing Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/sr/v2/Customizing-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/sr/v2/Customizing-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/sr/v2/Customizing-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/sr/v2/Customizing-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/sr/v2/Customizing-Git-Summary">Summary</a>
+          </li>
+          <li>
+            8.6
+            <a href="/book/sr/v2/Customizing-Git-Rezime">Rezime</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/sr/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/sr/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/sr/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/sr/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/sr/v2/Git-and-Other-Systems-Signing-Your-Work">Signing Your Work</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/sr/v2/Git-and-Other-Systems-Searching">Searching</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/sr/v2/Git-and-Other-Systems-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/sr/v2/Git-and-Other-Systems-Reset-Demystified">Reset Demystified</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/sr/v2/Git-and-Other-Systems-Advanced-Merging">Advanced Merging</a>
+          </li>
+          <li>
+            9.9
+            <a href="/book/sr/v2/Git-and-Other-Systems-Rerere">Rerere</a>
+          </li>
+          <li>
+            9.10
+            <a href="/book/sr/v2/Git-and-Other-Systems-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            9.11
+            <a href="/book/sr/v2/Git-and-Other-Systems-Submodules">Submodules</a>
+          </li>
+          <li>
+            9.12
+            <a href="/book/sr/v2/Git-and-Other-Systems-Bundling">Bundling</a>
+          </li>
+          <li>
+            9.13
+            <a href="/book/sr/v2/Git-and-Other-Systems-Replace">Replace</a>
+          </li>
+          <li>
+            9.14
+            <a href="/book/sr/v2/Git-and-Other-Systems-Credential-Storage">Credential Storage</a>
+          </li>
+          <li>
+            9.15
+            <a href="/book/sr/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/sr/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/sr/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/sr/v2/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/sr/v2/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/sr/v2/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/sr/v2/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/sr/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/sr/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/sr/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/sr/v2/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>11. <a href="/book/sr/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            11.1
+            <a href="/book/sr/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+          </li>
+          <li>
+            11.2
+            <a href="/book/sr/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            11.3
+            <a href="/book/sr/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>12. <a href="/book/sr/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+    <ol>
+          <li>
+            12.1
+            <a href="/book/sr/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            12.2
+            <a href="/book/sr/v2/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            12.3
+            <a href="/book/sr/v2/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            12.4
+            <a href="/book/sr/v2/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            12.5
+            <a href="/book/sr/v2/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            12.6
+            <a href="/book/sr/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            12.7
+            <a href="/book/sr/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            12.8
+            <a href="/book/sr/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+          </li>
+          <li>
+            12.9
+            <a href="/book/sr/v2/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/sr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/sr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/sr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/sr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/sr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/sr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/sr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/sr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/sr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/sr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/sr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/sr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/sr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/sr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/sr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/sr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/sr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/sr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/sr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/sr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/sr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/sr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/sr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/sr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/sr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>9.13 Git and Other Systems - Replace</h1>
+  <div><a id="_replace"></a><h2>Replace</h2>
+
+<p>Git’s objects are unchangeable, but it does provide an interesting way to pretend to replace objects in its database with other objects.</p>
+
+<p>The <code>replace</code> command lets you specify an object in Git and say "every time you see this, pretend it’s this other thing".
+This is most commonly useful for replacing one commit in your history with another one.</p>
+
+<p>For example, let’s say you have a huge code history and want to split your repository into one short history for new developers and one much longer and larger history for people interested in data mining.
+You can graft one history onto the other by `replace`ing the earliest commit in the new line with the latest commit on the older one.
+This is nice because it means that you don’t actually have to rewrite every commit in the new history, as you would normally have to do to join them together (because the parentage affects the SHA-1s).</p>
+
+<p>Let’s try this out.
+Let’s take an existing repository, split it into two repositories, one recent and one historical, and then we’ll see how we can recombine them without modifying the recent repositories SHA-1 values via <code>replace</code>.</p>
+
+<p>We’ll use a simple repository with five simple commits:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline
+<code class="go">ef989d8 fifth commit</code>
+<code class="go">c6e1e95 fourth commit</code>
+<code class="go">9c68fdc third commit</code>
+<code class="go">945704c second commit</code>
+<code class="go">c1822cf first commit</code>
+</pre>
+
+<p>We want to break this up into two lines of history.
+One line goes from commit one to commit four - that will be the historical one.
+The second line will just be commits four and five - that will be the recent history.</p>
+
+<figure id="id-1NOAHe"><img src="/book/en/v2/book/07-git-tools/images/replace1.png" alt="replace1"><figcaption><span class="label">Figure 9-28. </span></figcaption></figure><p>Well, creating the historical history is easy, we can just put a branch in the history and then push that branch to the master branch of a new remote repository.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch <code class="nb">history </code>c6e1e95
+<code class="gp">$</code> git log --oneline --decorate
+<code class="go">ef989d8 (HEAD, master) fifth commit</code>
+<code class="go">c6e1e95 (history) fourth commit</code>
+<code class="go">9c68fdc third commit</code>
+<code class="go">945704c second commit</code>
+<code class="go">c1822cf first commit</code>
+</pre>
+
+<figure id="id-7JMDTn"><img src="/book/en/v2/book/07-git-tools/images/replace2.png" alt="replace2"><figcaption><span class="label">Figure 9-29. </span></figcaption></figure><p>Now we can push the new <code>history</code> branch to the <code>master</code> branch of our new repository:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add project-history https://github.com/schacon/project-history
+<code class="gp">$</code> git push project-history <code class="nb">history</code>:master
+<code class="go">Counting objects: 12, done.</code>
+<code class="go">Delta compression using up to 2 threads.</code>
+<code class="go">Compressing objects: 100% (4/4), done.</code>
+<code class="go">Writing objects: 100% (12/12), 907 bytes, done.</code>
+<code class="go">Total 12 (delta 0), reused 0 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (12/12), done.</code>
+<code class="go">To git@github.com:schacon/project-history.git</code>
+<code class="go"> * [new branch]      history -&gt; master</code>
+</pre>
+
+<p>OK, so our history is published.
+Now the harder part is truncating our recent history down so it’s smaller.
+We need an overlap so we can replace a commit in one with an equivalent commit in the other, so we’re going to truncate this to just commits four and five (so commit four overlaps).</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --decorate
+<code class="go">ef989d8 (HEAD, master) fifth commit</code>
+<code class="go">c6e1e95 (history) fourth commit</code>
+<code class="go">9c68fdc third commit</code>
+<code class="go">945704c second commit</code>
+<code class="go">c1822cf first commit</code>
+</pre>
+
+<p>It’s useful in this case to create a base commit that has instructions on how to expand the history, so other developers know what to do if they hit the first commit in the truncated history and need more.
+So, what we’re going to do is create an initial commit object as our base point with instructions, then rebase the remaining commits (four and five) on top of it.</p>
+
+<p>To do that, we need to choose a point to split at, which for us is the third commit, which is <code>9c68fdc</code> in SHA-speak.
+So, our base commit will be based off of that tree.
+We can create our base commit using the <code>commit-tree</code> command, which just takes a tree and will give us a brand new, parentless commit object SHA-1 back.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'get history from blah blah blah'</code> <code class="p">|</code> git commit-tree 9c68fdc^<code class="o">{</code>tree<code class="o">}</code>
+<code class="go">622e88e9cbfbacfb75b5279245b9fb38dfea10cf</code>
+</pre>
+<div data-type="note" id="id-bK9oCb">
+<h6>Note</h6>
+<p>The <code>commit-tree</code> command is one of a set of commands that are commonly referred to as <em>plumbing</em> commands.
+These are commands that are not generally meant to be used directly, but instead are used by <strong>other</strong> Git commands to do smaller jobs.
+On occasions when we’re doing weirder things like this, they allow us to do really low-level things but are not meant for daily use.
+You can read more about plumbing commands in <a data-type="xref" href="1-git-internals/_plumbing_porcelain">Plumbing and Porcelain</a></p>
+</div>
+
+<figure id="id-7JGDUn"><img src="/book/en/v2/book/07-git-tools/images/replace3.png" alt="replace3"><figcaption><span class="label">Figure 9-30. </span></figcaption></figure><p>OK, so now that we have a base commit, we can rebase the rest of our history on top of that with <code>git rebase --onto</code>.
+The <code>--onto</code> argument will be the SHA-1 we just got back from <code>commit-tree</code> and the rebase point will be the third commit (the parent of the first commit we want to keep, <code>9c68fdc</code>):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rebase --onto 622e88 9c68fdc
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: fourth commit</code>
+<code class="go">Applying: fifth commit</code>
+</pre>
+
+<figure id="id-4AnNU3"><img src="/book/en/v2/book/07-git-tools/images/replace4.png" alt="replace4"><figcaption><span class="label">Figure 9-31. </span></figcaption></figure><p>OK, so now we’ve re-written our recent history on top of a throw away base commit that now has instructions in it on how to reconstitute the entire history if we wanted to.
+We can push that new history to a new project and now when people clone that repository, they will only see the most recent two commits and then a base commit with instructions.</p>
+
+<p>Let’s now switch roles to someone cloning the project for the first time who wants the entire history.
+To get the history data after cloning this truncated repository, one would have to add a second remote for the historical repository and fetch:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://github.com/schacon/project
+<code class="gp">$</code> <code class="nb">cd </code>project
+
+<code class="gp">$</code> git log --oneline master
+<code class="go">e146b5f fifth commit</code>
+<code class="go">81a708d fourth commit</code>
+<code class="go">622e88e get history from blah blah blah</code>
+
+<code class="gp">$</code> git remote add project-history https://github.com/schacon/project-history
+<code class="gp">$</code> git fetch project-history
+<code class="go">From https://github.com/schacon/project-history</code>
+<code class="go"> * [new branch]      master     -&gt; project-history/master</code>
+</pre>
+
+<p>Now the collaborator would have their recent commits in the <code>master</code> branch and the historical commits in the <code>project-history/master</code> branch.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline master
+<code class="go">e146b5f fifth commit</code>
+<code class="go">81a708d fourth commit</code>
+<code class="go">622e88e get history from blah blah blah</code>
+
+<code class="gp">$</code> git log --oneline project-history/master
+<code class="go">c6e1e95 fourth commit</code>
+<code class="go">9c68fdc third commit</code>
+<code class="go">945704c second commit</code>
+<code class="go">c1822cf first commit</code>
+</pre>
+
+<p>To combine them, you can simply call <code>git replace</code> with the commit you want to replace and then the commit you want to replace it with.
+So we want to replace the "fourth" commit in the master branch with the "fourth" commit in the <code>project-history/master</code> branch:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git replace 81a708d c6e1e95
+</pre>
+
+<p>Now, if you look at the history of the <code>master</code> branch, it appears to look like this:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline master
+<code class="go">e146b5f fifth commit</code>
+<code class="go">81a708d fourth commit</code>
+<code class="go">9c68fdc third commit</code>
+<code class="go">945704c second commit</code>
+<code class="go">c1822cf first commit</code>
+</pre>
+
+<p>Cool, right?  Without having to change all the SHA-1s upstream, we were able to replace one commit in our history with an entirely different commit and all the normal tools (<code>bisect</code>, <code>blame</code>, etc) will work how we would expect them to.</p>
+
+<figure id="id-ObYqiX"><img src="/book/en/v2/book/07-git-tools/images/replace5.png" alt="replace5"><figcaption><span class="label">Figure 9-32. </span></figcaption></figure><p>Interestingly, it still shows <code>81a708d</code> as the SHA-1, even though it’s actually using the <code>c6e1e95</code> commit data that we replaced it with.
+Even if you run a command like <code>cat-file</code>, it will show you the replaced data:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p 81a708d
+<code class="go">tree 7bc544cf438903b65ca9104a1e30345eee6c083d</code>
+<code class="go">parent 9c68fdceee073230f19ebb8b5e7fc71b479c0252</code>
+<code class="go">author Scott Chacon &lt;schacon@gmail.com&gt; 1268712581 -0700</code>
+<code class="go">committer Scott Chacon &lt;schacon@gmail.com&gt; 1268712581 -0700</code>
+
+<code class="go">fourth commit</code>
+</pre>
+
+<p>Remember that the actual parent of <code>81a708d</code> was our placeholder commit (<code>622e88e</code>), not <code>9c68fdce</code> as it states here.</p>
+
+<p>Another interesting thing is that this data is kept in our references:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git <code class="k">for</code>-each-ref
+<code class="go">e146b5f14e79d4935160c0e83fb9ebe526b8da0d commit	refs/heads/master</code>
+<code class="go">c6e1e95051d41771a649f3145423f8809d1a74d4 commit	refs/remotes/history/master</code>
+<code class="go">e146b5f14e79d4935160c0e83fb9ebe526b8da0d commit	refs/remotes/origin/HEAD</code>
+<code class="go">e146b5f14e79d4935160c0e83fb9ebe526b8da0d commit	refs/remotes/origin/master</code>
+<code class="go">c6e1e95051d41771a649f3145423f8809d1a74d4 commit	refs/replace/81a708dd0e167a3f691541c7a6463343bc457040</code>
+</pre>
+
+<p>This means that it’s easy to share our replacement with others, because we can push this to our server and other people can easily download it.
+This is not that helpful in the history grafting scenario we’ve gone over here (since everyone would be downloading both histories anyhow, so why separate them?) but it can be useful in other circumstances.</p>
+<div id="nav"><a href="/book/sr/Git-and-Other-Systems-Bundling">prev</a> | <a href="/book/sr/v2/Git-and-Other-Systems-Credential-Storage">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

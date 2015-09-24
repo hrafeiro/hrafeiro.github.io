@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":294,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git асоси</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/uz/2015-04-15-2f6b0/progit-uz.445.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/uz/2015-04-15-2f6b0/progit-uz.445.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/uz/2015-04-15-2f6b0/progit-uz.445.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-%D0%A2%D0%B0%D0%BB%D2%9B%D0%B8%D0%BD%D0%BB%D0%B0%D1%80%D0%BD%D0%B8-%D0%B1%D0%BE%D1%88%D2%9B%D0%B0%D1%80%D0%B8%D1%88-%D2%B3%D0%B0%D2%9B%D0%B8%D0%B4%D0%B0">Иш бошланиши</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-%D0%A2%D0%B0%D0%BB%D2%9B%D0%B8%D0%BD%D0%BB%D0%B0%D1%80%D0%BD%D0%B8-%D0%B1%D0%BE%D1%88%D2%9B%D0%B0%D1%80%D0%B8%D1%88-%D2%B3%D0%B0%D2%9B%D0%B8%D0%B4%D0%B0">Талқинларни бошқариш ҳақида</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-Git-%D0%BD%D0%B8%D0%BD%D0%B3-%D2%9B%D0%B8%D1%81%D2%9B%D0%B0%D1%87%D0%B0-%D1%82%D0%B0%D1%80%D0%B8%D1%85%D0%B8">Git нинг қисқача тарихи</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-Git-%D0%B0%D1%81%D0%BE%D1%81%D0%B8">Git асоси</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D0%BB%D0%B0%D1%80-%D1%81%D0%B0%D1%82%D1%80%D0%B8">Командалар сатри</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-Git-%D0%BD%D0%B8-%D1%9E%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D1%88">Git ни ўрнатиш</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-Git-%D0%B4%D0%B0-%D0%B1%D0%B8%D1%80%D0%B8%D0%BD%D1%87%D0%B8-%D1%81%D0%BE%D0%B7%D0%BB%D0%B0%D1%88%D0%BB%D0%B0%D1%80">Git да биринчи созлашлар</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-%D2%9A%D0%B0%D0%BD%D0%B4%D0%B0%D0%B9-%D1%91%D1%80%D0%B4%D0%B0%D0%BC-%D0%BE%D0%BB%D0%B8%D1%88-%D0%BC%D1%83%D0%BC%D0%BA%D0%B8%D0%BD%3F">Қандай ёрдам олиш мумкин?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-%D0%A5%D1%83%D0%BB%D0%BE%D1%81%D0%B0%D0%BB%D0%B0%D1%80">Хулосалар</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-Git-%D0%BE%D0%BC%D0%B1%D0%BE%D1%80%D0%B8%D0%BD%D0%B8-%D1%8F%D1%80%D0%B0%D1%82%D0%B8%D1%88">Git асослари</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-Git-%D0%BE%D0%BC%D0%B1%D0%BE%D1%80%D0%B8%D0%BD%D0%B8-%D1%8F%D1%80%D0%B0%D1%82%D0%B8%D1%88">Git омборини яратиш</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-%D0%8E%D0%B7%D0%B3%D0%B0%D1%80%D0%B8%D1%88%D0%BB%D0%B0%D1%80%D0%BD%D0%B8-%D0%BE%D0%BC%D0%B1%D0%BE%D1%80%D0%B3%D0%B0-%D1%91%D0%B7%D0%B8%D1%88">Ўзгаришларни омборга ёзиш</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-%D0%A4%D0%B8%D0%BA%D1%81%D0%B8%D1%80%D0%BB%D0%B0%D1%88%D0%BB%D0%B0%D1%80-%D1%82%D0%B0%D1%80%D0%B8%D1%85%D0%B8%D0%BD%D0%B8-%D0%BA%D1%9E%D1%80%D0%B8%D1%88">Фиксирлашлар тарихини кўриш</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-%D0%8E%D0%B7%D0%B3%D0%B0%D1%80%D0%B8%D1%88%D0%BB%D0%B0%D1%80%D0%BD%D0%B8-%D0%B1%D0%B5%D0%BA%D0%BE%D1%80-%D2%9B%D0%B8%D0%BB%D0%B8%D1%88">Ўзгаришларни бекор қилиш</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-%D0%A3%D0%B7%D0%BE%D2%9B-%D0%BC%D0%B0%D1%81%D0%BE%D1%84%D0%B0%D0%B4%D0%B0%D0%B3%D0%B8-%D0%BE%D0%BC%D0%B1%D0%BE%D1%80%D0%BB%D0%B0%D1%80-%D0%B1%D0%B8%D0%BB%D0%B0%D0%BD-%D0%B8%D1%88%D0%BB%D0%B0%D1%88">Узоқ масофадаги омборлар билан ишлаш</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-%D0%A2%D0%B0%D0%BC%D2%93%D0%B0%D0%BB%D0%B0%D1%88">Тамғалаш</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-Git-%D0%B4%D0%B0-%D1%82%D0%B0%D2%B3%D0%B0%D0%BB%D0%BB%D1%83%D1%81%D0%BB%D0%B0%D1%80">Git да таҳаллуслар</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/uz/v2/Git-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8-%D0%A5%D1%83%D0%BB%D0%BE%D1%81%D0%B0">Хулоса</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%A2%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D2%B3%D0%B0%D2%9B%D0%B8%D0%B4%D0%B0-%D0%B8%D0%BA%D0%BA%D0%B8-%D0%BE%D2%93%D0%B8%D0%B7-%D1%81%D1%9E%D0%B7">Git да тармоқланиш</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%A2%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D2%B3%D0%B0%D2%9B%D0%B8%D0%B4%D0%B0-%D0%B8%D0%BA%D0%BA%D0%B8-%D0%BE%D2%93%D0%B8%D0%B7-%D1%81%D1%9E%D0%B7">Тармоқланиш ҳақида икки оғиз сўз</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%A2%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%B2%D0%B0-%D0%B1%D0%B8%D1%80%D0%BB%D0%B0%D1%88%D0%B8%D1%88-%D0%B0%D1%81%D0%BE%D1%81%D0%BB%D0%B0%D1%80%D0%B8">Тармоқланиш ва бирлашиш асослари</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%A2%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D1%80%D0%BD%D0%B8-%D0%B1%D0%BE%D1%88%D2%9B%D0%B0%D1%80%D0%B8%D1%88">Тармоқларни бошқариш</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%98%D1%88-%D0%B6%D0%B0%D1%80%D0%B0%D1%91%D0%BD%D0%BB%D0%B0%D1%80%D0%B8%D0%BD%D0%B8-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D1%88">Иш жараёнларини тармоқлаш</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%A3%D0%B7%D0%BE%D2%9B-%D0%BC%D0%B0%D1%81%D0%BE%D1%84%D0%B0%D0%B4%D0%B0%D0%B3%D0%B8-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D1%80">Узоқ масофадаги тармоқлар</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/uz/v2/Git-%D0%B4%D0%B0-%D1%82%D0%B0%D1%80%D0%BC%D0%BE%D2%9B%D0%BB%D0%B0%D0%BD%D0%B8%D1%88-%D0%A5%D1%83%D0%BB%D0%BE%D1%81%D0%B0%D0%BB%D0%B0%D1%80">Хулосалар</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-The-Protocols">Git серверда</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-The-Protocols">The Protocols</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-Getting-Git-on-a-Server">Getting Git on a Server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-Generating-Your-SSH-Public-Key">Generating Your SSH Public Key</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-Setting-Up-the-Server">Setting Up the Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-Third-Party-Hosted-Options">Third Party Hosted Options</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/uz/v2/Git-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B4%D0%B0-%D0%A5%D1%83%D0%BB%D0%BE%D1%81%D0%B0%D0%BB%D0%B0%D1%80">Хулосалар</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/uz/v2/Distributed-Git-Distributed-Workflows">Distributed Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/uz/v2/Distributed-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/uz/v2/Distributed-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/uz/v2/Distributed-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/uz/v2/Distributed-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/uz/v2/GitHub-Account-Setup-and-Configuration">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/uz/v2/GitHub-Account-Setup-and-Configuration">Account Setup and Configuration</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/uz/v2/GitHub-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/uz/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/uz/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/uz/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/uz/v2/GitHub-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/uz/v2/Git-Tools-Revision-Selection">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/uz/v2/Git-Tools-Revision-Selection">Revision Selection</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/uz/v2/Git-Tools-Interactive-Staging">Interactive Staging</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/uz/v2/Git-Tools-Stashing-and-Cleaning">Stashing and Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/uz/v2/Git-Tools-Signing-Your-Work">Signing Your Work</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/uz/v2/Git-Tools-Searching">Searching</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/uz/v2/Git-Tools-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/uz/v2/Git-Tools-Reset-Demystified">Reset Demystified</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/uz/v2/Git-Tools-Advanced-Merging">Advanced Merging</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/uz/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/uz/v2/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/uz/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/uz/v2/Git-Tools-Bundling">Bundling</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/uz/v2/Git-Tools-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/uz/v2/Git-Tools-Credential-Storage">Credential Storage</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/uz/v2/Git-Tools-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/uz/v2/Customizing-Git-Git-Configuration">Customizing Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/uz/v2/Customizing-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/uz/v2/Customizing-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/uz/v2/Customizing-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/uz/v2/Customizing-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/uz/v2/Customizing-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/uz/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/uz/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/uz/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/uz/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/uz/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/uz/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/uz/v2/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/uz/v2/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/uz/v2/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/uz/v2/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/uz/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/uz/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/uz/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/uz/v2/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/uz/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/uz/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/uz/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/uz/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/uz/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/uz/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/uz/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/uz/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/uz/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/uz/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/uz/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/uz/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/uz/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/uz/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/uz/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/uz/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/uz/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/uz/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/uz/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/uz/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/uz/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/uz/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/uz/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/uz/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/uz/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>1.3 Иш бошланиши - Git асоси</h1>
+  <div><a id="idp144992"></a><h2>Git асоси</h2>
+
+<p>Хўш Git бир оғиз сўз билан айтганда нима ўзи?
+Бу қисмни ўзлаштириш муҳим, агарда сиз, Git нима ва унинг ишлаш услублари қанақалигини тушунсангиз ундан самарали фойдаланишингизда сизга онсон бўлади.
+Git ни ўрганиш давомида бошқа Subversion ёки Perforce каби ТБТ лари ҳақида билганларингизни барчасини унутишга ҳаракат қилинг.
+Git да фойдаланувчи ойнаси бошқа ТБТ ларники каби бўлгани билан ундаги ахборотлар ва ахборот устидаги ишлар бошқа тизимлардагидек эмас. Бу фарқлар ҳақидаги билимингиз сизни Git билан ишлаш давомида адашишдан ҳимоялайди.<a data-type="indexterm" data-primary="Subversion" id="idp147552"></a><a data-type="indexterm" data-primary="Perforce" id="idp148256"></a></p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Нусхалар патчлар ўрнига" id="idp139840"><h3 id="Нусхалар-патчлар-ўрнига"><a href="#Нусхалар-патчлар-ўрнига">Нусхалар патчлар ўрнига</a></h3>
+
+<p>Git нинг бошқа ТБТ (масалан, Subversion ва унга ўхшаш) лардан асосий фарқи – бу Git нинг маълумотларга қандай қараши.
+Кўпчилик бошқа тизимлар ахборотларни файлларнинг ўзгариш(патч)лари рўйҳати кўринишида сақларди.
+Бундай тизимлар (CVS, Subversion, Perforce, Bazaar ва бошқалари) расмда кўрсатилганидек ҳар бир файлга ўзгартириш киритиш вақтида сақланувчи маълумотларга файллар ва ўзгаришлар тўплами сифатида қарайди.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/01-introduction/images/deltas.png" alt="Бошқа тизимлар маълумотларни ҳар бир файл учун асос талқинларининг ўзгариши кўринишида сақлайди."></div>
+<figcaption>Бошқа тизимлар маълумотларни ҳар бир файл учун асос талқинларининг ўзгариши кўринишида сақлайди.</figcaption></figure><p>Git ўз маълумотларини бундай кўринишда сақламайди.
+Бунинг ўрнига Git сақланувчи маълумотларни катта бўлмаган файллар тизимининг нусхалари тўплами сифатида қарайди.
+Ҳар сафар сиз лойиҳанинг жорий талқинини фиксирлаган вақтингизда Git айни вақтда лойиҳанинг барча файллар нусхаларини сақлайди.
+Самарадорликни ошириш мақсадида файл ўзгартирилмаган бўлса бундай файлларни нусхасини яратиш ўрнига аввалги сақланган нусхага тегишли йўлланмани яратади.
+Ушбу жараён расмда ифодаланган.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/01-introduction/images/snapshots.png" alt="Git маълумотларни маълум бир вақтдаги ҳолатларини нусхаси кўринишида сақлайди."></div>
+<figcaption>Git маълумотларни маълум бир вақтдаги ҳолатларини нусхаси кўринишида сақлайди.</figcaption></figure><p>Бу Git ва деярли барча бошқа талқинларни бошқарувчи тизимлар орасидаги муҳим фарқдир.
+Шу туфайли Git ҳар бир талқинларни бошқариш тизимининг турли хил ёндашувларини кўриб чиқишга мажбур ва бу ҳислатни бошқа тизимлар ҳам Git дан олишган.
+Git оддий ТБТ дан кўра кўпроқ катта бўлмаган файллар тизимига ўхшайди.
+У бу тизим устидан ишлай оладиган кучли ускуналарига эга. <a data-type="xref" href="ch03/_git_branching">Chapter 3</a> даги Git да тармоқлар билан ишлаш мавзусига келганимизда биз маълумотларни бундай тушуниш қандай ютуқлар беришини билиб оламиз.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Деярли барча амаллар - маҳаллий" id="idp169776"><h3 id="Деярли-барча-амаллар---маҳаллий"><a href="#Деярли-барча-амаллар---маҳаллий">Деярли барча амаллар - маҳаллий</a></h3>
+
+<p>Кўп амалларни  бажариш учун Git га фақат маҳаллий файл ва манбалар зарур, шунингдек одатда тармоқдаги ўзга компьютерлардаги маълумот ҳам керак эмас.
+Агар сиз тармоқдаги ушланиб қолишларга боғлиқ бўлган марказлаштирилган тизимлар билан ишлаган бўлсангиз Git ни ишлатиб анча ўзингизни енгил ҳис қилишингиз тайин.
+Сабаби лойиҳанинг бутун тарихи сизнинг маҳаллий дискингизда сақланади ва кўп амаллар бир зумда бажарилади.</p>
+
+<p>Мисол учун тарихни кўрсатиш учун Git уни сервердан юклаб олмайди балки сизнинг маҳаллий омборингиздан ўқиб кўрсатади.
+Шунинг учун тарихни бир зумда кўришингиз мумкин.
+Агар сизга жорий ва бир ой олдинги талқинлар орасидаги ўзгаришни кўриш керак бўлса, ТБТ серверидан фарқни сўраш ёки ундан эски файлни юклаб олиб кейин маҳаллий солиштиришни амалга ошириш ўрнига Git бир ой олдинги файлни (маҳаллий дискдан) олиб орасидаги фарқни шу жойнинг ўзида ҳисоблаб бера олади.</p>
+
+<p>Бундан ташқари маҳаллий ишлаш тармоққа ёки VPN га ҳуқуқ бўлмаса ҳам анча иш қилиш мумкинлигини англатади.
+Агарда сиз самолётда ёки поездда бўлсангиз ва ишлашни хоҳласангиз бемалол ўзгаришларни сақлаб ва тармоққа уланиш имконияти пайдо бўлганидан кейин бу ўзгаришларни серверга жўнатишингиз мумкин бўлади.
+Агар сиз уйга келсангиз ва VPN мижоз дастури ишламаса барибир ишлашни давом эттиришингиз мумкин.
+Кўпчилик бошқа тизимларда бундай имконият йўқ ёки бўлсада қулай эмас.
+Масалан, Perforce ни  ишлатган ҳолда серверга уланмасдан жуда ҳам кам ишларни қила оласиз. Subversion ва CVS лар билан ишлаб файлларни таҳрирлаш мумкин, лекин ўзгаришларни маълумотлар омборига сақлаш мумкин эмас(сабаби у омбордан узилган).
+Деярли ҳеч нарса эмасдек, бироқ сиз кейинчалик бу қанчалик ишга таъсир қилишининг гувоҳи бўласиз.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Git – маълумотларнинг бутунлигини таъминланишини кузатади" id="idp182880"><h3 id="Git-–-маълумотларнинг-бутунлигини-таъминланишини-кузатади"><a href="#Git-–-маълумотларнинг-бутунлигини-таъминланишини-кузатади">Git – маълумотларнинг бутунлигини таъминланишини кузатади</a></h3>
+
+<p>Git ихтиёрий файлларни сақлашдан олдин текширув йиғиндисини (контрольную сумму) ҳисоблаб чиқади ва бу файлнинг индекси бўлиб хизмат қилади.
+Шунинг учун файл ёки папка ичидагиларни Git билмайдиган тарзда ўзгартириб бўлмайди.
+Git нинг бу функцияси унинг асоси сифатида қурилган бўлиб, фалсафасининг муҳим ташкил этувчиларидан бири ҳисобланади.
+Агар маълумотлар узатиш вақтида ёки дискда бузилса Git бу ҳақда доим ҳабар беради.</p>
+
+<p>Git нинг  текширув йиғиндисини ҳисоблашда ишлатадиган механизми SHA-1 хеш дея аталади.<a data-type="indexterm" data-primary="SHA-1" id="idp171696"></a>
+Бу 40 та ўн олтилик саноқ системасидаги белгидан (0-9 ва a-f) иборат бўлган сатр SHA-1 хеш тахминан қуйидагича кўринишга эга:</p>
+
+<pre data-type="programlisting">24b9da6552252987aa493b52f8696cd6d3b00373</pre>
+
+<p>Git билан ишлаб хеш кенг ишлатилганилиги боис доимий равишда сиз унга дуч келасиз.
+Аслида ҳам Git ўз маълумотлар омборида файлларни номлари билан эмас балки уларнинг ташкил этувчилари билан яратилган хешларини сақлайди.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Git га маълумотлар тез-тез фақат қўшилиб туради" id="idp174272"><h3 id="Git-га-маълумотлар-тез-тез-фақат-қўшилиб-туради"><a href="#Git-га-маълумотлар-тез-тез-фақат-қўшилиб-туради">Git га маълумотлар тез-тез фақат қўшилиб туради</a></h3>
+
+<p>Git да сиз қилаётган амалдаги ҳамма ҳаракатлар фақат маълумотларни омборга қўшади.
+Тизимни маълумотларни ўчиришга мажбурлаш ёки тизимда бирор қайтариб бўлмайдиган ишни қилиш жуда қийин.
+Бошқа ТБТ лар каби сақланмаган маълумотларни йўқотиш мумкин, бироқ уларни фиксирланганидан кейин йўқотиб қўйиш жуда қийин.
+Бу янада қийин агарда сиз ўзгаришларни бошқа омборга жўнатиб турсангиз.</p>
+
+<p>Шунинг учун Git ни ишлатиш – кўнгил тўқлик, чунки ниманидир бузиб қўйишдан чўчимасдан бемалол тажриба ўтказиш мумкин.
+Git маълумотларни қандай сақлаши ҳақида батафсилроқ ва йўқотилган туюлаётган маълумотларни тиклаш тўғрисидаги маълумотларни олиш учун <a data-type="xref" href="ch02/_undoing">“Ўзгаришларни бекор қилиш”</a> бўлимни ўқинг.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Уч ҳолат" id="idp178160"><h3 id="Уч-ҳолат"><a href="#Уч-ҳолат">Уч ҳолат</a></h3>
+
+<p>Энди диққат.
+Бу кейинги ўрганишларингиз силлиқ кетиши учун Git ҳақида эсда сақлашингиз керак бўлганларидан энг муҳими.
+Git да файллар қуйидаги уч ҳолатдан бирида бўлиши мумкин: фиксирланган (committed), ўзгартирилган (modified) ва тайёрланган (staged).
+“Фиксирланган” файл сизнинг маҳаллий омборингизда сақланганлигини англатади.
+“Ўзгартирилган” файлларга ўзгартирилгану лекин фиксирланмаганлар киради.
+“Тайёрланган” файллар – бу ўзгартирилган файлларнинг навбатдаги жўнатишга (commit) ажратилганлари.</p>
+
+<p>Шу тариқа Git ишлатилган лойиҳада уч қисм мавжуд: Git каталоги (Git directory), ишчи каталог (working directory) ва тайёрланган файллар соҳаси(staging area).</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/01-introduction/images/areas.png" alt="Ишчи каталог" width="тайёрланган файллар соҳаси"></div>
+<figcaption>Ишчи каталог, тайёрланган файллар соҳаси, Git каталоги.</figcaption></figure><p>Git каталоги – Git ни сизнинг лойиҳангиз объектларининг метамаълумотларини ва маълумотлар омборини сақлайдиган жойи.
+Бу Git нинг муҳимроқ қисми, айнан у сиз бошқа компьютердан омборни клонлаштираётган вақтингизда нусхаланади.</p>
+
+<p>Ишчи каталог – бу сиқилган маълумотлар омборидан маълум бир талқиннинг кенгайтирилган нусхаси.
+Ушбу файллар Git каталоги сиқилган маълумотлар омборидан олинади ва уларни сиз кўришингиз ва ўзгартиришингиз учун дискка кўчирилади.</p>
+
+<p>Тайёрланган файлларнинг соҳаси — бу оддий файл, одатда Git каталогида сақланади ва у ўзида навбатдаги жўнатишга нималар кириши ҳақидаги маълумотни сақлайди.
+Баъзида уни “index” деб аташади, лекин охирги пайтларда уни тайёрланган файллар соҳаси (stagingarea) деб аташ стандартга айланиб бормоқда.</p>
+
+<p>Git дан фойдаланган ҳолатдаги стандарт иш жараёни қуйидагича кўринишда:</p>
+<ol>
+<li>
+<p>Сиз ишчи каталогингизда файлларни ўзгартирасиз.</p>
+</li>
+<li>
+<p>Сиз тайёрланган файллар соҳасига файлларни нусхасини қўшиб уларни тайёрлайсиз.</p>
+</li>
+<li>
+<p>Сиз жўнатасиз. Бу пайтда нусхалар тайёрланган файллар соҳасидан Git каталогига сақланади.</p>
+</li>
+
+</ol>
+<p>Агар файлнинг ишчи талқини билан Git каталогидаги талқини мос келса файл фиксирланган ҳисобланади.
+Агар файл ўзгартирилган ва тайёрланган файллар соҳасига қўшилган бўлса у тайёрланган.
+Агарда файл маълумотлар омборидан юклаб олинганидан кейин ўзгартирилсаю ва тайёрланмаган бўлса у ҳолда у ўзгартирилган дейилади.
+<a data-type="xref" href="ch02/_git_basics_chapter">Chapter 2</a> бўлимда сиз ушбу уч ҳолат ҳақида имкон қадар қандай ундан фойдаланиш ёки ушбу тайёргарликни ўтказиб юборишни батафсилроқ билиб олишингиз мумкин.</p>
+</section><div id="nav"><a href="/book/uz/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-Git-%D0%BD%D0%B8%D0%BD%D0%B3-%D2%9B%D0%B8%D1%81%D2%9B%D0%B0%D1%87%D0%B0-%D1%82%D0%B0%D1%80%D0%B8%D1%85%D0%B8">prev</a> | <a href="/book/uz/v2/%D0%98%D1%88-%D0%B1%D0%BE%D1%88%D0%BB%D0%B0%D0%BD%D0%B8%D1%88%D0%B8-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D0%BB%D0%B0%D1%80-%D1%81%D0%B0%D1%82%D1%80%D0%B8">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

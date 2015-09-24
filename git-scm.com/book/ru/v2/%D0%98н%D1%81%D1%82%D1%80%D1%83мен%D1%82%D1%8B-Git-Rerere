@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":2,"applicationTime":554,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Rerere</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О системе контроля версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0">Командная строка</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D1%8B">Операции отмены</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-Working-with-Remotes">Working with Remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC%D1%8B-%D0%B2-Git">Псевдонимы в Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">О ветвлении в двух словах</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Branching-Workflows">Branching Workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Установка Git на сервер</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Генерация открытого SSH ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D0%BC%D0%BD%D1%8B%D0%B9-HTTP">Умный HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Распределенный Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">Настройка и конфигурация учетной записи</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">Внесение собственного вклада в проекты</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v2/GitHub-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%B8%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0">Прибережение и очистка</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2%D0%B0%D1%88%D0%B5%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B">Подпись результатов вашей работы</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">Поиск</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Исправление истории</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">Раскрытие тайн reset</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5">Продвинутое слияние</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Обнаружение ошибок с помощью Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">Создание пакетов</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0">Замена</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Хранилище учетных данных</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Настройка Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git как клиент</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Git изнутри</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и Фарфор</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-Git">Объекты Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Протоколы передачи данных</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Уход за репозиторием и восстановление данных</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B">Переменные среды</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>7.9 Инструменты Git - Rerere</h1>
+  <div><a id="_rerere"></a><h2>Rerere</h2>
+
+<p>Функциональность <code>git rerere</code> – частично скрытый компонент Git. Ее имя является сокращением для “reuse recorded resolution” (“повторное использование сохраненных разрешений конфликтов”). Как следует из имени, эта функциональность позволяет попросить Git запомнить то, как вы разрешили некоторую часть конфликта, так что в случае возникновения такого же конфликта, Git сможет его разрешить автоматически.</p>
+
+<p>Существует несколько ситуаций, в которых данная функциональность может быть действительно удобна. Один из примеров, упомянутый в документации, состоит в том, чтобы обеспечить в будущем простоту слияния некоторой долгоживущей ветки, не создавая при этом набор промежуточных коммитов слияния. При использовании <code>rerere</code> вы можете время от времени выполнять слияния, разрешать конфликты, а затем откатывать слияния. Если делать это постоянно, то итоговое слияние должно пройти легко, так как <code>rerere</code> сможет разрешить все конфликты автоматически.</p>
+
+<p>Такая же тактика может быть использована, если вы хотите сохранить ветку легко перебазируемой, то есть вы не хотите сталкиваться с одними и теми же конфликтами каждый раз при перебазировании. Или, например, вы решили ветку, которую уже сливали и разрешали при этом некоторые конфликты, вместо слияния перебазировать – наврядли вы захотите разрешать те же конфликты еще раз.</p>
+
+<p>Другая ситуация возникает, когда вы изредка сливаете несколько веток, относящихся к еще разрабатываемым задачам, в одну тестовую ветку, как это часто делается в проекте самого Git. Если тесты завершатся неудачей, вы можете откатить все слияния и повторить их, исключив из них ветку, которая поломала тесты, при этом не разрешая конфликты снова.</p>
+
+<p>Для того, чтобы включить функциональность <code>rerere</code>, достаточно изменить настройки следующим образом:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global rerere.enabled <code class="nb">true</code>
+</pre>
+
+<p>Также вы можете включить ее, создав каталог <code>.git/rr-cache</code> в нужном репозитории, но включение через настройки понятнее и может быть сделано глобально.</p>
+
+<p>Давайте рассмотрим простой пример, подобный используемому ранее. Предположим, у нас есть файл вида:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code>! /usr/bin/env ruby
+
+<code class="go">def hello</code>
+<code class="go">  puts 'hello world'</code>
+<code class="go">end</code>
+</pre>
+
+<p>Как и ранее, в одной ветке мы изменили слово “hello” на “hola”, а в другой – слово “world” на “mundo”.</p>
+
+<figure id="id-YKMrua"><img src="/book/en/v2/book/07-git-tools/images/rerere1.png" alt="rerere1"><figcaption><span class="label">Figure 7-25. </span></figcaption></figure><p>Когда мы будем сливать эти две ветки в одну, мы получим конфликт:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge i18n-world
+<code class="go">Auto-merging hello.rb</code>
+<code class="go">CONFLICT (content): Merge conflict in hello.rb</code>
+<code class="go">Recorded preimage for 'hello.rb'</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code>
+</pre>
+
+<p>Вы должно быть заметили в выводе новую строку <code>Recorded preimage for FILE</code>. Во всем остальном вывод такой же, как при обычном конфликте слияния. В этот момент <code>rerere</code> может сообщить нам несколько вещей. Обычно в такой ситуации вы можете выполнить <code>git status</code>, чтобы увидеть в чем заключается конфликт:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="gp">#</code> On branch master
+<code class="gp">#</code> Unmerged paths:
+<code class="gp">#</code>   <code class="o">(</code>use <code class="s2">"git reset HEAD &lt;file&gt;..."</code> to unstage<code class="o">)</code>
+<code class="gp">#</code>   <code class="o">(</code>use <code class="s2">"git add &lt;file&gt;..."</code> to mark resolution<code class="o">)</code>
+<code class="gp">#</code>
+<code class="gp">#</code>	both modified:      hello.rb
+<code class="gp">#</code>
+</pre>
+
+<p>Однако, с помощью команды <code>git rerere status</code> вы также можете узнать, для каких файлов <code>git rerere</code> сохранил снимки состояния, в котором они были до начала слияния:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rerere status
+<code class="go">hello.rb</code>
+</pre>
+
+<p>А команда <code>git rerere diff</code> показывает текущее состояние разрешения конфликта – то, с чего вы начали разрешать конфликт, и то, как вы его разрешили (фактически, патч, который в дальнейшем можно использовать для разрешения такого же конфликта).</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rerere diff
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -1,11 +1,11 @@</code>
+<code class="go"> #! /usr/bin/env ruby</code>
+
+<code class="go"> def hello</code>
+<code class="go">-&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>
+<code class="go">-  puts 'hello mundo'</code>
+<code class="go">-=======</code>
+<code class="go">+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>
+<code class="go">   puts 'hola world'</code>
+<code class="go">-&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>
+<code class="go">+=======</code>
+<code class="go">+  puts 'hello mundo'</code>
+<code class="go">+&gt;&gt;&gt;&gt;&gt;&gt;&gt; i18n-world</code>
+<code class="go"> end</code>
+</pre>
+
+<p>Также (и это уже не относится к <code>rerere</code>), вы можете использовать команду <code>ls-files -u</code>, чтобы увидеть конфликтующие файлы, их общую родительскую версию и обе сливаемых версии:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git ls-files -u
+<code class="go">100644 39804c942a9c1f2c03dc7c5ebcd7f3e3a6b97519 1	hello.rb</code>
+<code class="go">100644 a440db6e8d1fd76ad438a49025a9ad9ce746f581 2	hello.rb</code>
+<code class="go">100644 54336ba847c3758ab604876419607e9443848474 3	hello.rb</code>
+</pre>
+
+<p>Теперь вы можете разрешить конфликт, используя <code>puts 'hola mundo'</code>, и снова выполнить команду <code>rerere diff</code>, чтобы увидеть, что именно <code>rerere</code> запомнит:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rerere diff
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -1,11 +1,7 @@</code>
+<code class="go"> #! /usr/bin/env ruby</code>
+
+<code class="go"> def hello</code>
+<code class="go">-&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>
+<code class="go">-  puts 'hello mundo'</code>
+<code class="go">-=======</code>
+<code class="go">-  puts 'hola world'</code>
+<code class="go">-&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>
+<code class="go">+  puts 'hola mundo'</code>
+<code class="go"> end</code>
+</pre>
+
+<p>То есть, когда Git увидит в файле <code>hello.rb</code> конфликт, в котором с одной строны стоит “hello mundo” и “hola world” с другой, он разрешит его как “hola mundo”.</p>
+
+<p>Теперь мы можем отметить конфликт как разрешенный и закоммитить его:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add hello.rb
+<code class="gp">$</code> git commit
+<code class="go">Recorded resolution for 'hello.rb'.</code>
+<code class="go">[master 68e16e5] Merge branch 'i18n'</code>
+</pre>
+
+<p>Как вы видите, при этом было "сохранено разрешение конфликта для ФАЙЛА" ("Recorded resolution for FILE").</p>
+
+<figure id="id-DPAZIV"><img src="/book/en/v2/book/07-git-tools/images/rerere2.png" alt="rerere2"><figcaption><span class="label">Figure 7-26. </span></figcaption></figure><p>Теперь давайте отменим это слияние и перебазируем ветку <code>i18n-world</code> поверх <code>master</code>. Как мы видели в <a data-type="xref" href="ch00/_git_reset">Раскрытие тайн reset</a>, мы можем переместить нашу ветку назад, используя команду <code>reset</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git reset --hard HEAD^
+<code class="go">HEAD is now at ad63f15 i18n the hello</code>
+</pre>
+
+<p>Наше слияние отменено. Теперь давайте перебазируем ветку <code>i18n-world</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout i18n-world
+<code class="go">Switched to branch 'i18n-world'</code>
+
+<code class="gp">$</code> git rebase master
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: i18n one word</code>
+<code class="go">Using index info to reconstruct a base tree...</code>
+<code class="go">Falling back to patching base and 3-way merge...</code>
+<code class="go">Auto-merging hello.rb</code>
+<code class="go">CONFLICT (content): Merge conflict in hello.rb</code>
+<code class="go">Resolved 'hello.rb' using previous resolution.</code>
+<code class="go">Failed to merge in the changes.</code>
+<code class="go">Patch failed at 0001 i18n one word</code>
+</pre>
+
+<p>При этом мы получили ожидаемый конфликт слияния, но обратите внимание на строку <code>Resolved FILE using previous resolution</code>. Если мы посмотрим на содержимое файла, то увидим, что конфликт уже был разрешен, и в файле отсутствуют маркеры конфликта слияния.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat hello.rb
+<code class="gp">#</code>! /usr/bin/env ruby
+
+<code class="go">def hello</code>
+<code class="go">  puts 'hola mundo'</code>
+<code class="go">end</code>
+</pre>
+
+<p>При этом команда <code>git diff</code> покажет вам <em>как именно</em> этот конфликт был автоматически повторно разрешен:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --cc hello.rb</code>
+<code class="go">index a440db6,54336ba..0000000</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@@ -1,7 -1,7 +1,7 @@@</code>
+<code class="go">  #! /usr/bin/env ruby</code>
+
+<code class="go">  def hello</code>
+<code class="go">-   puts 'hola world'</code>
+<code class="go"> -  puts 'hello mundo'</code>
+<code class="go">++  puts 'hola mundo'</code>
+<code class="go">  end</code>
+</pre>
+
+<figure id="id-8rD9UE"><img src="/book/en/v2/book/07-git-tools/images/rerere3.png" alt="rerere3"><figcaption><span class="label">Figure 7-27. </span></figcaption></figure><p>С помощью команды <code>checkout</code> вы можете вернуть этот файл назад в конфликтующее состояние:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout --conflict<code class="o">=</code>merge hello.rb
+<code class="gp">$</code> cat hello.rb
+<code class="gp">#</code>! /usr/bin/env ruby
+
+<code class="go">def hello</code>
+<code class="go">&lt;&lt;&lt;&lt;&lt;&lt;&lt; ours</code>
+<code class="go">  puts 'hola world'</code>
+<code class="go">=======</code>
+<code class="go">  puts 'hello mundo'</code>
+<code class="gp">&gt;</code>&gt;&gt;&gt;&gt;&gt;&gt; theirs
+<code class="go">end</code>
+</pre>
+
+<p>Мы видели пример этого в <a data-type="xref" href="ch00/_advanced_merging">Продвинутое слияние</a>.
+Теперь давайте повторно разрешим конфликт используя <code>rerere</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rerere
+<code class="go">Resolved 'hello.rb' using previous resolution.</code>
+<code class="gp">$</code> cat hello.rb
+<code class="gp">#</code>! /usr/bin/env ruby
+
+<code class="go">def hello</code>
+<code class="go">  puts 'hola mundo'</code>
+<code class="go">end</code>
+</pre>
+
+<p>Мы автоматически повторно разрешили конфликт, используя сохраненный <code>rerere</code> вариант разрешения. Теперь вы можете добавить файл в индекс и продолжить перебазирование ветки.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add hello.rb
+<code class="gp">$</code> git rebase --continue
+<code class="go">Applying: i18n one word</code>
+</pre>
+
+<p>Итак, если вы выполняете много повторных слияний или хотите сохранять тематическую ветку в состоянии, актуальном вашей основной ветке, без множества слияний в истории, или часто перебазируете ветки, то вы можете включить <code>rerere</code>. Это, в какой-то мере, упростит вам жизнь.</p>
+<div id="nav"><a href="/book/ru/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5">prev</a> | <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

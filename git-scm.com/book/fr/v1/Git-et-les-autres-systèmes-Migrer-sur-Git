@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":4,"applicationTime":292,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Migrer sur Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/fr/v1/D%C3%A9marrage-rapide">Démarrage rapide</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">À propos de la gestion de version</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Une-rapide-histoire-de-Git">Une rapide histoire de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Rudiments-de-Git">Rudiments de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git">Installation de Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Paramétrage à la première utilisation de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Obtenir-de-l-aide">Obtenir de l&#39;aide</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/fr/v1/Les-bases-de-Git">Les bases de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/fr/v1/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Démarrer un dépôt Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/fr/v1/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Enregistrer des modifications dans le dépôt</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/fr/v1/Les-bases-de-Git-Visualiser-l-historique-des-validations">Visualiser l&#39;historique des validations</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/fr/v1/Les-bases-de-Git-Annuler-des-actions">Annuler des actions</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/fr/v1/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">Travailler avec des dépôts distants</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/fr/v1/Les-bases-de-Git-%C3%89tiquetage">Étiquetage</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/fr/v1/Les-bases-de-Git-Trucs-et-astuces">Trucs et astuces</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/fr/v1/Les-bases-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/fr/v1/Les-branches-avec-Git">Les branches avec Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/fr/v1/Les-branches-avec-Git-Ce-qu-est-une-branche">Ce qu&#39;est une branche</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/fr/v1/Les-branches-avec-Git-Brancher-et-fusionner%C2%A0%3A-les-bases">Brancher et fusionner : les bases</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/fr/v1/Les-branches-avec-Git-Gestion-de-branches">Gestion de branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/fr/v1/Les-branches-avec-Git-Travailler-avec-les-branches">Travailler avec les branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/fr/v1/Les-branches-avec-Git-Les-branches-distantes">Les branches distantes</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/fr/v1/Les-branches-avec-Git-Rebaser">Rebaser</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/fr/v1/Les-branches-avec-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/fr/v1/Git-sur-le-serveur">Git sur le serveur</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/fr/v1/Git-sur-le-serveur-Protocoles">Protocoles</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/fr/v1/Git-sur-le-serveur-Installation-de-Git-sur-un-serveur">Installation de Git sur un serveur</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/fr/v1/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH">Génération des clés publiques SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/fr/v1/Git-sur-le-serveur-Mise-en-place-du-serveur">Mise en place du serveur</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/fr/v1/Git-sur-le-serveur-Acc%C3%A8s-public">Accès public</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/fr/v1/Git-sur-le-serveur-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/fr/v1/Git-sur-le-serveur-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/fr/v1/Git-sur-le-serveur-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/fr/v1/Git-sur-le-serveur-Le-%3Cem%3Edaemon%3C%2Fem%3E-Git">Le <em>daemon</em> Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/fr/v1/Git-sur-le-serveur-Git-h%C3%A9berg%C3%A9">Git hébergé</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/fr/v1/Git-sur-le-serveur-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>5. <a href="/book/fr/v1/Git-distribu%C3%A9">Git distribué</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/fr/v1/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Développements distribués</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/fr/v1/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/fr/v1/Git-distribu%C3%A9-Maintenance-d-un-projet">Maintenance d&#39;un projet</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/fr/v1/Git-distribu%C3%A9-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/fr/v1/Utilitaires-Git">Utilitaires Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/fr/v1/Utilitaires-Git-S%C3%A9lection-des-versions">Sélection des versions</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/fr/v1/Utilitaires-Git-Indexation-interactive">Indexation interactive</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/fr/v1/Utilitaires-Git-Le-remisage">Le remisage</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/fr/v1/Utilitaires-Git-R%C3%A9%C3%A9crire-l-historique">Réécrire l&#39;historique</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/fr/v1/Utilitaires-Git-Deboguer-avec-Git">Deboguer avec Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/fr/v1/Utilitaires-Git-Sous-modules">Sous-modules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/fr/v1/Utilitaires-Git-Fusion-de-sous-arborescences">Fusion de sous-arborescences</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/fr/v1/Utilitaires-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/fr/v1/Personnalisation-de-Git">Personnalisation de Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/fr/v1/Personnalisation-de-Git-Configuration-de-Git">Configuration de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/fr/v1/Personnalisation-de-Git-Attributs-Git">Attributs Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/fr/v1/Personnalisation-de-Git-Crochets-Git">Crochets Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/fr/v1/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">Exemple de politique gérée par Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/fr/v1/Personnalisation-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes">Git et les autres systèmes</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-Git-et-Subversion">Git et Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-Migrer-sur-Git">Migrer sur Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>9. <a href="/book/fr/v1/Les-tripes-de-Git">Les tripes de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/fr/v1/Les-tripes-de-Git-Plomberie-et-porcelaine">Plomberie et porcelaine</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/fr/v1/Les-tripes-de-Git-Les-objets-Git">Les objets Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/fr/v1/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git">Références Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/fr/v1/Les-tripes-de-Git-Fichiers-group%C3%A9s">Fichiers groupés</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/fr/v1/Les-tripes-de-Git-Les-r%C3%A9f%C3%A9rences-sp%C3%A9cifiques">Les références spécifiques</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/fr/v1/Les-tripes-de-Git-Protocoles-de-transfert">Protocoles de transfert</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/fr/v1/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">Maintenance et récupération de données</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/fr/v1/Les-tripes-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>. <a href="/book/fr/v1/Notes-on-the-french-translation-process">Notes on the french translation process</a></h2>
+    <ol>
+          <li>
+            .1
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Repository">Repository</a>
+          </li>
+          <li>
+            .2
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Check-in">Check in</a>
+          </li>
+          <li>
+            .3
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-check-in">To check in</a>
+          </li>
+          <li>
+            .4
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Check-out">Check out</a>
+          </li>
+          <li>
+            .5
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-check-out">To check out</a>
+          </li>
+          <li>
+            .6
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-commit">To commit</a>
+          </li>
+          <li>
+            .7
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Stage-area">Stage area</a>
+          </li>
+          <li>
+            .8
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-stage">To stage</a>
+          </li>
+          <li>
+            .9
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-unstage">To unstage</a>
+          </li>
+          <li>
+            .10
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Change">Change</a>
+          </li>
+          <li>
+            .11
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-stash">stash</a>
+          </li>
+          <li>
+            .12
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-stash">To stash</a>
+          </li>
+          <li>
+            .13
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Checksum">Checksum</a>
+          </li>
+          <li>
+            .14
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Hash">Hash</a>
+          </li>
+          <li>
+            .15
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Workflow">Workflow</a>
+          </li>
+          <li>
+            .16
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Snapshot">Snapshot</a>
+          </li>
+          <li>
+            .17
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Diff">Diff</a>
+          </li>
+          <li>
+            .18
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-track">To track</a>
+          </li>
+          <li>
+            .19
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-untracked">untracked</a>
+          </li>
+          <li>
+            .20
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-unmodified">unmodified</a>
+          </li>
+          <li>
+            .21
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-update">To update</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>8.2 Git et les autres systèmes - Migrer sur Git</h1>
+  <div><h2>Migrer sur Git</h2>
+
+<p>Si vous avez une base de code dans un autre VCS et que vous avez décidé d&#39;utiliser Git, vous devez migrer votre projet d&#39;une manière ou d&#39;une autre.
+Ce chapitre traite d&#39;outils d&#39;import inclus dans Git avec des systèmes communs et démontre comment développer votre propre outil.</p>
+
+<h3 id="Importer"><a href="#Importer">Importer</a></h3>
+
+<p>Nous allons détailler la manière d&#39;importer des données à partir de deux des plus grands systèmes SCM utilisés en milieu professionnel, Subversion et Perforce, pour les raisons combinées qu&#39;ils regroupent la majorité des utilisateurs que je connais migrer vers Git et que des outils de grande qualité pour ces deux systèmes sont distribués avec Git.</p>
+
+<h3 id="Subversion"><a href="#Subversion">Subversion</a></h3>
+
+<p>Si vous avez lu la section précédente sur l&#39;utilisation de <code>git svn</code>, vous pouvez facilement utiliser ces instructions pour réaliser un <code>git svn clone</code> du dépôt.
+Ensuite, arrêtez d&#39;utiliser le serveur Subversion, poussez sur un nouveau serveur Git et commencez à l&#39;utiliser.
+Si vous voulez l&#39;historique, vous pouvez l&#39;obtenir aussi rapidement que vous pourrez tirer les données du serveur Subversion (ce qui peut prendre un certain temps).</p>
+
+<p>Cependant, l&#39;import n&#39;est pas parfait ; et comme cela prend autant de temps, autant le faire bien.
+Le premier problème est l&#39;information d&#39;auteur.
+Dans Subversion, chaque personne qui valide dispose d&#39;un compte sur le système qui est enregistré dans l&#39;information de validation.
+Les exemples de la section précédente montrent <code>schacon</code> à certains endroits, tels que la sortie de <code>blame</code> ou de <code>git svn log</code>.
+Si vous voulez transposer ces données vers des données d&#39;auteur au format Git, vous avez besoin d&#39;une correspondance entre les utilisateurs Subversion et les auteurs Git.
+Créez un fichier appelé <code>users.txt</code> contenant cette équivalence dans le format suivant :</p>
+
+<pre><code>schacon = Scott Chacon &lt;schacon@geemail.com&gt;
+selse = Someo Nelse &lt;selse@geemail.com&gt;
+</code></pre>
+
+<p>Pour récupérer la liste des noms d&#39;auteurs utilisés par SVN, vous pouvez utiliser la ligne suivante :</p>
+
+<pre><code>$ svn log ^/ --xml | grep -P &quot;^&lt;author&quot; | sort -u | \
+      perl -pe &#39;s/&lt;author&gt;(.*?)&lt;\/author&gt;/$1 = /&#39; &gt; users.txt
+</code></pre>
+
+<p>Cela génère une sortie au format XML — vous pouvez visualiser les auteurs, créer une liste unique puis éliminer l&#39;XML.
+Évidemment, cette ligne ne fonctionne que sur une machine disposant des commandes <code>grep</code>, <code>sort</code> et <code>perl</code>.
+Ensuite, redirigez votre sortie dans votre fichier users.txt pour pouvoir y ajouter en correspondance les données équivalentes Git.</p>
+
+<p>Vous pouvez alors fournir ce fichier à <code>git svn</code> pour l&#39;aider à convertir les données d&#39;auteur plus précisément.
+Vous pouvez aussi indiquer à <code>git svn</code> de ne pas inclure les méta-données que Subversion importe habituellement en passant l&#39;option <code>--no-metadata</code> à la commande <code>clone</code> ou <code>init</code>.
+Au final, votre commande d&#39;import ressemble à ceci :</p>
+
+<pre><code>$ git svn clone http://mon-projet.googlecode.com/svn/ \
+      --authors-file=users.txt --no-metadata -s my_project
+</code></pre>
+
+<p>Maintenant, l&#39;import depuis Subversion dans le répertoire <code>my_project</code> est plus présentable.
+En lieu et place de <em>commits</em> qui ressemblent à ceci :</p>
+
+<pre><code>commit 37efa680e8473b615de980fa935944215428a35a
+Author: schacon &lt;schacon@4c93b258-373f-11de-be05-5f7a86268029&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk
+
+    git-svn-id: https://my-project.googlecode.com/svn/trunk@94 4c93b258-373f-11de-
+    be05-5f7a86268029
+</code></pre>
+
+<p>les <em>commits</em> ressemblent à ceci :</p>
+
+<pre><code>commit 03a8785f44c8ea5cdb0e8834b7c8e6c469be2ff2
+Author: Scott Chacon &lt;schacon@geemail.com&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk
+</code></pre>
+
+<p>Non seulement le champ auteur a meilleure mine, mais de plus, le champ <code>git-svn-id</code> a disparu.</p>
+
+<p>Il est encore nécessaire de faire un peu de ménage <code>post-import</code>. Déjà, vous devriez nettoyer les références bizarres que <code>git svn</code> crée.
+Premièrement, déplacez les étiquettes pour qu&#39;elles soient de vraies étiquettes plutôt que des branches distantes étranges, ensuite déplacez le reste des branches pour qu&#39;elles deviennent locales.</p>
+
+<p>Pour déplacer les étiquettes et en faire de vraies étiquettes Git, lancez :</p>
+
+<pre><code>$ git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tagname; do
+git tag &quot;$tagname&quot; &quot;tags/$tagname&quot;; git branch -r -d &quot;tags/$tagname&quot;;
+done
+</code></pre>
+
+<p>Cela récupère les références déclarées comme branches distantes commençant par <code>tags/</code> et les transforme en vraies étiquettes (légères).</p>
+
+<p>Ensuite, déplacez le reste des références sous <code>refs/remotes</code> en branches locales :</p>
+
+<pre><code>$ git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchname; do
+git branch &quot;$branchname&quot; &quot;refs/remotes/$branchname&quot;; git branch -r -d &quot;$branchname&quot;;
+done
+</code></pre>
+
+<p>À présent, toutes les vieilles branches sont des vraies branches Git et toutes les vieilles étiquettes sont de vraies étiquettes Git.
+La dernière activité consiste à ajouter votre nouveau serveur Git comme serveur distant et à y pousser votre projet transformé.
+Pour pousser le tout, y compris branches et étiquettes, lancez :</p>
+
+<pre><code>$ git push origin --tags
+</code></pre>
+
+<p>Toutes vos données, branches et tags sont à présent disponibles sur le serveur Git comme import propre et naturel.</p>
+
+<h3 id="Perforce"><a href="#Perforce">Perforce</a></h3>
+
+<p>L&#39;autre système duquel on peut souhaiter importer les données est Perforce.
+Un outil d&#39;import Perforce est aussi distribué avec Git.
+Si votre version de Git est antérieures à 1.7.11, celui-ci n&#39;est disponible que dans la section <code>contrib</code> du code source.
+Dans ce dernier cas, pour le lancer, il vous faut récupérer le code source de Git que vous pouvez télécharger à partir de <code>git.kernel.org</code> :</p>
+
+<pre><code>$ git clone git://git.kernel.org/pub/scm/git/git.git
+$ cd git/contrib/fast-import
+</code></pre>
+
+<p>Dans ce répertoire <code>fast-import</code>, vous devriez trouver un script exécutable Python appelé <code>git-p4</code>.
+Python et l&#39;outil <code>p4</code> doivent être installés sur votre machine pour que cet import fonctionne.
+Par exemple, nous importerons le projet Jam depuis le Perforce Public Depot.
+Pour installer votre client, vous devez exporter la variable d&#39;environnement <code>P4PORT</code> qui pointe sur le dépôt Perforce :</p>
+
+<pre><code>$ export P4PORT=public.perforce.com:1666
+</code></pre>
+
+<p>Lancez la commande <code>git-p4 clone</code> pour importer le projet Jam depuis le serveur Perforce, en fournissant le dépôt avec le chemin du projet et le chemin dans lequel vous souhaitez importer le projet :</p>
+
+<pre><code>$ git-p4 clone //public/jam/src@all /opt/p4import
+Importing from //public/jam/src@all into /opt/p4import
+Reinitialized existing Git repository in /opt/p4import/.git/
+Import destination: refs/remotes/p4/master
+Importing revision 4409 (100%)
+</code></pre>
+
+<p>Si vous vous rendez dans le répertoire  <code>/opt/p4import</code> et lancez la commande <code>git log</code>, vous pouvez examiner votre projet importé :</p>
+
+<pre><code>$ git log -2
+commit 1fd4ec126171790efd2db83548b85b1bbbc07dc2
+Author: Perforce staff &lt;support@perforce.com&gt;
+Date:   Thu Aug 19 10:18:45 2004 -0800
+
+    Drop &#39;rc3&#39; moniker of jam-2.5.  Folded rc2 and rc3 RELNOTES into
+    the main part of the document.  Built new tar/zip balls.
+
+    Only 16 months later.
+
+    [git-p4: depot-paths = &quot;//public/jam/src/&quot;: change = 4409]
+
+commit ca8870db541a23ed867f38847eda65bf4363371d
+Author: Richard Geiger &lt;rmg@perforce.com&gt;
+Date:   Tue Apr 22 20:51:34 2003 -0800
+
+    Update derived jamgram.c
+
+    [git-p4: depot-paths = &quot;//public/jam/src/&quot;: change = 3108]
+</code></pre>
+
+<p>Vous pouvez visualiser l&#39;identifiant <code>git-p4</code> de chaque <em>commit</em>.
+Il n&#39;y a pas de problème à garder cet identifiant ici, au cas où vous auriez besoin de référencer dans l&#39;avenir le numéro de modification Perforce.
+Cependant, si vous souhaitez supprimer l&#39;identifiant, c&#39;est le bon moment, avant de commencer à travailler avec le nouveau dépôt.
+Vous pouvez utiliser <code>git filter-branch</code> pour faire un retrait en masse des chaînes d&#39;identifiant :</p>
+
+<pre><code>$ git filter-branch --msg-filter &#39;
+        sed -e &quot;/^\[git-p4:/d&quot;
+&#39;
+Rewrite 1fd4ec126171790efd2db83548b85b1bbbc07dc2 (123/123)
+Ref &#39;refs/heads/master&#39; was rewritten
+</code></pre>
+
+<p>Si vous lancez <code>git log</code>, vous vous rendez compte que toutes les sommes de contrôle SHA-1 des <em>commits</em> ont changé, mais aussi que plus aucune chaîne <code>git-p4</code> n&#39;apparaît dans les messages de validation :</p>
+
+<pre><code>$ git log -2
+commit 10a16d60cffca14d454a15c6164378f4082bc5b0
+Author: Perforce staff &lt;support@perforce.com&gt;
+Date:   Thu Aug 19 10:18:45 2004 -0800
+
+    Drop &#39;rc3&#39; moniker of jam-2.5.  Folded rc2 and rc3 RELNOTES into
+    the main part of the document.  Built new tar/zip balls.
+
+    Only 16 months later.
+
+commit 2b6c6db311dd76c34c66ec1c40a49405e6b527b2
+Author: Richard Geiger &lt;rmg@perforce.com&gt;
+Date:   Tue Apr 22 20:51:34 2003 -0800
+
+    Update derived jamgram.c
+</code></pre>
+
+<p>Votre import est fin prêt pour être poussé sur un nouveau serveur Git.</p>
+
+<h3 id="Un-outil-d&#39;import-personnalisé"><a href="#Un-outil-d&#39;import-personnalisé">Un outil d&#39;import personnalisé</a></h3>
+
+<p>Si votre système n&#39;est ni Subversion, ni Perforce, vous devriez rechercher sur Internet un outil d&#39;import spécifique — il en existe de bonne qualité pour CVS, Clear Case, Visual Source Safe ou même pour un répertoire d&#39;archives.
+Si aucun de ses outils ne fonctionne pour votre cas, que vous ayez un outil plus rare ou que vous ayez besoin d&#39;un mode d&#39;import personnalisé, <code>git fast-import</code> peut être la solution.
+Cette commande lit de simples instructions sur <code>stdin</code> pour écrire les données spécifiques Git.
+C&#39;est tout de même plus simple pour créer les objets Git que de devoir utiliser les commandes Git brutes ou d&#39;essayer d&#39;écrire directement les objets (voir chapitre 9 pour plus d&#39;information).
+De cette façon, vous écrivez un script d&#39;import qui lit les informations nécessaires depuis le système d&#39;origine et affiche des instructions directes sur <code>stdout</code>.
+Vous pouvez alors simplement lancer ce programme et rediriger sa sortie dans <code>git fast-import</code>.</p>
+
+<p>Pour démontrer rapidement cette fonctionnalité, nous allons écrire un script simple d&#39;import.
+Supposons que vous travailliez dans <code>en_cours</code> et que vous fassiez des sauvegardes de temps en temps dans des répertoires nommés avec la date <code>back_AAAA_MM_JJ</code> et que vous souhaitiez importer ceci dans Git.
+Votre structure de répertoire ressemble à ceci :</p>
+
+<pre><code>$ ls /opt/import_depuis
+back_2009_01_02
+back_2009_01_04
+back_2009_01_14
+back_2009_02_03
+en_cours
+</code></pre>
+
+<p>Pour importer un répertoire dans Git, vous devez savoir comment Git stocke ses données.
+Comme vous pouvez vous en souvenir, Git est à la base une liste chaînée d&#39;objets de <em>commits</em> qui pointent sur un instantané de contenu.
+Tout ce qu&#39;il y a à faire donc, et d&#39;indiquer à <code>fast-import</code> ce que sont les instantanés de contenu, quelles données de <em>commit</em> pointent dessus et l&#39;ordre dans lequel ils s&#39;enchaînent.
+La stratégie consistera à parcourir les instantanés un par un et à créer des <em>commits</em> avec le contenu de chaque répertoire, en le reliant à son prédécesseur.</p>
+
+<p>Comme déjà fait dans la section « Un exemple de règle appliquée par Git » du chapitre 7, nous l&#39;écrirons en Ruby parce que c&#39;est le langage avec lequel je travaille en général et qu&#39;il est assez facile à lire.
+Vous pouvez facilement retranscrire cet exemple dans votre langage de prédilection, la seule contrainte étant qu&#39;il doit pouvoir afficher les informations appropriées sur <code>stdout</code>.
+Si vous travaillez sous Windows, cela signifie que vous devrez faire particulièrement attention à ne pas introduire de retour chariot à la fin de vos lignes.
+<code>git fast-import</code> n&#39;accepte particulièrement que les sauts de ligne (line feed LF) et pas les retour chariot saut de ligne (CRLF) utilisés par Windows.</p>
+
+<p>Pour commencer, déplaçons-nous dans le répertoire cible et identifions chaque sous-répertoire, chacun représentant un instantané que vous souhaitez importer en tant que <em>commit</em>.
+Nous visiterons chaque sous-répertoire et afficherons les commandes nécessaires à son export.
+La boucle principale ressemble à ceci :</p>
+
+<pre><code>last_mark = nil
+
+# loop through the directories
+Dir.chdir(ARGV[0]) do
+  Dir.glob(&quot;*&quot;).each do |dir|
+    next if File.file?(dir)
+
+    # move into the target directory
+    Dir.chdir(dir) do
+      last_mark = print_export(dir, last_mark)
+    end
+  end
+end
+</code></pre>
+
+<p>Dans chaque répertoire, nous lançons <code>print_export</code> qui prend le manifeste et la marque de l&#39;instantané précédent et retourne le manifeste et la marque de l&#39;actuel ; de cette manière, vous pouvez les chaîner correctement.
+« Marque » est le terme de <code>fast-import</code> pour nommer un identifiant que vous donnez à un <em>commit</em>.
+Au fur et à mesure de la création des <em>commits</em>, vous leur attribuez une marque individuelle qui pourra être utilisée pour y faire référence depuis d&#39;autres <em>commits</em>.
+La première chose à faire dans <code>print_export</code> est donc de générer une marque à partir du nom du répertoire :</p>
+
+<pre><code>mark = convert_dir_to_mark(dir)
+</code></pre>
+
+<p>Cela sera réalisé en créant un tableau des répertoires et en utilisant l&#39;indice comme marque, celle-ci devant être un nombre entier.
+Votre méthode ressemble à ceci :</p>
+
+<pre><code>$marks = []
+def convert_dir_to_mark(dir)
+  if !$marks.include?(dir)
+    $marks &lt;&lt; dir
+  end
+  ($marks.index(dir) + 1).to_s
+end
+</code></pre>
+
+<p>Après une représentation entière de votre <em>commit</em>, vous avez besoin d&#39;une date pour les méta-données du <em>commit</em>.
+La date est présente dans le nom du répertoire, alors analysons-le.
+La ligne suivante du fichier <code>print_export</code> est donc :</p>
+
+<pre><code>date = convert_dir_to_date(dir)
+</code></pre>
+
+<p>où <code>convert_dir_to_date</code> est défini comme :</p>
+
+<pre><code>def convert_dir_to_date(dir)
+  if dir == &#39;en_cours&#39;
+    return Time.now().to_i
+  else
+    dir = dir.gsub(&#39;back_&#39;, &#39;&#39;)
+    (year, month, day) = dir.split(&#39;_&#39;)
+    return Time.local(year, month, day).to_i
+  end
+end
+</code></pre>
+
+<p>Elle retourne une nombre entier pour la date de chaque répertoire.
+La dernière partie des méta-informations nécessaires à chaque <em>commit</em> est l&#39;information du validateur qui sera stockée en dur dans une variable globale :</p>
+
+<pre><code>$author = &#39;Scott Chacon &lt;schacon@example.com&gt;&#39;
+</code></pre>
+
+<p>Nous voilà prêt à commencer à écrire les informations de <em>commit</em> du script d&#39;import.
+La première information indique qu&#39;on définit un objet <em>commit</em> et la branche sur laquelle il se trouve, suivi de la marque qui a été générée, l&#39;information du validateur et le message de validation et enfin le <em>commit</em> précédent, s&#39;il existe.
+Le code ressemble à ceci :</p>
+
+<pre><code># print the import information
+puts &#39;commit refs/heads/master&#39;
+puts &#39;mark :&#39; + mark
+puts &quot;committer #{$author} #{date} -0700&quot;
+export_data(&#39;imported from &#39; + dir)
+puts &#39;from :&#39; + last_mark if last_mark
+</code></pre>
+
+<p>Nous codons en dur le fuseau horaire (-0700) car c&#39;est simple.
+Si vous importez depuis un autre système, vous devez spécifier le fuseau horaire comme un décalage.
+Le message de validation doit être exprimé dans un format spécial :</p>
+
+<pre><code>data (taille)\n(contenu)
+</code></pre>
+
+<p>Le format est composé du mot « data », la taille des données à lire, un caractère saut de ligne, et finalement les données.
+Ce format est réutilisé plus tard, alors autant créer une méthode auxiliaire, <code>export_data</code> :</p>
+
+<pre><code>def export_data(string)
+  print &quot;data #{string.size}\n#{string}&quot;
+end
+</code></pre>
+
+<p>Il reste seulement à spécifier le contenu en fichiers de chaque instantané.
+C&#39;est facile, car vous les avez dans le répertoire.
+Git va alors enregistrer de manière appropriée chaque instantané :</p>
+
+<pre><code>puts &#39;deleteall&#39;
+Dir.glob(&quot;**/*&quot;).each do |file|
+  next if !File.file?(file)
+  inline_data(file)
+end
+</code></pre>
+
+<p>Note:   Comme de nombreux systèmes conçoivent leurs révisions comme des modifications d&#39;un <em>commit</em> à l&#39;autre, fast-import accepte aussi avec chaque <em>commit</em> des commandes qui spécifient quels fichiers ont été ajoutés, effacés ou modifiés et ce que sont les nouveaux contenus.
+Vous pourriez calculer les différences entre chaque instantané et ne fournir que ces données, mais cela est plus complexe — vous pourriez tout aussi bien fournir à Git toutes les données et lui laisser faire le travail.
+Si c&#39;est ce qui convient mieux à vos données, référez-vous à la page de manuel de <code>fast-import</code> pour savoir comment fournir les données de cette façon.</p>
+
+<p>Le format pour lister le contenu d&#39;un nouveau fichier ou spécifier le nouveau contenu d&#39;un fichier modifié est comme suit :</p>
+
+<pre><code>M 644 inline chemin/du/fichier
+data (taille)
+(contenu du fichier)
+</code></pre>
+
+<p>Ici, 644 est le mode (si vous avez des fichiers exécutables, vous devez le détecter et spécifier plutôt 755), « inline » signifie que le contenu du fichier sera listé immédiatement après cette ligne.
+La méthode <code>inline_data</code> ressemble à ceci :</p>
+
+<pre><code>def inline_data(file, code = &#39;M&#39;, mode = &#39;644&#39;)
+  content = File.read(file)
+  puts &quot;#{code} #{mode} inline #{file}&quot;
+  export_data(content)
+end
+</code></pre>
+
+<p>Nous réutilisons la méthode <code>export_data</code> définie plus tôt, car c&#39;est la même méthode que pour spécifier les données du message de validation.</p>
+
+<p>La dernière chose à faire consiste à retourner la marque actuelle pour pouvoir la passer à la prochaine itération :</p>
+
+<pre><code>return mark
+</code></pre>
+
+<p>NOTE : si vous utilisez Windows, vous devrez vous assurer d&#39;ajouter une étape supplémentaire.
+Comme mentionné auparavant, Windows utilise CRLF comme caractère de retour à la ligne tandis que <code>git fast-import</code> s&#39;attend à LF.
+Pour contourner ce problème et satisfaire <code>git fast-import</code>, il faut forcer Ruby à utiliser LF au lieu de CRLF :</p>
+
+<pre><code>$stdout.binmode
+</code></pre>
+
+<p>Et voilà.
+Si vous lancez ce script, vous obtiendrez un contenu qui ressemble à ceci :</p>
+
+<pre><code>$ ruby import.rb /opt/import_from
+commit refs/heads/master
+mark :1
+committer Scott Chacon &lt;schacon@geemail.com&gt; 1230883200 -0700
+data 29
+imported from back_2009_01_02deleteall
+M 644 inline file.rb
+data 12
+version two
+commit refs/heads/master
+mark :2
+committer Scott Chacon &lt;schacon@geemail.com&gt; 1231056000 -0700
+data 29
+imported from back_2009_01_04from :1
+deleteall
+M 644 inline file.rb
+data 14
+version three
+M 644 inline new.rb
+data 16
+new version one
+(...)
+</code></pre>
+
+<p>Pour lancer l&#39;outil d&#39;import, redirigez cette sortie dans <code>git fast-import</code> alors que vous vous trouvez dans le projet Git dans lequel vous souhaitez importer.
+Vous pouvez créer un nouveau répertoire, puis l&#39;initialiser avec <code>git init</code>, puis lancer votre script :</p>
+
+<pre><code>$ git init
+Initialized empty Git repository in /opt/import_to/.git/
+$ ruby import.rb /opt/import_from | git fast-import
+git-fast-import statistics:
+---------------------------------------------------------------------
+Alloc&#39;d objects:       5000
+Total objects:           18 (         1 duplicates                  )
+      blobs  :            7 (         1 duplicates          0 deltas)
+      trees  :            6 (         0 duplicates          1 deltas)
+      commits:            5 (         0 duplicates          0 deltas)
+      tags   :            0 (         0 duplicates          0 deltas)
+Total branches:           1 (         1 loads     )
+      marks:           1024 (         5 unique    )
+      atoms:              3
+Memory total:          2255 KiB
+       pools:          2098 KiB
+     objects:           156 KiB
+---------------------------------------------------------------------
+pack_report: getpagesize()            =       4096
+pack_report: core.packedGitWindowSize =   33554432
+pack_report: core.packedGitLimit      =  268435456
+pack_report: pack_used_ctr            =          9
+pack_report: pack_mmap_calls          =          5
+pack_report: pack_open_windows        =          1 /          1
+pack_report: pack_mapped              =       1356 /       1356
+---------------------------------------------------------------------
+</code></pre>
+
+<p>Comme vous pouvez le remarquer, lorsqu&#39;il se termine avec succès, il affiche quelques statistiques sur ses réalisations.
+Dans ce cas, 18 objets ont été importés en 5 validations dans 1 branche.
+À présent, <code>git log</code> permet de visualiser le nouvel historique :</p>
+
+<pre><code>$ git log -2
+commit 10bfe7d22ce15ee25b60a824c8982157ca593d41
+Author: Scott Chacon &lt;schacon@example.com&gt;
+Date:   Sun May 3 12:57:39 2009 -0700
+
+    imported from en_cours
+
+commit 7e519590de754d079dd73b44d695a42c9d2df452
+Author: Scott Chacon &lt;schacon@example.com&gt;
+Date:   Tue Feb 3 01:00:00 2009 -0700
+
+    imported from back_2009_02_03
+</code></pre>
+
+<p>Et voilà !
+Un joli dépôt Git tout propre.
+Il est important de noter que rien n&#39;a été extrait.
+Présentement, aucun fichier n&#39;est présent dans votre copie de travail.
+Pour les avoir, vous devez réinitialiser votre branche sur <code>master</code> :</p>
+
+<pre><code>$ ls
+$ git reset --hard master
+HEAD is now at 10bfe7d imported from en_cours
+$ ls
+file.rb  lib
+</code></pre>
+
+<p>Vous pouvez faire bien plus avec l&#39;outil <code>fast-import</code> — gérer différents modes, les données binaires, les branches multiples et la fusion, les étiquettes, les indicateurs de progrès, et plus encore.
+Des exemples de scénarios plus complexes sont disponibles dans le répertoire <code>contrib/fast-import</code> du code source Git ; un des meilleurs est justement le script <code>git-p4</code> traité précédemment.</p>
+
+<div id="nav"><a href="/book/fr/Git-et-les-autres-syst%C3%A8mes-Git-et-Subversion">prev</a> | <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-R%C3%A9sum%C3%A9">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

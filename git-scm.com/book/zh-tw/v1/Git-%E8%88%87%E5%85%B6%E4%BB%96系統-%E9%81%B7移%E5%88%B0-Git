@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":6,"applicationTime":151,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - 遷移到 Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B">開始</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">關於版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E7%9A%84%E7%B0%A1%E5%8F%B2">Git 的簡史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E5%9F%BA%E7%A4%8E%E8%A6%81%E9%BB%9E">Git 基礎要點</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit">安裝Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9AGit">初次設定Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%8F%96%E5%BE%97%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6">取得說明文件</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E">Git 基礎</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97Git%E5%84%B2%E5%AD%98%E5%BA%AB">取得Git儲存庫</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E4%BA%A4%E6%9B%B4%E6%96%B0%E5%88%B0%E5%84%B2%E5%AD%98%E5%BA%AB">提交更新到儲存庫</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%AA%A2%E8%A6%96%E6%8F%90%E4%BA%A4%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%A8%98%E9%8C%84">檢視提交的歷史記錄</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F">復原</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">與遠端協同工作</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%A8%99%E7%B1%A4">標籤</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E7%A4%BA%E5%92%8C%E6%8A%80%E5%B7%A7">提示和技巧</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E4%BD%95%E8%AC%82%E5%88%86%E6%94%AF">何謂分支</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E8%88%87%E5%90%88%E4%BD%B5">分支的新建與合併</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%AE%A1%E7%90%86">分支的管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%A9%E7%94%A8%E5%88%86%E6%94%AF%E9%80%B2%E8%A1%8C%E9%96%8B%E7%99%BC%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">利用分支進行開發的工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF">遠端分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88">分支的衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git">伺服器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%94%E8%AD%B0">協議</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2-Git">在伺服器上部署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0">生成 SSH 公開金鑰</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%9E%B6%E8%A8%AD%E4%BC%BA%E6%9C%8D%E5%99%A8">架設伺服器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%85%AC%E5%85%B1%E8%A8%AA%E5%95%8F">公共訪問</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E8%AD%B7%E9%80%B2%E7%A8%8B">Git 守護進程</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E8%A8%97%E7%AE%A1%E6%9C%8D%E5%8B%99">Git 託管服務</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git">分散式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E7%82%BA%E5%B0%88%E6%A1%88%E4%BD%9C%E8%B2%A2%E7%8D%BB">為專案作貢獻</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86">專案的管理</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7">Git 工具</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%81%B8%E6%93%87%E4%BF%AE%E8%A8%82%E7%89%88%E6%9C%AC">選擇修訂版本</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%9A%AB%E5%AD%98">互動式暫存</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing">儲藏 (Stashing)</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%AF%AB%E6%AD%B7%E5%8F%B2">重寫歷史</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E5%81%9A-Debug">使用 Git 做 Debug</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B5%84-Submodules">子模組 (Submodules)</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%B9%E5%90%88%E4%BD%B5">子樹合併</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96">Git 客製化</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E9%85%8D%E7%BD%AE">Git 配置</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%B1%AC%E6%80%A7">Git 屬性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%BC%B7%E5%88%B6%E7%AD%96%E7%95%A5%E5%AF%A6%E4%BE%8B">Git 強制策略實例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1">Git 與其他系統</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-Git-%E8%88%87-Subversion">Git 與 Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E9%81%B7%E7%A7%BB%E5%88%B0-Git">遷移到 Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86">Git 內部原理</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%A4%E5%91%BD%E4%BB%A4-Plumbing-%E5%92%8C%E9%AB%98%E5%B1%A4%E5%91%BD%E4%BB%A4-Porcelain">底層命令 (Plumbing) 和高層命令 (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E7%89%A9%E4%BB%B6">Git 物件</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%82%B3%E8%BC%B8%E5%8D%94%E8%AD%B0">傳輸協議</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B6%AD%E8%AD%B7%E5%8F%8A%E8%B3%87%E6%96%99%E5%BE%A9%E5%8E%9F">維護及資料復原</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>8.2 Git 與其他系統 - 遷移到 Git</h1>
+  <div><h2>遷移到 Git</h2>
+
+<p>如果在其他版本控制系統(VCS)中保存了某專案的代碼而後決定轉而使用 Git，那麼該專案必須經歷某種形式的遷移。本節將介紹 Git 中包含的一些針對常見系統的導入腳本(importer)，並將展示編寫自訂的導入腳本的方法。</p>
+
+<h3 id="導入"><a href="#導入">導入</a></h3>
+
+<p>你將學習到如何從專業重量級的版本控制系統(SCM)中匯入資料—— Subversion 和 Perforce —— 因為據我所知這二者的用戶是（向 Git）轉換的主要群體，而且 Git 為此二者附帶了高品質的轉換工具。</p>
+
+<h3 id="Subversion"><a href="#Subversion">Subversion</a></h3>
+
+<p>讀過前一節有關 <code>git svn</code> 的內容以後，你應該能輕而易舉的根據其中的指導來 <code>git svn clone</code> 一個倉庫了；然後，停止 Subversion 的使用，向一個新 Git server 推送，並開始使用它。想保留歷史記錄，所花的時間應該不過就是從 Subversion 伺服器拉取資料的時間（可能要等上好一會就是了）。 </p>
+
+<p>然而，這樣的匯入並不完美；而且還要花那麼多時間，不如乾脆一次把它做對！首當其衝的任務是作者資訊。在 Subversion，每個提交者都在主機上有一個用戶名，記錄在提交資訊中。上節例子中多處顯示了 schacon ，比如 <code>blame</code> 的輸出以及 <code>git svn log</code>。如果想讓這條資訊更好的映射到 Git 作者資料裡，則需要從 Subversion 用戶名到 Git 作者的一個映射關係。建立一個叫做 <code>user.txt</code> 的檔，用如下格式表示映射關係： </p>
+
+<pre><code>schacon = Scott Chacon &lt;schacon@geemail.com&gt;
+selse = Someo Nelse &lt;selse@geemail.com&gt;
+</code></pre>
+
+<p>通過以下命令可以獲得 SVN 作者的列表： </p>
+
+<pre><code>$ svn log ^/ --xml | grep -P &quot;^&lt;author&quot; | sort -u | \
+      perl -pe &#39;s/&lt;author&gt;(.*?)&lt;\/author&gt;/$1 = /&#39; &gt; users.txt
+</code></pre>
+
+<p>它將輸出 XML 格式的日誌——你可以找到作者，建立一個單獨的列表，然後從 XML 中抽取出需要的資訊。（顯而易見，本方法要求主機上安裝了<code>grep</code>，<code>sort</code> 和 <code>perl</code>.）然後把輸出重定向到 user.txt 檔，然後就可以在每一項的後面添加相應的 Git 使用者資料。 </p>
+
+<p>為 <code>git svn</code> 提供該檔可以讓它更精確的映射作者資料。你還可以在 <code>clone</code> 或者 <code>init</code> 後面添加 <code>--no-metadata</code> 來阻止 <code>git svn</code> 包含那些 Subversion 的附加資訊。這樣 <code>import</code> 命令就變成了：</p>
+
+<pre><code>$ git svn clone http://my-project.googlecode.com/svn/ \
+      --authors-file=users.txt --no-metadata -s my_project
+</code></pre>
+
+<p>現在 <code>my_project</code> 目錄下導入的 Subversion 應該比原來整潔多了。原來的 commit 看上去是這樣： </p>
+
+<pre><code>commit 37efa680e8473b615de980fa935944215428a35a
+Author: schacon &lt;schacon@4c93b258-373f-11de-be05-5f7a86268029&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk
+
+    git-svn-id: https://my-project.googlecode.com/svn/trunk@94 4c93b258-373f-11de-
+    be05-5f7a86268029
+</code></pre>
+
+<p>現在是這樣： </p>
+
+<pre><code>commit 03a8785f44c8ea5cdb0e8834b7c8e6c469be2ff2
+Author: Scott Chacon &lt;schacon@geemail.com&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk
+</code></pre>
+
+<p>不僅作者一項乾淨了不少，<code>git-svn-id</code> 也就此消失了。 </p>
+
+<p>你還需要一點 post-import（導入後） 清理工作。最起碼的，應該清理一下 <code>git svn</code> 創建的那些怪異的索引結構。首先要移動標籤，把它們從奇怪的遠端分支變成實際的標籤，然後把剩下的分支移動到本地。 </p>
+
+<p>要把標籤變成合適的 Git 標籤，執行 </p>
+
+<pre><code>$ git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tagname; do git tag &quot;$tagname&quot; &quot;tags/$tagname&quot;; git branch -r -d &quot;tags/$tagname&quot;; done
+</code></pre>
+
+<p>該命令將原本以 <code>tag/</code> 開頭的遠端分支的索引變成真正的 (lightweight) 標籤。 </p>
+
+<p>接下來，把 <code>refs/remotes</code> 下面剩下的索引(reference)變成本地分支： </p>
+
+<pre><code>$ git for-each-ref refs/remotes | cut -d / -f 3- | grep -v @ | while read branchname; do git branch &quot;$branchname&quot; &quot;refs/remotes/$branchname&quot;; git branch -r -d &quot;$branchname&quot;; done
+</code></pre>
+
+<p>現在所有的舊分支都變成真正的 Git 分支，所有的舊標籤也變成真正的 Git 標籤。最後一項工作就是把新建的 Git 伺服器添加為遠端伺服器並且向它推送。為了讓所有的分支和標籤都得到上傳，我們使用這條命令： </p>
+
+<pre><code>$ git remote add origin git@my-git-server:myrepository.git
+</code></pre>
+
+<p>Because you want all your branches and tags to go up, you can now run this:</p>
+
+<pre><code>$ git push origin --all
+$ git push origin --tags
+</code></pre>
+
+<p>所有的分支和標籤現在都應該整齊乾淨的躺在新的 Git 伺服器裡了。 </p>
+
+<h3 id="Perforce"><a href="#Perforce">Perforce</a></h3>
+
+<p>你將瞭解到的下一個被導入的系統是 Perforce. Git 發行的時候同時也附帶了一個 Perforce 導入腳本，不過它是包含在源碼的 <code>contrib</code> 部分——而不像 <code>git svn</code> 那樣預設就可以使用。執行它之前必須獲取 Git 的源碼，可以在 git.kernel.org 下載： </p>
+
+<pre><code>$ git clone git://git.kernel.org/pub/scm/git/git.git
+$ cd git/contrib/fast-import
+</code></pre>
+
+<p>在這個 <code>fast-import</code> 目錄下，應該有一個叫做 <code>git-p4</code> 的 Python 可執行腳本。主機上必須裝有 Python 和 <code>p4</code> 工具該導入才能正常進行。例如，你要從 Perforce 公共代碼倉庫（譯注： Perforce Public Depot，Perforce 官方提供的代碼寄存服務）導入 Jam 專案。為了設定用戶端，我們要把 P4PORT 環境變數 export 到 Perforce 倉庫： </p>
+
+<pre><code>$ export P4PORT=public.perforce.com:1666
+</code></pre>
+
+<p>執行 <code>git-p4 clone</code> 命令將從 Perforce 伺服器導入 Jam 專案，我們需要給出倉庫和專案的路徑以及導入的目標路徑： </p>
+
+<pre><code>$ git-p4 clone //public/jam/src@all /opt/p4import
+Importing from //public/jam/src@all into /opt/p4import
+Reinitialized existing Git repository in /opt/p4import/.git/
+Import destination: refs/remotes/p4/master
+Importing revision 4409 (100%)
+</code></pre>
+
+<p>現在去 <code>/opt/p4import</code> 目錄執行一下 <code>git log</code> ，就能看到導入的成果： </p>
+
+<pre><code>$ git log -2
+commit 1fd4ec126171790efd2db83548b85b1bbbc07dc2
+Author: Perforce staff &lt;support@perforce.com&gt;
+Date:   Thu Aug 19 10:18:45 2004 -0800
+
+    Drop &#39;rc3&#39; moniker of jam-2.5.  Folded rc2 and rc3 RELNOTES into
+    the main part of the document.  Built new tar/zip balls.
+
+    Only 16 months later.
+
+    [git-p4: depot-paths = &quot;//public/jam/src/&quot;: change = 4409]
+
+commit ca8870db541a23ed867f38847eda65bf4363371d
+Author: Richard Geiger &lt;rmg@perforce.com&gt;
+Date:   Tue Apr 22 20:51:34 2003 -0800
+
+    Update derived jamgram.c
+
+    [git-p4: depot-paths = &quot;//public/jam/src/&quot;: change = 3108]
+</code></pre>
+
+<p>每一個 commit 裡都有一個 <code>git-p4</code> 識別字。這個識別字可以保留，以防以後需要引用 Perforce 的修改版本號。然而，如果想刪除這些識別字，現在正是時候——開始在新倉庫上工作之前。可以通過 <code>git filter-branch</code> 來批量刪除這些識別字： </p>
+
+<pre><code>$ git filter-branch --msg-filter &#39;
+        sed -e &quot;/^\[git-p4:/d&quot;
+&#39;
+Rewrite 1fd4ec126171790efd2db83548b85b1bbbc07dc2 (123/123)
+Ref &#39;refs/heads/master&#39; was rewritten
+</code></pre>
+
+<p>現在執行一下 <code>git log</code>，你會發現這些 commit 的 SHA-1 校驗值都發生了改變，而那些 <code>git-p4</code> 字串則從提交資訊裡消失了： </p>
+
+<pre><code>$ git log -2
+commit 10a16d60cffca14d454a15c6164378f4082bc5b0
+Author: Perforce staff &lt;support@perforce.com&gt;
+Date:   Thu Aug 19 10:18:45 2004 -0800
+
+    Drop &#39;rc3&#39; moniker of jam-2.5.  Folded rc2 and rc3 RELNOTES into
+    the main part of the document.  Built new tar/zip balls.
+
+    Only 16 months later.
+
+commit 2b6c6db311dd76c34c66ec1c40a49405e6b527b2
+Author: Richard Geiger &lt;rmg@perforce.com&gt;
+Date:   Tue Apr 22 20:51:34 2003 -0800
+
+    Update derived jamgram.c
+</code></pre>
+
+<p>至此導入已經完成，可以開始向新的 Git 伺服器推送了。 </p>
+
+<h3 id="自定導入腳本"><a href="#自定導入腳本">自定導入腳本</a></h3>
+
+<p>如果你的系統不是 Subversion 或 Perforce 之一，先上網找一下有沒有與之對應的導入腳本——導入 CVS，Clear Case，Visual Source Safe，甚至存檔目錄的導入腳本已經存在。假如這些工具都不適用，或者使用的工具很少見，抑或你需要導入過程具有更多可制定性，則應該使用 <code>git fast-import</code>。該命令從標準輸入讀取簡單的指令來寫入具體的 Git 資料。這樣創建 Git 物件比執行純 Git 命令或者手動寫物件要簡單的多（更多相關內容見第九章）。通過它，你可以編寫一個導入腳本來從導入來源讀取必要的資訊，同時在標準輸出直接輸出相關指令(instructions)。你可以執行該腳本並把它的輸出管道連接(pipe)到 <code>git fast-import</code>。 </p>
+
+<p>下面演示一下如何編寫一個簡單的導入腳本。假設你在進行一項工作，並且按時通過把工作目錄複寫為以時間戳記 back<em>YY</em>MM_DD 命名的目錄來進行備份，現在你需要把它們導入 Git 。目錄結構如下： </p>
+
+<pre><code>$ ls /opt/import_from
+back_2009_01_02
+back_2009_01_04
+back_2009_01_14
+back_2009_02_03
+current
+</code></pre>
+
+<p>為了導入到一個 Git 目錄，我們首先回顧一下 Git 儲存資料的方式。你可能還記得，Git 本質上是一個 commit 物件的鏈表，每一個物件指向一個內容的快照。而這裡需要做的工作就是告訴 <code>fast-import</code> 內容快照的位置，什麼樣的 commit 資料指向它們，以及它們的順序。我們採取一次處理一個快照的策略，為每一個內容目錄建立對應的 commit ，每一個 commit 與前一個 commit 建立連結。 </p>
+
+<p>正如在第七章 “Git 執行策略一例” 一節中一樣，我們將使用 Ruby 來編寫這個腳本，因為它是我日常使用的語言而且閱讀起來簡單一些。你可以用任何其他熟悉的語言來重寫這個例子——它僅需要把必要的資訊列印到標準輸出而已。同時，如果你在使用 Windows，這意味著你要特別留意不要在換行的時候引入回車符（譯注：carriage returns，Windows 換行時加入的符號，通常說的 \r ）—— Git 的 fast-import 對僅使用分行符號（LF）而非 Windows 的回車符（CRLF）要求非常嚴格。 </p>
+
+<p>首先，進入目標目錄並且找到所有子目錄，每一個子目錄將作為一個快照被導入為一個 commit。我們將依次進入每一個子目錄並列印所需的命令來匯出它們。腳本的主迴圈大致是這樣： </p>
+
+<pre><code>last_mark = nil
+
+# loop through the directories
+Dir.chdir(ARGV[0]) do
+  Dir.glob(&quot;*&quot;).each do |dir|
+    next if File.file?(dir)
+
+    # move into the target directory
+    Dir.chdir(dir) do
+      last_mark = print_export(dir, last_mark)
+    end
+  end
+end
+</code></pre>
+
+<p>我們在每一個目錄裡執行 <code>print_export</code>，它會取出上一個快照的索引和標記並返回本次快照的索引和標記；由此我們就可以正確的把二者連接起來。”標記（mark）” 是 <code>fast-import</code> 中對 commit 識別字的叫法；在創建 commit 的同時，我們逐一賦予一個標記以便以後在把它連接到其他 commit 時使用。因此，在 <code>print_export</code> 方法中要做的第一件事就是根據目錄名產生一個標記： </p>
+
+<pre><code>mark = convert_dir_to_mark(dir)
+</code></pre>
+
+<p>實現該函數的方法是建立一個目錄的陣列序列並使用陣列的索引值作為標記，因為標記必須是一個整數。這個方法大致是這樣的： </p>
+
+<pre><code>$marks = []
+def convert_dir_to_mark(dir)
+  if !$marks.include?(dir)
+    $marks &lt;&lt; dir
+  end
+  ($marks.index(dir) + 1).to_s
+end
+</code></pre>
+
+<p>有了整數來代表每個 commit，我們現在需要提交附加資訊中的日期。由於日期是用目錄名表示的，我們就從中解析出來。<code>print_export</code> 文件的下一行將是： </p>
+
+<pre><code>date = convert_dir_to_date(dir)
+</code></pre>
+
+<p>而 <code>convert_dir_to_date</code> 則定義為 </p>
+
+<pre><code>def convert_dir_to_date(dir)
+  if dir == &#39;current&#39;
+    return Time.now().to_i
+  else
+    dir = dir.gsub(&#39;back_&#39;, &#39;&#39;)
+    (year, month, day) = dir.split(&#39;_&#39;)
+    return Time.local(year, month, day).to_i
+  end
+end
+</code></pre>
+
+<p>它為每個目錄回傳一個 integer。提交附加資訊裡最後一項所需的是提交者資料，我們在一個全域變數中直接定義之： </p>
+
+<pre><code>$author = &#39;Scott Chacon &lt;schacon@example.com&gt;&#39;
+</code></pre>
+
+<p>我們差不多可以開始為導入腳本輸出提交資料了。第一項資訊指明我們定義的是一個 commit 物件以及它所在的分支，隨後是我們產生的標記、提交者資訊以及提交備註，然後是前一個 commit 的索引，如果有的話。程式碼大致像這樣： </p>
+
+<pre><code># print the import information
+puts &#39;commit refs/heads/master&#39;
+puts &#39;mark :&#39; + mark
+puts &quot;committer #{$author} #{date} -0700&quot;
+export_data(&#39;imported from &#39; + dir)
+puts &#39;from :&#39; + last_mark if last_mark
+</code></pre>
+
+<p>為了簡化，時區寫死(hardcode)為（-0700）。如果是從其他版本控制系統導入，則必須以變數的形式指明時區。
+提交訊息必須以特定格式給出： </p>
+
+<pre><code>data (size)\n(contents)
+</code></pre>
+
+<p>該格式包含了「data」這個字、所讀取資料的大小、一個分行符號，最後是資料本身。由於隨後指明檔案內容的時候要用到相同的格式，我們寫一個輔助方法，<code>export_data</code>： </p>
+
+<pre><code>def export_data(string)
+  print &quot;data #{string.size}\n#{string}&quot;
+end
+</code></pre>
+
+<p>唯一剩下的就是每一個快照的內容了。這簡單的很，因為它們分別處於一個目錄——你可以輸出 <code>deleeall</code> 命令，隨後是目錄中每個檔的內容。Git 會正確的記錄每一個快照： </p>
+
+<pre><code>puts &#39;deleteall&#39;
+Dir.glob(&quot;**/*&quot;).each do |file|
+  next if !File.file?(file)
+  inline_data(file)
+end
+</code></pre>
+
+<p>注意：由於很多系統把每次修訂看作一個 commit 到另一個 commit 的變化量，fast-import 也可以依據每次提交獲取一個命令來指出哪些檔被添加，刪除或者修改過，以及修改的內容。我們將需要計算快照之間的差別並且僅僅給出這項資料，不過該做法要複雜很多——還不如直接把所有資料丟給 Git 讓它自己搞清楚。假如前面這個方法更適用於你的資料，參考 <code>fast-import</code> 的 man 説明頁面來瞭解如何以這種方式提供資料。 </p>
+
+<p>列舉新檔內容或者指明帶有新內容的已修改檔的格式如下： </p>
+
+<pre><code>M 644 inline path/to/file
+data (size)
+(file contents)
+</code></pre>
+
+<p>這裡，644 是許可權模式（如果有執行檔，則需要偵測之並設定為 755），而 inline 說明我們在本行結束之後立即列出檔的內容。我們的 <code>inline_data</code> 方法大致是： </p>
+
+<pre><code>def inline_data(file, code = &#39;M&#39;, mode = &#39;644&#39;)
+  content = File.read(file)
+  puts &quot;#{code} #{mode} inline #{file}&quot;
+  export_data(content)
+end
+</code></pre>
+
+<p>我們再次使用了前面定義過的 <code>export_data</code>，因為這裡和指明提交注釋的格式如出一轍。 </p>
+
+<p>最後一項工作是回傳當前的標記以便下次迴圈的使用。 </p>
+
+<pre><code>return mark
+</code></pre>
+
+<p>注意：如果你是在 Windows 上執行，一定記得添加一項額外的步驟。前面提過，Windows 使用 CRLF 作為換行字元而 Git fast-import 只接受 LF。為了避開這個問題來滿足 git fast-import，你需要讓 ruby 用 LF 取代 CRLF： </p>
+
+<pre><code>$stdout.binmode
+</code></pre>
+
+<p>搞定了。現在執行該腳本，你將得到如下內容： </p>
+
+<pre><code>$ ruby import.rb /opt/import_from
+commit refs/heads/master
+mark :1
+committer Scott Chacon &lt;schacon@geemail.com&gt; 1230883200 -0700
+data 29
+imported from back_2009_01_02deleteall
+M 644 inline file.rb
+data 12
+version two
+commit refs/heads/master
+mark :2
+committer Scott Chacon &lt;schacon@geemail.com&gt; 1231056000 -0700
+data 29
+imported from back_2009_01_04from :1
+deleteall
+M 644 inline file.rb
+data 14
+version three
+M 644 inline new.rb
+data 16
+new version one
+(...)
+</code></pre>
+
+<p>要執行導入腳本，在需要導入的目錄把該內容用管道定向(pipe)到 <code>git fast-import</code>。你可以建立一個空目錄然後執行 <code>git init</code> 作為起點，然後執行該腳本： </p>
+
+<pre><code>$ git init
+Initialized empty Git repository in /opt/import_to/.git/
+$ ruby import.rb /opt/import_from | git fast-import
+git-fast-import statistics:
+---------------------------------------------------------------------
+Alloc&#39;d objects:       5000
+Total objects:           18 (         1 duplicates                  )
+      blobs  :            7 (         1 duplicates          0 deltas)
+      trees  :            6 (         0 duplicates          1 deltas)
+      commits:            5 (         0 duplicates          0 deltas)
+      tags   :            0 (         0 duplicates          0 deltas)
+Total branches:           1 (         1 loads     )
+      marks:           1024 (         5 unique    )
+      atoms:              3
+Memory total:          2255 KiB
+       pools:          2098 KiB
+     objects:           156 KiB
+---------------------------------------------------------------------
+pack_report: getpagesize()            =       4096
+pack_report: core.packedGitWindowSize =   33554432
+pack_report: core.packedGitLimit      =  268435456
+pack_report: pack_used_ctr            =          9
+pack_report: pack_mmap_calls          =          5
+pack_report: pack_open_windows        =          1 /          1
+pack_report: pack_mapped              =       1356 /       1356
+---------------------------------------------------------------------
+</code></pre>
+
+<p>你會發現，在它成功執行完畢以後，會給出一堆有關已完成工作的資料。上例在一個分支導入了5次提交資料，包含了18個物件。現在可以執行 <code>git log</code> 來檢視新的歷史： </p>
+
+<pre><code>$ git log -2
+commit 10bfe7d22ce15ee25b60a824c8982157ca593d41
+Author: Scott Chacon &lt;schacon@example.com&gt;
+Date:   Sun May 3 12:57:39 2009 -0700
+
+    imported from current
+
+commit 7e519590de754d079dd73b44d695a42c9d2df452
+Author: Scott Chacon &lt;schacon@example.com&gt;
+Date:   Tue Feb 3 01:00:00 2009 -0700
+
+    imported from back_2009_02_03
+</code></pre>
+
+<p>就這樣——一個乾淨整潔的 Git 倉庫。需要注意的是此時沒有任何內容被檢出(checked out)——剛開始目前的目錄裡沒有任何檔。要獲取它們，你得轉到 <code>master</code> 分支的所在： </p>
+
+<pre><code>$ ls
+$ git reset --hard master
+HEAD is now at 10bfe7d imported from current
+$ ls
+file.rb  lib
+</code></pre>
+
+<p><code>fast-import</code> 還可以做更多——處理不同的檔案模式、二進位檔案、多重分支與合併、標籤、進展標識(progress indicators)等等。一些更加複雜的實例可以在 Git 源碼的 <code>contib/fast-import</code> 目錄裡找到；較佳的其中之一是前面提過的 <code>git-p4</code> 腳本。 </p>
+
+<div id="nav"><a href="/book/zh-tw/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-Git-%E8%88%87-Subversion">prev</a> | <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E7%B8%BD%E7%B5%90">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

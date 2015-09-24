@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":5,"applicationTime":1079,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Rebasen</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>3.6 Branchen in Git - Rebasen</h1>
+  <div><a id="_rebasing"></a><h2>Rebasen</h2>
+
+<p><a data-type="indexterm" data-primary="rebasing" id="idp5546384"></a><a data-type="indexterm" data-primary="rebasen" id="idp11795008"></a>
+In Git zijn er twee hoofdmanieren om wijzigingen te integreren van de ene branch in een andere: de <code>merge</code> en de
+ <code>rebase</code>.
+In deze paragraaf ga je leren wat rebasen is, hoe je dat moet doen, waarom het een zeer bijzonder stukje gereedschap
+  is en in welke gevallen je het niet wilt gebruiken.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="De simpele rebase" id="idp11797072"><h3 id="De-simpele-rebase"><a href="#De-simpele-rebase">De simpele rebase</a></h3>
+
+<p>Als je het eerdere voorbeeld van <a data-type="xref" href="ch00/_basic_merging">“Eenvoudig mergen (samenvoegen)”</a> erop terugslaat, dan zul je zien dat je werk is uiteengelopen en
+  dat je commits hebt gedaan op de twee verschillende branches.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-1.png" alt="Eenvoudige uiteengelopen historie."></div>
+<figcaption>Eenvoudige uiteengelopen historie</figcaption></figure><p>De simpelste manier om de branches te integreren, zoals we al hebben besproken, is het <code>merge</code> commando.
+Het voert een drieweg-merge uit tussen de twee laatste snapshots van de branches (C3 en C4), en de meest recente
+ gezamenlijke voorouder van die twee (C2), en maakt een nieuw snapshot (en commit).</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-2.png" alt="Mergen om uiteengelopen werk historie te integreren."></div>
+<figcaption>Mergen om uiteengelopen werk historie te integreren</figcaption></figure><p>Maar, er is nog een manier: je kunt de patch van de wijziging die werd geïntroduceerd in <code>C4</code> pakken en die opnieuw
+ toepassen op <code>C3</code>.
+In Git, wordt dit <em>rebasen</em> genoemd.
+Met het <code>rebase</code> commando kan je alle wijzigingen pakken die zijn gecommit op de ene branch, en ze opnieuw afspelen
+ op een andere.<a data-type="indexterm" data-primary="git commando’s" data-secondary="rebase" id="idp11721120"></a></p>
+
+<p>In dit voorbeeld zou je het volgende uitvoeren:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout experiment
+<code class="gp">$</code> git rebase master
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: added staged command</code></pre>
+
+<p>Het gebeurt door naar de gezamenlijke voorouder van de twee branches te gaan (degene waar je op zit en degene waar
+ je op rebaset), de diff te nemen die geïntroduceerd is voor elke losse commit op de branch waar je op zit, die
+ diffs in tijdelijke bestanden te bewaren, de huidige branch terug te zetten naar dezelfde commit als de branch waar
+ je op rebaset, en uiteindelijk elke diff om de beurt te applyen.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-3.png" alt="De wijziging gemaakt in `C4` rebasen naar `C3`."></div>
+<figcaption>De wijziging gemaakt in <code>C4</code> rebasen naar <code>C3</code></figcaption></figure><p>En nu kan je teruggaan naar de master branch en een fast-forward merge uitvoeren.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge experiment</pre>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-4.png" alt="De master branch fast-forwarden."></div>
+<figcaption>De master branch fast-forwarden</figcaption></figure><p>Nu is het snapshot waar <code>C4</code> naar wijst precies dezelfde als degene waar <code>C5</code> naar wees in het merge voorbeeld.
+Er zit geen verschil in het eindresultaat van de integratie, maar rebasen zorgt voor een duidelijkere historie.
+Als je de log van een branch die gerebased is bekijkt, ziet het eruit als een lineaire historie: het lijkt alsof al
+ het werk in serie heeft plaatsgevonden, zelfs wanneer het in werkelijkheid parallel eraan gedaan is.</p>
+
+<p>Vaak zal je dit doen om er zeker van te zijn dat je commits netjes toegepast kunnen worden op een remote branch -
+ misschien in een project waar je aan probeert bij te dragen, maar welke je niet beheert.
+In dit geval zou je het werk in een branch uitvoeren en dan je werk rebasen op <code>origin/master</code> als je klaar ben om
+ je patches in te sturen naar het hoofdproject.
+Op die manier hoeft de beheerder geen integratiewerk te doen - gewoon een fast-forward of een schone apply.</p>
+
+<p>Merk op dat de snapshot waar de laatste commit op het eind naar wijst, of het de laatste van de gerebasede commits
+ voor een rebase is of de laatste merge commit na een merge, detzelfde snapshot is - alleen de historie is
+ verschillend.
+Rebasen speelt veranderingen van een werklijn opnieuw af op een andere, in de volgorde waarin ze gemaakt zijn,
+ terwijl mergen de eindresultaten pakt en die samenvoegt.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Interessantere rebases" id="idp11797696"><h3 id="Interessantere-rebases"><a href="#Interessantere-rebases">Interessantere rebases</a></h3>
+
+<p>Je kunt je rebase ook opnieuw laten afspelen op iets anders dan de rebase doel branch.
+Pak een historie zoals in <a data-type="xref" href="ch00/rbdiag_e">Figure 3-31</a>, bijvoorbeeld.
+Je hebt een topic branch afgesplitst (<code>server</code>) om wat server-kant functionaliteit toe te voegen aan je project en
+ toen een keer gecommit.
+Daarna heb je daar vanaf gebranched om de client-kant wijzigingen te doen (<code>client</code>) en een paar keer gecommit.
+Als laatste, ben je teruggegaan naar je server branch en hebt nog een paar commits gedaan.</p>
+
+<figure id="rbdiag_e"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-1.png" alt="Een historie met een topic branch vanaf een andere topic branch."></div>
+<figcaption>Een historie met een topic branch vanaf een andere topic branch</figcaption></figure><p>Stel nu, je besluit dat je de client-kant wijzigingen wilt mergen in je hoofdlijn voor een release, maar je wilt de
+ server-kant wijzigingen nog vasthouden totdat het verder getest is.
+Je kunt de wijzigingen van client pakken, die nog niet op server zitten (<code>C8</code> en <code>C9</code>) en die opnieuw afspelen op je
+master-branch door de <code>--onto</code> optie te gebruiken van <code>git rebase</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rebase --onto master server client</pre>
+
+<p>Dit zegt in feite, “Check de <code>client</code>-branch uit, verzamel de patches van de gezamenlijke voorouder van de <code>client</code>
+ en de <code>server</code> branches, en speel die opnieuw af op <code>master</code>.”
+Het is een beetje ingewikkeld, maar het resultaat, getoond in Figuur 3-32, is erg prettig.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-2.png" alt="Een topic branch rebasen vanaf een andere topic branch."></div>
+<figcaption>Een topic branch rebasen vanaf een andere topic branch</figcaption></figure><p>Nu kun je een fast-forward doen van je master branch (zie <a data-type="xref" href="ch00/rbdiag_g">Figure 3-33</a>):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge client</pre>
+
+<figure id="rbdiag_g"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-3.png" alt="Je master branch fast-forwarden om de client branch wijzigingen mee te nemen."></div>
+<figcaption>Je master branch fast-forwarden om de client branch wijzigingen mee te nemen</figcaption></figure><p>Stel dat je besluit om de server branch ook te pullen.
+Je kunt de server branch rebasen op de master branch zonder het eerst te hoeven uitchecken door <code>git rebase
+ [basisbranch] [topicbranch]</code> uit te voeren - wat de topic branch voor je uitcheckt (in dit geval, <code>server</code>) en het
+ opnieuw afspeelt op de basis branch (<code>master</code>):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rebase master server</pre>
+
+<p>Dit speelt het <code>server</code> werk opnieuw af op het <code>master</code> werk, zoals getoond in <a data-type="xref" href="ch00/rbdiag_h">Figure 3-34</a>.</p>
+
+<figure id="rbdiag_h"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-4.png" alt="Je server branch op je master branch rebasen."></div>
+<figcaption>Je server branch op je master branch rebasen</figcaption></figure><p>Daarna kan je de basis branch (<code>master</code>) fast-forwarden:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge server</pre>
+
+<p>Je kunt de <code>client</code> en <code>server</code> branches verwijderen, omdat al het werk geïntegreerd is en je ze niet meer nodig
+ hebt, en de historie voor het hele proces ziet eruit zoals in <a data-type="xref" href="ch00/rbdiag_i">Figure 3-35</a>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch -d client
+<code class="gp">$</code> git branch -d server</pre>
+
+<figure id="rbdiag_i"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-5.png" alt="Uiteindelijke commit historie."></div>
+<figcaption>Uiteindelijke commit historie</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="De gevaren van rebasen" id="_rebase_peril"><h3 id="De-gevaren-van-rebasen"><a href="#De-gevaren-van-rebasen">De gevaren van rebasen</a></h3>
+
+<p><a data-type="indexterm" data-primary="rebasen" data-secondary="gevaren van" id="idp11921600"></a>
+Ahh, maar de zegeningen van rebasen zijn niet geheel zonder nadelen, samengevat in één enkele regel:</p>
+
+<p><strong>Rebase geen commits die buiten je lokale repository bekend zijn.</strong></p>
+
+<p>Als je die richtlijn volgt, kan je weinig gebeuren.
+Als je dat niet doet, zullen mensen je gaan haten en je zult door vrienden en familie uitgehoond worden.</p>
+
+<p>Als je spullen rebaset, zet je bestaande commits buitenspel en maak je nieuwe aan die vergelijkbaar zijn maar anders.
+Wanneer je commits ergens pusht en andere pullen deze en baseren daar werk op, en vervolgens herschrijf je die commits
+ met <code>git rebase</code> en pusht deze weer, dan zullen je medewerkers hun werk opnieuw moeten mergen en zal het allemaal
+ erg vervelend worden als je hun werk probeert te pullen in het jouwe.</p>
+
+<p>Laten we eens kijken naar een voorbeeld hoe werk rebasen dat je publiek gemaakt hebt problemen kan veroorzaken.
+Stel dat je van een centrale server clonet en dan daar wat werk aan doet.
+Je commit-historie ziet eruit als volgt:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-1.png" alt="Cloon een repository, en baseer er wat werk op."></div>
+<figcaption>Cloon een repository, en baseer er wat werk op</figcaption></figure><p>Nu doet iemand anders wat meer werk wat een merge bevat, en pusht dat werk naar de centrale server.
+Je fetcht dat en merget de nieuwe remote branch in jouw werk, zodat je historie eruitziet zoals dit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-2.png" alt="Fetch meer commits, en merge ze in jouw werk."></div>
+<figcaption>Fetch meer commits, en merge ze in jouw werk</figcaption></figure><p>Daarna, beslist de persoon die het werk gepusht heeft om erop terug te komen en in plaats daarvan zijn werk te gaan
+ rebasen; hij voert een <code>git push --force</code> uit om de historie op de server te herschrijven.
+Je pullt daarna van die server, waarbij je de nieuwe commits binnen krijgt.</p>
+
+<figure id="_pre_merge_rebase_work"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-3.png" alt="Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt."></div>
+<figcaption>Iemand pusht gerebasede commits, daarbij commits buitenspel zettend waar jij werk op gebaseerd hebt</figcaption></figure><p>Nu zitten jullie beiden met een probleem.
+Als jij een <code>git pull</code> doet, ga je een commit merge maken waar beide tijdslijnen in zitten, en je repository zal er
+zo uit zien:</p>
+
+<figure id="_merge_rebase_work"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-4.png" alt="Je merget hetzelfde werk opnieuw in een nieuwe merge commit."></div>
+<figcaption>Je merget hetzelfde werk opnieuw in een nieuwe merge commit</figcaption></figure><p>Als je een <code>git log</code> uitvoert als je historie er zo uitziet, zie je twee commits die dezelfde auteur, datum en
+bericht hebben, wat verwarrend is.
+Daarnaast, als je deze historie naar de server terug pusht, zal je al deze gerebasede commits opnieuw herintroduceren
+ op centrale server, wat weer andere mensen zou kunnen verwarren.
+Het is redelijk veilig om aan te nemen dat de andere ontwikkelaar <code>C4</code> en <code>C6</code> niet in de historie wil, dat is juist
+de reden waarom ze heeft gerebased.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Rebaset spullen rebasen" id="_rebase_rebase"><h3 id="Rebaset-spullen-rebasen"><a href="#Rebaset-spullen-rebasen">Rebaset spullen rebasen</a></h3>
+
+<p><strong>Mocht</strong> je in zo’n situatie belanden, heeft Git nog wat tovertrucs in petto die je kunnen helpen. Als iemand of een
+ aantal mensen in jouw team met pushes wijzigingen hebben geforceert die werk overschrijven waar jij je werk op
+ gebaseerd hebt, is het jouw uitdaging om uit te vinden wat jouw werk is en wat zij herschreven hebben.</p>
+
+<p>Het komt zo uit dat naast de SHA-1 checksum van de commit, Git ook een checksum berekent die enkel is gebaseerd op de
+ patch die is geïntroduceerd met de commit. Dit heet een “patch-id”.</p>
+
+<p>Als je werk pullt die was herschreven en deze rebased op de nieuwe commits van je partner, kan Git vaak succesvol
+ uitvinden wat specifiek van jou is en deze opnieuw afspelen op de nieuwe branch.</p>
+
+<p>Bijvoorbeeld in het vorige scenario, als in plaats van een merge te doen we in een situatie zijn die beschreven is in
+<a data-type="xref" href="ch00/_pre_merge_rebase_work">Figure 3-38</a> en we <code>git rebase teamone/master</code> aanroepen, zal Git:</p>
+
+<ul>
+<li>
+<p>Bepalen welk werk uniek is in onze branch (C2, C3, C4, C6, C7)</p>
+</li>
+<li>
+<p>Bepalen welke geen merge commits zijn (C2, C3, C4)</p>
+</li>
+<li>
+<p>Bepalen welke nog niet herschreven zijn in de doel-branch (alleen C2 en C3, omdat C4 dezelfde patch is als C4')</p>
+</li>
+<li>
+<p>Deze commits op <code>teamone/master</code> afspelen</p>
+</li>
+</ul>
+<p>Dus in plaats van het resultaat dat we zien in <a data-type="xref" href="ch00/_merge_rebase_work">Figure 3-39</a>, zouden we eindigen met iets wat meer lijkt op
+  <a data-type="xref" href="ch00/_rebase_rebase_work">Figure 3-40</a>.</p>
+
+<figure id="_rebase_rebase_work"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-5.png" alt="Rebase op een force-pushed rebase werk."></div>
+<figcaption>Rebase op een force-pushed rebase werk.</figcaption></figure><p>Dit werkt alleen als de door je partner gemaakte C4 en C4’ vrijwel dezelfde patch zijn. Anders kan de rebase niet
+achterhalen dat het een duplicaat is en zal dan een andere C4-achtige patch toevoegen (die waarschijnlijk niet
+schoon kan worden toegepast, omdat ongeveer dezelfde wijzigingen al daar staan).</p>
+
+<p>Je kunt dit versimpelen door een <code>git pull --rebase</code> in plaats van een gewone <code>git pull</code> te draaien. Of in dit geval
+ kan je handmatig een <code>git fetch</code> gevolgd door een <code>git rebase teamone/master</code> uitvoeren.</p>
+
+<p>Als je <code>git pull</code> gebruikt en <code>--rebase</code> de standaard maken, kan je de <code>pull.rebase</code> configuratie waarde zetten op
+ <code>git config --global pull.rebase true</code>.</p>
+
+<p>Als je rebasen behandelt als een manier om op te schonen en met de commits te werken voordat je ze pusht, en als je
+alleen commits rebased die nooit eerder publiekelijk beschikbaar waren, is er geen probleem.
+Als je commits rebased dat al publiekelijk gepushed zijn, en mensen kunnen hun werk gebaseerd hebben op die commits,
+dan heb je de basis gelegd voor wat frustrerende problemen, en de hoon van je teamgenoten.</p>
+
+<p>Als jij of een partner het nodig vinden op een gegeven moment, verzeker je ervan dat iedereen weet dat ze een <code>git
+pull --rebase</code> moeten draaien om de pijn te verzachten nadat dit gebeurt is.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Rebase vs. Merge" id="idp11950800"><h3 id="Rebase-vs.-Merge"><a href="#Rebase-vs.-Merge">Rebase vs. Merge</a></h3>
+
+<p><a data-type="indexterm" data-primary="rebasing" data-secondary="vs. merging" id="idp11879824"></a><a data-type="indexterm" data-primary="merging" data-secondary="vs. rebasing" id="idp11880800"></a>
+Nu we rebasen en mergen in actie hebben laten zien, kan je je afvragen welk van de twee beter is.
+Voordat we die vraag kunnen beantwoorden, laten we eerst een stapje terug nemen en bespreken wat historie eigenlijk
+inhoudt.</p>
+
+<p>Een standpunt is dat de commit historie van jouw repository een <strong>vastlegging is van wat daadwerkelijk gebeurd is</strong>.
+Het is een historisch document, op zichzelf waardevol, waarmee niet mag worden gerommeld.
+Vanuit dit gezichtspunt, is het wijzigen van de commit historie bijna vloeken in de kerk; je bent aan het <em>liegen</em>
+over wat er werkelijk gebeurd is.
+Wat hindert het dat er een slorige reeks merge commits waren?
+Dat is hoe het gebeurd is, en de repository moet dat bewaren voor het nageslacht.</p>
+
+<p>Een ander standpunt is dat de commit historiie het <strong>verhaal is hoe jouw project tot stand is gekomen.</strong>
+Je puliceert ook niet het eerste manuscript van een boek, en de handleiding hoe je software te onderhouden verdient
+zorgvuldig samenstellen.
+Dit is het kamp dat gereedschappen als rebase en filter-branch gebruikt om het verhaal te vertellen dat het beste is
+voor toekomstige lezers.</p>
+
+<p>Nu, terug naar de vraag of mergen of rebasen beter is: hopelijk snap je nu dat het niet zo eenvoudig ligt.
+Git is een krachtig instrument, en stelt je in staat om veel dingen te doen met en middels je historie, maar elk team
+ en elk project is anders.
+Nu je weet hoe beide werken, is het aan jou om te besluiten welke het beste is voor jouw specifieke situatie.</p>
+
+<p>Om het beste van beide aanpakken te krijgen is het over het algemeen het beste om lokale wijzigingen die je nog niet
+gedeeld hebt te rebasen voordat je ze pusht zodat je verhaal het schoonste blijft, maar nooit iets te rebasen wat je
+elders gepusht hebt.</p>
+</section><div id="nav"><a href="/book/nl/Branchen-in-Git-Branches-op-afstand-Remote-branches">prev</a> | <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

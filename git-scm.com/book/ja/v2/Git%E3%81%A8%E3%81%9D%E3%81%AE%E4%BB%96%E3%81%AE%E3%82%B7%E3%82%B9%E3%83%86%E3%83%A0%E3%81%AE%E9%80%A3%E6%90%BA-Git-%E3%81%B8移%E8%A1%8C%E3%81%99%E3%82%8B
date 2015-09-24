@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":8,"applicationTime":359,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git へ移行する</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">使い始める</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">バージョン管理に関して</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E7%95%A5%E5%8F%B2">Git略史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E5%9F%BA%E6%9C%AC">Gitの基本</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">コマンドライン</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Gitのインストール</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90">最初のGitの構成</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%98%E3%83%AB%E3%83%97%E3%82%92%E8%A6%8B%E3%82%8B">ヘルプを見る</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git の基本</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git リポジトリの取得</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%B8%E3%81%AE%E8%A8%98%E9%8C%B2">変更内容のリポジトリへの記録</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4%E3%81%AE%E9%96%B2%E8%A6%A7">コミット履歴の閲覧</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E4%BD%9C%E6%A5%AD%E3%81%AE%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%97">作業のやり直し</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD">リモートでの作業</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%BF%E3%82%B0">タグ</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">Git エイリアス</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">Git のブランチ機能</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">ブランチとは</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC">ブランチとマージの基本</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E7%AE%A1%E7%90%86">ブランチの管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">ブランチでの作業の流れ</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">リモートブランチ</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9">リベース</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">Gitサーバー</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">プロトコル</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%94%A8%E3%81%AE-Git-%E3%81%AE%E5%8F%96%E5%BE%97">サーバー用の Git の取得</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-SSH-%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E4%BD%9C%E6%88%90">SSH 公開鍵の作成</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">サーバーのセットアップ</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3">Git デーモン</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%89%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%81%AB%E3%82%88%E3%82%8B-Git-%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">サードパーティによる Git ホスティング</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">Git での分散作業</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">分散作業の流れ</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E9%81%8B%E5%96%B6">プロジェクトの運営</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ja/v2/GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%BA%96%E5%82%99%E3%81%A8%E8%A8%AD%E5%AE%9A">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ja/v2/GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%BA%96%E5%82%99%E3%81%A8%E8%A8%AD%E5%AE%9A">アカウントの準備と設定</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ja/v2/GitHub-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ja/v2/GitHub-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9">プロジェクトのメンテナンス</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ja/v2/GitHub-%E7%B5%84%E7%B9%94%E3%81%AE%E7%AE%A1%E7%90%86">組織の管理</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ja/v2/GitHub-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B-GitHub-%E3%81%AE%E6%93%8D%E4%BD%9C">スクリプトによる GitHub の操作</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ja/v2/GitHub-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">Git のさまざまなツール</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">リビジョンの選択</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0">対話的なステージング</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E3%81%AE%E9%9A%A0%E3%81%97%E3%81%8B%E3%81%9F%E3%81%A8%E6%B6%88%E3%81%97%E3%81%8B%E3%81%9F">作業の隠しかたと消しかた</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9%E3%81%B8%E3%81%AE%E7%BD%B2%E5%90%8D">作業内容への署名</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%A4%9C%E7%B4%A2">検索</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88">歴史の書き換え</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E8%A9%B3%E8%AA%AC">リセットコマンド詳説</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E9%AB%98%E5%BA%A6%E3%81%AA%E3%83%9E%E3%83%BC%E3%82%B8%E6%89%8B%E6%B3%95">高度なマージ手法</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">Git によるデバッグ</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">サブモジュール</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%90%E3%83%B3%E3%83%89%E3%83%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90">バンドルファイルの作成</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88">Git オブジェクトの置き換え</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%81%AE%E4%BF%9D%E5%AD%98">認証情報の保存</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git のカスタマイズ</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git の設定</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E5%B1%9E%E6%80%A7">Git の属性</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">Git フック</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E5%AE%9F%E6%96%BD%E4%BE%8B">Git ポリシーの実施例</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">Gitとその他のシステムの連携</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">Git をクライアントとして使用する</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%B8%E7%A7%BB%E8%A1%8C%E3%81%99%E3%82%8B">Git へ移行する</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">Gitの内側</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">配管（Plumbing）と磁器（Porcelain）</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">Gitオブジェクト</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%81%AE%E5%8F%82%E7%85%A7">Gitの参照</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">パックファイル</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E5%8F%82%E7%85%A7%E4%BB%95%E6%A7%98%EF%BC%88Refspec%EF%BC%89">参照仕様（Refspec）</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">トランスファープロトコル</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA">メインテナンスとデータリカバリ</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0">環境変数</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E8%A6%81%E7%B4%84">要約</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">その他の環境でのGit</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">グラフィカルインタフェース</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Visual-Studio%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">Visual StudioでGitを使う</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Eclipse%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">EclipseでGitを使う</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Bash%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">BashでGitを使う</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Zsh%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">ZshでGitを使う</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Powershell%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">PowershellでGitを使う</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Gitをあなたのアプリケーションに組み込む</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Gitのコマンドラインツールを使う方法</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Libgit2%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Libgit2を使う方法</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A">Gitのコマンド</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A">セットアップと設定</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E3%81%A8%E4%BD%9C%E6%88%90">プロジェクトの取得と作成</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88">基本的なスナップショット</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8">ブランチとマージ</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88">プロジェクトの共有とアップデート</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E6%A4%9C%E6%9F%BB%E3%81%A8%E6%AF%94%E8%BC%83">検査と比較</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">デバッグ</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%91%E3%83%83%E3%83%81%E3%81%AE%E9%81%A9%E7%94%A8">パッチの適用</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%A1%E3%83%BC%E3%83%AB">メール</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">外部システム</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%AE%A1%E7%90%86">システム管理</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E9%85%8D%E7%AE%A1%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">配管コマンド</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>9.2 Gitとその他のシステムの連携 - Git へ移行する</h1>
+  <div><a id="_migrating"></a><h2>Git へ移行する</h2>
+
+<p><a data-type="indexterm" data-primary="Migrating to Git" id="id-M9YEiX"></a></p>
+
+<p>Git 以外のバージョン管理システムで管理しているコードベースがあるけれど、Git を使いはじめることにした、という場合、どうにかしてプロジェクトを移行する必要があります。
+この節では、主要なバージョン管理システム用のインポーターについて触れた後、独自のインポーターを自前で開発する方法を実際に見ていきます。
+ここでは、いくつかの大きくてプロ仕様のソースコード管理システムからデータをインポートする方法を学びます。これは、移行するユーザの多くがそういったシステムのユーザであるのと、そういったシステムでは高品質なツールが簡単に手に入るためです。</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="subversion-2loPfZ"><h3 id="Subversion"><a href="#Subversion">Subversion</a></h3>
+
+<p><a data-type="indexterm" data-primary="Subversion" id="id-RQobCA"></a>
+<a data-type="indexterm" data-primary="Importing" data-secondary="from Subversion" id="id-dvKXc9"></a></p>
+
+<p>先ほどの節で <code>git svn</code> の使い方を読んでいれば、話は簡単です。まず <code>git svn clone</code> でリポジトリを作り、そして Subversion サーバーを使うのをやめ、新しい Git サーバーにプッシュし、あとはそれを使い始めればいいのです。これまでの歴史が欲しいのなら、それも Subversion サーバーからプルすることができます (多少時間がかかります)。</p>
+
+<p>しかし、インポートは完全ではありません。また時間もかかるので、正しくやるのがいいでしょう。まず最初に問題になるのが作者 (author) の情報です。Subversion ではコミットした人すべてがシステム上にユーザーを持っており、それがコミット情報として記録されます。たとえば先ほどの節のサンプルで言うと <code>schacon</code> がそれで、<code>blame</code> の出力や <code>git svn log</code> の出力に含まれています。これをうまく Git の作者データとしてマップするには、Subversion のユーザーと Git の作者のマッピングが必要です。<code>users.txt</code> という名前のファイルを作り、このような書式でマッピングを記述します。</p>
+
+<pre data-type="programlisting">schacon = Scott Chacon &lt;schacon@geemail.com&gt;
+selse = Someo Nelse &lt;selse@geemail.com&gt;</pre>
+
+<p>SVN で使っている作者の一覧を取得するには、このようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> svn log --xml <code class="p">|</code> grep author <code class="p">|</code> sort -u <code class="p">|</code> <code class="se">\</code>
+<code class="go">  perl -pe 's/.*&gt;(.*?)&lt;.*/$1 = /'</code>
+</pre>
+
+<p>これは、まずログを XML フォーマットで生成します。その中から作者の情報を含む行だけを抽出し、重複を削除して、XML タグを除去します。
+（ちょっと見ればわかりますが、これは <code>grep</code> や <code>sort</code>、そして <code>perl</code> といったコマンドが使える環境でないと動きません）
+この出力を users.txt にリダイレクトし、そこに Git のユーザーデータを書き足していきます。</p>
+
+<p>このファイルを <code>git svn</code> に渡せば、作者のデータをより正確にマッピングできるようになります。また、Subversion が通常インポートするメタデータを含めないよう <code>git svn</code> に指示することもできます。そのためには <code>--no-metadata</code> を <code>clone</code> コマンドあるいは <code>init</code> コマンドに渡します。そうすると、 <code>import</code> コマンドは次のようになります。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn clone http://my-project.googlecode.com/svn/ <code class="se">\</code>
+<code class="go">      --authors-file=users.txt --no-metadata -s my_project</code>
+</pre>
+
+<p>これで、Subversion をちょっとマシにインポートした <code>my_project</code> ディレnクトリができあがりました。コミットがこんなふうに記録されるのではなく、</p>
+
+<pre data-type="programlisting">commit 37efa680e8473b615de980fa935944215428a35a
+Author: schacon &lt;schacon@4c93b258-373f-11de-be05-5f7a86268029&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk
+
+    git-svn-id: https://my-project.googlecode.com/svn/trunk@94 4c93b258-373f-11de-
+    be05-5f7a86268029</pre>
+
+<p>次のように記録されています。</p>
+
+<pre data-type="programlisting">commit 03a8785f44c8ea5cdb0e8834b7c8e6c469be2ff2
+Author: Scott Chacon &lt;schacon@geemail.com&gt;
+Date:   Sun May 3 00:12:22 2009 +0000
+
+    fixed install - go to trunk</pre>
+
+<p>Author フィールドの見た目がずっとよくなっただけではなく、<code>git-svn-id</code> もなくなっています。</p>
+
+<p>インポートした後には、ちょっとした後始末も行ったほうがよいでしょう。
+たとえば、<code>git svn</code> が作成した変な参照は削除しておくべきです。
+まずはタグを移動して、奇妙なリモートブランチではなくちゃんとしたタグとして扱えるようにします。そして、残りのブランチを移動してローカルで扱えるようにします。</p>
+
+<p>タグを Git のタグとして扱うには、次のコマンドを実行します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cp -Rf .git/refs/remotes/origin/tags/* .git/refs/tags/
+<code class="gp">$</code> rm -Rf .git/refs/remotes/origin/tags
+</pre>
+
+<p>これは、リモートブランチのうち <code>remotes/origin/tags/</code> で始まる名前のものを、実際の (軽量な) タグに変えます。</p>
+
+<p>次に、<code>refs/remotes</code> 以下にあるそれ以外の参照をローカルブランチに移動します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cp -Rf .git/refs/remotes/* .git/refs/heads/
+<code class="gp">$</code> rm -Rf .git/refs/remotes
+</pre>
+
+<p>これで、今まであった古いブランチはすべて Git のブランチとなり、古いタグもすべて Git のタグになりました。最後に残る作業は、新しい Git サーバーをリモートに追加してプッシュすることです。自分のサーバーをリモートとして追加するには以下のようにします｡</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add origin git@my-git-server:myrepository.git
+</pre>
+
+<p>すべてのブランチやタグを一緒にプッシュするには、このようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push origin --all
+</pre>
+
+<p>これで、ブランチやタグも含めたすべてを、新しい Git サーバーにきれいにインポートできました。</p>
+</section><section data-type="sect2" id="mercurial-DKDGiD"><h3 id="Mercurial"><a href="#Mercurial">Mercurial</a></h3>
+
+<p><a data-type="indexterm" data-primary="Mercurial" id="id-4MlQCZ"></a><a data-type="indexterm" data-primary="Importing" data-secondary="from Mercurial" id="id-xjXNfy"></a></p>
+
+<p>Mercurial と Git は、バージョンの表現方法がよく似ており、また Git の方が少し柔軟性が高いので、Mercurial から Git へのリポジトリの変換は非常に素直に行えます。変換には "hg-fast-export" というツールを使用します。このツールは次のコマンドで取得できます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone http://repo.or.cz/r/fast-export.git /tmp/fast-export
+</pre>
+
+<p>変換の最初のステップとして、変換の対象となる Mercurial リポジトリのクローンを取得します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg clone &lt;remote repo URL&gt; /tmp/hg-repo
+</pre>
+
+<p>次のステップでは、author マッピングファイルを作成します。
+チェンジセットの author フィールドへ指定できる内容は、Git より Mercurial の方が制限がゆるいので、これを機に内容を見直すのがよいでしょう。
+author マッピングファイルは、<code>bash</code> シェルなら次のワンライナーで生成できます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd</code> /tmp/hg-repo
+<code class="gp">$</code> hg log <code class="p">|</code> grep user: <code class="p">|</code> sort <code class="p">|</code> uniq <code class="p">|</code> sed <code class="s1">'s/user: *//'</code> &gt; ../authors
+</pre>
+
+<p>プロジェクトの歴史の長さによりますが、このコマンドの実行には数秒かかります。実行後には、 <code>/tmp/authors</code> ファイルが次のような内容で作成されているはずです。</p>
+
+<pre data-type="programlisting">bob
+bob@localhost
+bob &lt;bob@company.com&gt;
+bob jones &lt;bob &lt;AT&gt; company &lt;DOT&gt; com&gt;
+Bob Jones &lt;bob@company.com&gt;
+Joe Smith &lt;joe@company.com&gt;</pre>
+
+<p>この例では、同じ人（Bob）がチェンジセットを作成したときの名前が4パターンあり、そのうち1つだけが標準に合った書き方で、また別の1つは Git のコミットとしては完全に無効なように見えます。
+hg-fast-export では、このような状態を修正する場合、修正したい行の末尾に <code>={修正後の氏名とメールアドレス}</code> を追加し、変更したくないユーザ名の行はすべて削除します。
+すべてのユーザ名が正しいなら、このファイルは必要ありません。
+この例では、ファイルの内容を次のようにします。</p>
+
+<pre data-type="programlisting">bob=Bob Jones &lt;bob@company.com&gt;
+bob@localhost=Bob Jones &lt;bob@company.com&gt;
+bob jones &lt;bob &lt;AT&gt; company &lt;DOT&gt; com&gt;=Bob Jones &lt;bob@company.com&gt;
+bob &lt;bob@company.com&gt;=Bob Jones &lt;bob@company.com&gt;</pre>
+
+<p>次のステップでは、新しい Git リポジトリを作成して、エクスポート用スクリプトを実行します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git init /tmp/converted
+<code class="gp">$</code> <code class="nb">cd</code> /tmp/converted
+<code class="gp">$</code> /tmp/fast-export/hg-fast-export.sh -r /tmp/hg-repo -A /tmp/authors
+</pre>
+
+<p>hg-fast-export に対して、 <code>-r</code> フラグで、変換の対象となる Mercurial リポジトリの場所を指定しています。また、 <code>-A</code> フラグで、author マッピングファイルの場所を指定しています。
+このスクリプトは、Mercurial のチェンジセットを解析して、Git の "fast-import" 機能（詳細はまた後で説明します）用のスクリプトへ変換します。
+これには少し時間がかかります（ネットワーク経由の場合と比べれば <em>かなり</em> 速いですが）。出力は非常に長くなります。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> /tmp/fast-export/hg-fast-export.sh -r /tmp/hg-repo -A /tmp/authors
+<code class="go">Loaded 4 authors</code>
+<code class="go">master: Exporting full revision 1/22208 with 13/0/0 added/changed/removed files</code>
+<code class="go">master: Exporting simple delta revision 2/22208 with 1/1/0 added/changed/removed files</code>
+<code class="go">master: Exporting simple delta revision 3/22208 with 0/1/0 added/changed/removed files</code>
+<code class="go">[…]</code>
+<code class="go">master: Exporting simple delta revision 22206/22208 with 0/4/0 added/changed/removed files</code>
+<code class="go">master: Exporting simple delta revision 22207/22208 with 0/2/0 added/changed/removed files</code>
+<code class="go">master: Exporting thorough delta revision 22208/22208 with 3/213/0 added/changed/removed files</code>
+<code class="go">Exporting tag [0.4c] at [hg r9] [git :10]</code>
+<code class="go">Exporting tag [0.4d] at [hg r16] [git :17]</code>
+<code class="go">[…]</code>
+<code class="go">Exporting tag [3.1-rc] at [hg r21926] [git :21927]</code>
+<code class="go">Exporting tag [3.1] at [hg r21973] [git :21974]</code>
+<code class="go">Issued 22315 commands</code>
+<code class="go">git-fast-import statistics:</code>
+<code class="go">---------------------------------------------------------------------</code>
+<code class="go">Alloc'd objects:     120000</code>
+<code class="go">Total objects:       115032 (    208171 duplicates                  )</code>
+<code class="go">      blobs  :        40504 (    205320 duplicates      26117 deltas of      39602 attempts)</code>
+<code class="go">      trees  :        52320 (      2851 duplicates      47467 deltas of      47599 attempts)</code>
+<code class="go">      commits:        22208 (         0 duplicates          0 deltas of          0 attempts)</code>
+<code class="go">      tags   :            0 (         0 duplicates          0 deltas of          0 attempts)</code>
+<code class="go">Total branches:         109 (         2 loads     )</code>
+<code class="go">      marks:        1048576 (     22208 unique    )</code>
+<code class="go">      atoms:           1952</code>
+<code class="go">Memory total:          7860 KiB</code>
+<code class="go">       pools:          2235 KiB</code>
+<code class="go">     objects:          5625 KiB</code>
+<code class="go">---------------------------------------------------------------------</code>
+<code class="go">pack_report: getpagesize()            =       4096</code>
+<code class="go">pack_report: core.packedGitWindowSize = 1073741824</code>
+<code class="go">pack_report: core.packedGitLimit      = 8589934592</code>
+<code class="go">pack_report: pack_used_ctr            =      90430</code>
+<code class="go">pack_report: pack_mmap_calls          =      46771</code>
+<code class="go">pack_report: pack_open_windows        =          1 /          1</code>
+<code class="go">pack_report: pack_mapped              =  340852700 /  340852700</code>
+<code class="go">---------------------------------------------------------------------</code>
+
+<code class="gp">$</code> git shortlog -sn
+<code class="go">   369  Bob Jones</code>
+<code class="go">   365  Joe Smith</code>
+</pre>
+
+<p>作業はこれだけです。
+すべての Mercurial のタグは Git のタグに変換され、 Mercurial のブランチとブックマークは Git のブランチに変換されています。
+これで、リポジトリを新しいサーバ側へプッシュする準備が整いました。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add origin git@my-git-server:myrepository.git
+<code class="gp">$</code> git push origin --all
+</pre>
+</section><section data-type="sect2" id="_perforce_import"><h3 id="Perforce"><a href="#Perforce">Perforce</a></h3>
+
+<p><a data-type="indexterm" data-primary="Perforce" id="id-N90qHZ"></a><a data-type="indexterm" data-primary="Importing" data-secondary="from Perforce" id="id-YqnnfK"></a></p>
+
+<p>次のインポート元としてとりあげるのは Perforce です。
+前述の通り、 Git と Perforce を相互接続するには2つの方法があります。 git-p4 と Perforce Git Fusion です。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="perforce-git-fusion-GlLzs7"><h4>Perforce Git Fusion</h4>
+
+<p>Git Fusion を使えば、移行のプロセスに労力はほぼかかりません。（ <a data-type="xref" href="ch00/_p4_git_fusion">Git Fusion</a> で述べた通り）設定ファイルで、プロジェクトの設定、ユーザのマッピング、およびブランチの設定を行った後、リポジトリをクローンすれば完了です。
+Git Fusion がネイティブな Git リポジトリと類似の環境を提供してくれるので、お望みとあればいつでも、本物のネイティブな Git リポジトリへプッシュする準備はできているというわけです。
+また、お望みなら、 Perforce を Git のホストとして使用することもできます。</p>
+</section><section data-type="sect3" id="_git_p4"><h4>git-p4</h4>
+
+<p>git-p4 はインポート用ツールとしても使えます。
+例として、 Perforce Public Depot から Jam プロジェクトをインポートしてみましょう。
+クライアントをセットアップするには、環境変数 P4PORT をエクスポートして Perforce ディポの場所を指すようにしなければなりません。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">export </code><code class="nv">P4PORT</code><code class="o">=</code>public.perforce.com:1666
+</pre>
+<div data-type="note" id="id-kRZ8hD">
+<h6>Note</h6>
+<p>以降の手順に従うには、アクセスできる Perforce のディポが必要です。
+この例では public.perforce.com にある公開ディポを使用していますが、アクセス権があればどんなディポでも使用できます。</p>
+</div>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="p4" id="id-w0wxU6"></a></p>
+
+<p><code>git p4 clone</code> コマンドを実行して、 Perforce サーバから Jam プロジェクトをインポートします。ディポとプロジェクトのパス、およびプロジェクトのインポート先のパスを指定します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git-p4 clone //guest/perforce_software/jam@all p4import
+<code class="go">Importing from //guest/perforce_software/jam@all into p4import</code>
+<code class="go">Initialized empty Git repository in /private/tmp/p4import/.git/</code>
+<code class="go">Import destination: refs/remotes/p4/master</code>
+<code class="go">Importing revision 9957 (100%)</code>
+</pre>
+
+<p>このプロジェクトにはブランチがひとつしかありませんが、ブランチビューで設定されたブランチ（またはディレクトリ）があるなら、 <code>git p4 clone</code> に <code>--detect-branches</code> フラグを指定すれば、プロジェクトのブランチすべてをインポートできます。
+この詳細については <a data-type="xref" href="ch00/_git_p4_branches">ブランチ</a> を参照してください。</p>
+
+<p>この時点で作業はおおむね完了です。
+<code>p4import</code> ディレクトリへ移動して <code>git log</code> を実行すると、インポートした成果物を確認できます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -2
+<code class="go">commit e5da1c909e5db3036475419f6379f2c73710c4e6</code>
+<code class="go">Author: giles &lt;giles@giles@perforce.com&gt;</code>
+<code class="go">Date:   Wed Feb 8 03:13:27 2012 -0800</code>
+
+<code class="go">    Correction to line 355; change &lt;/UL&gt; to &lt;/OL&gt;.</code>
+
+<code class="go">    [git-p4: depot-paths = "//public/jam/src/": change = 8068]</code>
+
+<code class="go">commit aa21359a0a135dda85c50a7f7cf249e4f7b8fd98</code>
+<code class="go">Author: kwirth &lt;kwirth@perforce.com&gt;</code>
+<code class="go">Date:   Tue Jul 7 01:35:51 2009 -0800</code>
+
+<code class="go">    Fix spelling error on Jam doc page (cummulative -&gt; cumulative).</code>
+
+<code class="go">    [git-p4: depot-paths = "//public/jam/src/": change = 7304]</code>
+</pre>
+
+<p><code>git-p4</code> が各コミットメッセージに識別子を追加しているのが分かると思います。
+この識別子はそのままにしておいてもかまいません。後で万一 Perforce のチェンジ番号を参照しなければならなくなったときのために使えます。しかし、もし削除したいのなら、新しいリポジトリ上で何か作業を始める前の、この段階で消しておきましょう。
+<a data-type="indexterm" data-primary="git commands" data-secondary="filter-branch" id="id-lxyrSN"></a>
+<code>git filter-branch</code> を使えば、この識別子を一括削除することができます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git filter-branch --msg-filter <code class="s1">'sed -e "/^\[git-p4:/d"'</code>
+<code class="go">Rewrite e5da1c909e5db3036475419f6379f2c73710c4e6 (125/125)</code>
+<code class="go">Ref 'refs/heads/master' was rewritten</code>
+</pre>
+
+<p><code>git log</code> を実行すると、コミットの SHA-1 チェックサムは変わりましたが、 <code>git-p4</code> という文字列がコミットメッセージから消えたことが分かると思います。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -2
+<code class="go">commit b17341801ed838d97f7800a54a6f9b95750839b7</code>
+<code class="go">Author: giles &lt;giles@giles@perforce.com&gt;</code>
+<code class="go">Date:   Wed Feb 8 03:13:27 2012 -0800</code>
+
+<code class="go">    Correction to line 355; change &lt;/UL&gt; to &lt;/OL&gt;.</code>
+
+<code class="go">commit 3e68c2e26cd89cb983eb52c024ecdfba1d6b3fff</code>
+<code class="go">Author: kwirth &lt;kwirth@perforce.com&gt;</code>
+<code class="go">Date:   Tue Jul 7 01:35:51 2009 -0800</code>
+
+<code class="go">    Fix spelling error on Jam doc page (cummulative -&gt; cumulative).</code>
+</pre>
+
+<p>これで、インポート結果を新しい Git サーバへプッシュする準備ができました。</p>
+</section></section><section data-type="sect2" id="_git_tfs"><h3 id="TFS"><a href="#TFS">TFS</a></h3>
+
+<p><a data-type="indexterm" data-primary="TFS" id="id-oRyzHa"></a><a data-type="indexterm" data-primary="Importing" data-secondary="from TFS" id="id-jxyeul"></a></p>
+
+<p>あなたのチームで、ソース管理を TFVC から Git へ移行したいということになった場合、できる限り最高の忠実度で変換を行いたいことと思います。
+そのため、相互運用についてのセクションでは git-tfs と git-tf の両方を取り上げましたが、本セクションでは git-tfs のみを取り上げます。これは git-tfs はブランチをサポートしている一方、 git-tf ではブランチの使用が禁止されており、対応が難しいためです。</p>
+<div data-type="note" id="id-DKnlIq">
+<h6>Note</h6>
+<p>以下で述べるのは、一方通行の変換です。
+できあがった Git リポジトリを、元の TFVC プロジェクトと接続することはできません。</p>
+</div>
+
+<p>最初に行うのはユーザ名のマッピングです。
+TFVC ではチェンジセットの author フィールドの内容をかなり自由に設定できますが、 Git では人間に読める形式の名前とメールアドレスが必要です。
+この情報は、 <code>tf</code> コマンドラインクライアントで次のようにして取得できます。</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">tf</code> <code class="n">history</code> <code class="p">$/</code><code class="n">myproject</code> <code class="n">-recursive</code> <code class="p">&gt;</code> <code class="n">AUTHORS_TMP</code>
+</pre>
+
+<p>このコマンドは、プロジェクトの歴史からすべてのチェンジセットの情報を取ってきて、 AUTHORS_TMP ファイルへ出力します。このファイルは、 <em>User</em> カラム（2番目のカラム）のデータを抽出する際に使用します。
+AUTHORS_TMP ファイルを開いて、2番目のカラムの開始位置と終了位置を確認したら、次のコマンドラインの、 <code>cut</code> コマンドの引数  <code>11-20</code> を、それぞれ開始位置と終了位置で置き換えてください。</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">cat</code> <code class="n">AUTHORS_TMP</code> <code class="p">|</code> <code class="n">cut</code> <code class="n">-b</code> <code class="n">11</code><code class="p">-</code><code class="n">20</code> <code class="p">|</code> <code class="n">tail</code> <code class="n">-n</code><code class="p">+</code><code class="n">3</code> <code class="p">|</code> <code class="n">uniq</code> <code class="p">|</code> <code class="n">sort</code> <code class="p">&gt;</code> <code class="n">AUTHORS</code>
+</pre>
+
+<p>この <code>cut</code> コマンドは、各行の11文字目から20文字目だけを抽出します。
+また、この <code>tail</code>  コマンドは、最初の2行（フィールドヘッダと、下線のアスキーアート）を読み飛ばします。
+この処理の結果は、重複を排除するためパイプで <code>uniq</code> コマンドへ送られた上で、 <code>AUTHORS</code> ファイルへ保存されます。
+次のステップは手作業です。git-tfs でこのファイルを利用するには、各行は次のフォーマットに従っている必要があります。</p>
+
+<pre data-type="programlisting" data-code-language="text">DOMAIN\username = User Name &lt;email@address.com&gt;
+</pre>
+
+<p>イコール記号の左側にあるのは TFVC の “User” フィールドの内容、右側にあるのは Git のコミットで使用されるユーザ名です。</p>
+
+<p>このファイルを作りおえたら、次は、対象となる TFVC プロジェクト全体のクローンを作成します。</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">clone</code> <code class="p">-</code><code class="n">-with-branches</code> <code class="p">-</code><code class="n">-authors</code><code class="p">=</code><code class="n">AUTHORS</code> <code class="n">https</code><code class="err">:</code><code class="p">//</code><code class="n">username</code><code class="p">.</code><code class="n">visualstudio</code><code class="p">.</code><code class="n">com</code><code class="p">/</code><code class="n">DefaultCollection</code> <code class="p">$/</code><code class="n">project</code><code class="p">/</code><code class="n">Trunk</code> <code class="n">project_git</code>
+</pre>
+
+<p>次は、コミットメッセージの末尾にある <code>git-tfs-id</code> セクションを消去したいことと思います。
+これは、次のコマンドで行えます。</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="k">filter</code><code class="n">-branch</code> <code class="o">-f</code> <code class="p">-</code><code class="n">-msg-filter</code> <code class="s1">'sed "s/^git-tfs-id:.*$//g"'</code> <code class="s1">'--'</code> <code class="p">-</code><code class="n">-all</code>
+</pre>
+
+<p>これは、Git-bash から <code>sed</code> コマンドを使用して、 “git-tfs-id:” で始まる行を空文字列で置き換えます。 Git は空文字列を無視します。</p>
+
+<p>これらをすべて実施したら、新しいリモートを追加したり、ブランチをプッシュしたり、チームが Git で作業を始めたりする準備はこれで完了です。</p>
+</section><section data-type="sect2" id="_custom_importer"><h3 id="A-Custom-Importer"><a href="#A-Custom-Importer">A Custom Importer</a></h3>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="fast-import" id="id-QxK6c7"></a>
+<a data-type="indexterm" data-primary="Importing" data-secondary="from others" id="id-oRvoSa"></a></p>
+
+<p>前述した以外のシステムを使っている場合は、それ用のインポートツールをオンラインで探さなければなりません。CVS、Clear Case、Visual Source Safe、あるいはアーカイブのディレクトリなど、多くのバージョン管理システムについて、品質の高いインポーターが公開されています。
+これらのツールがうまく動かなかったり、もっとマイナーなバージョン管理ツールを使っていたり、あるいはインポート処理で特殊な操作をしたりしたい場合は <code>git fast-import</code> を使います。
+このコマンドはシンプルな指示を標準入力から受け取って、特定の Git データを書き出します。
+<code>git fast-import</code> を使えば、生の Git コマンドを使ったり、生のオブジェクトを書きだそうとしたりする（詳細は <a data-type="xref" href="1-git-internals/_git_internals">Gitの内側</a> を参照してください）よりは、ずっと簡単に Git オブジェクトを作ることができます。
+この方法を使えばインポートスクリプトを自作することができます。必要な情報を元のシステムから読み込み、単純な指示を標準出力に出せばよいのです。
+そして、このスクリプトの出力をパイプで <code>git fast-import</code> に送ります。</p>
+
+<p>手軽に試してみるために、シンプルなインポーターを書いてみましょう。
+<code>current</code> で作業をしており、プロジェクトのバックアップは時々ディレクトリまるごとのコピーで行っているものとします。バックアップディレクトリの名前は、タイムスタンプをもとに <code>back_YYYY_MM_DD</code> としています。これらを Git にインポートしてみましょう。
+ディレクトリの構造は、このようになっています。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> ls /opt/import_from
+<code class="go">back_2014_01_02</code>
+<code class="go">back_2014_01_04</code>
+<code class="go">back_2014_01_14</code>
+<code class="go">back_2014_02_03</code>
+<code class="go">current</code>
+</pre>
+
+<p>Git のディレクトリにインポートするため、まず Git がどのようにデータを格納しているかをおさらいしましょう。
+覚えているかもしれませんが、 Git は基本的にはコミットオブジェクトのリンクリストであり、コミットオブジェクトがコンテンツのスナップショットを指しています。
+<code>fast-import</code> に指示しなければならないのは、コンテンツのスナップショットが何でどのコミットデータがそれを指しているのかということと、コミットデータを取り込む順番だけです。
+ここでは、スナップショットをひとつずつたどって各ディレクトリの中身を含むコミットオブジェクトを作り、それらを日付順にリンクさせるものとします。</p>
+
+<p><a data-type="xref" href="1-customizing-git/_an_example_git_enforced_policy">Git ポリシーの実施例</a> と同様、ここでも Ruby を使って書きます。Ruby を使うのは、我々が普段使っている言語であり、読みやすくしやすいためです。
+このサンプルをあなたの使いなれた言語で書き換えるのも簡単でしょう。単に適切な情報を標準出力に送るだけなのだから。
+また、Windows を使っている場合は、行末にキャリッジリターンを含めないように注意が必要です。<code>git fast-import</code> が想定している行末は LF だけであり、Windows で使われている CRLF は想定していません。</p>
+
+<p>まず最初に対象ディレクトリに移動し、そのサブディレクトリを認識させます。各サブディレクトリがコミットとしてインポートすべきスナップショットとなります。
+続いて各サブディレクトリへ移動し、そのサブディレクトリをエクスポートするためのコマンドを出力します。
+基本的なメインループは、このようになります。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="n">last_mark</code> <code class="o">=</code> <code class="kp">nil</code>
+
+<code class="c1"># loop through the directories</code>
+<code class="no">Dir</code><code class="o">.</code><code class="n">chdir</code><code class="p">(</code><code class="no">ARGV</code><code class="o">[</code><code class="mi">0</code><code class="o">]</code><code class="p">)</code> <code class="k">do</code>
+  <code class="no">Dir</code><code class="o">.</code><code class="n">glob</code><code class="p">(</code><code class="s2">"*"</code><code class="p">)</code><code class="o">.</code><code class="n">each</code> <code class="k">do</code> <code class="o">|</code><code class="n">dir</code><code class="o">|</code>
+    <code class="k">next</code> <code class="k">if</code> <code class="no">File</code><code class="o">.</code><code class="n">file?</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+
+    <code class="c1"># move into the target directory</code>
+    <code class="no">Dir</code><code class="o">.</code><code class="n">chdir</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code> <code class="k">do</code>
+      <code class="n">last_mark</code> <code class="o">=</code> <code class="n">print_export</code><code class="p">(</code><code class="n">dir</code><code class="p">,</code> <code class="n">last_mark</code><code class="p">)</code>
+    <code class="k">end</code>
+  <code class="k">end</code>
+<code class="k">end</code>
+</pre>
+
+<p>各ディレクトリ内で実行している <code>print_export</code> は、前のスナップショットの内容一覧とマークを受け取って、このディレクトリの内容一覧とマークを返します。このようにして、それぞれを適切にリンクさせます。
+“マーク” とは <code>fast-import</code> 用語で、コミットに対する識別子を意味します。コミットを作成するときにマークをつけ、それを使って他のコミットとリンクさせます。
+つまり、<code>print_export</code> メソッドで最初にやることは、ディレクトリ名からマークを生成することです。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="n">mark</code> <code class="o">=</code> <code class="n">convert_dir_to_mark</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+</pre>
+
+<p>これを行うには、まずディレクトリの配列を作り、そのインデックスの値をマークとして使います。マークは整数値でなければならないからです。
+メソッドの中身はこのようになります。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="vg">$marks</code> <code class="o">=</code> <code class="o">[]</code>
+<code class="k">def</code> <code class="nf">convert_dir_to_mark</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+  <code class="k">if</code> <code class="o">!</code><code class="vg">$marks</code><code class="o">.</code><code class="n">include?</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+    <code class="vg">$marks</code> <code class="o">&lt;&lt;</code> <code class="n">dir</code>
+  <code class="k">end</code>
+  <code class="p">(</code><code class="vg">$marks</code><code class="o">.</code><code class="n">index</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code> <code class="o">+</code> <code class="mi">1</code><code class="p">)</code><code class="o">.</code><code class="n">to_s</code>
+<code class="k">end</code>
+</pre>
+
+<p>これで各コミットを表す整数値が取得できました。次に必要なのは、コミットのメタデータ用の日付です。
+日付はディレクトリ名に現れているので、ここから取得します。<code>print_export</code> ファイルで次にすることは、これです。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="n">date</code> <code class="o">=</code> <code class="n">convert_dir_to_date</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+</pre>
+
+<p><code>convert_dir_to_date</code> の定義は次のようになります。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="k">def</code> <code class="nf">convert_dir_to_date</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+  <code class="k">if</code> <code class="n">dir</code> <code class="o">==</code> <code class="s1">'current'</code>
+    <code class="k">return</code> <code class="no">Time</code><code class="o">.</code><code class="n">now</code><code class="p">()</code><code class="o">.</code><code class="n">to_i</code>
+  <code class="k">else</code>
+    <code class="n">dir</code> <code class="o">=</code> <code class="n">dir</code><code class="o">.</code><code class="n">gsub</code><code class="p">(</code><code class="s1">'back_'</code><code class="p">,</code> <code class="s1">''</code><code class="p">)</code>
+    <code class="p">(</code><code class="n">year</code><code class="p">,</code> <code class="n">month</code><code class="p">,</code> <code class="n">day</code><code class="p">)</code> <code class="o">=</code> <code class="n">dir</code><code class="o">.</code><code class="n">split</code><code class="p">(</code><code class="s1">'_'</code><code class="p">)</code>
+    <code class="k">return</code> <code class="no">Time</code><code class="o">.</code><code class="n">local</code><code class="p">(</code><code class="n">year</code><code class="p">,</code> <code class="n">month</code><code class="p">,</code> <code class="n">day</code><code class="p">)</code><code class="o">.</code><code class="n">to_i</code>
+  <code class="k">end</code>
+<code class="k">end</code>
+</pre>
+
+<p>これは、各ディレクトリの日付に対応する整数値を返します。
+コミットのメタ情報として必要な最後の情報はコミッターのデータで、これはグローバル変数にハードコードします。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="vg">$author</code> <code class="o">=</code> <code class="s1">'John Doe &lt;john@example.com&gt;'</code>
+</pre>
+
+<p>これで、コミットのデータをインポーターに流せるようになりました。
+最初の情報では、今定義しているのがコミットオブジェクトであることと、どのブランチにいるのかを示しています。その後に先ほど生成したマークが続き、さらにコミッターの情報とコミットメッセージが続いた後にひとつ前のコミットが (もし存在すれば) 続きます。
+コードはこのようになります。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="c1"># print the import information</code>
+<code class="nb">puts</code> <code class="s1">'commit refs/heads/master'</code>
+<code class="nb">puts</code> <code class="s1">'mark :'</code> <code class="o">+</code> <code class="n">mark</code>
+<code class="nb">puts</code> <code class="s2">"committer </code><code class="si">#{</code><code class="vg">$author</code><code class="si">}</code><code class="s2"> </code><code class="si">#{</code><code class="n">date</code><code class="si">}</code><code class="s2"> -0700"</code>
+<code class="n">export_data</code><code class="p">(</code><code class="s1">'imported from '</code> <code class="o">+</code> <code class="n">dir</code><code class="p">)</code>
+<code class="nb">puts</code> <code class="s1">'from :'</code> <code class="o">+</code> <code class="n">last_mark</code> <code class="k">if</code> <code class="n">last_mark</code>
+</pre>
+
+<p>タイムゾーン (-0700) をハードコードしているのは、そのほうがお手軽だったからです。
+別のシステムからインポートする場合は、タイムゾーンをオフセットとして指定しなければなりません。
+コミットメッセージは、次のような特殊な書式にする必要があります。</p>
+
+<pre data-type="programlisting">data (size)\n(contents)</pre>
+
+<p>まず最初に「data」という単語、そして読み込むデータのサイズ、改行、最後にデータがきます。
+同じ書式は後でファイルのコンテンツを指定するときにも使うので、ヘルパーメソッド <code>export_data</code> を作ります。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="k">def</code> <code class="nf">export_data</code><code class="p">(</code><code class="n">string</code><code class="p">)</code>
+  <code class="nb">print</code> <code class="s2">"data </code><code class="si">#{</code><code class="n">string</code><code class="o">.</code><code class="n">size</code><code class="si">}</code><code class="se">\n</code><code class="si">#{</code><code class="n">string</code><code class="si">}</code><code class="s2">"</code>
+<code class="k">end</code>
+</pre>
+
+<p>残っているのは、各スナップショットが持つファイルのコンテンツを指定することです。
+今回の場合はどれも一つのディレクトリにまとまっているので簡単です。<code>deleteall</code> コマンドを出力し、それに続けてディレクトリ内の各ファイルの中身を出力すればよいのです。
+そうすれば、Git が各スナップショットを適切に記録します。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="nb">puts</code> <code class="s1">'deleteall'</code>
+<code class="no">Dir</code><code class="o">.</code><code class="n">glob</code><code class="p">(</code><code class="s2">"**/*"</code><code class="p">)</code><code class="o">.</code><code class="n">each</code> <code class="k">do</code> <code class="o">|</code><code class="n">file</code><code class="o">|</code>
+  <code class="k">next</code> <code class="k">if</code> <code class="o">!</code><code class="no">File</code><code class="o">.</code><code class="n">file?</code><code class="p">(</code><code class="n">file</code><code class="p">)</code>
+  <code class="n">inline_data</code><code class="p">(</code><code class="n">file</code><code class="p">)</code>
+<code class="k">end</code>
+</pre>
+
+<p>注意:多くのシステムではリビジョンを「あるコミットと別のコミットの差分」と考えているので、fast-importでもその形式でコマンドを受け取ることができます。つまりコミットを指定するときに、追加/削除/変更されたファイルと新しいコンテンツの中身で指定できるということです。
+各スナップショットの差分を算出してそのデータだけを渡すこともできますが、処理が複雑になります。すべてのデータを渡して、Git に差分を算出させたほうがよいでしょう。
+もし差分を渡すほうが手元のデータに適しているようなら、<code>fast-import</code> のマニュアルで詳細な方法を調べましょう。</p>
+
+<p>新しいファイルの内容、あるいは変更されたファイルと変更後の内容を表す書式は次のようになります。</p>
+
+<pre data-type="programlisting">M 644 inline path/to/file
+data (size)
+(file contents)</pre>
+
+<p>この 644 はモード (実行可能ファイルがある場合は、そのファイルについては 755 を指定する必要があります) を表し、inline とはファイルの内容をこの次の行に続けて指定するという意味です。<code>inline_data</code> メソッドは、このようになります。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="k">def</code> <code class="nf">inline_data</code><code class="p">(</code><code class="n">file</code><code class="p">,</code> <code class="n">code</code> <code class="o">=</code> <code class="s1">'M'</code><code class="p">,</code> <code class="n">mode</code> <code class="o">=</code> <code class="s1">'644'</code><code class="p">)</code>
+  <code class="n">content</code> <code class="o">=</code> <code class="no">File</code><code class="o">.</code><code class="n">read</code><code class="p">(</code><code class="n">file</code><code class="p">)</code>
+  <code class="nb">puts</code> <code class="s2">"</code><code class="si">#{</code><code class="n">code</code><code class="si">}</code><code class="s2"> </code><code class="si">#{</code><code class="n">mode</code><code class="si">}</code><code class="s2"> inline </code><code class="si">#{</code><code class="n">file</code><code class="si">}</code><code class="s2">"</code>
+  <code class="n">export_data</code><code class="p">(</code><code class="n">content</code><code class="p">)</code>
+<code class="k">end</code>
+</pre>
+
+<p>先ほど定義した <code>export_data</code> メソッドを再利用することができます。この書式はコミットメッセージの書式と同じだからです。</p>
+
+<p>最後に必要となるのは、現在のマークを返して次の処理に渡せるようにすることです。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="k">return</code> <code class="n">mark</code>
+</pre>
+<div data-type="note" id="id-lx5YFp">
+<h6>Note</h6>
+<p>Windows 上で動かす場合はさらにもう一手間必要です。
+先述したように、Windows の改行文字は CRLF ですが <code>git fast-import</code> は LF にしか対応していません。この問題に対応して <code>git fast-import</code> をうまく動作させるには、CRLF ではなく LF を使うよう ruby に指示しなければなりません。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="vg">$stdout</code><code class="o">.</code><code class="n">binmode</code>
+</pre>
+</div>
+
+<p>これで終わりです。
+スクリプト全体を以下に示します。</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="c1">#!/usr/bin/env ruby</code>
+
+<code class="vg">$stdout</code><code class="o">.</code><code class="n">binmode</code>
+<code class="vg">$author</code> <code class="o">=</code> <code class="s2">"John Doe &lt;john@example.com&gt;"</code>
+
+<code class="vg">$marks</code> <code class="o">=</code> <code class="o">[]</code>
+<code class="k">def</code> <code class="nf">convert_dir_to_mark</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+    <code class="k">if</code> <code class="o">!</code><code class="vg">$marks</code><code class="o">.</code><code class="n">include?</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+        <code class="vg">$marks</code> <code class="o">&lt;&lt;</code> <code class="n">dir</code>
+    <code class="k">end</code>
+    <code class="p">(</code><code class="vg">$marks</code><code class="o">.</code><code class="n">index</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code><code class="o">+</code><code class="mi">1</code><code class="p">)</code><code class="o">.</code><code class="n">to_s</code>
+<code class="k">end</code>
+
+<code class="k">def</code> <code class="nf">convert_dir_to_date</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+    <code class="k">if</code> <code class="n">dir</code> <code class="o">==</code> <code class="s1">'current'</code>
+        <code class="k">return</code> <code class="no">Time</code><code class="o">.</code><code class="n">now</code><code class="p">()</code><code class="o">.</code><code class="n">to_i</code>
+    <code class="k">else</code>
+        <code class="n">dir</code> <code class="o">=</code> <code class="n">dir</code><code class="o">.</code><code class="n">gsub</code><code class="p">(</code><code class="s1">'back_'</code><code class="p">,</code> <code class="s1">''</code><code class="p">)</code>
+        <code class="p">(</code><code class="n">year</code><code class="p">,</code> <code class="n">month</code><code class="p">,</code> <code class="n">day</code><code class="p">)</code> <code class="o">=</code> <code class="n">dir</code><code class="o">.</code><code class="n">split</code><code class="p">(</code><code class="s1">'_'</code><code class="p">)</code>
+        <code class="k">return</code> <code class="no">Time</code><code class="o">.</code><code class="n">local</code><code class="p">(</code><code class="n">year</code><code class="p">,</code> <code class="n">month</code><code class="p">,</code> <code class="n">day</code><code class="p">)</code><code class="o">.</code><code class="n">to_i</code>
+    <code class="k">end</code>
+<code class="k">end</code>
+
+<code class="k">def</code> <code class="nf">export_data</code><code class="p">(</code><code class="n">string</code><code class="p">)</code>
+    <code class="nb">print</code> <code class="s2">"data </code><code class="si">#{</code><code class="n">string</code><code class="o">.</code><code class="n">size</code><code class="si">}</code><code class="se">\n</code><code class="si">#{</code><code class="n">string</code><code class="si">}</code><code class="s2">"</code>
+<code class="k">end</code>
+
+<code class="k">def</code> <code class="nf">inline_data</code><code class="p">(</code><code class="n">file</code><code class="p">,</code> <code class="n">code</code><code class="o">=</code><code class="s1">'M'</code><code class="p">,</code> <code class="n">mode</code><code class="o">=</code><code class="s1">'644'</code><code class="p">)</code>
+    <code class="n">content</code> <code class="o">=</code> <code class="no">File</code><code class="o">.</code><code class="n">read</code><code class="p">(</code><code class="n">file</code><code class="p">)</code>
+    <code class="nb">puts</code> <code class="s2">"</code><code class="si">#{</code><code class="n">code</code><code class="si">}</code><code class="s2"> </code><code class="si">#{</code><code class="n">mode</code><code class="si">}</code><code class="s2"> inline </code><code class="si">#{</code><code class="n">file</code><code class="si">}</code><code class="s2">"</code>
+    <code class="n">export_data</code><code class="p">(</code><code class="n">content</code><code class="p">)</code>
+<code class="k">end</code>
+
+<code class="k">def</code> <code class="nf">print_export</code><code class="p">(</code><code class="n">dir</code><code class="p">,</code> <code class="n">last_mark</code><code class="p">)</code>
+    <code class="n">date</code> <code class="o">=</code> <code class="n">convert_dir_to_date</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+    <code class="n">mark</code> <code class="o">=</code> <code class="n">convert_dir_to_mark</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+
+    <code class="nb">puts</code> <code class="s1">'commit refs/heads/master'</code>
+    <code class="nb">puts</code> <code class="s2">"mark :</code><code class="si">#{</code><code class="n">mark</code><code class="si">}</code><code class="s2">"</code>
+    <code class="nb">puts</code> <code class="s2">"committer </code><code class="si">#{</code><code class="vg">$author</code><code class="si">}</code><code class="s2"> </code><code class="si">#{</code><code class="n">date</code><code class="si">}</code><code class="s2"> -0700"</code>
+    <code class="n">export_data</code><code class="p">(</code><code class="s2">"imported from </code><code class="si">#{</code><code class="n">dir</code><code class="si">}</code><code class="s2">"</code><code class="p">)</code>
+    <code class="nb">puts</code> <code class="s2">"from :</code><code class="si">#{</code><code class="n">last_mark</code><code class="si">}</code><code class="s2">"</code> <code class="k">if</code> <code class="n">last_mark</code>
+
+    <code class="nb">puts</code> <code class="s1">'deleteall'</code>
+    <code class="no">Dir</code><code class="o">.</code><code class="n">glob</code><code class="p">(</code><code class="s2">"**/*"</code><code class="p">)</code><code class="o">.</code><code class="n">each</code> <code class="k">do</code> <code class="o">|</code><code class="n">file</code><code class="o">|</code>
+        <code class="k">next</code> <code class="k">if</code> <code class="o">!</code><code class="no">File</code><code class="o">.</code><code class="n">file?</code><code class="p">(</code><code class="n">file</code><code class="p">)</code>
+        <code class="n">inline_data</code><code class="p">(</code><code class="n">file</code><code class="p">)</code>
+    <code class="k">end</code>
+    <code class="n">mark</code>
+<code class="k">end</code>
+
+
+<code class="c1"># Loop through the directories</code>
+<code class="n">last_mark</code> <code class="o">=</code> <code class="kp">nil</code>
+<code class="no">Dir</code><code class="o">.</code><code class="n">chdir</code><code class="p">(</code><code class="no">ARGV</code><code class="o">[</code><code class="mi">0</code><code class="o">]</code><code class="p">)</code> <code class="k">do</code>
+    <code class="no">Dir</code><code class="o">.</code><code class="n">glob</code><code class="p">(</code><code class="s2">"*"</code><code class="p">)</code><code class="o">.</code><code class="n">each</code> <code class="k">do</code> <code class="o">|</code><code class="n">dir</code><code class="o">|</code>
+        <code class="k">next</code> <code class="k">if</code> <code class="no">File</code><code class="o">.</code><code class="n">file?</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code>
+
+        <code class="c1"># move into the target directory</code>
+        <code class="no">Dir</code><code class="o">.</code><code class="n">chdir</code><code class="p">(</code><code class="n">dir</code><code class="p">)</code> <code class="k">do</code>
+            <code class="n">last_mark</code> <code class="o">=</code> <code class="n">print_export</code><code class="p">(</code><code class="n">dir</code><code class="p">,</code> <code class="n">last_mark</code><code class="p">)</code>
+        <code class="k">end</code>
+    <code class="k">end</code>
+<code class="k">end</code>
+</pre>
+
+<p>このスクリプトを実行すれば、次のような結果が得られます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> ruby import.rb /opt/import_from
+<code class="go">commit refs/heads/master</code>
+<code class="go">mark :1</code>
+<code class="go">committer John Doe &lt;john@example.com&gt; 1388649600 -0700</code>
+<code class="go">data 29</code>
+<code class="go">imported from back_2014_01_02deleteall</code>
+<code class="go">M 644 inline README.md</code>
+<code class="go">data 28</code>
+<code class="gp">#</code> Hello
+
+<code class="go">This is my readme.</code>
+<code class="go">commit refs/heads/master</code>
+<code class="go">mark :2</code>
+<code class="go">committer John Doe &lt;john@example.com&gt; 1388822400 -0700</code>
+<code class="go">data 29</code>
+<code class="go">imported from back_2014_01_04from :1</code>
+<code class="go">deleteall</code>
+<code class="go">M 644 inline main.rb</code>
+<code class="go">data 34</code>
+<code class="gp">#</code>!/bin/env ruby
+
+<code class="go">puts "Hey there"</code>
+<code class="go">M 644 inline README.md</code>
+<code class="go">(...)</code>
+</pre>
+
+<p>インポーターを動かすには、インポート先の Git レポジトリにおいて､インポーターの出力をパイプで <code>git fast-import</code> に渡す必要があります。
+インポート先に新しいディレクトリを作成したら､以下のように <code>git init</code> を実行し、そしてスクリプトを実行してみましょう｡</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git init
+<code class="go">Initialized empty Git repository in /opt/import_to/.git/</code>
+<code class="gp">$</code> ruby import.rb /opt/import_from <code class="p">|</code> git fast-import
+<code class="go">git-fast-import statistics:</code>
+<code class="go">---------------------------------------------------------------------</code>
+<code class="go">Alloc'd objects:       5000</code>
+<code class="go">Total objects:           13 (         6 duplicates                  )</code>
+<code class="go">      blobs  :            5 (         4 duplicates          3 deltas of          5 attempts)</code>
+<code class="go">      trees  :            4 (         1 duplicates          0 deltas of          4 attempts)</code>
+<code class="go">      commits:            4 (         1 duplicates          0 deltas of          0 attempts)</code>
+<code class="go">      tags   :            0 (         0 duplicates          0 deltas of          0 attempts)</code>
+<code class="go">Total branches:           1 (         1 loads     )</code>
+<code class="go">      marks:           1024 (         5 unique    )</code>
+<code class="go">      atoms:              2</code>
+<code class="go">Memory total:          2344 KiB</code>
+<code class="go">       pools:          2110 KiB</code>
+<code class="go">     objects:           234 KiB</code>
+<code class="go">---------------------------------------------------------------------</code>
+<code class="go">pack_report: getpagesize()            =       4096</code>
+<code class="go">pack_report: core.packedGitWindowSize = 1073741824</code>
+<code class="go">pack_report: core.packedGitLimit      = 8589934592</code>
+<code class="go">pack_report: pack_used_ctr            =         10</code>
+<code class="go">pack_report: pack_mmap_calls          =          5</code>
+<code class="go">pack_report: pack_open_windows        =          2 /          2</code>
+<code class="go">pack_report: pack_mapped              =       1457 /       1457</code>
+<code class="go">---------------------------------------------------------------------</code>
+</pre>
+
+<p>ご覧のとおり、処理が正常に完了すると、処理内容に関する統計情報が表示されます。
+この場合は、全部で 13 のオブジェクトからなる 4 つのコミットが 1 つのブランチにインポートされたことがわかります。
+では、<code>git log</code> で新しい歴史を確認しましょう。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -2
+<code class="go">commit 3caa046d4aac682a55867132ccdfbe0d3fdee498</code>
+<code class="go">Author: John Doe &lt;john@example.com&gt;</code>
+<code class="go">Date:   Tue Jul 29 19:39:04 2014 -0700</code>
+
+<code class="go">    imported from current</code>
+
+<code class="go">commit 4afc2b945d0d3c8cd00556fbe2e8224569dc9def</code>
+<code class="go">Author: John Doe &lt;john@example.com&gt;</code>
+<code class="go">Date:   Mon Feb 3 01:00:00 2014 -0700</code>
+
+<code class="go">    imported from back_2014_02_03</code>
+</pre>
+
+<p>きれいな Git リポジトリができていますね。
+ここで重要なのは、この時点ではまだ何もチェックアウトされていないということです。作業ディレクトリには何もファイルがありません。
+ファイルを取得するには、ブランチをリセットして <code>master</code> の現在の状態にしなければなりません。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> ls
+<code class="gp">$</code> git reset --hard master
+<code class="go">HEAD is now at 3caa046 imported from current</code>
+<code class="gp">$</code> ls
+<code class="go">README.md main.rb</code>
+</pre>
+
+<p><code>fast-import</code> ツールにはさらに多くの機能があります。さまざまなモードを処理したりバイナリデータを扱ったり、複数のブランチやそのマージ、タグ、進捗状況表示などです。
+より複雑なシナリオのサンプルは Git のソースコードの <code>contrib/fast-import</code> ディレクトリにあります。</p>
+</section><div id="nav"><a href="/book/ja/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">prev</a> | <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-%E3%81%BE%E3%81%A8%E3%82%81">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

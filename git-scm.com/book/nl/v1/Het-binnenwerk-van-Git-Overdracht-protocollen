@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":2,"applicationTime":275,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Overdracht protocollen</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v1/Aan-de-slag">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v1/Aan-de-slag-Het-wat-en-waarom-van-versiebeheer">Het wat en waarom van versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v1/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v1/Aan-de-slag-De-basis-van-Git">De basis van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v1/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v1/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v1/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v1/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v1/De-basis-van-Git">De basis van Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v1/De-basis-van-Git-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v1/De-basis-van-Git-Wijzigingen-aan-het-repository-vastleggen">Wijzigingen aan het repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v1/De-basis-van-Git-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v1/De-basis-van-Git-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v1/De-basis-van-Git-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v1/De-basis-van-Git-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v1/De-basis-van-Git-Tips-en-trucs">Tips en trucs</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v1/De-basis-van-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v1/Branchen-in-Git">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v1/Branchen-in-Git-Wat-is-een-branch">Wat is een branch</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v1/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v1/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v1/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v1/Branchen-in-Git-Remote-branches">Remote branches</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v1/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v1/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v1/Git-op-de-server">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v1/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v1/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v1/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v1/Git-op-de-server-De-Server-Opzetten">De Server Opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v1/Git-op-de-server-Publieke-toegang">Publieke toegang</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v1/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v1/Git-op-de-server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v1/Git-op-de-server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v1/Git-op-de-server-Git-daemon">Git daemon</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v1/Git-op-de-server-Gehoste-Git">Gehoste Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/nl/v1/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v1/Gedistribueerd-Git">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v1/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v1/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v1/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v1/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v1/Git-tools">Git tools</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v1/Git-tools-Revisie-selectie">Revisie selectie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v1/Git-tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v1/Git-tools-Stashen">Stashen</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v1/Git-tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v1/Git-tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v1/Git-tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/nl/v1/Git-tools-Subboom-mergen">Subboom mergen</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/nl/v1/Git-tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v1/Git-op-maat-maken">Git op maat maken</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-haken-hooks">Git haken (hooks)</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v1/Git-op-maat-maken-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v1/Git-op-maat-maken-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v1/Git-en-andere-systemen">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v1/Git-en-andere-systemen-Git-en-Subversion">Git en Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v1/Git-en-andere-systemen-Naar-Git-migreren">Naar Git migreren</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v1/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v1/Het-binnenwerk-van-Git">Het binnenwerk van Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Sanitaire-voorzieningen-en-porselein">Sanitaire voorzieningen en porselein</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Git-referenties">Git referenties</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-De-refspec">De refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Overdracht-protocollen">Overdracht protocollen</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Onderhoud-en-het-herstellen-van-gegevens">Onderhoud en het herstellen van gegevens</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>9.6 Het binnenwerk van Git - Overdracht protocollen</h1>
+  <div><h2>Overdracht protocollen</h2>
+
+<p>Git kan gegevens tussen twee repositories hoofdzakelijk op twee manieren overdragen: via HTTP en via de zogenaamde slimme protocollen die in de <code>file://</code>, <code>ssh://</code> en <code>git://</code> overdrachten gebruikt worden. Deze paragraaf zal laten zien hoe deze twee hoofdprotocollen werken.</p>
+
+<h3 id="Het-domme-Protocol"><a href="#Het-domme-Protocol">Het domme Protocol</a></h3>
+
+<p>Naar Git-overdracht via HTTP wordt vaak gerefereerd als het domme protocol, omdat het geen Git-specifieke code vereist op de server tijdens het overdrachtsproces. Het fetch proces is een reeks van GET verzoeken, waarbij de client de indeling van het Git repository van de server kent. Laten we het <code>http-fetch</code> proces eens volgen voor de simplegit bibliotheek:</p>
+
+<pre><code>$ git clone http://github.com/schacon/simplegit-progit.git
+</code></pre>
+
+<p>Het eerste wat dit commando doet is het <code>info/refs</code> bestand pullen. Dit bestand wordt geschreven door het <code>update-server-info</code> commando, en dat is de reden waarom je dat als een <code>post-recieve</code> hook moet activeren voordat de HTTP overdracht naar behoren werkt:</p>
+
+<pre><code>=&gt; GET info/refs
+ca82a6dff817ec66f44342007202690a93763949     refs/heads/master
+</code></pre>
+
+<p>Nu heb je een lijst met de remote referenties en SHA&#39;s. Daarna kijk je naar de waarde van de HEAD referentie, zodat je weet wat je uit moet checken zodra je klaar bent:</p>
+
+<pre><code>=&gt; GET HEAD
+ref: refs/heads/master
+</code></pre>
+
+<p>Je moet de <code>master</code> branch uitchecken zodra je het proces afgerond hebt.
+Op dit punt kan je beginnen met het doorloop proces. Omdat je startpunt het <code>ca82a6</code> commit object is dat je in het <code>info/refs</code> bestand zag, begin je met dit op te halen:</p>
+
+<pre><code>=&gt; GET objects/ca/82a6dff817ec66f44342007202690a93763949
+(179 bytes of binary data)
+</code></pre>
+
+<p>Je krijgt een object terug - dat object staat in los formaat op de server, en je hebt het gehaald met een statisch HTTP GET verzoek. Je kunt het met zlib decomprimeren, de kop eraf halen en naar de commit inhoud kijken:</p>
+
+<pre><code>$ git cat-file -p ca82a6dff817ec66f44342007202690a93763949
+tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+parent 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+author Scott Chacon &lt;schacon@gmail.com&gt; 1205815931 -0700
+committer Scott Chacon &lt;schacon@gmail.com&gt; 1240030591 -0700
+
+changed the version number
+</code></pre>
+
+<p>Daarna heb je nog twee objecten op te halen - <code>cfda3b</code>, wat de tree is met inhoud waar de commit die je zojuist hebt opgehaald naar wijst, en <code>085bb3</code>, wat de ouder commit is:</p>
+
+<pre><code>=&gt; GET objects/08/5bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+(179 bytes of data)
+</code></pre>
+
+<p>Dat geeft je het volgende commit object. Pak het tree object:</p>
+
+<pre><code>=&gt; GET objects/cf/da3bf379e4f8dba8717dee55aab78aef7f4daf
+(404 - Not Found)
+</code></pre>
+
+<p>Oeps, het ziet ernaar uit dat die tree object niet in het loose formaat op de server bestaat, dus krijg je een 404 antwoord. Er zijn hiervoor een aantal redenen: het object zou in een ander repository kunnen staan, of het kan in een packfile in deze repository staan. Git gaat eerst naar de benoemde alternatieven kijken:</p>
+
+<pre><code>=&gt; GET objects/info/http-alternates
+(empty file)
+</code></pre>
+
+<p>Als dit een lijst met alternatieve URL&#39;s bevat, zal Git daar voor loose bestanden en packfiles gaan kijken. Dit is een prettig mechanisme voor projecten die forks zijn van een ander zodat ze objecten kunnen delen op de schijf. Maar omdat er in dit geval geen alternatieven vermeld staan, moet het object in een packfile zitten. Om te zien welke packfiles beschikbaar zijn op deze server moet je het <code>objects/info/packs</code> bestand ophalen, wat een lijst hiervan bevat (ook gegenereerd door <code>update-server-info</code>):</p>
+
+<pre><code>=&gt; GET objects/info/packs
+P pack-816a9b2334da9953e530f27bcac22082a9f5b835.pack
+</code></pre>
+
+<p>Er is slechts één packfile op de server dus dat object zit daar natuurlijk in, maar je controleert het index bestand om er zeker van te zijn. Dit is ook handig als je meerdere packfiles op de server hebt, zodat je kunt zien welke packfile het object dat je nodig hebt bevat:</p>
+
+<pre><code>=&gt; GET objects/pack/pack-816a9b2334da9953e530f27bcac22082a9f5b835.idx
+(4k of binary data)
+</code></pre>
+
+<p>Nu je de packfile index hebt kun je zien of het object hier in zit - omdat de index de SHA&#39;s van de objecten in de packfile toont en de offsets naar die objecten. Het gezochte object is aanwezig, dus ga je verder en haalt de hele packfile op:</p>
+
+<pre><code>=&gt; GET objects/pack/pack-816a9b2334da9953e530f27bcac22082a9f5b835.pack
+(13k of binary data)
+</code></pre>
+
+<p>Je hebt de tree object te pakken, dus je kunt verder gaan met het doorlopen van de commits. Ze zitten ook allemaal in de packfile die je zojuist gedownload hebt, dus je hoeft geen verzoeken meer te doen aan je server. Git checked een werkkopie uit van de <code>master</code> branch waarnaar gewezen werd door de HEAD referentie, die je aan het begin gedownload hebt.</p>
+
+<p>Het gehele uitvoer van dit proces ziet er zo uit:</p>
+
+<pre><code>$ git clone http://github.com/schacon/simplegit-progit.git
+Initialized empty Git repository in /private/tmp/simplegit-progit/.git/
+got ca82a6dff817ec66f44342007202690a93763949
+walk ca82a6dff817ec66f44342007202690a93763949
+got 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Getting alternates list for http://github.com/schacon/simplegit-progit.git
+Getting pack list for http://github.com/schacon/simplegit-progit.git
+Getting index for pack 816a9b2334da9953e530f27bcac22082a9f5b835
+Getting pack 816a9b2334da9953e530f27bcac22082a9f5b835
+ which contains cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+walk 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+walk a11bef06a3f659402fe7563abf99ad00de2209e6
+</code></pre>
+
+<h3 id="Het-slimme-protocol"><a href="#Het-slimme-protocol">Het slimme protocol</a></h3>
+
+<p>De HTTP methode is eenvoudig, maar een beetje inefficiënt. Slimme protocollen gebruiken is een meer gebruikelijke manier van gegevensoverdracht. Deze protocollen hebben een proces aan de remote kant dat bewust is van Git - het kan lokale gegevens lezen en uitvinden wat de client heeft of nodig heeft en hier specifieke gegevens voor genereren. Er zijn twee paar processen voor gegevensoverdracht: één paar voor het uploaden van gegevens en één paar voor het downloaden van gegevens.</p>
+
+<h4>Gegevens uploaden</h4>
+
+<p>Om gegevens te uploaden naar een remote proces, gebruikt Git de <code>send-pack</code> en <code>receive-pack</code> processen. Het <code>send-pack</code> proces draait op de client en maakt contact met een <code>receive-pack</code> proces aan de remote kant.</p>
+
+<p>Bijvoorbeeld, stel dat je <code>git push origin master</code> uitvoert in je project en <code>origin</code> is gedefinieerd als een URL dat het SSH protocol gebruikt. Git start het <code>send-pack</code> proces, wat een SSH verbinding initieert naar de server. Het probeert een commando op de remote server uit te voeren met behulp van een SSH aanroep die er ongeveer zo uit ziet:</p>
+
+<pre><code>$ ssh -x git@github.com &quot;git-receive-pack &#39;schacon/simplegit-progit.git&#39;&quot;
+005bca82a6dff817ec66f4437202690a93763949 refs/heads/master report-status delete-refs
+003e085bb3bcb608e1e84b2432f8ecbe6306e7e7 refs/heads/topic
+0000
+</code></pre>
+
+<p>Het <code>git-receive-pack</code> commando antwoordt direct met één regel voor iedere referentie die het momenteel heeft - in dit geval alleen de <code>master</code> branch en zijn SHA. De eerste regel bevat ook een lijst van de mogelijkheden van de server (hier: <code>report-status</code> en <code>delete-refs</code>).</p>
+
+<p>Iedere regel begint met een hexadecimale waarde van 4 bytes, die specificeert hoe lang de rest van de regel is. Je eerste regel begint met 005b, wat 91 in hex is, wat betekent dat er nog 91 bytes over zijn op deze regel. De volgende regel begint met 003e, wat 62 is, waarna je de overgebleven 62 bytes leest. De volgende regel is 0000, wat betekent dat de server klaar is met het tonen van zijn referenties.</p>
+
+<p>Nu de status van de server bekend is, bepaalt het <code>send-pack</code> proces welke commits het heeft die de server nog niet heeft. Voor iedere referentie die deze push zal vernieuwen, geeft het <code>send-pack</code> die informatie aan het <code>receive-pack</code> door. Bijvoorbeeld, als je de <code>master</code> branch vernieuwt en een <code>experiment</code> branch toevoegt, zou het <code>send-pack</code> antwoord er zo uit kunnen zien:</p>
+
+<pre><code>0085ca82a6dff817ec66f44342007202690a93763949  15027957951b64cf874c3557a0f3547bd83b3ff6 refs/heads/master report-status
+00670000000000000000000000000000000000000000 cdfdb42577e2506715f8cfeacdbabc092bf63e8d refs/heads/experiment
+0000
+</code></pre>
+
+<p>De SHA-1 waarde met alleen &#39;0&#39; betekent dat er nog niets was - omdat je de experiment referentie toevoegt. Als je een referentie aan het verwijderen was, zou je het tegenovergestelde zien: allemaal &#39;0&#39;en aan de rechterkant.</p>
+
+<p>Git stuurt een regel voor iedere referentie die je vernieuwt met de oude SHA, de nieuwe SHA en de referentie die vernieuwd wordt. De eerste regel bevat ook de mogelijkheden van de client. Vervolgens uploadt de client een packfile met alle objecten die de server nog niet heeft. Als laatste antwoordt de server met een indicatie van succes (of mislukking):</p>
+
+<pre><code>000Aunpack ok
+</code></pre>
+
+<h4>Gegevens downloaden</h4>
+
+<p>Zodra je gegevens downloadt zijn de <code>fetch-pack</code> en <code>upload-pack</code> processen erbij betrokken. De client start een <code>fetch-pack</code> proces dat verbinding maakt met een <code>upload-pack</code> proces aan de remote kant om te onderhandelen welke gegevens opgehaald moeten worden.</p>
+
+<p>Er zijn verschillende manieren om het <code>upload-pack</code> proces op de remote repository te starten. Je kunt het uitvoeren via SSH, zoals bij het <code>receive-pack</code> proces. Je kunt het proces ook starten via de Git daemon, die standaard op poort 9418 luistert. Het <code>fetch-pack</code> proces stuurt gegevens, naar de daemon na het maken van de verbinding die er zo uitzien:</p>
+
+<pre><code>003fgit-upload-pack schacon/simplegit-progit.git\0host=myserver.com\0
+</code></pre>
+
+<p>Het begint met de 4 bytes die specificeren hoeveel gegevens er volgen, daarna het commando gevolgd door een null byte, en dan de hostname van de server gevolgd door een laatste null byte. De Git daemon controleert of dat commando uitgevoerd kan worden, dat de repository bestaat en dat het publieke permissies heeft. Als alles in orde is, dan start het het <code>upload-pack</code> proces en geeft het verzoek hier aan door.</p>
+
+<p>Als je de fetch via SSH doet, voert het <code>fetch-pack</code> in plaats daarvan zoiets als dit uit:</p>
+
+<pre><code>$ ssh -x git@github.com &quot;git-upload-pack &#39;schacon/simplegit-progit.git&#39;&quot;
+</code></pre>
+
+<p>In beide gevallen wordt, nadat <code>fetch-pack</code> verbinding gemaakt heeft, door <code>upload-pack</code> zoiets als het volgende gestuurd:</p>
+
+<pre><code>0088ca82a6dff817ec66f44342007202690a93763949 HEAD\0multi_ack thin-pack \
+  side-band side-band-64k ofs-delta shallow no-progress include-tag
+003fca82a6dff817ec66f44342007202690a93763949 refs/heads/master
+003e085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 refs/heads/topic
+0000
+</code></pre>
+
+<p>Dit komt sterk overeen met hoe <code>receive-pack</code> antwoordt, maar de mogelijkheden zijn verschillend. Daarnaast stuurt het de HEAD referentie zodat de client weet wat er uitgechecked moet worden als dit een clone is.</p>
+
+<p>Op dit punt kijkt het <code>fetch-pack</code> proces naar welke objecten het heeft en antwoordt met de objecten die het nodig heeft door &quot;want&quot; te sturen, gevolgd door de SHA die het wil hebben. Het stuurt al de objecten die het al heeft met &quot;have&quot; en dan de SHA. Aan het einde van deze lijst schrijft het &quot;done&quot; om het <code>upload-pack</code> proces te laten beginnen met het sturen van de packfile met de gegevens die het nodig heeft:</p>
+
+<pre><code>0054want ca82a6dff817ec66f44342007202690a93763949 ofs-delta
+0032have 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+0000
+0009done
+</code></pre>
+
+<p>Dat is een erg basaal geval van de overdrachtsprotocollen. In meer complexe gevallen ondersteunt de client <code>multi_ack</code> of <code>side-band</code> mogelijkheden; maar dit voorbeeld toont je het basale over en weer dat plaatsvindt bij de slimme protocol processen.</p>
+
+<div id="nav"><a href="/book/nl/Het-binnenwerk-van-Git-De-refspec">prev</a> | <a href="/book/nl/v1/Het-binnenwerk-van-Git-Onderhoud-en-het-herstellen-van-gegevens">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

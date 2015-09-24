@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoBW1YeX1db","queueTime":16,"applicationTime":94,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - git-rerere Documentation</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+        <div id="content">
+          
+
+  <div id='reference-version'>
+    <a class="dropdown-trigger" id="reference-topics-trigger" data-panel-id="topics-dropdown" href="#">Topics ▾</a>
+<div class='dropdown-panel right' id='topics-dropdown'>
+  <div class='three-column'>
+    <div class='column-left'>
+      <h3 class='setup'>Setup and Config</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-config">config</a></li>
+  <li><a href="/docs/git-help">help</a></li>
+</ul>
+
+      <h3 class='projects'>Getting and Creating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-init">init</a></li>
+  <li><a href="/docs/git-clone">clone</a></li>
+</ul>
+
+      <h3 class='snapshotting'>Basic Snapshotting</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-add">add</a></li>
+  <li><a href="/docs/git-status">status</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-commit">commit</a></li>
+  <li><a href="/docs/git-reset">reset</a></li>
+  <li><a href="/docs/git-rm">rm</a></li>
+  <li><a href="/docs/git-mv">mv</a></li>
+</ul>
+
+      <h3 class='branching'>Branching and Merging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-branch">branch</a></li>
+  <li><a href="/docs/git-checkout">checkout</a></li>
+  <li><a href="/docs/git-merge">merge</a></li>
+  <li><a href="/docs/git-mergetool">mergetool</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-stash">stash</a></li>
+  <li><a href="/docs/git-tag">tag</a></li>
+</ul>
+
+      <h3 class='sharing'>Sharing and Updating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-fetch">fetch</a></li>
+  <li><a href="/docs/git-pull">pull</a></li>
+  <li><a href="/docs/git-push">push</a></li>
+  <li><a href="/docs/git-remote">remote</a></li>
+  <li><a href="/docs/git-submodule">submodule</a></li>
+</ul>
+
+    </div>
+    <div class='column-middle'>
+      <h3 class='inspection'>Inspection and Comparison</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-show">show</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-shortlog">shortlog</a></li>
+  <li><a href="/docs/git-describe">describe</a></li>
+</ul>
+
+      <h3 class='patching'>Patching</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-cherry-pick">cherry-pick</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-rebase">rebase</a></li>
+  <li><a href="/docs/git-revert">revert</a></li>
+</ul>
+
+      <h3 class='debugging'>Debugging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-bisect">bisect</a></li>
+  <li><a href="/docs/git-blame">blame</a></li>
+  <li><a href="/docs/git-grep">grep</a></li>
+</ul>
+
+      <h3 class='email'>Email</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-am">am</a></li>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-format-patch">format-patch</a></li>
+  <li><a href="/docs/git-send-email">send-email</a></li>
+  <li><a href="/docs/git-request-pull">request-pull</a></li>
+</ul>
+
+      <h3 class='external'>External Systems</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-svn">svn</a></li>
+  <li><a href="/docs/git-fast-import">fast-import</a></li>
+</ul>
+
+    </div>
+    <div class='column-right'>
+      <h3 class='admin'>Administration</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-clean">clean</a></li>
+  <li><a href="/docs/git-gc">gc</a></li>
+  <li><a href="/docs/git-fsck">fsck</a></li>
+  <li><a href="/docs/git-reflog">reflog</a></li>
+  <li><a href="/docs/git-filter-branch">filter-branch</a></li>
+  <li><a href="/docs/git-instaweb">instaweb</a></li>
+  <li><a href="/docs/git-archive">archive</a></li>
+  <li><a href="/docs/git-bundle">bundle</a></li>
+</ul>
+
+      <h3 class='server-admin'>Server Admin</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-daemon">daemon</a></li>
+  <li><a href="/docs/git-update-server-info">update-server-info</a></li>
+</ul>
+
+      <h3 class='plumbing'>Plumbing Commands</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-cat-file">cat-file</a></li>
+  <li><a href="/docs/git-commit-tree">commit-tree</a></li>
+  <li><a href="/docs/git-count-objects">count-objects</a></li>
+  <li><a href="/docs/git-diff-index">diff-index</a></li>
+  <li><a href="/docs/git-for-each-ref">for-each-ref</a></li>
+  <li><a href="/docs/git-hash-object">hash-object</a></li>
+  <li><a href="/docs/git-ls-files">ls-files</a></li>
+  <li><a href="/docs/git-merge-base">merge-base</a></li>
+  <li><a href="/docs/git-read-tree">read-tree</a></li>
+  <li><a href="/docs/git-rev-list">rev-list</a></li>
+  <li><a href="/docs/git-rev-parse">rev-parse</a></li>
+  <li><a href="/docs/git-show-ref">show-ref</a></li>
+  <li><a href="/docs/git-symbolic-ref">symbolic-ref</a></li>
+  <li><a href="/docs/git-update-index">update-index</a></li>
+  <li><a href="/docs/git-update-ref">update-ref</a></li>
+  <li><a href="/docs/git-verify-pack">verify-pack</a></li>
+  <li><a href="/docs/git-write-tree">write-tree</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    <a class="dropdown-trigger" id="reference-versions-trigger" data-panel-id="previous-versions-dropdown" href="#">Version 2.5.1 ▾</a>
+<span class="light">git-rerere last updated in 2.5.1</span>
+<div class='dropdown-panel left' id='previous-versions-dropdown'>
+  <header>Changes in the <strong>git-rerere</strong> manual</header>
+  <ol class='reference-previous-versions'>
+        <li>
+        <a href="/docs/git-rerere/2.5.1"><span class="version">2.5.1</span>
+          <span class="diff">
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">08/28/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>2.4.1 &rarr; 2.5.0 no changes</span></li>
+        <li>
+        <a href="/docs/git-rerere/2.4.0"><span class="version">2.4.0</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/30/15</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.7.10.4 &rarr; 2.3.8 no changes</span></li>
+        <li>
+        <a href="/docs/git-rerere/1.7.10.3"><span class="version">1.7.10.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">05/25/12</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.7.9.6 &rarr; 1.7.10.2 no changes</span></li>
+        <li>
+        <a href="/docs/git-rerere/1.7.9.5"><span class="version">1.7.9.5</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">03/26/12</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.7.9.1 &rarr; 1.7.9.4 no changes</span></li>
+        <li>
+        <a href="/docs/git-rerere/1.7.9"><span class="version">1.7.9</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">01/27/12</em>
+        </a>
+        </li>
+        <li>
+        <a href="/docs/git-rerere/1.7.8.6"><span class="version">1.7.8.6</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/26/12</em>
+        </a>
+        </li>
+    <li>&nbsp;</li>
+    <!-- <li><a class="more" href="#">See more previous releases →</a></li> -->
+  </ol>
+  <footer>
+    <span class="light">Check your version of git by running<br></span>
+    <strong>$</strong>
+    <input type="text" class="copyable" value="git --version" />
+  </footer>
+</div>
+
+  </div>
+
+  <div id='main'>
+    <div class="sect1">
+  <h2 id="_name">NAME</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>git-rerere - Reuse recorded resolution of conflicted merges</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_synopsis">SYNOPSIS</h2>
+  
+    <div class="sectionbody"><div class="verseblock">
+<pre class="content"><em>git rerere</em> [<em>clear</em>|<em>forget</em> &lt;pathspec&gt;|<em>diff</em>|<em>remaining</em>|<em>status</em>|<em>gc</em>]</pre>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_description">DESCRIPTION</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>In a workflow employing relatively long lived topic branches,
+the developer sometimes needs to resolve the same conflicts over
+and over again until the topic branches are done (either merged
+to the "release" branch, or sent out and accepted upstream).</p>
+</div>
+<div class="paragraph">
+<p>This command assists the developer in this process by recording
+conflicted automerge results and corresponding hand resolve results
+on the initial manual merge, and applying previously recorded
+hand resolutions to their corresponding automerge results.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+You need to set the configuration variable rerere.enabled in order to
+enable this command.
+</td>
+</tr>
+</table>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_commands">COMMANDS</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Normally, <em>git rerere</em> is run without arguments or user-intervention.
+However, it has several commands that allow it to interact with
+its working state.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><em>clear</em></dt>
+<dd>
+<p>Reset the metadata used by rerere if a merge resolution is to be
+aborted.  Calling <em>git am [--skip|--abort]</em> or <em>git rebase [--skip|--abort]</em>
+will automatically invoke this command.</p>
+</dd>
+<dt class="hdlist1"><em>forget</em> &lt;pathspec&gt;</dt>
+<dd>
+<p>Reset the conflict resolutions which rerere has recorded for the current
+conflict in &lt;pathspec&gt;.</p>
+</dd>
+<dt class="hdlist1"><em>diff</em></dt>
+<dd>
+<p>Display diffs for the current state of the resolution.  It is
+useful for tracking what has changed while the user is resolving
+conflicts.  Additional arguments are passed directly to the system
+<em>diff</em> command installed in PATH.</p>
+</dd>
+<dt class="hdlist1"><em>status</em></dt>
+<dd>
+<p>Print paths with conflicts whose merge resolution rerere will record.</p>
+</dd>
+<dt class="hdlist1"><em>remaining</em></dt>
+<dd>
+<p>Print paths with conflicts that have not been autoresolved by rerere.
+This includes paths whose resolutions cannot be tracked by rerere,
+such as conflicting submodules.</p>
+</dd>
+<dt class="hdlist1"><em>gc</em></dt>
+<dd>
+<p>Prune records of conflicted merges that
+occurred a long time ago.  By default, unresolved conflicts older
+than 15 days and resolved conflicts older than 60
+days are pruned.  These defaults are controlled via the
+<code>gc.rerereUnresolved</code> and <code>gc.rerereResolved</code> configuration
+variables respectively.</p>
+</dd>
+</dl>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_discussion">DISCUSSION</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>When your topic branch modifies an overlapping area that your
+master branch (or upstream) touched since your topic branch
+forked from it, you may want to test it with the latest master,
+even before your topic branch is ready to be pushed upstream:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>              o---*---o topic
+             /
+    o---o---o---*---o---o master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For such a test, you need to merge master and topic somehow.
+One way to do it is to pull master into the topic branch:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>	$ git checkout topic
+	$ git merge master
+
+              o---*---o---+ topic
+             /           /
+    o---o---o---*---o---o master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The commits marked with <code>*</code> touch the same area in the same
+file; you need to resolve the conflicts when creating the commit
+marked with <code>+</code>.  Then you can test the result to make sure your
+work-in-progress still works with what is in the latest master.</p>
+</div>
+<div class="paragraph">
+<p>After this test merge, there are two ways to continue your work
+on the topic.  The easiest is to build on top of the test merge
+commit <code>+</code>, and when your work in the topic branch is finally
+ready, pull the topic branch into master, and/or ask the
+upstream to pull from you.  By that time, however, the master or
+the upstream might have been advanced since the test merge <code>+</code>,
+in which case the final commit graph would look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>	$ git checkout topic
+	$ git merge master
+	$ ... work on both topic and master branches
+	$ git checkout master
+	$ git merge topic
+
+              o---*---o---+---o---o topic
+             /           /         \
+    o---o---o---*---o---o---o---o---+ master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When your topic branch is long-lived, however, your topic branch
+would end up having many such "Merge from master" commits on it,
+which would unnecessarily clutter the development history.
+Readers of the Linux kernel mailing list may remember that Linus
+complained about such too frequent test merges when a subsystem
+maintainer asked to pull from a branch full of "useless merges".</p>
+</div>
+<div class="paragraph">
+<p>As an alternative, to keep the topic branch clean of test
+merges, you could blow away the test merge, and keep building on
+top of the tip before the test merge:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>	$ git checkout topic
+	$ git merge master
+	$ git reset --hard HEAD^ ;# rewind the test merge
+	$ ... work on both topic and master branches
+	$ git checkout master
+	$ git merge topic
+
+              o---*---o-------o---o topic
+             /                     \
+    o---o---o---*---o---o---o---o---+ master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This would leave only one merge commit when your topic branch is
+finally ready and merged into the master branch.  This merge
+would require you to resolve the conflict, introduced by the
+commits marked with <code>*</code>.  However, this conflict is often the
+same conflict you resolved when you created the test merge you
+blew away.  <em>git rerere</em> helps you resolve this final
+conflicted merge using the information from your earlier hand
+resolve.</p>
+</div>
+<div class="paragraph">
+<p>Running the <em>git rerere</em> command immediately after a conflicted
+automerge records the conflicted working tree files, with the
+usual conflict markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> in
+them.  Later, after you are done resolving the conflicts,
+running <em>git rerere</em> again will record the resolved state of these
+files.  Suppose you did this when you created the test merge of
+master into the topic branch.</p>
+</div>
+<div class="paragraph">
+<p>Next time, after seeing the same conflicted automerge,
+running <em>git rerere</em> will perform a three-way merge between the
+earlier conflicted automerge, the earlier manual resolution, and
+the current conflicted automerge.
+If this three-way merge resolves cleanly, the result is written
+out to your working tree file, so you do not have to manually
+resolve it.  Note that <em>git rerere</em> leaves the index file alone,
+so you still need to do the final sanity checks with <code>git diff</code>
+(or <code>git diff -c</code>) and <em>git add</em> when you are satisfied.</p>
+</div>
+<div class="paragraph">
+<p>As a convenience measure, <em>git merge</em> automatically invokes
+<em>git rerere</em> upon exiting with a failed automerge and <em>git rerere</em>
+records the hand resolve when it is a new conflict, or reuses the earlier hand
+resolve when it is not.  <em>git commit</em> also invokes <em>git rerere</em>
+when committing a merge result.  What this means is that you do
+not have to do anything special yourself (besides enabling
+the rerere.enabled config variable).</p>
+</div>
+<div class="paragraph">
+<p>In our example, when you do the test merge, the manual
+resolution is recorded, and it will be reused when you do the
+actual merge later with the updated master and topic branch, as long
+as the recorded resolution is still applicable.</p>
+</div>
+<div class="paragraph">
+<p>The information <em>git rerere</em> records is also used when running
+<em>git rebase</em>.  After blowing away the test merge and continuing
+development on the topic branch:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>              o---*---o-------o---o topic
+             /
+    o---o---o---*---o---o---o---o   master
+
+	$ git rebase master topic
+
+				  o---*---o-------o---o topic
+				 /
+    o---o---o---*---o---o---o---o   master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>you could run <code>git rebase master topic</code>, to bring yourself
+up-to-date before your topic is ready to be sent upstream.
+This would result in falling back to a three-way merge, and it
+would conflict the same way as the test merge you resolved earlier.
+<em>git rerere</em> will be run by <em>git rebase</em> to help you resolve this
+conflict.</p>
+</div></div>
+  
+</div>
+<div class="sect1">
+  <h2 id="_git">GIT</h2>
+  
+    <div class="sectionbody"><div class="paragraph">
+<p>Part of the <a href='/docs/git'>git[1]</a> suite</p>
+</div></div>
+  
+</div>
+  </div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

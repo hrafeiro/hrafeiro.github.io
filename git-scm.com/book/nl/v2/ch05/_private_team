@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1,"applicationTime":369,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Bijdragen aan een project</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>5.2 Gedistribueerd Git - Bijdragen aan een project</h1>
+  <div><a id="_contributing_project"></a><h2>Bijdragen aan een project</h2>
+
+<p><a data-type="indexterm" data-primary="contributing" id="idp13124128"></a>
+De grote moeilijkheid bij het beschrijven van dit proces is dat er een enorm aantal variaties mogelijk zijn in hoe
+ het gebeurt.
+Om dat Git erg flexibel is, kunnen en zullen mensen op vele manieren samenwerken, en het is lastig om te beschrijven
+ hoe je zou moeten bijdragen aan een project - ieder project is net weer een beetje anders.
+Een aantal van de betrokken variabelen zijn het aantal actieve bijdragers, gekozen workflow, je commit toegang, en
+ mogelijk de manier waarop externe bijdragen worden gedaan.</p>
+
+<p>De eerste variabele is aantal actieve bijdragers. Hoeveel gebruikers dragen actief code bij aan dit project, en hoe
+vaak?
+In veel gevallen zal je twee of drie ontwikkelaars met een paar commits per dag hebben, of misschien minder voor wat
+ meer slapende projecten.
+Voor zeer grote bedrijven of projecten kan het aantal ontwikkelaars in de duizenden lopen, met tientallen of zelfs
+ honderden patches die iedere dag binnenkomen.
+Dit is belangrijk omdat met meer en meer ontwikkelaars, je meer en meer problemen tegenkomt bij het je verzekeren
+ dat code netjes gepatched of eenvoudig gemerged kan worden.
+Wijzigingen die je indient kunnen verouderd of zwaar beschadigd raken door werk dat gemerged is terwijl je ermee aan
+ het werken was, of terwijl je wijzigingen in de wacht stonden voor goedkeuring of toepassing.
+Hoe kun je jouw code consequent up-to-date en je patches geldig houden?</p>
+
+<p>De volgende variabele is de gebruikte workflow in het project.
+Is het gecentraliseerd, waarbij iedere ontwikkelaar gelijkwaardige schrijftoegang heeft tot de hoofd codebasis?
+Heeft het project een eigenaar of integrator die alle patches controleert?
+Worden alle patches ge(peer)reviewed en goedgekeurd?
+Ben jij betrokken bij dat proces?
+Is er een luitenanten systeem neergezet, en moet je je werk eerst bij hen inleveren?</p>
+
+<p>Het volgende probleem is je commit toegang.
+De benodigde workflow om bij te dragen aan een project is heel anders als je schrijftoegang hebt tot het project dan
+ wanneer je dat niet hebt.
+Als je geen schrijftoegang hebt, wat is de voorkeur van het project om bijdragen te ontvangen?
+Is er überhaupt een beleid?
+Hoeveel werk draag je per keer bij?
+Hoe vaak draag je bij?</p>
+
+<p>Al deze vragen kunnen van invloed zijn op hoe je effectief bijdraagt aan een project en welke workflows de voorkeur
+ hebben of die beschikbaar zijn voor je.
+We zullen een aantal van deze aspecten behandelen in een aantal voorbeelden, waarbij we van eenvoudig tot complex
+zullen gaan.
+Je zou in staat moeten zijn om de specifieke workflows die je in jouw praktijk nodig hebt te kunnen herleiden naar
+ deze voorbeelden.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Commit richtlijnen" id="_commit_guidelines"><h3 id="Commit-richtlijnen"><a href="#Commit-richtlijnen">Commit richtlijnen</a></h3>
+
+<p>Voordat we gaan kijken naar de specifieke gebruiksscenario’s, volgt hier een kort stukje over commit berichten.
+Het hebben van een goede richtlijn voor het maken commits en je daar aan houden maakt het werken met Git en
+ samenwerken met anderen een stuk makkelijker.
+Het Git project levert een document waarin een aantal goede tips staan voor het maken van commits waaruit je patches
+  kunt indienen - je kunt het lezen in de Git broncode in het <code>Documentation/SubmittingPatches</code> bestand.</p>
+
+<p><a data-type="indexterm" data-primary="git commando’s" data-secondary="diff" data-tertiary="check" id="idp13252336"></a>
+Als eerste wil je geen witruimte fouten indienen.
+Git geeft je een eenvoudige manier om hierop te controleren - voordat je commit, voer <code>git diff --check</code> uit, wat
+ mogelijke witruimte fouten identificeert en ze voor je afdrukt.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/git-diff-check.png" alt="Uitvoer van `git diff --check`."></div>
+<figcaption>Uitvoer van <code>git diff --check</code>.</figcaption></figure><p>Als je dat commando uitvoert alvorens te committen, kun je al zien of je op het punt staat witruimte problemen te
+ committen waaraan andere ontwikkelaars zich zouden kunnen ergeren.</p>
+
+<p>Probeer vervolgens om van elke commit een logische set wijzigingen te maken.
+Probeer, als het je lukt, om je wijzigingen verteerbaar te houden - ga niet het hele weekend zitten coderen op vijf
+ verschillende problemen om dat vervolgens op maandag als één gigantische commit in te dienen.
+Zelfs als je gedurende het weekend niet commit, gebruik dan het staging gebied op maandag om je werk in ten minste
+ één commit per probleem op te splitsen, met een bruikbaar bericht per commit.
+Als een paar van de wijzigingen hetzelfde bestand betreffen, probeer dan <code>git add --patch</code> te gebruiken om bestanden
+ gedeeltelijk te stagen (in detail behandeld in <a data-type="xref" href="ch07/_interactive_staging">“Interactief stagen”</a>).
+De snapshot aan de kop van het project is gelijk of je nu één commit doet of vijf, zolang alle wijzigingen op een
+ gegeven moment maar toegevoegd zijn, probeer dus om het je mede-ontwikkelaars makkelijk te maken als ze je
+ wijzigingen moeten bekijken.
+Deze aanpak maakt het ook makkelijker om één wijziging eruit te selecteren of terug te draaien, mocht dat later
+ nodig zijn.
+<a data-type="xref" href="ch07/_rewriting_history">“Geschiedenis herschrijven”</a> beschrijft een aantal handige Git trucs om geschiedenis te herschrijven en bestanden
+ interactief te stagen - gebruik deze instrumenten als hulp om een schone en begrijpelijke historie op te bouwen
+ voordat deze naar iemand anders wordt gestuurd.</p>
+
+<p>Het laatste om in gedachten te houden is het commit bericht.
+Als je er een gewoonte van maakt om een goede kwaliteit commit berichten aan te maken, dan maakt dat het gebruik van
+  en samenwerken in Git een stuk eenvoudiger.
+In het algemeen zouden je berichten moeten beginnen met een enkele regel die niet langer is dan 50 karakters en die
+ de wijzigingen beknopt omschrijft, gevolgd door een lege regel en daarna een meer gedetailleerde uitleg.
+Het Git project vereist dat de meer gedetailleerde omschrijving ook je motivatie voor de verandering bevat, en de
+ nieuwe implementatie tegen het oude gedrag afzet. Dit is een goede richtlijn om te volgen.
+Het is ook een goed idee om de gebiedende wijs te gebruiken in deze berichten.
+Met andere woorden, gebruik commando’s.
+In plaats van “Ik heb testen toegevoegd voor” of “Testen toegevoegd voor” gebruik je “Voeg testen toe voor”.
+Hier is een sjabloon dat origineel geschreven is door Tim Pope:</p>
+
+<pre data-type="programlisting" data-code-language="text">Short (50 chars or less) summary of changes
+
+More detailed explanatory text, if necessary.  Wrap it to
+about 72 characters or so.  In some contexts, the first
+line is treated as the subject of an email and the rest of
+the text as the body.  The blank line separating the
+summary from the body is critical (unless you omit the body
+entirely); tools like rebase can get confused if you run
+the two together.
+
+Further paragraphs come after blank lines.
+
+  - Bullet points are okay, too
+
+  - Typically a hyphen or asterisk is used for the bullet,
+    preceded by a single space, with blank lines in
+    between, but conventions vary here</pre>
+
+<p>Als al je commit berichten er zo uit zien, dan zullen de dingen een stuk eenvoudiger zijn voor jou en de
+ ontwikkelaars waar je mee samenwerkt.
+Het Git project heeft goed geformatteerde commit berichten - ik raad je aan om <code>git log --no-merges</code> uit te voeren
+ om te zien hoe een goed geformatteerde project-commit historie eruit ziet.</p>
+
+<p>In de volgende voorbeelden en verder door de rest van dit boek, zijn omwille van bondigheid, de berichten niet zo
+ netjes geformateerd als dit; in plaats daarvan gebruiken we de <code>-m</code> optie voor <code>git commit</code>.
+Doe wat wij zeggen, niet wat wij doen.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Besloten klein team" id="_private_team"><h3 id="Besloten-klein-team"><a href="#Besloten-klein-team">Besloten klein team</a></h3>
+
+<p><a data-type="indexterm" data-primary="contributing" data-secondary="private small team" id="idp13267888"></a>
+De eenvoudigste opzet die je waarschijnlijk zult tegenkomen is een besloten project met één of twee andere
+ ontwikkelaars.
+Met “besloten” bedoel ik gesloten broncode - zonder leestoegang voor de buitenwereld.
+Jij en de andere ontwikkelaars hebben allemaal push toegang op de repository.</p>
+
+<p>In deze omgeving kan je een workflow aanhouden die vergelijkbaar is met wat je zou doen als je Subversion of een
+ andere gecentraliseerd systeem zou gebruiken.
+Je hebt nog steeds de voordelen van zaken als offline committen en veel eenvoudiger branchen en mergen, maar de
+ workflow kan erg vergelijkbaar zijn. Het grootste verschil is dat het mergen aan de client-kant gebeurt en niet tijdens
+  het committen aan de server-kant.
+Laten we eens kijken hoe het er uit zou kunnen zien als twee ontwikkelaars samen beginnen te werken met een gedeelde
+  repository.
+De eerste ontwikkelaar, John, cloned de repository, maakt een wijziging, en commit lokaal. (De protocol berichten
+zijn met <code>...</code> vervangen in deze voorbeelden om ze iets in te korten.)</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Machine van John
+<code class="gp">$</code> git clone john@githost:simplegit.git
+<code class="go">Initialized empty Git repository in /home/john/simplegit/.git/</code>
+<code class="go">...</code>
+<code class="gp">$</code> <code class="nb">cd </code>simplegit/
+<code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'removed invalid default value'</code>
+<code class="go">[master 738ee87] removed invalid default value</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code></pre>
+
+<p>De tweede ontwikkelaar, Jessica, doet hetzelfde - cloned de repository en commit een wijziging:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Machine van Jessica
+<code class="gp">$</code> git clone jessica@githost:simplegit.git
+<code class="go">Initialized empty Git repository in /home/jessica/simplegit/.git/</code>
+<code class="go">...</code>
+<code class="gp">$</code> <code class="nb">cd </code>simplegit/
+<code class="gp">$</code> vim TODO
+<code class="gp">$</code> git commit -am <code class="s1">'add reset task'</code>
+<code class="go">[master fbff5bc] add reset task</code>
+<code class="go"> 1 files changed, 1 insertions(+), 0 deletions(-)</code></pre>
+
+<p>Nu pusht Jessica haar werk naar de server:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Machine van Jessica
+<code class="gp">$</code> git push origin master
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   1edee6b..fbff5bc  master -&gt; master</code></pre>
+
+<p>John probeert ook zijn werk te pushen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Machine van John
+<code class="gp">$</code> git push origin master
+<code class="go">To john@githost:simplegit.git</code>
+<code class="go"> ! [rejected]        master -&gt; master (non-fast forward)</code>
+<code class="go">error: failed to push some refs to 'john@githost:simplegit.git'</code></pre>
+
+<p>John mag niet pushen omdat Jessica in de tussentijd gepusht heeft.
+Dit is belangrijk om te begrijpen als je gewend bent aan Subversion, omdat het je zal opvallen dat de twee
+ ontwikkelaars niet hetzelfde bestand hebben aangepast.
+Waar Subversion automatisch zo’n merge op de server doet als verschillende bestanden zijn aangepast, moet je in Git
+ de commits lokaal mergen.
+John moet Jessica’s wijzigingen ophalen (fetch) en ze mergen voor hij mag pushen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From john@githost:simplegit</code>
+<code class="go"> + 049d078...fbff5bc master     -&gt; origin/master</code></pre>
+
+<p>Hierna ziet de lokale repository van John er ongeveer zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-1.png" alt="De afwijkende historie van John."></div>
+<figcaption>De afwijkende historie van John.</figcaption></figure><p>John heeft een referentie naar de wijzigingen die Jessica gepusht heeft, maar hij moet ze mergen met zijn eigen werk
+ voordat hij het mag pushen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">Merge made by recursive.</code>
+<code class="go"> TODO |    1 +</code>
+<code class="go"> 1 files changed, 1 insertions(+), 0 deletions(-)</code></pre>
+
+<p>Het mergen gaat soepeltjes - de commit historie van John ziet er nu zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-2.png" alt="De repository van John na `origin/master` te hebben gemerged."></div>
+<figcaption>De repository van John na <code>origin/master</code> te hebben gemerged.</figcaption></figure><p>Nu kan John zijn code testen om er zeker van te zijn dat alles nog steeds goed werkt, en dan kan hij zijn nieuwe
+ gemergede werk pushen naar de server:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push origin master
+<code class="go">...</code>
+<code class="go">To john@githost:simplegit.git</code>
+<code class="go">   fbff5bc..72bbc59  master -&gt; master</code></pre>
+
+<p>Tenslotte ziet de commit historie van John er zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-3.png" alt="De historie van John na te hebben gepushed naar de `origin` server."></div>
+<figcaption>De historie van John na te hebben gepushed naar de <code>origin</code> server.</figcaption></figure><p>In de tussentijd heeft Jessica gewerkt op een topic branch.
+Ze heeft een topic branch genaamd <code>issue54</code> aangemaakt en daar drie commits op gedaan.
+Ze heeft John’s wijzigingen nog niet opgehaald, dus haar commit historie ziet er zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-4.png" alt="Topic branch van Jessica."></div>
+<figcaption>Topic branch van Jessica.</figcaption></figure><p>Jessica wil met John synchroniseren, dus ze haalt de wijzigingen op:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Machine van Jessica
+<code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From jessica@githost:simplegit</code>
+<code class="go">   fbff5bc..72bbc59  master     -&gt; origin/master</code></pre>
+
+<p>Dit haalt het werk op dat John in de tussentijd gepusht heeft.
+De historie van Jessica ziet er nu zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-5.png" alt="Historie van Jessica na het fetchen van de wijzigingen van John."></div>
+<figcaption>Historie van Jessica na het fetchen van de wijzigingen van John.</figcaption></figure><p>Jessica denkt dat haar topic branch nu klaar is, maar ze wil weten wat ze in haar werk moet mergen zodat ze kan pushen.
+Ze voert <code>git log</code> uit om dat uit te zoeken:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --no-merges issue54..origin/master
+<code class="go">commit 738ee872852dfaa9d6634e0dea7a324040193016</code>
+<code class="go">Author: John Smith &lt;jsmith@example.com&gt;</code>
+<code class="go">Date:   Fri May 29 16:01:27 2009 -0700</code>
+
+<code class="go">   removed invalid default value</code></pre>
+
+<p>De <code>issue54..origin/master</code> syntax is een log filter dat Git vraagt om alleen de lijst van commits te tonen die op de
+ laatstgenoemde branch (in dit geval <code>origin/master</code>) staan die niet in de eerstegenoemde (in dit geval <code>issue54</code>)
+ staan. We zullen deze syntax in detail bespreken in <a data-type="xref" href="ch07/_commit_ranges">“Commit reeksen”</a>.</p>
+
+<p>Nu zien we in de uitvoer dat er een commit is die John gemaakt heeft die Jessica nog niet gemerged heeft.
+Als ze <code>origin/master</code> merged, is dat de enkele commit die haar lokale werk zal wijzigen.</p>
+
+<p>Nu kan Jessica het werk van haar topic branch mergen in haar master branch, het werk van John (<code>origin/master</code>)
+ in haar <code>master</code> branch mergen, en dan naar de server pushen.
+Eerst schakelt ze terug naar haar master branch om al dit werk te integreren:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="go">Switched to branch 'master'</code>
+<code class="go">Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.</code></pre>
+
+<p>Ze kan <code>origin/master</code> of <code>issue54</code> als eerste mergen - ze zijn beide stroomopwaarts dus de volgorde maakt niet uit.
+Uiteindelijk zou de snapshot gelijk moeten zijn ongeacht welke volgorde ze kiest; alleen de geschiedenis zal iets
+ verschillen.
+Ze kiest ervoor om <code>issue54</code> eerst te mergen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge issue54
+<code class="go">Updating fbff5bc..4af4298</code>
+<code class="go">Fast forward</code>
+<code class="go"> README           |    1 +</code>
+<code class="go"> lib/simplegit.rb |    6 +++++-</code>
+<code class="go"> 2 files changed, 6 insertions(+), 1 deletions(-)</code></pre>
+
+<p>Er doen zich geen problemen voor, zoals je kunt zien was het een eenvoudige fast-forward.
+Nu merged Jessica het werk van John (<code>origin/master</code>):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">Auto-merging lib/simplegit.rb</code>
+<code class="go">Merge made by recursive.</code>
+<code class="go"> lib/simplegit.rb |    2 +-</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code></pre>
+
+<p>Alles merged netjes, en de historie van Jessica ziet er nu zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-6.png" alt="Historie van Jessica na het mergen van de wijzigingen van John."></div>
+<figcaption>Historie van Jessica na het mergen van de wijzigingen van John.</figcaption></figure><p>Nu is <code>origin/master</code> bereikbaar vanuit Jessica’s <code>master</code> branch, dus ze zou in staat moeten zijn om succesvol te
+ pushen (even aangenomen dat John in de tussentijd niet weer iets gepusht heeft):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push origin master
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   72bbc59..8059c15  master -&gt; master</code></pre>
+
+<p>Iedere ontwikkelaar heeft een paar keer gecommit en elkaars werk succesvol gemerged.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-7.png" alt="Historie van Jessica na al haar wijzigingen naar de server te hebben gepusht."></div>
+<figcaption>Historie van Jessica na al haar wijzigingen naar de server te hebben gepusht.</figcaption></figure><p>Dit is één van de eenvoudigste workflows.
+Je werkt een tijdje, over het algemeen in een topic branch, en merged dit in je master branch als het klaar is om
+ te worden geïntegreerd.
+Als je dat werk wilt delen, dan merge je het in je eigen master branch, en vervolgens fetch je <code>origin/master</code> en
+ merge je deze als het gewijzigd is, en als laatste push je deze naar de <code>master</code> branch op de server.
+De algemene volgorde is als volgt:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/small-team-flow.png" alt="Algemene volgorde van gebeurtenissen voor een eenvoudige multi-ontwikkelaar Git workflow."></div>
+<figcaption>Algemene volgorde van gebeurtenissen voor een eenvoudige multi-ontwikkelaar Git workflow.</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Besloten aangestuurd team" id="idp13709952"><h3 id="Besloten-aangestuurd-team"><a href="#Besloten-aangestuurd-team">Besloten aangestuurd team</a></h3>
+
+<p><a data-type="indexterm" data-primary="contributing" data-secondary="private managed team" id="idp13266128"></a>
+In het volgende scenario zul je kijken naar de rol van de bijdragers in een grotere besloten groep.
+Je zult leren hoe te werken in een omgeving waar kleine groepen samenwerken aan functies, waarna die team-gebaseerde
+  bijdragen worden geïntegreerd door een andere partij.</p>
+
+<p>Stel dat John en Jessica samen werken aan een functie, terwijl Jessica en Josie aan een tweede aan het werken zijn.
+In dit geval gebruikt het bedrijf een integratie-manager achtige workflow, waarbij het werk van de individuele
+ groepen alleen wordt geïntegreerd door bepaalde ontwikkelaars, en de <code>master</code> branch van het hoofd repo alleen kan
+ worden vernieuwd door die ontwikkelaars.
+In dit scenario wordt al het werk gedaan in team-gebaseerde branches en later door de integrators samengevoegd.</p>
+
+<p>Laten we Jessica’s workflow volgen terwijl ze aan haar twee features werkt, in parallel met twee verschillende
+ ontwikkelaars in deze omgeving.
+We nemen even aan dat ze haar repository al gecloned heeft, en dat ze besloten heeft als eerste te werken aan
+ <code>featureA</code>.
+Ze maakt een nieuwe branch aan voor de functie en doet daar wat werk:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Jessica<code class="err">'</code>s Machine
+<code class="gp">$</code> git checkout -b featureA
+<code class="go">Switched to a new branch 'featureA'</code>
+<code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'add limit to log function'</code>
+<code class="go">[featureA 3300904] add limit to log function</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code></pre>
+
+<p>Op dit punt, moet ze haar werk delen met John, dus ze pusht haar commits naar de <code>featureA</code> branch op de server.
+Jessica heeft geen push toegang op de <code>master</code> branch - alleen de integratoren hebben dat - dus ze moet naar een
+ andere branch pushen om samen te kunnen werken met John:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push -u origin featureA
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go"> * [new branch]      featureA -&gt; featureA</code></pre>
+
+<p>Jessica mailt John om hem te zeggen dat ze wat werk gepusht heeft in een branch genaamd <code>featureA</code> en dat hij er nu
+ naar kan kijken.
+Terwijl ze op terugkoppeling van John wacht, besluit Jessica te beginnen met het werken aan <code>featureB</code> met Josie.
+Om te beginnen start ze een nieuwe feature branch, gebaseerd op de <code>master</code> branch van de server:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Jessica<code class="err">'</code>s Machine
+<code class="gp">$</code> git fetch origin
+<code class="gp">$</code> git checkout -b featureB origin/master
+<code class="go">Switched to a new branch 'featureB'</code></pre>
+
+<p>Nu doet Jessica een paar commits op de <code>featureB</code> branch:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'made the ls-tree function recursive'</code>
+<code class="go">[featureB e5b0fdc] made the ls-tree function recursive</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+<code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'add ls-files'</code>
+<code class="go">[featureB 8512791] add ls-files</code>
+<code class="go"> 1 files changed, 5 insertions(+), 0 deletions(-)</code></pre>
+
+<p>Jessica’s repository ziet eruit als volgt:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-1.png" alt="Initiële commit historie van Jessica."></div>
+<figcaption>Initiële commit historie van Jessica.</figcaption></figure><p>Ze is klaar om haar werk te pushen, maar ze krijgt een mail van Josie dat een branch met wat initieel werk erin al
+ gepusht is naar de server in de <code>featureBee</code> branch.
+Jessica moet die wijzigingen eerst mergen met die van haar voordat ze kan pushen naar de server.
+Ze kan dan Josie’s wijzigingen ophalen met <code>git fetch</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From jessica@githost:simplegit</code>
+<code class="go"> * [new branch]      featureBee -&gt; origin/featureBee</code></pre>
+
+<p>Jessica kan dit nu mergen in het werk wat zij gedaan heeft met <code>git merge</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/featureBee
+<code class="go">Auto-merging lib/simplegit.rb</code>
+<code class="go">Merge made by recursive.</code>
+<code class="go"> lib/simplegit.rb |    4 ++++</code>
+<code class="go"> 1 files changed, 4 insertions(+), 0 deletions(-)</code></pre>
+
+<p>Er is wel een klein probleempje - ze moet het gemergde werk in haar <code>featureB</code> branch naar de <code>featureBee</code> branch op
+ de server zetten.
+Ze kan dat doen door de lokale branch door te geven aan het <code>git push</code> commando, gevolgd door een dubbele punt (:),
+ gevolgd door de remote branch:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push -u origin featureB:featureBee
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   fba9af8..cd685d1  featureB -&gt; featureBee</code></pre>
+
+<p>Dit wordt een <em>refspec</em> genoemd.
+Zie <a data-type="xref" href="ch10/_refspec">“De Refspec”</a> voor een meer gedetailleerde behandeling van Git refspecs en de verschillende dingen die je daarmee
+ kan doen.
+Meer ook de <code>-u</code> vlag op; dit is een verkorte notatie voor <code>-set-upstream</code>, wat de branches voor eenvoudigere pushen
+ en pullen op een later moment inricht.</p>
+
+<p>Vervolgens mailt John naar Jessica om te zeggen dat hij wat wijzigingen naar de <code>featureA</code> branch gepusht heeft, en
+ om haar te vragen die te verifiëren.
+Ze voert een <code>git fetch</code> uit om die wijzigingen op te halen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From jessica@githost:simplegit</code>
+<code class="go">   3300904..aad881d  featureA   -&gt; origin/featureA</code></pre>
+
+<p>Daarna kan ze zien wat er veranderd is met <code>git log</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log featureA..origin/featureA
+<code class="go">commit aad881d154acdaeb2b6b18ea0e827ed8a6d671e6</code>
+<code class="go">Author: John Smith &lt;jsmith@example.com&gt;</code>
+<code class="go">Date:   Fri May 29 19:57:33 2009 -0700</code>
+
+<code class="go">    changed log output to 30 from 25</code></pre>
+
+<p>Uiteindelijk merged ze het werk van John in haar eigen <code>featureA</code> branch:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout featureA
+<code class="go">Switched to branch 'featureA'</code>
+<code class="gp">$</code> git merge origin/featureA
+<code class="go">Updating 3300904..aad881d</code>
+<code class="go">Fast forward</code>
+<code class="go"> lib/simplegit.rb |   10 +++++++++-</code>
+<code class="go">1 files changed, 9 insertions(+), 1 deletions(-)</code></pre>
+
+<p>Jessica wil iets kleins bijstellen, dus doet ze nog een commit en pusht dit naar de server:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -am <code class="s1">'small tweak'</code>
+<code class="go">[featureA 774b3ed] small tweak</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+<code class="gp">$</code> git push
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   3300904..774b3ed  featureA -&gt; featureA</code></pre>
+
+<p>De commit historie van Jessica ziet er nu zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-2.png" alt="De historie van Jessica na het committen op een feature branch."></div>
+<figcaption>De historie van Jessica na het committen op een feature branch.</figcaption></figure><p>Jessica, Josie en John informeren de integrators nu dat de <code>featureA</code> en <code>featureBee</code> branches op de server klaar
+ zijn voor integratie in de hoofdlijn.
+Nadat zij die branches in de hoofdlijn geïntegreerd hebben, zal een fetch de nieuwe merge commits ophalen, waardoor
+ de commit historie er zo uit ziet:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-3.png" alt="De historie van Jessica na het mergen van haar beide topic branches."></div>
+<figcaption>De historie van Jessica na het mergen van haar beide topic branches.</figcaption></figure><p>Veel groepen schakelen om naar Git juist vanwege de mogelijkheid om meerdere teams in parallel te kunnen laten
+ werken, waarbij de verschillende lijnen van werk laat in het proces gemerged worden.
+De mogelijkheid van kleinere subgroepen of een team om samen te werken via remote branches zonder het hele team erin
+ te betrekken of te hinderen is een enorm voordeel van Git.
+De volgorde van de workflow die je hier zag is ongeveer dit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-flow.png" alt="Eenvoudige volgorde in de workflow van dit aangestuurde team."></div>
+<figcaption>Eenvoudige volgorde in de workflow van dit aangestuurde team.</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Klein openbaar project" id="_public_project"><h3 id="Klein-openbaar-project"><a href="#Klein-openbaar-project">Klein openbaar project</a></h3>
+
+<p><a data-type="indexterm" data-primary="contributing" data-secondary="public small project" id="idp14023856"></a></p>
+
+<p>Het bijdragen aan openbare, of publieke, projecten gaat op een iets andere manier.
+Omdat je niet de toestemming hebt om de branches van het project rechtstreeks te updaten, moet je het werk op een
+ andere manier naar de beheerders krijgen.
+Dit eerste voorbeeld beschrijft het bijdragen via afsplitsen (forken) op Git hosts die het eenvoudig aanmaken van
+ forks ondersteunen.
+Vele hosting sites ondersteunen dit (waaronder GitHub, BitBucket, Google Code, repo.or.cz, en andere), en veel
+ project beheerders verwachten deze manier van bijdragen.
+De volgende paragraaf behandelt projecten die de voorkeur hebben om bijdragen in de vorm van patches via e-mail te
+ ontvangen.</p>
+
+<p>Eerst zal je waarschijnlijk de hoofdrepository clonen, een topic branch maken voor de patch of reeks patches die je
+ van plan bent bij te dragen, en je werk daarop doen.
+De te volgen stappen zien er in principe zo uit:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone <code class="o">(</code>url<code class="o">)</code>
+<code class="gp">$</code> <code class="nb">cd </code>project
+<code class="gp">$</code> git checkout -b featureA
+<code class="gp">#</code> <code class="o">(</code>work<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">#</code> <code class="o">(</code>work<code class="o">)</code>
+<code class="gp">$</code> git commit</pre>
+<div data-type="note">
+<p>Je kunt eventueel besluiten <code>rebase -i</code> te gebruiken om je werk in één enkele commit samen te persen (squash), of
+ het werk in de commits te herschikken om de patch eenvoudiger te kunnen laten reviewen door de beheerders - zie
+ <a data-type="xref" href="ch07/_rewriting_history">“Geschiedenis herschrijven”</a> voor meer informatie over het interactief rebasen.</p>
+</div>
+
+<p>Als je werk op de branch af is, en je klaar bent om het over te dragen aan de beheerders, ga je naar de originele
+ project pagina en klik op de “Fork” knop.
+Hiermee maak je een eigen overschrijfbare fork van het project.
+Je moet de URL van deze nieuwe repository URL toevoegen als een tweede remote, in dit geval <code>myfork</code> genaamd:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add myfork <code class="o">(</code>url<code class="o">)</code></pre>
+
+<p>Dam moet je je werk daar naartoe pushen.
+Het is het makkelijkst om de topic branch waar je op zit te werken te pushen naar je repository, in plaats van het te
+ mergen in je master branch en die te pushen.
+De reden hiervan is, dat als het werk niet wordt geaccepteerd of alleen ge-cherry picked (deels overgenomen), je
+ jouw master branch niet hoeft terug te draaien.
+Als de beheerders je werk mergen, rebasen of cherry picken, dan krijg je het uiteindelijk toch binnen door hun
+ repository te pullen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push -u myfork featureA</pre>
+
+<p><a data-type="indexterm" data-primary="git commando’s" data-secondary="request-pull" id="idp14063056"></a>
+Als jouw werk gepusht is naar jouw fork, dan moet je de beheerder inlichten.
+Dit wordt een pull request (haal-binnen-verzoek) genoemd, en je kunt deze via de website genereren - GitHub heeft
+ een eigen Pull Request mechanisme die we verder zullen behandelen in <a data-type="xref" href="ch06/_github">Chapter 6</a> of je roept het <code>git request-pull</code>
+ commando aan en stuurt een mail met de uitvoer handmatig naar de projectbeheerder mailen.</p>
+
+<p>Het <code>request-pull</code> commando neemt de basis branch waarin je de topic branch gepulled wil hebben, en de URL van de
+ Git repository waar je ze uit wil laten pullen, en maakt een samenvatting van alle wijzigingen die je gepulled
+ wenst te hebben.
+Bijvoorbeeld, als Jessica John een pull request wil sturen, en ze heeft twee commits gedaan op de topic branch die
+ ze zojuist gepusht heeft, dan kan ze dit uitvoeren:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git request-pull origin/master myfork
+<code class="go">The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:</code>
+<code class="go">  John Smith (1):</code>
+<code class="go">        added a new function</code>
+
+<code class="go">are available in the git repository at:</code>
+
+<code class="go">  git://githost/simplegit.git featureA</code>
+
+<code class="go">Jessica Smith (2):</code>
+<code class="go">      add limit to log function</code>
+<code class="go">      change log output to 30 from 25</code>
+
+<code class="go"> lib/simplegit.rb |   10 +++++++++-</code>
+<code class="go"> 1 files changed, 9 insertions(+), 1 deletions(-)</code></pre>
+
+<p>De uitvoer kan naar de beheerders gestuurd worden: het vertelt ze waar het werk vanaf gebranched is, vat de commits
+ samen en vertelt waar vandaan ze dit werk kunnen pullen.</p>
+
+<p>Bij een project waarvan je niet de beheerder bent, is het over het algemeen eenvoudiger om een branch zoals <code>master</code>
+ altijd de <code>origin/master</code> te laten tracken, en je werk te doen in topic branches die je eenvoudig weg kunt gooien
+ als ze geweigerd worden.
+Als je je werkthema’s gescheiden houdt in topic branches maakt dat het ook eenvoudiger voor jou om je werk te
+ rebasen als de punt van de hoofd-repository in de tussentijd verschoven is en je commits niet langer netjes
+ toegepast kunnen worden.
+Bijvoorbeeld, als je een tweede onderwerp wilt bijdragen aan een project, ga dan niet verder werken op de topic
+ branch die je zojuist gepusht hebt - begin opnieuw vanaf de <code>master</code> branch van het hoofd repository:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b featureB origin/master
+<code class="gp">#</code> <code class="o">(</code>work<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">$</code> git push myfork featureB
+<code class="gp">#</code> <code class="o">(</code>email maintainer<code class="o">)</code>
+<code class="gp">$</code> git fetch origin</pre>
+
+<p>Nu zijn al je onderwerpen opgeslagen in een silo - vergelijkbaar met een patch reeks (queue) - die je kunt
+ herschrijven, rebasen en wijzigen zonder dat de onderwerpen elkaar beïnvloeden of van elkaar afhankelijk zijn zoals
+ hier:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/public-small-1.png" alt="Initiële commit historie met werk van `featureB`."></div>
+<figcaption>Initiële commit historie met werk van <code>featureB</code>.</figcaption></figure><p>Stel dat de project-beheerder een verzameling andere patches binnengehaald heeft en jouw eerste branch geprobeerd
+ heeft, maar dat die niet meer netjes merged.
+In dat geval kun je proberen die branch te rebasen op <code>origin/master</code>, de conflicten op te lossen voor de beheerder,
+ en dan je wijzigingen opnieuw aanbieden:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout featureA
+<code class="gp">$</code> git rebase origin/master
+<code class="gp">$</code> git push -f myfork featureA</pre>
+
+<p>Dit herschrijft je historie zodat die eruit ziet als in <a data-type="xref" href="ch00/psp_b">Figure 5-18</a>.</p>
+
+<figure id="psp_b"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/public-small-2.png" alt="Commit historie na werk van `featureA`."></div>
+<figcaption>Commit historie na werk van <code>featureA</code>.</figcaption></figure><p>Omdat je de branch gerebased hebt, moet je de <code>-f</code> specificeren met je push commando om in staat te zijn de
+ <code>featureA</code> branch op de server te vervangen met een commit die er geen afstammeling van is.
+Een alternatief zou zijn dit nieuwe werk naar een andere branch op de server te pushen (misschien <code>featureAv2</code>
+ genaamd).</p>
+
+<p>Laten we eens kijken naar nog een mogelijk scenario: de beheerder heeft je werk bekeken in je tweede branch en vind
+ het concept goed, maar zou willen dat je een implementatie detail verandert.
+Je gebruikt deze gelegenheid meteen om het werk te baseren op de huidige <code>master</code> branch van het project.
+Je begint een nieuwe branch gebaseerd op de huidige <code>origin/master</code> branch, squashed de <code>featureB</code> wijzigingen er
+ naartoe, lost eventuele conflicten op, doet de implementatie wijziging en pusht deze terug als een nieuwe branch:</p>
+
+<p><a data-type="indexterm" data-primary="git commando’s" data-secondary="merge" data-tertiary="squash" id="idp14111504"></a></p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b featureBv2 origin/master
+<code class="gp">$</code> git merge --squash featureB
+<code class="gp">#</code> <code class="o">(</code>change implementation<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">$</code> git push myfork featureBv2</pre>
+
+<p>De <code>--squash</code> optie pakt al het werk op de gemergde branch en perst dat samen in één wijzigingsset (changeset)
+ die de staat van de repository geeft alsof er een echte merge zou hebben plaatsgevonden, zonder feitelijk een merge commit te doen.
+Dit betekent dat je toekomstige commit maar één ouder heeft en geeft je de ruimte om alle wijzigingen te introduceren uit
+ een andere branch en daarna meer wijzigingen te maken voordat de nieuwe commit wordt vastgelegd.
+Daarnaast kan de <code>--no-commit</code> handig zijn door de merge commit uit te stellen in het geval van een standaard merge proces.</p>
+
+<p>Je kunt de beheerder nu een bericht sturen dat je de gevraagde wijzigingen gemaakt hebt en dat ze die wijzigingen
+ kunnen vinden in je <code>featureBv2</code> branch.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/public-small-3.png" alt="Commit historie na het `featureBv2` werk."></div>
+<figcaption>Commit historie na het <code>featureBv2</code> werk.</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Openbaar project per e-mail" id="_project_over_email"><h3 id="Openbaar-project-per-e-mail"><a href="#Openbaar-project-per-e-mail">Openbaar project per e-mail</a></h3>
+
+<p><a data-type="indexterm" data-primary="contributing" data-secondary="public large project" id="idp14084976"></a>
+Veel projecten hebben vastgestelde procedures voor het accepteren van patches - je zult de specifieke regels voor elk
+ project moeten controleren, ze zullen namelijk verschillen.
+Omdat er verscheidene oudere, grotere projecten zijn die patches accepteren via ontwikkelaar-maillijsten, zullen we
+ nu een voorbeeld hiervan behandelen.</p>
+
+<p>De workflow is vergelijkbaar met het vorige geval - je maakt topic branches voor iedere patch waar je aan werkt.
+Het verschil is hoe je die aanlevert bij het project.
+In plaats van het project te forken en naar je eigen schrijfbare versie te pushen, genereer je e-mail versies van
+ iedere reeks commits en mailt die naar de ontwikkelaar-maillijst:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b topicA
+<code class="gp">#</code> <code class="o">(</code>work<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">#</code> <code class="o">(</code>work<code class="o">)</code>
+<code class="gp">$</code> git commit</pre>
+
+<p><a data-type="indexterm" data-primary="git commando’s" data-secondary="format-patch" id="idp14191520"></a>
+Nu heb je twee commits die je wil sturen naar de maillijst.
+Je gebruikt <code>git format-patch</code> om de mbox-geformatteerde bestanden te genereren die je kunt mailen naar de lijst.
+Dit vormt iedere commit om naar een e-mail bericht met de eerste regel van het commit bericht als het onderwerp, en
+ de rest van het bericht plus de patch die door de commit wordt geïntroduceerd als de inhoud.
+Het prettige hieraan is dat met het toepassen van een patch uit een mail die gegenereerd is met <code>format-patch</code> alle
+ commit informatie blijft behouden.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git format-patch -M origin/master
+<code class="go">0001-add-limit-to-log-function.patch</code>
+<code class="go">0002-changed-log-output-to-30-from-25.patch</code></pre>
+
+<p>Het <code>format-patch</code> commando drukt de namen af van de patch bestanden die het maakt.
+De <code>-M</code> optie vertelt Git te kijken naar hernoemingen.
+De bestanden komen er uiteindelijk zo uit te zien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat 0001-add-limit-to-log-function.patch
+<code class="go">From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001</code>
+<code class="go">From: Jessica Smith &lt;jessica@example.com&gt;</code>
+<code class="go">Date: Sun, 6 Apr 2008 10:17:23 -0700</code>
+<code class="go">Subject: [PATCH 1/2] add limit to log function</code>
+
+<code class="go">Limit log functionality to the first 20</code>
+
+<code class="go">---</code>
+<code class="go"> lib/simplegit.rb |    2 +-</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+
+<code class="go">diff --git a/lib/simplegit.rb b/lib/simplegit.rb</code>
+<code class="go">index 76f47bc..f9815f1 100644</code>
+<code class="go">--- a/lib/simplegit.rb</code>
+<code class="go">+++ b/lib/simplegit.rb</code>
+<code class="go">@@ -14,7 +14,7 @@ class SimpleGit</code>
+<code class="go">   end</code>
+
+<code class="go">   def log(treeish = 'master')</code>
+<code class="go">-    command("git log #{treeish}")</code>
+<code class="go">+    command("git log -n 20 #{treeish}")</code>
+<code class="go">   end</code>
+
+<code class="go">   def ls_tree(treeish = 'master')</code>
+<code class="go">--</code>
+<code class="go">2.1.0</code></pre>
+
+<p>Je kunt deze patch bestanden ook aanpassen om meer informatie, die je niet in het commit bericht wilt laten
+ verschijnen, voor de maillijst toe te voegen.
+Als je tekst toevoegt tussen de <code>---</code> regel en het begin van de patch (de <code>diff --git</code> regel), dan kunnen
+ ontwikkelaars dit lezen, maar tijdens het toepassen van de patch wordt dit genegeerd.</p>
+
+<p>Om dit te mailen naar een maillijst, kan je het bestand in je mail-applicatie plakken of het sturen via een
+ commandoregel programma.
+Het plakken van de tekst veroorzaakt vaak formaterings problemen, in het bijzonder bij “slimmere” clients die de
+ newlines en andere witruimte niet juist behouden.
+Gelukkig levert Git een gereedschap die je helpt om juist geformatteerde patches via IMAP te versturen, wat het
+ alweer een stuk makkelijker voor je maakt.
+We zullen je laten zien hoe je een patch via Gmail stuurt, wat de mail-applicatie is waar we het meest bekend mee zijn.
+Je kunt gedetailleerde instructies voor een aantal mail programma’s vinden aan het eind van het eerder genoemde
+ <code>Documentation/SubmittingPatches</code> bestand in de Git broncode.</p>
+
+<p><a data-type="indexterm" data-primary="git commando’s" data-secondary="config" id="idp14256160"></a><a data-type="indexterm" data-primary="email" id="idp14257104"></a>
+Eerst moet je de imap sectie in je <code>~/.gitconfig</code> bestand instellen.
+Je kunt iedere waarde apart instellen met een serie <code>git config</code> commando’s, of je kunt ze handmatig toevoegen, maar
+  uiteindelijk moet je config bestand er ongeveer zo uitzien:</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[imap]</code>
+  <code class="na">folder</code> <code class="o">=</code> <code class="s">"[Gmail]/Drafts"</code>
+<code class="s">  host = imaps://imap.gmail.com</code>
+<code class="s">  user = user@gmail.com</code>
+<code class="s">  pass = p4ssw0rd</code>
+<code class="s">  port = 993</code>
+<code class="s">  sslverify = false</code></pre>
+
+<p>Als je IMAP server geen SSL gebruikt, zijn de laatste twee regels waarschijnlijk niet nodig, en de waarde voor host
+ zal <code>imap://</code> zijn in plaats van <code>imaps://</code>.
+Als dat ingesteld is, kun je <code>git imap-send</code> gebruiken om de patch reeks in de Drafts map van de gespecificeerde
+ IMAP server te zetten:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat *.patch <code class="p">|</code>git imap-send
+<code class="go">Resolving imap.gmail.com... ok</code>
+<code class="go">Connecting to [74.125.142.109]:993... ok</code>
+<code class="go">Logging in...</code>
+<code class="go">sending 2 messages</code>
+<code class="go">100% (2/2) done</code></pre>
+
+<p>Nu zou je in staat moeten zijn om naar je Drafts folder te gaan, het To veld te veranderen in het adres van de mail lijst waar je de patch naar to stuurt, en mogelijk de onderhouder of de persoon verantwoordelijk voor dat deel te CC-en, en het te versturen.</p>
+
+<p>Je kunt de patches ook via een SMTP server sturen. Net als hiervoor, kan je elke waarde apart zetten met een reeks van <code>git config</code> commando’s, of je kunt ze handmatig in de sendemail sectie in je <code>~/.gitconfig</code> bestand toevoegen:</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[sendemail]</code>
+  <code class="na">smtpencryption</code> <code class="o">=</code> <code class="s">tls</code>
+<code class="s">  smtpserver = smtp.gmail.com</code>
+<code class="s">  smtpuser = user@gmail.com</code>
+<code class="s">  smtpserverport = 587</code></pre>
+
+<p>Als dit gedaan is, kan je <code>git send-email</code> gebruiken om je patches te sturen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git send-email *.patch
+<code class="go">0001-added-limit-to-log-function.patch</code>
+<code class="go">0002-changed-log-output-to-30-from-25.patch</code>
+<code class="go">Who should the emails appear to be from? [Jessica Smith &lt;jessica@example.com&gt;]</code>
+<code class="go">Emails will be sent from: Jessica Smith &lt;jessica@example.com&gt;</code>
+<code class="go">Who should the emails be sent to? jessica@example.com</code>
+<code class="go">Message-ID to be used as In-Reply-To for the first email? y</code></pre>
+
+<p>Dan zal Git een berg log-informatie oplepelen die er ongeveer zo uitziet voor elke patch die je aan het versturen bent:</p>
+
+<pre data-type="programlisting" data-code-language="text">(mbox) Adding cc: Jessica Smith &lt;jessica@example.com&gt; from
+  \line 'From: Jessica Smith &lt;jessica@example.com&gt;'
+OK. Log says:
+Sendmail: /usr/sbin/sendmail -i jessica@example.com
+From: Jessica Smith &lt;jessica@example.com&gt;
+To: jessica@example.com
+Subject: [PATCH 1/2] added limit to log function
+Date: Sat, 30 May 2009 13:29:15 -0700
+Message-Id: &lt;1243715356-61726-1-git-send-email-jessica@example.com&gt;
+X-Mailer: git-send-email 1.6.2.rc1.20.g8c5b.dirty
+In-Reply-To: &lt;y&gt;
+References: &lt;y&gt;
+
+Result: OK</pre>
+</section><section data-type="sect2" data-pdf-bookmark="Samenvatting" id="idp14525776"><h3 id="Samenvatting"><a href="#Samenvatting">Samenvatting</a></h3>
+
+<p>In dit hoofdstuk is een aantal veel voorkomende workflows behandeld, die je kunt gebruiken om te kunnen werken in
+ een aantal zeer verschillende typen Git projecten die je misschien zult tegenkomen.
+En er zijn een aantal nieuwe gereedschappen geïntroduceerd die je helpen om dit proces te beheren.
+Wat hierna volgt zal je laten zien hoe je aan de andere kant van de tafel werkt: een Git project beheren. Je zult
+ leren hoe een welwillende dictator of integratie manager te zijn.</p>
+</section><div id="nav"><a href="/book/nl/Gedistribueerd-Git-Gedistribueerde-workflows">prev</a> | <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

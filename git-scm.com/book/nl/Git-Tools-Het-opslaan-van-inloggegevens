@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1,"applicationTime":180,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Het opslaan van inloggegevens</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>7.14 Git Tools - Het opslaan van inloggegevens</h1>
+  <div><a id="_credential_caching"></a><h2>Het opslaan van inloggegevens</h2>
+
+<p><a data-type="indexterm" data-primary="credentials" id="idp24772240"></a>
+<a data-type="indexterm" data-primary="git commando’s" data-secondary="credential" id="idp24773072"></a>
+Als je het SSH transport gebruikt om verbinding te maken met remotes, is het mogelijk om een sleutel te hebben zonder
+ wachtwoord, wat je in staat stelt veilig gegevens uit te wisselen zonder je gebruikersnaam en wachtwoord in te typen.
+Dit is echter niet mogelijk met de HTTP protocollen - elke connectie heeft een gebruikersnaam en wachtwoord nodig.
+Het wordt zelfs lastiger voor systemen met twee-factor authenticatie, waar het token dat je gebruikt voor een
+ wachtwoord willekeurig wordt gegenereerd en onuitspreekbaar is.</p>
+
+<p>Gelukkig heeft Git een credentials systeem die ons daarbij kan helpen.
+Git heeft standaard een aantal opties in de aanbieding:</p>
+
+<ul>
+<li>
+<p>De standaard is om helemaal niets op te slaan.
+Elke verbinding wordt je gevraagd om je gebruikersnaam en wachtwoord.</p>
+</li>
+<li>
+<p>De “cache” modus houdt deze gegevens voor een bepaalde tijd in het geheugen.
+Geen van de wachtwoorden worden ooit op schijf opgeslagen, en ze worden na 15 minuten uit de cache verwijderd.</p>
+</li>
+<li>
+<p>De “store” modus bewaart deze gegevens in bestand in een leesbaar tekstformaat, en ze verlopen nooit.
+Dit houdt in dat totdat je je wachtwoord wijzigt op de Git host, je nooit meer je gegevens hoeft in te typen.
+Het nadeel van deze aanpak is dat je wachtwoorden onversleuteld bewaard worden in een gewoon bestand in je home
+directory.</p>
+</li>
+<li>
+<p>Als je een Mac gebruikt, wordt Git geleverd met een “osxkeychain” modus, waarbij de gegevens opgeslagen worden in
+een beveiligde sleutelring die verbonden is aan je systeem account.
+Deze methode bewaart je gegevens op schijf, en ze verlopen nooit, maar ze zijn versleuteld met het zelfde systeem
+dat de HTTPS certificaten en Safari auto-fills bewaart.</p>
+</li>
+<li>
+<p>Als je Windows gebruikt, kan je het hulpprogramma “winstore” installeren.
+Dit is vergelijkbaar met het “osxkeychain” programma zoals hierboven beschreven, maar het gebruikt de Windows
+Credential Store om de gevoelige gegevens te beheren.
+Dit kan gevonden worden op <a href="https://gitcredentialstore.codeplex.com"><em class="hyperlink">https://gitcredentialstore.codeplex.com</em></a>.</p>
+</li>
+</ul>
+<p>Je kunt een van deze methoden kiezen door een Git configuratie waarde in te stellen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global credential.helper cache</pre>
+
+<p>Een aantal van deze hulpprogramma’s hebben opties.
+De “store” helper accepteert een <code>--file &lt;path&gt;</code> argument, waarmee je kunt sturen waar het leesbare bestand wordt
+ opgeslagen (standaard is <code>~/.git-credentials</code>).
+De “cache” helper accepteert de <code>--timeout &lt;seconds&gt;</code> optie, die de tijdsduur wijzigt gedurende welke de daemon
+ blijft draaien (standaard is dit “900”, ofwel 15 minuten).
+Hier is een voorbeeld van hoe je de “store” helper configureert met een eigen bestandsnaam:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global credential.helper store --file ~/.my-credentials</pre>
+
+<p>Git staat het je zelfs toe om meerdere helpers te configureren.
+Als Git op zoek gaat naar inloggegevens voor een specifieke host, zal Git ze in volgorde afvragen, en stoppen als het
+ eerste antwoord wordt gegeven.
+Bij het opslaan van de gegevens, zal Git de gebruikersnaam en wachtwoord naar <strong>alle</strong> helpers in de lijst sturen, en
+ zij kunnen besluiten wat met deze gegevens te doen.
+Hier is hoe een <code>.gitconfig</code> eruit zou kunnen zien als je een credentials bestand op een stickie zou hebben staan,
+ maar de opslag in het geheugen zou willen gebruiken om wat typen te besparen als die stick niet ingeplugd is:</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[credential]</code>
+    <code class="na">helper</code> <code class="o">=</code> <code class="s">store --file /mnt/thumbdrive/.git-credentials</code>
+<code class="s">    helper = cache --timeout 30000</code></pre>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Onder de motorkap" id="idp24969664"><h3 id="Onder-de-motorkap"><a href="#Onder-de-motorkap">Onder de motorkap</a></h3>
+
+<p>Hoe werkt dit nu allemaal?
+Het basiscommando van Git voor het credential-helper systeem is <code>git credential</code>, wat een commando als argument
+ neemt, en daarna meer invoer vanuit stdin.</p>
+
+<p>Dit is misschien beter te begrijpen met een voorbeeld.
+Laten we zeggen dat een credential helper geconfigureerd is, en de helper heeft gegevens bewaard voor <code>mygithost</code>.
+Hier is een sessie die het “fill” commando gebruikt, wat wordt aangeroepen als Git probeert inloggegevens te vinden
+ voor een host.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code><code> </code><code>git</code><code> </code><code>credential</code><code> </code><code>fill</code><code> </code><a class="co" id="co_git_tools_CO2-1" href="ch00/callout_git_tools_CO2-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a><code>
+</code><code class="go">protocol=https </code><a class="co" id="co_git_tools_CO2-2" href="ch00/callout_git_tools_CO2-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a><code class="go">
+</code><code class="go">host=mygithost
+</code><a class="co" id="co_git_tools_CO2-3" href="ch00/callout_git_tools_CO2-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a><code class="go">
+</code><code class="go">protocol=https </code><a class="co" id="co_git_tools_CO2-4" href="ch00/callout_git_tools_CO2-4"><img src="/book/en/v2/book/07-git-tools/../../callouts/4.png" alt="4"></a><code class="go">
+</code><code class="go">host=mygithost
+</code><code class="go">username=bob
+</code><code class="go">password=s3cre7
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>credential</code><code> </code><code>fill</code><code> </code><a class="co" id="co_git_tools_CO2-5" href="ch00/callout_git_tools_CO2-5"><img src="/book/en/v2/book/07-git-tools/../../callouts/5.png" alt="5"></a><code>
+</code><code class="go">protocol=https
+</code><code class="go">host=unknownhost
+</code><code class="go">
+</code><code class="go">Username for 'https://unknownhost': bob
+</code><code class="go">Password for 'https://bob@unknownhost':
+</code><code class="go">protocol=https
+</code><code class="go">host=unknownhost
+</code><code class="go">username=bob
+</code><code class="go">password=s3cre7</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_git_tools_CO2-1" href="ch00/co_git_tools_CO2-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a></dt>
+<dd><p>Dit is de commando regel die de interactie initieert.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO2-2" href="ch00/co_git_tools_CO2-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a></dt>
+<dd><p>Git-credential gaat dan wachten op invoer van stdin.
+We geven het de dingen die we weten: het protocol en de hostnaam.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO2-3" href="ch00/co_git_tools_CO2-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a></dt>
+<dd><p>Een blanco regel geeft aan dat de invoer compleet is, en het credential systeem moet nu antwoorden met wat het
+weet.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO2-4" href="ch00/co_git_tools_CO2-4"><img src="/book/en/v2/book/07-git-tools/../../callouts/4.png" alt="4"></a></dt>
+<dd><p>Git-credential neemt het daarna over, en schrijft de stukken informatie het gevonden heeft naar stdout.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO2-5" href="ch00/co_git_tools_CO2-5"><img src="/book/en/v2/book/07-git-tools/../../callouts/5.png" alt="5"></a></dt>
+<dd><p>Als er geen inloggegevens gevonden zijn, vraag Git de gebruiker om de gebruikersnaam en wachtwoord en stelt die
+ter beschikking door stdout aan te roepen (hier zitten ze verbonden met dezelfde console).</p></dd>
+</dl>
+<p>Het credential systeem roept feitelijk een programma aan dat los staat van Git zelf; welke dat is en hoe hangt af van
+ de waarde die is ingevuld bij <code>credential.helper</code>.
+Deze kan verschillende vormen aannemen:</p>
+<table>
+<thead><tr>
+<th>Configuratie waarde</th>
+<th>Gedrag</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><p><code>foo</code></p></td>
+<td><p>Roept <code>git-credential-foo</code> aan</p></td>
+</tr>
+<tr>
+<td><p><code>foo -a --opt=bcd</code></p></td>
+<td><p>Roept <code>git-credential-foo -a --opt=bcd</code> aan</p></td>
+</tr>
+<tr>
+<td><p><code>/absolute/path/foo -xyz</code></p></td>
+<td><p>Roept <code>/absolute/path/foo -xyz</code> aan</p></td>
+</tr>
+<tr>
+<td><p><code>!f() { echo "password=s3cre7"; }; f</code></p></td>
+<td><p>Code na <code>!</code> wordt in shell geëvalueerd</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dus de helpers die hierboven zijn beschreven heten eigenlijk <code>git-credential-cache</code>, <code>git-credential-store</code>, en zo
+ voorts, en we kunnen ze configureren om commando-regel argumenten te accepteren.
+De algemene vorm voor dit is “git-credential-foo [args] &lt;actie&gt;.”
+Het stdin/stdout protocol is dezelfde als git-credential, maar deze gebruiken een iets andere set acties:</p>
+
+<ul>
+<li>
+<p><code>get</code> is een verzoek voor een gebruikersnaam/wachtwoord paar.</p>
+</li>
+<li>
+<p><code>store</code> is een verzoek om een groep van inloggegevens in het geheugen van de helper op te slaan.</p>
+</li>
+<li>
+<p><code>erase</code> verwijder de inloggegevens voor de opgegeven kenmerken uit het geheugen van deze helper.</p>
+</li>
+</ul>
+<p>Voor de <code>store</code> en <code>erase</code> acties, is geen antwoord nodig (Git negeert het in elk geval).
+Voor de <code>get</code> actie echter is Git zeer geïntereseerd in het antwoord van de helper.
+Als de helper geen zinnig antwoord kan geven, kan het simpelweg stoppen zonder uitvoer, maar als het wel een antwoord
+ heeft, moet het de gegeven informatie aanvullen met de gegevens die het heeft opgeslagen.
+De uitvoer wordt behandeld als een reeks van toewijzigs-opdrachten; alles wat wordt aangereikt zal wat Git hierover
+ al weet vervangen.</p>
+
+<p>Hier is het zelfde voorbeeld als hierboven, maar git-credential wordt overgeslagen en er wordt direct naar
+ git-credential-store gegaan:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code><code> </code><code>git</code><code> </code><code>credential-store</code><code> </code><code>--file</code><code> </code><code>~/git.store</code><code> </code><code>store</code><code> </code><a class="co" id="co_git_tools_CO3-1" href="ch00/callout_git_tools_CO3-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a><code>
+</code><code class="go">protocol=https
+</code><code class="go">host=mygithost
+</code><code class="go">username=bob
+</code><code class="go">password=s3cre7
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>credential-store</code><code> </code><code>--file</code><code> </code><code>~/git.store</code><code> </code><code>get</code><code> </code><a class="co" id="co_git_tools_CO3-2" href="ch00/callout_git_tools_CO3-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a><code>
+</code><code class="go">protocol=https
+</code><code class="go">host=mygithost
+</code><code class="go">
+</code><code class="go">username=bob </code><a class="co" id="co_git_tools_CO3-3" href="ch00/callout_git_tools_CO3-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a><code class="go">
+</code><code class="go">password=s3cre7</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_git_tools_CO3-1" href="ch00/co_git_tools_CO3-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a></dt>
+<dd><p>Hier vertellen we <code>git-credential-store</code> om wat inloggegevens te bewaren: de gebruikersnaam “bob” en het
+wachtwoord “s3cre7” moeten worden gebruikt as <code>https://mygithost</code> wordt benaderd.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO3-2" href="ch00/co_git_tools_CO3-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a></dt>
+<dd><p>Nu gaan we deze inloggegevens ophalen.
+We geven de delen van de verbinding die we al weten (<code>https://mygithost</code>) en een lege regel.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO3-3" href="ch00/co_git_tools_CO3-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a></dt>
+<dd><p>De <code>git-credential-store</code> antwoordt met de gebruikersnaam en wachtwoord die we hierboven
+hebben opgeslagen.</p></dd>
+</dl>
+<p>Hier is hoe het <code>~/git.store</code> bestand eruit zal zien:</p>
+
+<pre data-type="programlisting">https://bob:s3cre7@mygithost</pre>
+
+<p>Het is niet meer dan een reeks regels, die elk een van inloggegevens voorziene URL bevat.
+De <code>osxkeychain</code> en <code>winstore</code> helpers gebruiken het eigen formaat van hun eigen achterliggende opslag, terwijl
+ <code>cache</code> zijn eigen <em>in-memory</em> formaat gebruikt (wat geen enkel ander proces kan lezen).</p>
+</section><section data-type="sect2" data-pdf-bookmark="Een eigen inloggegevens cache" id="idp24970256"><h3 id="Een-eigen-inloggegevens-cache"><a href="#Een-eigen-inloggegevens-cache">Een eigen inloggegevens cache</a></h3>
+
+<p>Gegeven dat <code>git-credential-store</code> en zijn vriendjes programma’s zijn die los staan van Git, is het geen grote stap
+ om te beseffen dat <em>elk</em> programma een Git credential helper kan zijn.
+De helpers die bij Git worden geleverd dekken veel gewone gebruiksvoorkomsten, maar niet alle.
+Bijvoorbeeld, stel nu dat je team een aantal inloggegevens hebben die met het hele team worden gedeeld, misschien om
+ te deployen.
+Deze worden opgeslagen in een gedeelde directory, maar je wilt ze niet naar je eigen credential opslagplaats
+ kopiëren, omdat ze vaak veranderen.
+Geen van de bestaande helpers kan hierin voorzien; laten we eens kijken hoeveel moeite het kost om er zelf een te
+ schrijven.
+Er zijn een aantal sleutelkenmerken die dit programma moet hebben:</p>
+<ol>
+<li>
+<p>De enige actie waar we aandacht aan moeten besteden is <code>get</code>; <code>store</code> en <code>erase</code> zijn schrijf-acties, dus we
+negeren deze en sluiten gewoon af als ze worden ontvangen.</p>
+</li>
+<li>
+<p>Het bestandsformaat van het gedeelde credential bestand is dezelfde als die wordt gebruikt door
+<code>git-credential-store</code>.</p>
+</li>
+<li>
+<p>De locatie van dat bestand is redelijk standaard, maar we moeten toestaan dat de gebruiker een aangepast pad
+doorgeeft, voor het geval dat.</p>
+</li>
+
+</ol>
+<p>Nogmaals, we schrijven deze extensie in Ruby, maar een andere willekeurige taal werkt ook, zolang Git het
+ uiteindelijke product maar kan aanroepen.
+Hier is de volledige broncode van onze nieuwe credential helper:</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="c1">#!/usr/bin/env ruby</code><code>
+
+</code><code class="nb">require</code><code> </code><code class="s1">'optparse'</code><code>
+
+</code><code class="n">path</code><code> </code><code class="o">=</code><code> </code><code class="no">File</code><code class="o">.</code><code class="n">expand_path</code><code> </code><code class="s1">'~/.git-credentials'</code><code> </code><a class="co" id="co_git_tools_CO4-1" href="ch00/callout_git_tools_CO4-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a><code>
+</code><code class="no">OptionParser</code><code class="o">.</code><code class="n">new</code><code> </code><code class="k">do</code><code> </code><code class="o">|</code><code class="n">opts</code><code class="o">|</code><code>
+    </code><code class="n">opts</code><code class="o">.</code><code class="n">banner</code><code> </code><code class="o">=</code><code> </code><code class="s1">'USAGE: git-credential-read-only [options] &lt;action&gt;'</code><code>
+    </code><code class="n">opts</code><code class="o">.</code><code class="n">on</code><code class="p">(</code><code class="s1">'-f'</code><code class="p">,</code><code> </code><code class="s1">'--file PATH'</code><code class="p">,</code><code> </code><code class="s1">'Specify path for backing store'</code><code class="p">)</code><code> </code><code class="k">do</code><code> </code><code class="o">|</code><code class="n">argpath</code><code class="o">|</code><code>
+        </code><code class="n">path</code><code> </code><code class="o">=</code><code> </code><code class="no">File</code><code class="o">.</code><code class="n">expand_path</code><code> </code><code class="n">argpath</code><code>
+    </code><code class="k">end</code><code>
+</code><code class="k">end</code><code class="o">.</code><code class="n">parse!</code><code>
+
+</code><code class="nb">exit</code><code class="p">(</code><code class="mi">0</code><code class="p">)</code><code> </code><code class="k">unless</code><code> </code><code class="no">ARGV</code><code class="o">[</code><code class="mi">0</code><code class="o">]</code><code class="o">.</code><code class="n">downcase</code><code> </code><code class="o">==</code><code> </code><code class="s1">'get'</code><code> </code><a class="co" id="co_git_tools_CO4-2" href="ch00/callout_git_tools_CO4-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a><code>
+</code><code class="nb">exit</code><code class="p">(</code><code class="mi">0</code><code class="p">)</code><code> </code><code class="k">unless</code><code> </code><code class="no">File</code><code class="o">.</code><code class="n">exists?</code><code> </code><code class="n">path</code><code>
+
+</code><code class="n">known</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="p">}</code><code> </code><a class="co" id="co_git_tools_CO4-3" href="ch00/callout_git_tools_CO4-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a><code>
+</code><code class="k">while</code><code> </code><code class="n">line</code><code> </code><code class="o">=</code><code> </code><code class="no">STDIN</code><code class="o">.</code><code class="n">gets</code><code>
+    </code><code class="k">break</code><code> </code><code class="k">if</code><code> </code><code class="n">line</code><code class="o">.</code><code class="n">strip</code><code> </code><code class="o">==</code><code> </code><code class="s1">''</code><code>
+    </code><code class="n">k</code><code class="p">,</code><code class="n">v</code><code> </code><code class="o">=</code><code> </code><code class="n">line</code><code class="o">.</code><code class="n">strip</code><code class="o">.</code><code class="n">split</code><code> </code><code class="s1">'='</code><code class="p">,</code><code> </code><code class="mi">2</code><code>
+    </code><code class="n">known</code><code class="o">[</code><code class="n">k</code><code class="o">]</code><code> </code><code class="o">=</code><code> </code><code class="n">v</code><code>
+</code><code class="k">end</code><code>
+
+</code><code class="no">File</code><code class="o">.</code><code class="n">readlines</code><code class="p">(</code><code class="n">path</code><code class="p">)</code><code class="o">.</code><code class="n">each</code><code> </code><code class="k">do</code><code> </code><code class="o">|</code><code class="n">fileline</code><code class="o">|</code><code> </code><a class="co" id="co_git_tools_CO4-4" href="ch00/callout_git_tools_CO4-4"><img src="/book/en/v2/book/07-git-tools/../../callouts/4.png" alt="4"></a><code>
+    </code><code class="n">prot</code><code class="p">,</code><code class="n">user</code><code class="p">,</code><code class="n">pass</code><code class="p">,</code><code class="n">host</code><code> </code><code class="o">=</code><code> </code><code class="n">fileline</code><code class="o">.</code><code class="n">scan</code><code class="p">(</code><code class="sr">/</code><code class="sr">^(.*?):</code><code class="sr">\/</code><code class="sr">\/</code><code class="sr">(.*?):(.*?)@(.*)$</code><code class="sr">/</code><code class="p">)</code><code class="o">.</code><code class="n">first</code><code>
+    </code><code class="k">if</code><code> </code><code class="n">prot</code><code> </code><code class="o">==</code><code> </code><code class="n">known</code><code class="o">[</code><code class="s1">'protocol'</code><code class="o">]</code><code> </code><code class="ow">and</code><code> </code><code class="n">host</code><code> </code><code class="o">==</code><code> </code><code class="n">known</code><code class="o">[</code><code class="s1">'host'</code><code class="o">]</code><code> </code><code class="k">then</code><code>
+        </code><code class="nb">puts</code><code> </code><code class="s2">"</code><code class="s2">protocol=</code><code class="si">#{</code><code class="n">prot</code><code class="si">}</code><code class="s2">"</code><code>
+        </code><code class="nb">puts</code><code> </code><code class="s2">"</code><code class="s2">host=</code><code class="si">#{</code><code class="n">host</code><code class="si">}</code><code class="s2">"</code><code>
+        </code><code class="nb">puts</code><code> </code><code class="s2">"</code><code class="s2">username=</code><code class="si">#{</code><code class="n">user</code><code class="si">}</code><code class="s2">"</code><code>
+        </code><code class="nb">puts</code><code> </code><code class="s2">"</code><code class="s2">password=</code><code class="si">#{</code><code class="n">pass</code><code class="si">}</code><code class="s2">"</code><code>
+        </code><code class="nb">exit</code><code class="p">(</code><code class="mi">0</code><code class="p">)</code><code>
+    </code><code class="k">end</code><code>
+</code><code class="k">end</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_git_tools_CO4-1" href="ch00/co_git_tools_CO4-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a></dt>
+<dd><p>Hier parsen we de commando-regel opties, waarbij we de gebruiker het invoerbestand kunnen laten aangeven. De
+standaardwaarde is <code>~/.git-credentials</code>.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO4-2" href="ch00/co_git_tools_CO4-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a></dt>
+<dd><p>Dit programma geeft alleen antwoord als de actie <code>get</code> is, en het achterliggende bestand bestaat.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO4-3" href="ch00/co_git_tools_CO4-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a></dt>
+<dd><p>In deze lus wordt stdin gelezen tot de eerste blanco regel wordt bereikt.
+De invoergegevens worden opgeslagen in de <code>known</code> hash voor later gebruik.</p></dd>
+<dt><a class="co" id="callout_git_tools_CO4-4" href="ch00/co_git_tools_CO4-4"><img src="/book/en/v2/book/07-git-tools/../../callouts/4.png" alt="4"></a></dt>
+<dd><p>In deze lus wordt de inhoud van het achterliggende bestand gelezen op zoek naar passende inhoud.
+Als het protocol en de host van <code>known</code> gelijk is aan deze regel, drukt het programma de resultaten af op stdout
+en stopt.</p></dd>
+</dl>
+<p>We zullen onze helper als <code>git-credential-read-only</code> opslaan, zetten het ergens in onze <code>PATH</code> en maken het uitvoerbaar.
+Hier is hoe een interactieve sessie eruit zou zien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git credential-read-only --file<code class="o">=</code>/mnt/shared/creds get
+<code class="go">protocol=https</code>
+<code class="go">host=mygithost</code>
+
+<code class="go">protocol=https</code>
+<code class="go">host=mygithost</code>
+<code class="go">username=bob</code>
+<code class="go">password=s3cre7</code></pre>
+
+<p>Omdat de naam met “git-” begint, kunnen we de eenvoudige syntax voor de configuratie waarde gebruiken:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global credential.helper <code class="nb">read</code>-only --file /mnt/shared/creds</pre>
+
+<p>Zoals je kunt zien, is het uitbreiden van dit systeem redelijk eenvoudig, en we kunnen een aantal gebruikelijke
+problemen voor jou en je team oplossen.</p>
+</section><div id="nav"><a href="/book/nl/Git-Tools-Vervangen">prev</a> | <a href="/book/nl/v2/Git-Tools-Samenvatting">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

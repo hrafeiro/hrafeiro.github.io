@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":4,"applicationTime":205,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - I Protocolli</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/it/v1/Per-Iniziare">Per Iniziare</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/it/v1/Per-Iniziare-Il-Controllo-di-Versione">Il Controllo di Versione</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/it/v1/Per-Iniziare-Una-Breve-Storia-di-Git">Una Breve Storia di Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/it/v1/Per-Iniziare-Basi-di-Git">Basi di Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/it/v1/Per-Iniziare-Installare-Git">Installare Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/it/v1/Per-Iniziare-Prima-Configurazione-di-Git">Prima Configurazione di Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/it/v1/Per-Iniziare-Ottieni-aiuto">Ottieni aiuto</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/it/v1/Per-Iniziare-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/it/v1/Basi-di-Git">Basi di Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/it/v1/Basi-di-Git-Repository-Git">Repository Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/it/v1/Basi-di-Git-Salvare-le-modifiche-sul-repository">Salvare le modifiche sul repository</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/it/v1/Basi-di-Git-Vedere-la-cronologia-delle-commit">Vedere la cronologia delle commit</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/it/v1/Basi-di-Git-Annullare-qualcosa">Annullare qualcosa</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/it/v1/Basi-di-Git-Lavorare-coi-server-remote">Lavorare coi server remote</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/it/v1/Basi-di-Git-Suggerimenti">Suggerimenti</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/it/v1/Basi-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/it/v1/Diramazioni-in-Git">Diramazioni in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/it/v1/Diramazioni-in-Git-Cos-%C3%A8-un-Ramo">Cos&#39;è un Ramo</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/it/v1/Diramazioni-in-Git-Basi-di-Diramazione-e-Fusione">Basi di Diramazione e Fusione</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/it/v1/Diramazioni-in-Git-Amministrazione-dei-Rami">Amministrazione dei Rami</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/it/v1/Diramazioni-in-Git-Flusso-di-Lavoro-con-le-Ramificazioni">Flusso di Lavoro con le Ramificazioni</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/it/v1/Diramazioni-in-Git-Rami-Remoti">Rami Remoti</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/it/v1/Diramazioni-in-Git-Rifondazione">Rifondazione</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/it/v1/Diramazioni-in-Git-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/it/v1/Git-sul-Server">Git sul Server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/it/v1/Git-sul-Server-I-Protocolli">I Protocolli</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/it/v1/Git-sul-Server-Mettere-Git-su-di-un-server">Mettere Git su di un server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/it/v1/Git-sul-Server-Generare-la-Propria-Chiave-Pubblica-SSH">Generare la Propria Chiave Pubblica SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/it/v1/Git-sul-Server-Configurare-il-Server">Configurare il Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/it/v1/Git-sul-Server-Accesso-Pubblico">Accesso Pubblico</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/it/v1/Git-sul-Server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/it/v1/Git-sul-Server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/it/v1/Git-sul-Server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/it/v1/Git-sul-Server-Demone-Git">Demone Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/it/v1/Git-sul-Server-Hosting-Git">Hosting Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/it/v1/Git-sul-Server-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/it/v1/Git-distribuito">Git distribuito</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/it/v1/Git-distribuito-Workflows-distribuiti">Workflows distribuiti</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/it/v1/Git-distribuito-Contribuire-a-un-Progetto">Contribuire a un Progetto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/it/v1/Git-distribuito-Mantenere-un-Progetto">Mantenere un Progetto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/it/v1/Git-distribuito-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/it/v1/Strumenti-di-Git">Strumenti di Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/it/v1/Strumenti-di-Git-Selezione-della-revisione">Selezione della revisione</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/it/v1/Strumenti-di-Git-Assemblaggio-interattivo">Assemblaggio interattivo</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/it/v1/Strumenti-di-Git-Accantonare">Accantonare</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/it/v1/Strumenti-di-Git-Riscrivere-la-storia">Riscrivere la storia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/it/v1/Strumenti-di-Git-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/it/v1/Strumenti-di-Git-Moduli">Moduli</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/it/v1/Strumenti-di-Git-Subtree-Merging">Subtree Merging</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/it/v1/Strumenti-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/it/v1/Personalizzare-Git">Personalizzare Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/it/v1/Personalizzare-Git-Configurazione-di-Git">Configurazione di Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/it/v1/Personalizzare-Git-Attributi-di-Git">Attributi di Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/it/v1/Personalizzare-Git-Git-Hooks">Git Hooks</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/it/v1/Git-e-altri-sistemi">Git e altri sistemi</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/it/v1/Git-e-altri-sistemi-Git-e-Subversion">Git e Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/it/v1/Git-e-altri-sistemi-Migrare-a-Git">Migrare a Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/it/v1/Git-e-altri-sistemi-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/it/v1/I-comandi-interni-di-Git">I comandi interni di Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Impianto-e-sanitari-%3Cem%3EPlumbing%3C%2Fem%3E-e-%3Cem%3EPorcelain%3C%2Fem%3E">Impianto e sanitari (<em>Plumbing</em> e <em>Porcelain</em>)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Gli-oggetti-di-Git">Gli oggetti di Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/it/v1/I-comandi-interni-di-Git-I-riferimenti-di-Git">I riferimenti di Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Pacchetti-di-file">Pacchetti di file</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Le-specifiche-di-riferimento-%3Cem%3Erefspec%3C%2Fem%3E">Le specifiche di riferimento (<em>refspec</em>)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Protocolli-di-trasferimento">Protocolli di trasferimento</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Manutenzione-e-recupero-dei-dati">Manutenzione e recupero dei dati</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>4.1 Git sul Server - I Protocolli</h1>
+  <div><h2>I Protocolli</h2>
+
+<p>Git può utilizzare i maggiori quattro protocolli di rete per trasferire i dati: Locale, Secure Shell (SSH), Git e HTTP. Qui vedremo cosa sono e in quali circostanze di base si vogliono (o non si vogliono) usare.</p>
+
+<p>É importante notare che, ad eccezione dei protocolli HTTP, tutti questi richiedono che Git sia installato e funzionante sul server.</p>
+
+<h3 id="Il-Protocollo-Locale"><a href="#Il-Protocollo-Locale">Il Protocollo Locale</a></h3>
+
+<p>Quello più semplice è il <em>protocollo locale</em>, in cui il repository remoto è in un&#39;altra directory sul disco. Questo è spesso utilizzato se ciascuno nel tuo team ha un accesso ad un file system condiviso come NFS, o nel caso meno probabile tutti accedano allo stesso computer. Quest&#39;ultimo caso non è l&#39;ideale, perché tutte le istanze del codice nel repository risiederebbero sullo stesso computer, facendo diventare molto più probabile una perdita catastrofica dei dati.</p>
+
+<p>Se disponi di un filesystem montato in comune, allora si può clonare, inviare e trarre da un repository locale basato su file. Per clonare un repository come questo o per aggiungerne uno da remoto per un progetto esistente, utilizza il percorso al repository come URL. Ad esempio, per clonare un repository locale, è possibile eseguire qualcosa di simile a questo:</p>
+
+<pre><code>$ git clone /opt/git/project.git
+</code></pre>
+
+<p>O questo:</p>
+
+<pre><code>$ git clone file:///opt/git/project.git
+</code></pre>
+
+<p>Git funziona in modo leggermente diverso se si specifica esplicitamente <code>file://</code> all&#39;inizio dell&#39;URL. Se si specifica il percorso, Git tenta di utilizzare gli hardlink o copia direttamente i file necessari. Se specifichi <code>file://</code>, Git abilita i processi che normalmente si usano per trasferire i dati su una rete che sono generalmente un metodo molto meno efficace per il trasferimento dei dati. La ragione principale per specificare il prefisso <code>file://</code>  è quella in cui si desidera una copia pulita del repository senza riferimenti od oggetti estranei — in genere dopo l&#39;importazione da un altro sistema di controllo di versione o qualcosa di simile (vedi il Capitolo 9 relativo ai compiti per la manutenzione). Qui useremo il percorso normale, perché così facendo è quasi sempre più veloce.</p>
+
+<p>Per aggiungere un repository locale a un progetto Git esistente, puoi eseguire qualcosa di simile a questo:</p>
+
+<pre><code>$ git remote add local_proj /opt/git/project.git
+</code></pre>
+
+<p>Quindi, puoi fare inviare e trarre da quel remoto come se si stesse lavorando su una rete.</p>
+
+<h4>I Pro</h4>
+
+<p>I pro dei repository basati su file sono che sono semplici e che utilizzano i permessi sui file e l&#39;accesso alla rete già esistenti. Se hai già un filesystem condiviso a cui l&#39;intero team ha accesso, la creazione di un repository è molto facile. Si mette la copia nuda del repository da qualche parte dove tutti hanno un accesso condiviso e si impostano i permessi di lettura/scrittura, come se si facesse per qualsiasi directory condivisa. Proprio per questo scopo vedremo come esportare una copia bare del repository nella prossima sezione, &quot;Installare Git su un server.&quot;</p>
+
+<p>Questa è anche una interessante possibilità per recuperare rapidamente il lavoro dal repository di qualcun altro. Se tu e un tuo collega state lavorando allo stesso progetto e volete recuperare qualcosa da fuori, lanciare un comando tipo <code>git pull /home/john/project</code> è spesso più facile che inviare prima su un server remoto e poi scaricarlo.</p>
+
+<h4>I Contro</h4>
+
+<p>Il contro di questo metodo è che l&#39;accesso condiviso è generalmente più difficile da impostare e da raggiungere da più postazioni rispetto ad un normale accesso di rete. Se vuoi fare un push dal computer quando sei a casa, devi montare il disco remoto, e può essere difficile e lento rispetto ad un accesso di rete.</p>
+
+<p>É anche importante ricordare che questa non è necessariamente l&#39;opzione più veloce, se utilizzi un mount condiviso di qualche tipo. Un repository locale è veloce solo se si dispone di un accesso veloce ai dati. Un repository su NFS è spesso più lento di un repository via SSH sullo stesso server, permettendo a Git di andare con dischi locali su ogni sistema.</p>
+
+<h3 id="Il-Protocollo-SSH"><a href="#Il-Protocollo-SSH">Il Protocollo SSH</a></h3>
+
+<p>Probabilmente il protocollo più utilizzato per Git è SSH. Questo perché un accesso via SSH ad un server è già impostato in molti posti — e se non c&#39;è, è facile crearlo. SSH inoltre è l&#39;unico protocollo di rete in cui puoi facilmente leggere e scrivere. Gli altri due protocolli (HTTP e Git) sono generalmente solo di lettura, quindi se li hai a disposizione per la massa generica, hai comunque bisogno di SSH per i tuoi comandi di scrittura. SSH è inoltre un protocollo di rete con autenticazione; e dato che è dappertutto, è generalmente facile da configurare e usare.</p>
+
+<p>Per clonare un repository Git via SSH, puoi specificare un URL ssh:// come questo:</p>
+
+<pre><code>$ git clone ssh://user@server/project.git
+</code></pre>
+
+<p>O non specificare proprio il protocollo — Git utilizza SSH non lo specifichi:</p>
+
+<pre><code>$ git clone user@server:project.git
+</code></pre>
+
+<p>Puoi anche non specificare l&#39;utente, e Git utilizzerà l&#39;utente con il quale sei ora connesso.</p>
+
+<h4>I Pro</h4>
+
+<p>I pro nell&#39;usare SSH sono tanti. Primo, se vuoi avere un&#39;autenticazione con l&#39;accesso in scrittura al tuo repository su una rete devi usarlo. Secondo, SSH è relativamente semplice da impostare — il demone SSH è ovunque, molti amministratori di rete hanno esperienza con lui e molte distribuzioni di OS sono impostate con lui o hanno dei strumenti per amministrarlo. Poi, l&#39;accesso via SSH è sicuro — tutti i dati trasferiti sono criptati ed autenticati. Infine, come i protocolli Git e Local, SSH è efficiente, rende i dati il più compressi possibile prima di trasferirli.</p>
+
+<h4>I Contro</h4>
+
+<p>L&#39;aspetto negativo di SSH è che non puoi dare accesso anonimo al tuo repository tramite lui. Le persone devono avere un accesso alla macchina tramite SSH, anche per la sola lettura, ciò rende SSH poco appetibile per i progetti open source. Se lo stai usando solo con la rete della tua azienda, SSH può essere l&#39;unico protocollo con cui avrai a che fare. Se vuoi fornire un accesso anonimo di sola lettura al tuo progetto, devi impostare un SSH per i tuoi invii ma qualcos&#39;altro per per permettere ad altri di trarre i dati.</p>
+
+<h3 id="Il-Protocollo-Git"><a href="#Il-Protocollo-Git">Il Protocollo Git</a></h3>
+
+<p>Poi c&#39;è il protocollo Git. Questo è un demone speciale che è incluso nel pacchetto Git; è in ascolto su una porta dedicata (9418) e fornisce un servizio simile al protocollo SSH, ma assolutamente senza autenticazione. Per permettere ad un repository di essere servito tramite il protocollo Git, devi creare un file <code>git-daemon-export-ok</code> — il demone non serve il repository senza l&#39;inserimento di questo file — altrimenti non ci sarebbe sicurezza. O il repository Git è disponibile per chiunque voglia copiarlo o altrimenti niente. Questo significa che generalmente non si invia tramite questo protocollo. Puoi abilitare l&#39;accesso all&#39;invio; ma data la mancanza di autenticazione, se abiliti l&#39;accesso di scrittura, chiunque trovi su internet l&#39;URL al progetto può inviare dati. Basti dire che questo è raro.</p>
+
+<h4>I Pro</h4>
+
+<p>Il protocollo Git è il protocollo disponibile più veloce. Se hai un grande traffico per un tuo progetto pubblico o hai un progetto molto grande che non richiede un&#39;autenticazione per l&#39;accesso in lettura, è probabile che vorrai impostare per un demone Git per servire il progetto. Usa lo stesso meccanismo di trasferimento dei dati del protocollo SSH ma senza criptazione e autenticazione.</p>
+
+<h4>I Contro</h4>
+
+<p>Il rovescio della medaglia è che al protocollo Git manca l&#39;autenticazione.  É generalmente non desiderabile avere l&#39;accesso al progetto solo tramite il protocollo Git. Generalmente, si utilizzano insieme un accesso SSH per gli sviluppatori che hanno permessi di scrittura e per tutti gli altri si usa l&#39;accesso in sola lettura <code>git://</code>.
+Inoltre è probabilmente il protocollo più difficile da configurare. Deve avviare un proprio demone, che è particolare — vedremo le impostazioni nella sezione “Gitosis” di questo capitolo — richiede la configurazione di <code>xinetd</code> o simili, il che non è una passeggiata. Inoltre richiede un accesso tramite il firewall alla porta 9418, che non è una porta standard che i firewall delle aziende permettono di usare sempre. Un firewall di una grande azienda spesso blocca questa sconosciuta porta.</p>
+
+<h3 id="Il-Protocollo-HTTP/S"><a href="#Il-Protocollo-HTTP/S">Il Protocollo HTTP/S</a></h3>
+
+<p>Infine abbiamo il protocollo HTTP. Il bello del protocollo HTTP o HTTPS è la semplicità nel configurarlo. Fondamentalmente, tutto quello che devi fare è mettere solo il repository Git sulla document root HTTP ed impostare uno specifico gancio <code>post-update</code> ed il gioco è fatto (vedi il Capitolo 7 per i dettagli sui ganci Git). A questo punto, chiunque in grado di accedere al server web sotto cui hai messo il repository può clonare il repository. Per permettere l&#39;accesso in lettura al repository via HTTP, fai una cosa simile:</p>
+
+<pre><code>$ cd /var/www/htdocs/
+$ git clone --bare /path/to/git_project gitproject.git
+$ cd gitproject.git
+$ mv hooks/post-update.sample hooks/post-update
+$ chmod a+x hooks/post-update
+</code></pre>
+
+<p>Questo è quanto. L&#39;aggancio <code>post-update</code> che è messo assieme a Git di default avvia il comando appropriato (<code>git update-server-info</code>) per far lavorare correttamente il prelievo e la clonazione HTTP. Questo comando è avviato quando lanci un invio al tuo repository via SSH; poi, altre persone possono clonarlo con una cosa simile:</p>
+
+<pre><code>$ git clone http://example.com/gitproject.git
+</code></pre>
+
+<p>In questo caso particolare, stiamo usando il percorso <code>/var/www/htdocs</code> che è comunemente presente nelle installazioni di Apache, ma puoi usare un qualsiasi altro server web — basta mettere la base del repository nel percorso. I dati di Git sono forniti come file statici (vedi Capitolo 9 per dettagli su come sono esattamente forniti).</p>
+
+<p>É anche possibile fare l&#39;invio con Git via HTTP, la tecnica non è molto utilizzata e richiede di impostare un complesso WebDAV. Dato che è raramente utilizzato, non lo vedremo in questo libro. Se sei interessato ad usare i protocolli HTTP-push, puoi leggere su come preparare un repository a questo scopo a <code>http://www.kernel.org/pub/software/scm/git/docs/howto/setup-git-server-over-http.txt</code>. Una cosa carina dell&#39;invio con Git via HTTP è utilizzare un qualsiasi server WebDAV, senza alcune specifiche funzionalità di Git; così, puoi usare questa funzionalità se il tuo hosting web fornisce un supporto WebDAV per scrivere aggiornamenti al tuo sito web.</p>
+
+<h4>I Pro</h4>
+
+<p>Il bello di usare il protocollo HTTP è che è facile da configurare. Con pochi comandi si può dare facilmente al mondo un accesso in lettura al tuo repository Git. Porta via solo pochi minuti. Inoltre il protocollo HTTP non richiede tante risorse al tuo server. Perché in genere è utilizzato un server statico HTTP per fornire i dati, un server Apache in media può servire migliaia di file al secondo — è difficile sovraccaricare anche un piccolo server.</p>
+
+<p>Puoi anche fornire un accesso in sola lettura via HTTPS, il che significa che puoi criptare il contenuto trasferito; o puoi arrivare al punto di rendere un certificato SSL specifico per i client. Generalmente, se andrai a fare queste cose, è più facile usare una chiave SSH pubblica; ma potrebbe essere una soluzione migliore usare un certificato SSL firmato o un altro tipo di autenticazione HTTP per un accesso in lettura via HTTPS.</p>
+
+<p>Un&#39;altra cosa carina è che l&#39;HTTP è un protocollo comunissimo che i firewall delle aziende in genere configurano per permettere il traffico tramite la sua porta.</p>
+
+<h4>I Contro</h4>
+
+<p>L&#39;altra faccia della medaglia nel fornire il tuo repository via HTTP è che è relativamente inefficiente per il client. In genere porta via molto tempo per clonare o scaricare dal repository, e si ha spesso un sovraccarico della rete tramite il trasferimento di volumi via HTTP rispetto ad altri protocolli di rete. Non essendo abbastanza intelligente da trasferire solo i dati di cui hai bisogno — non c&#39;è un lavoro dinamico dalla parte del server in questa transazione — il protocollo HTTP viene spesso definito un protocollo <em>stupido</em>. Per maggiori informazioni sulle differenze nell&#39;efficienza tra il protocollo HTTP e gli altri, vedi il Capitolo 9.</p>
+
+<div id="nav"><a href="/book/it/Git-sul-Server">prev</a> | <a href="/book/it/v1/Git-sul-Server-Mettere-Git-su-di-un-server">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

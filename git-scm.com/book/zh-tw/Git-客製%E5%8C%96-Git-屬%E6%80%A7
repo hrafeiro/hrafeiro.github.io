@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":398,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git 屬性</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B">開始</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">關於版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E7%9A%84%E7%B0%A1%E5%8F%B2">Git 的簡史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E5%9F%BA%E7%A4%8E%E8%A6%81%E9%BB%9E">Git 基礎要點</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit">安裝Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9AGit">初次設定Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%8F%96%E5%BE%97%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6">取得說明文件</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E">Git 基礎</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97Git%E5%84%B2%E5%AD%98%E5%BA%AB">取得Git儲存庫</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E4%BA%A4%E6%9B%B4%E6%96%B0%E5%88%B0%E5%84%B2%E5%AD%98%E5%BA%AB">提交更新到儲存庫</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%AA%A2%E8%A6%96%E6%8F%90%E4%BA%A4%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%A8%98%E9%8C%84">檢視提交的歷史記錄</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F">復原</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">與遠端協同工作</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%A8%99%E7%B1%A4">標籤</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E7%A4%BA%E5%92%8C%E6%8A%80%E5%B7%A7">提示和技巧</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E4%BD%95%E8%AC%82%E5%88%86%E6%94%AF">何謂分支</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E8%88%87%E5%90%88%E4%BD%B5">分支的新建與合併</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%AE%A1%E7%90%86">分支的管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%A9%E7%94%A8%E5%88%86%E6%94%AF%E9%80%B2%E8%A1%8C%E9%96%8B%E7%99%BC%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">利用分支進行開發的工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF">遠端分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88">分支的衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git">伺服器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%94%E8%AD%B0">協議</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2-Git">在伺服器上部署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0">生成 SSH 公開金鑰</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%9E%B6%E8%A8%AD%E4%BC%BA%E6%9C%8D%E5%99%A8">架設伺服器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%85%AC%E5%85%B1%E8%A8%AA%E5%95%8F">公共訪問</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E8%AD%B7%E9%80%B2%E7%A8%8B">Git 守護進程</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E8%A8%97%E7%AE%A1%E6%9C%8D%E5%8B%99">Git 託管服務</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git">分散式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E7%82%BA%E5%B0%88%E6%A1%88%E4%BD%9C%E8%B2%A2%E7%8D%BB">為專案作貢獻</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86">專案的管理</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7">Git 工具</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%81%B8%E6%93%87%E4%BF%AE%E8%A8%82%E7%89%88%E6%9C%AC">選擇修訂版本</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%9A%AB%E5%AD%98">互動式暫存</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing">儲藏 (Stashing)</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%AF%AB%E6%AD%B7%E5%8F%B2">重寫歷史</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E5%81%9A-Debug">使用 Git 做 Debug</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B5%84-Submodules">子模組 (Submodules)</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%B9%E5%90%88%E4%BD%B5">子樹合併</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96">Git 客製化</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E9%85%8D%E7%BD%AE">Git 配置</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%B1%AC%E6%80%A7">Git 屬性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%BC%B7%E5%88%B6%E7%AD%96%E7%95%A5%E5%AF%A6%E4%BE%8B">Git 強制策略實例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1">Git 與其他系統</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-Git-%E8%88%87-Subversion">Git 與 Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E9%81%B7%E7%A7%BB%E5%88%B0-Git">遷移到 Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86">Git 內部原理</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%A4%E5%91%BD%E4%BB%A4-Plumbing-%E5%92%8C%E9%AB%98%E5%B1%A4%E5%91%BD%E4%BB%A4-Porcelain">底層命令 (Plumbing) 和高層命令 (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E7%89%A9%E4%BB%B6">Git 物件</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%82%B3%E8%BC%B8%E5%8D%94%E8%AD%B0">傳輸協議</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B6%AD%E8%AD%B7%E5%8F%8A%E8%B3%87%E6%96%99%E5%BE%A9%E5%8E%9F">維護及資料復原</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>7.2 Git 客製化 - Git 屬性</h1>
+  <div><h2>Git 屬性</h2>
+
+<p>一些設定值(settings)也能指定到特定的路徑，這樣，Git 只對這個特定的子目錄或某些檔案應用這些設定值。這些針對特定路徑的設定值被稱為 Git 屬性(attributes)，可以在你目錄中的 <code>.gitattributes</code> 檔內進行設置（通常是你專案的根目錄），當你不想讓這些屬性檔和專案檔案一同提交時，也可以在 <code>.git/info/attributes</code> 檔進行設置。 </p>
+
+<p>使用屬性，你可以對個別檔案或目錄定義不同的合併策略，讓 Git 知道怎樣比較非文字檔，在你提交或簽出(check out)前讓 Git 過濾內容。你將在這個章節裏瞭解到能在自己的專案中使用的屬性，以及一些實例。 </p>
+
+<h3 id="二進位檔案"><a href="#二進位檔案">二進位檔案</a></h3>
+
+<p>你可以用 Git 屬性讓其知道哪些是二進位檔案（以防 Git 沒有識別出來），以及指示怎樣處理這些檔，這點很酷。例如，一些文字檔是由機器產生的，而且無法比較，而一些二進位檔案可以比較 — 你將會瞭解到怎樣讓 Git 識別這些檔。 </p>
+
+<h4>識別二進位檔案</h4>
+
+<p>某些檔案看起來像是文字檔，但其實是看做為二進位資料。例如，在 Mac 上的 Xcode 專案含有一個以 <code>.pbxproj</code> 結尾的檔，它是由記錄設置項的 IDE 寫到磁碟的 JSON 資料集（純文字 javascript 資料類型）。雖然技術上看它是由 ASCII 字元組成的文字檔，但是你並不想這麼看它，因為它確實是一個輕量級資料庫 — 如果有兩個人改變了它，你沒辦法合併它們，diff 通常也幫不上忙，只有機器才能進行識別和操作，於是，你想把它當成二進位檔案。 </p>
+
+<p>讓 Git 把所有 <code>pbxproj</code> 檔當成二進位檔案，在 <code>.gitattributes</code> 文件中加上下面這行： </p>
+
+<pre><code>*.pbxproj -crlf -diff
+</code></pre>
+
+<p>現在，Git 不會嘗試轉換和修正 CRLF（回車換行）問題；也不會當你在專案中執行 git show 或 git diff 時，嘗試比較不同的內容。在 Git 1.6 及之後的版本中，可以用一個巨集代替 <code>-crlf -diff</code>： </p>
+
+<pre><code>*.pbxproj binary
+</code></pre>
+
+<h4>Diffing Binary Files</h4>
+
+<p>在 Git 1.6 及以上版本中，你能利用 Git 屬性來有效地比較二進位檔案。可以設置 Git 把二進位資料轉換成文本格式，然後用一般 diff 來做比較。 </p>
+
+<h5>MS Word files</h5>
+
+<p>這個特性很酷，而且鮮為人知，因此我會結合實例來講解。首先，你將使用這項技術來解決最令人頭疼的問題之一：對 Word 文檔進行版本控制。每個人都知道 Word 是最可怕的編輯器，奇怪的是，每個人都在使用它。如果想對 Word 文件進行版本控制，你可以把檔案加入到 Git 倉庫中，每次修改後提交即可。但這樣做有什麼好處？如果你像平常一樣執行 <code>git diff</code> 命令，你只能得到如下的結果： </p>
+
+<pre><code>$ git diff
+diff --git a/chapter1.doc b/chapter1.doc
+index 88839c4..4afcb7c 100644
+Binary files a/chapter1.doc and b/chapter1.doc differ
+</code></pre>
+
+<p>你不能直接比較兩個 Word 文件版本，除非人工細看，對吧？Git 屬性能很好地解決此問題，把下面這行加到 <code>.gitattributes</code> 文件： </p>
+
+<pre><code>*.doc diff=word
+</code></pre>
+
+<p>當你要看比較結果時，如果檔副檔名是 ”doc”，Git 會使用 ”word” 篩檢程式(filter)。什麼是 ”word” 篩檢程式呢？你必須設置它。下面你將設定 Git 使用 <code>strings</code> 程式，把 Word 文檔轉換成可讀的文字檔，之後再進行比較： </p>
+
+<pre><code>$ git config diff.word.textconv catdoc
+</code></pre>
+
+<p>This command adds a section to your <code>.git/config</code> that looks like this:</p>
+
+<pre><code>[diff &quot;word&quot;]
+    textconv = catdoc
+</code></pre>
+
+<p>現在 Git 知道了，如果它要在在兩個快照之間做比較，而其中任何一個檔檔名是以 <code>.doc</code> 結尾，它應該要對這些檔執行 ”word” 篩檢程式，也就是定義為執行 <code>strings</code> 程式。這樣就可以在比較前把 Word 檔轉換成文字檔。 </p>
+
+<p>下面展示了一個實例，我把此書的第一章納入 Git 管理，在一個段落中加入了一些文字後保存，之後執行 <code>git diff</code> 命令，得到結果如下： </p>
+
+<pre><code>$ git diff
+diff --git a/chapter1.doc b/chapter1.doc
+index c1c8a0a..b93c9e4 100644
+--- a/chapter1.doc
++++ b/chapter1.doc
+@@ -128,7 +128,7 @@ and data size)
+ Since its birth in 2005, Git has evolved and matured to be easy to use
+ and yet retain these initial qualities. It’s incredibly fast, it’s
+ very efficient with large projects, and it has an incredible branching
+-system for non-linear development.
++system for non-linear development (See Chapter 3).
+</code></pre>
+
+<p>Git 成功且簡潔地顯示出我增加的文字 ”(See Chapter 3)”。雖然有些瑕疵 -- 在末尾顯示了一些隨機的內容 -- 但確實可以比較了。如果你能找到或自己寫個 Word 到純文字的轉換器的話，效果可能會更好。不過因為 <code>strings</code> 可以在大部分 Mac 和 Linux 系統上運行，所以在初次嘗試對各種二進位格式檔進行類似的處理，它是個不錯的選擇。 </p>
+
+<h5>OpenDocument Text files</h5>
+
+<p>The same approach that we used for MS Word files (<code>*.doc</code>) can be used for OpenDocument Text files (<code>*.odt</code>) created by OpenOffice.org.</p>
+
+<p>Add the following line to your <code>.gitattributes</code> file:</p>
+
+<pre><code>*.odt diff=odt
+</code></pre>
+
+<p>Now set up the <code>odt</code> diff filter in <code>.git/config</code>:</p>
+
+<pre><code>[diff &quot;odt&quot;]
+    binary = true
+    textconv = /usr/local/bin/odt-to-txt
+</code></pre>
+
+<p>OpenDocument files are actually zip’ped directories containing multiple files (the content in an XML format, stylesheets, images, etc.). We’ll need to write a script to extract the content and return it as plain text. Create a file <code>/usr/local/bin/odt-to-txt</code> (you are free to put it into a different directory) with the following content:</p>
+
+<pre><code>#! /usr/bin/env perl
+# Simplistic OpenDocument Text (.odt) to plain text converter.
+# Author: Philipp Kempgen
+
+if (! defined($ARGV[0])) {
+    print STDERR &quot;No filename given!\n&quot;;
+    print STDERR &quot;Usage: $0 filename\n&quot;;
+    exit 1;
+}
+
+my $content = &#39;&#39;;
+open my $fh, &#39;-|&#39;, &#39;unzip&#39;, &#39;-qq&#39;, &#39;-p&#39;, $ARGV[0], &#39;content.xml&#39; or die $!;
+{
+    local $/ = undef;  # slurp mode
+    $content = &lt;$fh&gt;;
+}
+close $fh;
+$_ = $content;
+s/&lt;text:span\b[^&gt;]*&gt;//g;           # remove spans
+s/&lt;text:h\b[^&gt;]*&gt;/\n\n*****  /g;   # headers
+s/&lt;text:list-item\b[^&gt;]*&gt;\s*&lt;text:p\b[^&gt;]*&gt;/\n    --  /g;  # list items
+s/&lt;text:list\b[^&gt;]*&gt;/\n\n/g;       # lists
+s/&lt;text:p\b[^&gt;]*&gt;/\n  /g;          # paragraphs
+s/&lt;[^&gt;]+&gt;//g;                      # remove all XML tags
+s/\n{2,}/\n\n/g;                   # remove multiple blank lines
+s/\A\n+//;                         # remove leading blank lines
+print &quot;\n&quot;, $_, &quot;\n\n&quot;;
+</code></pre>
+
+<p>And make it executable</p>
+
+<pre><code>chmod +x /usr/local/bin/odt-to-txt
+</code></pre>
+
+<p>Now <code>git diff</code> will be able to tell you what changed in <code>.odt</code> files.</p>
+
+<h5>Image files</h5>
+
+<p>你還能用這個方法解決另一個有趣的問題：比較影像檔。方法之一是對 JPEG 檔執行一個篩檢程式，把 EXIF 資訊捉取出來 — EXIF 資訊是記錄在大部分圖像格式裏面的 metadata。如果你下載並安裝了 <code>exiftool</code> 程式，可以用它把圖檔的 metadata 轉換成文本，於是至少 diff 可以用文字呈現的方式向你展示發生了哪些修改： </p>
+
+<pre><code>$ echo &#39;*.png diff=exif&#39; &gt;&gt; .gitattributes
+$ git config diff.exif.textconv exiftool
+</code></pre>
+
+<p>如果你把專案中的一個影像檔替換成另一個，然後執行 <code>git diff</code> 命令的結果如下： </p>
+
+<pre><code>diff --git a/image.png b/image.png
+index 88839c4..4afcb7c 100644
+--- a/image.png
++++ b/image.png
+@@ -1,12 +1,12 @@
+ ExifTool Version Number         : 7.74
+-File Size                       : 70 kB
+-File Modification Date/Time     : 2009:04:17 10:12:35-07:00
++File Size                       : 94 kB
++File Modification Date/Time     : 2009:04:21 07:02:43-07:00
+ File Type                       : PNG
+ MIME Type                       : image/png
+-Image Width                     : 1058
+-Image Height                    : 889
++Image Width                     : 1056
++Image Height                    : 827
+ Bit Depth                       : 8
+ Color Type                      : RGB with Alpha
+</code></pre>
+
+<p>你可以很容易看出來，檔案的大小跟影像的尺寸都發生了改變。 </p>
+
+<h3 id="關鍵字擴展"><a href="#關鍵字擴展">關鍵字擴展</a></h3>
+
+<p>使用 SVN 或 CVS 的開發人員經常要求關鍵字擴展。這在 Git 中主要的問題是，你無法在一個檔案被提交後再修改它，因為 Git 會先對該檔計算 checksum。然而，你可以在檔案 check out 之後注入(inject)一些文字，然後在提交前再把它移除。Git 屬性提供了兩種方式來進行。 </p>
+
+<p>首先，你可以把某個 blob 的 SHA-1 checksum 自動注入檔案的 $Id$ 欄位。如果在一個或多個檔案上設置了此欄位，當下次你 check out 該分支的時候，Git 會用 blob 的 SHA-1 值替換那個欄位。注意，這不是 commit 物件的 SHA，而是 blob 本身的： </p>
+
+<pre><code>$ echo &#39;*.txt ident&#39; &gt;&gt; .gitattributes
+$ echo &#39;$Id$&#39; &gt; test.txt
+</code></pre>
+
+<p>下次 check out 這個檔案的時候，Git 注入了 blob 的 SHA 值： </p>
+
+<pre><code>$ rm test.txt
+$ git checkout -- test.txt
+$ cat test.txt
+$Id: 42812b7653c7b88933f8a9d6cad0ca16714b9bb3 $
+</code></pre>
+
+<p>然而，這個結果的用處有限。如果你在 CVS 或 Subversion 中用過關鍵字替換，你可以包含一個日期值 -- 而這個 SHA 值沒什麼幫助，因為它相當地隨機，也無法區分某個 SHA 跟另一個 SHA 比起來是比較新或是比較舊。</p>
+
+<p>因此，你可以撰寫自己的篩檢程式，在提交或 checkout 文件時替換關鍵字。有兩種篩檢程式，”clean” 和 ”smudge”。在 <code>.gitattributes</code> 檔中，你能對特定的路徑設置一個篩檢程式，然後設置處理檔案的腳本，這些腳本會在檔案 check out 前（”smudge”，見圖 7-2）和提交前（”clean”，見圖7-3）被執行。這些篩檢程式能夠做各種有趣的事。 </p>
+
+<p><center><img src="/figures/18333fig0702-tn.png"></center><br/>
+Figure 7-2. “smudge” filter 在 checkout 時執行</p>
+
+<p><center><img src="/figures/18333fig0703-tn.png"></center><br/>
+Figure 7-3. “clean” filter 在檔案被 staged 的時候執行</p>
+
+<p>這裡舉一個簡單的例子：在提交前，用 indent（縮進）程式過濾所有C原始程式碼。在 <code>.gitattributes</code> 檔中設置 ”indent” 篩檢程式過濾 <code>*.c</code> 文件： </p>
+
+<pre><code>*.c     filter=indent
+</code></pre>
+
+<p>然後，通過以下配置，讓 Git 知道 ”indent” 篩檢程式在遇到 ”smudge” 和 ”clean” 時分別該做什麼： </p>
+
+<pre><code>$ git config --global filter.indent.clean indent
+$ git config --global filter.indent.smudge cat
+</code></pre>
+
+<p>於是，當你提交 <code>*.c</code> 檔時，indent 程式會被觸發，在把它們 check out 之前，cat 程式會被觸發。但 <code>cat</code> 程式在這裡沒什麼實際作用。這樣的組合，使C原始程式碼在提交前被 indent 程式過濾，非常有效。 </p>
+
+<p>另一個有趣的例子是類似 RCS 的 $Date$ 關鍵字擴展。為了演示，需要一個小腳本，接受檔案名參數，得到專案的最新提交日期，最後把日期寫入該檔。下面用 Ruby 腳本來實現： </p>
+
+<pre><code>#! /usr/bin/env ruby
+data = STDIN.read
+last_date = `git log --pretty=format:&quot;%ad&quot; -1`
+puts data.gsub(&#39;$Date$&#39;, &#39;$Date: &#39; + last_date.to_s + &#39;$&#39;)
+</code></pre>
+
+<p>該腳本從 <code>git log</code> 命令中得到最新提交日期，找到檔案中所有的 $Date$ 字串，最後把該日期填到 $Date$ 字串中 — 此腳本很簡單，你可以選擇你喜歡的程式設計語言來實現。把該腳本命名為 <code>expand_date</code>，放到正確的路徑中，之後需要在 Git 中設置一個篩檢程式（<code>dater</code>），讓它在 check ou 檔案時使用 <code>expand_date</code>，在提交時用 Perl 清除之： </p>
+
+<pre><code>$ git config filter.dater.smudge expand_date
+$ git config filter.dater.clean &#39;perl -pe &quot;s/\\\$Date[^\\\$]*\\\$/\\\$Date\\\$/&quot;&#39;
+</code></pre>
+
+<p>這個 Perl 小程式會刪除 $Date$ 字串裡多餘的字元，恢復 $Date$ 原貌。到目前為止，你的篩檢程式已經設置完畢，可以開始測試了。打開一個檔，在檔中輸入 $Date$ 關鍵字，然後設置 Git 屬性： </p>
+
+<pre><code>$ echo &#39;# $Date$&#39; &gt; date_test.txt
+$ echo &#39;date*.txt filter=dater&#39; &gt;&gt; .gitattributes
+</code></pre>
+
+<p>如果把這些修改提交，之後再 check out，你會發現關鍵字被替換了： </p>
+
+<pre><code>$ git add date_test.txt .gitattributes
+$ git commit -m &quot;Testing date expansion in Git&quot;
+$ rm date_test.txt
+$ git checkout date_test.txt
+$ cat date_test.txt
+# $Date: Tue Apr 21 07:26:52 2009 -0700$
+</code></pre>
+
+<p>雖說這項技術對自訂應用來說很有用，但還是要小心，因為 <code>.gitattributes</code> 檔會隨著專案一起提交，而篩檢程式（例如：<code>dater</code>）不會，所以，它不會在所有地方都成功運作。當你在設計這些篩檢程式時要注意，即使它們無法正常工作，也要讓整個專案運作下去。 </p>
+
+<h3 id="匯出倉庫"><a href="#匯出倉庫">匯出倉庫</a></h3>
+
+<p>Git 屬性在將專案匯出歸檔(archive)時也能發揮作用。 </p>
+
+<h4>export-ignore</h4>
+
+<p>當產生一個 archive 時，可以告訴 Git 不要匯出某些檔案或目錄。如果你不想在 archive 中包含一個子目錄或檔案，但想將他們納入專案的版本管理中，你能對應地設置 <code>export-ignore</code> 屬性。</p>
+
+<p>例如，在 <code>test/</code> 子目錄中有一些測試檔，在專案的壓縮包中包含他們是沒有意義的。因此，可以增加下面這行到 Git 屬性檔中： </p>
+
+<pre><code>test/ export-ignore
+</code></pre>
+
+<p>現在，當運行 git archive 來創建專案的壓縮包時，那個目錄不會在 archive 中出現。 </p>
+
+<h4>export-subst</h4>
+
+<p>還能對 archives 做一些簡單的關鍵字替換。在第2章中已經可以看到，可以以 <code>--pretty=format</code> 形式的簡碼在任何檔中放入 <code>$Format:$</code> 字串。例如，如果想在專案中包含一個叫作 <code>LAST_COMMIT</code> 的檔，當運行 <code>git archive</code> 時，最後提交日期自動地注入進該檔，可以這樣設置： </p>
+
+<pre><code>$ echo &#39;Last commit date: $Format:%cd$&#39; &gt; LAST_COMMIT
+$ echo &quot;LAST_COMMIT export-subst&quot; &gt;&gt; .gitattributes
+$ git add LAST_COMMIT .gitattributes
+$ git commit -am &#39;adding LAST_COMMIT file for archives&#39;
+</code></pre>
+
+<p>執行 <code>git archive</code> 後，打開該檔，會發現其內容如下： </p>
+
+<pre><code>$ cat LAST_COMMIT
+Last commit date: $Format:Tue Apr 21 08:38:48 2009 -0700$
+</code></pre>
+
+<h3 id="合併策略"><a href="#合併策略">合併策略</a></h3>
+
+<p>通過 Git 屬性，還能對專案中的特定檔案使用不同的合併策略。一個非常有用的選項就是，當一些特定檔案發生衝突，Git 不會嘗試合併他們，而使用你這邊的來覆蓋別人的。 </p>
+
+<p>如果專案的一個分支有歧義或比較特別，但你想從該分支合併，而且需要忽略其中某些檔，這樣的合併策略是有用的。例如，你有一個資料庫設置檔 database.xml，在兩個分支中他們是不同的，你想合併一個分支到另一個，而不弄亂該資料庫檔，可以設置屬性如下： </p>
+
+<pre><code>database.xml merge=ours
+</code></pre>
+
+<p>如果合併到另一個分支，database.xml 檔不會有合併衝突，顯示如下： </p>
+
+<pre><code>$ git merge topic
+Auto-merging database.xml
+Merge made by recursive.
+</code></pre>
+
+<p>這樣，database.xml會保持原樣。 </p>
+
+<div id="nav"><a href="/book/zh-tw/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E9%85%8D%E7%BD%AE">prev</a> | <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

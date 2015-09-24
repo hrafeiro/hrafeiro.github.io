@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":534,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Rebase 하기</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">시작하기</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">버전 관리란?</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%A7%A7%EA%B2%8C-%EB%B3%B4%EB%8A%94-Git%EC%9D%98-%EC%97%AD%EC%82%AC">짧게 보는 Git의 역사</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88">Git 기초</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-CLI">CLI</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98">Git 설치</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95">Git 최초 설정</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%8F%84%EC%9B%80%EB%A7%90-%EB%B3%B4%EA%B8%B0">도움말 보기</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git의 기초</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git 저장소 만들기</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0">수정하고 저장소에 저장하기</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">커밋 히스토리 조회하기</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0">되돌리기</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C">리모트 저장소</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%ED%83%9C%EA%B7%B8">태그</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-Alias">Git Alias</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">Git 브랜치</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">브랜치란 무엇인가</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88">브랜치와 Merge 의 기초</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EA%B4%80%EB%A6%AC">브랜치 관리</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-Workflow">브랜치 Workflow</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98">리모트 브랜치</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0">Rebase 하기</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">Git 서버</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">프로토콜</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84%EC%97%90-Git-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">서버에 Git 설치하기</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0">SSH 공개키 만들기</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">서버 설정하기</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-Git-%EB%8D%B0%EB%AA%AC">Git 데몬</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8-HTTP">스마트 HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%84%A0%ED%83%9D%EC%A7%80%2C-%ED%98%B8%EC%8A%A4%ED%8C%85">또 다른 선택지, 호스팅</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Workflow</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">계정 만들고 설정하기</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ko/v2/GitHub-Organization-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">Organization 관리하기</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ko/v2/GitHub-GitHub-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85">GitHub 스크립팅</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ko/v2/GitHub-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">Git 도구</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">리비전 조회하기</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%8C%80%ED%99%94%ED%98%95-%EB%AA%85%EB%A0%B9">대화형 명령</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning">Stashing과 Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90-%EC%84%9C%EB%AA%85%ED%95%98%EA%B8%B0">내 작업에 서명하기</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B2%80%EC%83%89">검색</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%8B%A8%EC%9E%A5%ED%95%98%EA%B8%B0">히스토리 단장하기</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0">Reset 명확히 알고 가기</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B3%A0%EA%B8%89-Merge">고급 Merge</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Git%EC%9C%BC%EB%A1%9C-%EB%B2%84%EA%B7%B8-%EC%B0%BE%EA%B8%B0">Git으로 버그 찾기</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88">서브모듈</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Bundle">Bundle</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Credential-%EC%A0%80%EC%9E%A5%EC%86%8C">Credential 저장소</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git맞춤</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git 설정하기</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%A0%95%EC%B1%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">정책 구현하기</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git으로 이전하기</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git: 범용 Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%EC%9C%BC%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0">Git으로 옮기기</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Git의 내부</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Plumbing 명령과 Porcelain 명령</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-%EA%B0%9C%EC%B2%B4">Git 개체</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-Refs">Git Refs</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Packfile">Packfile</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Refspec">Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">데이터 전송 프로토콜</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%B4%EC%98%81-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B5%EA%B5%AC">운영 및 데이터 복구</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98">환경변수</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">다양한 환경에서 Git 사용하기</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">GUI</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Visual-Studio">Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Eclipse">Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Bash">Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Zsh">Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Powershell">Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">애플리케이션에 Git 넣기</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">Git 명령어</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">Git 명령어</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">설치와 설정</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%EC%99%80-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0">프로젝트 가져오기와 생성하기</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8A%A4%EB%83%85%EC%83%B7-%EB%8B%A4%EB%A3%A8%EA%B8%B0">스냅샷 다루기</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Branch%EC%99%80-Merge">Branch와 Merge</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B3%B5%EC%9C%A0%ED%95%98%EA%B3%A0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0">공유하고 업데이트하기</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%B3%B4%EA%B8%B0%EC%99%80-%EB%B9%84%EA%B5%90">보기와 비교</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Patch-%ED%95%98%EA%B8%B0">Patch 하기</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%8B%A4%EB%A5%B8-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C">다른 버전 관리 시스템</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B4%80%EB%A6%AC">관리</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Plumbing-%EB%AA%85%EB%A0%B9%EC%96%B4">Plumbing 명령어</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>3.6 Git 브랜치 - Rebase 하기</h1>
+  <div><a id="_rebasing"></a><h2>Rebase 하기</h2>
+
+<p><a data-type="indexterm" data-primary="rebasing" id="idp5267568"></a></p>
+
+<p>Git에서 한 브랜치에서 다른 브랜치로 합치는 방법으로는 두 가지가 있다. 하나는 Merge 이고 다른 하나는 Rebase 다.
+이 절에서는 Rebase가 무엇인지, 어떻게 사용하는지, 좋은 점은 뭐고, 어떤 상황에서 사용하고 어떤 상황에서 사용하지 말아야 하는지 알아 본다.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Rebase 의 기초" id="idp5269136"><h3 id="Rebase-의-기초"><a href="#Rebase-의-기초">Rebase 의 기초</a></h3>
+
+<p>앞의 <a data-type="xref" href="ch00/_basic_merging">“Merge 의 기초”</a> 절에서 살펴본 예제로 다시 돌아가 보자. 두 개의 나누어진 브랜치의 모습을 볼 수 있다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-1.png" alt="두 개의 브랜치로 나누어진 커밋 히스토리"></div>
+<figcaption>두 개의 브랜치로 나누어진 커밋 히스토리</figcaption></figure><p>이 두 브랜치를 합치는 가장 쉬운 방법은 앞에서 살펴본 대로 <code>merge</code> 명령을 사용하는 것이다.
+두 브랜치의 마지막 커밋 두 개(<code>C3</code>, <code>C4</code>)와 공통 조상(<code>C2</code>)을 사용하는 3-way Merge로 새로운 커밋을 만들어 낸다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-2.png" alt="나뉜 브랜치를 Merge 하기"></div>
+<figcaption>나뉜 브랜치를 Merge 하기</figcaption></figure><p>비슷한 결과를 만드는 다른 방식으로, <code>C3</code>에서 변경된 사항을 Patch(Patch)로 만들고 이를 다시 <code>C4</code>에 적용시키는 방법이 있다.
+Git에서는 이런 방식을 <em>Rebase</em>라고 한다.
+<code>rebase</code> 명령으로 한 브랜치에서 변경된 사항을 다른 브랜치에 적용할 수 있다.<a data-type="indexterm" data-primary="git commands" data-secondary="rebase" id="idp5334640"></a></p>
+
+<p>위의 예제는 아래와 같은 명령으로 Rebase 한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout experiment
+<code class="gp">$</code> git rebase master
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: added staged command</code></pre>
+
+<p>실제로 일어나는 일을 설명하자면 일단 두 브랜치가 나뉘기 전인 공통 커밋으로 이동하고 나서 그 커밋부터 지금 Checkout 한 브랜치가 가리키는 커밋까지 diff를 차례로 만들어 어딘가에 임시로 저장해 놓는다. Rebase 할 브랜치(역주 - experiment)가 합칠 브랜치(역주 - master)가 가리키는 커밋을 가리키게 하고 아까 저장해 놓았던 변경사항을 차례대로 적용한다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-3.png" alt="`C4`의 변경사항을 `C3`에 적용하는 Rebase 과정"></div>
+<figcaption><code>C4</code>의 변경사항을 <code>C3</code>에 적용하는 Rebase 과정</figcaption></figure><p>그리고 나서 master 브랜치를 Fast-forward 시킨다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge experiment</pre>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/basic-rebase-4.png" alt="master 브랜치를 Fast-forward시키기"></div>
+<figcaption>master 브랜치를 Fast-forward시키기</figcaption></figure><p><code>C4'</code>로 표시된 커밋에서의 내용은 Merge 예제에서 살펴본 <code>C5</code> 커밋에서의 내용과 같을 것이다.
+Merge 이든 Rebase 든 둘 다 합치는 관점에서는 서로 다를 게 없다. 하지만, Rebase가 좀 더 깨끗한 히스토리를 만든다.
+Rebase 한 브랜치의 Log를 살펴보면 히스토리가 선형이다. 일을 병렬로 동시에 진행해도 Rebase 하고 나면 모든 작업이 차례대로 수행된 것처럼 보인다.</p>
+
+<p>Rebase는 보통 리모트 브랜치에 커밋을 깔끔하게 적용하고 싶을 때 사용한다. 아마 이렇게 Rebase 하는 리모트 브랜치는 직접 관리하는 것이 아니라 그냥 참여하는 브랜치일 것이다.
+메인 프로젝트에 Patch를 보낼 준비가 되면 하는 것이 Rebase 니까 브랜치에서 하던 일을 완전히 마치고 <code>origin/master</code>로 Rebase 한다.
+이렇게 Rebase 하고 나면 프로젝트 관리자는 어떠한 통합작업도 필요 없다. 그냥 master 브랜치를 Fast-forward 시키면 된다.</p>
+
+<p>Rebase를 하든지, Merge를 하든지 최종 결과물은 같고 커밋 히스토리만 다르다는 것이 중요하다.
+Rebase 의 경우는 브랜치의 변경사항을 순서대로 다른 브랜치에 적용하면서 합치고 Merge 의 경우는 두 브랜치의 최종결과만을 가지고 합친다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Rebase 활용" id="idp5269760"><h3 id="Rebase-활용"><a href="#Rebase-활용">Rebase 활용</a></h3>
+
+<p>Rebase는 단순히 브랜치를 합치는 것만 아니라 다른 용도로도 사용할 수 있다.
+<a data-type="xref" href="ch00/rbdiag_e">Figure 3-31</a> 같은 히스토리가 있다고 하자.
+<code>server</code> 브랜치를 만들어서 서버 기능을 추가하고
+그 브랜치에서 다시 <code>client</code> 브랜치를 만들어 클라이언트 기능을 추가한다.
+마지막으로 <code>server</code> 브랜치로 돌아가서 몇 가지 기능을 더 추가한다.</p>
+
+<figure id="rbdiag_e"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-1.png" alt="다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치"></div>
+<figcaption>다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치</figcaption></figure><p>이때 테스트가 덜 된 <code>server</code> 브랜치는 그대로 두고 <code>client</code> 브랜치만 <code>master</code>로 합치려는 상황을 생각해보자.
+<code>server</code>와는 아무 관련이 없는 <code>client</code> 커밋은 <code>C8</code>, <code>C9</code>이다. 이 두 커밋을 <code>master</code> 브랜치에 적용하기 위해서 <code>--onto</code> 옵션을 사용하여 아래와 같은 명령을 실행한다:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rebase --onto master server client</pre>
+
+<p>이 명령은 ‘` <code>client</code> 브랜치를 Checkout 하고 <code>server</code>와 <code>client</code>의 공통조상 이후의 Patch를 만들어 <code>master</code>에 적용’'한다.
+조금 복잡하긴 해도 꽤 쓸모 있다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-2.png" alt="다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치를 Rebase 하기"></div>
+<figcaption>다른 토픽 브랜치에서 갈라져 나온 토픽 브랜치를 Rebase 하기</figcaption></figure><p>이제 master 브랜치로 돌아가서 Fast-forward 시킬 수 있다(<a data-type="xref" href="ch00/rbdiag_g">Figure 3-33</a> 참고).</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge client</pre>
+
+<figure id="rbdiag_g"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-3.png" alt="master 브랜치를 client 브랜치 위치로 진행 시키기"></div>
+<figcaption>master 브랜치를 client 브랜치 위치로 진행 시키기</figcaption></figure><p><code>server</code> 브랜치의 일이 다 끝나면 <code>git rebase [basebranch] [topicbranch]</code>라는 명령으로 Checkout 하지 않고 바로 <code>server</code> 브랜치를 <code>master</code> 브랜치로 Rebase 할 수 있다.
+이 명령은 토픽(server) 브랜치를 Checkout 하고 베이스(master) 브랜치에 Rebase 한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rebase master server</pre>
+
+<p>server 브랜치의 수정사항을 master 브랜치에 적용했다. 그 결과는 <a data-type="xref" href="ch00/rbdiag_h">Figure 3-34</a> 같다.</p>
+
+<figure id="rbdiag_h"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-4.png" alt="master 브랜치에 server 브랜치의 수정 사항을 적용"></div>
+<figcaption>master 브랜치에 server 브랜치의 수정 사항을 적용</figcaption></figure><p>그리고 나서 <code>master</code> 브랜치를 Fast-forward 시킨다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge server</pre>
+
+<p>모든 것이 <code>master</code> 브랜치에 통합됐기 때문에 더 필요하지 않다면 <code>client</code>나 <code>server</code> 브랜치는 삭제해도 된다. 브랜치를 삭제해도 커밋 히스토리는 <a data-type="xref" href="ch00/rbdiag_i">Figure 3-35</a> 같이 여전히 남아 있다:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch -d client
+<code class="gp">$</code> git branch -d server</pre>
+
+<figure id="rbdiag_i"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/interesting-rebase-5.png" alt="최종 커밋 히스토리"></div>
+<figcaption>최종 커밋 히스토리</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Rebase 의 위험성" id="_rebase_peril"><h3 id="Rebase-의-위험성"><a href="#Rebase-의-위험성">Rebase 의 위험성</a></h3>
+
+<p><a data-type="indexterm" data-primary="rebasing" data-secondary="perils of" id="idp5538608"></a></p>
+
+<p>Rebase가 장점이 많은 기능이지만 단점이 없는 것은 아니니 조심해야 한다. 그 주의사항은 아래 한 문장으로 표현할 수 있다.</p>
+
+<p><strong>이미 공개 저장소에 Push 한 커밋을 Rebase 하지 마라</strong></p>
+
+<p>이 지침만 지키면 Rebase를 하는 데 문제 될 게 없다.
+하지만, 이 주의사항을 지키지 않으면 사람들에게 욕을 먹을 것이다.</p>
+
+<p>Rebase는 기존의 커밋을 그대로 사용하는 것이 아니라 내용은 같지만 다른 커밋을 새로 만든다.
+새 커밋을 서버에 Push 하고 동료 중 누군가가 그 커밋을 Pull 해서 작업을 한다고 하자. 그런데 그 커밋을 <code>git rebase</code>로 바꿔서 Push 해버리면 동료가 다시 Push 했을 때 동료는 다시 Merge 해야 한다. 그리고 동료가 다시 Merge 한 내용을 Pull 하면 내 코드는 정말 엉망이 된다.</p>
+
+<p>이미 공개 저장소에 Push 한 커밋을 Rebase 하면 어떤 결과가 초래되는지 예제를 통해 알아보자.
+중앙 저장소에서 Clone 하고 일부 수정을 하면
+커밋 히스토리는 아래와 같아 진다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-1.png" alt="저장소를 Clone 하고 일부 수정함"></div>
+<figcaption>저장소를 Clone 하고 일부 수정함</figcaption></figure><p>이제 팀원 중 누군가 커밋, Merge 하고 나서 서버에 Push 한다.
+이 리모트 브랜치를 Fetch, Merge 하면 히스토리는 아래와 같이 된다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-2.png" alt="Fetch 한 후 Merge 함"></div>
+<figcaption>Fetch 한 후 Merge 함</figcaption></figure><p>그런데 Push 했던 팀원은 Merge 한 일을 되돌리고 다시 Rebase 한다. 서버의 히스토리를 새로 덮어씌우려면 <code>git push --force</code> 명령을 사용해야 한다.
+이후에 저장소에서 Fetch 하고 나면 아래 그림과 같은 상태가 된다.</p>
+
+<figure id="_pre_merge_rebase_work"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-3.png" alt="한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함"></div>
+<figcaption>한 팀원이 다른 팀원이 의존하는 커밋을 없애고 Rebase 한 커밋을 다시 Push 함</figcaption></figure><p>자 이렇게 되면 짬뽕이 된다.
+<code>git pull</code>로 서버의 내용을 가져와서 Merge 하면 같은 내용의 수정사항을 포함한 Merge 커밋이 아래와 같이 만들어진다.</p>
+
+<figure id="_merge_rebase_work"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-4.png" alt="같은 Merge를 다시 한다"></div>
+<figcaption>같은 Merge를 다시 한다</figcaption></figure><p><code>git log</code>로 히스토리를 확인해보면 저자, 커밋 날짜, 메시지가 같은 커밋이 두 개 있다(C4, C4'). 이렇게 되면 혼란스럽다.
+게다가 이 히스토리를 서버에 Push 하면 같은 커밋이 두 개 있기 때문에 다른 사람들도 혼란스러워한다.
+<code>C4</code>와 <code>C6</code>는 포함되지 말았어야 할 커밋이다. 애초에 서버로 데이터를 보내기 전에 Rebase로 커밋을 정리했어야 했다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Rebase 한 것을 다시 Rebase 하기" id="_rebase_rebase"><h3 id="Rebase-한-것을-다시-Rebase-하기"><a href="#Rebase-한-것을-다시-Rebase-하기">Rebase 한 것을 다시 Rebase 하기</a></h3>
+
+<p>만약 이런 상황에 빠질 때에 유용한 Git 기능이 하나 있다. 어떤 팀원이 강제로 내가 한일을 덮어썼다고 하자. 그러면 내가 했던 일이 무엇이고 덮어쓴 내용이 무엇인지 알아내야 한다.</p>
+
+<p>커밋 SHA 체크섬 외에도 Git은 커밋에 Patch 할 내용으로 SHA 체크섬을 한번 더 구한다. 이 값은 “patch-id”라고 한다.</p>
+
+<p>덮어쓴 커밋을 받아서 그 커밋을 기준으로 Rebase 할 때 Git은 원래 누가 작성한 코드인지 잘 찾아 낸다. 그래서 Patch가 원래대로 잘 적용된다.</p>
+
+<p>예를 들어 앞서 살펴본 예제를 보면 <a data-type="xref" href="ch00/_pre_merge_rebase_work">Figure 3-38</a> 상황에서 Merge 하는 대신 <code>git rebase teamone/master</code> 명령을 실행하면 Git은 아래와 같은 작업을 한다.</p>
+
+<ul>
+<li>
+<p>현재 브랜치에만 포함된 커밋을 찾는다. (C2, C3, C4, C6, C7)</p>
+</li>
+<li>
+<p>Merge 커밋을 가려낸다. (C2, C3, C4)</p>
+</li>
+<li>
+<p>이 중 덮어쓰지 않은 커밋들만 골라낸다. (C2, C3. C4는 C4'와 동일한 Patch다)</p>
+</li>
+<li>
+<p>남은 커밋들만 다시 <code>teamone/master</code> 바탕으로 커밋을 쌓는다.</p>
+</li>
+</ul>
+<p>결과를 확인해보면 <a data-type="xref" href="ch00/_merge_rebase_work">Figure 3-39</a> 같은 결과 대신 제대로 정리된 <a data-type="xref" href="ch00/_rebase_rebase_work">Figure 3-40</a> 같은 결과를 얻을 수 있다.</p>
+
+<figure id="_rebase_rebase_work"><div class="border-box"><img src="/book/en/v2/book/03-git-branching/images/perils-of-rebasing-5.png" alt="강제로 덮어쓴 브랜치에 Rebase 하기"></div>
+<figcaption>강제로 덮어쓴 브랜치에 Rebase 하기</figcaption></figure><p>동료가 생성했던 C4와 C4’ 커밋 내용이 완전히 같을 때만 이렇게 동작된다. 커밋 내용이 아예 다르거나 비슷하다면 커밋이 두 개 생긴다(같은 내용이 두 번 커밋될 수 있기 때문에 깔끔하지 않다).</p>
+
+<p><code>git pull</code> 명령을 실행할 때 옵션을 붙여서 <code>git pull --rebase</code>로 Rebase 할 수도 있다. 물론 <code>git fetch</code>와 <code>git rebase teamone/master</code>이 두 명령을 직접 순서대로 실행해도 된다.</p>
+
+<p><code>git pull</code> 명령을 실행할 때 기본적으로 <code>--rebase</code> 옵션이 적용되도록 pull.rebase` 설정을 추가할 수 있다. <code>git config --global pull.rebase true</code> 명령으로 추가한다.</p>
+
+<p>Push 하기 전에 정리하려고 Rebase 하는 것은 괜찮다. 또 절대 공개하지 않고 혼자 Rebase 하는 경우도 괜찮다.
+하지만, 이미 공개하여 사람들이 사용하는 커밋을 Rebase 하면 틀림없이 문제가 생긴다.</p>
+
+<p>나중에 후회하지 말고 <code>git pull --rebase</code>로 문제를 미리 방지할 수 있다는 것을 같이 작업하는 동료와 모두 함께 공유하기 바란다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Rebase vs. Merge" id="idp5565264"><h3 id="Rebase-vs.-Merge"><a href="#Rebase-vs.-Merge">Rebase vs. Merge</a></h3>
+
+<p><a data-type="indexterm" data-primary="rebasing" data-secondary="vs. merging" id="idp5486928"></a><a data-type="indexterm" data-primary="merging" data-secondary="vs. rebasing" id="idp5487904"></a></p>
+
+<p>Merge가 뭔지, Rebase가 뭔지 여러 예제를 통해 간단히 살펴보았다. 지금쯤 이런 의문이 들 거로 생각한다. 둘 중 무엇을 쓰는 게 좋지?
+이 질문에 대한 답을 찾기 전에 히스토리의 의미에 대해서 잠깐 다시 생각해보자.</p>
+
+<p>히스토리를 보는 관점 중에 하나는 <strong>작업한 내용의 기록</strong>으로 보는 것이 있다.
+작업 내용을 기록한 문서이고, 각 기록은 각각 의미를 가지며, 변경할 수 없다.
+이런 관점에서 커밋 히스토리를 변경한다는 것은 역사를 부정하는 꼴이 된다. 언제 무슨 일이 있었는지 기록에 대해 <em>거짓말</em>을 하게 되는 것이다.
+이렇게 했을 때 지저분하게 수많은 Merge 커밋이 히스토리에 남게 되면 문제가 없을까?
+<strong>역사</strong>는 후세를 위해 기록하고 보존해야 한다.</p>
+
+<p>히스토리를 <strong>프로젝트가 어떻게 진행되었나에 대한 이야기</strong>로도 볼 수 있다.
+소프트웨어를 주의 깊게 편집하는 방법에 메뉴얼이나 세세한 작업내용을 초벌부터 공개하고 싶지 않을 수 있다.
+나중에 다른 사람에게 들려주기 좋도록 Rebase 나 filter-branch 같은 도구로 프로젝트의 진행 이야기를 다듬으면 좋다.</p>
+
+<p>Merge 나 Rebase 중 무엇이 나으냐는 질문은 다시 생각해봐도 답이 그리 간단치 않다.
+Git은 매우 강력한 도구고 기능이 많아서 히스토리를 잘 쌓을 수 있지만, 모든 팀과 모든 이가 처한 상황은 모두 다르다.
+예제를 통해 Merge 나 Rebase가 무엇이고 어떤 의미인지 배웠다. 이 둘을 어떻게 쓸지는 각자의 상황과 각자의 판단에 달렸다.</p>
+
+<p>일반적인 해답을 굳이 드리자면 로컬 브랜치에서 작업할 때는 히스토리를 정리하기 위해서 Rebase 할 수도 있지만, Push로 리모트에든 밖으로 내보낸 커밋에 대해서는 절대 Rebase 하지 말아야 한다.</p>
+</section><div id="nav"><a href="/book/ko/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98">prev</a> | <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9A%94%EC%95%BD">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

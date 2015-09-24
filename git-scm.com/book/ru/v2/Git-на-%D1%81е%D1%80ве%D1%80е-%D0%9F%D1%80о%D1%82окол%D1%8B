@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":3,"applicationTime":672,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Протоколы</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-is-the-new-centralized
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О системе контроля версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0">Командная строка</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D1%8B">Операции отмены</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-Working-with-Remotes">Working with Remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC%D1%8B-%D0%B2-Git">Псевдонимы в Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">О ветвлении в двух словах</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Branching-Workflows">Branching Workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Установка Git на сервер</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Генерация открытого SSH ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D0%BC%D0%BD%D1%8B%D0%B9-HTTP">Умный HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Распределенный Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">Настройка и конфигурация учетной записи</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">Внесение собственного вклада в проекты</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v2/GitHub-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%B8%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0">Прибережение и очистка</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2%D0%B0%D1%88%D0%B5%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B">Подпись результатов вашей работы</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">Поиск</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Исправление истории</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">Раскрытие тайн reset</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5">Продвинутое слияние</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Обнаружение ошибок с помощью Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">Создание пакетов</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0">Замена</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Хранилище учетных данных</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Настройка Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git как клиент</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Git изнутри</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и Фарфор</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-Git">Объекты Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Протоколы передачи данных</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Уход за репозиторием и восстановление данных</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B">Переменные среды</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>4.1 Git на сервере - Протоколы</h1>
+  <div><a id="git-na-servere-2OnsW"></a><p><a data-type="indexterm" data-primary="serving repositories" id="id-2vWio"></a>
+К этому моменту вы уже должны уметь делать большую часть повседневных задач, для которых вы будете использовать Git.
+Однако, для совместной работы в Git, вам необходим удаленный репозиторий.
+Несмотря на то, что технически вы можете отправлять и забирать изменения непосредственно из личных репозиториев, делать это не рекомендуется. Вы легко можете испортить то, над чем работают другие, если не будете аккуратны.
+К тому же, вам бы наверняка хотелось, чтобы остальные имели доступ к репозиторию даже если ваш компьютер выключен, поэтому наличие более надежного репозитория обычно весьма полезно.
+Предпочтительный метод взаимодействия с кем-либо ― это создание промежуточного репозитория, к которому вы оба будете иметь доступ, и отправка и получение изменений через него.</p><a id="protokoly-XJNfM"></a><h2>Протоколы</h2>
+
+<p>Git умеет работать с четырьмя сетевыми протоколами для передачи данных: локальный, HTTP, Secure Shell (SSH) и Git.
+В этой части мы обсудим каждый из них, и в каких случаях стоит (или не стоит) его использовать.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="lokalnyj-protokol-XwVtK"><h3 id="Локальный-протокол"><a href="#Локальный-протокол">Локальный протокол</a></h3>
+
+<p><a data-type="indexterm" data-primary="protocols" data-secondary="local" id="id-Q7Lsl"></a>
+Базовым протоколом является <em>Локальный протокол</em>, при использовании которого удаленный репозиторий ― другой каталог на диске.
+Наиболее часто он используется, если все члены команды имеют доступ к общей файловой системе, например к NFS, или, что менее вероятно, когда все работают на одном компьютере.
+Последний вариант не столь хорош, поскольку все копии вашего репозитория находятся на одном компьютере, делая возможность потерять всё более вероятной.</p>
+
+<p>Если у вас смонтирована общая файловая система, вы можете клонировать, отправлять и получать изменения из локального репозитория.
+Чтобы клонировать такой репозиторий или добавить его в качестве удаленного в существующий проект, используйте путь к репозиторию в качестве URL.
+Например, для клонирования локального репозитория вы можете выполнить что-то вроде этого:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone /opt/git/project.git
+</pre>
+
+<p>Или этого:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone file:///opt/git/project.git
+</pre>
+
+<p>Git работает немного по-другому, если вы явно укажете префикс <code>file://</code> в начале вашего URL.
+Когда вы просто указываете путь, Git пытается использовать жесткие ссылки и копировать файлы, когда это нужно.
+Если вы указываете <code>file://</code>, Git работает с данными так же, как при использовании сетевых протоколов, что в целом — менее эффективный способ передачи данных.
+Причиной для использования <code>file://</code> может быть необходимость создания чистой копии репозитория без лишних внешних ссылок и объектов, обычно после импорта из другой системы управления версиями или чего-то похожего (см. <a data-type="xref" href="1-git-internals/_git_internals">Git изнутри</a> о задачах поддержки).
+Мы будем использовать обычные пути, поскольку это практически всегда быстрее.</p>
+
+<p>Чтобы добавить локальный репозиторий в существующий проект, вы можете воспользоваться командой:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add local_proj /opt/git/project.git
+</pre>
+
+<p>Теперь вы можете отправлять и получать изменения из этого репозитория так, как вы это делали по сети.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="dostoinstva-2dJH8"><h4>Достоинства</h4>
+
+<p>Преимущества основанных на файлах хранилищ в том, что они просты и используют существующие разграничения прав на файлы и сетевой доступ.
+Если у вас уже есть общая файловая система, доступ к которой имеет вся команда, настройка репозитория очень проста.
+Вы помещаете голый репозиторий туда, куда все имеют доступ, и выставляете права на чтение и запись, как вы бы это сделали для любого другого общего каталога.
+Мы обсудим, как экспортировать голую копию репозитория для этой цели, в следующем разделе: <a data-type="xref" href="ch00/_git_on_the_server">Установка Git на сервер</a>.</p>
+
+<p>Также это хорошая возможность быстро получить наработки из чьего-то рабочего репозитория.
+Если вы и ваш коллега работаете над одним и тем же проектом, и он хочет, чтобы вы что-то проверили, то запуск команды вроде <code>git pull /home/john/project</code> зачастую проще, чем отправлять и забирать с удалённого сервера.</p>
+</section><section data-type="sect3" id="nedostatki-4LzU6"><h4>Недостатки</h4>
+
+<p>Недостаток этого метода в том, что общий доступ обычно сложнее настроить и получить из разных мест, чем простой сетевой доступ.
+Если вы хотите отправлять со своего ноутбука, когда вы дома, вы должны смонтировать удалённый диск, что может оказаться сложнее и медленнее, чем сетевой доступ.</p>
+
+<p>Также важно упомянуть, что не всегда использование общей точки монтирования является быстрейшим вариантом.
+Локальный репозиторий быстр, только если вы имеете быстрый доступ к данным.
+Репозиторий на NFS часто медленнее, чем репозиторий через SSH на том же сервере, позволяющий Git использовать на полную локальные диски на каждой системе.</p>
+</section></section><section data-type="sect2" id="protokoly-http-Q73CM"><h3 id="Протоколы-HTTP"><a href="#Протоколы-HTTP">Протоколы HTTP</a></h3>
+
+<p>Git может работать через HTTP в двух различных режимах.
+До версии Git 1.6.6 был только один режим, очень простой и предназначенный только для чтения.
+В версии 1.6.6 появился новый, более умный режим, позволяющий Git более интеллектуально определять необходимость передачи данных, наподобие того, как это происходит при использовании SSH.
+В последние годы новый протокол стал очень популярен, так как он проще для пользователя и более эффективен.
+Новая версия часто называется “Умным” (“Smart”) HTTP, а старая “Тупым” (“Dumb”) HTTP.
+Мы рассмотрим сначала “умный” протокол.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="umnyj-http-O1niW"><h4>Умный HTTP</h4>
+
+<p><a data-type="indexterm" data-primary="protocols" data-secondary="smart HTTP" id="id-RKyIA"></a>
+“Умный” протокол HTTP работает схожим с SSH или Git-протоколами образом, но поверх стандартных HTTP/S портов и может использовать различные механизмы аутентификации HTTP, это часто проще для пользователя, чем что-то вроде SSH, так как можно использовать вещи вроде базовой парольной идентификации вместо установки SSH-ключей.</p>
+
+<p>Он стал наверное наиболее популярным способом использования Git, так как может использоваться и для анонимного доступа, как протокол <code>git://</code>, и для отправки изменений с аутентификацией и шифрованием, как протокол SSH. Вместо использования разных адресов URL для этих вещей, можно использовать один для всего. Если вы пытаетесь отослать изменения и репозиторий требует аутентификации (обычно так и есть), сервер может спросить логин и пароль. То же касается и доступа на чтение.</p>
+
+<p>На самом деле для сервисов вроде GitHub, адрес URL который вы используете для просмотра репозитория в браузере (например, “<a href="https://github.com/schacon/simplegit"><em class="hyperlink">https://github.com/schacon/simplegit</em></a>”) — тот же, который вы можете использовать для клонирования или, если у вас есть доступ, для отправки изменений.</p>
+</section><section data-type="sect3" id="tupoj-http-WoJtd"><h4>Тупой HTTP</h4>
+
+<p><a data-type="indexterm" data-primary="protocols" data-secondary="dumb HTTP" id="id-mz5sE"></a>
+Если сервер не отвечает на умный запрос Git по HTTP, клиент Git попытается откатиться на более простой “тупой” HTTP-протокол.
+Тупой протокол ожидает, что голый репозиторий Git будет обслуживаться веб-сервером как набор файлов.
+Прелесть тупого протокола HTTP — в простоте настройки.
+По сути, всё, что необходимо сделать ― поместить голый репозиторий внутрь каталога с HTTP документами, установить обработчик <code>post-update</code> и всё (см. <a data-type="xref" href="1-customizing-git/_git_hooks">Git Hooks</a>).
+Теперь каждый, имеющий доступ к веб-серверу, на котором был размещен репозиторий, может его клонировать.
+Таким образом, чтобы открыть доступ к вашему репозиторию на чтение через HTTP, нужно сделать что-то наподобие этого:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd</code> /var/www/htdocs/
+<code class="gp">$</code> git clone --bare /path/to/git_project gitproject.git
+<code class="gp">$</code> <code class="nb">cd </code>gitproject.git
+<code class="gp">$</code> mv hooks/post-update.sample hooks/post-update
+<code class="gp">$</code> chmod a+x hooks/post-update
+</pre>
+
+<p>Вот и всё.<a data-type="indexterm" data-primary="hooks" data-secondary="post-update" id="id-xvBFO"></a>
+Обработчик <code>post-update</code>, входящий в состав Git по умолчанию, выполняет необходимую команду (<code>git update-server-info</code>), чтобы извлечение (fetch) и клонирование (clone) по HTTP работали правильно.
+Эта команда выполняется, когда вы отправляете изменения в репозиторий (возможно посредством SSH); Затем остальные могут клонировать его командой</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://example.com/gitproject.git
+</pre>
+
+<p>В рассмотренном примере мы использовали каталог /var/www/htdocs, обычно используемый сервером Apache, но вы можете использовать любой веб-сервер, отдающий статические данные, расположив голый репозиторий в нужном каталоге.
+Данные Git представляют собой обычные файлы (в <a data-type="xref" href="1-git-internals/_git_internals">Git изнутри</a> предоставление данных рассматривается более подробно).</p>
+
+<p>Чаще всего вы будете использовать умный HTTP для чтения/записи, либо тупой только для чтения. Случай совместного их использования встречаются редко.</p>
+</section><section data-type="sect3" id="dostoinstva-g3Mt8"><h4>Достоинства</h4>
+
+<p>Мы сосредоточимся на преимуществах умной версии протокола HTTP.</p>
+
+<p>Простота использования одного адреса URL для всех типов доступа и аутентификация только при необходимости делает работу очень простой для конечного пользователя.
+Возможность аутентификации посредством логина и пароля также даёт преимущество перед SSH, так как пользователям перед использованием не нужно создавать SSH-ключи и загружать публичную часть на сервер.
+Для неопытных пользователей или пользователей систем, где SSH мало распространён, это большой плюс.
+Это также очень быстрый и эффективный протокол, сравнимый с SSH.</p>
+
+<p>Вы также можете раздавать доступ к своим репозиториям только для чтения по HTTPS, шифруя содержимое передачи; или вы можете зайти так далеко, что клиенты будут использовать персональные подписанные SSL-сертификаты.</p>
+
+<p>Другой плюс в том, что HTTP/S очень распространённые протоколы и корпоративные брандмауэры часто настроены для разрешения их работы.</p>
+</section><section data-type="sect3" id="nedostatki-eGdt9"><h4>Недостатки</h4>
+
+<p>На некоторых серверах Git поверх HTTP/S может быть немного сложнее в настройке по сравнению с SSH.
+Кроме этого, преимущества других протоколов доступа к Git перед “Умным” HTTP незначительны.</p>
+
+<p>Если вы используете HTTP для отправки изменений, удостоверение ваших полномочий зачастую сложнее, чем при использовании SSH-ключей. Но есть несколько инструментов для кеширования полномочий, включая Keychain access на OSX и Credential Manager на Windows, которые вы можете использовать для упрощения процесса. В <a data-type="xref" href="1-git-tools/_credential_caching">Хранилище учетных данных</a> кеширование паролей HTTP рассматривается подробней.</p>
+</section></section><section data-type="sect2" id="protokol-ssh-y7Nhk"><h3 id="Протокол-SSH"><a href="#Протокол-SSH">Протокол SSH</a></h3>
+
+<p><a data-type="indexterm" data-primary="protocols" data-secondary="SSH" id="id-vWWHo"></a>
+Часто используемый транспортный протокол для хостинга Git — это SSH.
+Причина этого в том, что доступ по SSH уже есть на многих серверах, а если его нет, то его очень легко настроить.
+К тому же, SSH — протокол с аутентификацией, и его благодаря распространенности обычно легко настроить и использовать.</p>
+
+<p>Чтобы клонировать Git-репозиторий по SSH, вы можете указать префикс ssh:// в URL, например:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone ssh://user@server/project.git
+</pre>
+
+<p>Или можно использовать для протокола SSH краткий синтаксис наподобие scp:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone user@server:project.git
+</pre>
+
+<p>Также вы можете не указывать имя пользователя, Git будет использовать то, под которым вы вошли в систему.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="dostoinstva-6oZsb"><h4>Достоинства</h4>
+
+<p>SSH имеет множество достоинств.
+Во-первых, SSH достаточно легко настроить ― демоны SSH распространены, многие системные администраторы имеют опыт работы с ними, и во многих дистрибутивах они уже настроены или есть утилиты для управления ими.
+Далее, доступ по SSH безопасен ― данные передаются зашифрованными по авторизованным каналам.
+Наконец, так же как и протоколы HTTP/S, Git и локальный протокол, SSH эффективен, максимально сжимая данные перед передачей.</p>
+</section><section data-type="sect3" id="nedostatki-pAGfG"><h4>Недостатки</h4>
+
+<p>Недостаток SSH в том, что, используя его, вы не можете обеспечить анонимный доступ к репозиторию.
+Клиенты должны иметь доступ к машине по SSH, даже для работы в режиме только на чтение, что делает SSH неподходящим для проектов с открытым исходным кодом.
+Если вы используете Git только внутри корпоративной сети, то, возможно, SSH — единственный протокол, с которым вам придется иметь дело.
+Если же вам нужен анонимный доступ на чтение для своих проектов, придется настроить SSH для себя, чтобы выкладывать изменения, и что-нибудь другое для других, для скачивания.</p>
+</section></section><section data-type="sect2" id="git-protokol-o1xT6"><h3 id="Git-протокол"><a href="#Git-протокол">Git-протокол</a></h3>
+
+<p><a data-type="indexterm" data-primary="protocols" data-secondary="git" id="id-kNqS1"></a>
+Следующий протокол ― Git-протокол.
+Вместе с Git поставляется специальный демон, который слушает отдельный порт (9418) и предоставляет сервис, схожий с протоколом SSH, но абсолютно без аутентификации.
+Чтобы использовать Git-протокол для репозитория, вы должны создать файл <code>git-export-daemon-ok</code>, иначе демон не будет работать с этим репозиторием, но следует помнить, что в протоколе отсутствуют средства безопасности.
+Соответственно, любой репозиторий в Git может быть либо доступен для клонирования всем, либо нет.
+Как следствие, обычно отправлять изменения по этому протоколу нельзя.
+Вы можете открыть доступ на запись, но из-за отсутствия аутентификации в этом случае кто угодно, зная URL вашего проекта, сможет его изменить.
+В общем, это редко используемая возможность.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="dostoinstva-WRaCd"><h4>Достоинства</h4>
+
+<p>Git-протокол ― часто самый быстрый из доступных протоколов.
+Если у вас проект с публичным доступом и большой трафик, или у вас очень большой проект, для которого не требуется аутентификация пользователей для чтения, вам стоит настроить демон Git для вашего проекта.
+Он использует тот же механизм передачи данных, что и протокол SSH, но без дополнительных затрат на шифрование и аутентификацию.</p>
+</section><section data-type="sect3" id="nedostatki-DowSJ"><h4>Недостатки</h4>
+
+<p>Недостатком Git-протокола является отсутствие аутентификации.
+Поэтому обычно не следует использовать этот протокол как единственный способ доступа к вашему проекту.
+Обычно он используется в паре с SSH или HTTPS для нескольких разработчиков, имеющих доступ на запись, тогда как все остальные используют <code>git://</code> с доступом только на чтение.
+Кроме того, это, вероятно, самый сложный для настройки протокол.
+Вы должны запустить собственно демон, для чего необходим сервис <code>xinetd</code> или ему подобный, что не всегда легко сделать.
+Также необходимо, чтобы сетевой экран позволял доступ на порт 9418, который не относится к стандартным портам, всегда разрешённым в корпоративных брандмауэрах.
+За сетевыми экранами крупных корпораций этот неизвестный порт часто заблокирован.</p>
+</section></section><div id="nav"><a href="/book/ru/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">prev</a> | <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

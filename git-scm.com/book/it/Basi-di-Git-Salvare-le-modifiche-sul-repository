@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1,"applicationTime":106,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Salvare le modifiche sul repository</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/it/v1/Per-Iniziare">Per Iniziare</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/it/v1/Per-Iniziare-Il-Controllo-di-Versione">Il Controllo di Versione</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/it/v1/Per-Iniziare-Una-Breve-Storia-di-Git">Una Breve Storia di Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/it/v1/Per-Iniziare-Basi-di-Git">Basi di Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/it/v1/Per-Iniziare-Installare-Git">Installare Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/it/v1/Per-Iniziare-Prima-Configurazione-di-Git">Prima Configurazione di Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/it/v1/Per-Iniziare-Ottieni-aiuto">Ottieni aiuto</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/it/v1/Per-Iniziare-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/it/v1/Basi-di-Git">Basi di Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/it/v1/Basi-di-Git-Repository-Git">Repository Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/it/v1/Basi-di-Git-Salvare-le-modifiche-sul-repository">Salvare le modifiche sul repository</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/it/v1/Basi-di-Git-Vedere-la-cronologia-delle-commit">Vedere la cronologia delle commit</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/it/v1/Basi-di-Git-Annullare-qualcosa">Annullare qualcosa</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/it/v1/Basi-di-Git-Lavorare-coi-server-remote">Lavorare coi server remote</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/it/v1/Basi-di-Git-Suggerimenti">Suggerimenti</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/it/v1/Basi-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/it/v1/Diramazioni-in-Git">Diramazioni in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/it/v1/Diramazioni-in-Git-Cos-%C3%A8-un-Ramo">Cos&#39;è un Ramo</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/it/v1/Diramazioni-in-Git-Basi-di-Diramazione-e-Fusione">Basi di Diramazione e Fusione</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/it/v1/Diramazioni-in-Git-Amministrazione-dei-Rami">Amministrazione dei Rami</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/it/v1/Diramazioni-in-Git-Flusso-di-Lavoro-con-le-Ramificazioni">Flusso di Lavoro con le Ramificazioni</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/it/v1/Diramazioni-in-Git-Rami-Remoti">Rami Remoti</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/it/v1/Diramazioni-in-Git-Rifondazione">Rifondazione</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/it/v1/Diramazioni-in-Git-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/it/v1/Git-sul-Server">Git sul Server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/it/v1/Git-sul-Server-I-Protocolli">I Protocolli</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/it/v1/Git-sul-Server-Mettere-Git-su-di-un-server">Mettere Git su di un server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/it/v1/Git-sul-Server-Generare-la-Propria-Chiave-Pubblica-SSH">Generare la Propria Chiave Pubblica SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/it/v1/Git-sul-Server-Configurare-il-Server">Configurare il Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/it/v1/Git-sul-Server-Accesso-Pubblico">Accesso Pubblico</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/it/v1/Git-sul-Server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/it/v1/Git-sul-Server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/it/v1/Git-sul-Server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/it/v1/Git-sul-Server-Demone-Git">Demone Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/it/v1/Git-sul-Server-Hosting-Git">Hosting Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/it/v1/Git-sul-Server-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/it/v1/Git-distribuito">Git distribuito</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/it/v1/Git-distribuito-Workflows-distribuiti">Workflows distribuiti</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/it/v1/Git-distribuito-Contribuire-a-un-Progetto">Contribuire a un Progetto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/it/v1/Git-distribuito-Mantenere-un-Progetto">Mantenere un Progetto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/it/v1/Git-distribuito-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/it/v1/Strumenti-di-Git">Strumenti di Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/it/v1/Strumenti-di-Git-Selezione-della-revisione">Selezione della revisione</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/it/v1/Strumenti-di-Git-Assemblaggio-interattivo">Assemblaggio interattivo</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/it/v1/Strumenti-di-Git-Accantonare">Accantonare</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/it/v1/Strumenti-di-Git-Riscrivere-la-storia">Riscrivere la storia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/it/v1/Strumenti-di-Git-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/it/v1/Strumenti-di-Git-Moduli">Moduli</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/it/v1/Strumenti-di-Git-Subtree-Merging">Subtree Merging</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/it/v1/Strumenti-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/it/v1/Personalizzare-Git">Personalizzare Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/it/v1/Personalizzare-Git-Configurazione-di-Git">Configurazione di Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/it/v1/Personalizzare-Git-Attributi-di-Git">Attributi di Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/it/v1/Personalizzare-Git-Git-Hooks">Git Hooks</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/it/v1/Git-e-altri-sistemi">Git e altri sistemi</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/it/v1/Git-e-altri-sistemi-Git-e-Subversion">Git e Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/it/v1/Git-e-altri-sistemi-Migrare-a-Git">Migrare a Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/it/v1/Git-e-altri-sistemi-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/it/v1/I-comandi-interni-di-Git">I comandi interni di Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Impianto-e-sanitari-%3Cem%3EPlumbing%3C%2Fem%3E-e-%3Cem%3EPorcelain%3C%2Fem%3E">Impianto e sanitari (<em>Plumbing</em> e <em>Porcelain</em>)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Gli-oggetti-di-Git">Gli oggetti di Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/it/v1/I-comandi-interni-di-Git-I-riferimenti-di-Git">I riferimenti di Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Pacchetti-di-file">Pacchetti di file</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Le-specifiche-di-riferimento-%3Cem%3Erefspec%3C%2Fem%3E">Le specifiche di riferimento (<em>refspec</em>)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Protocolli-di-trasferimento">Protocolli di trasferimento</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Manutenzione-e-recupero-dei-dati">Manutenzione e recupero dei dati</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>2.2 Basi di Git - Salvare le modifiche sul repository</h1>
+  <div><h2>Salvare le modifiche sul repository</h2>
+
+<p>Hai clonato un vero repository Git e hai la copia di lavoro dei file del progetto. Ora puoi fare qualche modifica e inviare gli snapshots di queste al tuo repository ogni volta che il progetto raggiunga uno stato che vuoi salvare.</p>
+
+<p>Ricorda che ogni file della tua directory di lavoro può essere in uno dei due stati seguenti: <em>tracked</em> (tracciato, ndt.) o <em>untracked</em> (non tracciato, ndt.). I file <em>tracked</em> sono già presenti nell&#39;ultimo snapshot; possono quindi essere <em>unmodified</em> (non modificati, ndt.), <em>modified</em> (modificati, ndt.) o <em>staged</em>. I file <em>untracked</em> sono tutti gli altri: qualsiasi file nella tua directory di lavoro che non è presente nell&#39;ultimo snapshot o nella tua area di stage. Quando cloni per la prima volta un repository, tutti i tuoi file sono tracciati e non modificati perché li hai appena prelevati e non hai modificato ancora niente.</p>
+
+<p>Quando editi dei file, Git li vede come modificati, perché sono cambiati rispetto all&#39;ultima commit. Metti nell&#39;area di stage i file modificati e poi fai la commit di tutto ciò che è in quest&#39;area, e quindi il ciclo si ripete. Questo ciclo di vita è illustrato nella Figura 2-1.</p>
+
+<p><center><img src="/figures/18333fig0201-tn.png"></center><br/>
+Figura 2-1. Il ciclo di vita dello stato dei tuoi file.</p>
+
+<h3 id="Controlla-lo-stato-dei-tuoi-file"><a href="#Controlla-lo-stato-dei-tuoi-file">Controlla lo stato dei tuoi file</a></h3>
+
+<p>Lo strumento principale che userai per determinare lo stato dei tuoi file è il comando <code>git status</code>. Se esegui questo comando appena dopo un clone, dovresti vedere qualcosa di simile:</p>
+
+<pre><code>$ git status
+# On branch master
+nothing to commit, working directory clean
+</code></pre>
+
+<p>Questo significa che hai una directory di lavoro pulita, ovvero che nessuno dei file tracciati è stato modificato. Inoltre Git non ha trovato nessun file non ancora tracciato, altrimenti sarebbero elencati qui. In aggiunta il comando indica anche in quale ramo sei. Per ora, è sempre <code>master</code>, che è il predefinito; non preoccupartene per ora. Il prossimo capitolo tratterà in dettagli dei <code>branch</code> (ramificazioni) e dei riferimenti.</p>
+
+<p>Immagina di aver aggiunto un nuovo file al tuo progetto, un semplice README. Se il file non esisteva e lanci <code>git status</code>, vedrai così il file non tracciato:</p>
+
+<pre><code>$ vim README
+$ git status
+On branch master
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        README
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre>
+
+<p>Puoi vedere che il nuovo file README non è tracciato poiché nell&#39;output è nella sezione dal titolo &quot;Untracked files&quot;. <code>Untracked</code> significa che Git vede un file che non avevi nello <code>snapshot</code> precedente (commit); Git non lo includerà negli snapshot delle tuoe commit fino a quando non glielo dirai esplicitamente. Fa così per evitare che includa accidentalmente dei file binari generati o qualsiasi altro tipo di file che non intendi includere. Se vuoi includere il  README, iniziamo a tracciarlo.</p>
+
+<h3 id="Tracciare-Nuovi-File"><a href="#Tracciare-Nuovi-File">Tracciare Nuovi File</a></h3>
+
+<p>Per iniziare a tracciare un nuovo file, si usa il comando <code>git add</code>. Per tracciare il file <code>README</code>, usa questo comando:</p>
+
+<pre><code>$ git add README
+</code></pre>
+
+<p>Se lanci nuovamente il comando per lo stato, puoi vedere che il tuo file <code>README</code> ora è tracciato e nell&#39;area di <code>stage</code>:</p>
+
+<pre><code>$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        new file:   README
+</code></pre>
+
+<p>Sai che è nell&#39;area di <code>stage</code> perché è nella sezione &quot;Changes to be committed&quot;. Se a questo punto fai commit, la versione del file com&#39;era quando hai lanciato <code>git add</code> sarà quella che troverai nella cronologia dello snapshot. Ricorderai che quando prima hai eseguito <code>git init</code>, poi hai dovuto lanciare <code>git add (file)</code>, che era necessario per iniziare a tracciare i file nella tua directory. Il comando <code>git add</code> accetta il nome del percorso di un file o una directory; se è una directory, il comando aggiunge ricorsivamente tutti i file in quella directory.</p>
+
+<h3 id="Fare-lo-stage-dei-file-modificati"><a href="#Fare-lo-stage-dei-file-modificati">Fare lo stage dei file modificati</a></h3>
+
+<p>Modifichiamo un file che è già tracciato. Se modifichi un file tracciato chiamato <code>benchmarks.rb</code> e poi esegui il comando <code>status</code>, otterrai qualcosa di simile a:</p>
+
+<pre><code>$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        new file:   README
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   benchmarks.rb
+</code></pre>
+
+<p>Il file benchmarks.rb appare nella sezione chiamata &quot;Changes not staged for commit&quot; — che significa che un file tracciato è stato modificato nella directory di lavoro ma non è ancora nello stage. Per farlo, esegui il comando <code>git add</code> (è un comando multifunzione — lo usi per iniziare a tracciare nuovi file, per fare lo stage dei file e per fare altre cose, ad esempio per segnare come risolti i conflitti causati da un <code>merge</code>). Esegui <code>git add</code> per mettere in <code>stage</code> il file benchmarks.rb, e riesegui <code>git status</code>:</p>
+
+<pre><code>$ git add benchmarks.rb
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        new file:   README
+        modified:   benchmarks.rb
+</code></pre>
+
+<p>Entrambi i file sono nello <code>stage</code> e staranno nella prossima commit. A questo punto, immagina che ti sia ricordato di una piccola modifica da fare in &#39;benchmarks.rb&#39; prima della commit. Riapri il file e fai la modifica: ora sei pronto per la commit. Come sempre, esegui <code>git status</code> di nuovo:</p>
+
+<pre><code>$ vim benchmarks.rb
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        new file:   README
+        modified:   benchmarks.rb
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   benchmarks.rb
+</code></pre>
+
+<p>Cos&#39;è successo? Ora <code>benchmarks.rb</code> è elencato sia dentro che fuori lo <code>stage</code>. Come è possibile? È saltato fuori che Git ha messo in <code>stage</code> il file esattamente com&#39;era quando hai eseguito <code>git add</code>. Se committi ora, la versione di <code>benchmarks.rb</code> che verrà committata sarà quella che avevi quando hai eseguito il <code>git add</code>, non la versione del file che trovi nella directory di lavoro quando esegui <code>git commit</code>. Se modifichi un file dopo che hai eseguito <code>git add</code>, devi rieseguire <code>git add</code> per mettere nello <code>stage</code> l&#39;ultima versione del file:</p>
+
+<pre><code>$ git add benchmarks.rb
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        new file:   README
+        modified:   benchmarks.rb
+</code></pre>
+
+<h3 id="Ignorare-File"><a href="#Ignorare-File">Ignorare File</a></h3>
+
+<p>Spesso hai dei file che non vuoi che Git aggiunga automaticamente e nemmeno che te li mostri come tracciati. Generalmente si tratta di file generati automaticamente, come i log o quelli prodotti dal tuoi sistema di <code>build</code>. In questi casi puoi creare un file chiamato <code>.gitignore</code> con la lista di pattern dei file che vuoi ignorare. Questo è un <code>.gitignore</code> d&#39;esempio:</p>
+
+<pre><code>$ cat .gitignore
+*.[oa]
+*~
+</code></pre>
+
+<p>La prima riga dice a Git di ignorare qualsiasi file che finisce in <code>.o</code> o <code>.a</code> — file di oggetti o archivi che possono essere il prodotto di una compilazione del tuo codice. La seconda riga dice a Git di ignorare tutti i file che finiscono con tilde (<code>~</code>), che è usata da alcuni editor di testo come Emacs per marcare i file temporanei. Puoi anche includere le directory <code>log</code>, <code>tmp</code> o <code>pid</code>, documenti generati automaticamente e così via. Definire un file <code>.gitignore</code> prima di iniziare generalmente è una buona idea, così eviti il rischio di committare accidentalmente dei file che non vuoi nel tuo repository Git.</p>
+
+<p>Queste sono le regole per i pattern che puoi usare in <code>.gitignore</code>:</p>
+
+<ul>
+<li>  Le righe vuote o che inizino con <code>#</code> vengono ignorate.</li>
+<li>  Gli standard <code>glob pattern</code> funzionano (http://it.wikipedia.org/wiki/Glob_pattern, ndt).</li>
+<li>  Puoi terminare i pattern con uno slash (<code>/</code>) per indicare una directory.</li>
+<li>  Puoi negare un pattern facendolo iniziare con un punto esclamativo (<code>!</code>).</li>
+</ul>
+
+<p>I <code>glob pattern</code> sono come espressioni regolari semplificate, usate dalla shell. L&#39;asterisco (<code>*</code>) corrisponde a zero o più caratteri; <code>[abc]</code> corrisponde a ogni carattere all&#39;interno delle parentesi (in questo caso <code>a</code>, <code>b</code>, o <code>c</code>); il punto interrogativo (<code>?</code>) corrisponden ad un carattere singolo; e i caratteri all&#39;interno delle parentesi quadre separati dal segno meno (<code>[0-9]</code>) corrispondono ad ogni carattere all&#39;interno dell&#39;intervallo (in questo caso da 0 a 9).</p>
+
+<p>Questo è un altro esempio di file <code>.gitignore</code>:</p>
+
+<pre><code># un commento - questo è ignorato
+# escludi i file .a
+*.a
+# ma traccia lib.a, sebbene su tu stia ignorando tutti i file `.a`
+!lib.a
+# ignora solo il TODO nella root, e non subdir/TODO
+/TODO
+# ignora tutti i file nella directory build/
+build/
+# ignora doc/note.txt, ma non doc/server/arch.txt
+doc/*.txt
+# ignora tutti i file .txt nella directory doc/
+doc/**/*.txt
+</code></pre>
+
+<p>Il pattern <code>**/</code> è disponibile in Git dalla version 1.8.2.</p>
+
+<h3 id="Mostra-le-modifiche-dentro-e-fuori-lo-<code>stage</code>"><a href="#Mostra-le-modifiche-dentro-e-fuori-lo-<code>stage</code>">Mostra le modifiche dentro e fuori lo <code>stage</code></a></h3>
+
+<p>Se <code>git status</code> è troppo vago per te - vuoi sapere cos&#39;è stato effettivamente modificato e non solo quali file — puoi usare il comando <code>git diff</code>. Tratteremo più avanti <code>git diff</code> con maggior dettaglio, ma probabilmente lo userai molto spesso per rispondere a queste due domande: Cos&#39;è che hai modificato ma non è ancora in <code>stage</code>? E cos&#39;hai nello <code>stage</code> che non hai ancora committato? Sebbene <code>git status</code> risponda a queste domande in modo generico, <code>git diff</code> mostra le righe effettivamente aggiunte e rimosse — la patch così com&#39;è.</p>
+
+<p>Supponiamo che tu abbia modificato nuovamente <code>README</code> e <code>benchmarks.rb</code> ma messo nello <code>stage</code> solo il primo. Se esegui il comando <code>status</code>, vedrai qualcosa come questo:</p>
+
+<pre><code>$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        new file:   README
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   benchmarks.rb
+</code></pre>
+
+<p>Per vedere cosa hai modificato, ma non ancora nello <code>stage</code>, digita <code>git diff</code> senza altri argomenti:</p>
+
+<pre><code>$ git diff
+diff --git a/benchmarks.rb b/benchmarks.rb
+index 3cb747f..da65585 100644
+--- a/benchmarks.rb
++++ b/benchmarks.rb
+@@ -36,6 +36,10 @@ def main
+           @commit.parents[0].parents[0].parents[0]
+         end
+
++        run_code(x, &#39;commits 1&#39;) do
++          git.commits.size
++        end
++
+         run_code(x, &#39;commits 2&#39;) do
+           log = git.commits(&#39;master&#39;, 15)
+           log.size
+</code></pre>
+
+<p>Questo comando confronta cosa c&#39;è nella tua directory di lavoro con quello che c&#39;è nella tua area di <code>stage</code>. Il risultato mostra le tue modifiche che ancora non hai messo nello <code>stage</code>.</p>
+
+<p>Se vuoi vedere cosa c&#39;è nello <code>stage</code> e che farà parte della prossima commit, puoi usare <code>git diff --cached</code>. (Da Git 1.6.1 in poi, puoi usare anche <code>git diff --staged</code>, che dovrebbe essere più facile da ricordare). Questo comando confronta le modifiche che hai nell&#39;area di <code>stage</code> e la tua ultima commit:</p>
+
+<pre><code>$ git diff --cached
+diff --git a/README b/README
+new file mode 100644
+index 0000000..03902a1
+--- /dev/null
++++ b/README2
+@@ -0,0 +1,5 @@
++grit
++ by Tom Preston-Werner, Chris Wanstrath
++ http://github.com/mojombo/grit
++
++Grit is a Ruby library for extracting information from a Git repository
+</code></pre>
+
+<p>È importante notare che <code>git diff</code> di per se non visualizza tutte le modifiche fatte dall&#39;ultima commit, ma solo quelle che non sono ancora in <code>stage</code>. Questo può confondere, perché se hai messo in <code>stage</code> tutte le tue modifiche, <code>git diff</code> non mostrereà nulla.</p>
+
+<p>Ecco un altro esempio, se metti in <code>stage</code> il file <code>benchmarks.rb</code> e lo modifichi, puoi usare <code>git diff</code> per vedere quali modifiche al file sono in stage e i quali non ancora:</p>
+
+<pre><code>$ git add benchmarks.rb
+$ echo &#39;# test line&#39; &gt;&gt; benchmarks.rb
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        modified:   benchmarks.rb
+
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   benchmarks.rb
+</code></pre>
+
+<p>Puoi quindi usare <code>git diff</code> per vedere cosa non è ancora in <code>stage</code></p>
+
+<pre><code>$ git diff
+diff --git a/benchmarks.rb b/benchmarks.rb
+index e445e28..86b2f7c 100644
+--- a/benchmarks.rb
++++ b/benchmarks.rb
+@@ -127,3 +127,4 @@ end
+ main()
+
+ ##pp Grit::GitRuby.cache_client.stats
++# test line
+</code></pre>
+
+<p>e <code>git diff --cached</code> per vedere cos&#39;è già in <code>stage</code>:</p>
+
+<pre><code>$ git diff --cached
+diff --git a/benchmarks.rb b/benchmarks.rb
+index 3cb747f..e445e28 100644
+--- a/benchmarks.rb
++++ b/benchmarks.rb
+@@ -36,6 +36,10 @@ def main
+          @commit.parents[0].parents[0].parents[0]
+        end
+
++        run_code(x, &#39;commits 1&#39;) do
++          git.commits.size
++        end
++
+        run_code(x, &#39;commits 2&#39;) do
+          log = git.commits(&#39;master&#39;, 15)
+          log.size
+</code></pre>
+
+<h3 id="Committa-le-tue-modifiche"><a href="#Committa-le-tue-modifiche">Committa le tue modifiche</a></h3>
+
+<p>Ora che la tua area di stage è configurata come vuoi, puoi fare la commit delle tue modifiche. Ricorda che tutto ciò che non è in <code>stage</code> — qualsiasi file che hai creato o modificato per cui non hai fatto <code>git add</code> — non sarà nella commit. Rimarranno come file modificati sul tuo disco.
+In questo caso, l&#39;ultima volta che hai eseguito <code>git status</code>, hai visto che tutto era in <code>stage</code>, così sei pronto a committare le tue modifiche. Il modo più semplice per farlo è eseguire <code>git commit</code>:</p>
+
+<pre><code>$ git commit
+</code></pre>
+
+<p>Facendolo lanci il tuo editor predefinito. (Questo è impostato nella tua shell con la variabile di ambiente <code>$EDITOR</code> — generalmente vim o emacs, sebbene tu possa configurarlo con qualsiasi altro editor, usando il comando <code>git config --global core.editor</code> come hai visto nel <em>Capitolo 1</em>).</p>
+
+<p>L&#39;editor visualizzerà il testo (questo è un esempio della schermata di Vim):</p>
+
+<pre><code># Please enter the commit message for your changes. Lines starting
+# with &#39;#&#39; will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#       new file:   README
+#       modified:   benchmarks.rb
+#
+~
+~
+~
+&quot;.git/COMMIT_EDITMSG&quot; 10L, 283C
+</code></pre>
+
+<p>Come vedi, il messaggio predefinito della commit contiene l&#39;ultimo output del comando <code>git status</code>, commentato, e la prima riga in alto è vuota. Puoi rimuovere questi commenti e inserire il tuo messaggio di commit, o puoi lasciarli così per aiutarti a ricordare cosa stai committando. (Per una nota ancora più esplicita puoi usare l&#39;opzione <code>-v</code> a <code>git commit</code>. Facendo saranno nel commento saranno inserite anche le modifiche stesse, così che tu possa vedere esattamente cosa hai fatto). Quando esci dall&#39;editor, Git crea la tuo commit con un messaggio (rimuovendo commenti ed eventuali diff).</p>
+
+<p>In alternativa, puoi inserire il messaggio per la tua commit alla riga di comando della <code>commit</code> specificando l&#39;opzione -m, come segue:</p>
+
+<pre><code>$ git commit -m &quot;Storia 182: Corretti benchmarks per la velocità&quot;
+[master 463dc4f] Storia 182: Corretti benchmarks per la velocità
+ 2 files changed, 3 insertions(+)
+ create mode 100644 README
+</code></pre>
+
+<p>Hai creato la tua prima commit! Puoi vedere che la commit restituisce alcune informazioni su se stessa: su quale <code>branch</code> (ramo, ndt) hai fatto la commit (<code>master</code>), quale checksum SHA-1 ha la commit (<code>463dc4f</code>), quanti file sono stati modificati e le statistiche sulle righe aggiunte e rimosse con la commit.</p>
+
+<p>Ricorda che la commit registra lo snapshot che hai salvato nella tua area di <code>stage</code>. Qualsiasi cosa che non è nello <code>stage</code> rimarrà lì come modificata; puoi fare un&#39;altra commit per aggiungerli alla cronologia del progetto. Ogni volta che fai una commit, stai salvando un&#39;istantanea (<code>snapshot</code>) del tuo progetto che puoi ripristinare o confrontare in seguito.</p>
+
+<h3 id="Saltare-l&#39;area-di-stage"><a href="#Saltare-l&#39;area-di-stage">Saltare l&#39;area di stage</a></h3>
+
+<p>Sebbene sia estremamente utile per amministrare le commit come vuoi, l&#39;area di stage è molto più complessa di quanto tu possa averne bisogno nel lavoro normale. Se vuoi saltare l&#39;area di <code>stage</code>, Git fornisce una semplice accorciatoia. Con l&#39;opzione <code>-a</code> al comando <code>git commit</code>, Git, committando, mette automaticamente nello <code>stage</code> tutti i file che erano già tracciati, permettendoti di saltare la parte <code>git add</code>:</p>
+
+<pre><code>$ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        modified:   benchmarks.rb
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+$ git commit -a -m &#39;added new benchmarks&#39;
+[master 83e38c7] added new benchmarks
+ 1 files changed, 5 insertions(+)
+</code></pre>
+
+<p>Nota come in questo caso non hai bisogno di eseguire <code>git add</code> per benchmarks.rb prima della commit.</p>
+
+<h3 id="Rimuovere-i-file"><a href="#Rimuovere-i-file">Rimuovere i file</a></h3>
+
+<p>Per rimuovere un file da Git devi rimuoverlo dai file tracciati (più precisamente,  rimuoverlo dall&#39;area di <code>stage</code>) e quindi committare. Il comando <code>git rm</code> fa questo e lo rimuove dalla tua directory di lavoro, così che la prossima volta non lo vedrai come un file non tracciato.</p>
+
+<p>Se rimuovi semplicemente il file dalla directory di lavoro, apparirà nella sezione &quot;Changes not staged for commit&quot; (cioè, <em>no in <code>stage</code></em>) dell&#39;output <code>git status</code>:</p>
+
+<pre><code>$ rm grit.gemspec
+$ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+        deleted:    grit.gemspec
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+</code></pre>
+
+<p>Se poi esegui <code>git rm</code>, la rimozione del file viene messa nello <code>stage</code>:</p>
+
+<pre><code>$ git rm grit.gemspec
+rm &#39;grit.gemspec&#39;
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        deleted:    grit.gemspec
+</code></pre>
+
+<p>La prossima volta che committerai, il file sparirà e non sarà più tracciato. Se avevi già modificato il file e lo avevi aggiunto all&#39;indice, devi forzarne la rimozione con l&#39;opzione <code>-f</code>. Questa è una misura di sicurezza per prevenire la rimozione accidentale dei dati che non sono ancora stati salvati in uno <code>snapshot</code> e che non possono essere recuperati con Git.</p>
+
+<p>Un&#39;altra cosa utile che potresti voler fare è mantenere il file nel tuo ambiente di di lavoro ma rimuoverlo dall&#39;area di <code>stage</code>. In altre parole, vuoi mantenere il file sul tuo disco ma non vuoi che Git continui a tracciarlo. Questo è particolarmente utile se hai dimenticato di aggiungere qualcosa al tuo <code>.gitignore</code> e accidentalmente lo metti in <code>stage</code>, come un file di log molto grande o un gruppo di file compilati <code>.a</code>. Per farlo usa l&#39;opzione <code>--cached</code>:</p>
+
+<pre><code>$ git rm --cached readme.txt
+</code></pre>
+
+<p>Puoi passare file, directory o pattern glob di file al comando <code>git rm</code>. Questo significa che puoi fare</p>
+
+<pre><code>$ git rm log/\*.log
+</code></pre>
+
+<p>Nota la barra inversa (<code>\</code>) prima di <code>*</code>. Questo è necessario perché Git ha un&#39;espansione propria dei nomi di file oltre a quella della tua shell. Questo comando rimuove tutti i file che hanno l&#39;estensione <code>.log</code> nella directory <code>log/</code>. O puoi eseguire:</p>
+
+<pre><code>$ git rm \*~
+</code></pre>
+
+<p>Per rimuovere tutti i file che finiscono con <code>~</code>.</p>
+
+<h3 id="Spostare-i-file"><a href="#Spostare-i-file">Spostare i file</a></h3>
+
+<p>A differenza di altri sistemi VCS, Git non traccia esplicitamente gli spostamenti dei file. Se rinomini un file in Git, nessun metadato viene salvato per dirgli che lo hai rinominato. Tuttavia, Git è abbastanza intelligente da capirlo dopo che l&#39;hai fatto — più in la ci occuperemo di rilevare il movimento dei file.</p>
+
+<p>Può perciò creare un po&#39; di confusione il fatto che Git abbia un comando <code>mv</code>. Se vuoi rinominare un file in Git puoi eseguire qualcosa come</p>
+
+<pre><code>$ git mv file_from file_to
+</code></pre>
+
+<p>e funziona. Se, infatti, lanci un comando del genere e controlli lo stato, vedrai che Git considera il file rinominato:</p>
+
+<pre><code>$ git mv README README.txt
+$ git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+        renamed:    README -&gt; README.txt
+</code></pre>
+
+<p>Ovviamente, questo è equivalente a eseguire:</p>
+
+<pre><code>$ mv README README.txt
+$ git rm README
+$ git add README.txt
+</code></pre>
+
+<p>Git capisce che, implicitamente stai rinominando il file, così che non c&#39;è differenza se rinominare un file in questo modo o con il comando <code>mv</code>. L&#39;unica differenza reale è che <code>mv</code> è un solo comando invece di tre: è un questione di convenienza. La cosa più importante è che puoi usare qualsiasi strumento per rinominare un file, e gestire l&#39;aggiunta/rimozione più tardi, prima della commit.</p>
+
+<div id="nav"><a href="/book/it/Basi-di-Git-Repository-Git">prev</a> | <a href="/book/it/v1/Basi-di-Git-Vedere-la-cronologia-delle-commit">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

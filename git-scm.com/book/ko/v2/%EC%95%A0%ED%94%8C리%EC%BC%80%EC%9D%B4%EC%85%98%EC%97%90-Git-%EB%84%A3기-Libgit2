@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":9,"applicationTime":312,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Libgit2</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">시작하기</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">버전 관리란?</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%A7%A7%EA%B2%8C-%EB%B3%B4%EB%8A%94-Git%EC%9D%98-%EC%97%AD%EC%82%AC">짧게 보는 Git의 역사</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88">Git 기초</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-CLI">CLI</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98">Git 설치</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95">Git 최초 설정</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%8F%84%EC%9B%80%EB%A7%90-%EB%B3%B4%EA%B8%B0">도움말 보기</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git의 기초</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git 저장소 만들기</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0">수정하고 저장소에 저장하기</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">커밋 히스토리 조회하기</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0">되돌리기</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C">리모트 저장소</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%ED%83%9C%EA%B7%B8">태그</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-Alias">Git Alias</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">Git 브랜치</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">브랜치란 무엇인가</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88">브랜치와 Merge 의 기초</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EA%B4%80%EB%A6%AC">브랜치 관리</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-Workflow">브랜치 Workflow</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98">리모트 브랜치</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0">Rebase 하기</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">Git 서버</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">프로토콜</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84%EC%97%90-Git-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">서버에 Git 설치하기</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0">SSH 공개키 만들기</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">서버 설정하기</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-Git-%EB%8D%B0%EB%AA%AC">Git 데몬</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8-HTTP">스마트 HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%84%A0%ED%83%9D%EC%A7%80%2C-%ED%98%B8%EC%8A%A4%ED%8C%85">또 다른 선택지, 호스팅</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Workflow</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">계정 만들고 설정하기</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ko/v2/GitHub-Organization-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">Organization 관리하기</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ko/v2/GitHub-GitHub-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85">GitHub 스크립팅</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ko/v2/GitHub-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">Git 도구</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">리비전 조회하기</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%8C%80%ED%99%94%ED%98%95-%EB%AA%85%EB%A0%B9">대화형 명령</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning">Stashing과 Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90-%EC%84%9C%EB%AA%85%ED%95%98%EA%B8%B0">내 작업에 서명하기</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B2%80%EC%83%89">검색</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%8B%A8%EC%9E%A5%ED%95%98%EA%B8%B0">히스토리 단장하기</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0">Reset 명확히 알고 가기</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B3%A0%EA%B8%89-Merge">고급 Merge</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Git%EC%9C%BC%EB%A1%9C-%EB%B2%84%EA%B7%B8-%EC%B0%BE%EA%B8%B0">Git으로 버그 찾기</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88">서브모듈</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Bundle">Bundle</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Credential-%EC%A0%80%EC%9E%A5%EC%86%8C">Credential 저장소</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git맞춤</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git 설정하기</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%A0%95%EC%B1%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">정책 구현하기</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git으로 이전하기</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git: 범용 Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%EC%9C%BC%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0">Git으로 옮기기</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Git의 내부</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Plumbing 명령과 Porcelain 명령</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-%EA%B0%9C%EC%B2%B4">Git 개체</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-Refs">Git Refs</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Packfile">Packfile</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Refspec">Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">데이터 전송 프로토콜</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%B4%EC%98%81-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B5%EA%B5%AC">운영 및 데이터 복구</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98">환경변수</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">다양한 환경에서 Git 사용하기</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">GUI</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Visual-Studio">Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Eclipse">Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Bash">Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Zsh">Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Powershell">Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">애플리케이션에 Git 넣기</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">Git 명령어</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">Git 명령어</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">설치와 설정</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%EC%99%80-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0">프로젝트 가져오기와 생성하기</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8A%A4%EB%83%85%EC%83%B7-%EB%8B%A4%EB%A3%A8%EA%B8%B0">스냅샷 다루기</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Branch%EC%99%80-Merge">Branch와 Merge</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B3%B5%EC%9C%A0%ED%95%98%EA%B3%A0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0">공유하고 업데이트하기</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%B3%B4%EA%B8%B0%EC%99%80-%EB%B9%84%EA%B5%90">보기와 비교</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Patch-%ED%95%98%EA%B8%B0">Patch 하기</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%8B%A4%EB%A5%B8-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C">다른 버전 관리 시스템</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B4%80%EB%A6%AC">관리</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Plumbing-%EB%AA%85%EB%A0%B9%EC%96%B4">Plumbing 명령어</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>A2.2 애플리케이션에 Git 넣기 - Libgit2</h1>
+  <div><a id="idp37417728"></a><h2>Libgit2</h2>
+
+<p><a data-type="indexterm" data-primary="libgit2" id="idp37419552"></a></p>
+
+<p>다른 방법으로는 Libgit2 라이브러리가 있다.
+Libgit2는 Git에 의존하지 않는다. 일반 프로그램에서 사용하기 좋게 API를 설계했다.
+<a href="http://libgit2.github.com"><em class="hyperlink">http://libgit2.github.com</em></a>에서 내려받을 수 있다.</p>
+
+<p>먼저 API가 어떻게 생겼는지 구경해보자.</p>
+
+<pre data-type="programlisting" data-code-language="c"><code class="c1">// Open a repository</code>
+<code class="n">git_repository</code> <code class="o">*</code><code class="n">repo</code><code class="p">;</code>
+<code class="kt">int</code> <code class="n">error</code> <code class="o">=</code> <code class="n">git_repository_open</code><code class="p">(</code><code class="o">&amp;</code><code class="n">repo</code><code class="p">,</code> <code class="s">"/path/to/repository"</code><code class="p">);</code>
+
+<code class="c1">// Dereference HEAD to a commit</code>
+<code class="n">git_object</code> <code class="o">*</code><code class="n">head_commit</code><code class="p">;</code>
+<code class="n">error</code> <code class="o">=</code> <code class="n">git_revparse_single</code><code class="p">(</code><code class="o">&amp;</code><code class="n">head_commit</code><code class="p">,</code> <code class="n">repo</code><code class="p">,</code> <code class="s">"HEAD^{commit}"</code><code class="p">);</code>
+<code class="n">git_commit</code> <code class="o">*</code><code class="n">commit</code> <code class="o">=</code> <code class="p">(</code><code class="n">git_commit</code><code class="o">*</code><code class="p">)</code><code class="n">head_commit</code><code class="p">;</code>
+
+<code class="c1">// Print some of the commit's properties</code>
+<code class="n">printf</code><code class="p">(</code><code class="s">"%s"</code><code class="p">,</code> <code class="n">git_commit_message</code><code class="p">(</code><code class="n">commit</code><code class="p">));</code>
+<code class="k">const</code> <code class="n">git_signature</code> <code class="o">*</code><code class="n">author</code> <code class="o">=</code> <code class="n">git_commit_author</code><code class="p">(</code><code class="n">commit</code><code class="p">);</code>
+<code class="n">printf</code><code class="p">(</code><code class="s">"%s &lt;%s&gt;</code><code class="se">\n</code><code class="s">"</code><code class="p">,</code> <code class="n">author</code><code class="o">-&gt;</code><code class="n">name</code><code class="p">,</code> <code class="n">author</code><code class="o">-&gt;</code><code class="n">email</code><code class="p">);</code>
+<code class="k">const</code> <code class="n">git_oid</code> <code class="o">*</code><code class="n">tree_id</code> <code class="o">=</code> <code class="n">git_commit_tree_id</code><code class="p">(</code><code class="n">commit</code><code class="p">);</code>
+
+<code class="c1">// Cleanup</code>
+<code class="n">git_commit_free</code><code class="p">(</code><code class="n">commit</code><code class="p">);</code>
+<code class="n">git_repository_free</code><code class="p">(</code><code class="n">repo</code><code class="p">);</code></pre>
+
+<p>첫 두 라인은 Git 저장소를 여는 코드다.
+<code>git_repository</code> 타입은 메모리에 있는 저장소 정보에 대한 핸들을 나타낸다.
+<code>git_repository_open</code> 메소드는 워킹 디렉토리나 <code>.git</code> 폴더 경로를 알 때 사용한다.
+저장소 경로를 정확히 모를 때는 <code>git_repository_open_ext</code> 메소드로 찾는다. <code>git_clone</code> 메소드와 관련된 메소드는 원격에 있는 저장소를 로컬에 Clone 할 때 사용한다. 그리고 <code>git_repository_init</code>은 저장소를 새로 만들 때 사용한다.</p>
+
+<p>rev-parse 문법을 사용하는 두 번째 코드는 HEAD가 가리키는 커밋을 가져온다.
+<code>git_object</code> 포인터는 Git 개체 데이터베이스에 있는 개체를 가리킨다.
+<code>git_object</code>는 몇 가지 “자식” 타입의 “부모” 타입이다. 이 “자식” 타입들은 <code>git_object</code>에 해당하는 부분에 대해서는 메모리 구조가 같다. 그래서 맞는 자식이라면 이렇게 캐스팅해도 안전하다.
+<code>git_object_type(commit)</code>처럼 호출하면 <code>GIT_OBJ_COMMIT</code>을 리턴한다. 그래서 <code>git_commit</code> 포인터로 캐스팅해도 된다.</p>
+
+<p>그다음 블록은 커밋 정보를 읽는 코드다.
+마지막 라인의 <code>git_oid</code>는 Libgit2에서 SHA-1 값을 나타내는 타입이다</p>
+
+<p>이 예제를 보면 몇 가지 코딩 패턴을 알 수 있다.</p>
+
+<ul>
+<li>
+<p>포인터를 정의하고 그 포인터와 Ref 스트링을 주고 Libgit2 메소드를 호출한다. 메소드는 정수 타입의 에러 코드를 리턴한다.
+<code>0</code> 값이 성공이고 다른 값은 에러다.</p>
+</li>
+<li>
+<p>Libgit2가 포인터에 값을 할당해주지만, 사용자가 꼭 해제해야 한다.</p>
+</li>
+<li>
+<p>Libgit2가 리턴하는 <code>const</code> 포인터는 해제하지 말아야 한다. 해당 메모리가 속한 객체가 해제될 때 문제가 된다.</p>
+</li>
+<li>
+<p>C로 코딩하는 것은 원래 좀 고통스럽다.</p>
+</li>
+</ul>
+<p><a data-type="indexterm" data-primary="Ruby" id="idp37518896"></a></p>
+
+<p>마지막 라인을 이유로 Libgit2를 C에서 사용할 가능성은 매우 낮다.
+다양한 언어나 환경에서 사용할 수 있는 Libgit2 바인딩이 있어서 Git 저장소를 쉽게 다룰 수 있다.
+Rugged라는 Ruby 바인딩을 사용해서 위의 예제를 재작성해 보자. Rugged에 대한 자세한 정보는 <a href="https://github.com/libgit2/rugged"><em class="hyperlink">https://github.com/libgit2/rugged</em></a>에 있다.</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="n">repo</code> <code class="o">=</code> <code class="ss">Rugged</code><code class="p">:</code><code class="ss">:Repository</code><code class="o">.</code><code class="n">new</code><code class="p">(</code><code class="s1">'path/to/repository'</code><code class="p">)</code>
+<code class="n">commit</code> <code class="o">=</code> <code class="n">repo</code><code class="o">.</code><code class="n">head</code><code class="o">.</code><code class="n">target</code>
+<code class="nb">puts</code> <code class="n">commit</code><code class="o">.</code><code class="n">message</code>
+<code class="nb">puts</code> <code class="s2">"</code><code class="si">#{</code><code class="n">commit</code><code class="o">.</code><code class="n">author</code><code class="o">[</code><code class="ss">:name</code><code class="o">]</code><code class="si">}</code><code class="s2"> &lt;</code><code class="si">#{</code><code class="n">commit</code><code class="o">.</code><code class="n">author</code><code class="o">[</code><code class="ss">:email</code><code class="o">]</code><code class="si">}</code><code class="s2">&gt;"</code>
+<code class="n">tree</code> <code class="o">=</code> <code class="n">commit</code><code class="o">.</code><code class="n">tree</code></pre>
+
+<p>비교해보면 코드가 더 간결해졌다.
+Rugged는 예외를 사용해서 더 간결하다. 하지만 <code>ConfigError</code>나 <code>ObjectError</code> 같은 에러가 발생할 수 있다.
+그리고 Ruby는 가비지 콜렉션을 사용하는 언어라서 리소스를 해제하지 않아도 된다.
+좀 더 복잡한 예제를 살펴보자. 새로 커밋하는 예제다.</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="n">blob_id</code><code> </code><code class="o">=</code><code> </code><code class="n">repo</code><code class="o">.</code><code class="n">write</code><code class="p">(</code><code class="s2">"</code><code class="s2">Blob contents</code><code class="s2">"</code><code class="p">,</code><code> </code><code class="ss">:blob</code><code class="p">)</code><code> </code><a class="co" id="co_________git____CO1-1" href="ch00/callout_________git____CO1-1"><img src="/book/en/v2/book/B-embedding-git/../../callouts/1.png" alt="1"></a><code>
+
+</code><code class="n">index</code><code> </code><code class="o">=</code><code> </code><code class="n">repo</code><code class="o">.</code><code class="n">index</code><code>
+</code><code class="n">index</code><code class="o">.</code><code class="n">read_tree</code><code class="p">(</code><code class="n">repo</code><code class="o">.</code><code class="n">head</code><code class="o">.</code><code class="n">target</code><code class="o">.</code><code class="n">tree</code><code class="p">)</code><code>
+</code><code class="n">index</code><code class="o">.</code><code class="n">add</code><code class="p">(</code><code class="ss">:path</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="s1">'newfile.txt'</code><code class="p">,</code><code> </code><code class="ss">:oid</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="n">blob_id</code><code class="p">)</code><code> </code><a class="co" id="co_________git____CO1-2" href="ch00/callout_________git____CO1-2"><img src="/book/en/v2/book/B-embedding-git/../../callouts/2.png" alt="2"></a><code>
+
+</code><code class="n">sig</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code>
+    </code><code class="ss">:email</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="s2">"</code><code class="s2">bob@example.com</code><code class="s2">"</code><code class="p">,</code><code>
+    </code><code class="ss">:name</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="s2">"</code><code class="s2">Bob User</code><code class="s2">"</code><code class="p">,</code><code>
+    </code><code class="ss">:time</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="no">Time</code><code class="o">.</code><code class="n">now</code><code class="p">,</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="n">commit_id</code><code> </code><code class="o">=</code><code> </code><code class="ss">Rugged</code><code class="p">:</code><code class="ss">:Commit</code><code class="o">.</code><code class="n">create</code><code class="p">(</code><code class="n">repo</code><code class="p">,</code><code>
+    </code><code class="ss">:tree</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="n">index</code><code class="o">.</code><code class="n">write_tree</code><code class="p">(</code><code class="n">repo</code><code class="p">)</code><code class="p">,</code><code> </code><a class="co" id="co_________git____CO1-3" href="ch00/callout_________git____CO1-3"><img src="/book/en/v2/book/B-embedding-git/../../callouts/3.png" alt="3"></a><code>
+    </code><code class="ss">:author</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="n">sig</code><code class="p">,</code><code>
+    </code><code class="ss">:committer</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="n">sig</code><code class="p">,</code><code> </code><a class="co" id="co_________git____CO1-4" href="ch00/callout_________git____CO1-4"><img src="/book/en/v2/book/B-embedding-git/../../callouts/4.png" alt="4"></a><code>
+    </code><code class="ss">:message</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="s2">"</code><code class="s2">Add newfile.txt</code><code class="s2">"</code><code class="p">,</code><code> </code><a class="co" id="co_________git____CO1-5" href="ch00/callout_________git____CO1-5"><img src="/book/en/v2/book/B-embedding-git/../../callouts/5.png" alt="5"></a><code>
+    </code><code class="ss">:parents</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="n">repo</code><code class="o">.</code><code class="n">empty?</code><code> </code><code class="p">?</code><code> </code><code class="o">[</code><code class="o">]</code><code> </code><code class="p">:</code><code> </code><code class="o">[</code><code> </code><code class="n">repo</code><code class="o">.</code><code class="n">head</code><code class="o">.</code><code class="n">target</code><code> </code><code class="o">]</code><code class="o">.</code><code class="n">compact</code><code class="p">,</code><code> </code><a class="co" id="co_________git____CO1-6" href="ch00/callout_________git____CO1-6"><img src="/book/en/v2/book/B-embedding-git/../../callouts/6.png" alt="6"></a><code>
+    </code><code class="ss">:update_ref</code><code> </code><code class="o">=</code><code class="o">&gt;</code><code> </code><code class="s1">'HEAD'</code><code class="p">,</code><code> </code><a class="co" id="co_________git____CO1-7" href="ch00/callout_________git____CO1-7"><img src="/book/en/v2/book/B-embedding-git/../../callouts/7.png" alt="7"></a><code>
+</code><code class="p">)</code><code>
+</code><code class="n">commit</code><code> </code><code class="o">=</code><code> </code><code class="n">repo</code><code class="o">.</code><code class="n">lookup</code><code class="p">(</code><code class="n">commit_id</code><code class="p">)</code><code> </code><a class="co" id="co_________git____CO1-8" href="ch00/callout_________git____CO1-8"><img src="/book/en/v2/book/B-embedding-git/../../callouts/8.png" alt="8"></a></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_________git____CO1-1" href="ch00/co_________git____CO1-1"><img src="/book/en/v2/book/B-embedding-git/../../callouts/1.png" alt="1"></a></dt>
+<dd><p>파일 내용이 담긴 Blob을 만든다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-2" href="ch00/co_________git____CO1-2"><img src="/book/en/v2/book/B-embedding-git/../../callouts/2.png" alt="2"></a></dt>
+<dd><p>Index에 Head 커밋의 Tree를 채우고 만든 Blob을 <code>newfile.txt</code> 파일로 추가한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-3" href="ch00/co_________git____CO1-3"><img src="/book/en/v2/book/B-embedding-git/../../callouts/3.png" alt="3"></a></dt>
+<dd><p>ODB(Object Database)에 새 트리 개체를 만든다. 커밋할 때는 새 트리 개체가 필요하다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-4" href="ch00/co_________git____CO1-4"><img src="/book/en/v2/book/B-embedding-git/../../callouts/4.png" alt="4"></a></dt>
+<dd><p>Author와 Committer정보는 한 사람(Signature)으로 한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-5" href="ch00/co_________git____CO1-5"><img src="/book/en/v2/book/B-embedding-git/../../callouts/5.png" alt="5"></a></dt>
+<dd><p>커밋 메시지를 입력한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-6" href="ch00/co_________git____CO1-6"><img src="/book/en/v2/book/B-embedding-git/../../callouts/6.png" alt="6"></a></dt>
+<dd><p>커밋할 때 부모가 필요하다. 여기서는 HEAD를 부모로 사용한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-7" href="ch00/co_________git____CO1-7"><img src="/book/en/v2/book/B-embedding-git/../../callouts/7.png" alt="7"></a></dt>
+<dd><p>Rugged (and Libgit2)는 커밋할 때 Ref 갱신 여부를 선택할 수 있다.</p></dd>
+<dt><a class="co" id="callout_________git____CO1-8" href="ch00/co_________git____CO1-8"><img src="/book/en/v2/book/B-embedding-git/../../callouts/8.png" alt="8"></a></dt>
+<dd><p>리턴한 커밋 개체의 SHA-1 해시로 <code>Commit</code> 객체 가져와 사용한다.</p></dd>
+</dl>
+<p>Ruby 코드는 간결하고 깔끔하다. Libgit2을 사용하는 것이기 때문에 여전히 빠르다.
+루비스트가 아니라면 <a data-type="xref" href="ch00/_libgit2_bindings">“다른 바인딩”</a>에 있는 다른 바인딩을 사용할 수 있다.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="고급 기능" id="idp37921680"><h3 id="고급-기능"><a href="#고급-기능">고급 기능</a></h3>
+
+<p>Libgit2으로 Git을 확장하는 일도 가능하다.
+Libgit2에서는 커스텀 “Backend”를 만들어 사용할 수 있다. 그래서 Git이 저장하는 방법 말고 다른 방법으로도 저장할 수 있다. 이것을 <em>Pluggability</em>라고 부른다.
+설정, Ref 저장소, 개체 데이터 베이스를 커스텀 “Backend”에 저장할 수 있다.</p>
+
+<p>이게 무슨 소리인지 예제를 살펴보자.
+아래 코드는 Libgit2 팀이 제공하는 Backend 예제에서 가져왔다. Libgit2 팀이 제공하는 전체 예제는 <a href="https://github.com/libgit2/libgit2-backends"><em class="hyperlink">https://github.com/libgit2/libgit2-backends</em></a>에 있다.
+개체 데이터베이스의 Backend를 어떻게 사용하는지 보자.</p>
+
+<pre data-type="programlisting" data-code-language="c"><code class="n">git_odb</code><code> </code><code class="o">*</code><code class="n">odb</code><code class="p">;</code><code>
+</code><code class="kt">int</code><code> </code><code class="n">error</code><code> </code><code class="o">=</code><code> </code><code class="n">git_odb_new</code><code class="p">(</code><code class="o">&amp;</code><code class="n">odb</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_________git____CO2-1" href="ch00/callout_________git____CO2-1"><img src="/book/en/v2/book/B-embedding-git/../../callouts/1.png" alt="1"></a><code>
+
+</code><code class="n">git_odb_backend</code><code> </code><code class="o">*</code><code class="n">my_backend</code><code class="p">;</code><code>
+</code><code class="n">error</code><code> </code><code class="o">=</code><code> </code><code class="n">git_odb_backend_mine</code><code class="p">(</code><code class="o">&amp;</code><code class="n">my_backend</code><code class="p">,</code><code> </code><code class="cm">/*…*/</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_________git____CO2-2" href="ch00/callout_________git____CO2-2"><img src="/book/en/v2/book/B-embedding-git/../../callouts/2.png" alt="2"></a><code>
+
+</code><code class="n">error</code><code> </code><code class="o">=</code><code> </code><code class="n">git_odb_add_backend</code><code class="p">(</code><code class="n">odb</code><code class="p">,</code><code> </code><code class="n">my_backend</code><code class="p">,</code><code> </code><code class="mi">1</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_________git____CO2-3" href="ch00/callout_________git____CO2-3"><img src="/book/en/v2/book/B-embedding-git/../../callouts/3.png" alt="3"></a><code>
+
+</code><code class="n">git_repository</code><code> </code><code class="o">*</code><code class="n">repo</code><code class="p">;</code><code>
+</code><code class="n">error</code><code> </code><code class="o">=</code><code> </code><code class="n">git_repository_open</code><code class="p">(</code><code class="o">&amp;</code><code class="n">repo</code><code class="p">,</code><code> </code><code class="s">"</code><code class="s">some-path</code><code class="s">"</code><code class="p">)</code><code class="p">;</code><code>
+</code><code class="n">error</code><code> </code><code class="o">=</code><code> </code><code class="n">git_repository_set_odb</code><code class="p">(</code><code class="n">odb</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_________git____CO2-4" href="ch00/callout_________git____CO2-4"><img src="/book/en/v2/book/B-embedding-git/../../callouts/4.png" alt="4"></a></pre>
+
+<p><em>(에러는 처리하지 않았다. 실제로 사용할 때는 완벽하리라 믿는다.)</em></p>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_________git____CO2-1" href="ch00/co_________git____CO2-1"><img src="/book/en/v2/book/B-embedding-git/../../callouts/1.png" alt="1"></a></dt>
+<dd><p>“Frontend”로 사용할 ODB(Object DataBase)를 하나 초기화한다. 실제로 저장하는 “Backend”의 컨테이터로 사용한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO2-2" href="ch00/co_________git____CO2-2"><img src="/book/en/v2/book/B-embedding-git/../../callouts/2.png" alt="2"></a></dt>
+<dd><p>ODB Backend를 초기화한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO2-3" href="ch00/co_________git____CO2-3"><img src="/book/en/v2/book/B-embedding-git/../../callouts/3.png" alt="3"></a></dt>
+<dd><p>Frontend에 Backend를 추가한다.</p></dd>
+<dt><a class="co" id="callout_________git____CO2-4" href="ch00/co_________git____CO2-4"><img src="/book/en/v2/book/B-embedding-git/../../callouts/4.png" alt="4"></a></dt>
+<dd><p>저장소를 열고 우리가 만든 ODB를 사용하도록 설정한다. 그러면 개체를 우리가 만든 ODB에서 찾는다.</p></dd>
+</dl>
+<p>그런데 <code>git_odb_backend_mine</code>는 뭘까?
+이 함수는 우리의 ODB 생성자다. 여기서 원하는 대로 Backend를 만들어 주고 <code>git_odb_backend</code> 구조체만 잘 채우면 된다.
+아래처럼 만든다.</p>
+
+<pre data-type="programlisting" data-code-language="c"><code class="k">typedef</code> <code class="k">struct</code> <code class="p">{</code>
+    <code class="n">git_odb_backend</code> <code class="n">parent</code><code class="p">;</code>
+
+    <code class="c1">// Some other stuff</code>
+    <code class="kt">void</code> <code class="o">*</code><code class="n">custom_context</code><code class="p">;</code>
+<code class="p">}</code> <code class="n">my_backend_struct</code><code class="p">;</code>
+
+<code class="kt">int</code> <code class="nf">git_odb_backend_mine</code><code class="p">(</code><code class="n">git_odb_backend</code> <code class="o">**</code><code class="n">backend_out</code><code class="p">,</code> <code class="cm">/*…*/</code><code class="p">)</code>
+<code class="p">{</code>
+    <code class="n">my_backend_struct</code> <code class="o">*</code><code class="n">backend</code><code class="p">;</code>
+
+    <code class="n">backend</code> <code class="o">=</code> <code class="n">calloc</code><code class="p">(</code><code class="mi">1</code><code class="p">,</code> <code class="k">sizeof</code> <code class="p">(</code><code class="n">my_backend_struct</code><code class="p">));</code>
+
+    <code class="n">backend</code><code class="o">-&gt;</code><code class="n">custom_context</code> <code class="o">=</code> <code class="err">…</code><code class="p">;</code>
+
+    <code class="n">backend</code><code class="o">-&gt;</code><code class="n">parent</code><code class="p">.</code><code class="n">read</code> <code class="o">=</code> <code class="o">&amp;</code><code class="n">my_backend__read</code><code class="p">;</code>
+    <code class="n">backend</code><code class="o">-&gt;</code><code class="n">parent</code><code class="p">.</code><code class="n">read_prefix</code> <code class="o">=</code> <code class="o">&amp;</code><code class="n">my_backend__read_prefix</code><code class="p">;</code>
+    <code class="n">backend</code><code class="o">-&gt;</code><code class="n">parent</code><code class="p">.</code><code class="n">read_header</code> <code class="o">=</code> <code class="o">&amp;</code><code class="n">my_backend__read_header</code><code class="p">;</code>
+    <code class="c1">// …</code>
+
+    <code class="o">*</code><code class="n">backend_out</code> <code class="o">=</code> <code class="p">(</code><code class="n">git_odb_backend</code> <code class="o">*</code><code class="p">)</code> <code class="n">backend</code><code class="p">;</code>
+
+    <code class="k">return</code> <code class="n">GIT_SUCCESS</code><code class="p">;</code>
+<code class="p">}</code></pre>
+
+<p><code>my_backend_struct</code>의 첫 번째 맴버는 반드시 <code>git_odb_backend</code>가 돼야 한다. Libgit2가 동작하는 메모리 구조에 맞아야 한다.
+나머지 멤버는 상관없다. 구조체 크기는 커도 되고 작아도 된다.</p>
+
+<p>이 초기화 함수에서 구조체를 메모리를 할당하고 커스텀 멤버에 필요한 정보를 설정한다. 그리고 Libgit2에서 필요한 <code>parent</code> 구조체를 채운다.
+<code>include/git2/sys/odb_backend.h</code> 소스를 보면 <code>git_odb_backend</code> 구조체의 멤버가 어떤 것이 있는지 알 수 있다. 목적에 따라 어떻게 사용해야 하는지 확인해야 한다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="다른 바인딩" id="_libgit2_bindings"><h3 id="다른-바인딩"><a href="#다른-바인딩">다른 바인딩</a></h3>
+
+<p>Libgit2 바인딩은 많은 언어로 구현돼 있다.
+이 글을 쓰는 시점에서 거의 완벽하게 구현됐다고 생각되는 것은 여기서 소개한다. 그 외에도 C++, Go, Node.js, Erlang, JVM 등 많은 언어로 구현돼 있다.
+<a href="https://github.com/libgit2"><em class="hyperlink">https://github.com/libgit2</em></a>에 가서 살펴보면 어떤 바인딩이 있는지 찾아볼 수 있다.
+여기서는 HEAD가 가리키는 커밋의 메시지를 가져오는 코드를 보여준다.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="LibGit2Sharp" id="idp38143328"><h4>LibGit2Sharp</h4>
+
+<p><a data-type="indexterm" data-primary=".NET" id="idp38144704"></a><a data-type="indexterm" data-primary="C#" id="idp38145408"></a><a data-type="indexterm" data-primary="Mono" id="idp38146080"></a></p>
+
+<p>이 바인딩은 C#으로 작성했고 Libgit2를 감쌌음에도 네이티브 느낌이 나도록 꼼꼼하게 설계했다.
+커밋 메시지를 가져오는 예제를 보자.</p>
+
+<pre data-type="programlisting" data-code-language="csharp"><code class="k">new</code> <code class="nf">Repository</code><code class="p">(</code><code class="s">@"C:\path\to\repo"</code><code class="p">).</code><code class="n">Head</code><code class="p">.</code><code class="n">Tip</code><code class="p">.</code><code class="n">Message</code><code class="p">;</code></pre>
+
+<p>윈도 데스크톱 애플리케이션에서 쉽게 사용할 수 있도록 NuGet 패키지도 존재한다.</p>
+</section><section data-type="sect3" data-pdf-bookmark="objective-git" id="idp38154464"><h4>objective-git</h4>
+
+<p><a data-type="indexterm" data-primary="Apple" id="idp38155680"></a><a data-type="indexterm" data-primary="Objective-C" id="idp38156384"></a><a data-type="indexterm" data-primary="Cocoa" id="idp38157056"></a></p>
+
+<p>Apple 플랫폼용 애플리케이션을 만들고 있다면 언어가 Objective-C일 것이다.
+이 환경에서는 Objective-Git(<a href="https://github.com/libgit2/objective-git"><em class="hyperlink">https://github.com/libgit2/objective-git</em></a>)을 사용할 수 있다.
+Objective-C 예제를 보자.</p>
+
+<pre data-type="programlisting" data-code-language="objc"><code class="n">GTRepository</code> <code class="o">*</code><code class="n">repo</code> <code class="o">=</code>
+    <code class="p">[[</code><code class="n">GTRepository</code> <code class="n">alloc</code><code class="p">]</code> <code class="nl">initWithURL</code><code class="p">:[</code><code class="bp">NSURL</code> <code class="nl">fileURLWithPath</code><code class="p">:</code> <code class="s">@"/path/to/repo"</code><code class="p">]</code> <code class="nl">error</code><code class="p">:</code><code class="nb">NULL</code><code class="p">];</code>
+<code class="bp">NSString</code> <code class="o">*</code><code class="n">msg</code> <code class="o">=</code> <code class="p">[[[</code><code class="n">repo</code> <code class="nl">headReferenceWithError</code><code class="p">:</code><code class="nb">NULL</code><code class="p">]</code> <code class="n">resolvedTarget</code><code class="p">]</code> <code class="n">message</code><code class="p">];</code></pre>
+
+<p>Objective-git는 Swift에서도 사용할 수 있기 때문에 Objective-C가 아니라고 걱정하지 않아도 된다.</p>
+</section><section data-type="sect3" data-pdf-bookmark="pygit2" id="idp38154592"><h4>pygit2</h4>
+
+<p><a data-type="indexterm" data-primary="Python" id="idp39518080"></a></p>
+
+<p>Python용 바인딩은 Pygit2라고 부른다. <a href="http://www.pygit2.org/"><em class="hyperlink">http://www.pygit2.org/</em></a>에서 찾을 수 있다.
+예제를 보자.</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">pygit2</code><code class="o">.</code><code class="n">Repository</code><code class="p">(</code><code class="s">"/path/to/repo"</code><code class="p">)</code> <code class="c"># open repository</code>
+    <code class="o">.</code><code class="n">head</code>                          <code class="c"># get the current branch</code>
+    <code class="o">.</code><code class="n">peel</code><code class="p">(</code><code class="n">pygit2</code><code class="o">.</code><code class="n">Commit</code><code class="p">)</code>           <code class="c"># walk down to the commit</code>
+    <code class="o">.</code><code class="n">message</code>                       <code class="c"># read the message</code></pre>
+</section></section><section data-type="sect2" data-pdf-bookmark="읽을거리" id="idp39747600"><h3 id="읽을거리"><a href="#읽을거리">읽을거리</a></h3>
+
+<p>Libgit2를 자세히 설명하는 것은 이 책의 목적에서 벗어난다.
+Libgit2 자체에 대해서 공부하고 싶다면 Libgit2 가이드(<a href="https://libgit2.github.com/docs"><em class="hyperlink">https://libgit2.github.com/docs</em></a>)와 API 문서(<a href="https://libgit2.github.com/libgit2"><em class="hyperlink">https://libgit2.github.com/libgit2</em></a>)를 참고한다.
+Libgit2 바인딩에 대해서 알고 싶다면 해당 프로젝트의 README 파일과 테스트를 참고해야 한다. 읽어보면 어디서부터 시작해야 하는지 알려준다.</p>
+</section><div id="nav"><a href="/book/ko/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">prev</a> | <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-JGit">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

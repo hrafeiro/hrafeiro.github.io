@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":5,"applicationTime":239,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Contribution à un projet</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">Démarrage rapide</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">À propos de la gestion de version</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Une-rapide-histoire-de-Git">Une rapide histoire de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git">Rudiments de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-La-ligne-de-commande">La ligne de commande</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git">Installation de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Paramétrage à la première utilisation de Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Obtenir-de-l%E2%80%99aide">Obtenir de l’aide</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Les bases de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Démarrer un dépôt Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/fr/v2/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Enregistrer des modifications dans le dépôt</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/fr/v2/Les-bases-de-Git-Visualiser-l%E2%80%99historique-des-validations">Visualiser l’historique des validations</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/fr/v2/Les-bases-de-Git-Annuler-des-actions">Annuler des actions</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">Travailler avec des dépôts distants</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/fr/v2/Les-bases-de-Git-%C3%89tiquetage">Étiquetage</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/fr/v2/Les-bases-de-Git-Les-alias-Git">Les alias Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/fr/v2/Les-bases-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">Les branches avec Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">Les branches en bref</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/fr/v2/Les-branches-avec-Git-Branches-et-fusions%C2%A0%3A-les-bases">Branches et fusions : les bases</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/fr/v2/Les-branches-avec-Git-Gestion-des-branches">Gestion des branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/fr/v2/Les-branches-avec-Git-Travailler-avec-les-branches">Travailler avec les branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/fr/v2/Les-branches-avec-Git-Branches-distantes">Branches distantes</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing">Rebaser (Rebasing)</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/fr/v2/Les-branches-avec-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/fr/v2/Git-sur-le-serveur-Protocoles">Git sur le serveur</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/fr/v2/Git-sur-le-serveur-Protocoles">Protocoles</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/fr/v2/Git-sur-le-serveur-Installation-de-Git-sur-un-serveur">Installation de Git sur un serveur</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/fr/v2/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH">Génération des clés publiques SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/fr/v2/Git-sur-le-serveur-Mise-en-place-du-serveur">Mise en place du serveur</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/fr/v2/Git-sur-le-serveur-D%C3%A9mon-Daemon-Git">Démon (Daemon) Git</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/fr/v2/Git-sur-le-serveur-HTTP-intelligent">HTTP intelligent</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/fr/v2/Git-sur-le-serveur-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/fr/v2/Git-sur-le-serveur-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/fr/v2/Git-sur-le-serveur-Git-h%C3%A9berg%C3%A9">Git hébergé</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/fr/v2/Git-sur-le-serveur-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/fr/v2/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Git distribué</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/fr/v2/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Développements distribués</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/fr/v2/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/fr/v2/Git-distribu%C3%A9-Maintenance-d%E2%80%99un-projet">Maintenance d’un projet</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/fr/v2/Git-distribu%C3%A9-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte">Configuration et paramétrage d’un compte</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/fr/v2/GitHub-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/fr/v2/GitHub-Maintenance-d%E2%80%99un-projet">Maintenance d’un projet</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/fr/v2/GitHub-Gestion-d%E2%80%99un-regroupement">Gestion d’un regroupement</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/fr/v2/GitHub-%C3%89criture-de-scripts-pour-GitHub">Écriture de scripts pour GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/fr/v2/GitHub-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/fr/v2/Utilitaires-Git-S%C3%A9lection-des-versions">Utilitaires Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/fr/v2/Utilitaires-Git-S%C3%A9lection-des-versions">Sélection des versions</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/fr/v2/Utilitaires-Git-Indexation-interactive">Indexation interactive</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/fr/v2/Utilitaires-Git-Remisage-et-nettoyage">Remisage et nettoyage</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/fr/v2/Utilitaires-Git-Signer-votre-travail">Signer votre travail</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/fr/v2/Utilitaires-Git-Recherche">Recherche</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/fr/v2/Utilitaires-Git-R%C3%A9%C3%A9crire-l%E2%80%99historique">Réécrire l’historique</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/fr/v2/Utilitaires-Git-Reset-d%C3%A9mystifi%C3%A9">Reset démystifié</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/fr/v2/Utilitaires-Git-Fusion-avanc%C3%A9e">Fusion avancée</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/fr/v2/Utilitaires-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/fr/v2/Utilitaires-Git-D%C3%A9boguer-avec-Git">Déboguer avec Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/fr/v2/Utilitaires-Git-Sous-modules">Sous-modules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/fr/v2/Utilitaires-Git-Empaquetage-bundling">Empaquetage (bundling)</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/fr/v2/Utilitaires-Git-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/fr/v2/Utilitaires-Git-Stockage-des-identifiants">Stockage des identifiants</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/fr/v2/Utilitaires-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git">Personnalisation de Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git">Configuration de Git</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/fr/v2/Personnalisation-de-Git-Attributs-Git">Attributs Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/fr/v2/Personnalisation-de-Git-Crochets-Git">Crochets Git</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/fr/v2/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">Exemple de politique gérée par Git</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/fr/v2/Personnalisation-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Git-comme-client">Git et les autres systèmes</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Git-comme-client">Git comme client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine">Les tripes de Git</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine">Plomberie et porcelaine</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-objets-de-Git">Les objets de Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/fr/v2/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git">Références Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/fr/v2/Les-tripes-de-Git-Fichiers-group%C3%A9s">Fichiers groupés</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/fr/v2/Les-tripes-de-Git-La-refspec">La refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-protocoles-de-transfert">Les protocoles de transfert</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/fr/v2/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">Maintenance et récupération de données</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-variables-d%E2%80%99environnement">Les variables d’environnement</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/fr/v2/Les-tripes-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/fr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/fr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/fr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/fr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/fr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/fr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/fr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/fr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/fr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/fr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/fr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/fr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/fr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/fr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/fr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/fr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/fr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/fr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/fr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/fr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/fr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/fr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/fr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/fr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>5.2 Git distribué - Contribution à un projet</h1>
+  <div><a id="_contributing_project"></a><h2>Contribution à un projet</h2>
+
+<p><a data-type="indexterm" data-primary="contribuer" id="id-v1ATa"></a></p>
+
+<p>La principale difficulté à décrire ce processus réside dans l’extraordinaire quantité de variations dans sa réalisation.
+Comme Git est très flexible, les gens peuvent collaborer de différentes façons et ils le font, et il devient problématique de décrire de manière unique comment devrait se réaliser la contribution à un projet.
+Chaque projet est légèrement différent.
+Les variables incluent la taille du corps des contributeurs, le choix du flux de gestion, les accès en validation et la méthode de contribution externe.</p>
+
+<p>La première variable est la taille du corps de contributeurs.
+Combien de personnes contribuent activement du code sur ce projet et à quelle vitesse ?
+Dans de nombreux cas, vous aurez deux à trois développeurs avec quelques validations par jour, voire moins pour des projets endormis.
+Pour des sociétés ou des projets particulièrement grands, le nombre de développeurs peut chiffrer à des milliers, avec des dizaines, voire des centaines de patchs ajoutés chaque jour.
+Ce cas est important car avec de plus en plus de développeurs, les problèmes de fusion et d’application de patch deviennent de plus en plus courants.
+Les modifications soumises par un développeur peuvent être obsolètes ou impossibles à appliquer à cause de changements qui ont eu lieu dans l’intervalle de leur développement, de leur approbation ou de leur application.
+Comment dans ces conditions conserver son code en permanence synchronisé et ses patchs valides ?</p>
+
+<p>La variable suivante est le mode de gestion utilisé pour le projet.
+Est-il centralisé avec chaque développeur ayant un accès égal en écriture sur la ligne de développement principale ?
+Le projet présente-t-il un mainteneur ou un gestionnaire d’intégration qui vérifie tous les patchs ?
+Tous les patchs doivent-ils subir une revue de pair et une approbation ?
+Faites-vous partie du processus ?
+Un système à lieutenants est-il en place et doit-on leur soumettre les modifications en premier ?</p>
+
+<p>La variable suivante est la gestion des accès en écriture.
+Le mode de gestion nécessaire à la contribution au projet est très différent selon que vous avez ou non accès au dépôt en écriture.
+Si vous n’avez pas accès en écriture, quelle est la méthode préférée pour la soumission de modifications ?
+Y a-t-il seulement une politique en place ?
+Quelle est la quantité de modifications fournie à chaque fois ?
+Quelle est la périodicité de contribution ?</p>
+
+<p>Toutes ces questions affectent la manière de contribuer efficacement à un projet et les modes de gestion disponibles ou préférables.
+Je vais traiter ces sujets dans une série de cas d’utilisation allant des plus simples aux plus complexes.
+Vous devriez pouvoir construire vos propres modes de gestion à partir de ces exemples.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="_commit_guidelines"><h3 id="Guides-pour-une-validation"><a href="#Guides-pour-une-validation">Guides pour une validation</a></h3>
+
+<p>Avant de passer en revue les cas d’utilisation spécifiques, voici un point rapide sur les messages de validation.
+La définition et l’utilisation d’une bonne ligne de conduite sur les messages de validation facilitent grandement l’utilisation de Git et la collaboration entre développeurs.
+Le projet Git fournit un document qui décrit un certain nombre de bonnes pratiques pour créer des <em>commits</em> qui serviront à fournir des patchs — le document est accessible dans les sources de Git, dans le fichier <code>Documentation/SubmittingPatches</code>.</p>
+
+<p><a data-type="indexterm" data-primary="commandes git" data-secondary="diff" data-tertiary="check" id="id-NBgtr"></a>
+Premièrement, il ne faut pas soumettre de patchs comportant des erreurs d’espace (caractères espace inutiles en fin de ligne ou entrelacement d’espaces et de tabulations).
+Git fournit un moyen simple de le vérifier — avant de valider, lancez la commande <code>git diff --check</code> qui identifiera et listera les erreurs d’espace.</p>
+
+<figure id="id-JBKc5"><img src="/book/en/v2/book/05-distributed-git/images/git-diff-check.png" alt="Sortie de `git diff -check`."><figcaption><span class="label">Figure 5-4. </span>Sortie de <code>git diff -check</code>.</figcaption></figure><p>En lançant cette commande avant chaque validation, vous pouvez vérifier que vous ne commettez pas d’erreurs d’espace qui pourraient ennuyer les autres développeurs.</p>
+
+<p>Ensuite, assurez-vous de faire de chaque validation une modification logiquement atomique. Si possible, rendez chaque modification digeste — ne codez pas pendant un week-end entier sur cinq sujets différents pour enfin les soumettre tous dans une énorme validation le lundi suivant.
+Même si vous ne validez pas du week-end, utilisez la zone d’index le lundi pour découper votre travail en au moins une validation par problème, avec un message utile par validation.
+Si certaines modifications touchent au même fichier, essayez d’utiliser <code>git add --patch</code> pour indexer partiellement des fichiers (cette fonctionnalité est traitée au chapitre <a data-type="xref" href="1-git-tools/_interactive_staging">Indexation interactive</a>).
+L’instantané final sera identique, que vous utilisiez une validation unique ou cinq petites validations, à condition que toutes les modifications soient intégrées à un moment, donc n’hésitez pas à rendre la vie plus simple à vos compagnons développeurs lorsqu’ils auront à vérifier vos modifications.
+Cette approche simplifie aussi le retrait ou l’inversion ultérieurs d’une modification en cas de besoin.
+Le chapitre <a data-type="xref" href="1-git-tools/_rewriting_history">Réécrire l’historique</a> décrit justement quelques trucs et astuces de Git pour réécrire l’historique et indexer interactivement les fichiers — utilisez ces outils pour fabriquer un historique propre et compréhensible.</p>
+
+<p>Le dernier point à soigner est le message de validation.
+S’habituer à écrire des messages de validation de qualité facilite grandement l’emploi et la collaboration avec Git.
+En règle générale, les messages doivent débuter par une ligne unique d’au plus 50 caractères décrivant concisément la modification, suivie d’une ligne vide, suivie d’une explication plus détaillée.
+Le projet Git exige que l’explication détaillée inclue la motivation de la modification en contrastant le nouveau comportement par rapport à l’ancien — c’est une bonne règle de rédaction.
+Une bonne règle consiste aussi à utiliser le présent de l’impératif ou des verbes substantivés dans le message.
+En d’autres termes, utilisez des ordres.
+Au lieu d’écrire « J’ai ajouté des tests pour » ou « En train d’ajouter des tests pour », utilisez juste « Ajoute des tests pour » ou « Ajout de tests pour ».</p>
+
+<p>Voici ci-dessous un modèle écrit par Tim Pope :</p>
+
+<pre data-type="programlisting" data-code-language="text">Court résumé des modifications (50 caractères ou moins)
+
+Explication plus détaillée, si nécessaire. Retour à la ligne vers 72
+caractères. Dans certains contextes, la première ligne est traitée
+comme le sujet d'un courriel et le reste comme le corps. La ligne
+vide qui sépare le titre du corps est importante (à moins d'omettre
+totalement le corps). Des outils tels que rebase peuvent être gênés
+si vous les laissez collés.
+
+Paragraphes supplémentaires après des lignes vides.
+
+ - Les listes à puce sont aussi acceptées
+
+ - Typiquement, un tiret ou un astérisque précédés d'un espace unique
+   séparés par des lignes vides mais les conventions peuvent varier
+</pre>
+
+<p>Si tous vos messages de validation ressemblent à ceci, les choses seront beaucoup plus simples pour vous et les développeurs avec qui vous travaillez.
+Le projet Git montre des messages de <em>commit</em> bien formatés — je vous encourage à y lancer un <code>git log --no-merges</code> pour pouvoir voir comment rend un historique de messages bien formatés.</p>
+
+<p>Dans les exemples suivants et à travers tout ce livre, par souci de simplification, je ne formaterai pas les messages aussi proprement.
+J’utiliserai plutôt l’option <code>-m</code> de <code>git commit</code>.
+Faites ce que je dis, pas ce que je fais.</p>
+</section><section data-type="sect2" id="_private_team"><h3 id="Cas-d’une-petite-équipe-privé"><a href="#Cas-d’une-petite-équipe-privé">Cas d’une petite équipe privé</a></h3>
+
+<p><a data-type="indexterm" data-primary="contribuer" data-secondary="petite équipe privée" id="id-d6miW"></a>
+Le cas le plus probable que vous rencontrerez est celui du projet privé avec un ou deux autres développeurs.
+Par privé, j’entends code source fermé non accessible au public en lecture.
+Vous et les autres développeurs aurez accès en poussée au dépôt.</p>
+
+<p>Dans cet environnement, vous pouvez suivre une méthode similaire à ce que vous feriez en utilisant Subversion ou tout autre système centralisé.
+Vous bénéficiez toujours d’avantages tels que la validation hors-ligne et la gestion de branche et de fusion grandement simplifiée mais les étapes restent similaires.
+La différence principale reste que les fusions ont lieu du côté client plutôt que sur le serveur au moment de valider.
+Voyons à quoi pourrait ressembler la collaboration de deux développeurs sur un dépôt partagé.
+Le premier développeur, John, clone le dépôt, fait une modification et valide localement.
+Dans les exemples qui suivent, les messages de protocole sont remplacés par <code>...</code> pour les raccourcir.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Ordinateur de John
+<code class="gp">$</code> git clone john@githost:simplegit.git
+<code class="go">Clonage dans 'simplegit'...</code>
+<code class="go">...</code>
+<code class="gp">$</code> <code class="nb">cd </code>simplegit/
+<code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'Eliminer une valeur par défaut invalide'</code>
+<code class="go">[master 738ee87] Eliminer une valeur par défaut invalide</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+</pre>
+
+<p>La deuxième développeuse, Jessica, fait la même chose.
+Elle clone le dépôt et valide une modification :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Ordinateur de Jessica
+<code class="gp">$</code> git clone jessica@githost:simplegit.git
+<code class="go">Clonage dans 'simplegit'...</code>
+<code class="go">...</code>
+<code class="gp">$</code> <code class="nb">cd </code>simplegit/
+<code class="gp">$</code> vim TODO
+<code class="gp">$</code> git commit -am <code class="s1">'Ajouter une tache reset'</code>
+<code class="go">[master fbff5bc] Ajouter une tache reset</code>
+<code class="go"> 1 files changed, 1 insertions(+), 0 deletions(-)</code>
+</pre>
+
+<p>À présent, Jessica pousse son travail sur le serveur :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Ordinateur de Jessica
+<code class="gp">$</code> git push origin master
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   1edee6b..fbff5bc  master -&gt; master</code>
+</pre>
+
+<p>John tente aussi de pousser ses modifications :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Ordinateur de John
+<code class="gp">$</code> git push origin master
+<code class="go">To john@githost:simplegit.git</code>
+<code class="go"> ! [rejected]        master -&gt; master (non-fast forward)</code>
+<code class="go">error: impossible de pousser des références vers 'john@githost:simplegit.git'</code>
+<code class="go">astuce: Les mises à jour ont été rejetées car la pointe de la branche courante est derrière</code>
+<code class="go">astuce: son homologue distant. Intégrez les changements distants (par exemple 'git pull ...')</code>
+<code class="go">astuce: avant de pousser à nouveau.</code>
+<code class="go">astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.</code>
+</pre>
+
+<p>John n’a pas le droit de pousser parce que Jessica a déjà poussé dans l’intervalle.
+Il est très important de comprendre ceci si vous avez déjà utilisé Subversion, parce qu’il faut remarquer que les deux développeurs n’ont pas modifié le même fichier.
+Quand des fichiers différents ont été modifiés, Subversion réalise cette fusion automatiquement sur le serveur alors que Git nécessite une fusion des modifications locale.
+John doit récupérer les modifications de Jessica et les fusionner avant d’être autorisé à pousser :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From john@githost:simplegit</code>
+<code class="go"> + 049d078...fbff5bc master     -&gt; origin/master</code>
+</pre>
+
+<p>À présent, le dépôt local de John ressemble à la figure 5-4.</p>
+
+<figure id="id-My6iY"><img src="/book/en/v2/book/05-distributed-git/images/small-team-1.png" alt="Historique divergent de John."><figcaption><span class="label">Figure 5-5. </span>Historique divergent de John.</figcaption></figure><p>John a une référence aux modifications que Jessica a poussées, mais il doit les fusionner dans sa propre branche avant d’être autorisé à pousser :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">Merge made by recursive.</code>
+<code class="go"> TODO |    1 +</code>
+<code class="go"> 1 files changed, 1 insertions(+), 0 deletions(-)</code>
+</pre>
+
+<p>Cette fusion se passe sans problème — l’historique de <em>commits</em> de John ressemble à présent à ceci :</p>
+
+<figure id="id-nNyF4"><img src="/book/en/v2/book/05-distributed-git/images/small-team-2.png" alt="Le dépôt de John après la fusion d'`origin/master`."><figcaption><span class="label">Figure 5-6. </span>Le dépôt de John après la fusion d’<code>origin/master</code>.</figcaption></figure><p>Maintenant, John peut tester son code pour s’assurer qu’il fonctionne encore correctement et peut pousser son travail nouvellement fusionné sur le serveur :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push origin master
+<code class="go">...</code>
+<code class="go">To john@githost:simplegit.git</code>
+<code class="go">   fbff5bc..72bbc59  master -&gt; master</code>
+</pre>
+
+<p>À la fin, l’historique des <em>commits</em> de John ressemble à ceci :</p>
+
+<figure id="id-w88FW"><img src="/book/en/v2/book/05-distributed-git/images/small-team-3.png" alt="L'historique de John après avoir poussé sur le serveur origin."><figcaption><span class="label">Figure 5-7. </span>L’historique de John après avoir poussé sur le serveur origin.</figcaption></figure><p>Dans l’intervalle, Jessica a travaillé sur une branche thématique.
+Elle a créé une branche thématique nommée <code>prob54</code> et réalisé trois validations sur cette branche.
+Elle n’a pas encore récupéré les modifications de John, ce qui donne un historique semblable à ceci :</p>
+
+<figure id="id-VNMty"><img src="/book/en/v2/book/05-distributed-git/images/small-team-4.png" alt="La branche thématique de Jessica."><figcaption><span class="label">Figure 5-8. </span>La branche thématique de Jessica.</figcaption></figure><p>Jessica souhaite se synchroniser sur le travail de John.
+Elle récupère donc ses modifications :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Ordinateur de Jessica
+<code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From jessica@githost:simplegit</code>
+<code class="go">   fbff5bc..72bbc59  master     -&gt; origin/master</code>
+</pre>
+
+<p>Cette commande tire le travail que John avait poussé dans l’intervalle.
+L’historique de Jessica ressemble maintenant à ceci :</p>
+
+<figure id="id-gzjHj"><img src="/book/en/v2/book/05-distributed-git/images/small-team-5.png" alt="L'historique de Jessica après avoir récupéré les modifications de John.."><figcaption><span class="label">Figure 5-9. </span>L’historique de Jessica après avoir récupéré les modifications de John.</figcaption></figure><p>Jessica pense que sa branche thématique est prête mais elle souhaite savoir si elle doit fusionner son travail avant de pouvoir pousser.
+Elle lance <code>git log</code> pour s’en assurer :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --no-merges issue54..origin/master
+<code class="go">commit 738ee872852dfaa9d6634e0dea7a324040193016</code>
+<code class="go">Author: John Smith &lt;jsmith@example.com&gt;</code>
+<code class="go">Date:   Fri May 29 16:01:27 2009 -0700</code>
+
+<code class="go">    Eliminer une valeur par defaut invalide</code>
+</pre>
+
+<p>La syntaxe <code>prob54..origin/master</code> est un filtre du journal qui ordonne à Git de ne montrer que la liste des <em>commits</em> qui sont sur la seconde branche (dans ce cas <code>origin/master</code>) qui ne sont pas sur la première (dans ce cas <code>prob54</code>).
+Nous aborderons cette syntaxe en détail dans <a data-type="xref" href="1-git-tools/_commit_ranges">Plages de commits</a>.</p>
+
+<p>Pour l’instant, nous pouvons voir que dans le résultat qu’il n’y a qu’un seul <em>commit</em> créé par John que Jessica n’a pas fusionné.
+Si elle fusionne <code>origin/master</code>, ce sera le seul commit qui modifiera son travail local.</p>
+
+<p>Maintenant, Jessica peut fusionner sa branche thématique dans sa branche <code>master</code>, fusionner le travail de John (<code>origin/master</code>)dans sa branche <code>master</code>, puis pousser le résultat sur le serveur.
+Premièrement, elle rebascule sur sa branche <code>master</code> pour intégrer son travail :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="go">Basculement sur la branche 'master'</code>
+<code class="go">Votre branche est en retard sur 'origin/master' de 2 commits, et peut être mise à jour en avance rapide.</code>
+</pre>
+
+<p>Elle peut fusionner soit <code>origin/master</code> soit <code>prob54</code> en premier — les deux sont en avance, mais l’ordre n’importe pas.
+L’instantané final devrait être identique quel que soit l’ordre de fusion qu’elle choisit.
+Seul l’historique sera légèrement différent.
+Elle choisit de fusionner en premier <code>prob54</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge issue54
+<code class="go">Mise à jour fbff5bc..4af4298</code>
+<code class="go">Avance rapide</code>
+<code class="go"> LISEZMOI         |    1 +</code>
+<code class="go"> lib/simplegit.rb |    6 +++++-</code>
+<code class="go"> 2 files changed, 6 insertions(+), 1 deletions(-)</code>
+</pre>
+
+<p>Aucun problème n’apparaît.
+Comme vous pouvez le voir, c’est une simple avance rapide.
+Maintenant, Jessica fusionne le travail de John (<code>origin/master</code>) :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">Fusion automatique de lib/simplegit.rb</code>
+<code class="go">Merge made by recursive.</code>
+<code class="go"> lib/simplegit.rb |    2 +-</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+</pre>
+
+<p>Tout a fusionné proprement et l’historique de Jessica ressemble à ceci :</p>
+
+<figure id="id-53PC3"><img src="/book/en/v2/book/05-distributed-git/images/small-team-6.png" alt="L'historique de Jessica après avoir fusionné les modifications de John."><figcaption><span class="label">Figure 5-10. </span>L’historique de Jessica après avoir fusionné les modifications de John.</figcaption></figure><p>Maintenant <code>origin/master</code> est accessible depuis la branche <code>master</code> de Jessica, donc elle devrait être capable de pousser (en considérant que John n’a pas encore poussé dans l’intervalle) :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push origin master
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   72bbc59..8059c15  master -&gt; master</code>
+</pre>
+
+<p>Chaque développeur a validé quelques fois et fusionné les travaux de l’autre avec succès.</p>
+
+<figure id="id-M8AuY"><img src="/book/en/v2/book/05-distributed-git/images/small-team-7.png" alt="L'historique de Jessica après avoir poussé toutes ses modifications sur le serveur."><figcaption><span class="label">Figure 5-11. </span>L’historique de Jessica après avoir poussé toutes ses modifications sur le serveur.</figcaption></figure><p>C’est un des schémas les plus simples.
+Vous travaillez pendant quelque temps, généralement sur une branche thématique, et fusionnez dans votre branche <code>master</code> quand elle est prête à être intégrée.
+Quand vous souhaitez partager votre travail, vous récupérez <code>origin/master</code> et la fusionnez si elle a changé, puis finalement vous poussez le résultat sur la branche <code>master</code> du serveur.
+La séquence correspond à ceci :</p>
+
+<figure id="id-WE9tN"><img src="/book/en/v2/book/05-distributed-git/images/small-team-flow.png" alt="Séquence générale des événements pour une utilisation simple multi-développeur de Git."><figcaption><span class="label">Figure 5-12. </span>Séquence générale des événements pour une utilisation simple multi-développeur de Git.</figcaption></figure></section><section data-type="sect2" id="equipe-privee-importante-48rto"><h3 id="Équipe-privée-importante"><a href="#Équipe-privée-importante">Équipe privée importante</a></h3>
+
+<p>
+Dans le scénario suivant, nous aborderons les rôles de contributeur dans un groupe privé plus grand.
+Vous apprendrez comment travailler dans un environnement où des petits groupes collaborent sur des fonctionnalités, puis les contributions de chaque équipe sont intégrées par une autre entité.</p>
+
+<p>Supposons que John et Jessica travaillent ensemble sur une première fonctionnalité, tandis que Jessica et Josie travaillent sur une autre.
+Dans ce cas, l’entreprise utilise un mode d’opération de type « gestionnaire d’intégration » où le travail des groupes est intégré par certains ingénieurs, et la branche <code>master</code> du dépôt principal ne peut être mise à jour que par ces ingénieurs.
+Dans ce scénario, tout le travail est validé dans des branches orientées équipe, et tiré plus tard par les intégrateurs.</p>
+
+<p>Suivons le cheminement de Jessica tandis qu’elle travaille sur les deux nouvelles fonctionnalités, collaborant en parallèle avec deux développeurs différents dans cet environnement.
+En supposant qu’elle ait cloné son dépôt, elle décide de travailler sur la <code>fonctionA</code> en premier.
+Elle crée une nouvelle branche pour cette fonction et travaille un peu dessus :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Ordinateur de Jessica
+<code class="gp">$</code> git checkout -b fonctionA
+<code class="go">Basculement sur la nouvelle branche 'fonctionA'</code>
+<code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'Ajouter une limite à la fonction de log'</code>
+<code class="go">[fonctionA 3300904] Ajouter une limite à la fonction de log</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+</pre>
+
+<p>À ce moment, elle a besoin de partager son travail avec John, donc elle pousse les <em>commits</em> de sa branche <code>fonctionA</code> sur le serveur.
+Jessica n’a pas le droit de pousser sur la branche <code>master</code> — seuls les intégrateurs l’ont — et elle doit donc pousser sur une autre branche pour collaborer avec John :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push -u origin fonctionA
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go"> * [nouvelle branche]      fonctionA -&gt; fonctionA</code>
+</pre>
+
+<p>Jessica envoie un courriel à John pour lui indiquer qu’elle a poussé son travail dans la branche appelée <code>fonctionA</code> et qu’il peut l’inspecter.
+Pendant qu’elle attend le retour de John, Jessica décide de commencer à travailler sur la <code>fonctionB</code> avec Josie.
+Pour commencer, elle crée une nouvelle branche thématique, à partir de la base <code>master</code> du serveur :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> Jessica<code class="err">'</code>s Machine
+<code class="gp">$</code> git fetch origin
+<code class="gp">$</code> git checkout -b fonctionB origin/master
+<code class="go">Basculement sur la nouvelle branche 'fonctionB'</code>
+</pre>
+
+<p>À présent, Jessica réalise quelques validations sur la branche <code>fonctionB</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'made the ls-tree function recursive'</code>
+<code class="go">[featureB e5b0fdc] made the ls-tree function recursive</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+<code class="gp">$</code> vim lib/simplegit.rb
+<code class="gp">$</code> git commit -am <code class="s1">'add ls-files'</code>
+<code class="go">[featureB 8512791] add ls-files</code>
+<code class="go"> 1 files changed, 5 insertions(+), 0 deletions(-)</code>
+</pre>
+
+<p>Le dépôt de Jessica ressemble à la figure suivante :</p>
+
+<figure id="id-jgmfv"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-1.png" alt="L'historique initial de Jessica."><figcaption><span class="label">Figure 5-13. </span>L’historique initial de Jessica.</figcaption></figure><p>Elle est prête à pousser son travail, mais elle reçoit un mail de Josie indiquant qu’une branche avec un premier travail a déjà été poussé sur le serveur en tant que <code>fonctionBee</code>.
+Jessica doit d’abord fusionner ces modifications avec les siennes avant de pouvoir pousser sur le serveur.
+Elle peut récupérer les modifications de Josie avec <code>git fetch</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From jessica@githost:simplegit</code>
+<code class="go"> * [nouvelle branche]      fonctionBee -&gt; origin/fonctionBee</code>
+</pre>
+
+<p>Jessica peut à présent fusionner ceci dans le travail qu’elle a réalisé grâce à <code>git merge</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/fonctionBee
+<code class="go">Fusion automatique de lib/simplegit.rb</code>
+<code class="go">Merge made by recursive.</code>
+<code class="go"> lib/simplegit.rb |    4 ++++</code>
+<code class="go"> 1 files changed, 4 insertions(+), 0 deletions(-)</code>
+</pre>
+
+<p>Mais il y a un petit problème — elle doit pousser son travail fusionné dans sa branche <code>fonctionB</code> sur la branche <code>fonctionBee</code> du serveur.
+Elle peut le faire en spécifiant la branche locale suivie de deux points (:) suivi de la branche distante à la commande <code>git push</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push -u origin fonctionB:fonctionBee
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   fba9af8..cd685d1  fonctionB -&gt; fonctionBee</code>
+</pre>
+
+<p>Cela s’appelle une <em>refspec</em>. Référez-vous à <a data-type="xref" href="1-git-internals/_refspec">La refspec</a> pour une explication plus détaillée des refspecs Git et des possibilités qu’elles offrent.
+Notez l’option <code>-u</code>.
+C’est un raccourci pour <code>--set-upstream</code>, qui configure les branches pour faciliter les poussées et les tirages plus tard.</p>
+
+<p>Ensuite, John envoie un courriel à Jessica pour lui indiquer qu’il a poussé des modifications sur la branche <code>fonctionA</code> et lui demander de les vérifier.
+Elle lance <code>git fetch</code> pour tirer toutes ces modifications :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin
+<code class="go">...</code>
+<code class="go">From jessica@githost:simplegit</code>
+<code class="go">   3300904..aad881d  fonctionA   -&gt; origin/fonctionA</code>
+</pre>
+
+<p>Elle peut voir ce qui a été modifié avec <code>git log</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log fonctionA..origin/fonctionA
+<code class="go">commit aad881d154acdaeb2b6b18ea0e827ed8a6d671e6</code>
+<code class="go">Author: John Smith &lt;jsmith@example.com&gt;</code>
+<code class="go">Date:   Fri May 29 19:57:33 2009 -0700</code>
+
+<code class="go">    largeur du log passee de 25 a 30</code>
+</pre>
+
+<p>Finalement, elle fusionne le travail de John dans sa propre branche <code>fonctionA</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout fonctionA
+<code class="go">Basculement sur la branche 'fonctionA'</code>
+<code class="gp">$</code> git merge origin/fonctionA
+<code class="go">Updating 3300904..aad881d</code>
+<code class="go">Avance rapide</code>
+<code class="go"> lib/simplegit.rb |   10 +++++++++-</code>
+<code class="go">1 files changed, 9 insertions(+), 1 deletions(-)</code>
+</pre>
+
+<p>Jessica veut régler quelques détails.
+Elle valide donc encore et pousse ses changements sur le serveur :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -am <code class="s1">'details regles'</code>
+<code class="go">[fonctionA ed774b3] details regles</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+<code class="gp">$</code> git push
+<code class="go">...</code>
+<code class="go">To jessica@githost:simplegit.git</code>
+<code class="go">   3300904..ed774b3  fonctionA -&gt; fonctionA</code>
+</pre>
+
+<p>L’historique des <em>commits</em> de Jessica ressemble à présent à ceci :</p>
+
+<figure id="id-4vMu5"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-2.png" alt="L'historique de Jessica après la validation dans la branche thématique."><figcaption><span class="label">Figure 5-14. </span>L’historique de Jessica après la validation dans la branche thématique.</figcaption></figure><p>Jessica, Josie et John informent les intégrateurs que les branches <code>fonctionA</code> et <code>fonctionB</code> du serveur sont prêtes pour une intégration dans la branche principale.
+Après cette intégration dans la branche principale, une synchronisation apportera les <em>commits</em> de fusion, ce qui donnera un historique comme celui-ci :</p>
+
+<figure id="id-Lyjcw"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-3.png" alt="L'historique de Jessica après la fusion de ses deux branches thématiques."><figcaption><span class="label">Figure 5-15. </span>L’historique de Jessica après la fusion de ses deux branches thématiques.</figcaption></figure><p>De nombreux groupes basculent vers Git du fait de cette capacité à gérer plusieurs équipes travaillant en parallèle, fusionnant plusieurs lignes de développement très tard dans le processus de livraison.
+La capacité donnée à plusieurs sous-groupes d’équipes de collaborer au moyen de branches distantes sans nécessairement impacter le reste de l’équipe est un grand bénéfice apporté par Git.
+La séquence de travail qui vous a été décrite ressemble à la figure suivante :</p>
+
+<figure id="id-zKehb"><img src="/book/en/v2/book/05-distributed-git/images/managed-team-flow.png" alt="Une séquence simple de gestion orientée équipe."><figcaption><span class="label">Figure 5-16. </span>Une séquence simple de gestion orientée équipe.</figcaption></figure></section><section data-type="sect2" id="_public_project"><h3 id="Projet-public-dupliqué"><a href="#Projet-public-dupliqué">Projet public dupliqué</a></h3>
+
+<p><a data-type="indexterm" data-primary="contribuer" data-secondary="petit projet public" id="id-dVGHW"></a>
+Contribuer à un projet public est assez différent.
+Il faut présenter le travail au mainteneur d’une autre manière parce que vous n’avez pas la possibilité de mettre à jour directement des branches du projet.
+Ce premier exemple décrit un mode de contribution via des serveurs Git qui proposent facilement la duplication de dépôt.
+De nombreux sites proposent cette méthode (dont GitHub, BitBucket, Google Code, repo.or.cz), et de nombreux mainteneurs s’attendent à ce style de contribution.
+Le chapitre suivant traite des projets qui préfèrent accepter les contributions sous forme de patch via courriel.</p>
+
+<p>Premièrement, vous souhaiterez probablement cloner le dépôt principal, créer une nouvelle branche thématique pour le patch ou la série de patchs que seront votre contribution, et commencer à travailler.
+La séquence ressemble globalement à ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone <code class="o">(</code>url<code class="o">)</code>
+<code class="gp">$</code> <code class="nb">cd </code>projet
+<code class="gp">$</code> git checkout -b fonctionA
+<code class="gp">#</code> <code class="o">(</code>travail<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">#</code> <code class="o">(</code>travail<code class="o">)</code>
+<code class="gp">$</code> git commit
+</pre>
+<div data-type="note" id="id-K6Jtd">
+<h6>Note</h6>
+<p>Vous pouvez utiliser <code>rebase -i</code> pour réduire votre travail à une seule validation ou pour réarranger les modifications dans des <em>commits</em> qui rendront les patchs plus faciles à relire pour le mainteneur — référez-vous à <a data-type="xref" href="1-git-tools/_rewriting_history">Réécrire l’historique</a> pour plus d’information sur comment rebaser de manière interactive.</p>
+</div>
+
+<p>Lorsque votre branche de travail est prête et que vous êtes prêt à la fournir au mainteneur, rendez-vous sur la page du projet et cliquez sur le bouton « Fork » pour créer votre propre projet dupliqué sur lequel vous aurez les droits en écriture.
+Vous devez alors ajouter l’URL de ce nouveau dépôt en tant que second dépôt distant, dans notre cas nommé <code>macopie</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add macopie <code class="o">(</code>url<code class="o">)</code>
+</pre>
+
+<p>Vous devez pousser votre travail sur ce dépôt distant.
+C’est beaucoup plus facile de pousser la branche sur laquelle vous travaillez sur une branche distante que de fusionner et de pousser le résultat sur le serveur.
+La raison principale en est que si le travail n’est pas accepté ou s’il est picoré, vous n’aurez pas à faire marche arrière sur votre branche <code>master</code>.
+Si le mainteneur fusionne, rebase ou picore votre travail, vous le saurez en tirant depuis son dépôt :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push -u macopie fonctionA
+</pre>
+
+<p><a data-type="indexterm" data-primary="commandes git" data-secondary="request-pull" id="id-N8Kcr"></a>
+Une fois votre travail poussé sur votre dépôt copie, vous devez notifier le mainteneur.
+Ce processus est souvent appelé une demande de tirage (<em>pull request</em>) et vous pouvez la générer soit via le site web — GitHub propose son propre mécanisme qui sera traité au chapitre <a data-type="xref" href="1-github/_github">GitHub</a> — soit lancer la commande <code>git request-pull</code> et envoyer manuellement par courriel le résultat au mainteneur de projet.</p>
+
+<p>La commande <code>request-pull</code> prend en paramètres la branche de base dans laquelle vous souhaitez que votre branche thématique soit fusionnée et l’URL du dépôt Git depuis lequel vous souhaitez qu’elle soit tirée, et génère un résumé des modifications que vous demandez à faire tirer.
+Par exemple, si Jessica envoie à John une demande de tirage et qu’elle a fait deux validations dans la branche thématique qu’elle vient de pousser, elle peut lancer ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git request-pull origin/master macopie
+<code class="go">The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:</code>
+<code class="go">  John Smith (1):</code>
+<code class="go">        ajout d'une nouvelle fonction</code>
+
+<code class="go">are available in the git repository at:</code>
+
+<code class="go">  git://githost/simplegit.git fonctionA</code>
+
+<code class="go">Jessica Smith (2):</code>
+<code class="go">      Ajout d'une limite à la fonction de log</code>
+<code class="go">      change la largeur du log de 25 a 30</code>
+
+<code class="go"> lib/simplegit.rb |   10 +++++++++-</code>
+<code class="go"> 1 files changed, 9 insertions(+), 1 deletions(-)</code>
+</pre>
+
+<p>Le résultat peut être envoyé au mainteneur — cela lui indique d’où la modification a été branchée, le résumé des validations et d’où tirer ce travail.</p>
+
+<p>Pour un projet dont vous n’êtes pas le mainteneur, il est généralement plus aisé de toujours laisser la branche <code>master</code> suivre <code>origin/master</code> et de réaliser vos travaux sur des branches thématiques que vous pourrez facilement effacer si elles sont rejetées.
+Garder les thèmes de travaux isolés sur des branches thématiques facilite aussi leur rebasage si le sommet du dépôt principal a avancé dans l’intervalle et que vos modifications ne s’appliquent plus proprement.
+Par exemple, si vous souhaitez soumettre un second sujet de travail au projet, ne continuez pas à travailler sur la branche thématique que vous venez de pousser mais démarrez en plutôt une depuis la branche <code>master</code> du dépôt principal :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b fonctionB origin/master
+<code class="gp">#</code> <code class="o">(</code>travail<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">$</code> git push macopie fonctionB
+<code class="gp">#</code> <code class="o">(</code>email au maintainer<code class="o">)</code>
+<code class="gp">$</code> git fetch origin
+</pre>
+
+<p>À présent, chaque sujet est contenu dans son propre silo — similaire à une file de patchs — que vous pouvez réécrire, rebaser et modifier sans que les sujets n’interfèrent ou ne dépendent les uns des autres, comme ceci :</p>
+
+<figure id="id-vmLiD"><img src="/book/en/v2/book/05-distributed-git/images/public-small-1.png" alt="Historique initial des _commits_ avec les modifications de fonctionB."><figcaption><span class="label">Figure 5-17. </span>Historique initial des <em>commits</em> avec les modifications de fonctionB.</figcaption></figure><p>Supposons que le mainteneur du projet a tiré une poignée d’autres patchs et essayé par la suite votre première branche, mais celle-ci ne s’applique plus proprement.
+Dans ce cas, vous pouvez rebaser cette branche au sommet de <code>origin/master</code>, résoudre les conflits pour le mainteneur et soumettre de nouveau vos modifications :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout fonctionA
+<code class="gp">$</code> git rebase origin/master
+<code class="gp">$</code> git push -f macopie fonctionA
+</pre>
+
+<p>Cette action réécrit votre historique pour qu’il ressemble à <a data-type="xref" href="ch00/psp_b">Figure 5-18</a>.</p>
+
+<figure id="psp_b"><img src="/book/en/v2/book/05-distributed-git/images/public-small-2.png" alt="Historique des validations après le travail sur fonctionA."><figcaption><span class="label">Figure 5-18. </span>Historique des validations après le travail sur fonctionA.</figcaption></figure><p>Comme vous avez rebasé votre branche, vous devez spécifier l’option <code>-f</code> à votre commande pour pousser, pour forcer le remplacement de la branche <code>fonctionA</code> sur le serveur par la suite de <em>commits</em> qui n’en est pas descendante.
+Une solution alternative serait de pousser ce nouveau travail dans une branche différente du serveur (appelée par exemple <code>fonctionAv2</code>).</p>
+
+<p>Examinons un autre scénario possible : le mainteneur a revu les modifications dans votre seconde branche et apprécie le concept, mais il souhaiterait que vous changiez des détails d’implémentation.
+Vous en profiterez pour rebaser ce travail sur le sommet actuel de la branche <code>master</code> du projet.
+Vous démarrez une nouvelle branche à partir de la branche <code>origin/master</code> courante, y collez les modifications de <code>fonctionB</code> en résolvant les conflits, changez l’implémentation et poussez le tout en tant que nouvelle branche :</p>
+
+<p><a data-type="indexterm" data-primary="commandes git" data-secondary="merge" data-tertiary="squash" id="id-9MrfR"></a></p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b fonctionBv2 origin/master
+<code class="gp">$</code> git merge --no-commit --squash fonctionB
+<code class="gp">#</code> <code class="o">(</code>changement d<code class="err">'</code>implémentation<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">$</code> git push macopie fonctionBv2
+</pre>
+
+<p>L’option <code>--squash</code> prend tout le travail de la branche à fusionner et le colle dans un <em>commit</em> sans fusion au sommet de la branche extraite.
+L’option <code>--no-commit</code> indique à Git de ne pas enregistrer automatiquement une validation.
+Cela permet de reporter toutes les modifications d’une autre branche, puis de réaliser d’autres modifications avant de réaliser une nouvelle validation.</p>
+
+<p>À présent, vous pouvez envoyer au mainteneur un message indiquant que vous avez réalisé les modifications demandées et qu’il peut trouver cette nouvelle mouture sur votre branche <code>fonctionBv2</code>.</p>
+
+<figure id="id-MnYcY"><img src="/book/en/v2/book/05-distributed-git/images/public-small-3.png" alt="Historique des validations après le travail sur fonctionBv2."><figcaption><span class="label">Figure 5-19. </span>Historique des validations après le travail sur fonctionBv2.</figcaption></figure></section><section data-type="sect2" id="_project_over_email"><h3 id="Projet-public-via-courriel"><a href="#Projet-public-via-courriel">Projet public via courriel</a></h3>
+
+<p><a data-type="indexterm" data-primary="contribuer" data-secondary="grand projet public" id="id-PmVCe"></a>
+De nombreux grands projets ont des procédures établies pour accepter des patchs — il faut vérifier les règles spécifiques à chaque projet qui peuvent varier.
+Comme il existe quelques gros projets établis qui acceptent les patchs via une liste de diffusion de développement, nous allons éclairer cette méthode d’un exemple.</p>
+
+<p>La méthode est similaire au cas précédent — vous créez une branche thématique par série de patchs sur laquelle vous travaillez.
+La différence réside dans la manière de les soumettre au projet.
+Au lieu de dupliquer le projet et de pousser vos soumissions sur votre dépôt, il faut générer des versions courriel de chaque série de <em>commits</em> et les envoyer à la liste de diffusion de développement.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b topicA
+<code class="gp">#</code> <code class="o">(</code>travail<code class="o">)</code>
+<code class="gp">$</code> git commit
+<code class="gp">#</code> <code class="o">(</code>travail<code class="o">)</code>
+<code class="gp">$</code> git commit
+</pre>
+
+<p><a data-type="indexterm" data-primary="commandes git" data-secondary="format-patch" id="id-w5wcl"></a>
+Vous avez à présent deux <em>commits</em> que vous souhaitez envoyer à la liste de diffusion.
+Vous utilisez <code>git format-patch</code> pour générer des fichiers au format mbox que vous pourrez envoyer à la liste.
+Cette commande transforme chaque <em>commit</em> en un message courriel dont le sujet est la première ligne du message de validation et le corps contient le reste du message plus le patch correspondant.
+Un point intéressant de cette commande est qu’appliquer le patch à partir d’un courriel formaté avec <code>format-patch</code> préserve toute l’information de validation.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git format-patch -M origin/master
+<code class="go">0001-Ajout-d-une-limite-la-fonction-de-log.patch</code>
+<code class="go">0002-change-la-largeur-du-log-de-25-a-30.patch</code>
+</pre>
+
+<p>La commande <code>format-patch</code> affiche les noms de fichiers de patch créés.
+L’option <code>-M</code> indique à Git de suivre les renommages.
+Le contenu des fichiers ressemble à ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat 0001-Ajout-d-une-limite-la-fonction-de-log.patch
+<code class="go">From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001</code>
+<code class="go">From: Jessica Smith &lt;jessica@example.com&gt;</code>
+<code class="go">Date: Sun, 6 Apr 2008 10:17:23 -0700</code>
+<code class="go">Subject: [PATCH 1/2] Ajout d'un limite à la fonction de log</code>
+
+<code class="go">Limite la fonctionnalité de log aux 20 premières lignes</code>
+
+<code class="go">---</code>
+<code class="go"> lib/simplegit.rb |    2 +-</code>
+<code class="go"> 1 files changed, 1 insertions(+), 1 deletions(-)</code>
+
+<code class="go">diff --git a/lib/simplegit.rb b/lib/simplegit.rb</code>
+<code class="go">index 76f47bc..f9815f1 100644</code>
+<code class="go">--- a/lib/simplegit.rb</code>
+<code class="go">+++ b/lib/simplegit.rb</code>
+<code class="go">@@ -14,7 +14,7 @@ class SimpleGit</code>
+<code class="go">   end</code>
+
+<code class="go">   def log(treeish = 'master')</code>
+<code class="go">-    command("git log #{treeish}")</code>
+<code class="go">+    command("git log -n 20 #{treeish}")</code>
+<code class="go">   end</code>
+
+<code class="go">   def ls_tree(treeish = 'master')</code>
+<code class="go">--</code>
+<code class="go">2.1.0</code>
+</pre>
+
+<p>Vous pouvez maintenant éditer ces fichiers de patch pour ajouter plus d’informations à destination de la liste de diffusion mais que vous ne souhaitez pas voir apparaître dans le message de validation.
+Si vous ajoutez du texte entre la ligne <code>---</code> et le début du patch (la ligne <code>diff --git</code>), les développeurs peuvent le lire mais l’application du patch ne le prend pas en compte.</p>
+
+<p>Pour envoyer par courriel ces fichiers, vous pouvez soit copier leur contenu dans votre application de courriel, soit l’envoyer via une ligne de commande.
+Le copier-coller cause souvent des problèmes de formatage, spécialement avec les applications « intelligentes » qui ne préservent pas les retours à la ligne et les types d’espace.
+Heureusement, Git fournit un outil pour envoyer correctement les patchs formatés via IMAP, la méthode la plus facile.
+Je démontrerai comment envoyer un patch via Gmail qui s’avère être la boîte mail que j’utilise ; vous pourrez trouver des instructions détaillées pour de nombreuses applications de mail à la fin du fichier susmentionné <code>Documentation/SubmittingPatches</code> du code source de Git.</p>
+
+<p><a data-type="indexterm" data-primary="commandes git" data-secondary="config" id="id-l8Esb"></a><a data-type="indexterm" data-primary="courriel" id="id-mrwuA"></a>
+Premièrement, il est nécessaire de paramétrer la section <code>imap</code> de votre fichier <code>~/.gitconfig</code>.
+Vous pouvez positionner ces valeurs séparément avec une série de commandes <code>git config</code>, ou vous pouvez les ajouter manuellement.
+À la fin, le fichier de configuration doit ressembler à ceci :</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[imap]</code>
+  <code class="na">folder</code> <code class="o">=</code> <code class="s">"[Gmail]/Drafts"</code>
+<code class="s">  host = imaps://imap.gmail.com</code>
+<code class="s">  user = utilisateur@gmail.com</code>
+<code class="s">  pass = m0td3p4ss3</code>
+<code class="s">  port = 993</code>
+<code class="s">  sslverify = false</code>
+</pre>
+
+<p>Si votre serveur IMAP n’utilise pas SSL, les deux dernières lignes ne sont probablement pas nécessaires et le paramètre <code>host</code> commencera par <code>imap://</code> au lieu de <code>imaps://</code>.
+Quand c’est fait, vous pouvez utiliser la commande <code>git imap-send</code> pour placer la série de patchs dans le répertoire <em>Drafts</em> du serveur IMAP spécifié :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git send-email *.patch
+<code class="go">0001-Ajout-d-une-limite-la-fonction-de-log.patch</code>
+<code class="go">0002-change-la-largeur-du-log-de-25-a-30.patch</code>
+<code class="go">Who should the emails appear to be from? [Jessica Smith &lt;jessica@example.com&gt;]</code>
+<code class="go">Emails will be sent from: Jessica Smith &lt;jessica@example.com&gt;</code>
+<code class="go">Who should the emails be sent to? jessica@example.com</code>
+<code class="go">Message-ID to be used as In-Reply-To for the first email? y</code>
+</pre>
+
+<p>Ensuite, Git crache un certain nombre d’informations qui ressemblent à ceci pour chaque patch à envoyer :</p>
+
+<pre data-type="programlisting" data-code-language="text">(mbox) Adding cc: Jessica Smith &lt;jessica@example.com&gt; from
+  \line 'From: Jessica Smith &lt;jessica@example.com&gt;'
+OK. Log says:
+Sendmail: /usr/sbin/sendmail -i jessica@example.com
+From: Jessica Smith &lt;jessica@example.com&gt;
+To: jessica@example.com
+Subject: [PATCH 1/2] added limit to log function
+Date: Sat, 30 May 2009 13:29:15 -0700
+Message-Id: &lt;1243715356-61726-1-git-send-email-jessica@example.com&gt;
+X-Mailer: git-send-email 1.6.2.rc1.20.g8c5b.dirty
+In-Reply-To: &lt;y&gt;
+References: &lt;y&gt;
+
+Result: OK
+</pre>
+
+<p>À présent, vous devriez pouvoir vous rendre dans le répertoire <em>Drafts</em>, changer le champ destinataire pour celui de la liste de diffusion, y ajouter optionnellement en copie le mainteneur du projet ou le responsable et l’envoyer.</p>
+</section><section data-type="sect2" id="resume-oGZI5"><h3 id="Résumé"><a href="#Résumé">Résumé</a></h3>
+
+<p>Ce chapitre a traité quelques-unes des méthodes communes de gestion de types différents de projets Git que vous pourrez rencontrer et a introduit un certain nombre de nouveaux outils pour vous aider à gérer ces processus.
+Dans la section suivante, nous allons voir comment travailler de l’autre côté de la barrière : en tant que mainteneur de projet Git.
+Vous apprendrez comment travailler comme dictateur bienveillant ou gestionnaire d’intégration.</p>
+</section><div id="nav"><a href="/book/fr/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">prev</a> | <a href="/book/fr/v2/Git-distribu%C3%A9-Maintenance-d%E2%80%99un-projet">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":3,"applicationTime":443,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Запись изменений в репозиторий</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О системе контроля версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0">Командная строка</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D1%8B">Операции отмены</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-Working-with-Remotes">Working with Remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC%D1%8B-%D0%B2-Git">Псевдонимы в Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">О ветвлении в двух словах</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Branching-Workflows">Branching Workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Установка Git на сервер</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Генерация открытого SSH ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D0%BC%D0%BD%D1%8B%D0%B9-HTTP">Умный HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Распределенный Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">Настройка и конфигурация учетной записи</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">Внесение собственного вклада в проекты</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v2/GitHub-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%B8%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0">Прибережение и очистка</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2%D0%B0%D1%88%D0%B5%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B">Подпись результатов вашей работы</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">Поиск</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Исправление истории</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">Раскрытие тайн reset</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5">Продвинутое слияние</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Обнаружение ошибок с помощью Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">Создание пакетов</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0">Замена</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Хранилище учетных данных</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Настройка Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git как клиент</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Git изнутри</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и Фарфор</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-Git">Объекты Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Протоколы передачи данных</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Уход за репозиторием и восстановление данных</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B">Переменные среды</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>2.2 Основы Git - Запись изменений в репозиторий</h1>
+  <div><a id="zapis-izmenenij-v-repozitorij-yL7TP"></a><h2>Запись изменений в репозиторий</h2>
+
+<p>Итак, у вас имеется настоящий Git-репозиторий и рабочая копия файлов для некоторого проекта.
+Вам нужно делать некоторые изменения и фиксировать “снимки” состояния (snapshots) этих изменений в вашем репозитории каждый раз, когда проект достигает состояния, которое вам хотелось бы сохранить.</p>
+
+<p>Запомните, каждый файл в вашем рабочем каталоге может находиться в одном из двух состояний: под версионным контролем (отслеживаемые) и нет (неотслеживаемые).
+Отслеживаемые файлы — это те файлы, которые были в последнем слепке состояния проекта (snapshot); они могут быть неизменёнными, изменёнными или подготовленными к коммиту (staged).
+Неотслеживаемые файлы — это всё остальное, любые файлы в вашем рабочем каталоге, которые не входили в ваш последний слепок состояния и не подготовлены к коммиту.
+Когда вы впервые клонируете репозиторий, все файлы будут отслеживаемыми и неизменёнными, потому что вы только взяли их из хранилища (checked them out) и ничего пока не редактировали.</p>
+
+<p>Как только вы отредактируете файлы, Git будет рассматривать их как изменённые, т.к. вы изменили их с момента последнего коммита.
+Вы индексируете (stage) эти изменения и затем фиксируете все индексированные изменения, а затем цикл повторяется.</p>
+
+<figure id="id-gVLcp"><img src="/book/en/v2/book/02-git-basics/images/lifecycle.png" alt="Жизненный цикл состояний файлов."><figcaption><span class="label">Figure 2-1. </span>Жизненный цикл состояний файлов.</figcaption></figure><section data-type="sect2" id="_checking_status"><h3 id="Определение-состояния-файлов"><a href="#Определение-состояния-файлов">Определение состояния файлов</a></h3>
+
+<p>Основной инструмент, используемый для определения, какие файлы в каком состоянии находятся — это команда <code>git status</code>.<a data-type="indexterm" data-primary="git commands" data-secondary="status" id="id-pBAs8"></a>
+Если вы выполните эту команду сразу после клонирования, вы увидите что-то вроде этого:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">nothing to commit, working directory clean</code>
+</pre>
+
+<p>Это означает, что у вас чистый рабочий каталог, другими словами – в нем нет отслеживаемых измененных файлов.
+Git также не обнаружил неотслеживаемых файлов, в противном случае они бы были перечислены здесь.
+Наконец, команда сообщает вам на какой ветке вы находитесь и сообщает вам, что она не расходится с веткой на сервере.
+Пока что это всегда ветка ``master``, ветка по умолчанию; в этой главе это не важно.
+В <a data-type="xref" href="1-git-branching/_git_branching">Ветвление в Git</a> будут рассмотрены ветки и ссылки более детально.</p>
+
+<p>Предположим, вы добавили в свой проект новый файл, простой файл README.
+Eсли этого файла раньше не было, и вы выполните <code>git status</code>, вы увидите свой неотслеживаемый файл вот так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'My Project'</code> &gt; README
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Untracked files:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to include in what will be committed)</code>
+
+<code class="go">    README</code>
+
+<code class="go">nothing added to commit but untracked files present (use "git add" to track)</code>
+</pre>
+
+<p>Понять, что новый файл README неотслеживаемый можно по тому, что он находится в секции ``Untracked files`` в выводе команды ``status``.
+Статус ``Untracked files``, по сути, означает, что Git видит файл, отсутствующий в предыдущем снимке состояния (коммите); Git не станет добавлять его в ваши коммиты, пока вы его явно об этом не попросите.
+Это предохранит вас от случайного добавления в репозиторий сгенерированных бинарных файлов или каких-либо других, которые вы и не думали добавлять.
+Мы хотели добавить README, так давайте сделаем это.</p>
+</section><section data-type="sect2" id="_tracking_files"><h3 id="Отслеживание-новых-файлов"><a href="#Отслеживание-новых-файлов">Отслеживание новых файлов</a></h3>
+
+<p>Для того чтобы начать отслеживать (добавить под версионный контроль) новый файл, используется команда <code>git add</code>.<a data-type="indexterm" data-primary="git commands" data-secondary="add" id="id-r6Lhw"></a>
+Чтобы начать отслеживание файла README, вы можете выполнить следующее:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add README
+</pre>
+
+<p>Если вы снова выполните команду <code>status</code>, то увидите, что файл README теперь отслеживаемый и индексированный:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+</pre>
+
+<p>Вы можете видеть, что файл проиндексирован по тому, что он находится в секции ``Changes to be committed``.
+Если вы выполните коммит в этот момент, то версия файла, существовавшая на момент выполнения вами команды <code>git add</code>, будет добавлена в историю снимков состояния.
+Как вы помните, когда вы ранее выполнили <code>git init</code>, затем вы выполнили <code>git add (файлы)</code> — это было сделано для того,
+чтобы добавить файлы в вашем каталоге под версионный контроль.<a data-type="indexterm" data-primary="git commands" data-secondary="init" id="id-QpnS6"></a><a data-type="indexterm" data-primary="git commands" data-secondary="add" id="id-xQ1u9"></a>
+Команда <code>git add</code> принимает параметром путь к файлу или каталогу, если это каталог, команда рекурсивно добавляет (индексирует) все файлы в данном каталоге.</p>
+</section><section data-type="sect2" id="indeksaciya-izmenyonnyh-fajlov-6GqiE"><h3 id="Индексация-изменённых-файлов"><a href="#Индексация-изменённых-файлов">Индексация изменённых файлов</a></h3>
+
+<p>Давайте модифицируем файл, уже находящийся под версионным контролем.
+Если вы измените отслеживаемый файл ``CONTRIBUTING.md`` и после этого снова выполните команду <code>git status</code>, то
+результат будет примерно следующим:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Файл ``CONTRIBUTING.md`` находится в секции ``Changes not staged for commit`` — это означает, что отслеживаемый файл был изменён в рабочем каталоге, но пока не проиндексирован.
+Чтобы проиндексировать его, необходимо выполнить команду <code>git add</code>.
+Это многофункциональная команда, она используется для добавления под версионный контроль новых файлов, для индексации изменений, а также для других целей, например для указания файлов с исправленным конфликтом слияния.
+Вам может быть понятнее если вы будите думать об этом как ``добавить этот контент в следующий коммит``, а не как ``добавить этот файл в проект``.<a data-type="indexterm" data-primary="git commands" data-secondary="add" id="id-BZxCb"></a>
+Выполним <code>git add</code>, чтобы проиндексировать ``CONTRIBUTING.md``, а затем снова выполним <code>git status</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Теперь оба файла проиндексированы и войдут в следующий коммит.
+В этот момент вы, предположим, вспомнили одно небольшое изменение, которое вы хотите сделать в ``CONTRIBUTING.md`` до фиксации.
+Вы открываете файл, вносите и сохраняете необходимые изменения и вроде бы готовы к коммиту.
+Но давайте-ка ещё раз выполним <code>git status</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> vim CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+<code class="go">    modified:   CONTRIBUTING.md</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Что за чёрт?
+Теперь ``CONTRIBUTING.md`` отображается как проиндексированный и непроиндексированный одновременно.
+Как такое возможно?
+Такая ситуация наглядно демонстрирует, что Git индексирует файл в точности в том состоянии, в котором он находился, когда вы выполнили команду  <code>git add</code>.
+Если вы выполните коммит сейчас, то файл ``CONTRIBUTING.md`` попадёт в коммит в том состоянии, в котором он находился, когда вы последний раз выполняли команду <code>git add</code> , а не в том, в котором он находится в вашем рабочем каталоге в момент выполнения <code>git commit</code>.
+Если вы изменили файл после выполнения <code>git add</code>, вам придётся снова выполнить <code>git add</code>, чтобы проиндексировать последнюю версию файла:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+</section><section data-type="sect2" id="sokrashennyj-vyvod-statusa-7d3S1"><h3 id="Сокращенный-вывод-статуса"><a href="#Сокращенный-вывод-статуса">Сокращенный вывод статуса</a></h3>
+
+<p>Вывод команды <code>git status</code> довольно всеобъемлющий и многолословный. Git также имеет флаг вывода сокращенного статуса, так что вы можете увидеть изменения в более компактном виде. Если вы выполните <code>git status -s</code> или <code>git status --short</code> вы получите гораздо более упрощенный вывод.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status -s
+<code class="go"> M README</code>
+<code class="go">MM Rakefile</code>
+<code class="go">A  lib/git.rb</code>
+<code class="go">M  lib/simplegit.rb</code>
+<code class="go">?? LICENSE.txt</code>
+</pre>
+
+<p>Новые, неотслеживаемые файлы помечены <code>??</code> слева от них, файлы добавленные в отслеживаемые помечены <code>A</code>, отредактированные файлы помечены <code>M</code> и так далее. В выводе содержится два столбца - в левом указывается статус файла, а в правой модифицирован ли он после этого. К примеру в нашем выводе, файл <code>README</code> модифицирован в рабочей директории и не проиндексирован, файл <code>lib/simplegit.rb</code> модифицирован и проиндексирован. Файл <code>Rakefile</code> модифицирован, проиндексирован и ещё раз модифицирован, таким образом на данный момент у него есть изменения которые попадут в коммит и те которые не попадут.</p>
+</section><section data-type="sect2" id="_ignoring"><h3 id="Игнорирование-файлов"><a href="#Игнорирование-файлов">Игнорирование файлов</a></h3>
+
+<p>Зачастую, у вас имеется группа файлов, которые вы не только не хотите автоматически добавлять в репозиторий, но и видеть в списках неотслеживаемых. К таким файлам обычно относятся автоматически генерируемые файлы (различные логи, результаты сборки программ и т.п.). В таком случае, вы можете создать файл <code>.gitignore</code>.<a data-type="indexterm" data-primary="ignoring files" id="id-Vxxuj"></a> с перечислением шаблонов соответствующих таким файлам. Вот пример файла <code>.gitignore</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat .gitignore
+<code class="go">*.[oa]</code>
+<code class="go">*~</code>
+</pre>
+
+<p>Первая строка предписывает Git игнорировать любые файлы заканчивающиеся на ``.o`` or ``.a`` - объектные и архивные файлы, которые могут появиться во время сборки кода. Вторая строка предписывает игнорировать все файлы заканчивающиеся на тильду (<code>~</code>), которая используется во многих текстовых редакторах, например Emacs, для обозначения временных файлов. Вы можете также включить каталоги log, tmp или pid; автоматически создаваемую документацию; и т.д. и т.п. Хорошая практика заключается в настройке файла <code>.gitignore</code> до того, как начать серьёзно работать, это защитит вас от случайного добавления в репозиторий файлов, которых вы там видеть не хотите.</p>
+
+<p>К шаблонам в файле <code>.gitignore</code> применяются следующие правила:</p>
+
+<ul>
+<li>
+<p>Пустые строки, а также строки, начинающиеся с <code>#</code>, игнорируются.</p>
+</li>
+<li>
+<p>Можно использовать стандартные glob шаблоны.</p>
+</li>
+<li>
+<p>Можно начать шаблон символом слэша (/) чтобы избежать рекурсии.</p>
+</li>
+<li>
+<p>Можно заканчивать шаблон символом слэша (/) для указания каталога.</p>
+</li>
+<li>
+<p>Можно инвертировать шаблон, использовав восклицательный знак (!) в качестве первого символа.</p>
+</li>
+</ul>
+<p>Glob-шаблоны представляют собой упрощённые регулярные выражения используемые командными интерпретаторами. Символ (<code>*</code>) соответствует 0 или более символам; последовательность <code>[abc]</code> — любому символу из указанных в скобках (в данном примере a, b или c); знак вопроса (<code>?</code>) соответствует одному символу; и квадратные скобки в которые заключены символы разделенные дифисом(<code>[0-9]</code>) соответствует любому символу из интервала(в данном случае это от 0 до 9). Вы так же можете использовать две звездочки чтобы указать на вложенные директории; <code>a/**/z</code> соответсвует <code>a/z</code>, <code>a/b/z</code>, <code>a/b/c/z</code>, и так далее.</p>
+
+<p>Вот ещё один пример файла .gitignore:</p>
+
+<pre data-type="programlisting"># no .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the root TODO file, not subdir/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt</pre>
+<div data-type="tip" id="id-4pZuR">
+<h6>Tip</h6>
+<p>GitHub поддерживает довольно полный список примеров <code>.gitignore</code> файлов для множества проектов и языков <a href="https://github.com/github/gitignore"><em class="hyperlink">https://github.com/github/gitignore</em></a> это может стать отправной точкой для <code>.gitignore</code> в вашем проекте.</p>
+</div>
+</section><section data-type="sect2" id="_git_diff_staged"><h3 id="Просмотр-индексированных-и-неиндексированных-изменений"><a href="#Просмотр-индексированных-и-неиндексированных-изменений">Просмотр индексированных и неиндексированных изменений</a></h3>
+
+<p>Если результат работы команды <code>git status</code> едостаточно информативен для вас — вам хочется знать, что конкретно поменялось, а не только какие файлы были изменены — вы можете использовать команду <code>git diff</code>.<a data-type="indexterm" data-primary="git commands" data-secondary="diff" id="id-MJJs3"></a> Позже мы рассмотрим команду <code>git diff</code> подробнее; вы, скорее всего, будете использовать эту команду для получения ответов на два вопроса: что вы изменили, но ещё не проиндексировали, и что вы проиндексировали и собираетесь фиксировать. Если <code>git status</code> отвечает на эти вопросы в самом общем виде, перечисляя имена файлов, <code>git diff</code> показывает вам непосредственно добавленные и удалённые строки — собственно заплатку (patch).</p>
+
+<p>Допустим, вы снова изменили и проиндексировали файл <code>README</code>, а затем изменили файл <code>CONTRIBUTING.md</code> без индексирования. Если вы выполните команду <code>git status</code>, вы опять увидите что-то вроде:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    new file:   README</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Чтобы увидеть, что же вы изменили, но пока не проиндексировали, наберите <code>git diff</code> без аргументов:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md</code>
+<code class="go">index 8ebb991..643e24f 100644</code>
+<code class="go">--- a/CONTRIBUTING.md</code>
+<code class="go">+++ b/CONTRIBUTING.md</code>
+<code class="go">@@ -65,7 +65,8 @@ branch directly, things can get messy.</code>
+<code class="go"> Please include a nice description of your changes when you submit your PR;</code>
+<code class="go"> if we have to read the whole diff to figure out why you're contributing</code>
+<code class="go"> in the first place, you're less likely to get feedback and have your change</code>
+<code class="go">-merged in.</code>
+<code class="go">+merged in. Also, split your changes into comprehensive chunks if you patch is</code>
+<code class="go">+longer than a dozen lines.</code>
+
+<code class="go"> If you are starting to work on a particular area, feel free to submit a PR</code>
+<code class="go"> that highlights your work in progress (and note in the PR title that it's</code>
+</pre>
+
+<p>Эта команда сравнивает содержимое вашего рабочего каталога с содержимым индекса. Результат показывает ещё не проиндексированные изменения.</p>
+
+<p>Если вы хотите посмотреть, что вы проиндексировали и что войдёт в следующий коммит, вы можете выполнить <code>git diff --staged</code>.
+Эта команда сравнивает ваши индексированные изменения с последним коммитом:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --staged
+<code class="go">diff --git a/README b/README</code>
+<code class="go">new file mode 100644</code>
+<code class="go">index 0000000..03902a1</code>
+<code class="go">--- /dev/null</code>
+<code class="go">+++ b/README</code>
+<code class="go">@@ -0,0 +1 @@</code>
+<code class="go">+My Project</code>
+</pre>
+
+<p>Важно отметить, что <code>git diff</code> сама по себе не показывает все изменения сделанные с последнего коммита — только те, что ещё не проиндексированы. Такое поведение может сбивать с толку, так как если вы проиндексируете все свои изменения, то <code>git diff</code> ничего не вернёт.</p>
+
+<p>Другой пример: вы проиндексировали файл <code>CONTRIBUTING.md</code> и затем изменили его, вы можете использовать <code>git diff</code> для просмотра как индексированных изменений в этом файле, так и тех, что пока не проиндексированы. В нашем случае это будет выглядеть вот так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git add CONTRIBUTING.md
+<code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'test line'</code> &gt;&gt; CONTRIBUTING.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+</pre>
+
+<p>Теперь вы можете используя <code>git diff</code> посмотреть непроиндексированные изменения</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md</code>
+<code class="go">index 643e24f..87f08c8 100644</code>
+<code class="go">--- a/CONTRIBUTING.md</code>
+<code class="go">+++ b/CONTRIBUTING.md</code>
+<code class="go">@@ -119,3 +119,4 @@ at the</code>
+<code class="go"> ## Starter Projects</code>
+
+<code class="go"> See our [projects list](https://github.com/libgit2/libgit2/blob/development/PROJECTS.md).</code>
+<code class="go">+# test line</code>
+</pre>
+
+<p>а также уже проиндексированные, используя <code>git diff --cached</code> (--staged и --cached синонимы):</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --cached
+<code class="go">diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md</code>
+<code class="go">index 8ebb991..643e24f 100644</code>
+<code class="go">--- a/CONTRIBUTING.md</code>
+<code class="go">+++ b/CONTRIBUTING.md</code>
+<code class="go">@@ -65,7 +65,8 @@ branch directly, things can get messy.</code>
+<code class="go"> Please include a nice description of your changes when you submit your PR;</code>
+<code class="go"> if we have to read the whole diff to figure out why you're contributing</code>
+<code class="go"> in the first place, you're less likely to get feedback and have your change</code>
+<code class="go">-merged in.</code>
+<code class="go">+merged in. Also, split your changes into comprehensive chunks if you patch is</code>
+<code class="go">+longer than a dozen lines.</code>
+
+<code class="go"> If you are starting to work on a particular area, feel free to submit a PR</code>
+<code class="go"> that highlights your work in progress (and note in the PR title that it's</code>
+</pre>
+<div data-type="note" id="git-diff-v-vneshnih-instrumentah-y8gCa">
+<h6>Note</h6>
+<h2>Git Diff в внешних инструментах</h2>
+<p>Мы будем продолжать использовать команду <code>git diff</code> различными способами на протяжении всей книги. Существует еще один способ просматривать эти изменяния, если вы предпочитаете графический или внешнюю программу просмотра различий, вместо консоли. Выполните команду <code>git difftool</code> вместо <code>git diff</code>, таким образом вы сможете просмотреть изменения в файле с помощью таких программ как Araxis, emerge, vimdiff и других. Выполните <code>git difftool --tool-help</code> чтобы увидить какие из них уже установлены в вашей системе.</p>
+</div>
+</section><section data-type="sect2" id="_committing_changes"><h3 id="Фиксация-изменений"><a href="#Фиксация-изменений">Фиксация изменений</a></h3>
+
+<p>Теперь, когда ваш индекс находится в таком состоянии, как вам и хотелось, вы можете зафиксировать свои изменения. Запомните, всё,
+что до сих пор не проиндексировано — любые файлы, созданные или изменённые вами, и для которых вы не выполнили <code>git
+add</code> после момента редактирования — не войдут в этот коммит. Они останутся изменёнными файлами на вашем диске. В
+нашем случае, когда вы в последний раз выполняли <code>git status</code>, вы видели что всё проиндексировано, и вот, вы готовы к
+коммиту. Простейший способ зафиксировать изменения — это набрать <code>git commit</code>:<a data-type="indexterm" data-primary="git commands" data-secondary="commit" id="id-GbzFJ"></a></p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit
+</pre>
+
+<p>Эта команда откроет выбранный вами текстовый редактор. (Редактор устанавливается системной переменной <code>$EDITOR</code> — обычно это vim или emacs, хотя вы можете установить ваш любимый с помощью команды <code>git config --global core.editor</code> как было показано в главе <a data-type="xref" href="1-introduction/_getting_started">Введение</a>).<a data-type="indexterm" data-primary="editor" data-secondary="changing default" id="id-1AMiB"></a><a data-type="indexterm" data-primary="git commands" data-secondary="config" id="id-9ZJi1"></a></p>
+
+<p>В редакторе будет отображён следующий текст (это пример окна Vim’а):</p>
+
+<pre data-type="programlisting"># Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	new file:   README
+#	modified:   CONTRIBUTING.md
+#
+~
+~
+~
+".git/COMMIT_EDITMSG" 9L, 283C</pre>
+
+<p>Вы можете видеть, что комментарий по умолчанию для коммита содержит закомментированный результат работы ("выхлоп") команды <code>git status</code>и ещё одну пустую строку сверху. Вы можете удалить эти комментарии и набрать своё сообщение или же оставить их для напоминания о том, что вы фиксируете. (Для ещё более подробного напоминания, что же именно вы поменяли, можете передать аргумент <code>-v</code> в команду <code>git commit</code>. Это приведёт к тому, что в комментарий будет также помещена дельта/diff изменений, таким образом вы сможете точно увидеть все изменения которые вы совершении.) Когда вы выходите из редактора, Git создаёт для вас коммит с этим сообщением (удаляя комментарии и вывод diff’а).</p>
+
+<p>Есть и другой способ — вы можете набрать свой комментарий к коммиту в командной строке вместе с командой <code>commit</code> указав его после параметра -m, как в следующем примере:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -m <code class="s2">"Story 182: Fix benchmarks for speed"</code>
+<code class="go">[master 463dc4f] Story 182: Fix benchmarks for speed</code>
+<code class="go"> 2 files changed, 2 insertions(+)</code>
+<code class="go"> create mode 100644 README</code>
+</pre>
+
+<p>Итак, вы создали свой первый коммит! Вы можете видеть, что коммит вывел вам немного информации о себе: на какую ветку вы выполнили коммит (<code>master</code>), какая контрольная сумма SHA-1 у этого коммита (<code>463dc4f</code>), сколько файлов было изменено, а также статистику по добавленным/удалённым строкам в этом коммите.</p>
+
+<p>Запомните, что коммит сохраняет снимок состояния вашего индекса. Всё, что вы не проиндексировали, так и висит в рабочем каталоге как изменённое; вы можете сделать ещё один коммит, чтобы добавить эти изменения в репозиторий. Каждый раз, когда вы делаете коммит, вы сохраняете снимок состояния вашего проекта, который позже вы можете восстановить или с которым можно сравнить текущее состояние.</p>
+</section><section data-type="sect2" id="ignorirovanie-indeksacii-GnRsd"><h3 id="Игнорирование-индексации"><a href="#Игнорирование-индексации">Игнорирование индексации</a></h3>
+
+<p><a data-type="indexterm" data-primary="staging area" data-secondary="skipping" id="id-yM9Sr"></a>
+Несмотря на то, что индекс может быть удивительно полезным для создания коммитов именно такими, как вам и хотелось, он временами несколько сложнее, чем вам нужно в процессе работы. Если у вас есть желание пропустить этап индексирования, Git предоставляет простой способ. Добавление параметра <code>-a</code> в команду <code>git commit</code> заставляет Git автоматически индексировать каждый уже отслеживаемый на момент коммита файл, позволяя вам обойтись без <code>git add</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">    modified:   CONTRIBUTING.md</code>
+
+<code class="go">no changes added to commit (use "git add" and/or "git commit -a")</code>
+<code class="gp">$</code> git commit -a -m <code class="s1">'added new benchmarks'</code>
+<code class="go">[master 83e38c7] added new benchmarks</code>
+<code class="go"> 1 file changed, 5 insertions(+), 0 deletions(-)</code>
+</pre>
+
+<p>Обратите внимание на то, что в данном случае перед коммитом вам не нужно выполнять <code>git add</code> для файла ``CONTRIBUTING.md``.</p>
+</section><section data-type="sect2" id="_removing_files"><h3 id="Removing-Files"><a href="#Removing-Files">Removing Files</a></h3>
+
+<p><a data-type="indexterm" data-primary="files" data-secondary="removing" id="id-1QMTB"></a>
+Для того чтобы удалить файл из Git, вам необходимо удалить его из отслеживаемых файлов (точнее, удалить его из вашего индекса) а затем выполнить коммит. Это позволяет сделать команда <code>git rm</code> , которая также удаляет файл из вашего рабочего каталога, так что вы в следующий раз не увидите его как “неотслеживаемый”.</p>
+
+<p>Если вы просто удалите файл из своего рабочего каталога, он будет показан в секции ``Changed but not updated`` (измененные, но не проиндексированные) вывода команды <code>git status</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> rm PROJECTS.md
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add/rm &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">        deleted:    PROJECTS.md</code>
+
+<code class="go">no changes added to commit (use "git add" and/or "git commit -a")</code>
+</pre>
+
+<p>Затем, если вы выполните команду <code>git rm</code>, удаление файла попадёт в индекс:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm PROJECTS.md
+<code class="go">rm 'PROJECTS.md'</code>
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    deleted:    PROJECTS.md</code>
+</pre>
+
+<p>После следующего коммита файл исчезнет и больше не будет отслеживаться. Если вы изменили файл и уже проиндексировали его, вы должны использовать принудительное удаление с помощью параметра <code>-f</code>. Это сделано для повышения безопасности, чтобы предотвратить ошибочное удаление данных, которые ещё не были записаны в снимок состояния и которые нельзя восстановить из Git.</p>
+
+<p>Другая полезная штука, которую вы можете захотеть сделать — это удалить файл из индекса, оставив его при этом в рабочем каталоге. Другими словами, вы можете захотеть оставить файл на винчестере, и убрать его из-под бдительного ока Git. Это особенно полезно, если вы забыли добавить что-то в файл <code>.gitignore</code> и по ошибке проиндексировали, например, большой файл с логами, или кучу промежуточных файлов компиляции. Чтобы сделать это, используйте опцию <code>--cached</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm --cached README
+</pre>
+
+<p>В команду <code>git rm</code> можно передавать файлы, каталоги или glob-шаблоны. Это означает, что вы можете вытворять что-то вроде:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm log/<code class="se">\*</code>.log
+</pre>
+
+<p>Обратите внимание на обратный слэш (<code>\</code>) перед <code>*</code>. Он необходим из-за того, что Git использует свой собственный обработчик имён файлов вдобавок к обработчику вашего командного интерпретатора. Эта команда удаляет все файлы имеющие расширение <code>.log</code> находящиеся в директории <code>log/</code>. Или же вы можете сделать вот так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm <code class="se">\*</code>~
+</pre>
+
+<p>Эта команда удаляет все файлы, чьи имена заканчиваются на <code>~</code>.</p>
+</section><section data-type="sect2" id="_git_mv"><h3 id="Перемещение-файлов"><a href="#Перемещение-файлов">Перемещение файлов</a></h3>
+
+<p><a data-type="indexterm" data-primary="files" data-secondary="moving" id="id-GRdcJ"></a>
+В отличие от многих других систем версионного контроля, Git не отслеживает перемещение файлов явно. Когда вы переименовываете файл в Git, в нём не сохраняется никаких метаданных, говорящих о том, что файл был переименован. Однако, Git довольно умён в плане обнаружения перемещений постфактум — мы рассмотрим обнаружение перемещения файлов чуть позже.</p>
+
+<p>Таким образом, наличие в Git команды <code>mv</code> выглядит несколько странным. Если вам хочется переименовать файл в Git, вы можете сделать что-то вроде:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git mv file_from file_to
+</pre>
+
+<p>и это отлично сработает. На самом деле, если вы выполните что-то вроде этого и посмотрите на статус, вы увидите, что Git считает, что произошло переименование файла:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git mv README.md README
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">    renamed:    README.md -&gt; README</code>
+</pre>
+
+<p>Однако, это эквивалентно выполнению следующих команд:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> mv README.md README
+<code class="gp">$</code> git rm README.md
+<code class="gp">$</code> git add README
+</pre>
+
+<p>Git неявно определяет, что произошло переименование, поэтому неважно, переименуете вы файл так или используя команду <code>mv</code>. Единственное отличие состоит лишь в том, что <code>mv</code> — это одна команда вместо трёх — это функция для удобства. Важнее другое — вы можете использовать любой удобный способ, чтобы переименовать файл, и затем воспользоваться add/rm перед коммитом.</p>
+</section><div id="nav"><a href="/book/ru/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">prev</a> | <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

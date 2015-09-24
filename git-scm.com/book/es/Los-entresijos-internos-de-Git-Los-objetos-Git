@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":108,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Los objetos Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/es/v1/Empezando">Empezando</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/es/v1/Empezando-Acerca-del-control-de-versiones">Acerca del control de versiones</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/es/v1/Empezando-Una-breve-historia-de-Git">Una breve historia de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/es/v1/Empezando-Fundamentos-de-Git">Fundamentos de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/es/v1/Empezando-Instalando-Git">Instalando Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/es/v1/Empezando-Configurando-Git-por-primera-vez">Configurando Git por primera vez</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/es/v1/Empezando-Obteniendo-ayuda">Obteniendo ayuda</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/es/v1/Empezando-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/es/v1/Fundamentos-de-Git">Fundamentos de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git">Obteniendo un repositorio Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio">Guardando cambios en el repositorio</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones">Viendo el histórico de confirmaciones</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/es/v1/Fundamentos-de-Git-Deshaciendo-cosas">Deshaciendo cosas</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos">Trabajando con repositorios remotos</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/es/v1/Fundamentos-de-Git-Creando-etiquetas">Creando etiquetas</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/es/v1/Fundamentos-de-Git-Consejos-y-trucos">Consejos y trucos</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/es/v1/Fundamentos-de-Git-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/es/v1/Ramificaciones-en-Git">Ramificaciones en Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/es/v1/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F">¿Qué es una rama?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/es/v1/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar">Procedimientos básicos para ramificar y fusionar</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/es/v1/Ramificaciones-en-Git-Gesti%C3%B3n-de-ramificaciones">Gestión de ramificaciones</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/es/v1/Ramificaciones-en-Git-Flujos-de-trabajo-ramificados">Flujos de trabajo ramificados</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas">Ramas Remotas</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/es/v1/Ramificaciones-en-Git-Reorganizando-el-trabajo-realizado">Reorganizando el trabajo realizado</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/es/v1/Ramificaciones-en-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/es/v1/Git-en-un-servidor">Git en un servidor</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/es/v1/Git-en-un-servidor-Los-Protocolos">Los Protocolos</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/es/v1/Git-en-un-servidor-Poniendo-Git-en-un-Servidor">Poniendo Git en un Servidor</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/es/v1/Git-en-un-servidor-Generando-tu-clave-p%C3%BAblica-SSH">Generando tu clave pública SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/es/v1/Git-en-un-servidor-Preparando-el-servidor">Preparando el servidor</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/es/v1/Git-en-un-servidor-Acceso-p%C3%BAblico">Acceso público</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/es/v1/Git-en-un-servidor-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/es/v1/Git-en-un-servidor-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/es/v1/Git-en-un-servidor-El-demonio-Git">El demonio Git</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/es/v1/Git-en-un-servidor-Git-en-un-alojamiento-externo">Git en un alojamiento externo</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/es/v1/Git-en-un-servidor-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/es/v1/Git-en-entornos-distribuidos">Git en entornos distribuidos</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">Flujos de trabajo distribuidos</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Contribuyendo-a-un-proyecto">Contribuyendo a un proyecto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto">Gestionando un proyecto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/es/v1/Las-herramientas-de-Git">Las herramientas de Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/es/v1/Las-herramientas-de-Git-Selecci%C3%B3n-de-confirmaciones-de-cambios-concretas">Selección de confirmaciones de cambios concretas</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/es/v1/Las-herramientas-de-Git-Preparaci%C3%B3n-interactiva">Preparación interactiva</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/es/v1/Las-herramientas-de-Git-Guardado-r%C3%A1pido-provisional">Guardado rápido provisional</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/es/v1/Las-herramientas-de-Git-Reescribiendo-la-historia">Reescribiendo la historia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git">Depuración con Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/es/v1/Las-herramientas-de-Git-Subm%C3%B3dulos">Submódulos</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/es/v1/Las-herramientas-de-Git-Fusi%C3%B3n-de-sub%C3%A1rboles">Fusión de subárboles</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/es/v1/Las-herramientas-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/es/v1/Personalizando-Git">Personalizando Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/es/v1/Personalizando-Git-Configuraci%C3%B3n-de-Git">Configuración de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/es/v1/Personalizando-Git-Atributos-de-Git">Atributos de Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/es/v1/Personalizando-Git-Puntos-de-enganche-Git">Puntos de enganche Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/es/v1/Personalizando-Git-Un-ejemplo-de-implantaci%C3%B3n-de-una-determinada-pol%C3%ADtica-en-Git">Un ejemplo de implantación de una determinada política en Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/es/v1/Personalizando-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/es/v1/Git-y-Otros-Sistemas">Git y Otros Sistemas</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Git-y-Subversion">Git y Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/es/v1/Los-entresijos-internos-de-Git">Los entresijos internos de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Fontaneria-y-porcelana">Fontaneria y porcelana</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Los-objetos-Git">Los objetos Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Referencias-Git">Referencias Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Archivos-empaquetadores">Archivos empaquetadores</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Las-especificaciones-para-hacer-referencia-a-refspec">Las especificaciones para hacer referencia a...  (refspec)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Protocolos-de-transferencia">Protocolos de transferencia</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Mantenimiento-y-recuperaci%C3%B3n-de-datos">Mantenimiento y recuperación de datos</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>9.2 Los entresijos internos de Git - Los objetos Git</h1>
+  <div><h2>Los objetos Git</h2>
+
+<p>Git es un sistema de archivo orientado a contenidos. Estupendo. Y eso, ¿qué significa?
+Pues significa que el núcleo Git es un simple almacén de claves y valores. Cuando insertas cualquier tipo de contenido, él te devuelve una clave que puedes utilizar para recuperar de nuevo dicho contenido en cualquier momento. Para verlo en acción, puedes utilizar el comando de fontanería &#39;hash-object&#39;. Este comando coge ciertos datos, los guarda en la carpeta &#39;.git.&#39; y te devuelve la clave bajo la cual se han guardado. Para empezar, inicializa un nuevo repositorio Git y comprueba que la carpeta &#39;objects&#39; está vacia.</p>
+
+<pre><code>$ mkdir test
+$ cd test
+$ git init
+Initialized empty Git repository in /tmp/test/.git/
+$ find .git/objects
+.git/objects
+.git/objects/info
+.git/objects/pack
+$ find .git/objects -type f
+$
+</code></pre>
+
+<p>Git ha inicializado la carpeta &#39;objects&#39;, creando en ella las subcarpetas &#39;pack&#39; e &#39;info&#39;; pero aún no hay archivos en ellas. Luego, guarda algo de texto en la base de datos de Git:</p>
+
+<pre><code>$ echo &#39;test content&#39; | git hash-object -w --stdin
+d670460b4b4aece5915caf5c68d12f560a9fe3e4
+</code></pre>
+
+<p>La opción &#39;-w&#39; indica a &#39;hash-object&#39; que ha de guardar el objeto; de otro modo, el comando solo te respondería cual sería su clave. La opción &#39;--stdin&#39; indica al comando de leer desde la entrada estandar stdin; si no lo indicas, &#39;hash-object&#39; espera encontrar la ubicación de un archivo. La salida del comando es una suma de comprobación (checksum hash) de 40 caracteres. Este checksum hash SHA-1  es una suma de comprobación del contenido que estás guardando más una cabecera; cabecera sobre la que trataremos en breve. En estos momentos, ya puedes comprobar la forma en que Git ha guardado tus datos:</p>
+
+<pre><code>$ find .git/objects -type f 
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4
+</code></pre>
+
+<p>Como puedes ver, hay un archivo en la carpeta &#39;objects&#39;. En principio, esta es la forma en que guarda Git los contenidos; como un archivo por cada pieza de contenido, nombrado con la suma de comprobación SHA-1 del contenido y su cabecera. La subcarpeta se nombra con los primeros 2 caracteres del SHA, y el archivo con los restantes 38 caracteres.</p>
+
+<p>Puedes volver a recuperar los contenidos usando el comando &#39;cat-file&#39;. Este comando es algo así como una &quot;navaja suiza&quot; para inspeccionar objetos Git. Pasandole la opción &#39;-p&#39;, puedes indicar al comando &#39;cat-file&#39; que deduzca el tipo de contenido y te lo muestre adecuadamente:</p>
+
+<pre><code>$ git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+test content
+</code></pre>
+
+<p>Ahora que sabes cómo añadir contenido a Git y cómo recuperarlo de vuelta. Lo puedes hacer también con el propio contenido de los archivos. Por ejemplo, puedes realizar un control simple de versiones sobre un archivo. Para ello, crea un archivo nuevo y guarda su contenido en tu base de datos:</p>
+
+<pre><code>$ echo &#39;version 1&#39; &gt; test.txt
+$ git hash-object -w test.txt 
+83baae61804e65cc73a7201a7252750c76066a30
+</code></pre>
+
+<p>A continuación, escribe algo más de contenido en el archivo y vuelvelo a guardar:</p>
+
+<pre><code>$ echo &#39;version 2&#39; &gt; test.txt
+$ git hash-object -w test.txt 
+1f7a7a472abf3dd9643fd615f6da379c4acb3e3a
+</code></pre>
+
+<p>Tu base de datos contendrá las dos nuevas versiones del archivo, así como el primer contenido que habias guardado en ella antes:</p>
+
+<pre><code>$ find .git/objects -type f 
+.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a
+.git/objects/83/baae61804e65cc73a7201a7252750c76066a30
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4
+</code></pre>
+
+<p>Podrás revertir el archivo a su primera versión:</p>
+
+<pre><code>$ git cat-file -p 83baae61804e65cc73a7201a7252750c76066a30 &gt; test.txt 
+$ cat test.txt 
+version 1
+</code></pre>
+
+<p>o a su segunda versión</p>
+
+<pre><code>$ git cat-file -p 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a &gt; test.txt 
+$ cat test.txt 
+version 2
+</code></pre>
+
+<p>Pero no es práctico esto de andar recordando la clave SHA-1 para cada versión de tu archivo; es más, realmente no estás guardando el nombre de tu archivo en el sistema, --solo su contenido--. Este tipo de objeto se denomina un blob (binary large object). Con la orden &#39;cat-file -t&#39; puedes comprobar el tipo de cualquier objeto almacenado en Git, sin mas que indicar su clave SHA-1&#39;:</p>
+
+<pre><code>$ git cat-file -t 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a
+blob
+</code></pre>
+
+<h3 id="Objetos-tipo-arbol"><a href="#Objetos-tipo-arbol">Objetos tipo arbol</a></h3>
+
+<p>El siguiente tipo de objeto a revisar serán los objetos tipo arbol. Estos se encargan de resolver el problema de guardar un nombre de archivo, a la par que guardamos conjuntamente un grupo de archivos. Git guarda contenido de manera similar a un sistema de archivos UNIX, pero de forma algo más simple. Todo el contenido se guarda como objetos arbol (tree) u objetos binarios (blob). Correspondiendo los árboles a las entradas de carpetas; y correspondiendo los binarios, mas o menos, a los contenidos de los archivos (inodes). Un objeto tipo árbol tiene una o más entradas de tipo arbol. Y cada una de ellas consta de un puntero SHA-1 a un objeto binario (blob) o a un subárbol, más sus correspondientes datos de modo, tipo y nombre de archivo. Por ejemplo, el árbol que hemos utilizado recientemente en el proyecto simplegit, puede resultar algo así como:</p>
+
+<pre><code>$ git cat-file -p master^{tree}
+100644 blob a906cb2a4a904a152e80877d4088654daad0c859      README
+100644 blob 8f94139338f9404f26296befa88755fc2598c289      Rakefile
+040000 tree 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0      lib
+</code></pre>
+
+<p>La sentencia <code>master^{tree}</code> indica el objeto árbol apuntado por la última confirmación de cambios (commit) en tu rama principal (master). Fíjate en que la carpeta <code>lib</code> no es un objeto binario, sino un apuntador a otro objeto tipo árbol.  </p>
+
+<pre><code>$ git cat-file -p 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0
+100644 blob 47c6340d6459e05787f644c2447d2595f5d3a54b      simplegit.rb
+</code></pre>
+
+<p>Conceptualmente, la información almacenada por Git es algo similar a la Figura 9-1.</p>
+
+<p><center><img src="/figures/18333fig0901-tn.png"></center><br/> 
+Figura 9-1. Versión simplificada del modelo de datos de Git.</p>
+
+<p>Puedes crear tu propio árbol. Habitualmente Git suele crear un árbol a partir del estado de tu área de preparación (staging area) o índice, escribiendo un objeto árbol con él. Por tanto, para crear un objeto árbol, previamente has de crear un índice preparando algunos archivos para ser almacenados. Puedes utilizar el comando de &quot;fontaneria&quot; <code>update-index</code> para crear un índice con una sola entrada, --la primera version de tu archivo text.txt--. Este comando se utiliza para añadir artificialmente la versión anterior del archivo test.txt. a una nueva área de preparación  Has de utilizar la opción <code>--add</code>, porque el archivo no existe aún en tu área de preparación (es más, ni siquiera tienes un área de preparación). Y has de utilizar también la opción <code>--cacheinfo</code>, porque el archivo que estas añadiendo no está en tu carpeta, sino en tu base de datos.  Para terminar, has de indicar el modo, la clave SHA-1 y el nombre de archivo:</p>
+
+<pre><code>$ git update-index --add --cacheinfo 100644 \
+  83baae61804e65cc73a7201a7252750c76066a30 test.txt
+</code></pre>
+
+<p>En este caso, indicas un modo <code>100644</code>, el modo que denota un archivo normal. Otras opciones son <code>100755</code>, para un achivo ejecutable; o <code>120000</code>, para un enlace simbólico.  Estos modos son como los modos de UNIX, pero mucho menos flexibles. Solo estos tres modos son válidos para archivos (blobs) en Git; (aunque  también se permiten otros modos para carpetas y submódulos).</p>
+
+<p>Tras esto, puedes usar el comando <code>write-tree</code> para escribir el área de preparacón a un objeto tipo árbol. Sin necesidad de la opción <code>-w</code>, solo llamando al comando <code>write-tree</code>, y si dicho árbol no existiera ya, se crea automáticamente un objeto tipo árbol a partir del estado del índice.</p>
+
+<pre><code>$ git write-tree
+d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+$ git cat-file -p d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+100644 blob 83baae61804e65cc73a7201a7252750c76066a30      test.txt
+</code></pre>
+
+<p>También puedes comprobar si realmente es un objeto tipo árbol:</p>
+
+<pre><code>$ git cat-file -t d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+tree
+</code></pre>
+
+<p>Vamos a crear un nuevo árbol con la segunda versión del archivo test.txt y con un nuevo archivo.</p>
+
+<pre><code>$ echo &#39;new file&#39; &gt; new.txt
+$ git update-index test.txt 
+$ git update-index --add new.txt 
+</code></pre>
+
+<p>El área de preparación contendrá ahora la nueva versión de test.txt, así como el nuevo archivo new.txt. Escribiendo este árbol, (guardando el estado del área de preparación o índice), podrás ver que aparece algo así como:</p>
+
+<pre><code>$ git write-tree
+0155eb4229851634a0f03eb265b69f5a2d56f341
+$ git cat-file -p 0155eb4229851634a0f03eb265b69f5a2d56f341
+100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt
+100644 blob 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a      test.txt
+</code></pre>
+
+<p>Aquí se vén las entradas para los dos archivos y también el que la suma de comprobación SHA-1 de test.txt es la &quot;segunda versión&quot; de la anterior (<code>1f7a7a</code>). Simplemente por diversión, puedes añadir el primer árbol como una subcarpeta de este otro. Para leer árboles al área de preparación puedes utilizar el comando <code>read-tree</code>. Y, en este caso, puedes hacerlo como si fuera una subcarpeta utilizando la opción <code>--prefix</code>:</p>
+
+<pre><code>$ git read-tree --prefix=bak d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+$ git write-tree
+3c4e9cd789d88d8d89c1073707c3585e41b0e614
+$ git cat-file -p 3c4e9cd789d88d8d89c1073707c3585e41b0e614
+040000 tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579      bak
+100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt
+100644 blob 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a      test.txt
+</code></pre>
+
+<p>Si crearas una carpeta de trabajo a partir de este nuevo árbol que acabas de escribir, obtendrías los dos archivos en el nivel principal de la carpeta de trabajo y una subcarpeta llamada <code>bak</code> conteniendo la primera versión del archivo test.txt.  Puedes pensar en algo parecido a la Figura 9-2 para representar los datos guardados por Git para estas estructuras.</p>
+
+<p><center><img src="/figures/18333fig0902-tn.png"></center><br/> 
+Figura 9-2. La estructura del contenido Git para tus datos actuales.</p>
+
+<h3 id="Objetos-de-confirmación-de-cambios"><a href="#Objetos-de-confirmación-de-cambios">Objetos de confirmación de cambios</a></h3>
+
+<p>Tienes tres árboldes que representan diferentes momentos interesantes de tu proyecto, pero el problema principal sigue siendo el estar obligado a recordar los tres valores SHA-1 para poder recuperar cualquiera de esos momentos. Asimismo, careces de información alguna sobre quién guardó las instantáneas de esos momentos, cuándo fueron guardados o por qué se guardaron. Este es el tipo de información que almacenan para tí los objetos de confirmación de cambios.</p>
+
+<p>Para crearlos, tan solo has de llamar al comando <code>commit-tree</code>, indicando uno de los árboles SHA-1 y los objetos de confirmación de cambios que lo preceden (si es que lo precede alguno).  Empezando por el primer árbol que has escrito:</p>
+
+<pre><code>$ echo &#39;first commit&#39; | git commit-tree d8329f
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d
+</code></pre>
+
+<p>Con el comando <code>cat-file</code> puedes revisar el nuevo objeto de confirmación de cambios recién creado:</p>
+
+<pre><code>$ git cat-file -p fdf4fc3
+tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+author Scott Chacon &lt;schacon@gmail.com&gt; 1243040974 -0700
+committer Scott Chacon &lt;schacon@gmail.com&gt; 1243040974 -0700
+
+first commit
+</code></pre>
+
+<p>El formato para un objeto de confirmación de cambios (commit) es sencillo, contemplando: el objeto tipo árbol para la situación del proyecto en ese momento puntual; la información sobre el autor/confirmador, recogida desde las opciones de configuración<code>user.name</code> y <code>user.email</code>; la fecha y hora actuales; una línea en blanco; y el mensaje de la confirmación de cambios.  </p>
+
+<p>Puedes seguir adelante, escribiendo los otros dos objetos de confirmación de cambios. Y relacionando cada uno de ellos con su inmediato anterior:</p>
+
+<pre><code>$ echo &#39;second commit&#39; | git commit-tree 0155eb -p fdf4fc3
+cac0cab538b970a37ea1e769cbbde608743bc96d
+$ echo &#39;third commit&#39;  | git commit-tree 3c4e9c -p cac0cab
+1a410efbd13591db07496601ebc7a059dd55cfe9
+</code></pre>
+
+<p>Cada uno de estos tres objetos de confirmación de cambios apunta a uno de los tres objetos tipo árbol que habias creado previamente. Más aún, en estos momentos tienes ya un verdadero historial Git. Lo puedes comprobar con el comando <code>git log</code>. Lanzandolo mientras estás en la última de las confirmaciones de cambio.</p>
+
+<pre><code>$ git log --stat 1a410e commit 1a410efbd13591db07496601ebc7a059dd55cfe9
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:15:24 2009 -0700
+
+    third commit
+
+ bak/test.txt |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit cac0cab538b970a37ea1e769cbbde608743bc96d
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:14:29 2009 -0700
+
+    second commit
+
+ new.txt  |    1 +
+ test.txt |    2 +-
+ 2 files changed, 2 insertions(+), 1 deletions(-)
+
+commit fdf4fc3344e67ab068f836878b6c4951e3b15f3d
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:09:34 2009 -0700
+
+    first commit
+
+ test.txt |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>¡Sorprendente!. Acabas de confeccionar un historial Git utilizando solamente operaciones de bajo nivel, sin usar ninguno de los interfaces principales. Esto es básicamente lo que hace Git cada vez que utilizas los comandos <code>git add</code> y <code>git commit</code>: guardar objetos binarios (blobs) para los archivos modificados, actualizar el índice, escribir árboles (trees), escribir objetos de confirmación de cambios (commits) que los referencian y relacionar cada uno de ellos con su inmediato precedente. Estos tres objetos Git, -binario, árbol y confirmación de cambios--, se guardan como archivos separados en la carpeta <code>.git/objects</code>. Aquí se muestran todos los objetos presentes en este momento en la carpeta del ejemplo, con comentarios acerca de lo que almacena cada uno de ellos:</p>
+
+<pre><code>$ find .git/objects -type f
+.git/objects/01/55eb4229851634a0f03eb265b69f5a2d56f341 # tree 2
+.git/objects/1a/410efbd13591db07496601ebc7a059dd55cfe9 # commit 3
+.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a # test.txt v2
+.git/objects/3c/4e9cd789d88d8d89c1073707c3585e41b0e614 # tree 3
+.git/objects/83/baae61804e65cc73a7201a7252750c76066a30 # test.txt v1
+.git/objects/ca/c0cab538b970a37ea1e769cbbde608743bc96d # commit 2
+.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4 # &#39;test content&#39;
+.git/objects/d8/329fc1cc938780ffdd9f94e0d364e0ea74f579 # tree 1
+.git/objects/fa/49b077972391ad58037050f2a75f74e3671e92 # new.txt
+.git/objects/fd/f4fc3344e67ab068f836878b6c4951e3b15f3d # commit 1
+</code></pre>
+
+<p>Siguiendo todos los enlaces internos, puedes llegar a un gráfico similar al de la figura 9-3.</p>
+
+<p><center><img src="/figures/18333fig0903-tn.png"></center><br/> 
+Figura 9-3. Todos los objetos en tu carpeta Git.</p>
+
+<h3 id="Almacenamiento-de-los-objetos"><a href="#Almacenamiento-de-los-objetos">Almacenamiento de los objetos</a></h3>
+
+<p>He citado anteriormente que siempre se almacena una cabecera  junto al contenido. Vamos a hechar un vistazo a cómo Git almacena sus objetos. Te mostraré el proceso de guardar un objeto binario grande (blob), --en este caso la cadena de texto &quot;what is up, doc?&quot; (¿qué hay de nuevo, viejo?)--, interactivamente, en el lenguaje de script Ruby. Puedes arrancar el modo interactivo de Ruby con el comando <code>irb</code>:</p>
+
+<pre><code>$ irb
+&gt;&gt; content = &quot;what is up, doc?&quot;
+=&gt; &quot;what is up, doc?&quot;
+</code></pre>
+
+<p>Git construye la cabecera comenzando por el tipo de objeto, en este caso un objeto binario grande (blob). Después añade un espacio, seguido del tamaño del contenido y termina con un byte nulo:</p>
+
+<pre><code>&gt;&gt; header = &quot;blob #{content.length}\0&quot;
+=&gt; &quot;blob 16\000&quot;
+</code></pre>
+
+<p>Git concatena la cabecera y el contenido original, para calcular la suma de control SHA-1 conjunta. En Ruby, para calcular el valor SHA-1 de una cadena de texto: has de incluir la libreria de generación SHA1 con el comando <code>require</code> y llamar luego a la orden <code>Digest::SHA1.hexdigest()</code>:</p>
+
+<pre><code>&gt;&gt; store = header + content
+=&gt; &quot;blob 16\000what is up, doc?&quot;
+&gt;&gt; require &#39;digest/sha1&#39;
+=&gt; true
+&gt;&gt; sha1 = Digest::SHA1.hexdigest(store)
+=&gt; &quot;bd9dbf5aae1a3862dd1526723246b20206e5fc37&quot;
+</code></pre>
+
+<p>Git  comprime todo el contenido con zlib. Y tu puedes hacer lo mismo en Ruby con la libreria zlib. Primero has de incluir la libreria y luego lanzar la orden <code>Zlib::Deflate.deflate()</code> sobre el contenido: </p>
+
+<pre><code>&gt;&gt; require &#39;zlib&#39;
+=&gt; true
+&gt;&gt; zlib_content = Zlib::Deflate.deflate(store)
+=&gt; &quot;x\234K\312\311OR04c(\317H,Q\310,V(-\320QH\311O\266\a\000_\034\a\235&quot;
+</code></pre>
+
+<p>Para terminar, has de escribir el contenido comprimido en un objeto en disco. Para fijar el lugar donde almacenarlo, utilizaremos como nombre de carpeta los dos primeros caracteres del valor SHA-1 y como nombre de archivo los restantes 38 caracteres de dicho valor SHA-1. En Ruby, puedes utilizar la función <code>FileUtils.mkdir_p()</code> para crear una carpeta. Después, puedes abrir un archivo con la orden <code>File.open()</code> y escribir contenido en él con la orden <code>write()</code>:  </p>
+
+<pre><code>&gt;&gt; path = &#39;.git/objects/&#39; + sha1[0,2] + &#39;/&#39; + sha1[2,38]
+=&gt; &quot;.git/objects/bd/9dbf5aae1a3862dd1526723246b20206e5fc37&quot;
+&gt;&gt; require &#39;fileutils&#39;
+=&gt; true
+&gt;&gt; FileUtils.mkdir_p(File.dirname(path))
+=&gt; &quot;.git/objects/bd&quot;
+&gt;&gt; File.open(path, &#39;w&#39;) { |f| f.write zlib_content }
+=&gt; 32
+</code></pre>
+
+<p>Y ¡esto es todo!. --acabas de crear un auténtico objeto Git binario grande (blob)--. Todos los demas objetos Git se almacenan de forma similar, pero con la diferencia de que sus cabeceras comienzan con un tipo diferente. En lugar de &#39;blob&#39; (objeto binario grande), comenzarán por &#39;commit&#39; (confirmación de cambios), o por &#39;tree&#39; (árbol). Además, el contenido de un binario (blob) puede ser prácticamente cualquier cosa. Mientras que el contenido de una confirmación de cambios (commit) o de un árbol (tree) han de seguir unos formatos internos muy concretos.</p>
+
+<div id="nav"><a href="/book/es/Los-entresijos-internos-de-Git-Fontaneria-y-porcelana">prev</a> | <a href="/book/es/v1/Los-entresijos-internos-de-Git-Referencias-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

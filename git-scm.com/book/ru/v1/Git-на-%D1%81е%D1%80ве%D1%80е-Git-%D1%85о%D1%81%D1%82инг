@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":4,"applicationTime":128,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git-хостинг</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B5-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О контроле версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D1%82%D0%BC%D0%B5%D0%BD%D0%B0-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9">Отмена изменений</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8">Работа с удалёнными репозиториями</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5-%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B">Полезные советы</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%3F">Что такое ветка?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9F%D1%80%D0%B8%D1%91%D0%BC%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Приёмы работы с ветками</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5">Перемещение</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5">Настройка Git на сервере</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Создание открытого SSH-ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF">Открытый доступ</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git">Распределённый Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B">Распределённые рабочие процессы</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%A1%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83">Содействие проекту</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%A1%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0">Сопровождение проекта</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D1%8F%D1%82%D0%B0%D0%BD%D1%8C%D0%B5">Прятанье</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Перезапись истории</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Отладка с помощью Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2">Слияние поддеревьев</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Настройка Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git">Конфигурирование Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D1%8B">Git-атрибуты</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9F%D0%B5%D1%80%D0%B5%D1%85%D0%B2%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%B8-%D0%B2-Git">Перехватчики в Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%BD%D0%B0%D0%B2%D1%8F%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Пример навязывания политики с помощью Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%B8-Subversion">Git и Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8">Git изнутри</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D1%84%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и фарфор</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-%D0%B2-Git">Объекты в Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8">Протоколы передачи</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Обслуживание и восстановление данных</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>4.10 Git на сервере - Git-хостинг</h1>
+  <div><h2>Git-хостинг</h2>
+
+<p>Если вы не хотите связываться со всей работой по установке собственного Git-сервера, у вас есть несколько вариантов размещения ваших Git-проектов на внешних специальных хостинг сайтах. Это предоставляет множество преимуществ: на хостинг сайте обычно быстро настроить и запустить проект и нет никакого мониторинга или поддержки сервера. Даже если вы установили и запустили свой собственный внутренний сервер, вы можете захотеть использовать публичный хостинг сайт для вашего открытого кода — обычно сообществу открытого кода так будет проще вас найти и помочь.</p>
+
+<p>В наши дни у вас есть огромное количество вариантов хостинга на выбор, все со своими преимуществами и недостатками. Актуальный список можно найти на следующей странице:</p>
+
+<pre><code>https://git.wiki.kernel.org/index.php/GitHosting
+</code></pre>
+
+<p>Поскольку мы не можем рассмотреть их все, и поскольку я работаю на один из них, мы в этом разделе рассмотрим процесс создания учётной записи и нового проекта на GitHub&#39;е. Это даст вам представление о вовлечённых в него вещах.</p>
+
+<p>GitHub — крупнейший на сегодняшний день сайт, предоставляющий Git-хостинг для проектов с открытым исходным кодом, а также один из немногих, предоставляющих одновременно и публичный, и приватный хостинг, так что вы можете хранить ваш открытый и коммерческий код в одном месте. На самом деле, мы использовали GitHub, чтобы закрыто совместно писать эту книгу (прим. переводчика: и открыто переводить после её издания).</p>
+
+<h3 id="GitHub"><a href="#GitHub">GitHub</a></h3>
+
+<p>GitHub немного отличается от других хостингов кода способом группировки проектов. Вместо того, чтобы брать за основу проекты, GitHub ориентируется на пользователей. Это значит, что если я размещаю свой проект <code>grit</code> на GitHub&#39;е, вы не найдёте его в <code>github.com/grit</code>, он будет в <code>github.com/schacon/grit</code>. Здесь нет никакой канонической версии проекта, что позволяет проектам беспрепятственно переходить от одного пользователя к другому, если начальный автор забросил проект.</p>
+
+<p>GitHub — это коммерческая компания, которая взимает плату с учётных записей, использующих приватные репозитории, но любой может хоть сейчас получить бесплатную учётную запись и разместить сколько ему угодно открытых проектов. Мы быстро рассмотрим, как это делается.</p>
+
+<h3 id="Настройка-учётной-записи"><a href="#Настройка-учётной-записи">Настройка учётной записи</a></h3>
+
+<p>Первое, что вам нужно сделать, это настроить учётную запись. Если вы посетите страницу &quot;Plans and pricing&quot; по адресу <code>https://github.com/pricing</code> и нажмёте на кнопку &quot;Create a free account&quot; (см. рисунок 4-2), вы попадёте на страницу регистрации.</p>
+
+<p><center><img src="/figures/18333fig0402-tn.png"></center><br/>
+Рисунок 4-2. Страница тарифных планов на GitHub&#39;е.</p>
+
+<p>Здесь вы должны выбрать имя пользователя, которое ещё не занято в системе, ввести адрес электронной почты, который будет сопоставлен аккаунту, и пароль (см. рис. 4-3).</p>
+
+<p><center><img src="/figures/18333fig0403-tn.png"></center><br/> 
+Рисунок 4-3. Страница регистрации пользователя на GitHub&#39;е.</p>
+
+<p>Если есть возможность, сейчас также самое время добавить свой открытый SSH-ключ. Мы рассмотрели, как создать ключ, ранее, в разделе &quot;Создание открытого SSH-ключа&quot;. Возьмите содержимое открытого ключа из своей пары и вставьте в поле для ввода открытого SSH-ключа. Ссылка &quot;explain ssh keys&quot; направит вас к подробным инструкциям о том, как это сделать на всех основных операционных системах.
+Нажатие на кнопку &quot;I agree, sign me up&quot; откроет инструментальную панель вашего нового пользователя (см. рис. 4-4).</p>
+
+<p><center><img src="/figures/18333fig0404-tn.png"></center><br/> 
+Рисунок 4-4. Инструментальная панель на GitHub&#39;е.</p>
+
+<p>После этого вы можете создать новый репозиторий.</p>
+
+<h3 id="Создание-нового-репозитория"><a href="#Создание-нового-репозитория">Создание нового репозитория</a></h3>
+
+<p>Начните с нажатия на &quot;New repository&quot; рядом с разделом &quot;Your Repositories&quot; на странице инструментальной панели. Вы попадёте к форме для создания нового репозитория (см. рис. 4-5).</p>
+
+<p><center><img src="/figures/18333fig0405-tn.png"></center><br/> 
+Рисунок 4-5. Создание нового репозитория на GitHub&#39;е.</p>
+
+<p>Единственное, что вам обязательно нужно сделать, это указать имя проекта, но вы также можете добавить и описание. Когда сделаете это, нажмите на кнопку &quot;Create Repository&quot;. Теперь у вас есть новый репозиторий на GitHub&#39;е (см. рис. 4-6).</p>
+
+<p><center><img src="/figures/18333fig0406-tn.png"></center><br/> 
+Рисунок 4-6. Заглавная информация проекта GitHub.</p>
+
+<p>Поскольку у вас ещё нет кода, GitHub покажет вам инструкцию, как создать совершенно новый проект, отправить существующий или импортировать проект из публичного репозитория Subversion (см. рис. 4-7). </p>
+
+<p><center><img src="/figures/18333fig0407-tn.png"></center><br/> 
+Рисунок 4-7. Инструкции для нового репозитория.</p>
+
+<p>Эти инструкции похожи на то, что мы проходили раньше. Чтобы инициализировать проект, если это ещё не Git-проект, используйте:</p>
+
+<pre><code>$ git init
+$ git add .
+$ git commit -m &#39;initial commit&#39;
+</code></pre>
+
+<p>Если у вас есть локальный Git-репозиторий, добавьте GitHub как удалённый сервер и отправьте туда свою ветку master:</p>
+
+<pre><code>$ git remote add origin git@github.com:testinguser/iphone_project.git
+$ git push origin master
+</code></pre>
+
+<p>Теперь ваш проект размещён на GitHub&#39;е, и вы можете дать ссылку на него любому, с кем вы захотите разделить проект. В этом случае, это <code>http://github.com/testinguser/iphone_project</code>. Вы также можете видеть в заголовке каждой страницы проекта, что у вас две Git-ссылки (см. рис. 4-8).</p>
+
+<p><center><img src="/figures/18333fig0408-tn.png"></center><br/> 
+Рисунок 4-8. Заголовок проекта с публичной и приватной ссылками.</p>
+
+<p>Ссылка &quot;Public Clone URL&quot; — это публичная ссылка только для чтения, через которую кто угодно может склонировать проект. Можете опубликовать эту ссылку или разместить её на своём сайте — где угодно.</p>
+
+<p>&quot;Your Clone URL&quot; — это SSH-ссылка на чтение и запись, через которую вы можете читать и писать только в том случае, если вы подключаетесь с использованием секретного ключа из пары открытого SSH-ключа, загруженного в вашу учётную запись. Если другие пользователи посетят страницу этого проекта, они не увидят этой ссылки — только публичную.</p>
+
+<h3 id="Импорт-из-Subversion"><a href="#Импорт-из-Subversion">Импорт из Subversion</a></h3>
+
+<p>Если у вас есть существующий публичный Subversion-проект, который вы хотите импортировать в Git, GitHub часто может сделать это за вас. Внизу страницы инструкций есть ссылка на импорт из Subversion. Если вы кликнете по ней, вы увидите форму с информацией о процессе импорта и текстовое поле, где вы можете вставить ссылку на ваш публичный Subversion-проект (см. рис. 4-9).</p>
+
+<p><center><img src="/figures/18333fig0409-tn.png"></center><br/> 
+Рисунок 4-9. Интерфейс импорта из Subversion.</p>
+
+<p>Если ваш проект очень большой, нестандартный или приватный, этот процесс, возможно, не сработает для вас. В главе 7 вы узнаете, как делать более сложные импорты вручную.</p>
+
+<h3 id="Добавление-участников"><a href="#Добавление-участников">Добавление участников</a></h3>
+
+<p>Давайте добавим остальную команду. Если Джон, Джози и Джессика зарегистрированы на GitHub&#39;е, и вы хотите дать им доступ на отправку изменений в свой репозиторий, вы можете добавить их в свой проект как участников. Это позволит им отправлять изменения, используя свои открытые ключи.</p>
+
+<p>Нажмите на кнопку &quot;edit&quot; в заголовке проекта или вкладку &quot;Admin&quot; вверху, чтобы попасть на страницу администратора вашего проекта на GitHub&#39;е (см. рис. 4-10).</p>
+
+<p><center><img src="/figures/18333fig0410-tn.png"></center><br/> 
+Рисунок 4-10. Страница администратора на GitHub&#39;е.</p>
+
+<p>Чтобы дать другому пользователю доступ на запись в проект, кликните по ссылке “Add another collaborator”. Появится новое текстовое поле, в котором вы можете набрать имя пользователя. По мере набора всплывёт подсказка, показывающая возможные совпадения имён. Когда найдёте нужного пользователя, нажмите на кнопку Add, чтобы добавить пользователя как участника вашего проекта (см. рис. 4-11).</p>
+
+<p><center><img src="/figures/18333fig0411-tn.png"></center><br/> 
+Рисунок 4-11. Добавление участника в проект.</p>
+
+<p>Когда закончите добавлять участников, вы должны увидеть их список в разделе Repository Collaborators (см. рис. 4-12).</p>
+
+<p><center><img src="/figures/18333fig0412-tn.png"></center><br/> 
+Рисунок 4-12. Список участников вашего проекта.</p>
+
+<p>Если вам нужно отозвать чей-то доступ, можете кликнуть по ссылке &quot;revoke&quot;, и его доступ на отправку будет удалён. Для будущих проектов вы также можете скопировать группы участников, скопировав права доступа из существующего проекта.</p>
+
+<h3 id="Ваш-проект"><a href="#Ваш-проект">Ваш проект</a></h3>
+
+<p>После того как вы отправили ваш проект или импортировали его из Subversion, у вас есть главная страница проекта, которая выглядит как на рис. 4-13.</p>
+
+<p><center><img src="/figures/18333fig0413-tn.png"></center><br/> 
+Рисунок 4-13. Главная страница проекта на GitHub&#39;е.</p>
+
+<p>Когда люди посещают ваш проект, они видят эту страницу. Она содержит вкладки, касающиеся различных аспектов вашего проекта. Вкладка Commits показывает список коммитов в обратном хронологическом порядке наподобие вывода команды <code>git log</code>. Вкладка Network показывает всех людей, отделивших ваш проект и вернувших свои наработки. Вкладка Downloads позволяет выложить бинарные файлы проекта и ссылки на архивы каких-нибудь отмеченных точек проекта. Вкладка Wiki предоставляет вики, где вы можете написать документацию или другую информацию о своём проекте. Вкладка Graphs показывает некоторую информацию о вкладе участников и статистику проекта. Главная вкладка Source показывает листинг корневого каталога проекта и автоматически выводит под ним содержимое файла README, если он у вас есть. Эта вкладка также показывает информацию о последнем коммите.</p>
+
+<h3 id="Ответвления-проектов"><a href="#Ответвления-проектов">Ответвления проектов</a></h3>
+
+<p>Если вы хотите внести вклад в существующий проект, на отправку изменений в который у вас нет прав, GitHub приветствует ответвления. Когда вы смотрите на страницу заинтересовавшего вас проекта и хотите немного поработать над ним, вы можете нажать на кнопку &quot;Fork&quot; в заголовке проекта, чтобы GitHub скопировал проект вашему пользователю, и вы смогли отправлять туда свои изменения.</p>
+
+<p>Таким образом, проектам не нужно беспокоиться о добавлении пользователей в качестве участников для предоставления им доступа на отправку изменений. Люди могут ответвить проект и отправлять изменения в свою копию. А мейнтейнер главного проекта может вернуть эти изменения, добавляя форки как удалённые серверы и сливая из них наработки.</p>
+
+<p>Чтобы ответвить проект, посетите страницу проекта (в нашем случае mojombo/chronic) и нажмите на кнопку &quot;Fork&quot; в его заголовке (см. рис. 4-14).</p>
+
+<p><center><img src="/figures/18333fig0414-tn.png"></center><br/> 
+Рисунок 4-14. Получение доступной для записи копии любого репозитория.</p>
+
+<p>Через несколько секунд вы будете направлены на страницу своего нового проекта, на которой указано, что данный проект является ответвлением другого проекта (см. рис. 4-15).</p>
+
+<p><center><img src="/figures/18333fig0415-tn.png"></center><br/> 
+Рисунок 4-15. Вы ответвили проект.</p>
+
+<h3 id="Заключение-о-GitHub"><a href="#Заключение-о-GitHub">Заключение о GitHub</a></h3>
+
+<p>Это всё, что мы хотели бы рассказать про GitHub, но важно отметить, как быстро вы можете всё сделать. Вы можете создать аккаунт, добавить новый проект и отправить изменения в него за минуты. Если ваш проект с открытым исходным кодом, вы также получите огромное сообщество разработчиков, которые смогут увидеть ваш проект, ответвить его и внести в него свой вклад. Во всяком случае, это хороший способ получить готовую к работе с Git&#39;ом среду, чтобы быстренько испытать его в деле.</p>
+
+<div id="nav"><a href="/book/ru/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">prev</a> | <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

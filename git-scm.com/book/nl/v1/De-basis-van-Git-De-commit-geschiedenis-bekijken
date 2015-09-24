@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":753,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - De commit geschiedenis bekijken</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v1/Aan-de-slag">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v1/Aan-de-slag-Het-wat-en-waarom-van-versiebeheer">Het wat en waarom van versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v1/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v1/Aan-de-slag-De-basis-van-Git">De basis van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v1/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v1/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v1/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v1/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v1/De-basis-van-Git">De basis van Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v1/De-basis-van-Git-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v1/De-basis-van-Git-Wijzigingen-aan-het-repository-vastleggen">Wijzigingen aan het repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v1/De-basis-van-Git-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v1/De-basis-van-Git-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v1/De-basis-van-Git-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v1/De-basis-van-Git-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v1/De-basis-van-Git-Tips-en-trucs">Tips en trucs</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v1/De-basis-van-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v1/Branchen-in-Git">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v1/Branchen-in-Git-Wat-is-een-branch">Wat is een branch</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v1/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v1/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v1/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v1/Branchen-in-Git-Remote-branches">Remote branches</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v1/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v1/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v1/Git-op-de-server">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v1/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v1/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v1/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v1/Git-op-de-server-De-Server-Opzetten">De Server Opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v1/Git-op-de-server-Publieke-toegang">Publieke toegang</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v1/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v1/Git-op-de-server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v1/Git-op-de-server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v1/Git-op-de-server-Git-daemon">Git daemon</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v1/Git-op-de-server-Gehoste-Git">Gehoste Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/nl/v1/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v1/Gedistribueerd-Git">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v1/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v1/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v1/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v1/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v1/Git-tools">Git tools</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v1/Git-tools-Revisie-selectie">Revisie selectie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v1/Git-tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v1/Git-tools-Stashen">Stashen</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v1/Git-tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v1/Git-tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v1/Git-tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/nl/v1/Git-tools-Subboom-mergen">Subboom mergen</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/nl/v1/Git-tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v1/Git-op-maat-maken">Git op maat maken</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v1/Git-op-maat-maken-Git-haken-hooks">Git haken (hooks)</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v1/Git-op-maat-maken-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v1/Git-op-maat-maken-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v1/Git-en-andere-systemen">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v1/Git-en-andere-systemen-Git-en-Subversion">Git en Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v1/Git-en-andere-systemen-Naar-Git-migreren">Naar Git migreren</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v1/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v1/Het-binnenwerk-van-Git">Het binnenwerk van Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Sanitaire-voorzieningen-en-porselein">Sanitaire voorzieningen en porselein</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Git-referenties">Git referenties</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-De-refspec">De refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Overdracht-protocollen">Overdracht protocollen</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Onderhoud-en-het-herstellen-van-gegevens">Onderhoud en het herstellen van gegevens</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/nl/v1/Het-binnenwerk-van-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>2.3 De basis van Git - De commit geschiedenis bekijken</h1>
+  <div><h2>De commit geschiedenis bekijken</h2>
+
+<p>Nadat je een aantal commits gemaakt hebt, of als je een repository met een bestaande commit-geschiedenis gecloned hebt, zul je waarschijnlijk terug willen zien wat er gebeurd is. Het meest basale en krachtige tool om dit te doen is het <code>git log</code> commando.</p>
+
+<p>Deze voorbeelden maken gebruik van een eenvoudig project genaamd simplegit dat ik vaak voor demonstraties gebruikt. Om het project op te halen, voer dit uit</p>
+
+<pre><code>git clone git://github.com/schacon/simplegit-progit.git
+</code></pre>
+
+<p>Als je <code>git log</code> in dit project uitvoert, zou je output moeten krijgen die er ongeveer zo uitziet:</p>
+
+<pre><code>$ git log
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    first commit
+</code></pre>
+
+<p>Zonder argumenten toont <code>git log</code> standaard de commits die gedaan zijn in die repository, in omgekeerde chronologische volgorde. Dat wil zeggen: de meest recente commits worden als eerste getoond. Zoals je kunt zien, toont dit commando iedere commit met zijn SHA-1 checksum, de naam van de auteur en zijn e-mail, de datum van opslaan, en de commit boodschap.</p>
+
+<p>Een gigantisch aantal en variëteit aan opties zijn beschikbaar voor het <code>git log</code> commando om je precies te laten zien waar je naar op zoek bent. Hier laten we je de meest gebruikte opties zien.</p>
+
+<p>Een van de meest behulpzame opties is <code>-p</code>, wat de diff laat zien van de dingen die in iedere commit geïntroduceerd zijn. Je kunt ook <code>-2</code> gebruiken, om alleen de laatste twee items te laten zien:</p>
+
+<pre><code>$ git log –p -2
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -5,7 +5,7 @@ require &#39;rake/gempackagetask&#39;
+ spec = Gem::Specification.new do |s|
+-    s.version   =   &quot;0.1.0&quot;
++    s.version   =   &quot;0.1.1&quot;
+     s.author    =   &quot;Scott Chacon&quot;
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index a0a60ae..47c6340 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -18,8 +18,3 @@ class SimpleGit
+     end
+
+ end
+-
+-if $0 == __FILE__
+-  git = SimpleGit.new
+-  puts git.show
+-end
+\ No newline at end of file
+</code></pre>
+
+<p>Deze optie toont dezelfde informatie, maar dan met een diff volgend op ieder item. Dit is erg handig voor een code review, of om snel te zien wat er tijdens een reeks commits gebeurd is die een medewerker toegevoegd heeft.</p>
+
+<p>Soms is het handiger om wijzigingen na te kijken op woordniveau in plaats van op regelniveau. Er is een <code>--word-diff</code> optie beschikbaar in Git, die je aan het <code>git log -p</code> commando kan toevoegen om een woord diff te krijgen inplaats van de reguliere regel voor regel diff. Woord diff formaat is nogal nutteloos als het wordt toegepast op broncode, maar is erg handig als het wordt toegepast op grote tekstbestanden, zoals boeken of een dissertatie. Hier is een voorbeeld.</p>
+
+<pre><code>$ git log -U1 --word-diff
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -7,3 +7,3 @@ spec = Gem::Specification.new do |s|
+    s.name      =   &quot;simplegit&quot;
+    s.version   =   [-&quot;0.1.0&quot;-]{+&quot;0.1.1&quot;+}
+    s.author    =   &quot;Scott Chacon&quot;
+</code></pre>
+
+<p>Zoals je kunt zien zijn er geen toegevoegde of verwijderde regels in deze uitvoer zoals in een normale diff. Wijzigingen worden daarentegen binnen de regel getoond. Je kunt het toegevoegde woord zien binnen een <code>{+ +}</code> en verwijderde binnen een <code>[- -]</code>. Je kunt ook kiezen om de gebruikelijke 3 regels context in de diff uitvoer tot één regel te verminderen, omdat de context nu woorden is, en geen regels. Je kunt dit doen met <code>-U1</code> zoals hierboven in het voorbeeld.</p>
+
+<p>Je kunt ook een serie samenvattende opties met <code>git log</code> gebruiken. Bijvoorbeeld, als je wat verkorte statistieken bij iedere commit wilt zien, kun je de <code>--stat</code> optie gebruiken:</p>
+
+<pre><code>$ git log --stat
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+ Rakefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+ lib/simplegit.rb |    5 -----
+ 1 file changed, 5 deletions(-)
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    first commit
+
+ README           |    6 ++++++
+ Rakefile         |   23 +++++++++++++++++++++++
+ lib/simplegit.rb |   25 +++++++++++++++++++++++++
+ 3 files changed, 54 insertions(+)
+</code></pre>
+
+<p>Zoals je ziet, drukt de <code>--stat</code> optie onder iedere commit een lijst gewijzigde bestanden af, hoeveel bestanden gewijzigd zijn, en hoeveel regels in die bestanden zijn toegevoegd en verwijderd. Het toont ook een samenvatting van de informatie aan het einde.
+Een andere handige optie is <code>--pretty</code>. Deze optie verandert de log output naar een ander formaat dan de standaard. Er zijn al een paar voorgebouwde opties voor je beschikbaar. De <code>oneline</code> optie drukt iedere commit op een eigen regel af, wat handig is als je naar een hoop commits kijkt. Daarnaast tonen de <code>short</code>, <code>full</code> en <code>fuller</code> opties de output in grofweg hetzelfde formaat, maar met minder of meer informatie, respectievelijk:</p>
+
+<pre><code>$ git log --pretty=oneline
+ca82a6dff817ec66f44342007202690a93763949 changed the version number
+085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test code
+a11bef06a3f659402fe7563abf99ad00de2209e6 first commit
+</code></pre>
+
+<p>De meest interessante optie is <code>format</code>, waarmee je je eigen log-uitvoer-formaat kunt specificeren. Dit is in het bijzonder handig als je output aan het genereren bent voor automatische verwerking; omdat je expliciet het formaat kan specificeren, weet je dat het niet zal veranderen bij volgende versies van Git:</p>
+
+<pre><code>$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;
+ca82a6d - Scott Chacon, 11 months ago : changed the version number
+085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code
+a11bef0 - Scott Chacon, 11 months ago : first commit
+</code></pre>
+
+<p>Tabel 2-1 toont een aantal handige opties die aan format gegeven kunnen worden.</p>
+
+<!-- Attention to translators: this is a table declaration.
+The lines must be formatted as follows
+<TAB><First column text><TAB><Second column text>
+-->
+
+<table class='ref'><thead>
+<tr>
+<th>Optie</th>
+<th>Omschrijving van de Output</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>%H</code></td>
+<td>Commit hash</td>
+</tr>
+<tr>
+<td><code>%h</code></td>
+<td>Afgekorte commit hash</td>
+</tr>
+<tr>
+<td><code>%T</code></td>
+<td>Tree hash</td>
+</tr>
+<tr>
+<td><code>%t</code></td>
+<td>Afgekorte tree hash</td>
+</tr>
+<tr>
+<td><code>%P</code></td>
+<td>Parent hashes</td>
+</tr>
+<tr>
+<td><code>%p</code></td>
+<td>Afgekorte parent hashes</td>
+</tr>
+<tr>
+<td><code>%an</code></td>
+<td>Auteur naam</td>
+</tr>
+<tr>
+<td><code>%ae</code></td>
+<td>Auteur e-mail</td>
+</tr>
+<tr>
+<td><code>%ad</code></td>
+<td>Auteur datum (formaat respecteert de –date= optie)</td>
+</tr>
+<tr>
+<td><code>%ar</code></td>
+<td>Auteur datum, relatief</td>
+</tr>
+<tr>
+<td><code>%cn</code></td>
+<td>Committer naam</td>
+</tr>
+<tr>
+<td><code>%ce</code></td>
+<td>Committer e-mail</td>
+</tr>
+<tr>
+<td><code>%cd</code></td>
+<td>Committer datum</td>
+</tr>
+<tr>
+<td><code>%cr</code></td>
+<td>Committer datum, relatief</td>
+</tr>
+<tr>
+<td><code>%s</code></td>
+<td>Onderwerp</td>
+</tr>
+</tbody></table>
+
+<p>Je zult je misschien afvragen wat het verschil is tussen <em>author</em> en <em>committer</em>. De <em>author</em> is de persoon die de patch oorspronkelijk geschreven heeft, en de <em>committer</em> is de persoon die de patch als laatste heeft toegepast. Dus als je een patch naar een project stuurt en een van de kernleden past de patch toe, dan krijgen jullie beiden de eer, jij als de auteur en het kernlid als de committer. We gaan hier wat verder op in in <em>Hoofdstuk 5</em>.</p>
+
+<p>De <code>oneline</code> en <code>format</code> opties zijn erg handig in combinatie met een andere <code>log</code> optie genaamd <code>--graph</code>. Deze optie maakt een mooie ASCII grafiek waarin je branch- en merge-geschiedenis getoond worden, die we kunnen zien in onze kopie van het Grit project repository:</p>
+
+<pre><code>$ git log --pretty=format:&quot;%h %s&quot; --graph
+* 2d3acf9 ignore errors from SIGCHLD on trap
+*  5e3ee11 Merge branch &#39;master&#39; of git://github.com/dustin/grit
+|\
+| * 420eac9 Added a method for getting the current branch.
+* | 30e367c timeout code and tests
+* | 5a09431 add timeout protection to grit
+* | e1193f8 support for heads with slashes in them
+|/
+* d6016bc require time for xmlschema
+*  11d191e Merge branch &#39;defunkt&#39; into local
+</code></pre>
+
+<p>Dat zijn slechts een paar simpele output formaat opties voor <code>git log</code>; er zijn er nog veel meer. Tabel 2-2 toont de opties waarover we het tot nog toe gehad hebben, en wat veel voorkomende formaat-opties die je misschien handig vindt, samen met hoe ze de output van het <code>log</code> commando veranderen.</p>
+
+<!-- Attention to translators: this is a table declaration.
+The lines must be formatted as follows
+<TAB><First column text><TAB><Second column text>
+-->
+
+<table class='ref'><thead>
+<tr>
+<th>Optie</th>
+<th>Omschrijving</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>-p</code></td>
+<td>Toon de patch geïntroduceerd bij iedere commit.</td>
+</tr>
+<tr>
+<td><code>--word-diff</code></td>
+<td>Toon de patch in een woord diff formaat.</td>
+</tr>
+<tr>
+<td><code>--stat</code></td>
+<td>Toon statistieken voor gewijzigde bestanden per commit.</td>
+</tr>
+<tr>
+<td><code>--shortstat</code></td>
+<td>Toon alleen de gewijzigde/ingevoegde/verwijderde regel van het --stat commando.</td>
+</tr>
+<tr>
+<td><code>--name-only</code></td>
+<td>Toon de lijst van bestanden die gewijzigd zijn na de commit-informatie.</td>
+</tr>
+<tr>
+<td><code>--name-status</code></td>
+<td>Toon ook de lijst van bestanden die beïnvloed zijn door de toegevoegde/gewijzigde/verwijderde informatie.</td>
+</tr>
+<tr>
+<td><code>--abbrev-commit</code></td>
+<td>Toon alleen de eerste paar karakters van de SHA-1 checksum in plaats van alle 40.</td>
+</tr>
+<tr>
+<td><code>--relative-date</code></td>
+<td>Toon de datum in een relatief formaat (bijvoorbeeld, &quot;2 weken geleden&quot;), in plaats van het volledige datum formaat.</td>
+</tr>
+<tr>
+<td><code>--graph</code></td>
+<td>Toon een ASCII grafiek van de branch- en merge-geschiedenis naast de log output.</td>
+</tr>
+<tr>
+<td><code>--pretty</code></td>
+<td>Toon commits in een alternatief formaat. De opties bevatten oneline, short, full, fuller, en format (waarbij je je eigen formaat specificeert).</td>
+</tr>
+<tr>
+<td><code>--oneline</code></td>
+<td>Een gemaks-optie, staat voor <code>--pretty=oneline --abbrev-commit</code>.</td>
+</tr>
+</tbody></table>
+
+<h3 id="Log-output-limiteren"><a href="#Log-output-limiteren">Log output limiteren</a></h3>
+
+<p>Naast het formatteren van de output, heeft <code>git log</code> nog een aantal bruikbare limiterende opties; dat wil zeggen, opties die je een subset van de commits tonen. Je hebt zo&#39;n optie al gezien: de <code>-2</code> optie, die slechts de laatste twee commits laat zien. Sterker nog: je kunt <code>-&lt;n&gt;</code> doen, waarbij <code>n</code> een heel getal is om de laatste <code>n</code> commits te laten zien. In feite zul je deze vorm weinig gebruiken, omdat Git standaard alle output door een pager (pagineer applicatie) stuurt zodat je de log-uitvoer pagina voor pagina ziet.</p>
+
+<p>Dat gezegd hebbende, zijn de tijd-limiterende opties zoals <code>--since</code> en <code>--until</code> erg handig. Dit commando bijvoorbeeld, geeft een lijst met commits die gedaan zijn gedurende de laatste twee weken:</p>
+
+<pre><code>$ git log --since=2.weeks
+</code></pre>
+
+<p>Dit commando werkt met veel formaten: je kunt een specifieke datum kiezen (&quot;2008-01-15”) of een relatieve datum zoals &quot;2 jaar 1 dag en 3 minuten geleden&quot;.</p>
+
+<p>Je kunt ook de lijst met commits filteren op bepaalde criteria. De <code>--author</code> optie laat je filteren op een specifieke auteur, en de <code>--grep</code> optie laat je op bepaalde zoekwoorden filteren in de commit boodschappen. (Let op dat als je zowel auteur als grep opties specificeert het commando commits zal matchen met beide.) Als je meerdere grep opties wilt specificeren, zal je <code>--all-match</code> moet toevoegen, anders zal het commando ook commits met één van de twee criteria selecteren.</p>
+
+<p>De laatste echt handige optie om aan <code>git log</code> als filter mee te geven is een pad. Als je een directory of bestandsnaam opgeeft, kun je de log output limiteren tot commits die een verandering introduceren op die bestanden. Dit is altijd de laatste optie en wordt over het algemeen vooraf gegaan door dubbele streepjes (<code>--</code>) om de paden van de opties te scheiden.</p>
+
+<p>In Tabel 2-3 laten we deze en een paar andere veel voorkomende opties zien als referentie.</p>
+
+<!-- Attention to translators: this is a table declaration.
+The lines must be formatted as follows
+<TAB><First column text><TAB><Second column text>
+-->
+
+<table class='ref'><thead>
+<tr>
+<th>Optie</th>
+<th>Omschrijving</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>-(n)</code></td>
+<td>Laat alleen de laatste n commits zien</td>
+</tr>
+<tr>
+<td><code>--since, --after</code></td>
+<td>Limiteer de commits tot degenen waarvan de CommitDate op of na de gegeven datum/tijd ligt.</td>
+</tr>
+<tr>
+<td><code>--until, --before</code></td>
+<td>Limiteer de commits tot degenen waarvan de CommitDate op of voor de gegeven datum/tijd ligt.</td>
+</tr>
+<tr>
+<td><code>--author</code></td>
+<td>Laat alleen de commits zien waarvan de auteur bij de gegeven tekst past.</td>
+</tr>
+<tr>
+<td><code>--committer</code></td>
+<td>Laat alleen de commits zien waarvan de committer bij de gegeven tekst past.</td>
+</tr>
+</tbody></table>
+
+<h3 id="Log-uitvoer-beperken-volgens-datum/tijd"><a href="#Log-uitvoer-beperken-volgens-datum/tijd">Log uitvoer beperken volgens datum/tijd</a></h3>
+
+<p>Om te bepalen welke commits in de Git broncode repository aanwezig zijn  (git://git.kernel.org/pub/scm/git/git.git) met een CommitDate van 2014-04-29 relatief aan je lokale tijdzone (zoals ingesteld op jouw computer), gebruik je</p>
+
+<pre><code>$ git log --after=&quot;2014-04-29 00:00:00&quot; --before=&quot;2014-04-29 23:59:59&quot; \
+  --pretty=fuller
+</code></pre>
+
+<p>Omdat de uitvoer zal verschillen met de tijdzone waar dit commando wordt gegeven, wordt het aangeraden om altijd een absolute tijd zoals volgens het ISO 8601 formaat (welke tijdzone informatie bevat) als argument bij <code>--after</code> and <code>--before</code> te gebruiken, zodat iedereen die het commando geeft dezelfde herhaalbare resultaten krijgt. </p>
+
+<p>Om de commits gemaakt op een specifiek moment in de tijd te krijgen (bijv. 29 April 2013 om 17:07:22 CET), kunnen we dit gebruiken</p>
+
+<pre><code>$ git log  --after=&quot;2013-04-29T17:07:22+0200&quot;      \
+          --before=&quot;2013-04-29T17:07:22+0200&quot; --pretty=fuller
+
+commit de7c201a10857e5d424dbd8db880a6f24ba250f9
+Author:     Ramkumar Ramachandra &lt;artagnon@gmail.com&gt;
+AuthorDate: Mon Apr 29 18:19:37 2013 +0530
+Commit:     Junio C Hamano &lt;gitster@pobox.com&gt;
+CommitDate: Mon Apr 29 08:07:22 2013 -0700
+
+    git-completion.bash: lexical sorting for diff.statGraphWidth
+
+    df44483a (diff --stat: add config option to limit graph width,
+    2012-03-01) added the option diff.startGraphWidth to the list of
+    configuration variables in git-completion.bash, but failed to notice
+    that the list is sorted alphabetically.  Move it to its rightful place
+    in the list.
+
+    Signed-off-by: Ramkumar Ramachandra &lt;artagnon@gmail.com&gt;
+    Signed-off-by: Junio C Hamano &lt;gitster@pobox.com&gt;
+</code></pre>
+
+<p>De bovenstaande tijden (<code>AuthorDate</code>, <code>CommitDate</code>) worden getoond in het standaard formaat (<code>--date=default</code>), welke de tijdzone informatie van respectievelijk de auteur en committer weergeeft.</p>
+
+<p>Andere nuttige formaten zijn onder andere <code>--date=iso</code> (ISO 8601), <code>--date=rfc</code> (RFC 2822), <code>--date=raw</code> (seconden sinds de &quot;epoch&quot; (1970-01-01 UTC)) <code>--date=local</code> (tijden volgens jouw locale tijdzone) alsmede <code>--date=relative</code> (bijv. &quot;2 hours ago&quot;).</p>
+
+<p>Als het commando <code>git log</code> zonder tijdsaanduiding gebruikt wordt, wordt de tijd van je computer aangehouden op het moment dat het commando wordt uitgevoerd (met behoud van het relatieve verschil met UTC).</p>
+
+<p>Bijvoorbeeld, het uitvoeren van een <code>git log</code> commando om 09:00 op jouw computer waarbij je tijdzone op dat moment 3 uur voorloopt op UTC, maakt de uitvoer van de volgende twee commando&#39;s gelijk:</p>
+
+<pre><code>$ git log --after=2008-06-01 --before=2008-07-01
+$ git log --after=&quot;2008-06-01T09:00:00+0300&quot; \
+    --before=&quot;2008-07-01T09:00:00+0300&quot;
+</code></pre>
+
+<p>Als laatste voorbeeld, als je commits wilt zien die de testbestanden wijzigen in de Git sourcecode geschiedenis die door Junio Hamano gecommit waren met de CommitDate in de maand  oktober 2008 (relatief tot de tijdzone van New York) en die geen merges waren, kan je bijvoorbeeld het volgende commando typen:</p>
+
+<pre><code>    $ git log --pretty=&quot;%h - %s&quot; --author=gitster \
+       --after=&quot;2008-10-01T00:00:00-0400&quot;         \
+      --before=&quot;2008-10-31T23:59:59-0400&quot; --no-merges -- t/
+5610e3b - Fix testcase failure when extended attribute
+acd3b9e - Enhance hold_lock_file_for_{update,append}()
+f563754 - demonstrate breakage of detached checkout wi
+d1a43f2 - reset --hard/read-tree --reset -u: remove un
+51a94af - Fix &quot;checkout --track -b newbranch&quot; on detac
+b0ad11e - pull: allow &quot;git pull origin $something:$cur
+</code></pre>
+
+<p>Van de bijna 36.000 commits in de Git broncode historie, laat dit commando de 6 zien die bij die criteria passen.</p>
+
+<h3 id="Een-grafische-interface-gebruiken-om-de-historie-te-visualiseren"><a href="#Een-grafische-interface-gebruiken-om-de-historie-te-visualiseren">Een grafische interface gebruiken om de historie te visualiseren</a></h3>
+
+<p>Als je een meer grafische applicatie wilt gebruiken om je commit historie te visualiseren, wil je misschien een kijkje nemen naar het Tcl/Tk programma genaamd <code>gitk</code> dat met Git meegeleverd wordt. Gitk is eigenlijk een visuele <code>git log</code> tool, en het accepteert bijna alle filter opties die <code>git log</code> ook accepteert. Als je <code>gitk</code> in op de commandoregel in je project typt, zou je zoiets als in Figuur 2-2 moeten zien.</p>
+
+<p><center><img src="/figures/18333fig0202-tn.png"></center><br/>
+Figuur 2-2. De gitk historie-visualiseerder.</p>
+
+<p>Je kunt de commit-historie in de bovenste helft van het scherm zien, samen met een afkomst graaf. De diff in de onderste helft van het scherm laat je de veranderingen zien die geïntroduceerd zijn bij iedere commit die je aanklikt.</p>
+
+<div id="nav"><a href="/book/nl/De-basis-van-Git-Wijzigingen-aan-het-repository-vastleggen">prev</a> | <a href="/book/nl/v1/De-basis-van-Git-Dingen-ongedaan-maken">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

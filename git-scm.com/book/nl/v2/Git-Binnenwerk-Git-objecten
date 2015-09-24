@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":185,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git objecten</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>10.2 Git Binnenwerk - Git objecten</h1>
+  <div><a id="_objects"></a><h2>Git objecten</h2>
+
+<p>Git is een op inhoud-adresseerbaar bestandssysteem.
+Mooi.
+Wat betekent dat nu eigenlijk?
+Het betekent dat in het hart van Git een eenvoudig sleutel-waarde gegevens opslag zit.
+Je kunt elke vorm van inhoud erin stoppen, en het zal je een sleutel teruggeven die je kunt gebruiken om de inhoud
+ op elk gewenst moment weer op te halen.
+Om dit te laten zien, zal je het plumbing commando <code>hash-object</code> gebruiken, die gegevens aanneemt, dit opslaat in je
+ <code>.git</code> directory en je de sleutel teruggeeft waarmee de gegevens zijn opgeslagen.
+Eerst, moet je een nieuwe Git repository initialiseren en vaststellen dat er niets in de <code>objects</code> directory zit:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git init <code class="nb">test</code>
+<code class="go">Initialized empty Git repository in /tmp/test/.git/</code>
+<code class="gp">$</code> <code class="nb">cd test</code>
+<code class="gp">$</code><code class="nb"> </code>find .git/objects
+<code class="go">.git/objects</code>
+<code class="go">.git/objects/info</code>
+<code class="go">.git/objects/pack</code>
+<code class="gp">$</code> find .git/objects -type f</pre>
+
+<p>Git heeft nu de <code>objects</code> directory geinitialiseerd en daarin <code>pack</code> en <code>info</code> subdirectories aangemaakt, maar er
+ zijn geen reguliere bestanden.
+Nu sla je wat tekst op in je Git database:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'test content'</code> <code class="p">|</code> git <code class="nb">hash</code>-object -w --stdin
+<code class="go">d670460b4b4aece5915caf5c68d12f560a9fe3e4</code></pre>
+
+<p>De <code>-w</code> vertelt <code>hash-object</code> om het object op te slaan; anders zou het commando je simpelweg vertellen onder welke
+ sleutel het zou worden opgeslagen.
+<code>--stdin</code> vertelt het commando om de inhoud van stdin te lezen; als je dit niet aangeeft, verwacht <code>hash-object</code> een
+ bestandspad aan het eind.
+De uitvoer van het commando is een 40-karakter checksum hash.
+Dit is de SHA-1 hash - een controlegetal van de inhoud die je opslaat plus een header, waar je iets later meer over
+ gaat lezen.
+Nu kan je zien hoe Git je gegevens heeft opgeslagen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> find .git/objects -type f
+<code class="go">.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4</code></pre>
+
+<p>Je kunt een bestand zien in de <code>objects</code> directory.
+Dit is hoe Git de inhoud initieel opslaat - als een enkel bestand per stuk inhoud, met het SHA-1 controlegetal als
+ naam die is berekend over de inhoud en de header.
+De subdirectory heeft de eerste 2 karakters van de SHA-1 als naam, en de bestandsnaam is de overige 38 karakters.</p>
+
+<p>Je kunt de inhoud weer uit Git krijgen met het <code>cat-file</code> commando.
+Dit commando is een soort Zwitsers zakmes voor het inspecteren van Git objecten.
+Met het doorgeven van <code>-p</code> vertel je het <code>cat-file</code> commando om het type inhoud uit te zoeken en het netjes voor je
+ te laten zien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+<code class="go">test content</code></pre>
+
+<p>Nu ben je in staat om inhoud aan Git toe te voegen en om het er weer uit te halen.
+Je kunt dit ook met de inhoud van bestanden doen.
+Bijvoorbeeld, je kunt een eenvoudig versiebeheer op een bestand doen.
+Eerst, maak een nieuw bestand aan en bewaar de inhoud in je database:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'version 1'</code> &gt; test.txt
+<code class="gp">$</code> git <code class="nb">hash</code>-object -w test.txt
+<code class="go">83baae61804e65cc73a7201a7252750c76066a30</code></pre>
+
+<p>Daarna schrijf je wat nieuwe inhoud naar het bestand, en bewaart het opnieuw:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'version 2'</code> &gt; test.txt
+<code class="gp">$</code> git <code class="nb">hash</code>-object -w test.txt
+<code class="go">1f7a7a472abf3dd9643fd615f6da379c4acb3e3a</code></pre>
+
+<p>Je database bevat nu de twee nieuwe versies van het bestand zowel als de eerste inhoud die je daar hebt bewaard:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> find .git/objects -type f
+<code class="go">.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a</code>
+<code class="go">.git/objects/83/baae61804e65cc73a7201a7252750c76066a30</code>
+<code class="go">.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4</code></pre>
+
+<p>Nu kan je de het bestand terugdraaien naar de eerste versie</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p 83baae61804e65cc73a7201a7252750c76066a30 &gt; test.txt
+<code class="gp">$</code> cat test.txt
+<code class="go">version 1</code></pre>
+
+<p>of de tweede versie:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a &gt; test.txt
+<code class="gp">$</code> cat test.txt
+<code class="go">version 2</code></pre>
+
+<p>Maar de SHA-1 sleutel onthouden voor elke versie van je bestand is niet praktisch; plus je bewaart niet de
+ bestandsnaam in je systeem - alleen de inhoud.
+Dit type object noemen we een blob.
+Je kunt Git je het objecttype laten vertellen van elk object in Git, gegeven de SHA-1 sleutel, met <code>cat-file -t</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -t 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a
+<code class="go">blob</code></pre>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Boom objecten (tree objects)" id="_tree_objects"><h3>Boom objecten (tree objects)</h3>
+
+<p>Het volgende type waar we naar gaan kijken is de tree, wat het probleem oplost van het opslaan van bestandsnamen en
+ je ook in staat stelt om een groep van bestanden bij elkaar op te slaan.
+Git slaat de inhoud op een manier die vergelijkbaar is met een UNIX bestandssysteem, maar wat versimpeld.
+Alle inhoud wrodt opgeslagen als tree en blob objecten, waarbij trees overeenkomen met UNIX directory entries en
+ blobs min of meer overeenkomen met inodes of bestandsinhoud.
+Een enkele tree object bevat een of meer tree entries, elk daarvan bevat een SHA-1 verwijzing naar een blob of
+ subtree met de bijbehorende mode, type en bestandsnaam.
+Bijvoorbeeld, de meest recente tree in een project kan er ongeveer zo uitzien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p master^<code class="o">{</code>tree<code class="o">}</code>
+<code class="go">100644 blob a906cb2a4a904a152e80877d4088654daad0c859      README</code>
+<code class="go">100644 blob 8f94139338f9404f26296befa88755fc2598c289      Rakefile</code>
+<code class="go">040000 tree 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0      lib</code></pre>
+
+<p>De <code>master^{tree}</code> syntax geeft het tree object aan waarnaar wordt verwezen door de laatste commit op je <code>master</code>
+ branch.
+Merk op dat de <code>lib</code> subdirectory geen blob is, maar een verwijzing naar een andere tree:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p 99f1a6d12cb4b6f19c8655fca46c3ecf317074e0
+<code class="go">100644 blob 47c6340d6459e05787f644c2447d2595f5d3a54b      simplegit.rb</code></pre>
+
+<p>Conceptueel zijn de gegevens die Git opslaat ongeveer dit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/10-git-internals/images/data-model-1.png" alt="Eenvoudige versie van het Git datamodel."></div>
+<figcaption>Eenvoudige versie van het Git datamodel.</figcaption></figure><p>Je kunt redelijk eenvoudig je eigen boom maken.
+Git maakt normaalgesproken een tree door de staat van je staging gebied of index te nemen en daarvan een reeks tree
+ objects te maken.
+Dus, om een tree object te maken, moet je eerst een index opzetten door wat bestanden te stagen.
+Om een index te maken met een enkele ingang - de eerste versie van je test.txt bestand - kan je het plumbing commando
+ <code>update-index</code> gebruiken.
+Je gebruikt dit commando om kunstmatig de eerdere versie van het bestand test.txt aan een nieuwe staging gebied toe
+ te voegen.
+Je moet het de optie <code>--add</code> doorgeven omdat het bestand nog niet bestaat in je staging gebied (je hebt nog niet eens
+ een staging gebied ingericht) en <code>--cacheinfo</code> omdat het bestand dat je toevoegt in in je directory zit maar in je
+ database.
+Daarna geef je de mode, SHA-1 en bestandsnaam op:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git update-index --add --cacheinfo <code class="m">100644</code> <code class="se">\</code>
+<code class="go">  83baae61804e65cc73a7201a7252750c76066a30 test.txt</code></pre>
+
+<p>In dit geval geef je een mode <code>100644</code> op, wat aangeeft dat het een normaal bestand is.
+Andere opties zijn <code>100755</code>, wat aangeeft dat het een aanroepbaar bestand is; en <code>120000</code>, wat een symbolische link
+ aangeeft.
+De modus is afgeleid van normale UNIX modi maar het is minder flexibel - deze drie modi zijn de enige die geldig zijn
+ voor bestanden (blobs) in Git (alhoewel andere modi worden gebruikt voor directories en submodules).</p>
+
+<p>Nu kan je het <code>write-tree</code> commando gebruiken om het staging gebied te schrijven naar een tree object.
+Hier is geen <code>-w</code> optie nodig - het aanroepen van <code>write-tree</code> maakt automatisch een tree object aan van de staat van
+ de index als die tree nog niet bestaat:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git write-tree
+<code class="go">d8329fc1cc938780ffdd9f94e0d364e0ea74f579</code>
+<code class="gp">$</code> git cat-file -p d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+<code class="go">100644 blob 83baae61804e65cc73a7201a7252750c76066a30      test.txt</code></pre>
+
+<p>Je kunt ook verifiëren dat dit een tree object is:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -t d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+<code class="go">tree</code></pre>
+
+<p>Je gaat nu een nieuwe tree maken met de tweede versie van test.txt en nog een nieuw bestand:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'new file'</code> &gt; new.txt
+<code class="gp">$</code> git update-index test.txt
+<code class="gp">$</code> git update-index --add new.txt</pre>
+
+<p>Je staging gebied heeft nu de nieuwe versie van test.txt alsook het nieuwe bestand new.txt.
+Schrijf dat deze tree weg (sla de staat van het staging gebied of index op in een tree object) en kijk hoe dit eruit
+ ziet:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git write-tree
+<code class="go">0155eb4229851634a0f03eb265b69f5a2d56f341</code>
+<code class="gp">$</code> git cat-file -p 0155eb4229851634a0f03eb265b69f5a2d56f341
+<code class="go">100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt</code>
+<code class="go">100644 blob 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a      test.txt</code></pre>
+
+<p>Merk op dat deze tree beide bestands entries bevat en ook dat de test.txt SHA-1 is de “versie 2” SHA-1 van eerder
+ is (<code>1f7a7a</code>).
+Puur voor de lol, ga je de eerste tree als een subdirectory toevoegen in deze.
+Je kunt trees in je staging area lezen door <code>read-tree</code> aan te roepen.
+In dit geval, kan je een bestaande tree als een subtree in je staging gebied lezen door de <code>--prefix</code> optie te
+ gebruiken bij <code>read-tree</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git <code class="nb">read</code>-tree --prefix<code class="o">=</code>bak d8329fc1cc938780ffdd9f94e0d364e0ea74f579
+<code class="gp">$</code> git write-tree
+<code class="go">3c4e9cd789d88d8d89c1073707c3585e41b0e614</code>
+<code class="gp">$</code> git cat-file -p 3c4e9cd789d88d8d89c1073707c3585e41b0e614
+<code class="go">040000 tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579      bak</code>
+<code class="go">100644 blob fa49b077972391ad58037050f2a75f74e3671e92      new.txt</code>
+<code class="go">100644 blob 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a      test.txt</code></pre>
+
+<p>Als je een werk directory van de nieuwe tree maakt die je zojuist geschreven hebt, zou je de twee bestanden op het
+ hoogste niveau van de werk directory krijgen en een subdirectory met de naam <code>bak</code> die de eerste versie van het
+ test.txt bestand zou bevatten.
+Je kunt de gegevens die Git bevat voor deze structuren als volgt weergeven:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/10-git-internals/images/data-model-2.png" alt="De inhoudsstructuur van je huidige Git gegevens."></div>
+<figcaption>De inhoudsstructuur van je huidige Git gegevens.</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Commit objecten" id="_git_commit_objects"><h3 id="Commit-objecten"><a href="#Commit-objecten">Commit objecten</a></h3>
+
+<p>Je hebt drie trees die de verschillende snapshots weergeven van je project die je wilt volgen, maar het eerdere
+ probleem blijft: je moet alle drie SHA-1 waarden onthouden om de snapshots te kunnen terughalen.
+Je hebt ook geen informatie over wie de snapshots heeft opgeslagen, wanneer ze zijn opgeslagen of waarom ze waren
+ opgeslagen.
+Dit is de basis informatie die het commit object voor je opslaat.</p>
+
+<p>Om een commit object te maken, roep je <code>commit-tree</code> aan en geef je een de SHA-1 van een enkele tree op en welke
+ commit objecten, indien van toepassing, er direct aan vooraf gaan.
+Begin met de eerste tree die je geschreven hebt:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'first commit'</code> <code class="p">|</code> git commit-tree d8329f
+<code class="go">fdf4fc3344e67ab068f836878b6c4951e3b15f3d</code></pre>
+
+<p>Nu kan je naar je nieuwe commit object kijken met <code>cat-file</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cat-file -p fdf4fc3
+<code class="go">tree d8329fc1cc938780ffdd9f94e0d364e0ea74f579</code>
+<code class="go">author Scott Chacon &lt;schacon@gmail.com&gt; 1243040974 -0700</code>
+<code class="go">committer Scott Chacon &lt;schacon@gmail.com&gt; 1243040974 -0700</code>
+
+<code class="go">first commit</code></pre>
+
+<p>Het formaat voor een commit object is eenvoudig: het geeft de tree op het hoogste niveau weer voor de snapshot van
+ het project op dat punt; de auteur/committer informatie (welke je <code>user.name</code> en <code>user.email</code> configuratie
+ instellingen gebruikt en een timestamp); een blanko regel en dan het commit bericht.</p>
+
+<p>Vervolgens ga je de andere twee commit objects schrijven, die elk naar de commit refereren die er direct aan vooraf
+ ging:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'second commit'</code> <code class="p">|</code> git commit-tree 0155eb -p fdf4fc3
+<code class="go">cac0cab538b970a37ea1e769cbbde608743bc96d</code>
+<code class="gp">$</code> <code class="nb">echo</code> <code class="s1">'third commit'</code>  <code class="p">|</code> git commit-tree 3c4e9c -p cac0cab
+<code class="go">1a410efbd13591db07496601ebc7a059dd55cfe9</code></pre>
+
+<p>Elk van de drie commit objecten verwijzen naar een van de drie snapshot trees die je gemaakt hebt.
+Gek genoeg, heb je nu een echte Git historie die je kunt bekijken met het <code>git log</code> commando, als je dit aanroept op
+ de laatste SHA-1 commit:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --stat 1a410e
+<code class="go">commit 1a410efbd13591db07496601ebc7a059dd55cfe9</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Fri May 22 18:15:24 2009 -0700</code>
+
+<code class="go">	third commit</code>
+
+<code class="go"> bak/test.txt | 1 +</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code>
+
+<code class="go">commit cac0cab538b970a37ea1e769cbbde608743bc96d</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Fri May 22 18:14:29 2009 -0700</code>
+
+<code class="go">	second commit</code>
+
+<code class="go"> new.txt  | 1 +</code>
+<code class="go"> test.txt | 2 +-</code>
+<code class="go"> 2 files changed, 2 insertions(+), 1 deletion(-)</code>
+
+<code class="go">commit fdf4fc3344e67ab068f836878b6c4951e3b15f3d</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Fri May 22 18:09:34 2009 -0700</code>
+
+<code class="go">    first commit</code>
+
+<code class="go"> test.txt | 1 +</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code></pre>
+
+<p>Verbazingwekkend.
+Je hebt zojuist de diepere niveau operaties uitgevoerd die een Git historie hebben opgebouwd, zonder gebruik te maken
+ van een van de hogere commando’s.
+In essentie is dit wat Git doet als je de <code>git add</code> en <code>git commit</code> commando’s gebuikt - het slaat blobs op voor de
+ bestanden die zijn gewijzigd, werkt de index bij, schrijft de trees weg en schrijft commit objecten weg die
+ verwijzen naar de trees op het hoogste niveau en de commits die er direct aan vooraf zijn gegaan.
+Deze drie hoofd Git objecten - de blob, de tree en de commit worden initieel opgeslagen als aparte bestanden in je
+ <code>.git/objects</code> directory.
+Hier zijn alle huidige objecten in de voorbeeld directory, met als commentaar wat ze opslaan:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> find .git/objects -type f
+<code class="go">.git/objects/01/55eb4229851634a0f03eb265b69f5a2d56f341 # tree 2</code>
+<code class="go">.git/objects/1a/410efbd13591db07496601ebc7a059dd55cfe9 # commit 3</code>
+<code class="go">.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a # test.txt v2</code>
+<code class="go">.git/objects/3c/4e9cd789d88d8d89c1073707c3585e41b0e614 # tree 3</code>
+<code class="go">.git/objects/83/baae61804e65cc73a7201a7252750c76066a30 # test.txt v1</code>
+<code class="go">.git/objects/ca/c0cab538b970a37ea1e769cbbde608743bc96d # commit 2</code>
+<code class="go">.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4 # 'test content'</code>
+<code class="go">.git/objects/d8/329fc1cc938780ffdd9f94e0d364e0ea74f579 # tree 1</code>
+<code class="go">.git/objects/fa/49b077972391ad58037050f2a75f74e3671e92 # new.txt</code>
+<code class="go">.git/objects/fd/f4fc3344e67ab068f836878b6c4951e3b15f3d # commit 1</code></pre>
+
+<p>Als je al de interne verwijzingen volgt, zal je een objectgraaf krijgen die er ongeveer zo uitziet:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/10-git-internals/images/data-model-3.png" alt="Alle objects in je Git directory."></div>
+<figcaption>Alle objects in je Git directory.</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Object opslag" id="idp34583440"><h3 id="Object-opslag"><a href="#Object-opslag">Object opslag</a></h3>
+
+<p>We hebben eerder gezegd dat er een header wordt opgeslagen bij de inhoud.
+Laten we nu de tijd nemen om een kijkje te nemen hoe Git haar objecten opslaat.
+Je gaat zien hoe een blob object interactief wordt opgeslagen - in dit geval, de zin “what is up, doc?” - in de
+ Ruby scripttaal.</p>
+
+<p>Je kunt de interactieve Ruby modus starten met het <code>irb</code> commando:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> irb
+<code class="gp">&gt;</code>&gt; <code class="nv">content</code> <code class="o">=</code> <code class="s2">"what is up, doc?"</code>
+<code class="go">=&gt; "what is up, doc?"</code></pre>
+
+<p>Git stelt een header samen die begint met het type van het object, in dit geval een blob.
+Daarna volgt een spatie gevolgd door de lengte van de inhoud en tot slot een null byte:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">&gt;</code>&gt; <code class="nv">header</code> <code class="o">=</code> <code class="s2">"blob #{content.length}\0"</code>
+<code class="go">=&gt; "blob 16\u0000"</code></pre>
+
+<p>Git plakt de header en de oorspronkelijke inhoud samen en berekent het SHA-1 controlegetal van die nieuwe inhoud.
+Je kunt de SHA-1 waarde van een tekenreeks in Ruby berekenen door de SHA1 digest library te includen met het
+ <code>require</code> commando en daarna <code>Digest::SHA1.hexdigest()</code> aan te roepen met de tekenreeks:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">&gt;</code>&gt; <code class="nv">store</code> <code class="o">=</code> header + content
+<code class="go">=&gt; "blob 16\u0000what is up, doc?"</code>
+<code class="gp">&gt;</code>&gt; require <code class="s1">'digest/sha1'</code>
+<code class="go">=&gt; true</code>
+<code class="gp">&gt;</code>&gt; <code class="nv">sha1</code> <code class="o">=</code> Digest::SHA1.hexdigest<code class="o">(</code>store<code class="o">)</code>
+<code class="go">=&gt; "bd9dbf5aae1a3862dd1526723246b20206e5fc37"</code></pre>
+
+<p>Git comprimeert de nieuwe inhoud met zlib, wat je in Ruby kunt doen met de zlib library.
+Eerst moet je de library <em>requiren</em> en daarna <code>Zlib::Deflate.deflate()</code> aanroepen op de inhoud:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">&gt;</code>&gt; require <code class="s1">'zlib'</code>
+<code class="go">=&gt; true</code>
+<code class="gp">&gt;</code>&gt; <code class="nv">zlib_content</code> <code class="o">=</code> Zlib::Deflate.deflate<code class="o">(</code>store<code class="o">)</code>
+<code class="go">=&gt; "x\x9CK\xCA\xC9OR04c(\xCFH,Q\xC8,V(-\xD0QH\xC9O\xB6\a\x00_\x1C\a\x9D"</code></pre>
+
+<p>Als laatste schrijf je je zlib-deflated inhuod naar een object op schijf.
+Je bepaalt het pad van het object die je wilt schrijven (de eerste twee karakters van de SHA-1 waarde als de naam van
+ de subdirectory, en de overige 38 karakters zijnde de bestandsnaam binnen die directory).
+In Ruby kan je de <code>In Ruby kan je de `FileUtils.mkdir_p()</code> functie gebruiken om de subdirectory aan te maken als die
+ nog niet bestaat.
+Daarna open je het bestand met <code>File.open()</code> en schrijf je de eerder zlib-gecomprimeerde inhoud naar het bestand met
+ een <code>write()</code> aanroep op de filehandle die je krijgt:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">&gt;</code>&gt; <code class="nv">path</code> <code class="o">=</code> <code class="s1">'.git/objects/'</code> + sha1<code class="o">[</code>0,2<code class="o">]</code> + <code class="s1">'/'</code> + sha1<code class="o">[</code>2,38<code class="o">]</code>
+<code class="go">=&gt; ".git/objects/bd/9dbf5aae1a3862dd1526723246b20206e5fc37"</code>
+<code class="gp">&gt;</code>&gt; require <code class="s1">'fileutils'</code>
+<code class="go">=&gt; true</code>
+<code class="gp">&gt;</code>&gt; FileUtils.mkdir_p<code class="o">(</code>File.dirname<code class="o">(</code>path<code class="o">))</code>
+<code class="go">=&gt; ".git/objects/bd"</code>
+<code class="gp">&gt;</code>&gt; File.open<code class="o">(</code>path, <code class="s1">'w'</code><code class="o">)</code> <code class="o">{</code> <code class="p">|</code>f<code class="p">|</code> f.write zlib_content <code class="o">}</code>
+<code class="go">=&gt; 32</code></pre>
+
+<p>Dat is alles - je hebt een valide Git blob object gemaakt.
+Alle Git objecten worden op dezelfde manier opgeslagen, alleen met andere types - in plaats van de tekenreeks blob,
+ begint de header met commit of tree.
+Daarnaast, alhoewel de inhoud van een blob zo ongeveer alles kan zijn, is de inhoud van een commit en tree zeer
+ specifiek geformatteerd.</p>
+</section><div id="nav"><a href="/book/nl/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">prev</a> | <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

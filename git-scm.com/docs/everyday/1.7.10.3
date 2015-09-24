@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoBW1YeX1db","queueTime":0,"applicationTime":166,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - everyday Documentation</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+        <div id="content">
+          
+
+  <div id='reference-version'>
+    <a class="dropdown-trigger" id="reference-topics-trigger" data-panel-id="topics-dropdown" href="#">Topics ▾</a>
+<div class='dropdown-panel right' id='topics-dropdown'>
+  <div class='three-column'>
+    <div class='column-left'>
+      <h3 class='setup'>Setup and Config</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-config">config</a></li>
+  <li><a href="/docs/git-help">help</a></li>
+</ul>
+
+      <h3 class='projects'>Getting and Creating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-init">init</a></li>
+  <li><a href="/docs/git-clone">clone</a></li>
+</ul>
+
+      <h3 class='snapshotting'>Basic Snapshotting</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-add">add</a></li>
+  <li><a href="/docs/git-status">status</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-commit">commit</a></li>
+  <li><a href="/docs/git-reset">reset</a></li>
+  <li><a href="/docs/git-rm">rm</a></li>
+  <li><a href="/docs/git-mv">mv</a></li>
+</ul>
+
+      <h3 class='branching'>Branching and Merging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-branch">branch</a></li>
+  <li><a href="/docs/git-checkout">checkout</a></li>
+  <li><a href="/docs/git-merge">merge</a></li>
+  <li><a href="/docs/git-mergetool">mergetool</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-stash">stash</a></li>
+  <li><a href="/docs/git-tag">tag</a></li>
+</ul>
+
+      <h3 class='sharing'>Sharing and Updating Projects</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-fetch">fetch</a></li>
+  <li><a href="/docs/git-pull">pull</a></li>
+  <li><a href="/docs/git-push">push</a></li>
+  <li><a href="/docs/git-remote">remote</a></li>
+  <li><a href="/docs/git-submodule">submodule</a></li>
+</ul>
+
+    </div>
+    <div class='column-middle'>
+      <h3 class='inspection'>Inspection and Comparison</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-show">show</a></li>
+  <li><a href="/docs/git-log">log</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-shortlog">shortlog</a></li>
+  <li><a href="/docs/git-describe">describe</a></li>
+</ul>
+
+      <h3 class='patching'>Patching</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-cherry-pick">cherry-pick</a></li>
+  <li><a href="/docs/git-diff">diff</a></li>
+  <li><a href="/docs/git-rebase">rebase</a></li>
+  <li><a href="/docs/git-revert">revert</a></li>
+</ul>
+
+      <h3 class='debugging'>Debugging</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-bisect">bisect</a></li>
+  <li><a href="/docs/git-blame">blame</a></li>
+  <li><a href="/docs/git-grep">grep</a></li>
+</ul>
+
+      <h3 class='email'>Email</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-am">am</a></li>
+  <li><a href="/docs/git-apply">apply</a></li>
+  <li><a href="/docs/git-format-patch">format-patch</a></li>
+  <li><a href="/docs/git-send-email">send-email</a></li>
+  <li><a href="/docs/git-request-pull">request-pull</a></li>
+</ul>
+
+      <h3 class='external'>External Systems</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-svn">svn</a></li>
+  <li><a href="/docs/git-fast-import">fast-import</a></li>
+</ul>
+
+    </div>
+    <div class='column-right'>
+      <h3 class='admin'>Administration</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-clean">clean</a></li>
+  <li><a href="/docs/git-gc">gc</a></li>
+  <li><a href="/docs/git-fsck">fsck</a></li>
+  <li><a href="/docs/git-reflog">reflog</a></li>
+  <li><a href="/docs/git-filter-branch">filter-branch</a></li>
+  <li><a href="/docs/git-instaweb">instaweb</a></li>
+  <li><a href="/docs/git-archive">archive</a></li>
+  <li><a href="/docs/git-bundle">bundle</a></li>
+</ul>
+
+      <h3 class='server-admin'>Server Admin</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-daemon">daemon</a></li>
+  <li><a href="/docs/git-update-server-info">update-server-info</a></li>
+</ul>
+
+      <h3 class='plumbing'>Plumbing Commands</h3>
+<ul class='unstyled'>
+  <li><a href="/docs/git-cat-file">cat-file</a></li>
+  <li><a href="/docs/git-commit-tree">commit-tree</a></li>
+  <li><a href="/docs/git-count-objects">count-objects</a></li>
+  <li><a href="/docs/git-diff-index">diff-index</a></li>
+  <li><a href="/docs/git-for-each-ref">for-each-ref</a></li>
+  <li><a href="/docs/git-hash-object">hash-object</a></li>
+  <li><a href="/docs/git-ls-files">ls-files</a></li>
+  <li><a href="/docs/git-merge-base">merge-base</a></li>
+  <li><a href="/docs/git-read-tree">read-tree</a></li>
+  <li><a href="/docs/git-rev-list">rev-list</a></li>
+  <li><a href="/docs/git-rev-parse">rev-parse</a></li>
+  <li><a href="/docs/git-show-ref">show-ref</a></li>
+  <li><a href="/docs/git-symbolic-ref">symbolic-ref</a></li>
+  <li><a href="/docs/git-update-index">update-index</a></li>
+  <li><a href="/docs/git-update-ref">update-ref</a></li>
+  <li><a href="/docs/git-verify-pack">verify-pack</a></li>
+  <li><a href="/docs/git-write-tree">write-tree</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    <a class="dropdown-trigger" id="reference-versions-trigger" data-panel-id="previous-versions-dropdown" href="#">Version 1.7.10.3 ▾</a>
+<span class="light">everyday last updated in 2.1.4</span>
+<div class='dropdown-panel left' id='previous-versions-dropdown'>
+  <header>Changes in the <strong>everyday</strong> manual</header>
+  <ol class='reference-previous-versions'>
+        <li class="no-change"><span>1.9.3 &rarr; 2.1.4 no changes</span></li>
+        <li>
+        <a href="/docs/everyday/1.9.2"><span class="version">1.9.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">04/09/14</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.5.1 &rarr; 1.9.1 no changes</span></li>
+        <li>
+        <a href="/docs/everyday/1.8.5"><span class="version">1.8.5</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">11/27/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.8.2.1 &rarr; 1.8.4.5 no changes</span></li>
+        <li>
+        <a href="/docs/everyday/1.8.2"><span class="version">1.8.2</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">03/13/13</em>
+        </a>
+        </li>
+        <li class="no-change"><span>1.7.10.4 &rarr; 1.8.1.6 no changes</span></li>
+        <li>
+        <a href="/docs/everyday/1.7.10.3"><span class="version">1.7.10.3</span>
+          <span class="diff">
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/green-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/red-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+              <img src="/images/icons/grey-dot.png" />
+          </span>
+          <em class="date">05/25/12</em>
+        </a>
+        </li>
+    <li>&nbsp;</li>
+    <!-- <li><a class="more" href="#">See more previous releases →</a></li> -->
+  </ol>
+  <footer>
+    <span class="light">Check your version of git by running<br></span>
+    <strong>$</strong>
+    <input type="text" class="copyable" value="git --version" />
+  </footer>
+</div>
+
+  </div>
+
+  <div id='main'>
+    <div class='man-page'>
+  <div id="header">
+    <h1>Everyday GIT With 20 Commands Or So Manual Page</h1>
+      <div class="preamble">
+        <div class="sectionbody">
+          <div class="paragraph">
+  <p><a href="#Individual Developer (Standalone)">Individual Developer (Standalone)</a> commands are essential for
+anybody who makes a commit, even for somebody who works alone.
+</p>
+</div>
+<div class="paragraph">
+  <p>If you work with other people, you will need commands listed in
+the <a href="#Individual Developer (Participant)">Individual Developer (Participant)</a> section as well.
+</p>
+</div>
+<div class="paragraph">
+  <p>People who play the <a href="#Integrator">Integrator</a> role need to learn some more
+commands in addition to the above.
+</p>
+</div>
+<div class="paragraph">
+  <p><a href="#Repository Administration">Repository Administration</a> commands are for system
+administrators who are responsible for the care and feeding
+of git repositories.
+</p>
+</div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="sect1">
+    <a name='Individual Developer (Standalone)'></a>
+  <h2 id="_individual_developer_(standalone)">Individual Developer (Standalone)</h2>
+    <div class="sectionbody"><div class="paragraph">
+  <p>A standalone individual developer does not exchange patches with
+other people, and works alone in a single repository, using the
+following commands.
+</p>
+</div>
+<div class="ulist">
+  <ul>
+      <li><p><a href="git-init.html">git-init(1)</a> to create a new repository.</p></li>
+      <li><p><a href="git-show-branch.html">git-show-branch(1)</a> to see where you are.</p></li>
+      <li><p><a href="git-log.html">git-log(1)</a> to see what happened.</p></li>
+      <li><p><a href="git-checkout.html">git-checkout(1)</a> and <a href="git-branch.html">git-branch(1)</a> to switch
+branches.</p></li>
+      <li><p><a href="git-add.html">git-add(1)</a> to manage the index file.</p></li>
+      <li><p><a href="git-diff.html">git-diff(1)</a> and <a href="git-status.html">git-status(1)</a> to see what
+you are in the middle of doing.</p></li>
+      <li><p><a href="git-commit.html">git-commit(1)</a> to advance the current branch.</p></li>
+      <li><p><a href="git-reset.html">git-reset(1)</a> and <a href="git-checkout.html">git-checkout(1)</a> (with
+pathname parameters) to undo changes.</p></li>
+      <li><p><a href="git-merge.html">git-merge(1)</a> to merge between local branches.</p></li>
+      <li><p><a href="git-rebase.html">git-rebase(1)</a> to maintain topic branches.</p></li>
+      <li><p><a href="git-tag.html">git-tag(1)</a> to mark known point.</p></li>
+  </ul>
+</div>
+<div class="sect2">
+  <h3 id="_examples">Examples</h3>
+    <div class="dlist">
+  <dl>
+      <dt class="hdlist1">Use a tarball as a starting point for a new repository.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ tar zxf frotz.tar.gz
+$ cd frotz
+$ git init
+$ git add . &lt;1&gt;
+$ git commit -m &quot;import of frotz source tree.&quot;
+$ git tag v2.43 &lt;2&gt;
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>add everything under the current directory.</p></li>
+      <li><p>make a lightweight, unannotated tag.</p></li>
+  </ol>
+</div>
+</dd>
+      <dt class="hdlist1">Create a topic branch and develop.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ git checkout -b alsa-audio &lt;1&gt;
+$ edit/compile/test
+$ git checkout -- curses/ux_audio_oss.c &lt;2&gt;
+$ git add curses/ux_audio_alsa.c &lt;3&gt;
+$ edit/compile/test
+$ git diff HEAD &lt;4&gt;
+$ git commit -a -s &lt;5&gt;
+$ edit/compile/test
+$ git reset --soft HEAD^ &lt;6&gt;
+$ edit/compile/test
+$ git diff ORIG_HEAD &lt;7&gt;
+$ git commit -a -c ORIG_HEAD &lt;8&gt;
+$ git checkout master &lt;9&gt;
+$ git merge alsa-audio &lt;10&gt;
+$ git log --since='3 days ago' &lt;11&gt;
+$ git log v2.43.. curses/ &lt;12&gt;
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>create a new topic branch.</p></li>
+      <li><p>revert your botched changes in <tt>curses/ux_audio_oss.c</tt>.</p></li>
+      <li><p>you need to tell git if you added a new file; removal and
+modification will be caught if you do <tt>git commit -a</tt> later.</p></li>
+      <li><p>to see what changes you are committing.</p></li>
+      <li><p>commit everything as you have tested, with your sign-off.</p></li>
+      <li><p>take the last commit back, keeping what is in the working tree.</p></li>
+      <li><p>look at the changes since the premature commit we took back.</p></li>
+      <li><p>redo the commit undone in the previous step, using the message
+you originally wrote.</p></li>
+      <li><p>switch to the master branch.</p></li>
+      <li><p>merge a topic branch into your master branch.</p></li>
+      <li><p>review commit logs; other forms to limit output can be
+combined and include <tt>--max-count=10</tt> (show 10 commits),
+<tt>--until=2005-12-10</tt>, etc.</p></li>
+      <li><p>view only the changes that touch what's in <tt>curses/</tt>
+directory, since <tt>v2.43</tt> tag.</p></li>
+  </ol>
+</div>
+</dd>
+  </dl>
+</div>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+    <a name='Individual Developer (Participant)'></a>
+  <h2 id="_individual_developer_(participant)">Individual Developer (Participant)</h2>
+    <div class="sectionbody"><div class="paragraph">
+  <p>A developer working as a participant in a group project needs to
+learn how to communicate with others, and uses these commands in
+addition to the ones needed by a standalone developer.
+</p>
+</div>
+<div class="ulist">
+  <ul>
+      <li><p><a href="git-clone.html">git-clone(1)</a> from the upstream to prime your local
+repository.</p></li>
+      <li><p><a href="git-pull.html">git-pull(1)</a> and <a href="git-fetch.html">git-fetch(1)</a> from &quot;origin&quot;
+to keep up-to-date with the upstream.</p></li>
+      <li><p><a href="git-push.html">git-push(1)</a> to shared repository, if you adopt CVS
+style shared repository workflow.</p></li>
+      <li><p><a href="git-format-patch.html">git-format-patch(1)</a> to prepare e-mail submission, if
+you adopt Linux kernel-style public forum workflow.</p></li>
+  </ul>
+</div>
+<div class="sect2">
+  <h3 id="_examples">Examples</h3>
+    <div class="dlist">
+  <dl>
+      <dt class="hdlist1">Clone the upstream and work on it.  Feed changes to upstream.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ git clone git://git.kernel.org/pub/scm/.../torvalds/linux-2.6 my2.6
+$ cd my2.6
+$ edit/compile/test; git commit -a -s &lt;1&gt;
+$ git format-patch origin &lt;2&gt;
+$ git pull &lt;3&gt;
+$ git log -p ORIG_HEAD.. arch/i386 include/asm-i386 &lt;4&gt;
+$ git pull git://git.kernel.org/pub/.../jgarzik/libata-dev.git ALL &lt;5&gt;
+$ git reset --hard ORIG_HEAD &lt;6&gt;
+$ git gc &lt;7&gt;
+$ git fetch --tags &lt;8&gt;
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>repeat as needed.</p></li>
+      <li><p>extract patches from your branch for e-mail submission.</p></li>
+      <li><p><tt>git pull</tt> fetches from <tt>origin</tt> by default and merges into the
+current branch.</p></li>
+      <li><p>immediately after pulling, look at the changes done upstream
+since last time we checked, only in the
+area we are interested in.</p></li>
+      <li><p>fetch from a specific branch from a specific repository and merge.</p></li>
+      <li><p>revert the pull.</p></li>
+      <li><p>garbage collect leftover objects from reverted pull.</p></li>
+      <li><p>from time to time, obtain official tags from the <tt>origin</tt>
+and store them under <tt>.git/refs/tags/</tt>.</p></li>
+  </ol>
+</div>
+</dd>
+      <dt class="hdlist1">Push into another repository.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>satellite$ git clone mothership:frotz frotz &lt;1&gt;
+satellite$ cd frotz
+satellite$ git config --get-regexp '^(remote|branch)\.' &lt;2&gt;
+remote.origin.url mothership:frotz
+remote.origin.fetch refs/heads/*:refs/remotes/origin/*
+branch.master.remote origin
+branch.master.merge refs/heads/master
+satellite$ git config remote.origin.push \
+           master:refs/remotes/satellite/master &lt;3&gt;
+satellite$ edit/compile/test/commit
+satellite$ git push origin &lt;4&gt;
+
+mothership$ cd frotz
+mothership$ git checkout master
+mothership$ git merge satellite/master &lt;5&gt;
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>mothership machine has a frotz repository under your home
+directory; clone from it to start a repository on the satellite
+machine.</p></li>
+      <li><p>clone sets these configuration variables by default.
+It arranges <tt>git pull</tt> to fetch and store the branches of mothership
+machine to local <tt>remotes/origin/*</tt> remote-tracking branches.</p></li>
+      <li><p>arrange <tt>git push</tt> to push local <tt>master</tt> branch to
+<tt>remotes/satellite/master</tt> branch of the mothership machine.</p></li>
+      <li><p>push will stash our work away on <tt>remotes/satellite/master</tt>
+remote-tracking branch on the mothership machine.  You could use this
+as a back-up method.</p></li>
+      <li><p>on mothership machine, merge the work done on the satellite
+machine into the master branch.</p></li>
+  </ol>
+</div>
+</dd>
+      <dt class="hdlist1">Branch off of a specific tag.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ git checkout -b private2.6.14 v2.6.14 &lt;1&gt;
+$ edit/compile/test; git commit -a
+$ git checkout master
+$ git format-patch -k -m --stdout v2.6.14..private2.6.14 |
+  git am -3 -k &lt;2&gt;
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>create a private branch based on a well known (but somewhat behind)
+tag.</p></li>
+      <li><p>forward port all changes in <tt>private2.6.14</tt> branch to <tt>master</tt> branch
+without a formal &quot;merging&quot;.</p></li>
+  </ol>
+</div>
+</dd>
+  </dl>
+</div>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+    <a name='Integrator'></a>
+  <h2 id="_integrator">Integrator</h2>
+    <div class="sectionbody"><div class="paragraph">
+  <p>A fairly central person acting as the integrator in a group
+project receives changes made by others, reviews and integrates
+them and publishes the result for others to use, using these
+commands in addition to the ones needed by participants.
+</p>
+</div>
+<div class="ulist">
+  <ul>
+      <li><p><a href="git-am.html">git-am(1)</a> to apply patches e-mailed in from your
+contributors.</p></li>
+      <li><p><a href="git-pull.html">git-pull(1)</a> to merge from your trusted lieutenants.</p></li>
+      <li><p><a href="git-format-patch.html">git-format-patch(1)</a> to prepare and send suggested
+alternative to contributors.</p></li>
+      <li><p><a href="git-revert.html">git-revert(1)</a> to undo botched commits.</p></li>
+      <li><p><a href="git-push.html">git-push(1)</a> to publish the bleeding edge.</p></li>
+  </ul>
+</div>
+<div class="sect2">
+  <h3 id="_examples">Examples</h3>
+    <div class="dlist">
+  <dl>
+      <dt class="hdlist1">My typical GIT day.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ git status &lt;1&gt;
+$ git show-branch &lt;2&gt;
+$ mailx &lt;3&gt;
+&amp; s 2 3 4 5 ./+to-apply
+&amp; s 7 8 ./+hold-linus
+&amp; q
+$ git checkout -b topic/one master
+$ git am -3 -i -s -u ./+to-apply &lt;4&gt;
+$ compile/test
+$ git checkout -b hold/linus &amp;&amp; git am -3 -i -s -u ./+hold-linus &lt;5&gt;
+$ git checkout topic/one &amp;&amp; git rebase master &lt;6&gt;
+$ git checkout pu &amp;&amp; git reset --hard next &lt;7&gt;
+$ git merge topic/one topic/two &amp;&amp; git merge hold/linus &lt;8&gt;
+$ git checkout maint
+$ git cherry-pick master~4 &lt;9&gt;
+$ compile/test
+$ git tag -s -m &quot;GIT 0.99.9x&quot; v0.99.9x &lt;10&gt;
+$ git fetch ko &amp;&amp; git show-branch master maint 'tags/ko-*' &lt;11&gt;
+$ git push ko &lt;12&gt;
+$ git push ko v0.99.9x &lt;13&gt;
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>see what I was in the middle of doing, if any.</p></li>
+      <li><p>see what topic branches I have and think about how ready
+they are.</p></li>
+      <li><p>read mails, save ones that are applicable, and save others
+that are not quite ready.</p></li>
+      <li><p>apply them, interactively, with my sign-offs.</p></li>
+      <li><p>create topic branch as needed and apply, again with my
+sign-offs.</p></li>
+      <li><p>rebase internal topic branch that has not been merged to the
+master, nor exposed as a part of a stable branch.</p></li>
+      <li><p>restart <tt>pu</tt> every time from the next.</p></li>
+      <li><p>and bundle topic branches still cooking.</p></li>
+      <li><p>backport a critical fix.</p></li>
+      <li><p>create a signed tag.</p></li>
+      <li><p>make sure I did not accidentally rewind master beyond what I
+already pushed out.  <tt>ko</tt> shorthand points at the repository I have
+at kernel.org, and looks like this:<div class="listingblock">
+  <div class="content">
+    <pre><tt>$ cat .git/remotes/ko
+URL: kernel.org:/pub/scm/git/git.git
+Pull: master:refs/tags/ko-master
+Pull: next:refs/tags/ko-next
+Pull: maint:refs/tags/ko-maint
+Push: master
+Push: next
+Push: +pu
+Push: maint
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="paragraph">
+  <p>In the output from <tt>git show-branch</tt>, <tt>master</tt> should have
+everything <tt>ko-master</tt> has, and <tt>next</tt> should have
+everything <tt>ko-next</tt> has.
+</p>
+</div>
+</p></li>
+      <li><p>push out the bleeding edge.</p></li>
+      <li><p>push the tag out, too.</p></li>
+  </ol>
+</div>
+</dd>
+  </dl>
+</div>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+    <a name='Repository Administration'></a>
+  <h2 id="_repository_administration">Repository Administration</h2>
+    <div class="sectionbody"><div class="paragraph">
+  <p>A repository administrator uses the following tools to set up
+and maintain access to the repository by developers.
+</p>
+</div>
+<div class="ulist">
+  <ul>
+      <li><p><a href="git-daemon.html">git-daemon(1)</a> to allow anonymous download from
+repository.</p></li>
+      <li><p><a href="git-shell.html">git-shell(1)</a> can be used as a <em>restricted login shell</em>
+for shared central repository users.</p></li>
+  </ul>
+</div>
+<div class="paragraph">
+  <p><a href="howto/update-hook-example.txt">update hook howto</a> has a good
+example of managing a shared central repository.
+</p>
+</div>
+<div class="sect2">
+  <h3 id="_examples">Examples</h3>
+    <div class="dlist">
+  <dl>
+      <dt class="hdlist1">We assume the following in /etc/services</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ grep 9418 /etc/services
+git		9418/tcp		# Git Version Control System
+</tt></pre>
+  </div>
+</div>
+</dd>
+      <dt class="hdlist1">Run git-daemon to serve /pub/scm from inetd.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ grep git /etc/inetd.conf
+git	stream	tcp	nowait	nobody \
+  /usr/bin/git-daemon git-daemon --inetd --export-all /pub/scm
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="paragraph">
+  <p>The actual configuration line should be on one line.
+</p>
+</div>
+</dd>
+      <dt class="hdlist1">Run git-daemon to serve /pub/scm from xinetd.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ cat /etc/xinetd.d/git-daemon
+# default: off
+# description: The git server offers access to git repositories
+service git
+{
+        disable = no
+        type            = UNLISTED
+        port            = 9418
+        socket_type     = stream
+        wait            = no
+        user            = nobody
+        server          = /usr/bin/git-daemon
+        server_args     = --inetd --export-all --base-path=/pub/scm
+        log_on_failure  += USERID
+}
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="paragraph">
+  <p>Check your xinetd(8) documentation and setup, this is from a Fedora system.
+Others might be different.
+</p>
+</div>
+</dd>
+      <dt class="hdlist1">Give push/pull only access to developers.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ grep git /etc/passwd &lt;1&gt;
+alice:x:1000:1000::/home/alice:/usr/bin/git-shell
+bob:x:1001:1001::/home/bob:/usr/bin/git-shell
+cindy:x:1002:1002::/home/cindy:/usr/bin/git-shell
+david:x:1003:1003::/home/david:/usr/bin/git-shell
+$ grep git /etc/shells &lt;2&gt;
+/usr/bin/git-shell
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>log-in shell is set to /usr/bin/git-shell, which does not
+allow anything but <tt>git push</tt> and <tt>git pull</tt>.  The users should
+get an ssh access to the machine.</p></li>
+      <li><p>in many distributions /etc/shells needs to list what is used
+as the login shell.</p></li>
+  </ol>
+</div>
+</dd>
+      <dt class="hdlist1">CVS-style shared repository.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>$ grep git /etc/group &lt;1&gt;
+git:x:9418:alice,bob,cindy,david
+$ cd /home/devo.git
+$ ls -l &lt;2&gt;
+  lrwxrwxrwx   1 david git    17 Dec  4 22:40 HEAD -&gt; refs/heads/master
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 branches
+  -rw-rw-r--   1 david git    84 Dec  4 22:40 config
+  -rw-rw-r--   1 david git    58 Dec  4 22:40 description
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 hooks
+  -rw-rw-r--   1 david git 37504 Dec  4 22:40 index
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 info
+  drwxrwsr-x   4 david git  4096 Dec  4 22:40 objects
+  drwxrwsr-x   4 david git  4096 Nov  7 14:58 refs
+  drwxrwsr-x   2 david git  4096 Dec  4 22:40 remotes
+$ ls -l hooks/update &lt;3&gt;
+  -r-xr-xr-x   1 david git  3536 Dec  4 22:40 update
+$ cat info/allowed-users &lt;4&gt;
+refs/heads/master	alice\|cindy
+refs/heads/doc-update	bob
+refs/tags/v[0-9]*	david
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>place the developers into the same git group.</p></li>
+      <li><p>and make the shared repository writable by the group.</p></li>
+      <li><p>use update-hook example by Carl from Documentation/howto/
+for branch policy control.</p></li>
+      <li><p>alice and cindy can push into master, only bob can push into doc-update.
+david is the release manager and is the only person who can
+create and push version tags.</p></li>
+  </ol>
+</div>
+</dd>
+      <dt class="hdlist1">HTTP server to support dumb protocol transfer.</dt>
+        <dd><div class="listingblock">
+  <div class="content">
+    <pre><tt>dev$ git update-server-info &lt;1&gt;
+dev$ ftp user@isp.example.com &lt;2&gt;
+ftp&gt; cp -r .git /home/user/myproject.git
+</tt></pre>
+  </div>
+</div>
+<div class="paragraph">
+  <p></p>
+</div>
+<div class="colist arabic">
+  <ol>
+      <li><p>make sure your info/refs and objects/info/packs are up-to-date</p></li>
+      <li><p>upload to public HTTP server hosted by your ISP.</p></li>
+  </ol>
+</div>
+</dd>
+  </dl>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+  </div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

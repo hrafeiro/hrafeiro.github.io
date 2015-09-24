@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":6,"applicationTime":147,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Crochets Git</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/fr/v1/D%C3%A9marrage-rapide">Démarrage rapide</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">À propos de la gestion de version</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Une-rapide-histoire-de-Git">Une rapide histoire de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Rudiments-de-Git">Rudiments de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git">Installation de Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Paramétrage à la première utilisation de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Obtenir-de-l-aide">Obtenir de l&#39;aide</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/fr/v1/Les-bases-de-Git">Les bases de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/fr/v1/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Démarrer un dépôt Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/fr/v1/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Enregistrer des modifications dans le dépôt</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/fr/v1/Les-bases-de-Git-Visualiser-l-historique-des-validations">Visualiser l&#39;historique des validations</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/fr/v1/Les-bases-de-Git-Annuler-des-actions">Annuler des actions</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/fr/v1/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">Travailler avec des dépôts distants</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/fr/v1/Les-bases-de-Git-%C3%89tiquetage">Étiquetage</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/fr/v1/Les-bases-de-Git-Trucs-et-astuces">Trucs et astuces</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/fr/v1/Les-bases-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/fr/v1/Les-branches-avec-Git">Les branches avec Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/fr/v1/Les-branches-avec-Git-Ce-qu-est-une-branche">Ce qu&#39;est une branche</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/fr/v1/Les-branches-avec-Git-Brancher-et-fusionner%C2%A0%3A-les-bases">Brancher et fusionner : les bases</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/fr/v1/Les-branches-avec-Git-Gestion-de-branches">Gestion de branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/fr/v1/Les-branches-avec-Git-Travailler-avec-les-branches">Travailler avec les branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/fr/v1/Les-branches-avec-Git-Les-branches-distantes">Les branches distantes</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/fr/v1/Les-branches-avec-Git-Rebaser">Rebaser</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/fr/v1/Les-branches-avec-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/fr/v1/Git-sur-le-serveur">Git sur le serveur</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/fr/v1/Git-sur-le-serveur-Protocoles">Protocoles</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/fr/v1/Git-sur-le-serveur-Installation-de-Git-sur-un-serveur">Installation de Git sur un serveur</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/fr/v1/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH">Génération des clés publiques SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/fr/v1/Git-sur-le-serveur-Mise-en-place-du-serveur">Mise en place du serveur</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/fr/v1/Git-sur-le-serveur-Acc%C3%A8s-public">Accès public</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/fr/v1/Git-sur-le-serveur-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/fr/v1/Git-sur-le-serveur-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/fr/v1/Git-sur-le-serveur-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/fr/v1/Git-sur-le-serveur-Le-%3Cem%3Edaemon%3C%2Fem%3E-Git">Le <em>daemon</em> Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/fr/v1/Git-sur-le-serveur-Git-h%C3%A9berg%C3%A9">Git hébergé</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/fr/v1/Git-sur-le-serveur-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>5. <a href="/book/fr/v1/Git-distribu%C3%A9">Git distribué</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/fr/v1/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Développements distribués</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/fr/v1/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/fr/v1/Git-distribu%C3%A9-Maintenance-d-un-projet">Maintenance d&#39;un projet</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/fr/v1/Git-distribu%C3%A9-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/fr/v1/Utilitaires-Git">Utilitaires Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/fr/v1/Utilitaires-Git-S%C3%A9lection-des-versions">Sélection des versions</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/fr/v1/Utilitaires-Git-Indexation-interactive">Indexation interactive</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/fr/v1/Utilitaires-Git-Le-remisage">Le remisage</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/fr/v1/Utilitaires-Git-R%C3%A9%C3%A9crire-l-historique">Réécrire l&#39;historique</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/fr/v1/Utilitaires-Git-Deboguer-avec-Git">Deboguer avec Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/fr/v1/Utilitaires-Git-Sous-modules">Sous-modules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/fr/v1/Utilitaires-Git-Fusion-de-sous-arborescences">Fusion de sous-arborescences</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/fr/v1/Utilitaires-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/fr/v1/Personnalisation-de-Git">Personnalisation de Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/fr/v1/Personnalisation-de-Git-Configuration-de-Git">Configuration de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/fr/v1/Personnalisation-de-Git-Attributs-Git">Attributs Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/fr/v1/Personnalisation-de-Git-Crochets-Git">Crochets Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/fr/v1/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">Exemple de politique gérée par Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/fr/v1/Personnalisation-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes">Git et les autres systèmes</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-Git-et-Subversion">Git et Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-Migrer-sur-Git">Migrer sur Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>9. <a href="/book/fr/v1/Les-tripes-de-Git">Les tripes de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/fr/v1/Les-tripes-de-Git-Plomberie-et-porcelaine">Plomberie et porcelaine</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/fr/v1/Les-tripes-de-Git-Les-objets-Git">Les objets Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/fr/v1/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git">Références Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/fr/v1/Les-tripes-de-Git-Fichiers-group%C3%A9s">Fichiers groupés</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/fr/v1/Les-tripes-de-Git-Les-r%C3%A9f%C3%A9rences-sp%C3%A9cifiques">Les références spécifiques</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/fr/v1/Les-tripes-de-Git-Protocoles-de-transfert">Protocoles de transfert</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/fr/v1/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">Maintenance et récupération de données</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/fr/v1/Les-tripes-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>. <a href="/book/fr/v1/Notes-on-the-french-translation-process">Notes on the french translation process</a></h2>
+    <ol>
+          <li>
+            .1
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Repository">Repository</a>
+          </li>
+          <li>
+            .2
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Check-in">Check in</a>
+          </li>
+          <li>
+            .3
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-check-in">To check in</a>
+          </li>
+          <li>
+            .4
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Check-out">Check out</a>
+          </li>
+          <li>
+            .5
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-check-out">To check out</a>
+          </li>
+          <li>
+            .6
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-commit">To commit</a>
+          </li>
+          <li>
+            .7
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Stage-area">Stage area</a>
+          </li>
+          <li>
+            .8
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-stage">To stage</a>
+          </li>
+          <li>
+            .9
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-unstage">To unstage</a>
+          </li>
+          <li>
+            .10
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Change">Change</a>
+          </li>
+          <li>
+            .11
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-stash">stash</a>
+          </li>
+          <li>
+            .12
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-stash">To stash</a>
+          </li>
+          <li>
+            .13
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Checksum">Checksum</a>
+          </li>
+          <li>
+            .14
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Hash">Hash</a>
+          </li>
+          <li>
+            .15
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Workflow">Workflow</a>
+          </li>
+          <li>
+            .16
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Snapshot">Snapshot</a>
+          </li>
+          <li>
+            .17
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Diff">Diff</a>
+          </li>
+          <li>
+            .18
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-track">To track</a>
+          </li>
+          <li>
+            .19
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-untracked">untracked</a>
+          </li>
+          <li>
+            .20
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-unmodified">unmodified</a>
+          </li>
+          <li>
+            .21
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-update">To update</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>7.3 Personnalisation de Git - Crochets Git</h1>
+  <div><h2>Crochets Git</h2>
+
+<p>Comme de nombreux autres systèmes de gestion de version, Git dispose d&#39;un moyen de lancer des scripts personnalisés quand certaines actions importantes ont lieu.
+Il y a deux groupes de crochets : ceux côté client et ceux côté serveur.
+Les crochets côté client concernent les opérations de client telles que la validation et la fusion.
+Les crochets côté serveur concernent les opérations de serveur Git telles que la réception de <em>commits</em>.
+Vous pouvez utiliser ces crochets pour toutes sortes de raisons dont nous allons détailler quelques unes.</p>
+
+<h3 id="Installation-d&#39;un-crochet"><a href="#Installation-d&#39;un-crochet">Installation d&#39;un crochet</a></h3>
+
+<p>Les crochets sont tous stockés dans le sous-répertoire <code>hooks</code> du répertoire Git.
+Dans la plupart des projets, c&#39;est <code>.git/hooks</code>.
+Par défaut, Git popule ce répertoire avec quelques scripts d&#39;exemple déjà utiles par eux-mêmes ; mais ils servent aussi de documentation sur les paramètres de chaque script.
+Tous les exemples sont des scripts shell avec un peu de Perl mais n&#39;importe quel script exécutable nommé correctement fonctionnera. Vous pouvez les écrire en Ruby ou Python ou ce que vous voudrez.
+Pour les versions de Git postérieures à 1.6, ces fichiers crochet d&#39;exemple se terminent en <code>.sample</code> et il faudra les renommer.
+Pour les versions de Git antérieures à 1.6, les fichiers d&#39;exemple sont nommés correctement mais ne sont pas exécutables.</p>
+
+<p>Pour activer un script de crochet, placez un fichier dans le sous-répertoire <code>hook</code> de votre répertoire Git, nommé correctement et exécutable.
+À partir de ce moment, il devrait être appelé.
+Abordons donc les noms de fichiers de crochet les plus importants.</p>
+
+<h3 id="Crochets-côté-client"><a href="#Crochets-côté-client">Crochets côté client</a></h3>
+
+<p>Il y a de nombreux crochets côté client.
+Ce chapitre les classe entre crochets de traitement de validation, scripts de traitement par e-mail et le reste des scripts côté client.</p>
+
+<h4>Crochets de traitement de validation</h4>
+
+<p>Les quatre premiers crochets ont trait au processus de validation.
+Le crochet <code>pre-commit</code> est lancé en premier, avant même que vous ne saisissiez le message de validation.
+Il est utilisé pour inspecter l&#39;instantané qui est sur le point d&#39;être validé, pour vérifier si vous avez oublié quelque chose, pour s&#39;assurer que les tests passent ou pour examiner ce que vous souhaitez inspecter dans le code.
+Un code de sortie non nul de ce crochet annule la validation, bien que vous puissiez le contourner avec <code>git commit --no-verify</code>.
+Vous pouvez réaliser des actions telles qu&#39;une vérification de style (en utilisant lint ou un équivalent), d&#39;absence de blancs en fin de ligne (le crochet par défaut fait exactement cela) ou de documentation des nouvelles méthodes.</p>
+
+<p>Le crochet <code>prepare-commit-msg</code> est appelé avant que l&#39;éditeur de message de validation ne soit lancé après que le message par défaut a été créé.
+Il vous permet d&#39;éditer le message par défaut avant que l&#39;auteur ne le voit.
+Ce crochet accepte quelques options : le chemin du fichier qui contient le message de validation actuel, le type de validation et le SHA-1 du <em>commit</em> si c&#39;est un <em>commit</em> amendé.
+Ce crochet ne sert généralement à rien pour les validations normales.
+Par contre, il est utile pour les validations où le message par défaut est généré, tel que les modèles de message de validation, les validations de fusion, les <em>commits</em> écrasés ou amendés.
+Vous pouvez l&#39;utiliser en conjonction avec un modèle de messages pour insérer de l&#39;information par programme.</p>
+
+<p>Le crochet <code>commit-msg</code> accepte un paramètre qui est encore le chemin du fichier temporaire qui contient le message de validation actuel.
+Si ce script rend un code de sortie non nul, Git abandonne le processus de validation, ce qui vous permet de vérifier l&#39;état de votre projet ou du message de validation avant de laisser passer un <em>commit</em>.
+Dans la dernière section de ce chapitre, l&#39;utilisation de ce crochet permettra de vérifier que le message de validation est conforme à un format obligatoire.</p>
+
+<p>Après l&#39;exécution du processus complet de validation, le crochet <code>post-commit</code> est appelé.
+Il n&#39;accepte aucun argument mais vous pouvez facilement accéder au dernier <em>commit</em> grâce à <code>git log -1 HEAD</code>.
+Généralement, ce script sert à réaliser des notifications ou des choses similaires.</p>
+
+<p>Les scripts de gestion de validation côté client peuvent être utilisés pour n&#39;importe quelle méthode de travail.
+Ils sont souvent utilisés pour mettre en œuvre certaines politiques, bien qu&#39;il faille noter que ces scripts ne sont pas transférés lors d&#39;un clonage.
+Vous pouvez faire appliquer les politiques de gestion au niveau serveur pour rejeter les poussées de <em>commits</em> qui ne sont pas conformes à certaines règles, mais il reste complètement du ressort du développeur de les utiliser côté client.
+Ce sont des scripts destinés à aider les développeurs et ils doivent être mis en place et maintenus par ces derniers qui peuvent tout aussi bien les outrepasser ou les modifier à tout moment.</p>
+
+<h4>Crochets de gestion e-mail</h4>
+
+<p>Vous pouvez régler trois crochets côté client pour la gestion à base d&#39;e-mail.
+Ils sont tous invoqués par la commande <code>git am</code>, donc si vous n&#39;êtes pas habitués à utiliser cette commande dans votre mode de gestion, vous pouvez simplement passer la prochaine section.
+Si vous acceptez des patchs préparés par <code>git format-patch</code> par e-mail, alors certains de ces crochets peuvent vous être très utiles.</p>
+
+<p>Le premier crochet lancé est <code>applypatch-msg</code>.
+Il accepte un seul argument : le nom du fichier temporaire qui contient le message de validation proposé.
+Git abandonne le patch si ce script sort avec un code non nul.
+Vous pouvez l&#39;utiliser pour vérifier que la message de validation est correctement formaté ou pour normaliser le message en l&#39;éditant sur place par script.</p>
+
+<p>Le crochet lancé ensuite lors de l&#39;application de patchs via <code>git am</code> s&#39;appelle <code>pre-applypatch</code>.
+Il n&#39;accepte aucun argument et est lancé après que le patch a été appliqué, ce qui vous permet d&#39;inspecter l&#39;instantané avant de réaliser la validation.
+Vous pouvez lancer des tests ou inspecter l&#39;arborescence active avec ce script.
+S&#39;il manque quelque chose ou que les tests ne passent pas, un code de sortie non nul annule la commande <code>git am</code> sans valider le patch.</p>
+
+<p>Le dernier crochet lancé pendant l&#39;opération <code>git am</code> s&#39;appelle <code>post-applypatch</code>.
+Vous pouvez l&#39;utiliser pour notifier un groupe ou l&#39;auteur du patch que vous venez de l&#39;appliquer.
+Vous ne pouvez plus arrêter le processus de validation avec ce script.</p>
+
+<h4>Autres crochets côté client</h4>
+
+<p>Le crochet <code>pre-rebase</code> est invoqué avant que vous ne rebasiez et peut interrompre le processus s&#39;il sort avec un code d&#39;erreur non nul.
+Vous pouvez utiliser ce crochet pour empêcher de rebaser tout <em>commit</em> qui a déjà été poussé.
+C&#39;est ce que fait le crochet d&#39;exemple <code>pre-rebase</code> que Git installe, même s&#39;il considère que la branche cible de publication s&#39;appelle <code>next</code>.
+Il est très probable que vous ayez à changer ce nom pour celui que vous utilisez réellement en branche publique stable.</p>
+
+<p>Après avoir effectué avec succès un <code>git checkout</code>, la crochet <code>post-chechout</code> est lancé.
+Vous pouvez l&#39;utiliser pour paramétrer correctement votre environnement projet dans votre copie de travail.
+Cela peut signifier y déplacer des gros fichiers binaires que vous ne souhaitez pas voir en gestion de source, générer automatiquement la documentation ou quelque chose dans le genre.</p>
+
+<p>Enfin, le crochet <code>post-merge</code> s&#39;exécute à la suite d&#39;une commande <code>merge</code> réussie.
+Vous pouvez l&#39;utiliser pour restaurer certaines données non gérées par Git dans le copie de travail telles que les informations de permission.
+Ce crochet permet même de valider la présence de fichiers externes au contrôle de Git que vous souhaitez voir recopiés lorsque la copie de travail change.</p>
+
+<h3 id="Crochets-côté-serveur"><a href="#Crochets-côté-serveur">Crochets côté serveur</a></h3>
+
+<p>En complément des crochets côté client, vous pouvez utiliser comme administrateur système quelques crochets côté serveur pour appliquer quasiment toutes les règles de votre projet.
+Ces scripts s&#39;exécutent avant et après chaque poussée sur le serveur.
+Les crochets <code>pre</code> peuvent rendre un code d&#39;erreur non nul à tout moment pour rejeter la poussée et afficher un message d&#39;erreur au client.
+Vous pouvez mettre en place des règles aussi complexes que nécessaire.</p>
+
+<h4>pre-receive et post-receive</h4>
+
+<p>Le premier script lancé lors de la gestion d&#39;une poussée depuis un client est <code>pre-receive</code>.
+Il accepte une liste de références lues sur <em>stdin</em>.
+S&#39;il sort avec un code d&#39;erreur non nul, aucune n&#39;est acceptée.
+Vous pouvez utiliser ce crochet pour réaliser des tests tels que s&#39;assurer que toutes les références mises à jour le sont en avance rapide ou pour s&#39;assurer que l&#39;utilisateur dispose bien des droits de création, poussée, destruction ou de lecture des mises à jour pour tous les fichiers qu&#39;il cherche à mettre à jour dans cette poussée.</p>
+
+<p>Le crochet <code>post-receive</code> est lancé après l&#39;exécution complète du processus et peut être utilisé pour mettre à jour d&#39;autres services ou pour notifier des utilisateurs.
+Il accepte les mêmes données sur <em>stdin</em> que <code>pre-receive</code>.
+Il peut par exemple envoyer un e-mail à une liste de diffusion, notifier un serveur d&#39;intégration continue ou mettre à jour un système de suivi de tickets.
+Il peut aussi analyser les messages de validation à la recherche d&#39;ordres de mise à jour de l&#39;état des tickets.
+Ce script ne peut pas arrêter le processus de poussée mais le client n&#39;est pas déconnecté tant qu&#39;il n&#39;a pas terminé.
+Il faut donc être prudent à ne pas essayer de lui faire réaliser des actions qui peuvent durer longtemps.</p>
+
+<h4>update</h4>
+
+<p>Le script <code>update</code> est très similaire au script <code>pre-receive</code>, à la différence qu&#39;il est lancé une fois par branche qui doit être modifiée lors de la poussée.
+Si la poussée s&#39;applique à plusieurs branches, <code>pre-receive</code> n&#39;est lancé qu&#39;une fois, tandis qu&#39;<code>update</code> est lancé une fois par branche impactée.
+Au lieu de lire à partir de stdin, ce script accepte trois arguments : le nom de la référence (branche), le SHA-1 du <em>commit</em> pointé par la référence avant la poussée et le SHA-1 que l&#39;utilisateur est en train de pousser.
+Si le script <code>update</code> se termine avec un code d&#39;erreur non nul, seule la référence est rejetée.
+Les autres références pourront être mises à jour.</p>
+
+<div id="nav"><a href="/book/fr/Personnalisation-de-Git-Attributs-Git">prev</a> | <a href="/book/fr/v1/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

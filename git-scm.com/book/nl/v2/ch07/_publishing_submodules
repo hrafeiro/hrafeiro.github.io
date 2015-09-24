@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":369,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Submodules</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+    <h4>Related Material</h4>
+  <ul class="related-material">
+      <li class="reference">
+      <strong><a href="/ref/git-submodule">git-submodule</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-checkout">git-checkout</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-status">git-status</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-diff">git-diff</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-log">git-log</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-add">git-add</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-commit">git-commit</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-merge">git-merge</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+  </ul>
+
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>7.11 Git Tools - Submodules</h1>
+  <div><a id="_git_submodules"></a><h2>Submodules</h2>
+
+<p>Het gebeurt vaak dat terwijl je aan het werk bent op het ene project, je van daar uit een ander project moet gebruiken.
+Misschien is het een door een derde partij ontwikkelde library of een die je zelf elders aan het ontwikkelen bent en
+ die je gebruikt in meerdere ouder (parent) projecten.
+Er ontstaat een veelvoorkomend probleem in deze scanario’s: je wilt de twee projecten als zelfstandig behandelen maar
+ ondertussen wel in staat zijn om de een vanuit de ander te gebruiken.</p>
+
+<p>Hier is een voorbeeld.
+Stel dat je een web site aan het ontwikkelen bent en daar Atom feeds maakt.
+In plaats van je eigen Atom-genererende code te schrijven, besluit je om een library te gebruiken.
+De kans is groot dat je deze code moet insluiten vanuit een gedeelde library zoals een CPAN installatie of een Ruby
+ gem, of de broncode naar je projecttree moet kopieëren.
+Het probleem met de library insluiten is dat het lastig is om de library op enige manier aan te passen aan jouw wensen
+ en vaak nog moeilijker om het uit te rollen, omdat je jezelf moet verzekeren dat elke gebruikende applicatie deze
+ library beschikbaar moet hebben.
+Het probleem met het inbouwen van de code in je eigen project is dat elke eigen aanpassing het je moeilijk zal maken
+ om te mergen als er stroomopwaarts wijzigingen beschikbaar komen.</p>
+
+<p>Git adresseert dit probleem met behulp van submodules.
+Submodules staan je toe om een Git repository als een subdirectory van een andere Git repository op te slaan.
+Dit stelt je in staat om een andere repository in je eigen project te clonen en je commits apart te houden.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Beginnen met submodules" id="_starting_submodules"><h3 id="Beginnen-met-submodules"><a href="#Beginnen-met-submodules">Beginnen met submodules</a></h3>
+
+<p>We zullen een voorbeeld nemen van het ontwikkelen van een eenvoudig project die is opgedeeld in een hoofd project en
+ een aantal sub-projecten.</p>
+
+<p>Laten we beginnen met het toevoegen van een bestaande Git repository als een submodule van de repository waar we op
+ aan het werk zijn. Om een nieuwe submodule toe te voegen gebruik je het <code>git submodule add</code> commando met de URL van
+ het project dat je wilt gaan tracken. In dit voorbeeld voegen we een library genaamd “DbConnector” toe.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule add https://github.com/chaconinc/DbConnector
+<code class="go">Cloning into 'DbConnector'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code></pre>
+
+<p>Standaard zal submodules het subproject in een directory met dezelfde naam als de repository toevoegen, in dit geval
+ “DbConnector”. Je kunt aan het eind van het commando een ander pad toevoegen als je het ergens anders wilt laten
+ landen.</p>
+
+<p>Als je <code>git status</code> op dit moment aanroept, zullen je een aantal dingen opvallen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">	new file:   .gitmodules</code>
+<code class="go">	new file:   DbConnector</code></pre>
+
+<p>Het eerste wat je zal opvallen is het nieuwe <code>.gitmodules</code> bestand.
+Dit is een configuratie bestand waarin de relatie wordt vastgelegd tussen de URL van het project en de lokale
+ subdirectory waar je het in gepulled hebt:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat .gitmodules
+<code class="go">[submodule "DbConnector"]</code>
+<code class="go">	path = DbConnector</code>
+<code class="go">	url = https://github.com/chaconinc/DbConnector</code></pre>
+
+<p>Als je meerdere submodules hebt, zal je meerdere van deze regels in dit bestand hebben.
+Het is belangrijk om op te merken dat dit bestand onder versiebeheer staat samen met je andere bestanden, zoals je
+ <code>.gitignore</code> bestand.
+Het wordt met de rest van je project gepushed en gepulled.
+Dit is hoe andere mensen die dit project clonen weten waar ze de submodule projecten vandaan moeten halen.
+This is how other people who clone this project know where to get the submodule projects from.</p>
+<div data-type="note">
+<p>Omdat de URL in het .gitmodules bestand degene is waarvan andere mensen als eerste zullen proberen te clonen of
+ fetchen, moet je je er bij voorkeur van verzekeren dat ze er wel bij kunnen. Bijvoorbeeld, als je een andere URL
+ gebruikt om naar te pushen dan waar anderen van zullen pullen, gebruik dan degene waar anderen toegang toe hebben. Je
+ kunt deze waarde lokaal overschrijven met <code>git config submodule.DbConnector.url PRIVATE_URL</code> voor eigen gebruik.</p>
+</div>
+
+<p>De andere regel in de <code>git status</code> uitvoer is de entry voor de project folder.
+Als je <code>git diff</code> daarop aanroept, zal je iets opvallends zien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --cached DbConnector
+<code class="go">diff --git a/DbConnector b/DbConnector</code>
+<code class="go">new file mode 160000</code>
+<code class="go">index 0000000..c3f01dc</code>
+<code class="go">--- /dev/null</code>
+<code class="go">+++ b/DbConnector</code>
+<code class="go">@@ -0,0 +1 @@</code>
+<code class="go">+Subproject commit c3f01dc8862123d317dd46284b05b6892c7b29bc</code></pre>
+
+<p>Alhoewel <code>DbConnector</code> een subdirectory is in je werk directory, zie Git het als een submodule en zal de inhoud ervan
+ niet tracken als je niet in die directory staat.
+In plaats daarvan ziet Git het als een specifieke commit van die repository.</p>
+
+<p>Als een een iets betere diff uitvoer wilt, kan je de <code>--submodule</code> optie meegeven aan <code>git diff</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --cached --submodule
+<code class="go">diff --git a/.gitmodules b/.gitmodules</code>
+<code class="go">new file mode 100644</code>
+<code class="go">index 0000000..71fc376</code>
+<code class="go">--- /dev/null</code>
+<code class="go">+++ b/.gitmodules</code>
+<code class="go">@@ -0,0 +1,3 @@</code>
+<code class="go">+[submodule "DbConnector"]</code>
+<code class="go">+       path = DbConnector</code>
+<code class="go">+       url = https://github.com/chaconinc/DbConnector</code>
+<code class="go">Submodule DbConnector 0000000...c3f01dc (new submodule)</code></pre>
+
+<p>Als je commit, zal je iets als dit zien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -am <code class="s1">'added DbConnector module'</code>
+<code class="go">[master fb9093c] added DbConnector module</code>
+<code class="go"> 2 files changed, 4 insertions(+)</code>
+<code class="go"> create mode 100644 .gitmodules</code>
+<code class="go"> create mode 160000 DbConnector</code></pre>
+
+<p>Merk de <code>160000</code> mode op voor de <code>DbConnector</code> entry.
+Dat is een speciale mode in Git wat gewoon betekent dat je een commit opslaat als een directory entry in plaats van
+ een subdirectory of een bestand.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Een project met submodules clonen" id="_cloning_submodules"><h3 id="Een-project-met-submodules-clonen"><a href="#Een-project-met-submodules-clonen">Een project met submodules clonen</a></h3>
+
+<p>Hier zullen we een project met een submodule erin gaan clonen.
+Als je zo’n project cloont, krijg je standaard de directories die submodules bevatten, maar nog geen bestanden die
+ erin staan:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://github.com/chaconinc/MainProject
+<code class="go">Cloning into 'MainProject'...</code>
+<code class="go">remote: Counting objects: 14, done.</code>
+<code class="go">remote: Compressing objects: 100% (13/13), done.</code>
+<code class="go">remote: Total 14 (delta 1), reused 13 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (14/14), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="gp">$</code> <code class="nb">cd </code>MainProject
+<code class="gp">$</code> ls -la
+<code class="go">total 16</code>
+<code class="go">drwxr-xr-x   9 schacon  staff  306 Sep 17 15:21 .</code>
+<code class="go">drwxr-xr-x   7 schacon  staff  238 Sep 17 15:21 ..</code>
+<code class="go">drwxr-xr-x  13 schacon  staff  442 Sep 17 15:21 .git</code>
+<code class="go">-rw-r--r--   1 schacon  staff   92 Sep 17 15:21 .gitmodules</code>
+<code class="go">drwxr-xr-x   2 schacon  staff   68 Sep 17 15:21 DbConnector</code>
+<code class="go">-rw-r--r--   1 schacon  staff  756 Sep 17 15:21 Makefile</code>
+<code class="go">drwxr-xr-x   3 schacon  staff  102 Sep 17 15:21 includes</code>
+<code class="go">drwxr-xr-x   4 schacon  staff  136 Sep 17 15:21 scripts</code>
+<code class="go">drwxr-xr-x   4 schacon  staff  136 Sep 17 15:21 src</code>
+<code class="gp">$</code> <code class="nb">cd </code>DbConnector/
+<code class="gp">$</code> ls
+<code class="gp">$</code></pre>
+
+<p>De <code>DbConnector</code> directory is er wel, maar leeg.
+Je moet twee commando’s aanroepen: <code>git submodule init</code> om het lokale configuratie bestand te initialiseren, en <code>git
+ submodule update</code> om alle gegevens van dat project te fetchen en de juiste commit uit te checken die in je
+ superproject staat vermeld:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule init
+<code class="go">Submodule 'DbConnector' (https://github.com/chaconinc/DbConnector) registered for path 'DbConnector'</code>
+<code class="gp">$</code> git submodule update
+<code class="go">Cloning into 'DbConnector'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="go">Submodule path 'DbConnector': checked out 'c3f01dc8862123d317dd46284b05b6892c7b29bc'</code></pre>
+
+<p>Nu is je <code>DbConnector</code> subdirectory in precies dezelfde staat als het was toen je het eerder committe.</p>
+
+<p>Er is echter een andere, iets eenvoudiger, manier om dit te doen. Als je <code>--recursive</code> doorgeeft aan het <code>git clone</code>
+ commando zal het automatisch elke submodule in de repository initialiseren en updaten.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone --recursive https://github.com/chaconinc/MainProject
+<code class="go">Cloning into 'MainProject'...</code>
+<code class="go">remote: Counting objects: 14, done.</code>
+<code class="go">remote: Compressing objects: 100% (13/13), done.</code>
+<code class="go">remote: Total 14 (delta 1), reused 13 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (14/14), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="go">Submodule 'DbConnector' (https://github.com/chaconinc/DbConnector) registered for path 'DbConnector'</code>
+<code class="go">Cloning into 'DbConnector'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="go">Submodule path 'DbConnector': checked out 'c3f01dc8862123d317dd46284b05b6892c7b29bc'</code></pre>
+</section><section data-type="sect2" data-pdf-bookmark="Werken aan een project met submodules" id="idp22941232"><h3 id="Werken-aan-een-project-met-submodules"><a href="#Werken-aan-een-project-met-submodules">Werken aan een project met submodules</a></h3>
+
+<p>Nu hebben we een kopie van een project met submodules erin en gaan we met onze teamgenoten samenwerken op zowel het
+ hoofdproject als het submodule project.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="Wijzigingen van stroomopwaarts pullen" id="idp22735312"><h4>Wijzigingen van stroomopwaarts pullen</h4>
+
+<p>De eenvoudigste werkwijze bij het gebruik van submodules in een project zou zijn als je eenvoudigweg een subproject
+ naar binnentrekt en de updates ervan van tijd tot tijd binnen haalt maar waarbij je niet echt iets wijzigt in je
+ checkout. Laten we een eenvoudig voorbeeld doornemen.</p>
+
+<p>Als je wilt controleren voor nieuw werk in een submodule, kan je in de directory gaan en <code>git fetch</code> aanroepen en <code>git
+ merge</code> gebruiken om de wijzigingen uit de branch stroomopwaarts in de lokale code in te voegen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   c3f01dc..d0354fc  master     -&gt; origin/master</code>
+<code class="gp">$</code> git merge origin/master
+<code class="go">Updating c3f01dc..d0354fc</code>
+<code class="go">Fast-forward</code>
+<code class="go"> scripts/connect.sh | 1 +</code>
+<code class="go"> src/db.c           | 1 +</code>
+<code class="go"> 2 files changed, 2 insertions(+)</code></pre>
+
+<p>Als je nu terugspringt naar het hoofdproject en <code>git diff --submodule</code> aanroept kan je zien dat de submodule is
+ bijgewerkt en je krijgt een lijst met commits die eraan is toegevoegd. Als je niet elke keer <code>--submodule</code> wilt
+ intypen voor elke keer dat je <code>git diff</code> aanroept, kan je dit als standaar formaat instellen door de <code>diff
+ .submodule</code> configuratie waarde op “log” te zetten.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global diff.submodule log
+<code class="gp">$</code> git diff
+<code class="go">Submodule DbConnector c3f01dc..d0354fc:</code>
+<code class="go">  &gt; more efficient db routine</code>
+<code class="go">  &gt; better connection routine</code></pre>
+
+<p>Als je nu gaat committen zal je de nieuwe code in de submodule insluiten als andere mensen updaten.</p>
+
+<p>Er is ook een makkelijker manier om dit te doen, als je er de voorkeur aan geeft om niet handmatig te fetchen en
+ mergen in de subdirectory. Als je <code>git submodule update --remote</code> aanroept, zal Git naar je submodules gaan en voor
+ je fetchen en updaten.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote DbConnector
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (2/2), done.</code>
+<code class="go">remote: Total 4 (delta 2), reused 4 (delta 2)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   3f19983..d0354fc  master     -&gt; origin/master</code>
+<code class="go">Submodule path 'DbConnector': checked out 'd0354fc054692d3906c85c3af05ddce39a1c0644'</code></pre>
+
+<p>Dit commando zal standaard aannemen dat je de checkout wilt updaten naar de <code>master</code> branch van de submodule
+ repository. Je kunt echter dit naar iets anders wijzigen als je wilt. Bijvoorbeeld, als je de DbConnector submodule
+ de “stable” branch van die repository wilt laten tracken, kan je dit aangeven in de <code>.gitmodules</code> bestand (zodat
+ iedereen deze ook trackt), of alleen in je lokale <code>.git/config</code> bestand. Laten we het aangeven in het <code>.gitmodules</code>
+ bestand:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config -f .gitmodules submodule.DbConnector.branch stable
+
+<code class="gp">$</code> git submodule update --remote
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (2/2), done.</code>
+<code class="go">remote: Total 4 (delta 2), reused 4 (delta 2)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   27cf5d3..c87d55d  stable -&gt; origin/stable</code>
+<code class="go">Submodule path 'DbConnector': checked out 'c87d55d4c6d4b05ee34fbc8cb6f7bf4585ae6687'</code></pre>
+
+<p>Als je de <code>-f .gitmodules</code> weglaat, zal het de wijziging alleen voor jou maken, maar het is waarschijnlijk zinvoller
+ om die informatie bij de repository te tracken zodat iedereen dat ook zal gaan doen.</p>
+
+<p>Als we nu <code>git status</code> aanroepen, zal Git ons laten zien dat we “new commits” hebben op de submodule.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">  modified:   .gitmodules</code>
+<code class="go">  modified:   DbConnector (new commits)</code>
+
+<code class="go">no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+
+<p>Als je de configuratie instelling <code>status.submodulessummary</code> instelt, zal Git je ook een korte samenvatting van de
+ wijzigingen in je submodule laten zien.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config status.submodulesummary 1
+
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">	modified:   .gitmodules</code>
+<code class="go">	modified:   DbConnector (new commits)</code>
+
+<code class="go">Submodules changed but not updated:</code>
+
+<code class="go">* DbConnector c3f01dc...c87d55d (4):</code>
+<code class="go">  &gt; catch non-null terminated lines</code></pre>
+
+<p>Als je op dit moment <code>git diff</code> aanroept kunnen we zowel zien dat we onze <code>.gitmodules</code> bestand hebben gewijzigd en
+ daarbij dat er een aantal commmit is die we omlaag hebben gepulled en die klaar staan om te worden gecommit naar ons
+ submodule project.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --git a/.gitmodules b/.gitmodules</code>
+<code class="go">index 6fc0b3d..fd1cc29 100644</code>
+<code class="go">--- a/.gitmodules</code>
+<code class="go">+++ b/.gitmodules</code>
+<code class="go">@@ -1,3 +1,4 @@</code>
+<code class="go"> [submodule "DbConnector"]</code>
+<code class="go">        path = DbConnector</code>
+<code class="go">        url = https://github.com/chaconinc/DbConnector</code>
+<code class="go">+       branch = stable</code>
+<code class="go"> Submodule DbConnector c3f01dc..c87d55d:</code>
+<code class="go">  &gt; catch non-null terminated lines</code>
+<code class="go">  &gt; more robust error handling</code>
+<code class="go">  &gt; more efficient db routine</code>
+<code class="go">  &gt; better connection routine</code></pre>
+
+<p>Dit is best wel handig omdate we echt de log met commits kunnen zien waarvan we op het punt staan om ze in onze
+ submodule te committen. Eens gecommit, kan je deze informatie ook achteraf zien als je <code>git log -p</code> aanroept.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -p --submodule
+<code class="go">commit 0a24cfc121a8a3c118e0105ae4ae4c00281cf7ae</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Wed Sep 17 16:37:02 2014 +0200</code>
+
+<code class="go">    updating DbConnector for bug fixes</code>
+
+<code class="go">diff --git a/.gitmodules b/.gitmodules</code>
+<code class="go">index 6fc0b3d..fd1cc29 100644</code>
+<code class="go">--- a/.gitmodules</code>
+<code class="go">+++ b/.gitmodules</code>
+<code class="go">@@ -1,3 +1,4 @@</code>
+<code class="go"> [submodule "DbConnector"]</code>
+<code class="go">        path = DbConnector</code>
+<code class="go">        url = https://github.com/chaconinc/DbConnector</code>
+<code class="go">+       branch = stable</code>
+<code class="go">Submodule DbConnector c3f01dc..c87d55d:</code>
+<code class="go">  &gt; catch non-null terminated lines</code>
+<code class="go">  &gt; more robust error handling</code>
+<code class="go">  &gt; more efficient db routine</code>
+<code class="go">  &gt; better connection routine</code></pre>
+
+<p>Git zal standaard proberen <strong>alle</strong>  submodules te updaten als je <code>git submodule update --remote</code> aanroept, dus als
+ je er hier veel van hebt, is het wellicht aan te raden om de naam van alleen die submodule door te geven die je wilt
+  updaten.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Werken aan een submodule" id="idp22736224"><h4>Werken aan een submodule</h4>
+
+<p>Het is zeer waarschijnlijk dat als je submodules gebruikt, je dit zult doen omdat je echt aan de coe in die submodule
+ wilt werken tegelijk met het werken aan de code in het hoofdproject (of verspreid over verschillende submodules).
+ Anders zou je waarschijnlijk een eenvoudiger afhankelijkheids beheer systeem (dependency management system) hebben
+ gebruikt (zoals Maven of Rubygems).</p>
+
+<p>Dus laten we nu eens een voorbeeld behandelen waarin we gelijkertijd wijzigingen aan de submodule en het
+ hoofdproject maken en deze wijzigingen ook gelijktijdig committen en publiceren.</p>
+
+<p>Tot dusverre, als we het <code>git submodule update</code> commando aanriepen om met fetch wijzigen uit de repositories van de
+ submodule te halen, ging Git de wijzigingen ophalen en de files in de subdirectory updaten, maar zou het de
+ subdirectory laten in een staat die bekend staat als “detached HEAD”. Dit houdt in dat er geen lokale werk branch
+ is (zoals “master”, bijvoorbeeld) waar de wijzigingen worden getracked. Dus de wijzigingen die je maakt worden
+ niet echt goed bijgehouden.</p>
+
+<p>Om de submodule in te richten zodate het eenvoudiger is om erin te werken, moet je twee dingen doen. Je moet in elke
+ submodule gaan en een branch uitchecken om in te werken. Daarna moet je Git vertellen wat het moet doen als je
+ wijzigingen hebt gemaakt en daarna zal <code>git submodule update --remote</code> nieuw werk van stroomopwaarts pullen. Je hebt
+ nu de keuze om dit in je lokale werk te mergen, of je kunt proberen je nieuwe lokale werk te rebasen bovenop de
+ nieuwe wijzigingen.</p>
+
+<p>Laten we eerst in onze submodule directory gaan en een branch uitchecken.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout stable
+<code class="go">Switched to branch 'stable'</code></pre>
+
+<p>Laten we het eens proberen met de “merge” optie. Om dit handmatig aan te geven kunnen we gewoon de <code>--merge</code> optie
+ in onze <code>update</code> aanroep toevoegen. Hier zullen we zien dat er een wijziging op de server was voor deze submodule en
+ deze wordt erin gemerged.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote --merge
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (2/2), done.</code>
+<code class="go">remote: Total 4 (delta 2), reused 4 (delta 2)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   c87d55d..92c7337  stable     -&gt; origin/stable</code>
+<code class="go">Updating c87d55d..92c7337</code>
+<code class="go">Fast-forward</code>
+<code class="go"> src/main.c | 1 +</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code>
+<code class="go">Submodule path 'DbConnector': merged in '92c7337b30ef9e0893e758dac2459d07362ab5ea'</code></pre>
+
+<p>Als we in de DbConnector directory gaan, hebben we de nieuwe wijzigingen al in onze lokale <code>stable</code> branch gemerged.
+ Laten we eens kijken wat er gebeurt als we onze lokale wijziging maken aan de library en iemand anders pushed
+ tegelijk nog een wijziging stroomopwaarts.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>DbConnector/
+<code class="gp">$</code> vim src/db.c
+<code class="gp">$</code> git commit -am <code class="s1">'unicode support'</code>
+<code class="go">[stable f906e16] unicode support</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code></pre>
+
+<p>Als we nu onze submodule updaten kunnen we zien wat er gebeurt als we een lokale wijziging maken en er stroomopwaarts
+ ook nog een wijziging is die we moeten verwerken.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote --rebase
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: unicode support</code>
+<code class="go">Submodule path 'DbConnector': rebased into '5d60ef9bbebf5a0c1c1050f242ceeb54ad58da94'</code></pre>
+
+<p>Als je de <code>--rebase</code> of <code>--merge</code> bent vergeten, zal Git alleen de submodule updaten naar wat er op de server staat
+ en je lokale project in een detached HEAD status zetten.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote
+<code class="go">Submodule path 'DbConnector': checked out '5d60ef9bbebf5a0c1c1050f242ceeb54ad58da94'</code></pre>
+
+<p>Maak je geen zorgen als dit gebeurt, je kunt eenvoudigweg teruggaan naar deze directory en weer je branch uitchecken
+ (die je werk nog steeds bevat) en handmatig <code>origin/stable</code> mergen of rebasen (of welke remote branch je wilt).</p>
+
+<p>Als je jouw wijzigingen aan je submodule nog niet hebt gecommit en je roept een submodule update aan die problemen
+ zou veroorzaken, zal Git de wijzigingen ophalen (fetchen) maar het nog onbewaarde werk in je submodule directory niet
+ overschrijven.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (3/3), done.</code>
+<code class="go">remote: Total 4 (delta 0), reused 4 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   5d60ef9..c75e92a  stable     -&gt; origin/stable</code>
+<code class="go">error: Your local changes to the following files would be overwritten by checkout:</code>
+<code class="go">	scripts/setup.sh</code>
+<code class="go">Please, commit your changes or stash them before you can switch branches.</code>
+<code class="go">Aborting</code>
+<code class="go">Unable to checkout 'c75e92a2b3855c9e5b66f915308390d9db204aca' in submodule path 'DbConnector'</code></pre>
+
+<p>Als je wijzigingen hebt gemaakt die conflicteren met wijzigingen die stroomopwaarts zijn gemaakt, zal Git je dit
+ laten weten als je de update aanroept.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote --merge
+<code class="go">Auto-merging scripts/setup.sh</code>
+<code class="go">CONFLICT (content): Merge conflict in scripts/setup.sh</code>
+<code class="go">Recorded preimage for 'scripts/setup.sh'</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code>
+<code class="go">Unable to merge 'c75e92a2b3855c9e5b66f915308390d9db204aca' in submodule path 'DbConnector'</code></pre>
+
+<p>Je kunt in de directory van de submodule gaan en de conflicten oplossen op dezelfde manier zoals je anders ook zou doen.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Submodule wizigingen publiceren" id="_publishing_submodules"><h4>Submodule wizigingen publiceren</h4>
+
+<p>We hebben nu een aantal wijzigingen in onze submodule directory. Sommige van deze zijn van stroomopwaarts
+ binnengekomen via onze updates en andere zijn lokaal gemaakt en zijn nog voor niemand anders beschikbaar omdat we ze
+ nog niet hebben gepushed.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">Submodule DbConnector c87d55d..82d2ad3:</code>
+<code class="go">  &gt; Merge from origin/stable</code>
+<code class="go">  &gt; updated setup script</code>
+<code class="go">  &gt; unicode support</code>
+<code class="go">  &gt; remove unnecessary method</code>
+<code class="go">  &gt; add new option for conn pooling</code></pre>
+
+<p>Als we het hoofdproject committen en deze pushen zonder de submodule wijzigingen ook te pushen, zullen andere mensen
+ die willen zien wat onze wijzigingen inhouden problemen krijgen omdat er geen enkele manier is voor hen om de
+ wijzigingen van de submodule te pakken krijgen waar toch op wordt voortgebouwd. Deze wijzigingen zullen alleen in
+ onze lokale kopie bestaan.</p>
+
+<p>Om er zeker van te zijn dat dit niet gebeurt, kan je Git vragen om te controleren dat al je submodules juist gepushed
+ zijn voordat het hoofdproject wordt gepushed. Het <code>git push</code> commando leest het <code>--recurse-submodules</code> argument die
+ op de waardes “check” of “on-demand” kan worden gezet. De “check” optie laat een <code>push</code> eenvoudigweg falen als
+ een van de gecomitte submodule wijzigingen niet is gepushed.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push --recurse-submodules<code class="o">=</code>check
+<code class="go">The following submodule paths contain changes that can</code>
+<code class="go">not be found on any remote:</code>
+<code class="go">  DbConnector</code>
+
+<code class="go">Please try</code>
+
+<code class="go">	git push --recurse-submodules=on-demand</code>
+
+<code class="go">or cd to the path and use</code>
+
+<code class="go">	git push</code>
+
+<code class="go">to push them to a remote.</code></pre>
+
+<p>Zoals je kunt zien, geeft het ook wat behulpzame adviezen over wat he vervolgens kunnen doen. De eenvoudige optie is
+ om naar elke submodule te gaan en handmatig naar de remotes te pushen om er zeker van te zijn dat ze extern
+ beschikbaar zijn en dan deze push nogmaals te proberen.</p>
+
+<p>De andere optie is om de “on-demand” waarde te gebruiken, wat zal proberen dit voor je te doen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push --recurse-submodules<code class="o">=</code>on-demand
+<code class="go">Pushing submodule 'DbConnector'</code>
+<code class="go">Counting objects: 9, done.</code>
+<code class="go">Delta compression using up to 8 threads.</code>
+<code class="go">Compressing objects: 100% (8/8), done.</code>
+<code class="go">Writing objects: 100% (9/9), 917 bytes | 0 bytes/s, done.</code>
+<code class="go">Total 9 (delta 3), reused 0 (delta 0)</code>
+<code class="go">To https://github.com/chaconinc/DbConnector</code>
+<code class="go">   c75e92a..82d2ad3  stable -&gt; stable</code>
+<code class="go">Counting objects: 2, done.</code>
+<code class="go">Delta compression using up to 8 threads.</code>
+<code class="go">Compressing objects: 100% (2/2), done.</code>
+<code class="go">Writing objects: 100% (2/2), 266 bytes | 0 bytes/s, done.</code>
+<code class="go">Total 2 (delta 1), reused 0 (delta 0)</code>
+<code class="go">To https://github.com/chaconinc/MainProject</code>
+<code class="go">   3d6d338..9a377d1  master -&gt; master</code></pre>
+
+<p>Zoals je hier kunt zien, ging Git in de DbConnector module en heeft deze gepushed voordat het hoofdproject werd
+ gepushed. Als die push van de submodule om wat voor reden ook faalt, zal de push van het hoofdproject ook falen.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Submodule wijzigingen mergen" id="idp23343552"><h4>Submodule wijzigingen mergen</h4>
+
+<p>Als je een submodule referentie wijzigt op hetzelfde moment als een ander, kan je in enkele problemen geraken. In die
+ zien, dat wanneer submodule histories uitelkaar zijn gaan lopen en naar uitelkaar lopende branches in het
+ superproject worden gecommit, zal het wat extra werk van je vergen om dit te repareren.</p>
+
+<p>Als een van de commits een directe voorouder is van de ander (een fast-forward merge), dan zal git eenvoudigweg de
+ laatste voor de merge kiezen, dus dat werkt prima.</p>
+
+<p>Git zal echter niet eens een triviale merge voor je proberen. Als de submodule commits uiteen zijn gaan lopen en ze
+ moeten worden gemerged, zal je iets krijgen wat hier op lijkt:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git pull
+<code class="go">remote: Counting objects: 2, done.</code>
+<code class="go">remote: Compressing objects: 100% (1/1), done.</code>
+<code class="go">remote: Total 2 (delta 1), reused 2 (delta 1)</code>
+<code class="go">Unpacking objects: 100% (2/2), done.</code>
+<code class="go">From https://github.com/chaconinc/MainProject</code>
+<code class="go">   9a377d1..eb974f8  master     -&gt; origin/master</code>
+<code class="go">Fetching submodule DbConnector</code>
+<code class="go">warning: Failed to merge submodule DbConnector (merge following commits not found)</code>
+<code class="go">Auto-merging DbConnector</code>
+<code class="go">CONFLICT (submodule): Merge conflict in DbConnector</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code></pre>
+
+<p>Dus wat er hier eigenlijk gebeurd is, is dat Git heeft achterhaald dat de twee branches punten in de historie van de
+ submodule hebben opgeslagen die uiteen zijn gaan lopen en die gemerged moeten worden. Het legt dit uit als “merge
+ following commits not found” (merge volgend op commits niet gevonden), wat verwarrend is, maar we leggen zo uit
+ waarom dit zo is.</p>
+
+<p>Om dit probleem op te lossen, moet je uit zien te vinden in welke staat de submodule in zou moeten zijn. Vreemdgenoeg
+ geeft Git je niet echt veel informatie om je hiermee te helpen, niet eens de SHA-1 getallen van de commits van beide
+ kanten van de historie. Gelukkig is het redelijk eenvoudig om uit te vinden. Als je <code>git diff</code> aanroept kan je de
+ SHA-1 getallen van de opgeslagen commits uit beide branches die je probeerde te mergen krijgen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --cc DbConnector</code>
+<code class="go">index eb41d76,c771610..0000000</code>
+<code class="go">--- a/DbConnector</code>
+<code class="go">+++ b/DbConnector</code></pre>
+
+<p>Dus in dit geval, is <code>eb41d76</code> de commit in onze submodule die <strong>wij</strong> hebben en <code>c771610</code> is de commit die
+ stroomopwaarts aanwezig is. Als we naar onze submodule directory gaan, moet het al aanwezig zin op <code>eb41d76</code> omdate
+ de merge deze nog niet zal hebben aangeraakt. Als deze om welke reden dan ook er niet is, kan je eenvoudigweg een
+ branch die hiernaar wijst aanmaken en uit checken.</p>
+
+<p>Wat nu een belangrijke rol gaat spelen is de SHA-1 van de commit van de andere kant. Dit is wat je in zult moeten
+ mergen en oplossen. Je kunt ofwel de merge met de SHA-1 gewoon proberen, of je kunt een branch hiervoor maken en dan
+ deze proberen te mergen. We raden het laatste aan, al was het maar om een mooiere merge commit bericht te krijgen.</p>
+
+<p>Dus, we gaan naar onze submodule directory, maken een branch gebaseerd op die tweede SHA-1 van <code>git diff</code> en mergen
+ handmatig.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>DbConnector
+
+<code class="gp">$</code> git rev-parse HEAD
+<code class="go">eb41d764bccf88be77aced643c13a7fa86714135</code>
+
+<code class="gp">$</code> git branch try-merge c771610
+<code class="go">(DbConnector) $ git merge try-merge</code>
+<code class="go">Auto-merging src/main.c</code>
+<code class="go">CONFLICT (content): Merge conflict in src/main.c</code>
+<code class="go">Recorded preimage for 'src/main.c'</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code></pre>
+
+<p>We hebben een echte merge conflict, dus als we deze oplossen en committen, dan kunnen we eenvoudigweg het
+ hoofdproject updaten met het resultaat.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code><code> </code><code>vim</code><code> </code><code>src/main.c</code><code> </code><a class="co" id="co_git_tools_CO1-1" href="ch00/callout_git_tools_CO1-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a><code>
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>add</code><code> </code><code>src/main.c</code><code>
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>commit</code><code> </code><code>-am</code><code> </code><code class="s1">'merged our changes'</code><code>
+</code><code class="go">Recorded resolution for 'src/main.c'.
+</code><code class="go">[master 9fd905e] merged our changes
+</code><code class="go">
+</code><code class="gp">$</code><code> </code><code class="nb">cd</code><code> </code><code>..</code><code> </code><a class="co" id="co_git_tools_CO1-2" href="ch00/callout_git_tools_CO1-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a><code>
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>diff</code><code> </code><a class="co" id="co_git_tools_CO1-3" href="ch00/callout_git_tools_CO1-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a><code>
+</code><code class="go">diff --cc DbConnector
+</code><code class="go">index eb41d76,c771610..0000000
+</code><code class="go">--- a/DbConnector
+</code><code class="go">+++ b/DbConnector
+</code><code class="go">@@@ -1,1 -1,1 +1,1 @@@
+</code><code class="go">- Subproject commit eb41d764bccf88be77aced643c13a7fa86714135
+</code><code class="go"> -Subproject commit c77161012afbbe1f58b5053316ead08f4b7e6d1d
+</code><code class="go">++Subproject commit 9fd905e5d7f45a0d4cbc43d1ee550f16a30e825a
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>add</code><code> </code><code>DbConnector</code><code> </code><a class="co" id="co_git_tools_CO1-4" href="ch00/callout_git_tools_CO1-4"><img src="/book/en/v2/book/07-git-tools/../../callouts/4.png" alt="4"></a><code>
+</code><code class="go">
+</code><code class="gp">$</code><code> </code><code>git</code><code> </code><code>commit</code><code> </code><code>-m</code><code> </code><code class="s2">"Merge Tom's Changes"</code><code> </code><a class="co" id="co_git_tools_CO1-5" href="ch00/callout_git_tools_CO1-5"><img src="/book/en/v2/book/07-git-tools/../../callouts/5.png" alt="5"></a><code>
+</code><code class="go">[master 10d2c60] Merge Tom's Changes</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_git_tools_CO1-1" href="ch00/co_git_tools_CO1-1"><img src="/book/en/v2/book/07-git-tools/../../callouts/1.png" alt="1"></a></dt>
+<dd><p>Eerst lossen we het conflict op</p></dd>
+<dt><a class="co" id="callout_git_tools_CO1-2" href="ch00/co_git_tools_CO1-2"><img src="/book/en/v2/book/07-git-tools/../../callouts/2.png" alt="2"></a></dt>
+<dd><p>Dan gaan we terug naar de directory van het hoofdproject</p></dd>
+<dt><a class="co" id="callout_git_tools_CO1-3" href="ch00/co_git_tools_CO1-3"><img src="/book/en/v2/book/07-git-tools/../../callouts/3.png" alt="3"></a></dt>
+<dd><p>We controleren de SHA-1 getallen nog een keer</p></dd>
+<dt><a class="co" id="callout_git_tools_CO1-4" href="ch00/co_git_tools_CO1-4"><img src="/book/en/v2/book/07-git-tools/../../callouts/4.png" alt="4"></a></dt>
+<dd><p>Lossen de conflicterende submodule entries op</p></dd>
+<dt><a class="co" id="callout_git_tools_CO1-5" href="ch00/co_git_tools_CO1-5"><img src="/book/en/v2/book/07-git-tools/../../callouts/5.png" alt="5"></a></dt>
+<dd><p>Committen onze merge.</p></dd>
+</dl>
+<p>Dit kan nogal verwarrend overkomen, maar het is niet echt moeilijk.</p>
+
+<p>Interessant genoeg, is er een ander geval die Git aankan.
+Als er een merge commit bestaat in de directory van de submodule die <strong>beide</strong> commits in z’n historie bevat, zal Git
+ je deze voorstellen als mogelijke oplossing. Het ziet dat op een bepaald punt in het submodule project iemand
+ branches heeft gemerged met daarin deze twee commits, dus wellicht wil je die.</p>
+
+<p>Dit is waarom de foutboodschap van eerder “merge following commits not found” was, omdat het <strong>dit</strong> niet kon doen.
+ Het is verwarrend omdat, wie verwacht er nu dat Git dit zou <strong>proberen</strong>?</p>
+
+<p>Als het een enkele acceptabele merge commit vindt, zal je iets als dit zien:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">warning: Failed to merge submodule DbConnector (not fast-forward)</code>
+<code class="go">Found a possible merge resolution for the submodule:</code>
+<code class="go"> 9fd905e5d7f45a0d4cbc43d1ee550f16a30e825a: &gt; merged our changes</code>
+<code class="go">If this is correct simply add it to the index for example</code>
+<code class="go">by using:</code>
+
+<code class="go">  git update-index --cacheinfo 160000 9fd905e5d7f45a0d4cbc43d1ee550f16a30e825a "DbConnector"</code>
+
+<code class="go">which will accept this suggestion.</code>
+<code class="go">Auto-merging DbConnector</code>
+<code class="go">CONFLICT (submodule): Merge conflict in DbConnector</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code></pre>
+
+<p>Wat hier gesuggereerd wordt om te doen is om de index te updaten alsof je <code>git add</code> zou hebben aangeroepen, wat het
+ conflict opruimt, en dan commit. Echter, je moet dit waarschijnlijk niet doen. Je kunt net zo makkelijk naar de
+ directory van de submodule gaan, kijken wat het verschil is, naar deze commit fast-forwarden, het goed testen en
+ daarna committen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>DbConnector/
+<code class="gp">$</code> git merge 9fd905e
+<code class="go">Updating eb41d76..9fd905e</code>
+<code class="go">Fast-forward</code>
+
+<code class="gp">$</code> <code class="nb">cd</code> ..
+<code class="gp">$</code> git add DbConnector
+<code class="gp">$</code> git commit -am <code class="s1">'Fast forwarded to a common submodule child'</code></pre>
+
+<p>Dit bereikt hetzelfde, maar op deze manier kan je verfiëren dat het werkt en je hebt de code in je submodule als je
+ klaar bent.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="Submodule Tips" id="idp23389680"><h3 id="Submodule-Tips"><a href="#Submodule-Tips">Submodule Tips</a></h3>
+
+<p>Er zijn een aantal dingen die je kunt doen om het werken met submodules iets eenvoudiger te maken.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="Submodule Foreach" id="idp23801648"><h4>Submodule Foreach</h4>
+
+<p>Er is een <code>foreach</code> submodule commando om een willekeurig commando aan te roepen in elke submodule. Dit kan echt
+ handig zijn als je een aantal submodules in hetzelfde project hebt.</p>
+
+<p>Bijvoorbeeld, stel dat we een nieuwe functie willen beginnen te maken of een bugfix uitvoeren en we hebben
+ werkzaamheden in verscheidene submodules onderhanden. We kunnen nu makkelijk al het werk in al onze submodules
+ stashen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule foreach <code class="s1">'git stash'</code>
+<code class="go">Entering 'CryptoLibrary'</code>
+<code class="go">No local changes to save</code>
+<code class="go">Entering 'DbConnector'</code>
+<code class="go">Saved working directory and index state WIP on stable: 82d2ad3 Merge from origin/stable</code>
+<code class="go">HEAD is now at 82d2ad3 Merge from origin/stable</code></pre>
+
+<p>Daarna kunnen we een nieuwe branch maken en ernaar switchen in al onze submodules.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule foreach <code class="s1">'git checkout -b featureA'</code>
+<code class="go">Entering 'CryptoLibrary'</code>
+<code class="go">Switched to a new branch 'featureA'</code>
+<code class="go">Entering 'DbConnector'</code>
+<code class="go">Switched to a new branch 'featureA'</code></pre>
+
+<p>Je begrijpt het idee. Een heel nuttig ding wat je kunt doen is een mooie unified diff maken van wat er gewijzigd is
+ in je hoofdproject alsmede al je subprojecten.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff<code class="p">;</code> git submodule foreach <code class="s1">'git diff'</code>
+<code class="go">Submodule DbConnector contains modified content</code>
+<code class="go">diff --git a/src/main.c b/src/main.c</code>
+<code class="go">index 210f1ae..1f0acdc 100644</code>
+<code class="go">--- a/src/main.c</code>
+<code class="go">+++ b/src/main.c</code>
+<code class="go">@@ -245,6 +245,8 @@ static int handle_alias(int *argcp, const char ***argv)</code>
+
+<code class="go">      commit_pager_choice();</code>
+
+<code class="go">+     url = url_decode(url_orig);</code>
+<code class="go">+</code>
+<code class="go">      /* build alias_argv */</code>
+<code class="go">      alias_argv = xmalloc(sizeof(*alias_argv) * (argc + 1));</code>
+<code class="go">      alias_argv[0] = alias_string + 1;</code>
+<code class="go">Entering 'DbConnector'</code>
+<code class="go">diff --git a/src/db.c b/src/db.c</code>
+<code class="go">index 1aaefb6..5297645 100644</code>
+<code class="go">--- a/src/db.c</code>
+<code class="go">+++ b/src/db.c</code>
+<code class="go">@@ -93,6 +93,11 @@ char *url_decode_mem(const char *url, int len)</code>
+<code class="go">        return url_decode_internal(&amp;url, len, NULL, &amp;out, 0);</code>
+<code class="go"> }</code>
+
+<code class="go">+char *url_decode(const char *url)</code>
+<code class="go">+{</code>
+<code class="go">+       return url_decode_mem(url, strlen(url));</code>
+<code class="go">+}</code>
+<code class="go">+</code>
+<code class="go"> char *url_decode_parameter_name(const char **query)</code>
+<code class="go"> {</code>
+<code class="go">        struct strbuf out = STRBUF_INIT;</code></pre>
+
+<p>Hier kunnen we zien dat we een functie aan het definieren zijn in een submodule en dat we het in het hoofdproject
+ aanroepen. Dit is duidelijk een versimpeld voorbeeld, maar hopelijk geeft het je een idee wanneer dit handig kan zijn.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Bruikbare aliassen" id="idp23955728"><h4>Bruikbare aliassen</h4>
+
+<p>Je wilt misschien een aantal aliassen maken voor een aantal van deze commando’s omdat ze redelijk lang kunnen zijn en
+ je geen configuratie opties voor de meeste van deze kunt instellen om ze standaard te maken. We hebben het opzetten
+ van Git aliassen in <a data-type="xref" href="ch02/_git_aliases">“Git aliassen”</a> behandeld, maar hier is een voorbeeld van iets wat je misschien zou willen
+ opzetten als je van plan bent veel met submodules in Git te werken.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config alias.sdiff <code class="s1">'!'</code><code class="s2">"git diff &amp;&amp; git submodule foreach 'git diff'"</code>
+<code class="gp">$</code> git config alias.spush <code class="s1">'push --recurse-submodules=on-demand'</code>
+<code class="gp">$</code> git config alias.supdate <code class="s1">'submodule update --remote --merge'</code></pre>
+
+<p>Op deze manier kan je eenvoudig <code>git supdate</code> aanroepen als je je submodules wilt updaten, of <code>git spush</code> om te
+ pushen met controle op afhankelijkheden op de submodule.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="Problemen met submodules" id="idp23823520"><h3 id="Problemen-met-submodules"><a href="#Problemen-met-submodules">Problemen met submodules</a></h3>
+
+<p>Submodules gebruiken is echter niet zonder nukken.</p>
+
+<p>Bijvoorbeeld het switchen van branches met daarin submodulen kan nogal listig zijn.
+Als je een nieuwe branch maakt, daar een submodule toevoegt, en dan terug switcht naar een branch zonder die
+ submodule, heb je de submodule directory nog steeds als een untracked directory.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b add-crypto
+<code class="go">Switched to a new branch 'add-crypto'</code>
+
+<code class="gp">$</code> git submodule add https://github.com/chaconinc/CryptoLibrary
+<code class="go">Cloning into 'CryptoLibrary'...</code>
+<code class="go">...</code>
+
+<code class="gp">$</code> git commit -am <code class="s1">'adding crypto library'</code>
+<code class="go">[add-crypto 4445836] adding crypto library</code>
+<code class="go"> 2 files changed, 4 insertions(+)</code>
+<code class="go"> create mode 160000 CryptoLibrary</code>
+
+<code class="gp">$</code> git checkout master
+<code class="go">warning: unable to rmdir CryptoLibrary: Directory not empty</code>
+<code class="go">Switched to branch 'master'</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Untracked files:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to include in what will be committed)</code>
+
+<code class="go">	CryptoLibrary/</code>
+
+<code class="go">nothing added to commit but untracked files present (use "git add" to track)</code></pre>
+
+<p>Die directory weghalen is niet moeilijkm maar het kan nogal verwarrend zijn om hem daar te hebben. Als je het
+ weghaalt en dan weer terug switcht naar de branch die deze submodule heeft, zal je <code>submodule update --init</code> moeten
+ aanroepen om het weer te vullen.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clean -fdx
+<code class="go">Removing CryptoLibrary/</code>
+
+<code class="gp">$</code> git checkout add-crypto
+<code class="go">Switched to branch 'add-crypto'</code>
+
+<code class="gp">$</code> ls CryptoLibrary/
+
+<code class="gp">$</code> git submodule update --init
+<code class="go">Submodule path 'CryptoLibrary': checked out 'b8dda6aa182ea4464f3f3264b11e0268545172af'</code>
+
+<code class="gp">$</code> ls CryptoLibrary/
+<code class="go">Makefile	includes	scripts		src</code></pre>
+
+<p>Alweer, niet echt moeilijk, maar het kan wat verwarring scheppen.</p>
+
+<p>Het andere grote probleem waar veel mensen tegenaan lopen betreft het omschakelen van subdirectories naar submodules.
+Als je files aan het tracken bent in je project en je wilt ze naar een submodule verplaatsen, moet je voorzichtig
+ zijn omdat Git anders erg boos op je gaat worden.
+Als je de subdirectory verwijdert en dan <code>submodule add</code> aanroept, zal Git tegen je roepen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> rm -Rf CryptoLibrary/
+<code class="gp">$</code> git submodule add https://github.com/chaconinc/CryptoLibrary
+<code class="go">'CryptoLibrary' already exists in the index</code></pre>
+
+<p>Je moet de <code>CryptoLibrary</code> directory eerst unstagen.
+Dan kan je de submodule toevoegen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm -r CryptoLibrary
+<code class="gp">$</code> git submodule add https://github.com/chaconinc/CryptoLibrary
+<code class="go">Cloning into 'CryptoLibrary'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code></pre>
+
+<p>Stel je nu voor dat je dit in en branch zou doen.
+Als je naar een branch terug zou switchen waar deze bestanden nog steeds in de actuele tree staan in plaats van in
+ een submodule - krijg je deze fout:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="go">error: The following untracked working tree files would be overwritten by checkout:</code>
+<code class="go">  CryptoLibrary/Makefile</code>
+<code class="go">  CryptoLibrary/includes/crypto.h</code>
+<code class="go">  ...</code>
+<code class="go">Please move or remove them before you can switch branches.</code>
+<code class="go">Aborting</code></pre>
+
+<p>Je kunt forceren om de switch te maken met <code>checkout -f</code>, maar wees voorzichtig dat je geen onbewaarde gegevens daar
+ hebt staan omdat deze kunnen worden overschreven met dit commando.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -f master
+<code class="go">warning: unable to rmdir CryptoLibrary: Directory not empty</code>
+<code class="go">Switched to branch 'master'</code></pre>
+
+<p>Daarna, als je weer terug switched, krijg je om de een of andere reden een lege <code>CryptoLibrary</code> directory en <code>git
+ submodule update</code> zou hier ook geen oplossing voor kunnen bieden. Je zou misschien naar je submodule directory
+ moeten gaan en een <code>git checkout .</code> aanroepen om al je bestanden terug te krijgen. Je zou dit in een <code>submodule
+ foreach</code> script kunnen doen om het voor meerdere submodules uit te voeren.</p>
+
+<p>Het is belangrijk om op te merken dat submodules vandaag de dag al hun Git data in de <code>.git</code> directory van het
+ hoogste project opslaan, dus in tegenstelling tot oudere versies van Git, leidt het vernietigen van een submodule
+ directory niet tot verlies van enig commit of branches die je had.</p>
+
+<p>Met al deze gereedschappen, kunnen submodules een redelijk eenvoudig en effectieve manier zijn om een aantal
+ gerelateerde maar toch aparte projecten tegelijk te ontwikkelen.</p>
+</section><div id="nav"><a href="/book/nl/Git-Tools-Debuggen-met-Git">prev</a> | <a href="/book/nl/v2/Git-Tools-Bundelen">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

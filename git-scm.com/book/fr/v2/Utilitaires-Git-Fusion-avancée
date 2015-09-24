@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":231,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Fusion avancée</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/fr/2015-08-31-415bc/progit-fr.793.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">Démarrage rapide</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">À propos de la gestion de version</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Une-rapide-histoire-de-Git">Une rapide histoire de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Rudiments-de-Git">Rudiments de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-La-ligne-de-commande">La ligne de commande</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git">Installation de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Paramétrage à la première utilisation de Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-Obtenir-de-l%E2%80%99aide">Obtenir de l’aide</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/fr/v2/D%C3%A9marrage-rapide-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Les bases de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Démarrer un dépôt Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/fr/v2/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Enregistrer des modifications dans le dépôt</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/fr/v2/Les-bases-de-Git-Visualiser-l%E2%80%99historique-des-validations">Visualiser l’historique des validations</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/fr/v2/Les-bases-de-Git-Annuler-des-actions">Annuler des actions</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/fr/v2/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">Travailler avec des dépôts distants</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/fr/v2/Les-bases-de-Git-%C3%89tiquetage">Étiquetage</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/fr/v2/Les-bases-de-Git-Les-alias-Git">Les alias Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/fr/v2/Les-bases-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">Les branches avec Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/fr/v2/Les-branches-avec-Git-Les-branches-en-bref">Les branches en bref</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/fr/v2/Les-branches-avec-Git-Branches-et-fusions%C2%A0%3A-les-bases">Branches et fusions : les bases</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/fr/v2/Les-branches-avec-Git-Gestion-des-branches">Gestion des branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/fr/v2/Les-branches-avec-Git-Travailler-avec-les-branches">Travailler avec les branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/fr/v2/Les-branches-avec-Git-Branches-distantes">Branches distantes</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing">Rebaser (Rebasing)</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/fr/v2/Les-branches-avec-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/fr/v2/Git-sur-le-serveur-Protocoles">Git sur le serveur</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/fr/v2/Git-sur-le-serveur-Protocoles">Protocoles</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/fr/v2/Git-sur-le-serveur-Installation-de-Git-sur-un-serveur">Installation de Git sur un serveur</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/fr/v2/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH">Génération des clés publiques SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/fr/v2/Git-sur-le-serveur-Mise-en-place-du-serveur">Mise en place du serveur</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/fr/v2/Git-sur-le-serveur-D%C3%A9mon-Daemon-Git">Démon (Daemon) Git</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/fr/v2/Git-sur-le-serveur-HTTP-intelligent">HTTP intelligent</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/fr/v2/Git-sur-le-serveur-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/fr/v2/Git-sur-le-serveur-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/fr/v2/Git-sur-le-serveur-Git-h%C3%A9berg%C3%A9">Git hébergé</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/fr/v2/Git-sur-le-serveur-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/fr/v2/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Git distribué</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/fr/v2/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Développements distribués</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/fr/v2/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/fr/v2/Git-distribu%C3%A9-Maintenance-d%E2%80%99un-projet">Maintenance d’un projet</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/fr/v2/Git-distribu%C3%A9-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/fr/v2/GitHub-Configuration-et-param%C3%A9trage-d%E2%80%99un-compte">Configuration et paramétrage d’un compte</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/fr/v2/GitHub-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/fr/v2/GitHub-Maintenance-d%E2%80%99un-projet">Maintenance d’un projet</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/fr/v2/GitHub-Gestion-d%E2%80%99un-regroupement">Gestion d’un regroupement</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/fr/v2/GitHub-%C3%89criture-de-scripts-pour-GitHub">Écriture de scripts pour GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/fr/v2/GitHub-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/fr/v2/Utilitaires-Git-S%C3%A9lection-des-versions">Utilitaires Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/fr/v2/Utilitaires-Git-S%C3%A9lection-des-versions">Sélection des versions</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/fr/v2/Utilitaires-Git-Indexation-interactive">Indexation interactive</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/fr/v2/Utilitaires-Git-Remisage-et-nettoyage">Remisage et nettoyage</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/fr/v2/Utilitaires-Git-Signer-votre-travail">Signer votre travail</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/fr/v2/Utilitaires-Git-Recherche">Recherche</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/fr/v2/Utilitaires-Git-R%C3%A9%C3%A9crire-l%E2%80%99historique">Réécrire l’historique</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/fr/v2/Utilitaires-Git-Reset-d%C3%A9mystifi%C3%A9">Reset démystifié</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/fr/v2/Utilitaires-Git-Fusion-avanc%C3%A9e">Fusion avancée</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/fr/v2/Utilitaires-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/fr/v2/Utilitaires-Git-D%C3%A9boguer-avec-Git">Déboguer avec Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/fr/v2/Utilitaires-Git-Sous-modules">Sous-modules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/fr/v2/Utilitaires-Git-Empaquetage-bundling">Empaquetage (bundling)</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/fr/v2/Utilitaires-Git-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/fr/v2/Utilitaires-Git-Stockage-des-identifiants">Stockage des identifiants</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/fr/v2/Utilitaires-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git">Personnalisation de Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git">Configuration de Git</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/fr/v2/Personnalisation-de-Git-Attributs-Git">Attributs Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/fr/v2/Personnalisation-de-Git-Crochets-Git">Crochets Git</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/fr/v2/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">Exemple de politique gérée par Git</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/fr/v2/Personnalisation-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Git-comme-client">Git et les autres systèmes</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Git-comme-client">Git comme client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/fr/v2/Git-et-les-autres-syst%C3%A8mes-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine">Les tripes de Git</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/fr/v2/Les-tripes-de-Git-Plomberie-et-porcelaine">Plomberie et porcelaine</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-objets-de-Git">Les objets de Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/fr/v2/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git">Références Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/fr/v2/Les-tripes-de-Git-Fichiers-group%C3%A9s">Fichiers groupés</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/fr/v2/Les-tripes-de-Git-La-refspec">La refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-protocoles-de-transfert">Les protocoles de transfert</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/fr/v2/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">Maintenance et récupération de données</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/fr/v2/Les-tripes-de-Git-Les-variables-d%E2%80%99environnement">Les variables d’environnement</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/fr/v2/Les-tripes-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/fr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/fr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/fr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/fr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/fr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/fr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/fr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/fr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/fr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/fr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/fr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/fr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/fr/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/fr/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/fr/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/fr/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/fr/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/fr/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/fr/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/fr/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/fr/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/fr/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/fr/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/fr/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/fr/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/fr/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/fr/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/fr/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>7.8 Utilitaires Git - Fusion avancée</h1>
+  <div><a id="_advanced_merging"></a><h2>Fusion avancée</h2>
+
+<p>La fusion avec Git est généralement plutôt facile.
+Puisque Git rend facile la fusion d’une autre branche plusieurs fois, cela signifie que vous pouvez avoir une branche à très longue durée de vie que vous pouvez mettre à jour au fil de l’eau, en résolvant souvent les petits conflits plutôt que d’être surpris par un énorme conflit à la fin de la série.</p>
+
+<p>Cependant, il arrive quelques fois des conflits compliqués.
+À la différence d’autres systèmes de contrôle de version, Git n’essaie pas d’être plus intelligent que de mesure pour la résolution des conflits.
+La philosophie de Git, c’est d’être malin pour déterminer lorsque le fusion est sans ambiguïté mais s’il y a un conflit, il n’essaie pas d’être malin pour le résoudre automatiquement.
+De ce fait, si vous attendez trop longtemps pour fusionner deux branches qui divergent rapidement, vous rencontrerez des problèmes.</p>
+
+<p>Dans cette section, nous allons détailler ce que certains de ces problèmes peuvent être et quels outils Git vous offre pour vous aider à gérer ces situations délicates.
+Nous traiterons aussi quelques types de fusions différents, non-standard, ainsi que la manière de mémoriser les résolutions que vous avez déjà réalisées.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="conflits-de-fusion-lllHp"><h3 id="Conflits-de-fusion"><a href="#Conflits-de-fusion">Conflits de fusion</a></h3>
+
+<p>Bien que nous avons couvert les bases de la résolution de conflits dans <a data-type="xref" href="1-git-branching/_basic_merge_conflicts">Conflits de fusions (Merge conflicts)</a>, pour des conflits plus complexes, Git fournit quelques outils pour vous aider à vous y retrouver et à mieux gérer les conflits.</p>
+
+<p>Premièrement, si c’est seulement possible, essayer de démarrer d’un répertoire de travail propre avant de commencer  une fusion qui pourrait engendrer des conflits.
+Si vous avez un travail en cours, valider le dans une branche temporaire ou remisez le.
+Cela vous permettra de défaire <strong>tout</strong> ce que vous pourrez essayer.
+Si vous avez des modifications non sauvegardées dans votre répertoire de travail quand vous essayer une fusion, certains des astuces qui vont suivre risque de vous faire perdre ce travail.</p>
+
+<p>Parcourons ensemble un exemple très simple.
+Nous avons un fichier Ruby super simple qui affiche « hello world ».</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="c1">#! /usr/bin/env ruby</code>
+
+<code class="k">def</code> <code class="nf">hello</code>
+  <code class="nb">puts</code> <code class="s1">'hello world'</code>
+<code class="k">end</code>
+
+<code class="n">hello</code><code class="p">()</code>
+</pre>
+
+<p>Dans notre dépôt, nous créons une nouvelle branche appelée <code>whitespace</code> et nous entamons la transformation de toutes le fins de ligne Unix en fin de lignes DOS, ce qui revient à modifier chaque ligne, mais juste avec des caractères invisibles.
+Ensuite, nous changeons la ligne « hello world » en « hello mundo ».</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b whitespace
+<code class="go">Basculement sur la nouvelle branche 'whitespace'</code>
+
+<code class="gp">$</code> unix2dos hello.rb
+<code class="go">unix2dos: converting file hello.rb to DOS format ...</code>
+<code class="gp">$</code> git commit -am <code class="s1">'converted hello.rb to DOS'</code>
+<code class="go">[whitespace 3270f76] converted hello.rb to DOS</code>
+<code class="go"> 1 file changed, 7 insertions(+), 7 deletions(-)</code>
+
+<code class="gp">$</code> vim hello.rb
+<code class="gp">$</code> git diff -w
+<code class="go">diff --git a/hello.rb b/hello.rb</code>
+<code class="go">index ac51efd..e85207e 100755</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -1,7 +1,7 @@</code>
+<code class="go"> #! /usr/bin/env ruby</code>
+
+<code class="go"> def hello</code>
+<code class="go">-  puts 'hello world'</code>
+<code class="go">+  puts 'hello mundo'^M</code>
+<code class="go"> end</code>
+
+<code class="go"> hello()</code>
+
+<code class="gp">$</code> git commit -am <code class="s1">'hello mundo change'</code>
+<code class="go">[whitespace 6d338d2] hello mundo change</code>
+<code class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</code>
+</pre>
+
+<p>À présent, nous rebasculons sur <code>master</code> et nous ajoutons une documentation de la fonction.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="go">Basculement sur la branche 'master'</code>
+
+<code class="gp">$</code> vim hello.rb
+<code class="gp">$</code> git diff
+<code class="go">diff --git a/hello.rb b/hello.rb</code>
+<code class="go">index ac51efd..36c06c8 100755</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -1,5 +1,6 @@</code>
+<code class="go"> #! /usr/bin/env ruby</code>
+
+<code class="go">+# prints out a greeting</code>
+<code class="go"> def hello</code>
+<code class="go">   puts 'hello world'</code>
+<code class="go"> end</code>
+
+<code class="gp">$</code> git commit -am <code class="s1">'document the function'</code>
+<code class="go">[master bec6336] document the function</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code>
+</pre>
+
+<p>Et maintenant, nous essayons de fusionner notre branche <code>whitespace</code> et nous allons générer des conflits dûs aux modifications de fins de ligne.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge whitespace
+<code class="go">Fusion automatique de hello.rb</code>
+<code class="go">CONFLIT (contenu) : Conflit de fusion dans hello.rb</code>
+<code class="go">La fusion automatique a échoué ; réglez les conflits et validez le résultat.</code>
+</pre>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="_abort_merge"><h4>Abandonner une fusion</h4>
+
+<p>Nous avons ici plusieurs options.
+Une première consiste à sortir de cette situation.
+Vous ne vous attendiez peut-être pas à rencontrer un conflit et vous ne souhaitez pas encore le gérer, alors vous pouvez simplement faire marche arrière avec <code>git merge --abort</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status -sb
+<code class="gp">#</code><code class="c"># master</code>
+<code class="go">UU hello.rb</code>
+
+<code class="gp">$</code> git merge --abort
+
+<code class="gp">$</code> git status -sb
+<code class="gp">#</code><code class="c"># master</code>
+</pre>
+
+<p>L’option <code>git merge --abort</code> essaie de vous ramener à l’état précédent la fusion.
+Les seuls cas dans lesquels il n’y parvient pas parfaitement seraient ceux pour lesquels vous aviez déjà auparavant des modifications non validées ou non remisées dans votre répertoire de travail au moment de la fusion.
+Sinon, tout devrait se passer sans problème.</p>
+
+<p>Si, pour une raison quelconque, vous vous trouvez dans une situation horrible et que vous souhaitez repartir à zéro, vous pouvez aussi lancer <code>git reset --hard HEAD</code> ou sur toute autre référence où vous souhaitez revenir.
+Souvenez-vous tout de même que cela va balayer toutes les modifications de votre répertoire de travail, donc assurez-vous de n’avoir aucune modification de valeur avant.</p>
+</section><section data-type="sect3" id="ignorer-les-caractere-invisibles-b4aSx"><h4>Ignorer les caractère invisibles</h4>
+
+<p>Dans ce cas spécifique, les conflits sont dûs à des espaces blancs.
+Nous le savons parce que le cas est simple, mais cela reste assez facile à déterminer dans les cas réels en regardant les conflits parce que chaque ligne est supprimée à une ligne puis réintroduite à la suivante.
+Par défaut, Git voit toutes ces lignes comme modifiées et il ne peut pas fusionner les fichiers.</p>
+
+<p>La stratégie de fusion par défaut accepte quand même des arguments, et certains d’entre eux traitent le cas des modifications impliquant les caractères blancs.
+Si vous vous rendez compte que vous avez de nombreux conflits de caractères blancs lors d’une fusion, vous pouvez simplement abandonner la fusion et en relancer une en utilisant les options <code>-Xignore-all-space</code> ou <code>-Xignore-space-change</code>.
+La première option ignore <strong>complètement</strong> toutes les espaces tandis que la seconde ignore les modifications de nombre et type d’espaces existantes.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge -Xignore-all-space whitespace
+<code class="go">Fusion automatique de hello.rb</code>
+<code class="go">Merge made by the 'recursive' strategy.</code>
+<code class="go"> hello.rb | 2 +-</code>
+<code class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</code>
+</pre>
+
+<p>Puisque dans ce cas, les modifications réelles n’entraient pas en conflit, une fois les modifications d’espaces ignorées, tout fusionne parfaitement bien.</p>
+
+<p>Ça sauve la vie si vous avez dans votre équipe une personne qui reformate tout d’espaces en tab ou vice-versa.</p>
+</section><section data-type="sect3" id="_manual_remerge"><h4>Re-fusion manuelle d’un fichier</h4>
+
+<p>Bien que Git gère le pré-traitement d’espaces plutôt bien, il existe d’autres types de modifications que Git ne peut pas gérer automatiquement, mais dont la fusion peut être scriptable.
+Par exemple, supposons que Git n’ait pas pu gérer les espaces et que nous ayons dû résoudre le problème à la main.</p>
+
+<p>Ce que nous devons réellement faire est de passer le fichier que nous cherchons à fusionner à travers <code>dos2unix</code> avant d’essayer de le fusionner réellement.
+Comment pourrions-nous nous y prendre ?</p>
+
+<p>Premièrement, nous entrons dans l’état de conflit de fusion.
+Puis, nous voulons obtenir des copies de la version locale (<strong>ours</strong>), de la version distante (<strong>theirs</strong>, celle qui vient de la branche à fusionner) et de la version commune (l’ancêtre commun depuis lequel les branches sont parties).
+Ensuite, nous voulons corriger au choix la version locale ou la distante et réessayer de fusionner juste ce fichier.</p>
+
+<p>Obtenir les trois versions des fichiers est en fait assez facile.
+Git les stocke dans l’index sous formes d’étapes (<strong>stages</strong>), auxquelles chaque état est associé au moyen d’un chiffre.
+Stage 1 est l’ancêtre commun, stage 2 est notre version, stage 3 est la version de <code>MERGE_HEAD</code>, la version qu’on cherche à fusionner (<strong>theirs</strong>).</p>
+
+<p>Vous pouvez extraire une copie de chacune de ces versions du fichier en conflit avec la commande <code>git show</code> et une syntaxe spéciale.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git show :1:hello.rb &gt; hello.common.rb
+<code class="gp">$</code> git show :2:hello.rb &gt; hello.ours.rb
+<code class="gp">$</code> git show :3:hello.rb &gt; hello.theirs.rb
+</pre>
+
+<p>Si vous voulez rentrer un peu plus dans le dur, vous pouvez aussi utiliser la commande de plomberie <code>ls-files -u</code> pour récupérer les SHA-1 des blobs Git de chacun de ces fichiers.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git ls-files -u
+<code class="go">100755 ac51efdc3df4f4fd328d1a02ad05331d8e2c9111 1	hello.rb</code>
+<code class="go">100755 36c06c8752c78d2aff89571132f3bf7841a7b5c3 2	hello.rb</code>
+<code class="go">100755 e85207e04dfdd5eb0a1e9febbc67fd837c44a1cd 3	hello.rb</code>
+</pre>
+
+<p>La syntaxe <code>:1:hello.rb</code> est juste un raccourcis pour la recherche du SHA-1 de ce blob.</p>
+
+<p>À présent que nous avons le contenu des trois étapes dans notre répertoire de travail, nous pouvons réparer manuellement la copie distante pour résoudre le problème d’espaces et re-fusionner le fichier avec la commande méconnue <code>git merge-file</code> dont c’est l’exacte fonction.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> dos2unix hello.theirs.rb
+<code class="go">dos2unix: converting file hello.theirs.rb to Unix format ...</code>
+
+<code class="gp">$</code> git merge-file -p <code class="se">\</code>
+<code class="go">    hello.ours.rb hello.common.rb hello.theirs.rb &gt; hello.rb</code>
+
+<code class="gp">$</code> git diff -w
+<code class="go">diff --cc hello.rb</code>
+<code class="go">index 36c06c8,e85207e..0000000</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@@ -1,8 -1,7 +1,8 @@@</code>
+<code class="go">  #! /usr/bin/env ruby</code>
+
+<code class="go"> +# prints out a greeting</code>
+<code class="go">  def hello</code>
+<code class="go">-   puts 'hello world'</code>
+<code class="go">+   puts 'hello mundo'</code>
+<code class="go">  end</code>
+
+<code class="go">  hello()</code>
+</pre>
+
+<p>À ce moment, nous avons un fichier joliment fusionné.
+En fait, cela fonctionne même mieux que l’option <code>ignore-all-space</code> parce que le problème d’espace est corrigé avant la fusion plutôt que simplement ignoré.
+Dans la fusion <code>ignore-all-space</code>, nous avons en fait obtenu quelques lignes contenant des fins de lignes DOS, ce qui a mélangé les styles.</p>
+
+<p>Si vous voulez vous faire une idée avant de finaliser la validation sur ce qui a réellement changé entre un côté et l’autre, vous pouvez demander à <code>git diff</code> de comparer le contenu de votre répertoire de travail que vous êtes sur le point de valider comme résultat de la fusion avec n’importe quelle étape.
+Détaillons chaque comparaison.</p>
+
+<p>Pour comparer votre résultat avec ce que vous aviez dans votre branche avant la fusion, en d’autres termes, ce que la fusion a introduit, vous pouvez lancer <code>git diff --ours</code></p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --ours
+<code class="go">* Unmerged path hello.rb</code>
+<code class="go">diff --git a/hello.rb b/hello.rb</code>
+<code class="go">index 36c06c8..44d0a25 100755</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -2,7 +2,7 @@</code>
+
+<code class="go"> # prints out a greeting</code>
+<code class="go"> def hello</code>
+<code class="go">-  puts 'hello world'</code>
+<code class="go">+  puts 'hello mundo'</code>
+<code class="go"> end</code>
+
+<code class="go"> hello()</code>
+</pre>
+
+<p>Donc nous voyons ici que ce qui est arrivé à notre branche, ce que nous introduisons réellement dans ce fichier avec cette fusion n’est qu’une ligne modifiée.</p>
+
+<p>Si nous voulons voir le résultat de la fusion modifiée depuis la version distante, nous pouvons lancer <code>git diff --theirs</code>.
+Dans cet exemple et le suivant, nous devons utiliser <code>-w</code> pour éliminer les espaces parce que nous le comparons à ce qui est dans Git et non pas notre version nettoyée <code>hello.theirs.rb</code> du fichier.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --theirs -w
+<code class="go">* Unmerged path hello.rb</code>
+<code class="go">diff --git a/hello.rb b/hello.rb</code>
+<code class="go">index e85207e..44d0a25 100755</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -1,5 +1,6 @@</code>
+<code class="go"> #! /usr/bin/env ruby</code>
+
+<code class="go">+# prints out a greeting</code>
+<code class="go"> def hello</code>
+<code class="go">   puts 'hello mundo'</code>
+<code class="go"> end</code>
+</pre>
+
+<p>Enfin, nous pouvons voir comment le fichier a été modifié dans les deux branches avec <code>git diff --base</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --base -w
+<code class="go">* Unmerged path hello.rb</code>
+<code class="go">diff --git a/hello.rb b/hello.rb</code>
+<code class="go">index ac51efd..44d0a25 100755</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@ -1,7 +1,8 @@</code>
+<code class="go"> #! /usr/bin/env ruby</code>
+
+<code class="go">+# prints out a greeting</code>
+<code class="go"> def hello</code>
+<code class="go">-  puts 'hello world'</code>
+<code class="go">+  puts 'hello mundo'</code>
+<code class="go"> end</code>
+
+<code class="go"> hello()</code>
+</pre>
+
+<p>À ce point, nous pouvons utiliser la commande <code>git clean</code> pour éliminer les fichiers supplémentaires maintenant inutiles que nous avons créés pour notre fusion manuelle.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clean -f
+<code class="go">Suppression de hello.common.rb</code>
+<code class="go">Suppression de hello.ours.rb</code>
+<code class="go">Suppression de hello.theirs.rb</code>
+</pre>
+</section><section data-type="sect3" id="_checking_out_conflicts"><h4>Examiner les conflits</h4>
+
+<p>Peut-être ne sommes nous pas heureux de la résolution actuelle, ou bien l’édition à la main d’un côté ou des deux ne fonctionne pas correctement et nécessite plus de contexte.</p>
+
+<p>Modifions un peu l’exemple.
+Pour cet exemple, nous avons deux branches à longue durée de vie qui comprennent quelques <em>commits</em> mais créent des conflits de contenu légitimes à la fusion.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --graph --oneline --decorate --all
+<code class="go">* f1270f7 (HEAD, master) update README</code>
+<code class="go">* 9af9d3b add a README</code>
+<code class="go">* 694971d update phrase to hola world</code>
+<code class="go">| * e3eb223 (mundo) add more tests</code>
+<code class="go">| * 7cff591 add testing script</code>
+<code class="go">| * c3ffff1 changed text to hello mundo</code>
+<code class="go">|/</code>
+<code class="go">* b7dcc89 initial hello world code</code>
+</pre>
+
+<p>Nous avons maintenant trois <em>commits</em> uniques qui n’existent que sur la branche <code>master</code> et trois autres sur la branche <code>mundo</code>.
+Si nous essayons de fusionner la branche <code>mundo</code>, nous obtenons un conflit.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge mundo
+<code class="go">Fusion automatique de hello.rb</code>
+<code class="go">CONFLIT (contenu): Conflit de fusion dans hello.rb</code>
+<code class="go">La fusion automatique a échoué ; réglez les conflits et validez le résultat.</code>
+</pre>
+
+<p>Nous souhaitons voir ce qui constitue le conflit de fusion.
+Si nous ouvrons le fichier, nous verrons quelque chose comme :</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="c1">#! /usr/bin/env ruby</code>
+
+<code class="k">def</code> <code class="nf">hello</code>
+<code class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> <code class="no">HEAD</code>
+  <code class="nb">puts</code> <code class="s1">'hola world'</code>
+<code class="o">=======</code>
+  <code class="nb">puts</code> <code class="s1">'hello mundo'</code>
+<code class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> <code class="n">mundo</code>
+<code class="k">end</code>
+
+<code class="n">hello</code><code class="p">()</code>
+</pre>
+
+<p>Les deux côtés de la fusion on ajouté du contenu au fichier, mais certains <em>commits</em> ont modifié le fichier au même endroit, ce qui a causé le conflit.</p>
+
+<p>Explorons quelques outils que vous avez à disposition pour déterminer comment ce conflit est apparu.
+Peut-être le moyen de résoudre n’est-il pas évident.
+Il nécessite plus de contexte.</p>
+
+<p>Un outil utile est <code>git checkout</code> avec l’option <code>--conflict</code>.
+Il va re-extraire le fichier et remplacer les marqueurs de conflit.
+Cela peut être utile si vous souhaitez éliminer les marqueurs et essayer de résoudre le conflit à nouveau.</p>
+
+<p>Vous pouvez passer en paramètre à <code>--conflict</code>, soit <code>diff3</code> soit <code>merge</code> (le paramètre par défaut).
+Si vous lui passer <code>diff3</code>, Git utilisera une version différente des marqueurs de conflit, vous fournissant non seulement les versions locales (<em>ours</em>) et distantes (<em>theirs</em>), mais aussi le version base intégrée pour vous fournir plus de contexte.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout --conflict<code class="o">=</code>diff3 hello.rb
+</pre>
+
+<p>Une fois que nous l’avons lancé, le fichier ressemble à ceci :</p>
+
+<pre data-type="programlisting" data-code-language="ruby"><code class="c1">#! /usr/bin/env ruby</code>
+
+<code class="k">def</code> <code class="nf">hello</code>
+<code class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> <code class="n">ours</code>
+  <code class="nb">puts</code> <code class="s1">'hola world'</code>
+<code class="o">|||||||</code> <code class="n">base</code>
+  <code class="nb">puts</code> <code class="s1">'hello world'</code>
+<code class="o">=======</code>
+  <code class="nb">puts</code> <code class="s1">'hello mundo'</code>
+<code class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> <code class="n">theirs</code>
+<code class="k">end</code>
+
+<code class="n">hello</code><code class="p">()</code>
+</pre>
+
+<p>Si vous appréciez ce format, vous pouvez le régler comme défaut pour les futur conflits de fusion en renseignant le paramètre <code>merge.conflictstyle</code> avec <code>diff3</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global merge.conflictstyle diff3
+</pre>
+
+<p>La commande <code>git checkout</code> peut aussi accepter les options <code>--ours</code> et <code>--theirs</code>, qui peuvent servir de moyen rapide de choisir unilatéralement une version ou une autre sans fusion.</p>
+
+<p>Cela peut être particulièrement utile pour les conflits de fichiers binaires où vous ne pouvez que choisir un des côté, ou des conflits où vous souhaitez fusionner certains fichiers depuis d’autres branches - vous pouvez fusionner, puis extraire certains fichiers depuis un côté ou un autre avant de valider le résultat.</p>
+</section><section data-type="sect3" id="_merge_log"><h4>Journal de fusion</h4>
+
+<p>Un autre outil utile pour la résolution de conflits de fusion est <code>git log</code>.
+Cela peut vous aider à obtenir du contexte ce qui a contribué aux conflits.
+Parcourir un petit morceau de l’historique pour se rappeler pourquoi deux lignes de développement ont touché au même endroit dans le code peut s’avérer quelque fois très utile.</p>
+
+<p>Pour obtenir une liste complète de tous les <em>commits</em> uniques qui ont été introduits dans chaque branche impliquée dans le fusion, nous pouvons utiliser la syntaxe « triple point » que nous avons appris dans <a data-type="xref" href="ch00/_triple_dot">Triple point</a>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --left-right HEAD...MERGE_HEAD
+<code class="go">&lt; f1270f7 update README</code>
+<code class="go">&lt; 9af9d3b add a README</code>
+<code class="go">&lt; 694971d update phrase to hola world</code>
+<code class="gp">&gt;</code> e3eb223 add more tests
+<code class="gp">&gt;</code> 7cff591 add testing script
+<code class="gp">&gt;</code> c3ffff1 changed text to hello mundo
+</pre>
+
+<p>Voilà une belle liste des six <em>commits</em> impliqués, ainsi que chaque ligne de développement sur laquelle chaque <em>commit</em> se trouvait.</p>
+
+<p>Néanmoins, nous pouvons simplifier encore plus ceci pour fournir beaucoup plus de contexte.
+Si nous ajoutons l’option <code>--merge</code> à <code>git log</code>, il n’affichera que les <em>commits</em> de part et d’autre de la fusion qui modifient un fichier présentant un conflit.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --left-right --merge
+<code class="go">&lt; 694971d update phrase to hola world</code>
+<code class="gp">&gt;</code> c3ffff1 changed text to hello mundo
+</pre>
+
+<p>Si nous lançons cela plutôt avec l’option <code>-p</code>, vous obtenez les diffs limités au fichier qui s’est retrouvé en conflit.
+Cela peut s’avérer <strong>vraiment</strong> utile pour vous donner le contexte nécessaire à la compréhension de la raison d’un conflit et à sa résolution intelligente.</p>
+</section><section data-type="sect3" id="format-de-diff-combine-NLwnIG"><h4>Format de diff combiné</h4>
+
+<p>Puisque Git indexe tous les résultats de fusion couronnés de succès, quand vous lancez <code>git diff</code> dans un état de conflit de fusion, vous n’obtenez que ce qui toujours en conflit à ce moment.
+Il peut s’avérer utile de voir ce qui reste à résoudre.</p>
+
+<p>Quand vous lancez <code>git diff</code> directement après le conflit de fusion, il vous donne de l’information dans un format de diff plutôt spécial.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --cc hello.rb</code>
+<code class="go">index 0399cd5,59727f0..0000000</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@@ -1,7 -1,7 +1,11 @@@</code>
+<code class="go">  #! /usr/bin/env ruby</code>
+
+<code class="go">  def hello</code>
+<code class="go">++&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>
+<code class="go"> +  puts 'hola world'</code>
+<code class="go">++=======</code>
+<code class="go">+   puts 'hello mundo'</code>
+<code class="go">++&gt;&gt;&gt;&gt;&gt;&gt;&gt; mundo</code>
+<code class="go">  end</code>
+
+<code class="go">  hello()</code>
+</pre>
+
+<p>Ce format s’appelle « diff combiné » (<em>combined diff</em>) et vous fournit deux colonnes de d’information sur chaque ligne.
+La première colonne indique que la ligne est différente (ajoutée ou supprimée) entre la branche « <em>ours</em> » et le fichier dans le répertoire de travail.
+La seconde colonne fait de même pour la branche « <em>theirs</em> » et la copie du répertoire de travail.</p>
+
+<p>Donc dans cet exemple, vous pouvez voir que les lignes <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> et <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> sont dans la copie de travail mais n’étaient dans aucun des deux côtés de la fusion.
+C’est logique parce que l’outil de fusion les a collés ici pour donner du contexte, mais nous devrons les retirer.</p>
+
+<p>Si nous résolvons le conflit et relançons <code>git diff</code>, nous verrons la même chose, mais ce sera un peu plus utile.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> vim hello.rb
+<code class="gp">$</code> git diff
+<code class="go">diff --cc hello.rb</code>
+<code class="go">index 0399cd5,59727f0..0000000</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@@ -1,7 -1,7 +1,7 @@@</code>
+<code class="go">  #! /usr/bin/env ruby</code>
+
+<code class="go">  def hello</code>
+<code class="go">-   puts 'hola world'</code>
+<code class="go"> -  puts 'hello mundo'</code>
+<code class="go">++  puts 'hola mundo'</code>
+<code class="go">  end</code>
+
+<code class="go">  hello()</code>
+</pre>
+
+<p>Ceci nous montre que « hola world » était présent de notre côté mais pas dans la copie de travail, que « hello mundo » était présent de l’autre côté mais pas non plus dans la copie de travail et que finalement, « hola mundo » n’était dans aucun des deux côtés, mais se trouve dans la copie de travail.
+C’est particulièrement utile lors d’une revue avant de valider le résolution.</p>
+
+<p>Vous pouvez aussi l’obtenir depuis <code>git log</code> pour toute fusion pour visualiser comment quelque chose a été résolu après coup.
+Git affichera se format si vous lancez <code>git show</code> sur un <em>commit</em> de fusion, ou si vous ajoutez une option <code>--cc</code> à <code>git log -p</code> (qui ne montre les patchs par défaut que pour les <em>commits</em> qui ne sont pas des fusions).</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --cc -p -1
+<code class="go">commit 14f41939956d80b9e17bb8721354c33f8d5b5a79</code>
+<code class="go">Merge: f1270f7 e3eb223</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Fri Sep 19 18:14:49 2014 +0200</code>
+
+<code class="go">    Merge branch 'mundo'</code>
+
+<code class="go">    Conflicts:</code>
+<code class="go">        hello.rb</code>
+
+<code class="go">diff --cc hello.rb</code>
+<code class="go">index 0399cd5,59727f0..e1d0799</code>
+<code class="go">--- a/hello.rb</code>
+<code class="go">+++ b/hello.rb</code>
+<code class="go">@@@ -1,7 -1,7 +1,7 @@@</code>
+<code class="go">  #! /usr/bin/env ruby</code>
+
+<code class="go">  def hello</code>
+<code class="go">-   puts 'hola world'</code>
+<code class="go"> -  puts 'hello mundo'</code>
+<code class="go">++  puts 'hola mundo'</code>
+<code class="go">  end</code>
+
+<code class="go">  hello()</code>
+</pre>
+</section></section><section data-type="sect2" id="_undoing_merges"><h3 id="Défaire-des-fusions"><a href="#Défaire-des-fusions">Défaire des fusions</a></h3>
+
+<p>Comme vous savez créer des <em>commits</em> de fusion à présent, vous allez certainement en faire par erreur.
+Un des grands avantages de l’utilisation de Git est qu’il n’est pas interdit de faire des erreurs, parce qu’il reste toujours possible (et très souvent facile) de les corriger.</p>
+
+<p>Les <em>commits</em> de fusion ne font pas exception.
+Supposons que vous avez commencé à travailler sur une branche thématique, que vous l’avez accidentellement fusionnée dans <code>master</code> et qu’en conséquence votre historique ressemble à ceci :</p>
+
+<figure id="id-woYnfK"><img src="/book/en/v2/book/07-git-tools/images/undomerge-start.png" alt="_Commit_ de fusion accidentel."><figcaption><span class="label">Figure 7-20. </span><em>Commit</em> de fusion accidentel</figcaption></figure><p>Il existe deux façons d’aborder ce problème, en fonction du résultat que vous en attendez.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="correction-des-references-PmzpFk"><h4>Correction des références</h4>
+
+<p>Si le <em>commit</em> de fusion non désiré n’existe que dans votre dépôt local, la solution la plus simple et la meilleure consiste à déplacer les branches pour qu’elles pointent où on le souhaite.
+La plupart du temps, en faisant suivre le <code>git merge</code> malencontreux par un <code>git reset --hard HEAD~</code>, on remet les pointeurs de branche dans l’état suivant :</p>
+
+<figure id="id-oE84hP"><img src="/book/en/v2/book/07-git-tools/images/undomerge-reset.png" alt="Historique après `git reset --hard HEAD~`."><figcaption><span class="label">Figure 7-21. </span>Historique après <code>git reset --hard HEAD~</code></figcaption></figure><p>Nous avons détaillé <code>reset</code> dans <a data-type="xref" href="ch00/_git_reset">Reset démystifié</a> et il ne devrait pas être très difficile de comprendre ce résultat.
+Voici néanmoins un petit rappel : <code>reset --hard</code> réalise généralement trois étapes :</p>
+<ol>
+<li>
+<p>Déplace le branche pointée par HEAD ;
+Dans notre cas, nous voulons déplacer <code>master</code> sur son point avant la fusion (<code>C6</code>),</p>
+</li>
+<li>
+<p>Faire ressembler l’index à HEAD,</p>
+</li>
+<li>
+<p>Faire ressembler le répertoire de travail à l’index.</p>
+</li>
+
+</ol>
+<p>Le défaut de cette approche est qu’elle ré-écrit l’historique, ce qui peut être problématique avec un dépôt partagé.
+Reportez-vous à <a data-type="xref" href="1-git-branching/_rebase_peril">Les dangers du rebasage</a> pour plus d’information ; en résumé si d’autres personnes ont déjà les <em>commits_c que vous ré-écrivez, il vaudrait mieux éviter un <code>reset</code>
+Cette approche ne fonctionnera pas non plus si d’autres _commits</em> ont été créés depuis la fusion ; déplacer les références des branches éliminera effectivement ces modifications.</p>
+</section><section data-type="sect3" id="_reverse_commit"><h4>Inverser le <em>commit</em>
+</h4>
+
+<p>Si les déplacements des pointeurs de branche ne sont pas envisageables, Git vous donne encore l’option de créer un nouveau <em>commit</em> qui défait toutes les modifications d’un autre déjà existant.
+Git appelle cette option une « inversion » (<em>revert</em>), et dans ce scénario particulier, vous l’invoqueriez comme ceci :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git revert -m <code class="m">1</code> HEAD
+<code class="go">[master b1d8379] Revert "Merge branch 'topic'"</code>
+</pre>
+
+<p>L’option <code>-m 1</code> indique quel parent est le principal et devrait être conservé.
+Si vous invoquez une fusion dans <code>HEAD</code> (<code>git merge topic</code>), le nouveau <em>commit</em> a deux parents : le premier est <code>HEAD</code> (<code>C6</code>), et le second est le sommet de la branche en cours de fusion (<code>C4</code>).
+Dans ce cas, nous souhaitons défaire toutes les modifications introduites dans le parent numéro 2 (<code>C4</code>), tout en conservant tout le contenu du parent numéro 1 (<code>C6</code>).</p>
+
+<p>L’historique avec le <em>commit</em> d’inversion ressemble à ceci :</p>
+
+<figure id="id-7JZNTn"><img src="/book/en/v2/book/07-git-tools/images/undomerge-revert.png" alt="Historique après `git revert -m 1`."><figcaption><span class="label">Figure 7-22. </span>Historique après <code>git revert -m 1</code></figcaption></figure><p>Le nouveau <em>commit</em> <code>^M</code> a exactement le même contenu que <code>C6</code>, et partant de là, c’est comme si la fusion n’avait pas eu lieu, mis à part que les <em>commits</em> qui ne sont plus fusionnés sont toujours dans l’historique de <code>HEAD</code>.
+Git sera confus si vous tentez de re-fusionner <code>topic</code> dans <code>master</code> :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge topic
+<code class="go">Already up-to-date.</code>
+</pre>
+
+<p>Il n’y a rien dans <code>topic</code> qui ne soit pas déjà joignable depuis <code>master</code>.
+Pire encore, il vous ajoutez du travail à <code>topic</code> et re-fusionnez, Git n’ajoutera que les modifications <em>depuis</em> la fusion inversée :</p>
+
+<figure id="id-moKoCK"><img src="/book/en/v2/book/07-git-tools/images/undomerge-revert2.png" alt="Historique avec une mauvaise fusion."><figcaption><span class="label">Figure 7-23. </span>Historique avec une mauvaise fusion</figcaption></figure><p>Le meilleur contournement de ceci est de dé-inverser la fusion originale, puisque vous voulez ajouter les modifications qui ont été annulées, <strong>puis</strong> de créer un nouveau <em>commit</em> de fusion :</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git revert ^M
+<code class="go">[master 09f0126] Revert "Revert "Merge branch 'topic'""</code>
+<code class="gp">$</code> git merge topic
+</pre>
+
+<figure id="id-ZV7nT1"><img src="/book/en/v2/book/07-git-tools/images/undomerge-revert3.png" alt="Historique après re-fusion de la fusion annulée."><figcaption><span class="label">Figure 7-24. </span>Historique après re-fusion de la fusion annulée</figcaption></figure><p>Dans cet exemple, <code>M</code> et <code>^M</code> s’annulent.
+<code>^^M</code> fusionne effectivement les modifications depuis <code>C3</code> et <code>C4</code>, et <code>C8</code> fusionne les modifications depuis <code>C7</code>, donc à présent, <code>topic</code> est totalement fusionnée.</p>
+</section></section><section data-type="sect2" id="autres-types-de-fusions-z9nbSw"><h3 id="Autres-types-de-fusions"><a href="#Autres-types-de-fusions">Autres types de fusions</a></h3>
+
+<p>Jusqu’ici, nous avons traité les fusions normales entre deux branches qui ont été gérées normalement avec ce qui s’appelle la stratégie « récursive » de fusion.
+Il existe cependant d’autres manières de fusionner des branches.
+Traitons en quelques unes rapidement.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="preference-our-ou-theirs-YKV4fv"><h4>Préférence <em>our</em> ou <em>theirs</em>
+</h4>
+
+<p>Premièrement, il existe un autre mode utile que nous pouvons utiliser avec le mode « recursive » normal de fusion.
+Nous avons déjà vu les options <code>ignore-all-space</code> et <code>ignore-space-change</code> qui sont passées avec <code>-X</code> mais nous pouvons aussi indiquer à Git de favoriser un côté plutôt que l’autre lorsqu’il rencontre un conflit.</p>
+
+<p>Par défaut, quand Git rencontre un conflit entre deux branches en cours de fusion, il va ajouter des marqueurs de conflit de fusion dans le code et marquer le fichier en conflit pour vous laisser le résoudre.
+Si vous préférez que Git choisisse simplement un côté spécifique et qu’il ignore l’autre côté au lieu de vous laisser fusionner manuellement le conflit, vous pouvez passer <code>-Xours</code> ou -Xtheirs` à la commande <code>merge</code>.</p>
+
+<p>Si une des option est spécifiée, Git ne va pas ajouter de marqueurs de conflit.
+Toutes les différences qui peuvent être fusionnées seront fusionnées.
+Pour toutes les différences qui génèrent un conflit, Git choisira simplement la version du côté que vous avez spécifié, y compris pour les fichiers binaires.</p>
+
+<p>Si nous retournons à l’exemple « hello world » précédent, nous pouvons voir que la fusion provoque des conflits.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge mundo
+<code class="go">Fusion automatique de  hello.rb</code>
+<code class="go">CONFLIT (contenu): Conflit de fusion dans hello.rb</code>
+<code class="go">La fusion automatique a échoué ; réglez les conflits et validez le résultat.</code>
+</pre>
+
+<p>Cependant, si nous la lançons avec <code>-Xours</code> ou <code>-Xtheirs</code>, elle n’en provoque pas.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge -Xours mundo
+<code class="go">Fusion automatique de hello.rb</code>
+<code class="go">Merge made by the 'recursive' strategy.</code>
+<code class="go"> hello.rb | 2 +-</code>
+<code class="go"> test.sh  | 2 ++</code>
+<code class="go"> 2 files changed, 3 insertions(+), 1 deletion(-)</code>
+<code class="go"> create mode 100644 test.sh</code>
+</pre>
+
+<p>Dans ce dernier cas, au lieu d’obtenir des marqueurs de conflit dans le fichier avec « hello mundo » d’un côté et « hola world » de l’autre, Git choisira simplement « hola world ».
+À part cela, toutes les autres modifications qui ne génèrent pas de conflit sont fusionnées sans problème.</p>
+
+<p>Cette option peut aussi être passée à la commande <code>git merge-file</code> que nous avons utilisé plus tôt en lançant quelque chose comme <code>git merge-file --ours</code> pour les fusions de fichiers individuels.</p>
+
+<p>Si vous voulez faire quelque chose similaire mais indiquer à Git de ne même pas essayer de fusionner les modifications de l’autre côté, il existe une option draconienne qui s’appelle la « stratégie » de fusion « <em>ours</em> ».</p>
+
+<p>Cela réalisera une fusion factice.
+Cela enregistrera un nouveau <em>commit</em> de fusion avec les deux branches comme parents, mais ne regardera même pas la branche en cours de fusion.
+Cela enregistrera simplement le code exact de la branche courante comme résultat de la fusion.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge -s ours mundo
+<code class="go">Merge made by the 'ours' strategy.</code>
+<code class="gp">$</code> git diff HEAD HEAD~
+<code class="gp">$</code>
+</pre>
+
+<p>Vous pouvez voir qu’il n’y a pas de différence entre la branche sur laquelle nous étions précédemment et le résultat de la fusion.</p>
+
+<p>Cela peut s’avérer utile pour faire croire à Git qu’une branche est déjà fusionnée quand on fusionne plus tard.
+Par exemple, disons que vous avez créé une branche depuis une branche « release » et avez travaillé dessus et que vous allez vouloir réintégrer ce travail dans <code>master</code>.
+Dans l’intervalle, les correctifs de <code>master</code> doivent être reportés dans la branche <code>release</code>.
+Vous pouvez fusionner la branche de correctif dans la branche <code>release</code> et aussi faire un <code>merge -s ours</code> de cette branche dans la branche <code>master</code> (même si le correctif est déjà présent) de sorte que lorsque fusionnerez plus tard la branche <code>release</code> , il n’y aura pas de conflit dû au correctif.</p>
+</section><section data-type="sect3" id="_subtree_merge"><h4>Subtree Merging</h4>
+
+<p>The idea of the subtree merge is that you have two projects, and one of the projects maps to a subdirectory of the other one and vice versa.
+When you specify a subtree merge, Git is often smart enough to figure out that one is a subtree of the other and merge appropriately.</p>
+
+<p>We’ll go through an example of adding a seperate project into an existing project and then merging the code of the second into a subdirectory of the first.</p>
+
+<p>First, we’ll add the Rack application to our project.
+We’ll add the Rack project as a remote reference in our own project and then check it out into its own branch:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add rack_remote https://github.com/rack/rack
+<code class="gp">$</code> git fetch rack_remote
+<code class="go">warning: no common commits</code>
+<code class="go">remote: Counting objects: 3184, done.</code>
+<code class="go">remote: Compressing objects: 100% (1465/1465), done.</code>
+<code class="go">remote: Total 3184 (delta 1952), reused 2770 (delta 1675)</code>
+<code class="go">Receiving objects: 100% (3184/3184), 677.42 KiB | 4 KiB/s, done.</code>
+<code class="go">Resolving deltas: 100% (1952/1952), done.</code>
+<code class="go">From https://github.com/rack/rack</code>
+<code class="go"> * [new branch]      build      -&gt; rack_remote/build</code>
+<code class="go"> * [new branch]      master     -&gt; rack_remote/master</code>
+<code class="go"> * [new branch]      rack-0.4   -&gt; rack_remote/rack-0.4</code>
+<code class="go"> * [new branch]      rack-0.9   -&gt; rack_remote/rack-0.9</code>
+<code class="gp">$</code> git checkout -b rack_branch rack_remote/master
+<code class="go">Branch rack_branch set up to track remote branch refs/remotes/rack_remote/master.</code>
+<code class="go">Switched to a new branch "rack_branch"</code>
+</pre>
+
+<p>Now we have the root of the Rack project in our <code>rack_branch</code> branch and our own project in the <code>master</code> branch.
+If you check out one and then the other, you can see that they have different project roots:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> ls
+<code class="go">AUTHORS         KNOWN-ISSUES   Rakefile      contrib         lib</code>
+<code class="go">COPYING         README         bin           example         test</code>
+<code class="gp">$</code> git checkout master
+<code class="go">Switched to branch "master"</code>
+<code class="gp">$</code> ls
+<code class="go">README</code>
+</pre>
+
+<p>This is sort of a strange concept. Not all the branches in your repository actually have to be branches of the same project. It’s not common, because it’s rarely helpful, but it’s fairly easy to have branches contain completely different histories.</p>
+
+<p>In this case, we want to pull the Rack project into our <code>master</code> project as a subdirectory.
+We can do that in Git with <code>git read-tree</code>.
+You’ll learn more about <code>read-tree</code> and its friends in <a data-type="xref" href="1-git-internals/_git_internals">Les tripes de Git</a>, but for now know that it reads the root tree of one branch into your current staging area and working directory.
+We just switched back to your <code>master</code> branch, and we pull the <code>rack</code> branch into the <code>rack</code> subdirectory of our <code>master</code> branch of our main project:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git <code class="nb">read</code>-tree --prefix<code class="o">=</code>rack/ -u rack_branch
+</pre>
+
+<p>When we commit, it looks like we have all the Rack files under that subdirectory – as though we copied them in from a tarball.
+What gets interesting is that we can fairly easily merge changes from one of the branches to the other.
+So, if the Rack project updates, we can pull in upstream changes by switching to that branch and pulling:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout rack_branch
+<code class="gp">$</code> git pull
+</pre>
+
+<p>Then, we can merge those changes back into our <code>master</code> branch.
+We can use <code>git merge -s subtree</code> and it will work fine; but Git will also merge the histories together, which we probably don’t want.
+To pull in the changes and prepopulate the commit message, use the <code>--squash</code> and <code>--no-commit</code> options as well as the <code>-s subtree</code> strategy option:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="gp">$</code> git merge --squash -s subtree --no-commit rack_branch
+<code class="go">Squash commit -- not updating HEAD</code>
+<code class="go">Automatic merge went well; stopped before committing as requested</code>
+</pre>
+
+<p>All the changes from the Rack project are merged in and ready to be committed locally.
+You can also do the opposite – make changes in the <code>rack</code> subdirectory of your master branch and then merge them into your <code>rack_branch</code> branch later to submit them to the maintainers or push them upstream.</p>
+
+<p>This gives us a way to have a workflow somewhat similar to the submodule workflow without using submodules (which we will cover in <a data-type="xref" href="ch00/_git_submodules">Sous-modules</a>). We can keep branches with other related projects in our repository and subtree merge them into our project occasionally. It is nice in some ways, for example all the code is committed to a single place. However, it has other drawbacks in that it’s a bit more complex and easier to make mistakes in reintegrating changes or accidentally pushing a branch into an unrelated repository.</p>
+
+<p>Another slightly weird thing is that to get a diff between what you have in your <code>rack</code> subdirectory and the code in your <code>rack_branch</code> branch – to see if you need to merge them – you can’t use the normal <code>diff</code> command.
+Instead, you must run <code>git diff-tree</code> with the branch you want to compare to:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff-tree -p rack_branch
+</pre>
+
+<p>Or, to compare what is in your <code>rack</code> subdirectory with what the <code>master</code> branch on the server was the last time you fetched, you can run</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff-tree -p rack_remote/master
+</pre>
+</section></section><div id="nav"><a href="/book/fr/Utilitaires-Git-Reset-d%C3%A9mystifi%C3%A9">prev</a> | <a href="/book/fr/v2/Utilitaires-Git-Rerere">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":5,"applicationTime":283,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git の属性</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B">使い始める</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">バージョン管理に関して</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E7%95%A5%E5%8F%B2">Git略史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E5%9F%BA%E6%9C%AC">Gitの基本</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Gitのインストール</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90">最初のGitの構成</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%98%E3%83%AB%E3%83%97%E3%82%92%E8%A6%8B%E3%82%8B">ヘルプを見る</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC">Git の基本</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git リポジトリの取得</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%B8%E3%81%AE%E8%A8%98%E9%8C%B2">変更内容のリポジトリへの記録</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4%E3%81%AE%E9%96%B2%E8%A6%A7">コミット履歴の閲覧</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E4%BD%9C%E6%A5%AD%E3%81%AE%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%97">作業のやり直し</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD">リモートでの作業</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%BF%E3%82%B0">タグ</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%92%E3%83%B3%E3%83%88%E3%81%A8%E8%A3%8F%E6%8A%80">ヒントと裏技</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ja/v1/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD">Git のブランチ機能</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">ブランチとは</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC">ブランチとマージの基本</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E7%AE%A1%E7%90%86">ブランチの管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">ブランチでの作業の流れ</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">リモートブランチ</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9">リベース</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">Git サーバー</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">プロトコル</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%94%A8%E3%81%AE-Git-%E3%81%AE%E5%8F%96%E5%BE%97">サーバー用の Git の取得</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-SSH-%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E4%BD%9C%E6%88%90">SSH 公開鍵の作成</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">サーバーのセットアップ</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E4%B8%80%E8%88%AC%E5%85%AC%E9%96%8B">一般公開</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3">Git デーモン</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%81%AE%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">Git のホスティング</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/ja/v1/Git-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD">Git での分散作業</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">分散作業の流れ</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E9%81%8B%E5%96%B6">プロジェクトの運営</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ja/v1/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB">Git のさまざまなツール</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">リビジョンの選択</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0">対話的なステージング</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E3%82%92%E9%9A%A0%E3%81%99">作業を隠す</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88">歴史の書き換え</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">Git によるデバッグ</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">サブモジュール</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%84%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B8">サブツリーマージ</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA">Git のカスタマイズ</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git の設定</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E5%B1%9E%E6%80%A7">Git の属性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">Git フック</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E5%AE%9F%E6%96%BD%E4%BE%8B">Git ポリシーの実施例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA">Gitとその他のシステムの連携</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%A8-Subversion">Git と Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C">Git への移行</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ja/v1/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4">Gitの内側</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">配管（Plumbing）と磁器（Porcelain）</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">Gitオブジェクト</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%81%AE%E5%8F%82%E7%85%A7">Gitの参照</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">パックファイル</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E5%8F%82%E7%85%A7%E4%BB%95%E6%A7%98%EF%BC%88Refspec%EF%BC%89">参照仕様（Refspec）</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">トランスファープロトコル</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA">メインテナンスとデータリカバリ</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/ja/v1/Git%E3%81%AE%E5%86%85%E5%81%B4-%E8%A6%81%E7%B4%84">要約</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>7.2 Git のカスタマイズ - Git の属性</h1>
+  <div><h2>Git の属性</h2>
+
+<p>設定項目の中には、パスにも指定できるものがあります。Git はその設定を、指定したパスのサブディレクトリやファイルにのみ適用するのです。これらのパス固有の設定は Git の属性と呼ばれ、あるディレクトリ (通常はプロジェクトのルートディレクトリ) の直下の <code>.gitattributes</code> か、あるいはそのファイルをプロジェクトとともにコミットしたくない場合は <code>.git/info/attributes</code> に設定します。</p>
+
+<p>属性を使うと、ファイルやディレクトリ単位で個別のマージ戦略を指定したりテキストファイル以外での diff の取得方法を指示したり、あるいはチェックインやチェックアウトの前に Git にフィルタリングさせたりすることができます。このセクションでは、Git プロジェクトでパスに設定できる属性のいくつかについて学び、実際にその機能を使う例を見ていきます。</p>
+
+<h3 id="バイナリファイル"><a href="#バイナリファイル">バイナリファイル</a></h3>
+
+<p>Git の属性を使ってできるちょっとした技として、どのファイルがバイナリファイルなのかを (その他の方法で判別できない場合のために) 指定して Git に対してバイナリファイルの扱い方を指示するというものがあります。たとえば、機械で生成したテキストファイルの中には diff が取得できないものがありますし、バイナリファイルであっても diff が取得できるものもあります。それを Git に指示する方法を紹介します。</p>
+
+<h4>バイナリファイルの特定</h4>
+
+<p>テキストファイルのように見えるファイルであっても、何らかの目的のために意図的にバイナリデータとして扱いたいこともあります。たとえば、Mac の Xcode プロジェクトの中には <code>.pbxproj</code> で終わる名前のファイルがあります。これは JSON (プレーンテキスト形式の javascript のデータフォーマット) のデータセットで、IDE がビルド設定などをディスクに書き出したものです。すべて ASCII で構成されるので、理論上はこれはテキストファイルです。しかしこのファイルをテキストファイルとして扱いたくはありません。実際のところ、このファイルは軽量なデータベースとして使われているからです。他の人が変更した内容をマージすることはできませんし、diff をとってもあまり意味がありません。このファイルは、基本的に機械が処理するものなのです。要するに、バイナリファイルと同じように扱いたいということです。</p>
+
+<p>すべての <code>pbxproj</code> ファイルをバイナリデータとして扱うよう Git に指定するには、次の行を <code>.gitattributes</code> ファイルに追加します。</p>
+
+<pre><code>*.pbxproj -crlf -diff
+</code></pre>
+
+<p>これで、Git が CRLF 問題の対応をすることもなくなりますし、<code>git show</code> や <code>git diff</code> を実行したときにもこのファイルの diff を調べることはなくなります。また､次のようなマクロ<code>binary</code>を使うこともできます。これは <code>-crlf -diff</code> と同じ意味です。</p>
+
+<pre><code>*.pbxproj binary
+</code></pre>
+
+<h4>バイナリファイルの差分</h4>
+
+<p>Gitでは、バイナリファイルの差分を効果的に扱うためにGitの属性機能を使うことができます。通常のdiff機能を使って比較を行うことができるように、バイナリデータをテキストデータに変換する方法をGitに教えればいいのです。ただし問題があります。<em>バイナリ</em>データをどうやってテキストに変換するか？ということです。この場合、一番いい方法はバイナリファイル形式ごとに専用の変換ツールを使うことです。とはいえ、判読可能なテキストに変換可能なバイナリファイル形式はそう多くありません(音声データをテキスト形式に変換？うまくいかなさそうです...)。ただ、仮にそういった事例に出くわしデータをテキスト形式にできなかったとしても、ファイルの内容についての説明、もしくはメタデータを取得することはそれほど難しくないでしょう。もちろん、そのファイルについての全てがメタデータから読み取れるわけではありませんが、何もないよりはよっぽどよいはずです。</p>
+
+<p>これから、上述の2手法を用い、よく使われてるバイナリファイル形式から有用な差分を取得する方法を説明します。</p>
+
+<p>補足： バイナリファイル形式で、かつデータがテキストで記述されているけれど、テキスト形式に変換するためのツールがないケースがよくあります。そういった場合、<code>strings</code> プログラムを使ってそのファイルからテキストを抽出できるかどうか、試してみるとよいでしょう。UTF-16 などのエンコーディングで記述されている場合だと、<code>strings</code> プログラムではうまくいかないかもしれません。どこまで変換できるかはケースバイケースでしょう。とはいえ、<code>strings</code> プログラムは 大半の Mac と Linux で使えるので、バイナリファイル形式を取り扱う最初の一手としては十分でしょう。</p>
+
+<h5>MS Word ファイル</h5>
+
+<p>あなたはまずこれらのテクニックを使って、人類にとって最も厄介な問題のひとつ、Wordで作成した文書のバージョン管理を解決したいと思うでしょう。奇妙なことに、Wordは最悪のエディタだと全ての人が知っているにも係わらず、皆がWordを使っています。Word文書をバージョン管理したいと思ったなら、Gitのリポジトリにそれらを追加して、まとめてコミットすればいいのです。しかし、それでいいのでしょうか？ あなたが <code>git diff</code> をいつも通りに実行すると、次のように表示されるだけです。</p>
+
+<pre><code>$ git diff
+diff --git a/chapter1.doc b/chapter1.doc
+index 88839c4..4afcb7c 100644
+Binary files a/chapter1.doc and b/chapter1.doc differ
+</code></pre>
+
+<p>これでは2つのバージョンをcheckoutしてそれらを自分で見比べてみない限り、比較することは出来ませんよね？ Gitの属性を使えば、うまく解決できます。<code>.gitattributes</code>に次の行を追加して下さい。</p>
+
+<pre><code>*.doc diff=word
+</code></pre>
+
+<p>これは、指定したパターン(.doc)にマッチした全てのファイルに対して、差分を表示する時には&quot;word&quot;というフィルタを使うべきであるとGitに教えているのです。&quot;word&quot;フィルタとは何でしょうか？ それはあなたが用意しなければなりません。Word文書をテキストファイルに変換するプログラムとして <code>catdoc</code> を使うように次のようにGitを設定してみましょう。なお、<code>catdoc</code> とは、差分を正しく表示するために、Word文書からテキストを取り出す専用のツール( <code>http://www.wagner.pp.ru/~vitus/software/catdoc/</code> からダウンロードできます。)です。</p>
+
+<pre><code>$ git config diff.word.textconv catdoc
+</code></pre>
+
+<p>このコマンドは、<code>.git/config</code> に次のようなセクションを追加します。</p>
+
+<pre><code>[diff &quot;word&quot;]
+    textconv = catdoc
+</code></pre>
+
+<p>これで、<code>.doc</code> という拡張子をもったファイルはそれぞれのファイルに <code>catdoc</code> というプログラムとして定義された&quot;word&quot;フィルタを通してからdiffを取るべきだということをGitは知っていることになります。こうすることで、Wordファイルに対して直接差分を取るのではなく、より効果的なテキストベースでの差分を取ることができるようになります。</p>
+
+<p>例を示しましょう。この本の第1章をGitリポジトリに登録した後、ある段落にいくつかの文章を追加して保存し、それから、変更箇所を確認するために<code>git diff</code>を実行しました。</p>
+
+<pre><code>$ git diff
+diff --git a/chapter1.doc b/chapter1.doc
+index c1c8a0a..b93c9e4 100644
+--- a/chapter1.doc
++++ b/chapter1.doc
+@@ -128,7 +128,7 @@ and data size)
+ Since its birth in 2005, Git has evolved and matured to be easy to use
+ and yet retain these initial qualities. It’s incredibly fast, it’s
+ very efficient with large projects, and it has an incredible branching
+-system for non-linear development.
++system for non-linear development (See Chapter 3).
+</code></pre>
+
+<p>Gitは、追加した&quot;(See Chapter 3)&quot;という文字列を首尾よく、かつ、簡潔に知らせてくれました。正確で、申し分のない動作です！</p>
+
+<h5>OpenDocument Text ファイル</h5>
+
+<p>MS Word ファイル (<code>*.doc</code>) と同じ考えかたで、OpenOffice.org の OpenDocument Text ファイル (<code>*.odt</code>) も扱えます。</p>
+
+<p>次の行を <code>.gitattributes</code> ファイルに追加しましょう。</p>
+
+<pre><code>*.odt diff=odt
+</code></pre>
+
+<p>そして、<code>odt</code> diff フィルタを <code>.git/config</code> に追加します。</p>
+
+<pre><code>[diff &quot;odt&quot;]
+    binary = true
+    textconv = /usr/local/bin/odt-to-txt
+</code></pre>
+
+<p>OpenDocument ファイルの正体は zip で、複数のファイル (XML 形式のコンテンツやスタイルシート、画像など) を含むディレクトリをまとめたものです。このコンテンツを展開し、プレーンテキストとして返すスクリプトが必要です。<code>/usr/local/bin/odt-to-txt</code> というファイルを作って (ディレクトリはどこでもかまいません)、次のような内容を書きましょう。</p>
+
+<pre><code>#! /usr/bin/env perl
+# Simplistic OpenDocument Text (.odt) to plain text converter.
+# Author: Philipp Kempgen
+
+if (! defined($ARGV[0])) {
+    print STDERR &quot;No filename given!\n&quot;;
+    print STDERR &quot;Usage: $0 filename\n&quot;;
+    exit 1;
+}
+
+my $content = &#39;&#39;;
+open my $fh, &#39;-|&#39;, &#39;unzip&#39;, &#39;-qq&#39;, &#39;-p&#39;, $ARGV[0], &#39;content.xml&#39; or die $!;
+{
+    local $/ = undef;  # slurp mode
+    $content = &lt;$fh&gt;;
+}
+close $fh;
+$_ = $content;
+s/&lt;text:span\b[^&gt;]*&gt;//g;           # remove spans
+s/&lt;text:h\b[^&gt;]*&gt;/\n\n*****  /g;   # headers
+s/&lt;text:list-item\b[^&gt;]*&gt;\s*&lt;text:p\b[^&gt;]*&gt;/\n    --  /g;  # list items
+s/&lt;text:list\b[^&gt;]*&gt;/\n\n/g;       # lists
+s/&lt;text:p\b[^&gt;]*&gt;/\n  /g;          # paragraphs
+s/&lt;[^&gt;]+&gt;//g;                      # remove all XML tags
+s/\n{2,}/\n\n/g;                   # remove multiple blank lines
+s/\A\n+//;                         # remove leading blank lines
+print &quot;\n&quot;, $_, &quot;\n\n&quot;;
+</code></pre>
+
+<p>そして実行権限をつけます。</p>
+
+<pre><code>chmod +x /usr/local/bin/odt-to-txt
+</code></pre>
+
+<p>これで、<code>git diff</code> で <code>.odt</code> ファイルの変更点を確認できるようになりました。</p>
+
+<h5>画像ファイル</h5>
+
+<p>その他の興味深い問題としては画像ファイルの差分があります。PNGファイルに対するひとつの方法としては、EXIF情報(多くのファイルでメタデータとして使われています)を抽出するフィルタを使う方法です。<code>exiftool</code>をダウンロードしインストールすれば、画像データをメタデータの形でテキストデータとして扱うことができます。従って、次のように設定すれば、画像データの差分をメタデータの差分という形で表示することができます。</p>
+
+<pre><code>$ echo &#39;*.png diff=exif&#39; &gt;&gt; .gitattributes
+$ git config diff.exif.textconv exiftool
+</code></pre>
+
+<p>上記の設定をしてからプロジェクトで画像データを置き換えて<code>git diff</code>と実行すれば、次のように表示されることになるでしょう。</p>
+
+<pre><code>diff --git a/image.png b/image.png
+index 88839c4..4afcb7c 100644
+--- a/image.png
++++ b/image.png
+@@ -1,12 +1,12 @@
+ ExifTool Version Number         : 7.74
+-File Size                       : 70 kB
+-File Modification Date/Time     : 2009:04:17 10:12:35-07:00
++File Size                       : 94 kB
++File Modification Date/Time     : 2009:04:21 07:02:43-07:00
+ File Type                       : PNG
+ MIME Type                       : image/png
+-Image Width                     : 1058
+-Image Height                    : 889
++Image Width                     : 1056
++Image Height                    : 827
+ Bit Depth                       : 8
+ Color Type                      : RGB with Alpha
+</code></pre>
+
+<p>ファイルのサイズと画像のサイズが変更されたことが簡単に見て取れるでしょう。</p>
+
+<h3 id="キーワード展開"><a href="#キーワード展開">キーワード展開</a></h3>
+
+<p>SubversionやCVSを使っていた開発者から、キーワード展開機能をリクエストされることがよくあります。これについてGitにおける主な問題は、Gitはまずファイルのチェックサムを生成するためにcommitした後にファイルに関する情報を変更できないという点です。しかし、commitするためにaddする前にファイルをcheckoutしremoveするという手順を踏めば、その時にファイルにテキストを追加することが可能です。Gitの属性はそうするための方法を2つ提供します。</p>
+
+<p>ひとつめの方法として、ファイルの<code>$Id$</code>フィールドを自動的にblobのSHA-1 checksumを挿入するようにできます。あるファイル、もしくはいくつかのファイルに対してこの属性を設定すれば、次にcheckoutする時、Gitはこの置き換えを行うようになるでしょう。ただし、挿入されるチェックサムはcommitに対するものではなく、対象となるblobものであるという点に注意して下さい。</p>
+
+<pre><code>$ echo &#39;*.txt ident&#39; &gt;&gt; .gitattributes
+$ echo &#39;$Id$&#39; &gt; test.txt
+</code></pre>
+
+<p>次にtest.txtをcheckoutする時、GitはSHA-1チェックサムを挿入します。</p>
+
+<pre><code>$ rm test.txt
+$ git checkout -- test.txt
+$ cat test.txt
+$Id: 42812b7653c7b88933f8a9d6cad0ca16714b9bb3 $
+</code></pre>
+
+<p>しかし、このやりかたには制限があります。CVSやSubversionのキーワード展開ではタイムスタンプを含めることができます。対して、SHA-1チェックサムは完全にランダムな値ですから、2つの値の新旧を知るための助けにはなりません。</p>
+
+<p>これには、commit/checkout時にキーワード展開を行うためのフィルタを書いてやることで対応できます。このために&quot;clean&quot;と&quot;smudge&quot;フィルタがあります。特定のファイルに対して使用するフィルタを設定し、checkoutされる前(&quot;smudge&quot; 図7-2参照)もしくはcommitされる前(&quot;clean&quot; 図7-3参照)に指定したスクリプトが実行させるよう、<code>.gitattributes</code>ファイルで設定できます。これらのフィルタはあらゆる種類の面白い内容を実行するように設定できます。</p>
+
+<p><center><img src="/figures/18333fig0702-tn.png"></center><br/>
+図7-2. checkoutする時に&quot;smudge&quot;フィルタを実行する</p>
+
+<p><center><img src="/figures/18333fig0703-tn.png"></center><br/>
+図7-3. ステージする時に&quot;clean&quot;フィルタを実行する。</p>
+
+<p>この機能に対してオリジナルのcommitメッセージは簡単な例を与えてくれています。それはcommit前にあなたのCのソースコードを<code>indent</code>プログラムに通すというものです。<code>*.c</code>ファイルに対して&quot;indent&quot;フィルタを実行するように、<code>.gitattributes</code>ファイルにfilter属性を設定することができます。</p>
+
+<pre><code>*.c     filter=indent
+</code></pre>
+
+<p>それから、smudgeとcleanで&quot;indent&quot;フィルタが何を行えばいいのかをGitに教えます。</p>
+
+<pre><code>$ git config --global filter.indent.clean indent
+$ git config --global filter.indent.smudge cat
+</code></pre>
+
+<p>このケースでは、<code>*.c</code>にマッチするファイルをcommitした時、Gitはcommit前にindentプログラムにファイルを通し、checkoutする前には<code>cat</code>を通すようにします。<code>cat</code>は基本的に何もしません。入力されたデータと同じデータを吐き出すだけです。この組み合わせでCのソースコードに対してcommit前に<code>indent</code>を通すことが効果的に行えます。</p>
+
+<p>RCSスタイルの<code>$Date$</code>キーワード展開もまた別の興味深い例です。満足のいく形でこれを行うには、ファイル名を受け取って、プロジェクトの最新のcommitの日付を見付けだし、その日付をファイルに挿入するちょっとしたスクリプトが必要になります。そのようなRubyスクリプトが以下です。</p>
+
+<pre><code>#! /usr/bin/env ruby
+data = STDIN.read
+last_date = `git log --pretty=format:&quot;%ad&quot; -1`
+puts data.gsub(&#39;$Date$&#39;, &#39;$Date: &#39; + last_date.to_s + &#39;$&#39;)
+</code></pre>
+
+<p>このスクリプトは、<code>git log</code>コマンドの出力から最新のcommitの日付を取得し、標準入力からの入力中のすべての<code>$Date$</code>文字列にその日付を追加し、結果を表示します。あなたのお気に入りのどのような言語でスクリプトを書くにしても、簡潔にすべきです。このスクリプトファイルに<code>expand_date</code>と名前をつけ、実行パスのどこかに置きます。次に、Gitが使うフィルタ(<code>dater</code>と呼びましょうか)を設定し、checkout時に<code>expand_date</code>が実行されるようにGitに教えてあげましょう。</p>
+
+<pre><code>$ git config filter.dater.smudge expand_date
+$ git config filter.dater.clean &#39;perl -pe &quot;s/\\\$Date[^\\\$]*\\\$/\\\$Date\\\$/&quot;&#39;
+</code></pre>
+
+<p>このPerlのスクリプトは、開始点に戻るために<code>$Date$</code>文字列内の他の文字列を削除します。さあ、フィルタの準備ができました。ファイルに<code>$Date$</code>キーワードを追加して新しいフィルタに仕事をさせるためにGitの属性を設定して、テストしてみましょう。</p>
+
+<pre><code>$ echo &#39;# $Date$&#39; &gt; date_test.txt
+$ echo &#39;date*.txt filter=dater&#39; &gt;&gt; .gitattributes
+</code></pre>
+
+<p>これらの変更をcommitして再度ファイルをcheckoutすれば、キーワード展開が正しく行われているのがわかります。</p>
+
+<pre><code>$ git add date_test.txt .gitattributes
+$ git commit -m &quot;Testing date expansion in Git&quot;
+$ rm date_test.txt
+$ git checkout date_test.txt
+$ cat date_test.txt
+# $Date: Tue Apr 21 07:26:52 2009 -0700$
+</code></pre>
+
+<p>アプリケーションをカスタマイズするためのこのテクニックがどれほど強力か、おわかりいただけたと思います。しかし、注意が必要です。<code>.gitattributes</code>ファイルはcommitされ、プロジェクト内で共有されますが、ドライバ(このケースで言えば、<code>dater</code>)はそうはいきません。そう、すべての環境で動くとは限らないのです。あなたがこうしたフィルタをデザインする時、たとえフィルタが正常に動作しなかったとしても、プロジェクトは適切に動き続けられるようにすべきです。</p>
+
+<h3 id="リポジトリをエクスポートする"><a href="#リポジトリをエクスポートする">リポジトリをエクスポートする</a></h3>
+
+<p>あなたのプロジェクトのアーカイブをエクスポートする時には、Gitの属性データを使って興味深いことを行うことができます。</p>
+
+<h4>export-ignore</h4>
+
+<p>アーカイヴを生成するとき、あるファイルやディレクトリをエクスポートしないように設定することができます。プロジェクトにはcheckinしたいがアーカイブファイルには含めたくないディレクトリやファイルがあるなら、それらに<code>export-ignore</code>を設定してやることができます。</p>
+
+<p>例えば、<code>test/</code>ディレクトリ以下にいくつかのテストファイルがあって、それらをプロジェクトのtarballには含めたくないとしましょう。その場合、次の1行をGitの属性ファイルに追加します。</p>
+
+<pre><code>test/ export-ignore
+</code></pre>
+
+<p>これで、プロジェクトのtarballを作成するために<code>git archive</code>を実行した時、アーカイブには<code>test/</code>ディレクトリが含まれないようになります。</p>
+
+<h4>export-subst</h4>
+
+<p>アーカイブ作成時にできる別のこととして、いくつかの簡単なキーワード展開があります。第2章で紹介した<code>--pretty=format</code>で指定できるフォーマット指定子とともに<code>$Format:$</code>文字列をファイルに追加することができます。例えば、<code>LAST_COMMIT</code>という名前のファイルをプロジェクトに追加し、<code>git archive</code>を実行した時にそれを最新のcommitの日付に変換したい場合、次のように設定します。</p>
+
+<pre><code>$ echo &#39;Last commit date: $Format:%cd$&#39; &gt; LAST_COMMIT
+$ echo &quot;LAST_COMMIT export-subst&quot; &gt;&gt; .gitattributes
+$ git add LAST_COMMIT .gitattributes
+$ git commit -am &#39;adding LAST_COMMIT file for archives&#39;
+</code></pre>
+
+<p><code>git archive</code>を実行したあと、アーカイブを展開すると、<code>LAST_COMMIT</code>は以下のような内容になっているでしょう。</p>
+
+<pre><code>$ cat LAST_COMMIT
+Last commit date: $Format:Tue Apr 21 08:38:48 2009 -0700$
+</code></pre>
+
+<h3 id="マージの戦略"><a href="#マージの戦略">マージの戦略</a></h3>
+
+<p>Git属性を使えば、プロジェクトにある指定したファイルに対して異なるマージ戦略を使うようにすることができます。とても有効なオプションのひとつは、指定したファイルで競合が発生した場合に、マージを行わずにあなたの変更内容で他の誰かの変更を上書きするように設定するというものです。</p>
+
+<p>これはブランチを分岐させ特別な作業をしている時、そのブランチでの変更をマージさせたいが、いくつかのファイルの変更はなかったことにしたいというような時に助けになります。例えば、database.xmlというデータベースの設定ファイルがあり、ふたつのブランチでその内容が異なっているとしましょう。そして、そのデータベースファイルを台無しすることなしに、一方のブランチへとマージしたいとします。これは、次のように属性を設定すれば実現できます。</p>
+
+<pre><code>database.xml merge=ours
+</code></pre>
+
+<p>マージを実行すると、database.xmlに関する競合は発生せず、次のような結果になります。</p>
+
+<pre><code>$ git merge topic
+Auto-merging database.xml
+Merge made by recursive.
+</code></pre>
+
+<p>この場合、database.xmlは元々のバージョンのまま、書き変わりません。</p>
+
+<div id="nav"><a href="/book/ja/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">prev</a> | <a href="/book/ja/v1/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":5,"applicationTime":453,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - 프로젝트 관리하기</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ko/2015-07-08-5c390/progit-ko.582.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">시작하기</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC%EB%9E%80%3F">버전 관리란?</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%A7%A7%EA%B2%8C-%EB%B3%B4%EB%8A%94-Git%EC%9D%98-%EC%97%AD%EC%82%AC">짧게 보는 Git의 역사</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EA%B8%B0%EC%B4%88">Git 기초</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-CLI">CLI</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98">Git 설치</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%B5%9C%EC%B4%88-%EC%84%A4%EC%A0%95">Git 최초 설정</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EB%8F%84%EC%9B%80%EB%A7%90-%EB%B3%B4%EA%B8%B0">도움말 보기</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git의 기초</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">Git 저장소 만들기</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0">수정하고 저장소에 저장하기</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%BB%A4%EB%B0%8B-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">커밋 히스토리 조회하기</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0">되돌리기</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C">리모트 저장소</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%ED%83%9C%EA%B7%B8">태그</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-Alias">Git Alias</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">Git 브랜치</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">브랜치란 무엇인가</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88">브랜치와 Merge 의 기초</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EA%B4%80%EB%A6%AC">브랜치 관리</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98-Workflow">브랜치 Workflow</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EB%B8%8C%EB%9E%9C%EC%B9%98">리모트 브랜치</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0">Rebase 하기</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">Git 서버</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">프로토콜</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84%EC%97%90-Git-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">서버에 Git 설치하기</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-SSH-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EB%A7%8C%EB%93%A4%EA%B8%B0">SSH 공개키 만들기</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">서버 설정하기</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-Git-%EB%8D%B0%EB%AA%AC">Git 데몬</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%8A%A4%EB%A7%88%ED%8A%B8-HTTP">스마트 HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EC%84%A0%ED%83%9D%EC%A7%80%2C-%ED%98%B8%EC%8A%A4%ED%8C%85">또 다른 선택지, 호스팅</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Workflow">분산 환경에서의 Workflow</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ko/v2/GitHub-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">계정 만들고 설정하기</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">프로젝트에 기여하기</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ko/v2/GitHub-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">프로젝트 관리하기</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ko/v2/GitHub-Organization-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">Organization 관리하기</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ko/v2/GitHub-GitHub-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8C%85">GitHub 스크립팅</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ko/v2/GitHub-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">Git 도구</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%A6%AC%EB%B9%84%EC%A0%84-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0">리비전 조회하기</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%8C%80%ED%99%94%ED%98%95-%EB%AA%85%EB%A0%B9">대화형 명령</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning">Stashing과 Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EB%82%B4-%EC%9E%91%EC%97%85%EC%97%90-%EC%84%9C%EB%AA%85%ED%95%98%EA%B8%B0">내 작업에 서명하기</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B2%80%EC%83%89">검색</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%8B%A8%EC%9E%A5%ED%95%98%EA%B8%B0">히스토리 단장하기</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0">Reset 명확히 알고 가기</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EA%B3%A0%EA%B8%89-Merge">고급 Merge</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Git%EC%9C%BC%EB%A1%9C-%EB%B2%84%EA%B7%B8-%EC%B0%BE%EA%B8%B0">Git으로 버그 찾기</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88">서브모듈</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Bundle">Bundle</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Credential-%EC%A0%80%EC%9E%A5%EC%86%8C">Credential 저장소</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git맞춤</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">Git 설정하기</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%A0%95%EC%B1%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">정책 구현하기</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git으로 이전하기</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%3A-%EB%B2%94%EC%9A%A9-Client">Git: 범용 Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-Git%EC%9C%BC%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0">Git으로 옮기기</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ko/v2/Git%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Git의 내부</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Plumbing-%EB%AA%85%EB%A0%B9%EA%B3%BC-Porcelain-%EB%AA%85%EB%A0%B9">Plumbing 명령과 Porcelain 명령</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-%EA%B0%9C%EC%B2%B4">Git 개체</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Git-Refs">Git Refs</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Packfile">Packfile</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-Refspec">Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%86%A1-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C">데이터 전송 프로토콜</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%B4%EC%98%81-%EB%B0%8F-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B5%EA%B5%AC">운영 및 데이터 복구</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98">환경변수</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ko/v2/Git%EC%9D%98-%EB%82%B4%EB%B6%80-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">다양한 환경에서 Git 사용하기</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-GUI">GUI</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Visual-Studio">Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Eclipse">Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Bash">Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Zsh">Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-Powershell">Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ko/v2/%EB%8B%A4%EC%96%91%ED%95%9C-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-Git-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EC%9A%94%EC%95%BD">요약</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">애플리케이션에 Git 넣기</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Git-%EB%AA%85%EB%A0%B9%EC%96%B4">Git 명령어</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ko/v2/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EC%97%90-Git-%EB%84%A3%EA%B8%B0-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">Git 명령어</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95">설치와 설정</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%EC%99%80-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0">프로젝트 가져오기와 생성하기</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%8A%A4%EB%83%85%EC%83%B7-%EB%8B%A4%EB%A3%A8%EA%B8%B0">스냅샷 다루기</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Branch%EC%99%80-Merge">Branch와 Merge</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B3%B5%EC%9C%A0%ED%95%98%EA%B3%A0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0">공유하고 업데이트하기</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%B3%B4%EA%B8%B0%EC%99%80-%EB%B9%84%EA%B5%90">보기와 비교</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Patch-%ED%95%98%EA%B8%B0">Patch 하기</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%8B%A4%EB%A5%B8-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C">다른 버전 관리 시스템</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EA%B4%80%EB%A6%AC">관리</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ko/v2/Git-%EB%AA%85%EB%A0%B9%EC%96%B4-Plumbing-%EB%AA%85%EB%A0%B9%EC%96%B4">Plumbing 명령어</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>5.3 분산 환경에서의 Git - 프로젝트 관리하기</h1>
+  <div><a id="idp12757008"></a><h2>프로젝트 관리하기</h2>
+
+<p><a data-type="indexterm" data-primary="maintaining a project" id="idp13981568"></a></p>
+
+<p>효율적으로 기여하는 방법뿐만 아니라 효율적으로 운영하는 방법도 알아야 한다. 언젠가는 단순히 프로젝트에 기여하는 것이 아니라 프로젝트를 직접 운영해야 할 수도 있다.
+프로젝트를 운영하는 것은 크게 두 가지로 이루어진다. 하나는 <code>format-patch</code> 명령으로 생성한 Patch를 이메일로 받아서 프로젝트에 Patch를 적용하는 것이다. 다른 하나는 프로젝트의 다른 리모트 저장소로부터 변경 내용을 Merge 하는 것이다.
+저장소를 아주 깔끔하고 정돈된 상태로 운영하고 Patch를 적용하거나 수정사항을 확인하기 쉬운 상태로 유지하려면 좋은 운영 방식을 터득해야 한다. 좋은 운영 방식은 다른 사람들이 이해하기 쉽고 프로젝트가 오랫동안 운영돼도 흐트러짐이 없어야 한다.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="토픽 브랜치에서 일하기" id="idp14037872"><h3 id="토픽-브랜치에서-일하기"><a href="#토픽-브랜치에서-일하기">토픽 브랜치에서 일하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="branches" data-secondary="topic" id="idp14039280"></a></p>
+
+<p>메인 브랜치에 통합하기 전에 임시로 토픽 브랜치를 하나 만들고 거기에 통합해 보고 나서 다시 메인 브랜치에 통합하는 것이 좋다.
+이렇게 하면 Patch를 적용할 때 이리저리 수정해 보기도 하고 좀 더 고민해 봐야 하면 Patch를 적용해둔 채로 나중으로 미룰 수도 있다.
+무슨 Patch인지 브랜치 이름에 간단히 적어주면 다른 작업을 하다가 나중에 이 브랜치로 돌아왔을 때 기억해내기 훨씬 수월하다.
+프로젝트 관리자라면 이런 토픽 브랜치의 이름을 잘 지어야 한다. 예를 들어 <code>sc</code> 라는 사람이 작업한 Patch라면 <code>sc/ruby_client</code> 처럼 앞에 닉네임을 붙여서 브랜치를 만들 수 있다.
+master 브랜치에서 새 토픽 브랜치를 아래와 같이 만든다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch sc/ruby_client master</pre>
+
+<p><code>checkout -b</code> 명령으로 브랜치를 만들고 Checkout까지 한 번에 할 수 있다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b sc/ruby_client master</pre>
+
+<p>이렇게 토픽 브랜치를 만들고 Patch를 적용해보고 적용한 내용을 다시 Long-Running 브랜치로 Merge 한다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="이메일로 받은 Patch를 적용하기" id="_patches_from_email"><h3 id="이메일로-받은-Patch를-적용하기"><a href="#이메일로-받은-Patch를-적용하기">이메일로 받은 Patch를 적용하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="email" data-secondary="applying patches from" id="idp14203808"></a></p>
+
+<p>이메일로 받은 Patch를 프로젝트에 적용하기 전에 우선 토픽 브랜치에 Patch를 적용한다.
+Patch를 적용하는 방법은 <code>git apply</code> 명령을 사용하는 것과 <code>git am</code> 명령을 사용하는 것 두 가지가 있다.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="apply 명령을 사용하는 방법" id="idp14206320"><h4>apply 명령을 사용하는 방법</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="apply" id="idp14207728"></a></p>
+
+<p><code>git diff</code>나 Unix의 <code>diff</code> 명령(다음 절에서 다루겠지만 추천하지 않는 방법)으로 만든 Patch파일을 적용할 때에는 <code>git apply</code> 명령을 사용한다.
+Patch 파일이 <code>/tmp/patch-ruby-client.patch</code>라고 하면 아래와 같은 명령으로 Patch를 적용할 수 있다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply /tmp/patch-ruby-client.patch</pre>
+
+<p>위 명령을 실행하면 Patch 파일 내용에 따라 현재 디렉토리의 파일들을 변경한다.
+위 명령은 <code>patch -p1</code> 명령과 거의 같다. 하지만, 이 명령이 patch 명령보다 훨씬 더 꼼꼼하게 비교한다.
+<code>git diff</code>로 생성한 Patch 파일에 파일을 추가하거나, 파일을 삭제하고, 파일의 이름을 변경하는 내용이 들어 있으면 그대로 적용된다. 이런 것은 patch 명령으로 할 수 없다.
+그리고 <code>git apply</code>는 “모두 적용, 아니면 모두 취소” 모델을 사용하기 때문에 Patch를 적용하는 데 실패하면 Patch를 적용하기 이전 상태로 전부 되돌려 놓는다.
+Patch 명령은 여러 파일에 적용하다가 중간에 실패하면 거기서 그대로 중단하기 때문에 깔끔하지 못하다.
+<code>git apply</code>는 Patch보다 훨씬 결벽증적이다. 이 명령은 자동으로 커밋해 주지 않기 때문에 변경된 파일을 직접 Staging Area에 추가하고 커밋해야 한다.</p>
+
+<p>실제로 Patch를 적용하기 전에 Patch가 잘 적용되는지 한 번 시험해보려면 <code>git apply --check</code> 명령을 사용한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply --check 0001-seeing-if-this-helps-the-gem.patch
+<code class="go">error: patch failed: ticgit.gemspec:1</code>
+<code class="go">error: ticgit.gemspec: patch does not apply</code></pre>
+
+<p>화면에 아무 내용도 뜨지 않으면 Patch가 깔끔하게 적용됐다는 것이다.
+이 명령은 Patch를 적용해 보고 에러가 발생하면 0이 아닌 값을 반환하기 때문에 쉘 스크립트에서도 사용할 수 있다.</p>
+</section><section data-type="sect3" data-pdf-bookmark="am 명령을 사용하는 방법" id="_git_am"><h4>
+<code>am</code> 명령을 사용하는 방법</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="am" id="idp14279312"></a></p>
+
+<p>프로젝트 기여자가 Git의 format-patch 명령을 잘 사용하면 관리자의 작업은 훨씬 쉬워진다. format-patch 명령으로 만든 Patch 파일은 기여자의 정보와 커밋 정보가 포함되어 있기 때문이다.
+그래서 기여자가 diff보다 format-patch를 사용하도록 권해야 한다.
+<code>git apply</code>는 기존의 Patch파일에만 사용한다.</p>
+
+<p>format-patch 명령으로 생성한 Patch 파일은 <code>git am</code> 명령으로 적용한다.
+<code>git am</code>은 메일 여러 통이 들어 있는 mbox파일을 읽어서 Patch 한다.
+mbox파일은 간단한 텍스트 파일이고 그 내용은 아래와 같다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="go">From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001</code>
+<code class="go">From: Jessica Smith &lt;jessica@example.com&gt;</code>
+<code class="go">Date: Sun, 6 Apr 2008 10:17:23 -0700</code>
+<code class="go">Subject: [PATCH 1/2] add limit to log function</code>
+
+<code class="go">Limit log functionality to the first 20</code></pre>
+
+<p>이 내용은 format-patch 명령으로 생성한 파일의 앞부분이다.
+이 파일은 mbox 형식이다.
+받은 메일이 <code>git send-email</code>로 만든 메일이라면 mbox 형식으로 저장하고 이 mbox 파일을 <code>git am</code> 명령으로 적용한다.
+사용하는 메일 클라이언트가 여러 메일을 하나의 mbox 파일로 저장할 수 있다면 메일 여러 개를 한 번에 Patch 할 수 있다.</p>
+
+<p>이메일로 받은 것이 아니라 <code>format-patch</code> 명령으로 만든 이슈 트래킹 시스템 같은데 올라온 파일이라면 먼저 내려받고서 <code>git am</code> 명령으로 Patch 한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am 0001-limit-log-function.patch
+<code class="go">Applying: add limit to log function</code></pre>
+
+<p>Patch가 성공하면 자동으로 새로운 커밋이 하나 만들어진다.
+이메일의 <code>From</code>과 <code>Date</code>에서 저자 정보가, 이메일의 제목과 메시지에서 커밋 메시지가 추출돼 사용된다.
+예를 들어 위의 mbox 예제 파일을 적용해서 생성되는 커밋은 아래와 같다.</p>
+
+<pre data-type="programlisting">$ git log --pretty=fuller -1
+commit 6c5e70b984a60b3cecd395edd5b48a7575bf58e0
+Author:     Jessica Smith &lt;jessica@example.com&gt;
+AuthorDate: Sun Apr 6 10:17:23 2008 -0700
+Commit:     Scott Chacon &lt;schacon@gmail.com&gt;
+CommitDate: Thu Apr 9 09:19:06 2009 -0700
+
+   add limit to log function
+
+   Limit log functionality to the first 20</pre>
+
+<p><code>Commit</code> 부분의 커밋 정보는 누가 언제 Patch 했는 지 알려 준다.
+<code>Author</code> 정보는 실제로 누가 언제 Patch파일을 만들었는지 알려 준다.</p>
+
+<p>Patch에 실패할 수도 있다.
+보통 Patch가 생성된 시점보다 해당 브랜치가 너무 업데이트 됐을 때나 아직 적용되지 않은 다른 Patch가 필요한 경우에 일어난다.
+이러면 <code>git am</code> 명령은 Patch를 중단하고 사용자에게 어떻게 처리할지 물어온다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am 0001-seeing-if-this-helps-the-gem.patch
+<code class="go">Applying: seeing if this helps the gem</code>
+<code class="go">error: patch failed: ticgit.gemspec:1</code>
+<code class="go">error: ticgit.gemspec: patch does not apply</code>
+<code class="go">Patch failed at 0001.</code>
+<code class="go">When you have resolved this problem run "git am --resolved".</code>
+<code class="go">If you would prefer to skip this patch, instead run "git am --skip".</code>
+<code class="go">To restore the original branch and stop patching run "git am --abort".</code></pre>
+
+<p>성공적으로 Patch 하지 못하면 git은 Merge 나 Rebase 의 경우처럼 문제를 일으킨 파일에 충돌 표시를 해 놓는다.
+Merge 나 Rebase 할 때 충돌을 해결하는 것처럼 Patch의 충돌도 해결할 수 있다. 충돌한 파일을 열어서 충돌 부분을 수정하고 나서 Staging Area에 추가하고 <code>git am --resolved</code> 명령을 입력한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="o">(</code>fix the file<code class="o">)</code>
+<code class="gp">$</code> git add ticgit.gemspec
+<code class="gp">$</code> git am --resolved
+<code class="go">Applying: seeing if this helps the gem</code></pre>
+
+<p>충돌이 났을 때 Git에게 좀 더 머리를 써서 Patch를 적용하도록 하려면 <code>-3</code> 옵션을 사용한다.
+이 옵션은 Git에게 3-way Patch를 적용해 보라고 하는 것이다. Patch가 어느 시점에서 갈라져 나온 것인지 알 수 없기 때문에 이 옵션은 기본적으로 비활성화돼 있다.
+하지만 같은 프로젝트의 커밋이라면 기본옵션보다 훨씬 똑똑하게 충돌 상황을 해결한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am -3 0001-seeing-if-this-helps-the-gem.patch
+<code class="go">Applying: seeing if this helps the gem</code>
+<code class="go">error: patch failed: ticgit.gemspec:1</code>
+<code class="go">error: ticgit.gemspec: patch does not apply</code>
+<code class="go">Using index info to reconstruct a base tree...</code>
+<code class="go">Falling back to patching base and 3-way merge...</code>
+<code class="go">No changes -- Patch already applied.</code></pre>
+
+<p>위의 경우는 이미 Patch 한 것을 다시 Patch 하는 상황이다.
+<code>-3</code> 옵션이 없었으면 충돌을 알아서 해결하지 못했을 것이다.</p>
+
+<p>하나의 mbox 파일에 들어 있는 여러 Patch를 적용할 때 <code>am</code> 명령의 대화형 방식을 사용할 수 있다. 이 방식을 사용하면 Patch를 적용할 때마다 묻는다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am -3 -i mbox
+<code class="go">Commit Body is:</code>
+<code class="go">--------------------------</code>
+<code class="go">seeing if this helps the gem</code>
+<code class="go">--------------------------</code>
+<code class="go">Apply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all</code></pre>
+
+<p>이 옵션은 Patch를 여러 개 적용할 때 유용하다. 적용하려는 Patch의 내용을 미리 꼭 기억해두지 않아도 되고 적용하기 전에 이미 적용된 Patch인지 알 수 있다.</p>
+
+<p>모든 Patch를 토픽 브랜치에 적용하고 커밋까지 마치면 Long-Running 브랜치에 어떻게 통합할지를 결정해야 한다.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="리모트 브랜치로부터 통합하기" id="_checking_out_remotes"><h3 id="리모트-브랜치로부터-통합하기"><a href="#리모트-브랜치로부터-통합하기">리모트 브랜치로부터 통합하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="branches" data-secondary="remote" id="idp14148576"></a></p>
+
+<p>프로젝트 기여자가 자신의 저장소를 만들고 커밋을 몇 번 하고 저장소의 URL과 변경 내용을 메일로 보내왔다면 URL을 리모트 저장소로 등록하고 Merge 할 수 있다.</p>
+
+<p>예를 들어 Jessica씨는 <code>ruby-client</code> 브랜치에 엄청난 기능을 만들어 놨다고 메일을 보내왔다. 이 리모트 브랜치를 등록하고 Checkout 해서 테스트한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add jessica git://github.com/jessica/myproject.git
+<code class="gp">$</code> git fetch jessica
+<code class="gp">$</code> git checkout -b rubyclient jessica/ruby-client</pre>
+
+<p>후에 Jessiaca씨가 이메일로 또 다른 엄청난 기능을 개발한 브랜치를 보내오면 이미 저장소를 등록했기 때문에 간단히 Fetch 하고 Checkout 할 수 있다.</p>
+
+<p>다른 개발자들과 함께 지속적으로 개발할 때는 이 방식이 가장 사용하기 좋다.
+물론 기여하는 사람이 간단한 Patch를 이따금씩만 만들어 내면 이메일로 Patch 파일을 받는 것이 낫다. 기여자가 저장소 서버를 만들어 커밋하고 관리자가 리모트 저장소로 등록해서 Patch를 합치는 작업보다 시간과 노력이 덜 든다.
+물론 Patch 한 두 개를 보내는 사람들까지도 모두 리모트 저장소로 등록해서 사용해도 된다.
+스크립트나 호스팅 서비스를 사용하면 좀 더 쉽게 관리할 수 있다. 어쨌든 어떤 방식이 좋을지는 우리가 어떻게 개발하고 어떻게 기여할지에 달렸다.</p>
+
+<p>리모트 저장소로 등록하면 커밋의 히스토리도 알 수 있다.
+Merge 할 때 어디서 부터 커밋이 갈라졌는지 알 수 있기 때문에 <code>-3</code> 옵션을 주지 않아도 자동으로 3-way Merge가 적용된다.</p>
+
+<p>리모트 저장소로 등록하지 않고도 Merge 할 수 있다. 계속 함께 일할 개발자가 아닐 때 사용하면 좋다.
+아래는 리모트 저장소로 등록하지 않고 URL을 직접 사용하여 Merge를 하는 예이다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git pull https://github.com/onetimeguy/project
+<code class="go">From https://github.com/onetimeguy/project</code>
+<code class="go"> * branch            HEAD       -&gt; FETCH_HEAD</code>
+<code class="go">Merge made by recursive.</code></pre>
+</section><section data-type="sect2" data-pdf-bookmark="무슨 내용인지 확인하기" id="_what_is_introduced"><h3 id="무슨-내용인지-확인하기"><a href="#무슨-내용인지-확인하기">무슨 내용인지 확인하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="branches" data-secondary="diffing" id="idp14469936"></a></p>
+
+<p>기여물이 포함된 토픽 브랜치가 있으니 이제 그 기여물을 Merge 할지 말지 결정야 한다.
+이번 절에서는 메인 브랜치에 Merge 할 때 필요한 명령어를 살펴본다.
+주로 토픽 브랜치를 검토하는데 필요한 명령이다.</p>
+
+<p>먼저 지금 작업하는 브랜치에서 master 브랜치에 속하지 않는 커밋만 살펴보는 것이 좋다.
+<code>--not</code> 옵션으로 히스토리에서 master 브랜치에 속한 커밋은 제외하고 살펴본다.
+앞서 살펴본 <code>master..contrib</code> 형식을 사용하여 확인할 수도 있다.
+<code>contrib</code> 브랜치에 Patch를 두 개 Merge 했으면 아래와 같은 명령어로 그 결과를 살펴볼 수 있다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log contrib --not master
+<code class="go">commit 5b6235bd297351589efc4d73316f0a68d484f118</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Fri Oct 24 09:53:59 2008 -0700</code>
+
+<code class="go">    seeing if this helps the gem</code>
+
+<code class="go">commit 7482e0d16d04bea79d0dba8988cc78df655f16a0</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Mon Oct 22 19:38:36 2008 -0700</code>
+
+<code class="go">    updated the gemspec to hopefully work better</code></pre>
+
+<p><code>git log</code> 명령에 <code>-p</code> 옵션을 주면 각 커밋에서 실제로 무슨 내용이 변경됐는지 살펴볼 수 있다. 이 옵션은 각 commit의 뒤에 diff의 내용을 출력해 준다.</p>
+
+<p>토픽 브랜치를 다른 브랜치에 Merge 하기 전에 어떤 부분이 변경될지 미리 살펴볼 수 있다. 이때는 색다른 명령을 사용해야 한다.
+물론 아래와 같은 명령을 사용할 수도 있다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff master</pre>
+
+<p>이 명령은 diff 내용을 보여주긴 하지만 잘못된 것을 보여줄 수도 있다.
+토픽 브랜치에서 작업하는 동안 <code>master</code> 브랜치에 새로운 커밋이 추가될 수도 있다. 그렇기 때문에 기대하는 diff 결과가 아닐 수 있다.
+위 명령은 토픽 브랜치의 마지막 커밋과 <code>master</code> 브랜치의 마지막 커밋을 비교한다.
+<code>master</code> 브랜치에 한 줄을 추가되면 토픽 브랜치에서 한 라인 삭제한 것으로 보여 준다.</p>
+
+<p><code>master</code> 브랜치가 가리키는 커밋이 토픽 브랜치의 조상이라면 아무 문제 없다. 하지만, 그렇지 않은 경우라면 이 diff 도구는 토픽 브랜치에만 있는 내용은 추가하는 것이고 <code>master</code> 브랜치에만 있는 내용은 삭제하는 것으로 간주한다.</p>
+
+<p>정말 보고 싶은 것은 토픽 브랜치에 추가한 것이고 결국에는 이것을 master 브랜치에 추가하려는 것이다.
+그러니까 master 브랜치와 토픽 브랜치의 공통 조상인 커밋을 찾아서 토픽 브랜치가 현재 가리키는 커밋과 비교해야 한다.</p>
+
+<p>아래와 같은 명령으로 공통 조상인 커밋을 찾고 이 조상 커밋에서 변경된 내용을 살펴본다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge-base contrib master
+<code class="go">36c7dba2c95e6bbb78dfa822519ecfec6e1ca649</code>
+<code class="gp">$</code> git diff 36c7db</pre>
+
+<p>이 방법으로 원하는 결과를 얻을 수 있지만, 사용법이 불편하다. Git은 Triple-Dot으로 간단하게 위와 같이 비교하는 방법을 지원한다.
+<code>diff</code> 명령을 사용할 때 두 브랜치 사이에 …를 쓰면, 두 브랜치의 공통 조상과 브랜치의 마지막 커밋을 비교한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff master...contrib</pre>
+
+<p>이 명령은 master 브랜치로부터 현재 토픽 브랜치의 다른 것들만 보여주기 때문에
+기억해두면 매우 유용하게 사용할 수 있다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="기여물 통합하기" id="idp14468848"><h3 id="기여물-통합하기"><a href="#기여물-통합하기">기여물 통합하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="integrating work" id="idp14567008"></a></p>
+
+<p>기여물을 토픽 브랜치에 다 적용하고 Long-Running 브랜치나 master 브랜치로 통합할 준비가 되었다면 이제 어떻게 해야 할까.
+프로젝트를 운영하는 데 쓰는 작업 방식은 어떤 것이 있을까.
+앞으로 그 예제 몇 가지를 살펴본다.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="Merge 하는 Workflow" id="idp14125040"><h4>Merge 하는 Workflow</h4>
+
+<p><a data-type="indexterm" data-primary="workflows" data-secondary="merging" id="idp14126512"></a></p>
+
+<p>바로 <code>master</code> 브랜치에 Merge 하는 것이 가장 간단하다.
+이 Workflow에서는 <code>master</code> 브랜치가 안전한 코드라고 가정한다.
+토픽 브랜치를 검증하고 <code>master</code> 브랜치로 Merge 할 때마다 토픽 브랜치를 삭제한다.
+<a data-type="xref" href="ch00/merwf_a">Figure 5-20</a> 처럼 <code>ruby_client</code> 브랜치와 <code>php_client</code> 브랜치가 있을 때 <code>ruby_client</code> 브랜치를 <code>master</code> 브랜치로 Merge 한 후 <code>php_client</code> 브랜치를 Merge 하면 <a data-type="xref" href="ch00/merwf_b">Figure 5-21</a> 같아진다.</p>
+
+<figure id="merwf_a"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-1.png" alt="여러 토픽 브랜치 히스토리."></div>
+<figcaption>여러 토픽 브랜치 히스토리.</figcaption></figure><figure id="merwf_b"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-2.png" alt="Merge 한 후의 저장소."></div>
+<figcaption>Merge 한 후의 저장소.</figcaption></figure><p>이 Workflow에서 가장 간단한 시나리오다. 프로젝트의 규모가 커지거나 코드를 더 안정적으로 관리할 때에는 이렇게 쉽게 Merge 되지 않을 것이다.</p>
+
+<p>개발자가 많고 규모가 큰 프로젝트에서는 최소한 두 단계로 Merge 하는 것이 좋다.
+살펴볼 예에서는 Long-Running 브랜치를 두 개를 유지한다. <code>master</code> 브랜치는 아주 안정적인 버전을 릴리즈하기 위해서 사용한다. <code>develop</code> 브랜치는 새로 수정된 코드를 통합할 때 사용한다.
+그리고 두 브랜치를 모두 공개 저장소에 Push 한다.
+우선 develop 브랜치에 토픽 브랜치(<a data-type="xref" href="ch00/merwf_c">Figure 5-22</a>)를 <a data-type="xref" href="ch00/merwf_d">Figure 5-23</a> 같이 Merge 한다. 그 후에 릴리즈해도 될만한 수준이 되면 master 브랜치를 develop 브랜치까지 Fast-forward시킨다(<a data-type="xref" href="ch00/merwf_e">Figure 5-24</a>).</p>
+
+<figure id="merwf_c"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-3.png" alt="토픽 브랜치를 Merge 하기 전."></div>
+<figcaption>토픽 브랜치를 Merge 하기 전.</figcaption></figure><figure id="merwf_d"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-4.png" alt="토픽 브랜치를 Merge 한 후."></div>
+<figcaption>토픽 브랜치를 Merge 한 후.</figcaption></figure><figure id="merwf_e"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-5.png" alt="토픽 브랜치를 릴리즈한 후."></div>
+<figcaption>토픽 브랜치를 릴리즈한 후.</figcaption></figure><p>이 Workflow을 사용하면 프로젝트 저장소를 Clone 하고 나서 개발자가 안정 버전이 필요하면 master 브랜치를 빌드하고 안정적이지 않더라도 좀 더 최신 버전이 필요하면 develop 브랜치를 Checkout 하여 빌드한다.
+이 개념을 좀 더 확장해서 사용할 수 있다. 토픽 브랜치를 검증하기 위한 integrate 브랜치를 만들어 Merge 하고 토픽 브랜치가 검증되면 develop 브랜치에 머지한다.
+그리고 develop 브랜치에서 충분히 안정하다는 것이 증명되면 그때 master 브랜치에 Merge 한다.</p>
+</section><section data-type="sect3" data-pdf-bookmark="대규모 Merge Workflow" id="idp14125664"><h4>대규모 Merge Workflow</h4>
+
+<p><a data-type="indexterm" data-primary="workflows" data-secondary="merging (large)" id="idp14604976"></a></p>
+
+<p>Git을 개발하는 프로젝트는 Long-Running의 브랜치를 4개 운영한다.
+각 브랜치 이름은 <code>master</code>, <code>next</code>, <code>pu</code> (Proposed Updates), <code>maint</code> 이다. <code>maint</code>는 마지막으로 릴리즈한 버전을 지원하는 브랜치다.
+기여자가 새로운 기능을 제안하면 관리자는 <a data-type="xref" href="ch00/merwf_f">Figure 5-25</a> 처럼 자신의 저장소에 토픽 브랜치를 만들어 관리한다.
+그리고 토픽에 부족한 점은 없는지, 안정적인지 계속 테스트한다. 안정화되면 <code>next</code>로 Merge 하고 저장소에 Push 한다. 그러면 모두가 잘 통합됐는지 확인할 수 있다.</p>
+
+<figure id="merwf_f"><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/large-merges-1.png" alt="토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다."></div>
+<figcaption>토픽 브랜치를 동시에 여러 개 관리하는 것은 복잡하다.</figcaption></figure><p>토픽 브랜치가 좀 더 개선돼야 하면 <code>next</code>가 아니라 <code>pu</code>에 Merge 한다.
+그 후에 충분히 검증을 마치면 <code>pu</code>에서 <code>next</code>로 옮기고 <code>next</code>를 기반으로 <code>pu</code>를 다시 만든다. <code>next</code>에는 아직 <code>master</code>에 넣기에 모자라 보이는 것들이 들어 있다.
+즉 <code>next</code> 브랜치는 정말 가끔 Rebase 하고 <code>pu</code>는 자주 Rebase 하지만 <code>master</code>는 항상 Fast-forward 한다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/large-merges-2.png" alt="토픽 브랜치를 Long-Running 브랜치로 Merge 하기."></div>
+<figcaption>토픽 브랜치를 Long-Running 브랜치로 Merge 하기.</figcaption></figure><p>토픽 브랜치가 결국 <code>master</code> 브랜치로 Merge 되면 저장소에서 삭제한다.
+그리고 이전 릴리즈 버전에 Patch가 필요하면 <code>maint</code> 브랜치를 이용해 대응한다.
+Git을 개발하는 프로젝트를 Clone 하면 브랜치가 4개 있고 각 브랜치를 이용하여 진행사항을 확인해볼 수 있다. 그래서 새로운 기능을 추가하려면 적당한 브랜치를 보고 고른다. 이 Workflow는 잘 구조화돼 있어서 코드가 새로 추가돼도 테스트하기 쉽다.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Rebase와 Cherry-Pick Workflow" id="_rebase_cherry_pick"><h4>Rebase와 Cherry-Pick Workflow</h4>
+
+<p><a data-type="indexterm" data-primary="workflows" data-secondary="rebasing and cherry-picking" id="idp14623232"></a></p>
+
+<p>히스토리를 평평하게 관리하려고 Merge 보다 Rebase 나 Cherry-Pick을 더 선호하는 관리자들도 있다.
+토픽 브랜치에서 작업을 마친 후 master에 통합할 때 master 브랜치를 기반으로 Rebase 한다. 그러면 커밋이 다시 만들어 진다. master 대신 <code>develop</code> 등의 브랜치에도 가능하다.
+문제가 없으면 <code>master</code> 브랜치를 Fast-forward시킨다. 이렇게 평평한 히스토리를 유지할 수 있다.</p>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="cherry-pick" id="idp14626288"></a></p>
+
+<p>한 브랜치에서 다른 브랜치로 작업한 내용을 옮기는 또 다른 방식으로 Cherry-pick이란 것도 있다.
+Git의 Cherry-pick은 커밋 하나만 Rebase 하는 것이다.
+커밋 하나로 Patch 내용을 만들어 현재 브랜치에 적용을 하는 것이다.
+토픽 브랜치에 있는 커밋중에서 하나만 고르거나 토픽 브랜치에 커밋이 하나밖에 없을 때 Rebase 보다 유용하다.
+아래와 같은 예를 들어보자.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/rebasing-1.png" alt="Cherry-pick을 실행하기 전의 저장소."></div>
+<figcaption>Cherry-pick을 실행하기 전의 저장소.</figcaption></figure><p><code>e43a6</code> 커밋 하나만 현재 브랜치에 적용하려면 아래와 같은 명령을 실행한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf
+<code class="go">Finished one cherry-pick.</code>
+<code class="go">[master]: created a0a41a9: "More friendly message when locking the index fails."</code>
+<code class="go"> 3 files changed, 17 insertions(+), 3 deletions(-)</code></pre>
+
+<p>위 명령을 실행하면 <code>e43a6</code> 커밋에서 변경된 내용을 현재 브랜치에 똑같이 적용을 한다. 하지만, 변경을 적용한 시점이 다르므로 새 커밋의 SHA-1 해시값은 달라진다.
+명령을 실행하고 나면 아래와 같이 된다.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/05-distributed-git/images/rebasing-2.png" alt="Cherry-pick 방식으로 커밋 하나를 적용한 후의 저장소."></div>
+<figcaption>Cherry-pick 방식으로 커밋 하나를 적용한 후의 저장소.</figcaption></figure><p>Rebase 나 Cherry-pick 방식으로 토픽 브랜치를 합치고 나면 필요없는 토픽 브랜치나 커밋은 삭제한다.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Rerere" id="idp14622016"><h4>Rerere</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="rerere" id="idp14544112"></a><a data-type="indexterm" data-primary="rerere" id="idp14544976"></a></p>
+
+<p>수시로 Merge 나 Rebase를 한다거나 오랫동안 유지되는 토픽브랜치를 쓰는 사람에게 유용한 “rerere” 기능이 있다.</p>
+
+<p>Rerere의 뜻은 “reuse recorded reolution”(충돌 해결방법 재사용)으로 수작업으로 충돌 해결하던 것을 쉽게 해준다.
+rerere 기능이 활성화 돼 있으면 Merge가 성공할 때 마다 그 이전과 이후 상태를 저장해둔다. 나중에 충돌이 발생하면 비슷한 상황에서 Merge가 성공한 적이 있었는지 찾아보고 해결이 가능하다면 자동으로 해결한다.</p>
+
+<p>Rerere 기능의 동작은 두 부분으로 나누어 볼 수 있다. Rerere 기능을 설정하는 부분과 Rerere 기능을 명령으로 사용하는 부분이다.
+설정은 <code>rerere.enabled</code> 값을 설정하면 되는데 글로벌 설정에 저장해 두고 사용하면 편하다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global rerere.enabled <code class="nb">true</code></pre>
+
+<p>이제부터 Merge가 성공할 때 마다 전후 상황을 기록해두고 나중에 충돌이 나면 사용할 수 있게 됐다.</p>
+
+<p>필요하다면 <code>git rerere</code> 명령을 사용하여 저장된 캐시를 바탕으로 대화형 인터페이스를 통해 충돌을 다룰 수도 있다.
+<code>git rerere</code> 명령을 직접 실행하면 현재 Merge 과정에서 발생한 충돌을 해결하는데 참고할 만한 이전 Merge 기록을 찾아준다(사실 <code>rerere.enabled</code> 옵션이 켜져 있다면 자동).
+Rerere 기능을 사용할 때 기록할 내용을 세세하게 설정하거나, 기록된 내용 중에 특정 기록을 지운다거나 하는 보조 명령도 제공한다. 자세한 내용은 <a data-type="xref" href="ch07/_rerere">“Rerere”</a> 에서 다루기로 한다.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="릴리즈 버전에 태그 달기" id="_tagging_releases"><h3 id="릴리즈-버전에-태그-달기"><a href="#릴리즈-버전에-태그-달기">릴리즈 버전에 태그 달기</a></h3>
+
+<p><a data-type="indexterm" data-primary="tags" id="idp14518896"></a><a data-type="indexterm" data-primary="tags" data-secondary="signing" id="idp14519600"></a></p>
+
+<p>적당한 때가 되면 릴리즈해야 한다. 그리고 언제든지 그 시점으로 되돌릴 수 있게 태그를 다는 것이 좋다.
+<a data-type="xref" href="ch02/_git_basics_chapter">Chapter 2</a>에서 살펴본 대로 태그를 달면 된다.
+서명된 태그를 달면 아래와 같이 출력된다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tag -s v1.5 -m <code class="s1">'my signed 1.5 tag'</code>
+<code class="go">You need a passphrase to unlock the secret key for</code>
+<code class="go">user: "Scott Chacon &lt;schacon@gmail.com&gt;"</code>
+<code class="go">1024-bit DSA key, ID F721C45A, created 2009-02-09</code></pre>
+
+<p>태그에 서명하면 서명에 사용한 PGP 공개키도 배포해야 한다.
+Git 개발 프로젝트는 관리자의 PGP 공개키를 Blob 형식으로 Git 저장소에 함께 배포한다. 이 Blob파일을 사용하여 태그에 서명했다.
+<code>gpg --list-keys</code> 명령으로 어떤 PGP 공개키를 포함할지 확인한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> gpg --list-keys
+<code class="go">/Users/schacon/.gnupg/pubring.gpg</code>
+<code class="go">---------------------------------</code>
+<code class="go">pub   1024D/F721C45A 2009-02-09 [expires: 2010-02-09]</code>
+<code class="go">uid                  Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">sub   2048g/45D02282 2009-02-09 [expires: 2010-02-09]</code></pre>
+
+<p><code>git hash-object</code>라는 명령으로 공개키를 바로 Git 저장소에 넣을 수 있다. 이 명령은 Git 저장소 안에 Blob 형식으로 공개키를 저장해주고 그 Blob의 SHA-1 값을 알려준다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> gpg -a --export F721C45A <code class="p">|</code> git <code class="nb">hash</code>-object -w --stdin
+<code class="go">659ef797d181633c87ec71ac3f9ba29fe5775b92</code></pre>
+
+<p><code>hash-object</code> 명령으로 구한 SHA-1 해시값으로 PGP 공개키를 가리키는 태그를 만든다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tag -a maintainer-pgp-pub 659ef797d181633c87ec71ac3f9ba29fe5775b92</pre>
+
+<p><code>git push --tags</code> 명령으로 앞서 만든 <code>maintainer-pgp-pub</code> 태그를 공유한다.
+다른 사람이 태그의 서명을 확인하려면 우선 Git 저장소에 저장된 PGP 공개키를 꺼내서 GPG키 데이터베이스에 저장해야 한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git show maintainer-pgp-pub <code class="p">|</code> gpg --import</pre>
+
+<p>사람들은 이렇게 공개키를 얻어서 서명된 태그를 확인한다.
+또한, 관리자가 태그 메시지에 서명을 확인하는 방법을 적어 놓으면 좋다. <code>git show &lt;tag&gt;</code>으로 어떻게 서명된 태그를 확인하는지 설명한다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="빌드넘버 만들기" id="_build_number"><h3 id="빌드넘버-만들기"><a href="#빌드넘버-만들기">빌드넘버 만들기</a></h3>
+
+<p><a data-type="indexterm" data-primary="build numbers" id="idp14659792"></a><a data-type="indexterm" data-primary="git commands" data-secondary="describe" id="idp14840160"></a></p>
+
+<p>Git은 <em>v123</em> 처럼 숫자 형태로 커밋 이름을 만들지 않기 때문에 사람이 기억하기 어렵다. 하지만 <code>git describe</code> 명령으로 좀 더 사람이 기억하기 쉬운 이름을 얻을 수 있다.
+Git은 가장 가까운 태그의 이름과, 태그에서 얼마나 더 커밋이 쌓였는지, 그리고 해당 커밋의 SHA-1 값을 조금 가져다가 이름을 만든다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git describe master
+<code class="go">v1.6.2-rc1-20-g8c5b85c</code></pre>
+
+<p>이렇게 사람이 읽을 수 있는 이름으로 스냅샷이나 빌드를 만든다.
+만약 저장소에서 Clone 한 후 소스코드로 Git을 설치하면 <code>git --version</code> 명령은 이렇게 생긴 빌드넘버를 보여준다.
+태그가 달린 커밋에 <code>git describe</code>명령을 사용하면 다른 정보 없이 태그 이름만 사용한다.</p>
+
+<p><code>git describe</code> 명령은 <code>-a</code>나 <code>-s</code> 옵션을 주고 만든 Annotated 태그가 필요하다. 릴리즈 태그는 <code>git describe</code> 명령으로 만드니까 꼭 이름이 적당한지 사전에 확인해야 한다.
+그리고 이 값은 checkout이나 show 명령에도 사용할 수 있지만, 전적으로 이름 뒤에 붙은 SHA-1 값을 사용한다. 그래서 이 값으로는 해당 커밋을 못 찾을 수도 있다.
+최근 Linux Kernel은 충돌 때문에 축약된 SHA-1가 8자에서 10자로 늘어났다. 이제는 8자일 때 생성한 값은 사용할 수 없다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="릴리즈 준비하기" id="_preparing_release"><h3 id="릴리즈-준비하기"><a href="#릴리즈-준비하기">릴리즈 준비하기</a></h3>
+
+<p><a data-type="indexterm" data-primary="releasing" id="idp14785008"></a><a data-type="indexterm" data-primary="git commands" data-secondary="archive" id="idp14785712"></a></p>
+
+<p>배포할 릴리즈 버전이 준비되었다.
+먼저 Git을 사용하지 않는 사람을 위해 소스코드 스냅샷을 압축한다.
+쉽게 압축할 수 있도록 Git은 <code>git archive</code> 명령을 지원한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git archive master --prefix<code class="o">=</code><code class="s1">'project/'</code> <code class="p">|</code> gzip &gt; <code class="sb">`</code>git describe master<code class="sb">`</code>.tar.gz
+<code class="gp">$</code> ls *.tar.gz
+<code class="go">v1.6.2-rc1-20-g8c5b85c.tar.gz</code></pre>
+
+<p>이 압축 파일을 풀면 프로젝트의 가장 마지막 스냅샷이 나온다.
+ZIP 형식으로 압축파일을 만들려면 <code>--format=zip</code> 옵션을 사용한다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git archive master --prefix<code class="o">=</code><code class="s1">'project/'</code> --format<code class="o">=</code>zip &gt; <code class="sb">`</code>git describe master<code class="sb">`</code>.zip</pre>
+
+<p>이렇게 압축한 스냅샷 파일은 Website나 이메일로 사람들에게 배포할 수 있다.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Shortlog 보기" id="_the_shortlog"><h3 id="Shortlog-보기"><a href="#Shortlog-보기">Shortlog 보기</a></h3>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="shortlog" id="idp14873008"></a></p>
+
+<p>이메일로 프로젝트의 변경 사항을 사람들에게 알려야 할 때, <code>git shortlog</code> 명령을 사용하면 지난 릴리즈 이후의 변경 사항 목록을 쉽게 얻어올 수 있다.
+<code>git shortlog</code> 명령은 주어진 범위에 있는 커밋을 요약해준다.
+아래는 최근 릴리즈 버전인 v1.0.1 이후의 커밋을 요약해 주는 예제이다.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git shortlog --no-merges master --not v1.0.1
+<code class="go">Chris Wanstrath (8):</code>
+<code class="go">      Add support for annotated tags to Grit::Tag</code>
+<code class="go">      Add packed-refs annotated tag support.</code>
+<code class="go">      Add Grit::Commit#to_patch</code>
+<code class="go">      Update version and History.txt</code>
+<code class="go">      Remove stray `puts`</code>
+<code class="go">      Make ls_tree ignore nils</code>
+
+<code class="go">Tom Preston-Werner (4):</code>
+<code class="go">      fix dates in history</code>
+<code class="go">      dynamic version method</code>
+<code class="go">      Version bump to 1.0.2</code>
+<code class="go">      Regenerated gemspec for version 1.0.2</code></pre>
+
+<p>이렇게 v1.0.1 이후 변경 내용을 Author를 기준으로 정리한 커밋을 이메일로 전송한다.</p>
+</section><div id="nav"><a href="/book/ko/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0">prev</a> | <a href="/book/ko/v2/%EB%B6%84%EC%82%B0-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EC%9D%98-Git-%EC%9A%94%EC%95%BD">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

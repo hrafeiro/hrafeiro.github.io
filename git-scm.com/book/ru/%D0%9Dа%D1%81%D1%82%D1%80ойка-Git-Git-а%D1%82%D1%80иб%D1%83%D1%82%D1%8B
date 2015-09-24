@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":201,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git-атрибуты</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B5-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О контроле версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v1/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D1%82%D0%BC%D0%B5%D0%BD%D0%B0-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9">Отмена изменений</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%D0%BC%D0%B8">Работа с удалёнными репозиториями</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5-%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B">Полезные советы</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%3F">Что такое ветка?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9F%D1%80%D0%B8%D1%91%D0%BC%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Приёмы работы с ветками</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5">Перемещение</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5">Настройка Git на сервере</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Создание открытого SSH-ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF">Открытый доступ</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/ru/v1/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git">Распределённый Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B">Распределённые рабочие процессы</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%A1%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83">Содействие проекту</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%A1%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0">Сопровождение проекта</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v1/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D1%8F%D1%82%D0%B0%D0%BD%D1%8C%D0%B5">Прятанье</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Перезапись истории</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Отладка с помощью Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%8C%D0%B5%D0%B2">Слияние поддеревьев</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/ru/v1/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Настройка Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git">Конфигурирование Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D1%8B">Git-атрибуты</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9F%D0%B5%D1%80%D0%B5%D1%85%D0%B2%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%B8-%D0%B2-Git">Перехватчики в Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%BD%D0%B0%D0%B2%D1%8F%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Пример навязывания политики с помощью Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%B8-Subversion">Git и Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v1/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8">Git изнутри</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D1%84%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и фарфор</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-%D0%B2-Git">Объекты в Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8">Протоколы передачи</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Обслуживание и восстановление данных</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/ru/v1/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>7.2 Настройка Git - Git-атрибуты</h1>
+  <div><h2>Git-атрибуты</h2>
+
+<p>Некоторые настройки могут быть заданы для отдельных путей, и тогда Git будет применять их только для некоторых подкаталогов или набора файлов. Такие настройки, специфичные по отношению к путям, называются атрибутами и задаются либо в файле <code>.gitattributes</code> в одном из каталогов проекта (обычно в корне), либо в файле <code>.git/info/attributes</code>, если вы не хотите, чтобы файл с атрибутами попал в коммит вместе с остальными файлами проекта.</p>
+
+<p>Использование атрибутов позволяет, например, задать разные стратегии слияния для отдельных файлов или каталогов проекта, или объяснить Git&#39;у, как сравнивать нетекстовые файлы, или сделать так, чтобы Git пропускал данные через фильтр перед тем, как выгрузить или записать данные в репозиторий. В этом разделе мы рассмотрим некоторые из доступных в Git&#39;е атрибутов и рассмотрим несколько практических примеров их использования.</p>
+
+<h3 id="Бинарные-файлы"><a href="#Бинарные-файлы">Бинарные файлы</a></h3>
+
+<p>Есть один клёвый трюк, для которого можно использовать атрибуты — можно указать Git&#39;у, какие файлы являются бинарными (в случае если по-другому определить это не получается), и дать ему специальные инструкции о том, как с этими файлами работать. Например, некоторые текстовые файлы могут быть машинными — генерируемыми программой — для них нет смысла вычислять дельты, в то время как для некоторых бинарных файлов получение дельт может быть полезным. Дальше мы увидим, как сказать Git&#39;у, какие файлы какие.</p>
+
+<h4>Определение бинарных файлов</h4>
+
+<p>Некоторые файлы выглядят как текстовые, но по существу должны рассматриваться как бинарные данные. Например, проекты Xcode на Mac&#39;ах содержат файл, оканчивающийся на <code>.pbxproj</code>, который, по сути, является набором JSON-данных (текстовый формат данных для javascript), записываемым IDE, в котором сохраняются ваши настройки сборки и прочее. Хоть технически это и текстовый файл, потому что содержит только ASCII-символы, но нет смысла рассматривать его как таковой, потому что на самом деле это легковесная база данных — вы не сможете слить её содержимое, если два человека внесут в неё изменение, получение дельт тоже, как правило, ничем вам не поможет. Этот файл предназначается для обработки программой. По сути, лучше рассматривать этот файл как бинарный.</p>
+
+<p>Чтобы заставить Git обращаться со всеми <code>pbxproj</code>-файлами как с бинарными, добавьте следующую строку в файл <code>.gitattributes</code>:</p>
+
+<pre><code>*.pbxproj -crlf -diff
+</code></pre>
+
+<p>Теперь Git не будет пытаться конвертировать CRLF-концы строк или исправлять проблемы с ними. Также он не будет пытаться получить дельту для изменений в этом файле при запуске <code>git show</code> или <code>git diff</code> в вашем проекте. В Git&#39;е есть предустановленный макрос <code>binary</code>, который означает то же, что и <code>-crlf -diff</code>:</p>
+
+<pre><code>*.pbxproj binary
+</code></pre>
+
+<h4>Получение дельты для бинарных файлов</h4>
+
+<p>Функциональность атрибутов Git&#39;а может быть использована для эффективного получения дельт бинарных файлов. Сделать это можно, объяснив Git&#39;у, как сконвертировать ваши бинарные данные в текстовый формат, для которого можно выполнить сравнение с помощью обычного diff. Осталось только понять, как получить текстовое представление для <em>бинарных</em> данных. Идеальный вариант — найти подходящую утилиту для конвертирования нужного формата в текстовый вид. Но, к сожалению, получить хорошее текстовое представление можно только для весьма ограниченного набора бинарных форматов. Для большинства же бинарных форматов, например, для графических или аудио данных, получить читаемый текстовый вид не представляется возможным. Но если мы не можем получить текстовое представление содержимого, мы зачастую можем получить читаемое описание содержимого или метаданные. Метаданные не дают полное представление о содержимом файле, но, во всяком случае, это лучше чем ничего.</p>
+
+<p>Далее мы рассмотрим оба подхода на примерах популярных бинарных форматов.</p>
+
+<p>Замечание: Существуют разные виды бинарных файлов с текстовым содержимым, для которых вам, может быть, не удастся найти подходящий конвёртер. В данном случае вы можете попробовать вытащить текст с помощью утилиты <code>strings</code>. Некоторые из таких файлов могут использовать кодировку UTF-16 или могут быть написаны не в латинице, в таких файлах <code>strings</code> не найдёт ничего хорошего. Полезность <code>strings</code> может сильно варьироваться. Тем не менее, <code>strings</code> доступен на большинстве Mac- и Linux-систем, так что он может быть хорошим первым вариантом для того, чтобы сделать подобное со многими бинарными форматами.</p>
+
+<h5>Документы MS Word</h5>
+
+<p>Для начала мы используем описанный подход, чтобы решить одну из самых раздражающих проблем, известных человечеству: версионный контроль документов Word. Всем известно, что Word — это самый ужасающий из всех существующих редакторов, но, как ни странно, все им пользуются. Если вы хотите поместить документы Word под версионный контроль, вы можете запихнуть их в Git-репозиторий и время от времени делать коммиты. Но что в этом хорошего? Если вы запустите <code>git diff</code> как обычно, то увидите только что-то наподобие этого:</p>
+
+<pre><code>$ git diff 
+diff --git a/chapter1.doc b/chapter1.doc
+index 88839c4..4afcb7c 100644
+Binary files a/chapter1.doc and b/chapter1.doc differ
+</code></pre>
+
+<p>У вас не получится сравнить две версии между собой, только если вы не выгрузите их обе и просмотрите их вручную, так? Оказывается, можно сделать это достаточно успешно, используя атрибуты Git&#39;а. Поместите следующую строку в свой файл <code>.gitattributes</code>:</p>
+
+<pre><code>*.doc diff=word
+</code></pre>
+
+<p>Она говорит Git&#39;у, что все файлы, соответствующие указанному шаблону (.doc) должны использовать фильтр &quot;word&quot; при попытке посмотреть дельту с изменениями. Что такое фильтр &quot;word&quot;? Нам нужно его изготовить. Сейчас мы настроим Git на использование программы <code>catdoc</code>, специально написанной для того, чтобы вытаскивать текстовую информацию из бинарных документов MS Word (скачать её можно по адресу <code>http://www.45.free.net/~vitus/software/catdoc/</code>), для конвертирования документов Word в читаемые текстовые файлы, которые Git затем правильно сравнит:</p>
+
+<pre><code>$ git config diff.word.textconv catdoc
+</code></pre>
+
+<p>Этой командой в свой <code>.git/config</code> вы добавите следующую секцию:</p>
+
+<pre><code>[diff &quot;word&quot;]
+    textconv = catdoc
+</code></pre>
+
+<p>Теперь Git знает, что если ему надо найти дельту между двумя снимками состояния, и какие-то их файлы заканчиваются на <code>.doc</code>, он должен прогнать эти файлы через фильтр &quot;word&quot;, который определён как программа <code>catdoc</code>. Так вы фактически сделаете текстовые версии своих Word-файлов перед тем, как получить для них дельту.</p>
+
+<p>Рассмотрим пример. Я поместил главу 1 настоящей книги в Git, добавил немного текста в один параграф и сохранил документ. Затем я выполнил <code>git diff</code>, чтобы увидеть, что изменилось:</p>
+
+<pre><code>$ git diff
+diff --git a/chapter1.doc b/chapter1.doc
+index c1c8a0a..b93c9e4 100644
+--- a/chapter1.doc
++++ b/chapter1.doc
+@@ -128,7 +128,7 @@ and data size)
+ Since its birth in 2005, Git has evolved and matured to be easy to use
+ and yet retain these initial qualities. It’s incredibly fast, it’s
+ very efficient with large projects, and it has an incredible branching
+-system for non-linear development.
++system for non-linear development (See Chapter 3).
+</code></pre>
+
+<p>Git коротко и ясно дал мне знать, что я добавил строку &quot;(See Chapter 3)&quot;, так оно и есть. Работает идеально.</p>
+
+<h5>Текстовые файлы в формате OpenDocument</h5>
+
+<p>Тот же подход, который мы использовали для файлов MS Word (<code>*.doc</code>), может быть использован и для текстовых файлов в формате OpenDocument, созданных в OpenOffice.org.</p>
+
+<p>Добавим следующую строку в файл <code>.gitattributes</code>:</p>
+
+<pre><code>*.odt diff=odt
+</code></pre>
+
+<p>Теперь настроим фильтр <code>odt</code> в <code>.git/config</code>:</p>
+
+<pre><code>[diff &quot;odt&quot;]
+    binary = true
+    textconv = /usr/local/bin/odt-to-txt
+</code></pre>
+
+<p>Файлы в формате OpenDocument на самом деле являются запакованными zip&#39;ом каталогами с множеством файлов (содержимое в XML-формате, таблицы стилей, изображения и т.д.). Мы напишем свой сценарий для извлечения содержимого и вывода его в виде обычного текста. Создайте файл <code>/usr/local/bin/odt-to-txt</code> (можете создать его в любом другом каталоге) со следующим содержимым:</p>
+
+<pre><code>#! /usr/bin/env perl
+# Сценарий для конвертации OpenDocument Text (.odt) в обычный текст.
+# Автор: Philipp Kempgen
+
+if (! defined($ARGV[0])) {
+    print STDERR &quot;Не задано имя файла!\n&quot;;
+    print STDERR &quot;Использование: $0 имя файла\n&quot;;
+    exit 1;
+}
+
+my $content = &#39;&#39;;
+open my $fh, &#39;-|&#39;, &#39;unzip&#39;, &#39;-qq&#39;, &#39;-p&#39;, $ARGV[0], &#39;content.xml&#39; or die $!;
+{
+    local $/ = undef;  # считываем файл целиком
+    $content = &lt;$fh&gt;;
+}
+close $fh;
+$_ = $content;
+s/&lt;text:span\b[^&gt;]*&gt;//g;           # удаляем span&#39;ы
+s/&lt;text:h\b[^&gt;]*&gt;/\n\n*****  /g;   # заголовки
+s/&lt;text:list-item\b[^&gt;]*&gt;\s*&lt;text:p\b[^&gt;]*&gt;/\n    --  /g;  # элементы списков
+s/&lt;text:list\b[^&gt;]*&gt;/\n\n/g;       # списки
+s/&lt;text:p\b[^&gt;]*&gt;/\n  /g;          # параграфы
+s/&lt;[^&gt;]+&gt;//g;                      # удаляем все XML-теги
+s/\n{2,}/\n\n/g;                   # удаляем подряд идущие пустые строки
+s/\A\n+//;                         # удаляем пустые строки в начале
+print &quot;\n&quot;, $_, &quot;\n\n&quot;;
+</code></pre>
+
+<p>Сделайте его исполняемым</p>
+
+<pre><code>chmod +x /usr/local/bin/odt-to-txt
+</code></pre>
+
+<p>Теперь <code>git diff</code> сможет сказать вам, что изменилось в <code>.odt</code> файлах.</p>
+
+<h5>Изображения</h5>
+
+<p>Ещё одна интересная проблема, которую можно решить таким способом, это сравнение файлов изображений. Один из способов сделать это — прогнать PNG-файлы через фильтр, извлекающий их EXIF-информацию — метаданные, которые дописываются в большинство форматов изображений. Если скачаете и установите программу <code>exiftool</code>, то сможете воспользоваться ею, чтобы извлечь из изображений текстовую информацию о метаданных, так чтобы diff хоть как-то показал вам текстовое представление произошедших изменений:</p>
+
+<pre><code>$ echo &#39;*.png diff=exif&#39; &gt;&gt; .gitattributes
+$ git config diff.exif.textconv exiftool
+</code></pre>
+
+<p>Если вы замените в проекте изображение и запустите <code>git diff</code>, то получите что-то вроде такого:</p>
+
+<pre><code>diff --git a/image.png b/image.png
+index 88839c4..4afcb7c 100644
+--- a/image.png
++++ b/image.png
+@@ -1,12 +1,12 @@
+ ExifTool Version Number         : 7.74
+-File Size                       : 70 kB
+-File Modification Date/Time     : 2009:04:17 10:12:35-07:00
++File Size                       : 94 kB
++File Modification Date/Time     : 2009:04:21 07:02:43-07:00
+ File Type                       : PNG
+ MIME Type                       : image/png
+-Image Width                     : 1058
+-Image Height                    : 889
++Image Width                     : 1056
++Image Height                    : 827
+ Bit Depth                       : 8
+ Color Type                      : RGB with Alpha
+</code></pre>
+
+<p>Легко можно заметить, что размер файла, а также высота и ширина изображения поменялись.</p>
+
+<h3 id="Развёртывание-ключа"><a href="#Развёртывание-ключа">Развёртывание ключа</a></h3>
+
+<p>Разработчики, привыкшие к SVN или CVS, часто хотят получить в Git&#39;е возможность развёртывания ключа в стиле этих систем. Основная проблема с реализацией этой функциональности в Git&#39;е это то, что нельзя записать в файл информацию о коммите после того, как коммит был сделан, так как Git сначала считает контрольную сумму для файла. Несмотря на это, вы можете вставлять текст в файл во время его выгрузки и удалять его перед добавлением в коммит. Атрибуты Git&#39;а предлагают два варианта сделать это.</p>
+
+<p>Во-первых, вы можете внедрять SHA-1-сумму блоба в поле <code>$Id$</code> в файл автоматически. Если установить соответствующий атрибут для одного или нескольких файлов, то в следующий раз, когда вы будете выгружать данные из этой ветки, Git будет заменять это поле SHA-суммой блоба. Обратите внимание, что это SHA-1 не коммита, а самого блоба.</p>
+
+<pre><code>$ echo &#39;*.txt ident&#39; &gt;&gt; .gitattributes
+$ echo &#39;$Id$&#39; &gt; test.txt
+$ git add test.txt
+</code></pre>
+
+<p>В следующий раз, когда вы будете выгружать этот файл, Git автоматически вставит в него SHA его блоба:</p>
+
+<pre><code>$ rm test.txt
+$ git checkout -- test.txt
+$ cat test.txt 
+$Id: 42812b7653c7b88933f8a9d6cad0ca16714b9bb3 $
+</code></pre>
+
+<p>Однако, такой результат мало применим. Если вы раньше пользовались развёртыванием ключа в CVS или Subversion, можете добавлять метку даты — SHA не особенно полезен, так как он довольно случаен, и к тому же, глядя на две SHA-суммы, никак не определить какая из них новее.</p>
+
+<p>Как оказывается, можно написать свои собственные фильтры, которые будут делать подстановки в файлах при коммитах и выгрузке файлов. Для этого надо задать фильтры &quot;clean&quot; и &quot;smudge&quot;. В файле <code>.gitattributes</code> можно задать фильтр для определённых путей и затем установить сценарии, которые будут обрабатывать файлы непосредственно перед выгрузкой (&quot;smudge&quot;, см. рис. 7-2) и прямо перед коммитом (&quot;clean&quot;, см. рис. 7-3). Эти фильтры можно настроить на совершение абсолютно любых действий.</p>
+
+<p><center><img src="/figures/18333fig0702-tn.png"></center><br/>
+Рисунок 7-2. Фильтр “smudge” выполняется при checkout.</p>
+
+<p><center><img src="/figures/18333fig0703-tn.png"></center><br/>
+Рисунок 7-3. Фильтр “clean” выполняется при помещении файлов в индекс.</p>
+
+<p>В сообщении первоначального коммита, добавляющего эту функциональность, дан простой пример того, как можно пропустить весь свой исходный код на C через программу <code>indent</code> перед коммитом. Сделать это можно, задав атрибут filter в файле <code>.gitattributes</code> так, чтобы он пропускал файлы <code>*.c</code> через фильтр &quot;indent&quot;:</p>
+
+<pre><code>*.c     filter=indent
+</code></pre>
+
+<p>Затем укажите Git&#39;у, что должен делать фильтр &quot;indent&quot; при smudge и clean:</p>
+
+<pre><code>$ git config --global filter.indent.clean indent
+$ git config --global filter.indent.smudge cat
+</code></pre>
+
+<p>В нашем случае, когда вы будете делать коммит, содержащий файлы, соответствующие шаблону <code>*.c</code>, Git прогонит их через программу <code>indent</code> перед коммитом, а потом через программу <code>cat</code> перед тем как выгрузить их на диск. Программа <code>cat</code>, по сути, является холостой — она выдаёт те же данные, которые получила. Фактически эта комбинация профильтровывает все файлы с исходным кодом на C через <code>indent</code> перед тем, как сделать коммит.</p>
+
+<p>Ещё один интересный пример — это развёртывание ключа <code>$Date$</code> в стиле RCS. Чтобы сделать его правильно, нам понадобится небольшой сценарий, который принимает на вход имя файла, определяет дату последнего коммита в проекте и вставляет эту дату в наш файл. Вот небольшой сценарий на Ruby, который делает именно это:</p>
+
+<pre><code>#! /usr/bin/env ruby
+data = STDIN.read
+last_date = `git log --pretty=format:&quot;%ad&quot; -1`
+puts data.gsub(&#39;$Date$&#39;, &#39;$Date: &#39; + last_date.to_s + &#39;$&#39;)
+</code></pre>
+
+<p>Всё, что делает этот сценарий, это получает дату последнего коммита с помощью команды <code>git log</code>, засовывает её во все строки <code>$Date$</code>, которые видит в stdin, и выводит результат — такое должно быть несложно реализовать на любом удобном вам языке. Давайте назовём этот файл <code>expand_date</code> и поместим в путь. Теперь в Git&#39;е необходимо настроить фильтр (назовём его <code>dater</code>) и указать, что надо использовать фильтр <code>expand_date</code> при выполнении smudge во время выгрузки файлов. Воспользуемся регулярным выражением Perl, чтобы убрать изменения при коммите:</p>
+
+<pre><code>$ git config filter.dater.smudge expand_date
+$ git config filter.dater.clean &#39;perl -pe &quot;s/\\\$Date[^\\\$]*\\\$/\\\$Date\\\$/&quot;&#39;
+</code></pre>
+
+<p>Этот фрагмент кода на Perl&#39;е вырезает всё, что находит в строке <code>$Date$</code> так, чтобы вернуть всё в начальное состояние. Теперь, когда наш фильтр готов, можете протестировать его, создав файл с ключом <code>$Date$</code> и установив для этого файла Git-атрибут, который задействует для него новый фильтр:</p>
+
+<pre><code>$ echo &#39;# $Date$&#39; &gt; date_test.txt
+$ echo &#39;date*.txt filter=dater&#39; &gt;&gt; .gitattributes
+</code></pre>
+
+<p>Если мы сейчас добавим эти изменения в коммит и снова выгрузим файл, то мы увидим, что ключевое слово было заменено правильно:</p>
+
+<pre><code>$ git add date_test.txt .gitattributes
+$ git commit -m &quot;Testing date expansion in Git&quot;
+$ rm date_test.txt
+$ git checkout date_test.txt
+$ cat date_test.txt
+# $Date: Tue Apr 21 07:26:52 2009 -0700$
+</code></pre>
+
+<p>Как видите, такая техника может быть весьма мощной для настройки проекта под свои нужды. Но вы должны быть осторожны, ибо файл <code>.gitattributes</code> вы добавите в коммит и будете его распространять вместе с проектом, а драйвер (в нашем случае <code>dater</code>) — нет. Так что не везде оно будет работать. Когда будете проектировать свои фильтры, постарайтесь сделать так, чтобы при возникновении в них ошибки проект не переставал работать правильно.</p>
+
+<h3 id="Экспорт-репозитория"><a href="#Экспорт-репозитория">Экспорт репозитория</a></h3>
+
+<p>Ещё атрибуты в Git&#39;е позволяют делать некоторые интересные вещи при экспортировании архива с проектом.</p>
+
+<h4>export-ignore</h4>
+
+<p>Вы можете попросить Git не экспортировать определённые файлы и каталоги при создании архива. Если у вас есть подкаталог или файл, который вы не желаете включать в архив, но хотите, чтобы в проекте он был, можете установить для такого файла атрибут <code>export-ignore</code>.</p>
+
+<p>Например, скажем, у вас в подкаталоге <code>test/</code> имеются некоторые тестовые файлы, и нет никакого смысла добавлять их в тарбол при экспорте проекта. Тогда добавим следующую строку в файл с Git-атрибутами:</p>
+
+<pre><code>test/ export-ignore
+</code></pre>
+
+<p>Теперь, если вы запустите <code>git archive</code>, чтобы создать тарбол с проектом, этот каталог в архив включён не будет.</p>
+
+<h4>export-subst</h4>
+
+<p>Ещё одна вещь, которую можно сделать с архивами, — это сделать какую-нибудь простую подстановку ключевых слов. Git позволяет добавить в любой файл строку вида <code>$Format:$</code> с любыми кодами форматирования, доступными в <code>--pretty=format</code> (многие из этих кодов мы рассматривали в главе 2). Например, если вам захотелось добавить в проект файл с именем <code>LAST_COMMIT</code>, в который при запуске <code>git archive</code> будет автоматически помещаться дата последнего коммита, то такой файл вы можете сделать следующим образом:</p>
+
+<pre><code>$ echo &#39;Last commit date: $Format:%cd$&#39; &gt; LAST_COMMIT
+$ echo &quot;LAST_COMMIT export-subst&quot; &gt;&gt; .gitattributes
+$ git add LAST_COMMIT .gitattributes
+$ git commit -am &#39;adding LAST_COMMIT file for archives&#39;
+</code></pre>
+
+<p>После запуска <code>git archive</code> этот файл у вас в архиве будет иметь содержимое следующего вида:</p>
+
+<pre><code>$ cat LAST_COMMIT
+Last commit date: $Format:Tue Apr 21 08:38:48 2009 -0700$
+</code></pre>
+
+<h3 id="Стратегии-слияния"><a href="#Стратегии-слияния">Стратегии слияния</a></h3>
+
+<p>Атрибуты Git&#39;а могут также быть использованы для того, чтобы попросить Git использовать другие стратегии слияния для определённых файлов в проекте. Одна очень полезная возможность — это сказать Git&#39;у, чтобы он не пытался слить некоторые файлы, если для них есть конфликт, а просто выбрал ваш вариант, предпочтя его чужому.</p>
+
+<p>Это полезно в том случае, если ветка в вашем проекте разошлась с исходной, но вам всё же хотелось бы иметь возможность слить изменения из неё обратно, проигнорировав некоторые файлы. Скажем, у вас есть файл с настройками базы данных, который называется database.xml, и в двух ветках он разный, и вы хотите влить другую свою ветку, не трогая файл с настройками базы данных. Задайте атрибут следующим образом:</p>
+
+<pre><code>database.xml merge=ours
+</code></pre>
+
+<p>При вливании другой ветки, вместо конфликтов слияния для файла database.xml, вы увидите следующее:</p>
+
+<pre><code>$ git merge topic
+Auto-merging database.xml
+Merge made by recursive.
+</code></pre>
+
+<p>В данном случае database.xml остался в том варианте, в каком и был изначально.</p>
+
+<div id="nav"><a href="/book/ru/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git">prev</a> | <a href="/book/ru/v1/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9F%D0%B5%D1%80%D0%B5%D1%85%D0%B2%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%B8-%D0%B2-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

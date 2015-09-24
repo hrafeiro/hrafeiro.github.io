@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":17,"applicationTime":602,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Contribuyendo a un proyecto</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/es/v1/Empezando">Empezando</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/es/v1/Empezando-Acerca-del-control-de-versiones">Acerca del control de versiones</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/es/v1/Empezando-Una-breve-historia-de-Git">Una breve historia de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/es/v1/Empezando-Fundamentos-de-Git">Fundamentos de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/es/v1/Empezando-Instalando-Git">Instalando Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/es/v1/Empezando-Configurando-Git-por-primera-vez">Configurando Git por primera vez</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/es/v1/Empezando-Obteniendo-ayuda">Obteniendo ayuda</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/es/v1/Empezando-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/es/v1/Fundamentos-de-Git">Fundamentos de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git">Obteniendo un repositorio Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio">Guardando cambios en el repositorio</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones">Viendo el histórico de confirmaciones</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/es/v1/Fundamentos-de-Git-Deshaciendo-cosas">Deshaciendo cosas</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos">Trabajando con repositorios remotos</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/es/v1/Fundamentos-de-Git-Creando-etiquetas">Creando etiquetas</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/es/v1/Fundamentos-de-Git-Consejos-y-trucos">Consejos y trucos</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/es/v1/Fundamentos-de-Git-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/es/v1/Ramificaciones-en-Git">Ramificaciones en Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/es/v1/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F">¿Qué es una rama?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/es/v1/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar">Procedimientos básicos para ramificar y fusionar</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/es/v1/Ramificaciones-en-Git-Gesti%C3%B3n-de-ramificaciones">Gestión de ramificaciones</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/es/v1/Ramificaciones-en-Git-Flujos-de-trabajo-ramificados">Flujos de trabajo ramificados</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas">Ramas Remotas</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/es/v1/Ramificaciones-en-Git-Reorganizando-el-trabajo-realizado">Reorganizando el trabajo realizado</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/es/v1/Ramificaciones-en-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/es/v1/Git-en-un-servidor">Git en un servidor</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/es/v1/Git-en-un-servidor-Los-Protocolos">Los Protocolos</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/es/v1/Git-en-un-servidor-Poniendo-Git-en-un-Servidor">Poniendo Git en un Servidor</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/es/v1/Git-en-un-servidor-Generando-tu-clave-p%C3%BAblica-SSH">Generando tu clave pública SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/es/v1/Git-en-un-servidor-Preparando-el-servidor">Preparando el servidor</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/es/v1/Git-en-un-servidor-Acceso-p%C3%BAblico">Acceso público</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/es/v1/Git-en-un-servidor-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/es/v1/Git-en-un-servidor-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/es/v1/Git-en-un-servidor-El-demonio-Git">El demonio Git</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/es/v1/Git-en-un-servidor-Git-en-un-alojamiento-externo">Git en un alojamiento externo</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/es/v1/Git-en-un-servidor-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/es/v1/Git-en-entornos-distribuidos">Git en entornos distribuidos</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">Flujos de trabajo distribuidos</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Contribuyendo-a-un-proyecto">Contribuyendo a un proyecto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto">Gestionando un proyecto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/es/v1/Las-herramientas-de-Git">Las herramientas de Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/es/v1/Las-herramientas-de-Git-Selecci%C3%B3n-de-confirmaciones-de-cambios-concretas">Selección de confirmaciones de cambios concretas</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/es/v1/Las-herramientas-de-Git-Preparaci%C3%B3n-interactiva">Preparación interactiva</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/es/v1/Las-herramientas-de-Git-Guardado-r%C3%A1pido-provisional">Guardado rápido provisional</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/es/v1/Las-herramientas-de-Git-Reescribiendo-la-historia">Reescribiendo la historia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git">Depuración con Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/es/v1/Las-herramientas-de-Git-Subm%C3%B3dulos">Submódulos</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/es/v1/Las-herramientas-de-Git-Fusi%C3%B3n-de-sub%C3%A1rboles">Fusión de subárboles</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/es/v1/Las-herramientas-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/es/v1/Personalizando-Git">Personalizando Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/es/v1/Personalizando-Git-Configuraci%C3%B3n-de-Git">Configuración de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/es/v1/Personalizando-Git-Atributos-de-Git">Atributos de Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/es/v1/Personalizando-Git-Puntos-de-enganche-Git">Puntos de enganche Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/es/v1/Personalizando-Git-Un-ejemplo-de-implantaci%C3%B3n-de-una-determinada-pol%C3%ADtica-en-Git">Un ejemplo de implantación de una determinada política en Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/es/v1/Personalizando-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/es/v1/Git-y-Otros-Sistemas">Git y Otros Sistemas</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Git-y-Subversion">Git y Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/es/v1/Los-entresijos-internos-de-Git">Los entresijos internos de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Fontaneria-y-porcelana">Fontaneria y porcelana</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Los-objetos-Git">Los objetos Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Referencias-Git">Referencias Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Archivos-empaquetadores">Archivos empaquetadores</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Las-especificaciones-para-hacer-referencia-a-refspec">Las especificaciones para hacer referencia a...  (refspec)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Protocolos-de-transferencia">Protocolos de transferencia</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Mantenimiento-y-recuperaci%C3%B3n-de-datos">Mantenimiento y recuperación de datos</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>5.2 Git en entornos distribuidos - Contribuyendo a un proyecto</h1>
+  <div><h2>Contribuyendo a un proyecto</h2>
+
+<p>En estos momentos conoces las diferentes formas de trabajar, y tienes ya un generoso conocimiento de los fundamentos de Git. En esta sección, aprenderás acerca de las formas más habituales de contribuir a un proyecto.</p>
+
+<p>El mayor problema al intentar describir este proceso es el gran número de variaciones que se pueden presentar. Por la gran flexibilidad de Git, la gente lo suele utilizar de multiples maneras; siendo problemático intentar describir la forma en que deberías contribuir a un proyecto --cada proyecto tiene sus peculiaridades--. Algunas de las variables a considerar son: la cantidad de colaboradores activos, la forma de trabajo escogida, el nivel de acceso que tengas, y, posiblemente, el sistema de colaboración externa implantado.</p>
+
+<p>La primera variable es el número de colaboradores activos. ¿Cuántos usuarios están enviando activamente código a este proyecto?, y ¿con qué frecuencia?. En muchas ocasiones, tendrás dos o tres desarrolladores, con tan solo unas pocas confirmaciones de cambios (commits) diarias; e incluso menos en algunos proyectos durmientes. En proyectos o empresas verdaderamente grandes puedes tener cientos de desarrolladores, con docenas o incluso cientos de parches llegando cada día. Esto es importante, ya que cuantos más desarrolladores haya, mayores serán los problemas para asegurarte de que tu código se integre limpiamente. Los cambios que envies pueden quedar obsoletos o severamente afectados por otros trabajos que han sido integrados previamente mientras tú estabas trabajando o mientras tus cambios aguardaban a ser aprobados para su integración. ¿Cómo puedes mantener consistentemente actualizado tu código, y asegurarte así de que tus parches son válidos?</p>
+
+<p>La segunda variable es la forma de trabajo que se utilice para el proyecto. ¿Es centralizado, con iguales derechos de acceso en escritura para cada desarrollador?. ¿Tiene un gestor de integraciones que comprueba todos los parches?. ¿Se revisan y aprueban los parches entre los propios desarrolladores?.  ¿Participas en ese proceso de aprobación?. ¿Existe un sistema de tenientes, a los que has de enviar tu trabajo en primer lugar?.</p>
+
+<p>La tercera variable es el nivel de acceso que tengas. La forma de trabajar y de contribuir a un proyecto es totalmente diferente dependiendo de si tienes o no acceso de escritura al proyecto. Si no tienes acceso de escritura, ¿cuál es el sistema preferido del proyecto para aceptar contribuciones?. Es más, ¿tiene un sistema para ello?. ¿Con cuánto trabajo contribuyes?. ¿Con qué frecuencia?.</p>
+
+<p>Todas estas preguntas afectan a la forma efectiva de contribuir a un proyecto, y a la forma de trabajo que prefieras o esté disponible para tí. Vamos a cubrir ciertos aspectos de todo esto, en una serie de casos de uso; desde los más sencillos hasta los más complejos. A partir de dichos ejemplos, tendrías que ser capaz de construir la forma de trabajo específica que necesites para cada caso.</p>
+
+<h3>Reglas para las confirmaciones de cambios (commits)</h3>
+
+<p>Antes de comenzar a revisar casos de uso específicos, vamos a dar una pincelada sobre los mensajes en las confirmaciones de cambios (commits). Disponer unas reglas claras para crear confirmaciones de cambios, y seguirlas fielmente, facilta enormemente tanto el trabajo con Git y como la colaboración con otras personas. El propio proyecto Git suministra un documento con un gran número de buenas sugerencias sobre la creación de confirmaciones de cambio destinadas a enviar parches --puedes leerlo en el código fuente de Git, en el archivo &#39;Documentation/SubmittingPatches&#39;--.</p>
+
+<p>En primer lugar, no querrás enviar ningún error de espaciado. Git nos permite buscarlos facilmente. Previamente a realizar una confirmación de cambios, lanzar el comando &#39;git diff --check&#39; para identificar posibles errores de espaciado. Aquí van algunos ejemplos, en los que hemos sustituido las marcas rojas por &#39;X&#39;s:</p>
+
+<pre><code>$ git diff --check
+lib/simplegit.rb:5: trailing whitespace.
++    @git_dir = File.expand_path(git_dir)XX
+lib/simplegit.rb:7: trailing whitespace.
++ XXXXXXXXXXX
+lib/simplegit.rb:26: trailing whitespace.
++    def command(git_cmd)XXXX
+</code></pre>
+
+<p>Lanzando este comando antes de confirmar cambios, puedes estar seguro de si vas o no a incluir problemas de espaciado que puedan molestar a otros desarrolladores.</p>
+
+<p>En segundo lugar, intentar hacer de cada confirmación (commit) un grupo lógico e independiente de cambios. Siempre que te sea posible, intenta hacer digeribles tus cambios --no estés trabajando todo el fin de semana, sobre cuatro o cinco asuntos diferentes, y luego confirmes todo junto el lunes--. Aunque no hagas ninguna confirmación durante el fin de semana, el lunes puedes utilizar el área de preparación (staging area) para ir dividiendo tu trabajo y hacer una confirmación de cambios (commit) separada para cada asunto; con un mensaje adecuado para cada una de ellas. Si algunos de los cambios modifican un mismo archivo, utiliza el comando &#39;git add --patch&#39; para almacenar parcialmente los archivos (tal y como se verá detalladamente en el Capítulo 6). El estado del proyecto al final de cada rama será idéntico si haces una sola confirmación o si haces cinco, en tanto en cuanto todos los cambios estén confirmados en un determinado momento. Por consiguiente, intenta facilitar las cosas a tus compañeros y compañeras desarroladores cuando vayan a revisar tus cambios. Además, esta manera de trabajar facilitará la integración o el descarte individual de alguno de los cambios, en caso de ser necesario. El Capítulo 6 contiene un gran número de trucos para reescribir el historial e ir preparando archivos interactivamente --utilizalos para ayudarte a crear un claro y comprensible historial--.</p>
+
+<p>Y, por último, prestar atención al mensaje de confirmación. Si nos acostumbramos a poner siempre mensajes de calidad en las confirmaciones de cambios, facilitaremos en gran medida el trabajo y la colaboración con Git. Como regla general, tus mensajes han de comenzar con una ĺínea, de no más de 50 caracteres, donde se resuma el grupo de cambios; seguida de una línea en blanco; y seguida de una detallada explicación en las líneas siguientes. El proyecto Git obliga a incluir una explicación detallada; incluyendo tus motivaciones para los cambios realizados; y comentarios sobre las diferencias, tras su implementación, respecto del comportamiento anterior del programa. Esta recomendación es una buena regla a seguir. Es también buena idea redactar los mensajes utilizando el imperativo, en tiempo presente. Es decir, dá órdenes. Por ejemplo, en vez de escribir &quot;He añadido comprobaciones para&quot; o &quot;Añadiendo comprobaciones para&quot;, utilizar la frase &quot;Añadir comprobaciones para&quot;. Como plantilla de referencia, podemos utilizar la que escribió Tim Pope en tpope.net:</p>
+
+<pre><code>Un resumen de cambios, corto (50 caracteres o menos).
+
+Seguido de un texto más detallado, si es necesario.  Limitando las líneas a 72 caracteres mas o menos.  En algunos contextos, la primera línea se tratará como si fuera el asundo de un correo electrónico y el resto del texto como si fuera el cuerpo.  La línea en blanco separando el resumen del cuerpo es crítica (a no ser que se omita totalmente el cuerpo); algunas herramientas como &#39;rebase&#39; pueden tener problemas si no los separas adecuadamente.
+
+Los siguientes párrafos van tras la línea en blanco.
+
+ - Los puntos con bolo también están permitidos.
+
+ - Habitualmente se emplea un guión o un asterisco como bolo, seguido de un espacio, con líneas en blanco intermedias; pero las convenciones pueden variar.
+</code></pre>
+
+<p>Si todas tus confirmaciones de cambio (commit) llevan mensajes de este estilo, facilitarás las cosas tanto para tí como para las personas que trabajen contigo. El proyecto Git tiene los mensajes adecuadamente formateados. Te animo a lanzar el comando &#39;git log --no-merges&#39; en dicho proyecto, para que veas la pinta que tiene un historial de proyecto limpio y claro.</p>
+
+<p>En los ejemplos siguientes, y a lo largo de todo este libro, por razones de brevedad no formatearé correctamente los mensajes; sino que emplearé la opción &#39;-m&#39; en los comandos &#39;git commit&#39;. Observa mis palabras, no mis hechos.</p>
+
+<h3 id="Pequeño-Grupo-Privado"><a href="#Pequeño-Grupo-Privado">Pequeño Grupo Privado</a></h3>
+
+<p>Lo más simple que te puedes encontrar es un proyecto privado con uno o dos desarrolladores. Por privado, me refiero a código propietario --no disponible para ser leido por el mundo exterior--. Tanto tu como el resto del equipo teneis acceso de envio (push) al repositorio.</p>
+
+<p>En un entorno como este, puedes seguir un flujo de trabajo similar al que adoptarías usando Subversion o algún otro sistema centralizado. Sigues disfrutando de ventajas tales como las confirmaciones offline y la mayor simplicidad en las ramificaciones/fusiones. Pero, en el fondo, la forma de trabajar será bastante similar; la mayor diferencia radica en que las fusiones (merge) se hacen en el lado cliente en lugar de en el servidor.
+Vamos a ver como actuarian dos desarrolladores trabajando conjuntamente en un repositorio compartido. El primero de ellos, John, clona el repositorio, hace algunos cambios y los confirma localmente: (en estos ejemplos estoy sustituyendo los mensajes del protocolo con &#39;...&#39; , para acortarlos)</p>
+
+<pre><code># John&#39;s Machine
+$ git clone john@githost:simplegit.git
+Initialized empty Git repository in /home/john/simplegit/.git/
+...
+$ cd simplegit/
+$ vim lib/simplegit.rb
+$ git commit -am &#39;removed invalid default value&#39;
+[master 738ee87] removed invalid default value
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>La segunda desarrolladora, Jessica, hace lo mismo: clona el repositorio y confirma algunos cambios:</p>
+
+<pre><code># Jessica&#39;s Machine
+$ git clone jessica@githost:simplegit.git
+Initialized empty Git repository in /home/jessica/simplegit/.git/
+...
+$ cd simplegit/
+$ vim TODO
+$ git commit -am &#39;add reset task&#39;
+[master fbff5bc] add reset task
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>Tras esto, Jessica envia (push) su trabajo al servidor:</p>
+
+<pre><code># Jessica&#39;s Machine
+$ git push origin master
+...
+To jessica@githost:simplegit.git
+   1edee6b..fbff5bc  master -> master
+</code></pre>
+
+<p>John intenta enviar también sus cambios:</p>
+
+<pre><code># John&#39;s Machine
+$ git push origin master
+To john@githost:simplegit.git
+ ! [rejected]        master -> master (non-fast forward)
+error: failed to push some refs to &#39;john@githost:simplegit.git&#39;
+</code></pre>
+
+<p>John no puede enviar porque Jessica ha enviado previamente. Entender bien esto es especialmente importante, sobre todo si estás acostumbrado a utilizar Subversion; porque habrás notado que ambos desarrolladores han editado archivos distintos. Mientras que Subversion fusiona automáticamente en el servidor cuando los cambios han sido aplicados sobre archivos distintos, en Git has de fusionar (merge) los cambios localmente. John se vé obligado a recuperar (fetch) los cambios de jessica y a fusionarlos (merge) con los suyos, antes de que se le permita enviar (push):</p>
+
+<pre><code>$ git fetch origin
+...
+From john@githost:simplegit
+ + 049d078...fbff5bc master     -> origin/master
+</code></pre>
+
+<p>En este punto, el repositorio local de John será algo parecido a la Figura 5-4.</p>
+
+<p><center><img src="/figures/18333fig0504-tn.png"></center><br/>
+Figura 5-4. El repositorio inicial de John.</p>
+
+<p>John tiene una referencia a los cambios enviados por Jessica, pero ha de fusionarlos en su propio trabajo antes de que se le permita enviar:</p>
+
+<pre><code>$ git merge origin/master
+Merge made by recursive.
+ TODO |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>Si la fusión se realiza sin problemas, el historial de John será algo parecido a la Figura 5-5.</p>
+
+<p><center><img src="/figures/18333fig0505-tn.png"></center><br/>
+Figura 5-5. El repositorio de John tras fusionar origin/master.</p>
+
+<p>En este momento, John puede comprobar su código para verificar que sigue funcionando correctamente, y luego puede enviar su trabajo al servidor:</p>
+
+<pre><code>$ git push origin master
+...
+To john@githost:simplegit.git
+   fbff5bc..72bbc59  master -> master
+</code></pre>
+
+<p>Finalmente, el historial de John es algo parecido a la Figura 5-6.</p>
+
+<p><center><img src="/figures/18333fig0506-tn.png"></center><br/>
+Figura 5-6. El historial de John tras enviar al servidor origen.</p>
+
+<p>Mientras tanto, jessica ha seguido trabajando en una rama puntual (topic branch). Ha creado una rama puntual denominada &#39;issue54&#39; y ha realizado tres confirmaciones de cambios (commit) en dicha rama. Como todavia no ha recuperado los cambios de John, su historial es como se muestra en la Figura 5-7.</p>
+
+<p><center><img src="/figures/18333fig0507-tn.png"></center><br/>
+Figura 5-7. Historial inicial de Jessica.</p>
+
+<p>Jessica desea sincronizarse con John, para lo cual:</p>
+
+<pre><code># Jessica&#39;s Machine
+$ git fetch origin
+...
+From jessica@githost:simplegit
+   fbff5bc..72bbc59  master     -> origin/master
+</code></pre>
+
+<p>Esto recupera el trabajo enviado por John durante el tiempo en que Jessica estaba trabajando. El historial de Jessica es en estos momentos como se muestra en la figura 5-8.</p>
+
+<p><center><img src="/figures/18333fig0508-tn.png"></center><br/>
+Figura 5-8. El historial de Jessica tras recuperar los cambios de John.</p>
+
+<p>Jessica considera su rama puntual terminada, pero quiere saber lo que debe integrar con su trabajo antes de poder enviarla. Lo comprueba con el comando &#39;git log&#39;:</p>
+
+<pre><code>$ git log --no-merges origin/master ^issue54
+commit 738ee872852dfaa9d6634e0dea7a324040193016
+Author: John Smith &lt;jsmith@example.com&gt;
+Date:   Fri May 29 16:01:27 2009 -0700
+
+    removed invalid default value
+</code></pre>
+
+<p>Ahora, jessica puede fusionar (merge) su trabajo de la rama puntual &#39;issue54&#39; en su rama &#39;master&#39;l, fusionar (merge) el trabajo de John (&#39;origin/master&#39;) en su rama &#39;master&#39;, y enviarla de vuelta al servidor. Primero, se posiciona de nuevo en su rama principal para integrar todo su trabajo:</p>
+
+<pre><code>$ git checkout master
+Switched to branch &quot;master&quot;
+Your branch is behind &#39;origin/master&#39; by 2 commits, and can be fast-forwarded.
+</code></pre>
+
+<p>Puede fusionar primero tanto &#39;origin/master&#39; o como &#39;issue54&#39;, ya que ambos están aguas arriba. La situación final (snapshot) será la misma, indistintamente del orden elegido; tan solo el historial variará ligeramente. Elige fusionar primero &#39;issue54&#39;:</p>
+
+<pre><code>$ git merge issue54
+Updating fbff5bc..4af4298
+Fast forward
+ README           |    1 +
+ lib/simplegit.rb |    6 +++++-
+ 2 files changed, 6 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>No hay ningún problema; como puedes observar, es un simple avance rápido (fast-forward). Tras esto, jessica fusiona el trabajo de John (&#39;origin/master&#39;):</p>
+
+<pre><code>$ git merge origin/master
+Auto-merging lib/simplegit.rb
+Merge made by recursive.
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>Todo se integra limpiamente, y el historial de Jessica queda como en la Figura 5-9.</p>
+
+<p><center><img src="/figures/18333fig0509-tn.png"></center><br/>
+Figura 5-9. El historial de Jessica tras fusionar los cambios de John.</p>
+
+<p>En este punto, la rama &#39;origin/master&#39; es alcanzable desde la rama &#39;master&#39; de Jessica, permitiendole enviar (push) --asumiendo que John no haya enviado nada más durante ese tiempo--:</p>
+
+<pre><code>$ git push origin master
+...
+To jessica@githost:simplegit.git
+   72bbc59..8059c15  master -> master
+</code></pre>
+
+<p>Cada desarrollador ha confirmado algunos cambios y ambos han fusionado sus trabajos correctamente; ver Figura 5-10.</p>
+
+<p><center><img src="/figures/18333fig0510-tn.png"></center><br/>
+Figura 5-10. El historial de Jessica tras enviar de vuelta todos los cambios al servidor.</p>
+
+<p>Este es uno de los flujos de trabajo más simples. Trabajas un rato, normalmente en una rama puntual de un asunto concreto, y la fusionas con tu rama principal cuando la tienes lista para integrar. Cuando deseas compartir ese trabajo, lo fusionas (merge) en tu propia rama &#39;master&#39;; luego recuperas (fetch) y fusionas (merge) la rama &#39;origin/master&#39;, por si hubiera cambiado; y finalmente envias (push) la rama &#39;master&#39; de vuelta al servidor. La secuencia general es algo así como la mostrada en la Figura 5-11.</p>
+
+<p><center><img src="/figures/18333fig0511-tn.png"></center><br/>
+Figura 5-11. Secuencia general de eventos en un flujo de trabajo multidesarrollador simple.</p>
+
+<h3 id="Grupo-Privado-Gestionado"><a href="#Grupo-Privado-Gestionado">Grupo Privado Gestionado</a></h3>
+
+<p>En este próximo escenario, vamos a hechar un vistazo al rol de colaborador en un gran grupo privado. Aprenderás cómo trabajar en un entorno donde pequeños grupos colaboran en algunas funcionalidades, y luego todas las aportaciones de esos equipos son integradas por otro grupo.</p>
+
+<p>Supongamos que John y Jessica trabajan conjuntamente en una funcionalidad, mientras que jessica y Josie trabajan en una segunda funcionalidad. En este caso, la compañia está utilizando un flujo de trabajo del tipo gestor-de-integración, donde el trabajo de algunos grupos individuales es integrado por unos ingenieros concretos; siendo solamente estos últimos quienes pueden actualizar la rama &#39;master&#39; del repositorio principal. En este escenario, todo el trabajo se realiza en ramas propias de cada grupo y es consolidado por los integradores más tarde.</p>
+
+<p>Vamos a seguir el trabajo de Jessica, a medida que trabaja en sus dos funcionalidade; colaborando en paralelo con dos desarrolladores distintos. Suponiendo que tiene su repositorio ya clonado, ella decide trabajar primero en la funcionalidad A (featureA). Crea una nueva rama para dicha funcionalidad y trabaja en ella:</p>
+
+<pre><code># Jessica&#39;s Machine
+$ git checkout -b featureA
+Switched to a new branch &quot;featureA&quot;
+$ vim lib/simplegit.rb
+$ git commit -am &#39;add limit to log function&#39;
+[featureA 3300904] add limit to log function
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>En ese punto, necesita compartir su trabajo con John, por lo que envia (push) al servidor las confirmaciones (commits) en su rama &#39;featureA&#39;. Como Jessica no tiene acceso de envio a la rama &#39;master&#39; --solo los integradores lo tienen--, ha de enviar a alguna otra rama para poder colaborar con John:</p>
+
+<pre><code>$ git push origin featureA
+...
+To jessica@githost:simplegit.git
+ * [new branch]      featureA -> featureA
+</code></pre>
+
+<p>Jessica notifica a John por correo electrónico que ha enviado trabajo a una rama denominada &#39;featureA&#39; y que puede hecharle un vistazo allí. Mientras espera noticias de John, Jessica decide comenzar a trabajar en la funcionalidad B (featureB) con Josie. Para empezar, arranca una nueva rama puntual, basada en la rama &#39;master&#39; del servidor:</p>
+
+<pre><code># Jessica&#39;s Machine
+$ git fetch origin
+$ git checkout -b featureB origin/master
+Switched to a new branch &quot;featureB&quot;
+</code></pre>
+
+<p>Y realiza un par de confirmaciones de cambios (commits) en la rama &#39;featureB&#39;:</p>
+
+<pre><code>$ vim lib/simplegit.rb
+$ git commit -am &#39;made the ls-tree function recursive&#39;
+[featureB e5b0fdc] made the ls-tree function recursive
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ vim lib/simplegit.rb
+$ git commit -am &#39;add ls-files&#39;
+[featureB 8512791] add ls-files
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>Quedando su repositorio como se muestra en la Figura 5-12</p>
+
+<p><center><img src="/figures/18333fig0512-tn.png"></center><br/>
+Figura 5-12. Historial inicial de Jessica.</p>
+
+<p>Cuando está preparada para enviar (push) su trabajo, recibe un correo electronico de Josie de que ha puesto en el servidor una rama denominada &#39;featureBee&#39;, con algo de trabajo. Jessica necesita fusionar (merge) dichos cambios con los suyos antes de poder enviarlos al servidor. Por tanto, recupera (fetch) los cambios de Josie:</p>
+
+<pre><code>$ git fetch origin
+...
+From jessica@githost:simplegit
+ * [new branch]      featureBee -> origin/featureBee
+</code></pre>
+
+<p>Y los fusiona con su propio trabajo:</p>
+
+<pre><code>$ git merge origin/featureBee
+Auto-merging lib/simplegit.rb
+Merge made by recursive.
+ lib/simplegit.rb |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>Pero hay un pequeño problema, necesita enviar el trabajo fusionado en su rama &#39;featureB&#39; a la rama &#39;featureBee&#39; del servidor. Puede hacerlo usando el comando &#39;git push&#39; e indicando específicamente el nombre de la rama local seguida de dos puntos (:) y seguida del nombre de la rama remota:</p>
+
+<pre><code>$ git push origin featureB:featureBee
+...
+To jessica@githost:simplegit.git
+   fba9af8..cd685d1  featureB -> featureBee
+</code></pre>
+
+<p>Esto es lo que se denomina un <em>refspec</em>. Puedes ver el Capítulo 9 para una discusión más detallada acerca de los <em>refspecs</em> de Git y los distintos usos que puedes darles.</p>
+
+<p>A continuación, John envia un correo electronico a jessica comentandole que ha enviado algunos cambios a la rama &#39;featureA&#39; y pidiendole que los verifique. Ella lanza un &#39;git fetch&#39; para recuperar dichos cambios:</p>
+
+<pre><code>$ git fetch origin
+...
+From jessica@githost:simplegit
+   3300904..aad881d  featureA   -> origin/featureA
+</code></pre>
+
+<p>A continuación, puede ver las modificaciones realizadas, lanzando el comando &#39;git log&#39;:</p>
+
+<pre><code>$ git log origin/featureA ^featureA
+commit aad881d154acdaeb2b6b18ea0e827ed8a6d671e6
+Author: John Smith &lt;jsmith@example.com&gt;
+Date:   Fri May 29 19:57:33 2009 -0700
+
+    changed log output to 30 from 25
+</code></pre>
+
+<p>Para terminar, fusiona el trabajo de John en su propia rama &#39;featureA&#39;:</p>
+
+<pre><code>$ git checkout featureA
+Switched to branch &quot;featureA&quot;
+$ git merge origin/featureA
+Updating 3300904..aad881d
+Fast forward
+ lib/simplegit.rb |   10 +++++++++-
+1 files changed, 9 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>Jessica realiza algunos ajustes, los confirma (commit) y los envia (push) de vuelta al servidor:</p>
+
+<pre><code>$ git commit -am &#39;small tweak&#39;
+[featureA ed774b3] small tweak
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ git push origin featureA
+...
+To jessica@githost:simplegit.git
+   3300904..ed774b3  featureA -> featureA
+</code></pre>
+
+<p>Quedando su historial como se muestra en la Figura 5-13.</p>
+
+<p><center><img src="/figures/18333fig0513-tn.png"></center><br/>
+Figura 5-13. El historial de Jessica después de confirmar cambios en una rama puntual.</p>
+
+<p>Jessica, Josie y John informan a los integradores de que las ramas &#39;featureA&#39; y &#39;featureBee&#39; del servidor están preparadas para su integración con la línea principal del programa. Despues de que dichas ramas sean integradas en la línea principal, una recuperación (fetch) traerá de vuelta las confirmaciones de cambios de las integraciones (merge commits), dejando un historial como el mostrado en la Figura 5-14.</p>
+
+<p><center><img src="/figures/18333fig0514-tn.png"></center><br/>
+Figura 5-14. El historial de Jessica tras fusionar sus dos ramas puntuales.</p>
+
+<p>Muchos grupos se están pasando a trabajar con Git, debido a su habilidad para mantener multiples equipos trabajando en paralelo, fusionando posteriormente las diferentes líneas de trabajo. La habilidad para que pequeños subgrupos de un equipo colaboren a través de ramas remotas, sin necesidad de tener en cuenta o de perturbar el equipo completo, es un gran beneficio de trabajar con Git. La secuencia del flujo de trabajo que hemos visto es algo así como lo mostrado en la Figura 5-15.</p>
+
+<p><center><img src="/figures/18333fig0515-tn.png"></center><br/>
+Figura 5-15. Secuencia básica de este flujo de trabajo en equipo gestionado.</p>
+
+<h3 id="Pequeño-Proyecto-Público"><a href="#Pequeño-Proyecto-Público">Pequeño Proyecto Público</a></h3>
+
+<p>Contribuir a proyectos públicos es ligeramente diferente. Ya que no tendrás permisos para actualizar ramas directamente sobre el proyecto, has de enviar el trabajo a los gestores de otra manera. En este primer ejemplo, veremos cómo contribuir a través de bifurcaciones (forks) en servidores Git que soporten dichas bifurcaciones. Los sitios como repo.or.cz  ó GitHub permiten realizar esto, y muchos gestores de proyectos esperan este estilo de contribución. En la siguiente sección, veremos el caso de los proyectos que prefieren aceptar contribuciones a través del correo electrónico.</p>
+
+<p>Para empezar, problemente desees clonar el repositorio principal, crear una rama puntual para el parche con el que piensas contribuir, y ponerte a trabajar sobre ella. La secuencia será algo parecido a esto:</p>
+
+<pre><code>$ git clone (url)
+$ cd project
+$ git checkout -b featureA
+$ (work)
+$ git commit
+$ (work)
+$ git commit
+</code></pre>
+
+<p>Puedes querer utilizar &#39;rebase -i&#39; para reducir tu trabajo a una sola confirmación de cambios (commit), o reorganizar el trabajo en las diversas confirmaciones para facilitar la revisión de parche por parte del gestor del proyecto --ver el Capítulo 6 para más detalles sobre reorganizaciones interactivas--.</p>
+
+<p>Cuando el trabajo en tu rama puntual está terminado y estás listo para enviarlo al gestor del proyecto, vete a la página del proyecto original y clica sobre el botón &quot;Fork&quot; (bifurcar), para crear así tu propia copia editable del proyecto. Tendrás que añadir la URL a este nuevo repositorio como un segundo remoto, y en este caso lo denominaremos &#39;myfork&#39;:</p>
+
+<pre><code>$ git remote add myfork (url)
+</code></pre>
+
+<p>Tu trabajo lo enviarás (push) a este segundo remoto. Es más sencillo enviar (push) directamente la rama puntual sobre la que estás trabajando, en lugar de fusionarla (merge) previamente con tu rama principal y enviar esta última. Y la razón para ello es que, si el trabajo no es aceptado o se integra solo parcialmente, no tendrás que rebobinar tu rama principal. Si el gestor del proyecto fusiona (merge), reorganiza (rebase) o integra solo parcialmente tu trabajo, aún podrás recuperarlo de vuelta a través de su repositorio:</p>
+
+<pre><code>$ git push myfork featureA
+</code></pre>
+
+<p>Tras enviar (push) tu trabajo a tu copia bifurcada (fork), has de notificarselo al gestor del proyecto.  Normalmente se suele hacer a través de una solicitud de recuperación/integración (pull request). La puedes generar directamente desde el sitio web, --GitHub tiene un botón &quot;pull request&quot; que notifica automáticamente al gestor--, o puedes lanzar el comando &#39;git request-pull&#39; y enviar manualmente su salida por correo electrónico al gestor del proyecto.</p>
+
+<p>Este comando &#39;request-pull&#39; compara la rama base donde deseas que se integre tu rama puntual y el repositorio desde cuya URL deseas que se haga, para darte un resumen de todos los cambios que deseas integrar. Por ejemplo, si Jessica quiere enviar a John una solicitud de recuperación, y ha realizado dos confirmaciones de cambios sobre la rama puntual que desea enviar, lanzará los siguientes comandos:</p>
+
+<pre><code>$ git request-pull origin/master myfork
+The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:
+  John Smith (1):
+        added a new function
+
+are available in the git repository at:
+
+  git://githost/simplegit.git featureA
+
+Jessica Smith (2):
+      add limit to log function
+      change log output to 30 from 25
+
+ lib/simplegit.rb |   10 +++++++++-
+ 1 files changed, 9 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>Esta salida puede ser enviada al gestor del proyecto, --le indica el punto donde  se ramificó, resume las confirmaciones de cambio, y le dice desde dónde recuperar estos cambios--.</p>
+
+<p>En un proyecto del que no seas gestor, suele ser más sencillo tener una rama tal como &#39;master&#39; siguiendo siempre a la rama &#39;origin/master&#39;; mientras realizas todo tu trabajo en otras ramas puntuales, que podrás descartar facilmente en caso de que alguna de ellas sea rechazada.  Manteniendo el trabajo de distintos temas aislados en sus respectivas ramas puntuales, te facilitas también el poder reorganizar tu trabajo si la cabeza del repositorio principal se mueve mientras tanto y tus confirmaciones de cambio (commits) ya no se pueden integrar limpiamente. Por ejemplo, si deseas contribuir al proyecto en un segundo tema, no continues trabajando sobre la rama puntual que acabas de enviar; comienza una nueva rama puntual desde la rama &#39;master&#39; del repositorio principal:</p>
+
+<pre><code>$ git checkout -b featureB origin/master
+$ (work)
+$ git commit
+$ git push myfork featureB
+$ (email maintainer)
+$ git fetch origin
+</code></pre>
+
+<p>De esta forma, cada uno de los temas está aislado dentro de un silo, --similar a una cola de parches--; permitiendote reescribir, reorganizar y modificar cada uno de ellos sin interferir ni crear interdependencias entre ellos.</p>
+
+<p><center><img src="/figures/18333fig0516-tn.png"></center><br/>
+Figura 5-16. Historial inicial con el trabajo de la funcionalidad B.</p>
+
+<p>Supongamos que el gestor del proyecto ha recuperado e integrado un grupo de otros parches y después lo intenta con tu primer parche, viendo que no se integra limpiamente.  En este caso, puedes intentar reorganizar (rebase) tu parche sobre &#39;origin/master&#39;, arreglar los conflictos y volver a enviar tus cambios:</p>
+
+<pre><code>$ git checkout featureA
+$ git rebase origin/master
+$ git push –f myfork featureA
+</code></pre>
+
+<p>Esto reescribe tu historial, quedando como se vé en la Figura 5-17.</p>
+
+<p><center><img src="/figures/18333fig0517-tn.png"></center><br/>
+Figura 5-17. Historial tras el trabajo en la funcionalidad A.</p>
+
+<p>Debido a que has reorganizado (rebase) tu rama de trabajo, tienes que indicar la opción &#39;-f&#39; en tu comando de envio (push), para permitir que la rama &#39;featureA&#39; del servidor sea reemplazada por una confirmación de cambios (commit) que no es hija suya. Una alternativa podría ser el enviar (push) este nuevo trabajo a una rama diferente del servidor (por ejemplo a &#39;featureAv2&#39;).</p>
+
+<p>Vamos a ver otro posible escenario: el gestor del proyecto ha revisado tu trabajo en la segunda rama y le ha gustado el concepto, pero desea que cambies algunos detalles de la implementación.  Puedes aprovechar también esta oportunidad para mover el trabajo y actualizarlo sobre la actual rama &#39;master&#39; del proyecto. Para ello, inicias una nueva rama basada en la actual &#39;origin/master&#39;, aplicas (squash) sobre ella los cambios de &#39;featureB&#39;, resuelves los posibles conflictos que se pudieran presentar, realizas los cambios en los detalles, y la envias de vuelta como una nueva rama:</p>
+
+<pre><code>$ git checkout -b featureBv2 origin/master
+$ git merge --no-commit --squash featureB
+$ (change implementation)
+$ git commit
+$ git push myfork featureBv2
+</code></pre>
+
+<p>La opción &#39;--squash&#39; coge todo el trabajo en la rama fusionada y lo aplica, en una sola confirmación de cambios sin fusión (no-merge commit), sobre la rama en la que estés situado. La opción &#39;--no-commit&#39; indica a Git que no debe registrar automáticamente una confirmación de cambios. Esto te permitirá el aplicar todos los cambios de la otra rama y después hacer más cambios, antes de guardarlos todos ellos en una nueva confirmación (commit).</p>
+
+<p>En estos momentos, puedes notificar al gestor del proyecto que has realizado todos los cambios solicitados y que los puede encontrar en tu rama &#39;featureBv2&#39; (ver Figura 5-18).</p>
+
+<p><center><img src="/figures/18333fig0518-tn.png"></center><br/>
+Figura 5-18. Historial tras el trabajo en la versión 2 de la funcionalidad B.</p>
+
+<h3 id="Proyecto-Público-Grande"><a href="#Proyecto-Público-Grande">Proyecto Público Grande</a></h3>
+
+<p>Muchos grandes proyectos suelen tener establecidos los procedimientos para aceptar parches; --es necesario que compruebes las normas específicas para cada proyecto, ya que pueden variar de uno a otro--. De todas formas, muchos de los proyectos públicos más grandes aceptar parches a través de una lista de correo electrónico, por lo que veremos un ejemplo de dicho procedimiento.</p>
+
+<p>El flujo de trabajo es similar a los casos de uso vistos anteriormente; --creando ramas puntuales para cada serie de parches en los que vayas a trabajar--. La diferencia está en la forma de enviarlos al proyecto. En lugar de bifurcar (fork) el proyecto y enviar a tu propia copia editable, generarás correos electrónicos para cada serie de parches y os enviarás a la lista de correo.</p>
+
+<pre><code>$ git checkout -b topicA
+$ (work)
+$ git commit
+$ (work)
+$ git commit
+</code></pre>
+
+<p>Tienes dos confirmaciones de cambios (commits) a enviar a la lista de correo. Utilizarás el comando <code>git format-patch</code> para generar archivos formateados para poder ser enviados por correo electrónico. Este comando convierte cada confirmación de cambios (commit) en un mensaje de correo; con la primera línea del mensaje de confirmación puesto como asunto, y el resto del mensaje mas el parche como cuerpo.  Lo bonito de este procedimiento es que, al aplicar un parche desde un correo electrónico generado por <code>format-patch</code>, se preserva íntegramente la información de la confirmación de cambios (commit). Lo veremos más adelante, en la próxima sección, cuando veamos como aplicarlos:</p>
+
+<pre><code>$ git format-patch -M origin/master
+0001-add-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch
+</code></pre>
+
+<p>El comando <code>format-patch</code> lista los nombres de los archivos de parche que crea. La opción <code>-M</code> indica a Git que ha de mirar por si hay algo renombrado. Los archivos serán algo como:</p>
+
+<pre><code>$ cat 0001-add-limit-to-log-function.patch
+From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001
+From: Jessica Smith &lt;jessica@example.com&gt;
+Date: Sun, 6 Apr 2008 10:17:23 -0700
+Subject: [PATCH 1/2] add limit to log function
+
+Limit log functionality to the first 20Limit log functionality to the first 20Limit log functionality to the first 20
+
+---
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index 76f47bc..f9815f1 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -14,7 +14,7 @@ class SimpleGit
+   end
+
+   def log(treeish = &#39;master&#39;)
+-    command(&quot;git log #{treeish}&quot;)
++    command(&quot;git log -n 20 #{treeish}&quot;)
+   end
+
+   def ls_tree(treeish = &#39;master&#39;)
+--
+1.6.2.rc1.20.g8c5b.dirty
+</code></pre>
+
+<p>Puedes incluso editar esos archivos de parche, para añadirles más información , específica para la lista de correo, y que no desees mostrar en el propio mensaje de la confirmación de cambios.  Si añades texto entre la línea que comienza por <code>---</code> y el comienzo del parche (la línea <code>lib/simplegit.rb</code>). Los desarrolladores de la lista de correo podrán leerlo. Pero será ignorado al aplicar el parche al proyecto.</p>
+
+<p>Para enviar estos archivos a la lista de correo,puedes tanto pegar directamente el archivo en tu programa de correo electrónico, como enviarlo a través de algún programa basado en línea de comandos. Pegar el texto directamente suele causar problemas de formato. Especialmente con los clientes de correo más &quot;inteligentes&quot;, que no preservan adecuadamente los saltos de línea y otros espaciados. Afortunadamente, Git suministra una herramienta que nos puede ser de gran ayuda para enviar parches correctamente formateados a través de protocolo IMAP, facilitandonos así las cosas. Voy a indicar cómo enviar un parche usando Gmail, que da la casualidad de que es el agente de correo utilizado por mí. En el final del anteriormente citado documento, <code>Documentation/SubmittingPatches</code>, puedes leer instrucciones detalladas para otros agentes de correo.</p>
+
+<p>Lo primero es configurar correctamente el apartado imap de tu archivo <code>~/.gitconfig</code>. Puedes ir ajustando cada valor individualmente, a través de comandos <code>git config</code>; o puedes añadirlos todos manualmente. Pero, al final, tu archivo de configuración ha de quedar más o menos como esto:</p>
+
+<pre><code>[imap]
+  folder = &quot;[Gmail]/Drafts&quot;
+  host = imaps://imap.gmail.com
+  user = user@gmail.com
+  pass = p4ssw0rd
+  port = 993
+  sslverify = false
+</code></pre>
+
+<p>Las dos últimas líneas probablente no sean necesarias si tu servidor IMAP no utiliza SSL; y, en ese caso, el valor para <code>host</code> deberá de ser <code>imap://</code> en lugar de <code>imaps://</code>.
+Cuando tengas esto ajustado, podrás utilizar el comando <code>git send-email</code> para poner series de parches en la carpeta de borradores (Drafts) de tu servidor IMAP:</p>
+
+<pre><code>$ git send-email *.patch
+0001-added-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch
+Who should the emails appear to be from? [Jessica Smith &lt;jessica@example.com&gt;]
+Emails will be sent from: Jessica Smith &lt;jessica@example.com&gt;
+Who should the emails be sent to? jessica@example.com
+Message-ID to be used as In-Reply-To for the first email? y
+</code></pre>
+
+<p>Tras esto, Git escupirá una serie de información de registro, con pinta más o menos como esta:</p>
+
+<pre><code>(mbox) Adding cc: Jessica Smith &lt;jessica@example.com&gt; from
+  \line &#39;From: Jessica Smith &lt;jessica@example.com&gt;&#39;
+OK. Log says:
+Sendmail: /usr/sbin/sendmail -i jessica@example.com
+From: Jessica Smith &lt;jessica@example.com&gt;
+To: jessica@example.com
+Subject: [PATCH 1/2] added limit to log function
+Date: Sat, 30 May 2009 13:29:15 -0700
+Message-Id: &lt;1243715356-61726-1-git-send-email-jessica@example.com&gt;
+X-Mailer: git-send-email 1.6.2.rc1.20.g8c5b.dirty
+In-Reply-To: &lt;y&gt;
+References: &lt;y&gt;
+
+Result: OK
+</code></pre>
+
+<p>En estos momentos, deberías poder ir a tu carpeta de borradores (Drafts), cambiar el destinatario (To) para apuntar a la lista de correo donde estés enviando el parche, puede que poner en copia (CC) al gestor o persona responsable, y enviar el mensaje.</p>
+
+<h3 id="Recapitulación"><a href="#Recapitulación">Recapitulación</a></h3>
+
+<p>En esta sección hemos visto unos cuantos de los flujos de trabajo más habituales para lidiar con distintos tipos de proyectos Git. Y hemos introducido un par de nuevas herramientas para ayudarte a gestionar estos procesos. A continuación veremos cómo trabajar en el otro lado de la moneda: manteniendo y gestionando un proyecto Git. Vas a aprender cómo ser un dictador benevolente o un gestor de integración.</p>
+
+<div id="nav"><a href="/book/es/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">prev</a> | <a href="/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

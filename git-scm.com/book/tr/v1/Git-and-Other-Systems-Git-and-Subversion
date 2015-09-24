@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":1,"applicationTime":238,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git and Subversion</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+    <h4>Related Material</h4>
+  <ul class="related-material">
+      <li class="reference">
+      <strong><a href="/ref/git-svn">git-svn</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-merge">git-merge</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-branch">git-branch</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-show-ref">git-show-ref</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-commit">git-commit</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+      <li class="reference">
+      <strong><a href="/ref/git-log">git-log</a></strong>
+        in <a href="/docs">Reference</a>
+      </li>
+  </ul>
+
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7">Başlangıç</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-S%C3%BCr%C3%BCm-Kontrol%C3%BC-Hakk%C4%B1nda">Sürüm Kontrolü Hakkında</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-Git-in-K%C4%B1sa-Bir-Tarih%C3%A7esi">Git&#39;in Kısa Bir Tarihçesi</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-Git-in-Temelleri">Git&#39;in Temelleri</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-Git-in-Kurulumu">Git&#39;in Kurulumu</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-%C4%B0lk-Ayarlamalar">İlk Ayarlamalar</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-Yard%C4%B1m-Almak">Yardım Almak</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/tr/v1/Ba%C5%9Flang%C4%B1%C3%A7-%C3%96zet">Özet</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/tr/v1/Git-in-Temelleri">Git&#39;in Temelleri</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/tr/v1/Git-in-Temelleri-Bir-Git-Yaz%C4%B1l%C4%B1m-Havuzu-Edinmek">Bir Git Yazılım Havuzu Edinmek</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/tr/v1/Git-in-Temelleri-De%C4%9Fi%C5%9Fiklikleri-Yaz%C4%B1l%C4%B1m-Havuzuna-Kaydetmek">Değişiklikleri Yazılım Havuzuna Kaydetmek</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/tr/v1/Git-in-Temelleri-Kay%C4%B1t-Tarih%C3%A7esini-G%C3%B6r%C3%BCnt%C3%BClemek">Kayıt Tarihçesini Görüntülemek</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/tr/v1/Git-in-Temelleri-De%C4%9Fi%C5%9Fiklikleri-Geri-Almak">Değişiklikleri Geri Almak</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/tr/v1/Git-in-Temelleri-Uzak-U%C3%A7birimlerle-%C3%87al%C4%B1%C5%9Fmak">Uzak Uçbirimlerle Çalışmak</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/tr/v1/Git-in-Temelleri-Etiketleme">Etiketleme</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/tr/v1/Git-in-Temelleri-%C4%B0pu%C3%A7lar%C4%B1">İpuçları</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/tr/v1/Git-in-Temelleri-%C3%96zet">Özet</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/tr/v1/Git-te-Dallanma">Git&#39;te Dallanma</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/tr/v1/Git-te-Dallanma-Dal-Nedir%3F">Dal Nedir?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/tr/v1/Git-te-Dallanma-Dallanma-ve-Birle%C5%9Ftirmenin-Temelleri">Dallanma ve Birleştirmenin Temelleri</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/tr/v1/Git-te-Dallanma-Dal-Y%C3%B6netimi">Dal Yönetimi</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/tr/v1/Git-te-Dallanma-Dallanma-%C4%B0%C5%9F-Ak%C4%B1%C5%9Flar%C4%B1">Dallanma İş Akışları</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/tr/v1/Git-te-Dallanma-Uzak-U%C3%A7birim-Dallar%C4%B1">Uzak Uçbirim Dalları</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/tr/v1/Git-te-Dallanma-Rebasing-Tekrar-Adresleme">Rebasing (Tekrar Adresleme)</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/tr/v1/Git-te-Dallanma-%C3%96zet">Özet</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/tr/v1/Uzak-Serverda-Git">Uzak Serverda Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/tr/v1/Uzak-Serverda-Git-Protokoller">Protokoller</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/tr/v1/Da%C4%9F%C4%B1t%C4%B1k-Git">Dağıtık Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/tr/v1/Da%C4%9F%C4%B1t%C4%B1k-Git-Da%C4%9F%C4%B1t%C4%B1k-%C3%87al%C4%B1%C5%9Fma-Ak%C4%B1%C5%9Flar%C4%B1">Dağıtık Çalışma Akışları</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/tr/v1/Da%C4%9F%C4%B1t%C4%B1k-Git-Bir-Projeye-Kat%C4%B1l%C4%B1m-Sa%C4%9Flamak">Bir Projeye Katılım Sağlamak</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/tr/v1/Git-Tools">Git Tools</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/tr/v1/Git-Tools-Revision-Selection">Revision Selection</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/tr/v1/Git-Tools-Interactive-Staging">Interactive Staging</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/tr/v1/Git-Tools-Stashing">Stashing</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/tr/v1/Git-Tools-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/tr/v1/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/tr/v1/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/tr/v1/Git-Tools-Subtree-Merging">Subtree Merging</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/tr/v1/Git-Tools-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/tr/v1/Customizing-Git">Customizing Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/tr/v1/Customizing-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/tr/v1/Customizing-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/tr/v1/Customizing-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/tr/v1/Customizing-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/tr/v1/Customizing-Git-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/tr/v1/Git-and-Other-Systems">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/tr/v1/Git-and-Other-Systems-Git-and-Subversion">Git and Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/tr/v1/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/tr/v1/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/tr/v1/Git-Internals">Git Internals</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/tr/v1/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/tr/v1/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/tr/v1/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/tr/v1/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/tr/v1/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/tr/v1/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/tr/v1/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/tr/v1/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>8.1 Git and Other Systems - Git and Subversion</h1>
+  <div><h2>Git and Subversion</h2>
+
+<p>Currently, the majority of open source development projects and a large number of corporate projects use Subversion to manage their source code. It’s the most popular open source VCS and has been around for nearly a decade. It’s also very similar in many ways to CVS, which was the big boy of the source-control world before that.</p>
+
+<p>One of Git’s great features is a bidirectional bridge to Subversion called <code>git svn</code>. This tool allows you to use Git as a valid client to a Subversion server, so you can use all the local features of Git and then push to a Subversion server as if you were using Subversion locally. This means you can do local branching and merging, use the staging area, use rebasing and cherry-picking, and so on, while your collaborators continue to work in their dark and ancient ways. It’s a good way to sneak Git into the corporate environment and help your fellow developers become more efficient while you lobby to get the infrastructure changed to support Git fully. The Subversion bridge is the gateway drug to the DVCS world.</p>
+
+<h3 id="git-svn"><a href="#git-svn">git svn</a></h3>
+
+<p>The base command in Git for all the Subversion bridging commands is <code>git svn</code>. You preface everything with that. It takes quite a few commands, so you’ll learn about the common ones while going through a few small workflows.</p>
+
+<p>It’s important to note that when you’re using <code>git svn</code>, you’re interacting with Subversion, which is a system that is far less sophisticated than Git. Although you can easily do local branching and merging, it’s generally best to keep your history as linear as possible by rebasing your work and avoiding doing things like simultaneously interacting with a Git remote repository.</p>
+
+<p>Don’t rewrite your history and try to push again, and don’t push to a parallel Git repository to collaborate with fellow Git developers at the same time. Subversion can have only a single linear history, and confusing it is very easy. If you’re working with a team, and some are using SVN and others are using Git, make sure everyone is using the SVN server to collaborate — doing so will make your life easier.</p>
+
+<h3 id="Setting-Up"><a href="#Setting-Up">Setting Up</a></h3>
+
+<p>To demonstrate this functionality, you need a typical SVN repository that you have write access to. If you want to copy these examples, you’ll have to make a writeable copy of my test repository. In order to do that easily, you can use a tool called <code>svnsync</code> that comes with more recent versions of Subversion — it should be distributed with at least 1.4. For these tests, I created a new Subversion repository on Google code that was a partial copy of the <code>protobuf</code> project, which is a tool that encodes structured data for network transmission. </p>
+
+<p>To follow along, you first need to create a new local Subversion repository:</p>
+
+<pre><code>$ mkdir /tmp/test-svn
+$ svnadmin create /tmp/test-svn
+</code></pre>
+
+<p>Then, enable all users to change revprops — the easy way is to add a pre-revprop-change script that always exits 0:</p>
+
+<pre><code>$ cat /tmp/test-svn/hooks/pre-revprop-change 
+#!/bin/sh
+exit 0;
+$ chmod +x /tmp/test-svn/hooks/pre-revprop-change
+</code></pre>
+
+<p>You can now sync this project to your local machine by calling <code>svnsync init</code> with the to and from repositories.</p>
+
+<pre><code>$ svnsync init file:///tmp/test-svn http://progit-example.googlecode.com/svn/ 
+</code></pre>
+
+<p>This sets up the properties to run the sync. You can then clone the code by running</p>
+
+<pre><code>$ svnsync sync file:///tmp/test-svn
+Committed revision 1.
+Copied properties for revision 1.
+Committed revision 2.
+Copied properties for revision 2.
+Committed revision 3.
+...
+</code></pre>
+
+<p>Although this operation may take only a few minutes, if you try to copy the original repository to another remote repository instead of a local one, the process will take nearly an hour, even though there are fewer than 100 commits. Subversion has to clone one revision at a time and then push it back into another repository — it’s ridiculously inefficient, but it’s the only easy way to do this.</p>
+
+<h3 id="Getting-Started"><a href="#Getting-Started">Getting Started</a></h3>
+
+<p>Now that you have a Subversion repository to which you have write access, you can go through a typical workflow. You’ll start with the <code>git svn clone</code> command, which imports an entire Subversion repository into a local Git repository. Remember that if you’re importing from a real hosted Subversion repository, you should replace the <code>file:///tmp/test-svn</code> here with the URL of your Subversion repository:</p>
+
+<pre><code>$ git svn clone file:///tmp/test-svn -T trunk -b branches -t tags
+Initialized empty Git repository in /Users/schacon/projects/testsvnsync/svn/.git/
+r1 = b4e387bc68740b5af56c2a5faf4003ae42bd135c (trunk)
+      A    m4/acx_pthread.m4
+      A    m4/stl_hash.m4
+...
+r75 = d1957f3b307922124eec6314e15bcda59e3d9610 (trunk)
+Found possible branch point: file:///tmp/test-svn/trunk =&gt; \
+    file:///tmp/test-svn /branches/my-calc-branch, 75
+Found branch parent: (my-calc-branch) d1957f3b307922124eec6314e15bcda59e3d9610
+Following parent with do_switch
+Successfully followed parent
+r76 = 8624824ecc0badd73f40ea2f01fce51894189b01 (my-calc-branch)
+Checked out HEAD:
+ file:///tmp/test-svn/branches/my-calc-branch r76
+</code></pre>
+
+<p>This runs the equivalent of two commands — <code>git svn init</code> followed by <code>git svn fetch</code> — on the URL you provide. This can take a while. The test project has only about 75 commits and the codebase isn’t that big, so it takes just a few minutes. However, Git has to check out each version, one at a time, and commit it individually. For a project with hundreds or thousands of commits, this can literally take hours or even days to finish.</p>
+
+<p>The <code>-T trunk -b branches -t tags</code> part tells Git that this Subversion repository follows the basic branching and tagging conventions. If you name your trunk, branches, or tags differently, you can change these options. Because this is so common, you can replace this entire part with <code>-s</code>, which means standard layout and implies all those options. The following command is equivalent:</p>
+
+<pre><code>$ git svn clone file:///tmp/test-svn -s
+</code></pre>
+
+<p>At this point, you should have a valid Git repository that has imported your branches and tags:</p>
+
+<pre><code>$ git branch -a
+* master
+  my-calc-branch
+  tags/2.0.2
+  tags/release-2.0.1
+  tags/release-2.0.2
+  tags/release-2.0.2rc1
+  trunk
+</code></pre>
+
+<p>It’s important to note how this tool namespaces your remote references differently. When you’re cloning a normal Git repository, you get all the branches on that remote server available locally as something like <code>origin/[branch]</code> - namespaced by the name of the remote. However, <code>git svn</code> assumes that you won’t have multiple remotes and saves all its references to points on the remote server with no namespacing. You can use the Git plumbing command <code>show-ref</code> to look at all your full reference names:</p>
+
+<pre><code>$ git show-ref
+1cbd4904d9982f386d87f88fce1c24ad7c0f0471 refs/heads/master
+aee1ecc26318164f355a883f5d99cff0c852d3c4 refs/remotes/my-calc-branch
+03d09b0e2aad427e34a6d50ff147128e76c0e0f5 refs/remotes/tags/2.0.2
+50d02cc0adc9da4319eeba0900430ba219b9c376 refs/remotes/tags/release-2.0.1
+4caaa711a50c77879a91b8b90380060f672745cb refs/remotes/tags/release-2.0.2
+1c4cb508144c513ff1214c3488abe66dcb92916f refs/remotes/tags/release-2.0.2rc1
+1cbd4904d9982f386d87f88fce1c24ad7c0f0471 refs/remotes/trunk
+</code></pre>
+
+<p>A normal Git repository looks more like this:</p>
+
+<pre><code>$ git show-ref
+83e38c7a0af325a9722f2fdc56b10188806d83a1 refs/heads/master
+3e15e38c198baac84223acfc6224bb8b99ff2281 refs/remotes/gitserver/master
+0a30dd3b0c795b80212ae723640d4e5d48cabdff refs/remotes/origin/master
+25812380387fdd55f916652be4881c6f11600d6f refs/remotes/origin/testing
+</code></pre>
+
+<p>You have two remote servers: one named <code>gitserver</code> with a <code>master</code> branch; and another named <code>origin</code> with two branches, <code>master</code> and <code>testing</code>. </p>
+
+<p>Notice how in the example of remote references imported from <code>git svn</code>, tags are added as remote branches, not as real Git tags. Your Subversion import looks like it has a remote named tags with branches under it.</p>
+
+<h3 id="Committing-Back-to-Subversion"><a href="#Committing-Back-to-Subversion">Committing Back to Subversion</a></h3>
+
+<p>Now that you have a working repository, you can do some work on the project and push your commits back upstream, using Git effectively as a SVN client. If you edit one of the files and commit it, you have a commit that exists in Git locally that doesn’t exist on the Subversion server:</p>
+
+<pre><code>$ git commit -am &#39;Adding git-svn instructions to the README&#39;
+[master 97031e5] Adding git-svn instructions to the README
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>Next, you need to push your change upstream. Notice how this changes the way you work with Subversion — you can do several commits offline and then push them all at once to the Subversion server. To push to a Subversion server, you run the <code>git svn dcommit</code> command:</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      README.txt
+Committed r79
+       M      README.txt
+r79 = 938b1a547c2cc92033b74d32030e86468294a5c8 (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+</code></pre>
+
+<p>This takes all the commits you’ve made on top of the Subversion server code, does a Subversion commit for each, and then rewrites your local Git commit to include a unique identifier. This is important because it means that all the SHA-1 checksums for your commits change. Partly for this reason, working with Git-based remote versions of your projects concurrently with a Subversion server isn’t a good idea. If you look at the last commit, you can see the new <code>git-svn-id</code> that was added:</p>
+
+<pre><code>$ git log -1
+commit 938b1a547c2cc92033b74d32030e86468294a5c8
+Author: schacon &lt;schacon@4c93b258-373f-11de-be05-5f7a86268029&gt;
+Date:   Sat May 2 22:06:44 2009 +0000
+
+    Adding git-svn instructions to the README
+
+    git-svn-id: file:///tmp/test-svn/trunk@79 4c93b258-373f-11de-be05-5f7a86268029
+</code></pre>
+
+<p>Notice that the SHA checksum that originally started with <code>97031e5</code> when you committed now begins with <code>938b1a5</code>. If you want to push to both a Git server and a Subversion server, you have to push (<code>dcommit</code>) to the Subversion server first, because that action changes your commit data.</p>
+
+<h3 id="Pulling-in-New-Changes"><a href="#Pulling-in-New-Changes">Pulling in New Changes</a></h3>
+
+<p>If you’re working with other developers, then at some point one of you will push, and then the other one will try to push a change that conflicts. That change will be rejected until you merge in their work. In <code>git svn</code>, it looks like this:</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+Merge conflict during commit: Your file or directory &#39;README.txt&#39; is probably \
+out-of-date: resource out of date; try updating at /Users/schacon/libexec/git-\
+core/git-svn line 482
+</code></pre>
+
+<p>To resolve this situation, you can run <code>git svn rebase</code>, which pulls down any changes on the server that you don’t have yet and rebases any work you have on top of what is on the server:</p>
+
+<pre><code>$ git svn rebase
+       M      README.txt
+r80 = ff829ab914e8775c7c025d741beb3d523ee30bc4 (trunk)
+First, rewinding head to replay your work on top of it...
+Applying: first user change
+</code></pre>
+
+<p>Now, all your work is on top of what is on the Subversion server, so you can successfully <code>dcommit</code>:</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      README.txt
+Committed r81
+       M      README.txt
+r81 = 456cbe6337abe49154db70106d1836bc1332deed (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+</code></pre>
+
+<p>It’s important to remember that unlike Git, which requires you to merge upstream work you don’t yet have locally before you can push, <code>git svn</code> makes you do that only if the changes conflict. If someone else pushes a change to one file and then you push a change to another file, your <code>dcommit</code> will work fine:</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      configure.ac
+Committed r84
+       M      autogen.sh
+r83 = 8aa54a74d452f82eee10076ab2584c1fc424853b (trunk)
+       M      configure.ac
+r84 = cdbac939211ccb18aa744e581e46563af5d962d0 (trunk)
+W: d2f23b80f67aaaa1f6f5aaef48fce3263ac71a92 and refs/remotes/trunk differ, \
+  using rebase:
+:100755 100755 efa5a59965fbbb5b2b0a12890f1b351bb5493c18 \
+  015e4c98c482f0fa71e4d5434338014530b37fa6 M   autogen.sh
+First, rewinding head to replay your work on top of it...
+Nothing to do.
+</code></pre>
+
+<p>This is important to remember, because the outcome is a project state that didn’t exist on either of your computers when you pushed. If the changes are incompatible but don’t conflict, you may get issues that are difficult to diagnose. This is different than using a Git server — in Git, you can fully test the state on your client system before publishing it, whereas in SVN, you can’t ever be certain that the states immediately before commit and after commit are identical.</p>
+
+<p>You should also run this command to pull in changes from the Subversion server, even if you’re not ready to commit yourself. You can run <code>git svn fetch</code> to grab the new data, but <code>git svn rebase</code> does the fetch and then updates your local commits.</p>
+
+<pre><code>$ git svn rebase
+       M      generate_descriptor_proto.sh
+r82 = bd16df9173e424c6f52c337ab6efa7f7643282f1 (trunk)
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to refs/remotes/trunk.
+</code></pre>
+
+<p>Running <code>git svn rebase</code> every once in a while makes sure your code is always up to date. You need to be sure your working directory is clean when you run this, though. If you have local changes, you must either stash your work or temporarily commit it before running <code>git svn rebase</code> — otherwise, the command will stop if it sees that the rebase will result in a merge conflict.</p>
+
+<h3 id="Git-Branching-Issues"><a href="#Git-Branching-Issues">Git Branching Issues</a></h3>
+
+<p>When you’ve become comfortable with a Git workflow, you’ll likely create topic branches, do work on them, and then merge them in. If you’re pushing to a Subversion server via git svn, you may want to rebase your work onto a single branch each time instead of merging branches together. The reason to prefer rebasing is that Subversion has a linear history and doesn’t deal with merges like Git does, so git svn follows only the first parent when converting the snapshots into Subversion commits.</p>
+
+<p>Suppose your history looks like the following: you created an <code>experiment</code> branch, did two commits, and then merged them back into <code>master</code>. When you <code>dcommit</code>, you see output like this:</p>
+
+<pre><code>$ git svn dcommit
+Committing to file:///tmp/test-svn/trunk ...
+       M      CHANGES.txt
+Committed r85
+       M      CHANGES.txt
+r85 = 4bfebeec434d156c36f2bcd18f4e3d97dc3269a2 (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+COPYING.txt: locally modified
+INSTALL.txt: locally modified
+       M      COPYING.txt
+       M      INSTALL.txt
+Committed r86
+       M      INSTALL.txt
+       M      COPYING.txt
+r86 = 2647f6b86ccfcaad4ec58c520e369ec81f7c283c (trunk)
+No changes between current HEAD and refs/remotes/trunk
+Resetting to the latest refs/remotes/trunk
+</code></pre>
+
+<p>Running <code>dcommit</code> on a branch with merged history works fine, except that when you look at your Git project history, it hasn’t rewritten either of the commits you made on the <code>experiment</code> branch — instead, all those changes appear in the SVN version of the single merge commit.</p>
+
+<p>When someone else clones that work, all they see is the merge commit with all the work squashed into it; they don’t see the commit data about where it came from or when it was committed.</p>
+
+<h3 id="Subversion-Branching"><a href="#Subversion-Branching">Subversion Branching</a></h3>
+
+<p>Branching in Subversion isn’t the same as branching in Git; if you can avoid using it much, that’s probably best. However, you can create and commit to branches in Subversion using git svn.</p>
+
+<h4>Creating a New SVN Branch</h4>
+
+<p>To create a new branch in Subversion, you run <code>git svn branch [branchname]</code>:</p>
+
+<pre><code>$ git svn branch opera
+Copying file:///tmp/test-svn/trunk at r87 to file:///tmp/test-svn/branches/opera...
+Found possible branch point: file:///tmp/test-svn/trunk =&gt; \
+  file:///tmp/test-svn/branches/opera, 87
+Found branch parent: (opera) 1f6bfe471083cbca06ac8d4176f7ad4de0d62e5f
+Following parent with do_switch
+Successfully followed parent
+r89 = 9b6fe0b90c5c9adf9165f700897518dbc54a7cbf (opera)
+</code></pre>
+
+<p>This does the equivalent of the <code>svn copy trunk branches/opera</code> command in Subversion and operates on the Subversion server. It’s important to note that it doesn’t check you out into that branch; if you commit at this point, that commit will go to <code>trunk</code> on the server, not <code>opera</code>.</p>
+
+<h3 id="Switching-Active-Branches"><a href="#Switching-Active-Branches">Switching Active Branches</a></h3>
+
+<p>Git figures out what branch your dcommits go to by looking for the tip of any of your Subversion branches in your history — you should have only one, and it should be the last one with a <code>git-svn-id</code> in your current branch history. </p>
+
+<p>If you want to work on more than one branch simultaneously, you can set up local branches to <code>dcommit</code> to specific Subversion branches by starting them at the imported Subversion commit for that branch. If you want an <code>opera</code> branch that you can work on separately, you can run</p>
+
+<pre><code>$ git branch opera remotes/opera
+</code></pre>
+
+<p>Now, if you want to merge your <code>opera</code> branch into <code>trunk</code> (your <code>master</code> branch), you can do so with a normal <code>git merge</code>. But you need to provide a descriptive commit message (via <code>-m</code>), or the merge will say &quot;Merge branch opera&quot; instead of something useful.</p>
+
+<p>Remember that although you’re using <code>git merge</code> to do this operation, and the merge likely will be much easier than it would be in Subversion (because Git will automatically detect the appropriate merge base for you), this isn’t a normal Git merge commit. You have to push this data back to a Subversion server that can’t handle a commit that tracks more than one parent; so, after you push it up, it will look like a single commit that squashed in all the work of another branch under a single commit. After you merge one branch into another, you can’t easily go back and continue working on that branch, as you normally can in Git. The <code>dcommit</code> command that you run erases any information that says what branch was merged in, so subsequent merge-base calculations will be wrong — the dcommit makes your <code>git merge</code> result look like you ran <code>git merge --squash</code>. Unfortunately, there’s no good way to avoid this situation — Subversion can’t store this information, so you’ll always be crippled by its limitations while you’re using it as your server. To avoid issues, you should delete the local branch (in this case, <code>opera</code>) after you merge it into trunk.</p>
+
+<h3 id="Subversion-Commands"><a href="#Subversion-Commands">Subversion Commands</a></h3>
+
+<p>The <code>git svn</code> toolset provides a number of commands to help ease the transition to Git by providing some functionality that’s similar to what you had in Subversion. Here are a few commands that give you what Subversion used to.</p>
+
+<h4>SVN Style History</h4>
+
+<p>If you’re used to Subversion and want to see your history in SVN output style, you can run <code>git svn log</code> to view your commit history in SVN formatting:</p>
+
+<pre><code>$ git svn log
+------------------------------------------------------------------------
+r87 | schacon | 2009-05-02 16:07:37 -0700 (Sat, 02 May 2009) | 2 lines
+
+autogen change
+
+------------------------------------------------------------------------
+r86 | schacon | 2009-05-02 16:00:21 -0700 (Sat, 02 May 2009) | 2 lines
+
+Merge branch &#39;experiment&#39;
+
+------------------------------------------------------------------------
+r85 | schacon | 2009-05-02 16:00:09 -0700 (Sat, 02 May 2009) | 2 lines
+
+updated the changelog
+</code></pre>
+
+<p>You should know two important things about <code>git svn log</code>. First, it works offline, unlike the real <code>svn log</code> command, which asks the Subversion server for the data. Second, it only shows you commits that have been committed up to the Subversion server. Local Git commits that you haven’t dcommited don’t show up; neither do commits that people have made to the Subversion server in the meantime. It’s more like the last known state of the commits on the Subversion server.</p>
+
+<h4>SVN Annotation</h4>
+
+<p>Much as the <code>git svn log</code> command simulates the <code>svn log</code> command offline, you can get the equivalent of <code>svn annotate</code> by running <code>git svn blame [FILE]</code>. The output looks like this:</p>
+
+<pre><code>$ git svn blame README.txt 
+ 2   temporal Protocol Buffers - Google&#39;s data interchange format
+ 2   temporal Copyright 2008 Google Inc.
+ 2   temporal http://code.google.com/apis/protocolbuffers/
+ 2   temporal 
+22   temporal C++ Installation - Unix
+22   temporal =======================
+ 2   temporal 
+79    schacon Committing in git-svn.
+78    schacon 
+ 2   temporal To build and install the C++ Protocol Buffer runtime and the Protocol
+ 2   temporal Buffer compiler (protoc) execute the following:
+ 2   temporal 
+</code></pre>
+
+<p>Again, it doesn’t show commits that you did locally in Git or that have been pushed to Subversion in the meantime.</p>
+
+<h4>SVN Server Information</h4>
+
+<p>You can also get the same sort of information that <code>svn info</code> gives you by running <code>git svn info</code>:</p>
+
+<pre><code>$ git svn info
+Path: .
+URL: https://schacon-test.googlecode.com/svn/trunk
+Repository Root: https://schacon-test.googlecode.com/svn
+Repository UUID: 4c93b258-373f-11de-be05-5f7a86268029
+Revision: 87
+Node Kind: directory
+Schedule: normal
+Last Changed Author: schacon
+Last Changed Rev: 87
+Last Changed Date: 2009-05-02 16:07:37 -0700 (Sat, 02 May 2009)
+</code></pre>
+
+<p>This is like <code>blame</code> and <code>log</code> in that it runs offline and is up to date only as of the last time you communicated with the Subversion server.</p>
+
+<h4>Ignoring What Subversion Ignores</h4>
+
+<p>If you clone a Subversion repository that has <code>svn:ignore</code> properties set anywhere, you’ll likely want to set corresponding <code>.gitignore</code> files so you don’t accidentally commit files that you shouldn’t. <code>git svn</code> has two commands to help with this issue. The first is <code>git svn create-ignore</code>, which automatically creates corresponding <code>.gitignore</code> files for you so your next commit can include them.</p>
+
+<p>The second command is <code>git svn show-ignore</code>, which prints to stdout the lines you need to put in a <code>.gitignore</code> file so you can redirect the output into your project exclude file:</p>
+
+<pre><code>$ git svn show-ignore &gt; .git/info/exclude
+</code></pre>
+
+<p>That way, you don’t litter the project with <code>.gitignore</code> files. This is a good option if you’re the only Git user on a Subversion team, and your teammates don’t want <code>.gitignore</code> files in the project.</p>
+
+<h3 id="Git-Svn-Summary"><a href="#Git-Svn-Summary">Git-Svn Summary</a></h3>
+
+<p>The <code>git svn</code> tools are useful if you’re stuck with a Subversion server for now or are otherwise in a development environment that necessitates running a Subversion server. You should consider it crippled Git, however, or you’ll hit issues in translation that may confuse you and your collaborators. To stay out of trouble, try to follow these guidelines:</p>
+
+<ul>
+<li>Keep a linear Git history that doesn’t contain merge commits made by <code>git merge</code>. Rebase any work you do outside of your mainline branch back onto it; don’t merge it in.</li>
+<li>Don’t set up and collaborate on a separate Git server. Possibly have one to speed up clones for new developers, but don’t push anything to it that doesn’t have a <code>git-svn-id</code> entry. You may even want to add a <code>pre-receive</code> hook that checks each commit message for a <code>git-svn-id</code> and rejects pushes that contain commits without it.</li>
+</ul>
+
+<p>If you follow those guidelines, working with a Subversion server can be more bearable. However, if it’s possible to move to a real Git server, doing so can gain your team a lot more.</p>
+
+<div id="nav"><a href="/book/tr/Git-and-Other-Systems">prev</a> | <a href="/book/tr/v1/Git-and-Other-Systems-Migrating-to-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

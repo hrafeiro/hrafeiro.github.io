@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":3,"applicationTime":166,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Manutenzione e recupero dei dati</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/it/v1/Per-Iniziare">Per Iniziare</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/it/v1/Per-Iniziare-Il-Controllo-di-Versione">Il Controllo di Versione</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/it/v1/Per-Iniziare-Una-Breve-Storia-di-Git">Una Breve Storia di Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/it/v1/Per-Iniziare-Basi-di-Git">Basi di Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/it/v1/Per-Iniziare-Installare-Git">Installare Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/it/v1/Per-Iniziare-Prima-Configurazione-di-Git">Prima Configurazione di Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/it/v1/Per-Iniziare-Ottieni-aiuto">Ottieni aiuto</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/it/v1/Per-Iniziare-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/it/v1/Basi-di-Git">Basi di Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/it/v1/Basi-di-Git-Repository-Git">Repository Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/it/v1/Basi-di-Git-Salvare-le-modifiche-sul-repository">Salvare le modifiche sul repository</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/it/v1/Basi-di-Git-Vedere-la-cronologia-delle-commit">Vedere la cronologia delle commit</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/it/v1/Basi-di-Git-Annullare-qualcosa">Annullare qualcosa</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/it/v1/Basi-di-Git-Lavorare-coi-server-remote">Lavorare coi server remote</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/it/v1/Basi-di-Git-Suggerimenti">Suggerimenti</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/it/v1/Basi-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/it/v1/Diramazioni-in-Git">Diramazioni in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/it/v1/Diramazioni-in-Git-Cos-%C3%A8-un-Ramo">Cos&#39;è un Ramo</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/it/v1/Diramazioni-in-Git-Basi-di-Diramazione-e-Fusione">Basi di Diramazione e Fusione</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/it/v1/Diramazioni-in-Git-Amministrazione-dei-Rami">Amministrazione dei Rami</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/it/v1/Diramazioni-in-Git-Flusso-di-Lavoro-con-le-Ramificazioni">Flusso di Lavoro con le Ramificazioni</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/it/v1/Diramazioni-in-Git-Rami-Remoti">Rami Remoti</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/it/v1/Diramazioni-in-Git-Rifondazione">Rifondazione</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/it/v1/Diramazioni-in-Git-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/it/v1/Git-sul-Server">Git sul Server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/it/v1/Git-sul-Server-I-Protocolli">I Protocolli</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/it/v1/Git-sul-Server-Mettere-Git-su-di-un-server">Mettere Git su di un server</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/it/v1/Git-sul-Server-Generare-la-Propria-Chiave-Pubblica-SSH">Generare la Propria Chiave Pubblica SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/it/v1/Git-sul-Server-Configurare-il-Server">Configurare il Server</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/it/v1/Git-sul-Server-Accesso-Pubblico">Accesso Pubblico</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/it/v1/Git-sul-Server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/it/v1/Git-sul-Server-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/it/v1/Git-sul-Server-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/it/v1/Git-sul-Server-Demone-Git">Demone Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/it/v1/Git-sul-Server-Hosting-Git">Hosting Git</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/it/v1/Git-sul-Server-Riassunto">Riassunto</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/it/v1/Git-distribuito">Git distribuito</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/it/v1/Git-distribuito-Workflows-distribuiti">Workflows distribuiti</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/it/v1/Git-distribuito-Contribuire-a-un-Progetto">Contribuire a un Progetto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/it/v1/Git-distribuito-Mantenere-un-Progetto">Mantenere un Progetto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/it/v1/Git-distribuito-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/it/v1/Strumenti-di-Git">Strumenti di Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/it/v1/Strumenti-di-Git-Selezione-della-revisione">Selezione della revisione</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/it/v1/Strumenti-di-Git-Assemblaggio-interattivo">Assemblaggio interattivo</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/it/v1/Strumenti-di-Git-Accantonare">Accantonare</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/it/v1/Strumenti-di-Git-Riscrivere-la-storia">Riscrivere la storia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/it/v1/Strumenti-di-Git-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/it/v1/Strumenti-di-Git-Moduli">Moduli</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/it/v1/Strumenti-di-Git-Subtree-Merging">Subtree Merging</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/it/v1/Strumenti-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/it/v1/Personalizzare-Git">Personalizzare Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/it/v1/Personalizzare-Git-Configurazione-di-Git">Configurazione di Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/it/v1/Personalizzare-Git-Attributi-di-Git">Attributi di Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/it/v1/Personalizzare-Git-Git-Hooks">Git Hooks</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/it/v1/Git-e-altri-sistemi">Git e altri sistemi</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/it/v1/Git-e-altri-sistemi-Git-e-Subversion">Git e Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/it/v1/Git-e-altri-sistemi-Migrare-a-Git">Migrare a Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/it/v1/Git-e-altri-sistemi-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/it/v1/I-comandi-interni-di-Git">I comandi interni di Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Impianto-e-sanitari-%3Cem%3EPlumbing%3C%2Fem%3E-e-%3Cem%3EPorcelain%3C%2Fem%3E">Impianto e sanitari (<em>Plumbing</em> e <em>Porcelain</em>)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Gli-oggetti-di-Git">Gli oggetti di Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/it/v1/I-comandi-interni-di-Git-I-riferimenti-di-Git">I riferimenti di Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Pacchetti-di-file">Pacchetti di file</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Le-specifiche-di-riferimento-%3Cem%3Erefspec%3C%2Fem%3E">Le specifiche di riferimento (<em>refspec</em>)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Protocolli-di-trasferimento">Protocolli di trasferimento</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Manutenzione-e-recupero-dei-dati">Manutenzione e recupero dei dati</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/it/v1/I-comandi-interni-di-Git-Sommario">Sommario</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>9.7 I comandi interni di Git - Manutenzione e recupero dei dati</h1>
+  <div><h2>Manutenzione e recupero dei dati</h2>
+
+<p>A volte può essere necessario fare un po’ di pulizia del repository per renderlo più compatto, per ripulire un repository importato o recuperare del lavoro che è andato perso. Questa sezione tratta alcuni di questi scenari.</p>
+
+<h3 id="Manutenzione"><a href="#Manutenzione">Manutenzione</a></h3>
+
+<p>Git, occasionalmente, esegue automaticamente il comando &quot;auto gc&quot;. Il più delle volte questo comando non fa niente, ma se ci sono troppi oggetti sciolti (oggetti che non sono compressi in un pacchetto) o troppi pacchetti, Git esegue un vero e proprio <code>git gc</code>. <code>gc</code> sta per <em>garbage collect</em> (raccolta della spazzatura), e il comando fa una serie di cose:: raccoglie tutti gli oggetti sciolti e li compatta in un pacchetto, consolida i pacchetti in un pacchetto più grande e cancella gli oggetti che non sono raggiungibili da nessuna commit e siano più vecchi di qualche mese.</p>
+
+<p>Puoi eseguire il comando “auto gc” così:</p>
+
+<pre><code>$ git gc --auto
+</code></pre>
+
+<p>Questo, lo ripetiamo, generalmente non farà niente: dovrai avere circa 7.000 oggetti sciolti o più di 50 pacchetti perché Git esegua la garbage collection vera e propria. Puoi modificare questi limiti cambiando, rispettivamente, i valori di <code>gc.auto</code> e <code>gc.autopacklimit</code> delle tue configurazioni.</p>
+
+<p>Un’altra cosa che fa <code>gc</code> è quella di impacchettare i tuoi riferimenti in un singolo file. Immagina che il tuo repository contenga i branch e i tag seguenti:</p>
+
+<pre><code>$ find .git/refs -type f
+.git/refs/heads/experiment
+.git/refs/heads/master
+.git/refs/tags/v1.0
+.git/refs/tags/v1.1
+</code></pre>
+
+<p>Se esegui <code>git gc</code> non avrai più questi file nella directory <code>refs</code> perché Git li sposterà, in nome dell’efficienza, in un file chiamato <code>.git/packed-refs</code>, che apparirà così:</p>
+
+<pre><code>$ cat .git/packed-refs
+# pack-refs with: peeled
+cac0cab538b970a37ea1e769cbbde608743bc96d refs/heads/experiment
+ab1afef80fac8e34258ff41fc1b867c702daa24b refs/heads/master
+cac0cab538b970a37ea1e769cbbde608743bc96d refs/tags/v1.0
+9585191f37f7b0fb9444f35a9bf50de191beadc2 refs/tags/v1.1
+^1a410efbd13591db07496601ebc7a059dd55cfe9
+</code></pre>
+
+<p>Se aggiorni un riferimento, Git non modificherà questo file, ma scriverà un nuovo file nella directory <code>refs/heads</code>. Per conoscere l’hash SHA di uno specifico riferimento, Git controlla se è nella directory <code>refs</code> e poi nel file <code>packed-refs</code> se non lo trova. In ogni caso, se non trovi un riferimento nella directory <code>refs</code>, questo sarà probabilmente sarà nel file <code>packed-refs</code>.</p>
+
+<p>Nota l’ultima riga del file, quella che inizia con un <code>^</code>. Questo indica che il tag immediatamente precedente è un tag annotato e che quella linea è la commit a cui punta il tag annotato.</p>
+
+<h3 id="Recupero-dei-dati"><a href="#Recupero-dei-dati">Recupero dei dati</a></h3>
+
+<p>Durante il tuo lavoro quotidiano può capitare che, accidentalmente, perda una commit. Questo generalmente succede quando forzi la cancellazione di un branch su cui hai lavorato e poi scopri di averne bisogno, o quando fai un hard-reset di un branch, abbandonando quindi delle commit da cui poi vorrai qualcosa. Ipotizzando che sia successo proprio questo: come fai a ripristinare le commit perse?</p>
+
+<p>Qui c’è un esempio di un hard-resets del master nel tuo repository di test su una vecchia commit e recuperare poi le commit perse. Prima di tutto verifica lo stato del tuo repository:</p>
+
+<pre><code>$ git log --pretty=oneline
+ab1afef80fac8e34258ff41fc1b867c702daa24b modificato un poco il repository
+484a59275031909e19aadb7c92262719cfcdf19a aggiunto repo.rb
+1a410efbd13591db07496601ebc7a059dd55cfe9 terza commit
+cac0cab538b970a37ea1e769cbbde608743bc96d seconda commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d prima commit
+</code></pre>
+
+<p>Muovi ora il branch <code>master</code> a una commit centrale:</p>
+
+<pre><code>$ git reset --hard 1a410efbd13591db07496601ebc7a059dd55cfe9
+HEAD is now at 1a410ef terza commit
+$ git log --pretty=oneline
+1a410efbd13591db07496601ebc7a059dd55cfe9 terza commit
+cac0cab538b970a37ea1e769cbbde608743bc96d seconda commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d prima commit
+</code></pre>
+
+<p>Così facendo hai perso le due commit più recenti: questa commit non sono più raggiungibili in nessun modo. Devi scoprire l’hash SHA dell’ultima commit e aggiungere quindi un branch che vi punti. Il trucco è trovare l’hash SHA dell’ultima commit: non è come lo ricordavi, vero?</p>
+
+<p>Spesso il modo più veloce è usare <code>git reflog</code>. Mentre lavori Git memorizza silenziosamente lo stato del tuo HEAD ogni volta che lo cambi. Il reflog viene aggiornato ogni volta che fai una commit o cambi un branch. Il reflog viene aggiornato anche dal comando <code>git update-ref</code>, che è un’altra buona ragione per usarlo, invece di scrivere direttamente il valore dell’SHA nei tuoi file ref, come abbiamo visto nella sezione “I Riferimenti di Git&quot; in questo stesso capitolo. Eseguendo <code>git reflog</code> puoi vedere dov’eri in qualsiasi dato momento:</p>
+
+<pre><code>$ git reflog
+1a410ef HEAD@{0}: 1a410efbd13591db07496601ebc7a059dd55cfe9: updating HEAD
+ab1afef HEAD@{1}: ab1afef80fac8e34258ff41fc1b867c702daa24b: updating HEAD
+</code></pre>
+
+<p>Qui vediamo le due commit di cui abbiamo fatto il checkout, ma qui non ci sono poi tante informazioni. Per vedere le stesse informazioni, ma in una maniera più utile, possiamo eseguire il comando <code>git log -g</code>, che restituisce un output normale del tuo reflog.</p>
+
+<pre><code>$ git log -g
+commit 1a410efbd13591db07496601ebc7a059dd55cfe9
+Reflog: HEAD@{0} (Scott Chacon &lt;schacon@gmail.com&gt;)
+Reflog message: updating HEAD
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:22:37 2009 -0700
+
+    terza commit
+
+commit ab1afef80fac8e34258ff41fc1b867c702daa24b
+Reflog: HEAD@{1} (Scott Chacon &lt;schacon@gmail.com&gt;)
+Reflog message: updating HEAD
+Author: Scott Chacon &lt;schacon@gmail.com&gt;
+Date:   Fri May 22 18:15:24 2009 -0700
+
+     modificato un poco il repository
+</code></pre>
+
+<p>It looks like the bottom commit is the one you lost, so you can recover it by creating a new branch at that commit. For example, you can start a branch named <code>recover-branch</code> at that commit (ab1afef):</p>
+
+<pre><code>$ git branch recover-branch ab1afef
+$ git log --pretty=oneline recover-branch
+ab1afef80fac8e34258ff41fc1b867c702daa24b modificato un poco il repository
+484a59275031909e19aadb7c92262719cfcdf19a aggiunto repo.rb
+1a410efbd13591db07496601ebc7a059dd55cfe9 terza commit
+cac0cab538b970a37ea1e769cbbde608743bc96d seconda commit
+fdf4fc3344e67ab068f836878b6c4951e3b15f3d prima commit
+</code></pre>
+
+<p>Bello: ora sembra che tu abbia un branch chiamato <code>recover-branch</code> dov’era il tuo branch <code>master</code> precedentemente, rendendo nuovamente raggiungibili le due commit.
+Immagina che le commit perse, per qualche ragione, non appaiano nel reflog: puoi simularlo cancellando il branch <code>recover-branch</code> e il reflog. Ora le due commit non sono più raggiungibili da niente:</p>
+
+<pre><code>$ git branch -D recover-branch
+$ rm -Rf .git/logs/
+</code></pre>
+
+<p>Poiché i dati del reflog è conservato nella directory <code>.git/logs/</code>, ora effettivamente non hai nessun reflog. A questo punto come possiamo recuperare la commit? Uno dei modi è usare l’utility <code>git fsck</code>, che verifica l’integrità del database del tuo repository. Se lo esegui con l’opzione <code>--full</code> ti mostrerà tutti gli oggetti che non sono collegati a nessun altro oggetto:</p>
+
+<pre><code>$ git fsck --full
+dangling blob d670460b4b4aece5915caf5c68d12f560a9fe3e4
+dangling commit ab1afef80fac8e34258ff41fc1b867c702daa24b
+dangling tree aea790b9a58f6cf6f2804eeac9f0abbe9631e4c9
+dangling blob 7108f7ecb345ee9d0084193f147cdad4d2998293
+</code></pre>
+
+<p>In questo caso rivediamo la commit scomparsa dopo la <em>dangling commit</em> e la puoi recuperare creando un branch che punti  al suo SHA.</p>
+
+<h3 id="Eliminare-oggetti"><a href="#Eliminare-oggetti">Eliminare oggetti</a></h3>
+
+<p>Ci sono un sacco di grandi cose in Git, ma una delle caratteristiche che può creare qualche problemi è che la <code>git clone</code> scarica l’intera storia di un progetto, inclusa ciascuna versione di ciascun file. Questo va bene se sono tutti sorgenti perché Git è super ottimizzato per comprimere questi dati in modo molto efficiente. Se però qualcuno in qualche momento ha aggiunto un file molto grande, ogni clone scaricherà quel file grande, anche se poi quel file è stato cancellato da una commit successiva. Poiché è raggiungibile nella cronologia, resterà sempre lì.</p>
+
+<p>Questo è un grosso problema se stai convertendo a Git dei repository da Subversion o Perforce, perché in quei sistemi questo tipo di aggiunte non crea dei grandi problemi, perché non scarichi l’intera cronologia. Se hai importato i sorgenti da un altro sistema o ti rendi conto che il tuo repository è molto più grande di quello che dovrebbe, di seguito scoprirai come eliminare gli oggetti di grandi dimensioni.</p>
+
+<p>Fai attenzione: questa tecnica è distruttiva per la cronologia delle tue commit. Riscrive tutte le commit a partire dal primo albero che devi modificare per rimuovere il riferimento a quel file. Se lo fai subito dopo una importazione, prima che chiunque altro inizi a lavorarci, non c’è nessun problema, altrimenti dovrai avvisare tutti i collaboratori perché ribasino il loro lavoro sulle nuove commit.</p>
+
+<p>Come dimostrazioni aggiungerai un file grande nel tuo repository di test, lo rimuoverai con la commit successiva, lo cercherai e lo rimuoverai permanentemente dal repository. Prima di tutto aggiungi un file grande alla cronologia del tuo repository:</p>
+
+<pre><code>$ curl http://kernel.org/pub/software/scm/git/git-1.6.3.1.tar.bz2 &gt; git.tbz2
+$ git add git.tbz2
+$ git commit -am &#39;added git tarball&#39;
+[master 6df7640] added git tarball
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git.tbz2
+</code></pre>
+
+<p>Oops: non volevi aggiungere questo archivio così grande al tuo progetto. Meglio rimediare:</p>
+
+<pre><code>$ git rm git.tbz2
+rm &#39;git.tbz2&#39;
+$ git commit -m &#39;oops - removed large tarball&#39;
+[master da3f30d] oops - removed large tarball
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 git.tbz2
+</code></pre>
+
+<p>Esegui ora <code>gc</code> sul tuo database e guarda quanto spazio stai usando:</p>
+
+<pre><code>$ git gc
+Counting objects: 21, done.
+Delta compression using 2 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (21/21), done.
+Total 21 (delta 3), reused 15 (delta 1)
+</code></pre>
+
+<p>Puoi eseguire anche il comando <code>count-objects</code> per vedere lo spazio che stai usando:</p>
+
+<pre><code>$ git count-objects -v
+count: 4
+size: 16
+in-pack: 21
+packs: 1
+size-pack: 2016
+prune-packable: 0
+garbage: 0
+</code></pre>
+
+<p>Il valore di <code>size-pack</code> è la dimensione del packfiles in kilobytes e quindi stai usando 2MB mentre prima dell’ultima commit usavi circa 2K. Cancellando il file dell’ultima commit ovviamente non lo elimina dalla cronologia e ogni volta che qualcuno colmerà il repository, dovrà scaricare tutti i 2MB avere questo progettino, solamente perché hai aggiunto per errore questo file grande. Vediamo di risolverlo.</p>
+
+<p>Prima di tutto devi trovare il file. In questo caso già sappiamo quale sia, ma supponiamo di non saperlo: come possiamo trovare quale file o quali file occupano tanto spazio? Se esegui <code>git gc</code> tutti gli oggetti saranno in un pacchetto e puoi trovare gli oggetti più grandi eseguendo un altro comando <em>plumbing</em>, <code>git verify-pack</code>, e ordinarli in base al terzo campo dell’output, che indica la dimensione. Puoi anche concatenarlo in <em>pipe</em> con <code>tail</code> perché siamo interessati solo agli file più grandi:</p>
+
+<pre><code>$ git verify-pack -v .git/objects/pack/pack-3f8c0...bb.idx | sort -k 3 -n | tail -3
+e3f094f522629ae358806b17daf78246c27c007b blob   1486 734 4667
+05408d195263d853f09dca71d55116663690c27c blob   12908 3478 1189
+7a9eb2fba2b1811321254ac360970fc169ba2330 blob   2056716 2056872 5401
+</code></pre>
+
+<p>L’oggetto grande è alla fine della lista: 2MB. Per scoprire di quale file si tratti useremo il comando <code>rev-list</code> che abbiamo già visto rapidamente nel Capitolo 7. Se usi l’opzione <code>--objects</code> a <code>rev-list</code>, elencherà tutti gli hash SHAs delle commit e dei blob SHAs che facciano riferimento al percorso del file. Puoi trovare il nome del blog così:</p>
+
+<pre><code>$ git rev-list --objects --all | grep 7a9eb2fb
+7a9eb2fba2b1811321254ac360970fc169ba2330 git.tbz2
+</code></pre>
+
+<p>Ora dobbiamo rimuovere questo file da tutti gli alberi della cronologia. Puoi vedere facilmente quali commit hanno modificato questo file:</p>
+
+<pre><code>$ git log --pretty=oneline --branches -- git.tbz2
+da3f30d019005479c99eb4c3406225613985a1db oops - removed large tarball
+6df764092f3e7c8f5f94cbe08ee5cf42e92a0289 added git tarball
+</code></pre>
+
+<p>Ora, per rimuovere completamente questo file dalla cronologia di Git, devi riscrivere tutte le commit successive la <code>6df76</code> e per farlo useremo <code>filter-branch</code>, che hai già usato nel Capitolo 6:</p>
+
+<pre><code>$ git filter-branch --index-filter \
+   &#39;git rm --cached --ignore-unmatch git.tbz2&#39; -- 6df7640^..
+Rewrite 6df764092f3e7c8f5f94cbe08ee5cf42e92a0289 (1/2)rm &#39;git.tbz2&#39;
+Rewrite da3f30d019005479c99eb4c3406225613985a1db (2/2)
+Ref &#39;refs/heads/master&#39; was rewritten
+</code></pre>
+
+<p>L’opzione <code>--index-filter</code> è simile alla <code>--tree-filter</code> usata nel Capitolo 6, ad eccezione del fatto che invece di passare un comando che modifichi i file sul disco, modifichi la tua area di staging o l’indice ad ogni iterazione. Piuttosto che rimuovere un file con qualcosa simile a <code>rm file</code> dovrai rimuoverlo con <code>git rm --cached</code>, perché devi rimuoverlo dall’indice e non dal disco. Il motivo per farlo in questo modo è che è più veloce, perché Git non deve fare il checkout di ciascuna versione prima di eseguire il tuo filtro, e quindi tutto il processo è molto più veloce. Se preferisci, puoi ottenere lo stesso risultato con <code>--tree-filter</code>. L’opzione <code>--ignore-unmatch</code> di <code>git rm</code> serve a far si che non venga generato un errore se il file che stai cercando di eliminare non c’è in quella versione. Puoi, infine chiedere a <code>filter-branch</code> di riscrivere la cronologia solo a partire dalla commit <code>6df7640</code>, perché già sappiamo che è lì che ha avuto inizio il problema. Altrimenti inizierebbe dall’inizio e sarebbe inutilmente più lento.</p>
+
+<p>La tua cronologia ora non ha più alcun riferimento a quel file, ma lo fanno il tuo reflog e un nuovo gruppo di riferimenti che Git ha aggiunto quando hai eseguito <code>filter-branch</code> in <code>.git/refs/original</code>, e quindi devi rimuovere anche questi e ricomprimere il database. Ma devi correggere qualsiasi cosa che ancora punti a quelle vecchie commit, prima di ricompattare il repository:</p>
+
+<pre><code>$ rm -Rf .git/refs/original
+$ rm -Rf .git/logs/
+$ git gc
+Counting objects: 19, done.
+Delta compression using 2 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (19/19), done.
+Total 19 (delta 3), reused 16 (delta 1)
+</code></pre>
+
+<p>Vediamo ora quanto spazio hai recuperato.</p>
+
+<pre><code>$ git count-objects -v
+count: 8
+size: 2040
+in-pack: 19
+packs: 1
+size-pack: 7
+prune-packable: 0
+garbage: 0
+</code></pre>
+
+<p>Le dimensioni del repository compresso sono ora di 7K, che è molto meglio dei 2MB precedenti. Dalle dimensioni puoi vedere che l’oggetto è ancora presente tra gli oggetti sciolti, quindi non è ancora sparito, ma non verrà più trasferito quando farai una push o se qualcun altro farà un clone, che è la cosa più importante. Se vuoi comunque eliminare definitivamente l’oggetto potrai farlo eseguendo il comando <code>git prune --expire</code>.</p>
+
+<div id="nav"><a href="/book/it/I-comandi-interni-di-Git-Protocolli-di-trasferimento">prev</a> | <a href="/book/it/v1/I-comandi-interni-di-Git-Sommario">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

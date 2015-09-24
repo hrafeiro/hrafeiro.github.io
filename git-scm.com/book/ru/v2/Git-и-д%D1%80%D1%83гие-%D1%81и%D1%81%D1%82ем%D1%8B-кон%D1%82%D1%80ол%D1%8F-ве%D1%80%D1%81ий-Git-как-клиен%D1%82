@@ -1,0 +1,2634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":764,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git как клиент</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О системе контроля версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0">Командная строка</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D1%8B">Операции отмены</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-Working-with-Remotes">Working with Remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC%D1%8B-%D0%B2-Git">Псевдонимы в Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">О ветвлении в двух словах</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Branching-Workflows">Branching Workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Установка Git на сервер</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Генерация открытого SSH ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D0%BC%D0%BD%D1%8B%D0%B9-HTTP">Умный HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Распределенный Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">Настройка и конфигурация учетной записи</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">Внесение собственного вклада в проекты</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v2/GitHub-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%B8%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0">Прибережение и очистка</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2%D0%B0%D1%88%D0%B5%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B">Подпись результатов вашей работы</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">Поиск</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Исправление истории</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">Раскрытие тайн reset</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5">Продвинутое слияние</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Обнаружение ошибок с помощью Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">Создание пакетов</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0">Замена</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Хранилище учетных данных</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Настройка Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git как клиент</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Git изнутри</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и Фарфор</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-Git">Объекты Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Протоколы передачи данных</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Уход за репозиторием и восстановление данных</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B">Переменные среды</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>9.1 Git и другие системы контроля версий - Git как клиент</h1>
+  <div><a id="git-i-drugie-sistemy-kontrolya-versij-12zhZ"></a><p>Наш мир несовершенен.
+Как правило, вы не сможете быстро перевести проект, в котором вы участвуете, на использование Git’а.
+Иногда вам придётся иметь дело с проектами, использующими другую систему контроля версий, хотя вам и не нравится, что это не Git.
+В первой части этого раздела вы узнаете о способах использования Git’а в качестве клиента для работы с проектом, размещенном в какой-то другой системе.</p><a id="git-kak-klient-meNI9"></a><h2>Git как клиент</h2>
+
+<p><a data-type="indexterm" data-primary="Git as a client" id="id-J6pTb"></a>
+Git оставляет настолько положительное впечатление на разработчиков, что многие из них придумывают способы, как использовать его на своём компьютере, в случае если остальная часть команды использует другую СКВ.
+Для этого разработан целый ряд специальных адаптеров, называемых “мостами” (“bridges”).
+Здесь мы рассмотрим те, с которыми вы, скорее всего, столкнетесь в работе над реальными проектами.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="_git_svn"><h3 id="Git-и-Subversion"><a href="#Git-и-Subversion">Git и Subversion</a></h3>
+
+<p><a data-type="indexterm" data-primary="Subversion" id="id-mOVcP"></a><a data-type="indexterm" data-primary="Interoperation with other VCSs" data-secondary="Subversion" id="id-14QtZ"></a>
+Весомая часть проектов с исходным кодом, равно как и огромное количество корпоративных проектов, до сих пор используют Subversion для версионирования исходного кода.
+SVN’у больше десяти лет и большую часть этого срока он оставался <em>единственным</em> вариантом СКВ для проектов с открытым исходным кодом.
+SVN очень похож на CVS, своего предка — "крёстного отца" всех современных СКВ.</p>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="svn" id="id-3XZhD"></a><a data-type="indexterm" data-primary="git-svn" id="id-mZ9HG"></a>
+Одна из многих замечательных вещей в Git — это поддержка двусторонней интеграции с SVN через <code>git svn</code>.
+Этот инструмент позволяет использовать Git в качестве полноценного SVN клиента; вы можете использовать весю функциональность Git для работы с локальным репозиторием, скомпоновать ревизии и отправить их на сервер, словно вы использовали обычный SVN.
+Да, вы не ослышались: можно создавать локальные ветки, производить слияния, использовать индекс для неполного применения изменений, перемещать фиксации и повторно применять их (cherry-pick) и т.д., в то время как ваши коллеги, использующие SVN, застряли в палеолите.
+Это отличный способ по-партизански внедрить Git в процесс разработки и помочь соратниками стать более продуктивными, а затем потребовать от инфраструктуры полной поддержки Git.
+<code>git svn</code> — это первый укол наркотика "РСКВ", вызывающего сильнейшее привыкание.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="git-svn-10Du7"><h4><code>git svn</code></h4>
+
+<p>Основная команда для работы с Subversion — это <code>git svn</code>.
+Она принимает несколько дополнительных команд, которые мы рассмотрим далее.</p>
+
+<p>Важно понимать, что каждый раз, когда вы используете <code>git svn</code>, вы взаимодействуете с Subversion, который работает совсем не как Git.
+И хотя вы <strong>можете</strong> создавать и сливать локальные ветки, всё же лучше сохранять историю линейной настолько, насколько это возможно, используя перемещение фиксаций.
+Также избегайте одновременной работы с удалённым Git сервером.</p>
+
+<p>Не изменяйте уже опубликованную историю, и не зеркалируйте изменения в Git репозитории, с которым работают люди, использующие Git (они могут изменить историю).
+В Subversion может быть только одна линейная история фиксаций.
+Если в вашей команде часть людей использует SVN, а часть — Git, убедитесь, что все используют SVN сервер для сотрудничества.
+Это сделает вашу жизнь проще.</p>
+</section><section data-type="sect3" id="ustanovka-3n2CK"><h4>Установка</h4>
+
+<p>Чтобы попробовать <code>git svn</code> в деле вам понадобится обычный SVN репозиторий с правом на запись.
+Если вы хотите попробовать примеры ниже, вам понадобится копия нашего тестового репозитория.
+К счастью, в Subversion есть инструмент <code>svnsync</code>, который упростит перенос.
+Для тестов мы создали новый Subversion репозиторий на Google Code, являющийся частичной копией проекта <code>protobuf</code> — библиотеки для сериализации структурированных данных для передачи по сети.</p>
+
+<p>Если вы с нами, создайте локальный Subversion репозиторий:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> mkdir /tmp/test-svn
+<code class="gp">$</code> svnadmin create /tmp/test-svn
+</pre>
+
+<p>Затем, позвольте всем пользователям изменять т.н. <code>revprops</code>; самый простой способ сделать это — добавить скрипт <code>pre-revprop-change</code>, всегда возвращающий 0:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /tmp/test-svn/hooks/pre-revprop-change
+<code class="gp">#</code>!/bin/sh
+<code class="go">exit 0;</code>
+<code class="gp">$</code> chmod +x /tmp/test-svn/hooks/pre-revprop-change
+</pre>
+
+<p>Теперь вы можете синхронизировать репозиторий на локальной машине, вызвав <code>svnsync init</code>, передав входной и выходной репозитории:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> svnsync init file:///tmp/test-svn <code class="se">\</code>
+<code class="go">  http://progit-example.googlecode.com/svn/</code>
+</pre>
+
+<p>Наконец (SVN вам ещё не надоел?), можно запустить саму синхронизацию.
+Затем можно будет склонировать собственно код, выполнив:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> svnsync sync file:///tmp/test-svn
+<code class="go">Committed revision 1.</code>
+<code class="go">Copied properties for revision 1.</code>
+<code class="go">Transmitting file data .............................[...]</code>
+<code class="go">Committed revision 2.</code>
+<code class="go">Copied properties for revision 2.</code>
+<code class="go">[…]</code>
+</pre>
+
+<p>На всё про всё у вас уйдёт несколько минут, но на самом деле вам ещё повезло: если бы вы копировали данные не на свой компьютер, а в другой удалённый репозиторий, понадобился бы почти час, несмотря на то, что в тестовом проекте меньше сотни ревизий.
+Subversion копирует данные последовательно, скачивая по одной ревизии и отправляя в другой репозиторий — это поразительно неэффективно, но как есть, так есть.</p>
+</section><section data-type="sect3" id="nachalo-raboty-Ll5iG"><h4>Начало работы</h4>
+
+<p>Теперь, когда у вас есть Subversion репозиторий с правами на запись, можно опробовать типичные приёмы работы с ним через <code>git svn</code>
+Начнём с команды <code>git svn clone</code>, которая склонирует Subversion репозиторий целиком в локальный Git репозиторий.
+Разумеется, при переносе реального Subversion репозитория нужно будет заменить <code>file:///tmp/test-svn</code> на настоящий URL:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn clone file:///tmp/test-svn -T trunk -b branches -t tags
+<code class="go">Initialized empty Git repository in /private/tmp/progit/test-svn/.git/</code>
+<code class="go">r1 = dcbfb5891860124cc2e8cc616cded42624897125 (refs/remotes/origin/trunk)</code>
+<code class="go">    A	m4/acx_pthread.m4</code>
+<code class="go">    A	m4/stl_hash.m4</code>
+<code class="go">    A	java/src/test/java/com/google/protobuf/UnknownFieldSetTest.java</code>
+<code class="go">    A	java/src/test/java/com/google/protobuf/WireFormatTest.java</code>
+<code class="go">…</code>
+<code class="go">r75 = 556a3e1e7ad1fde0a32823fc7e4d046bcfd86dae (refs/remotes/origin/trunk)</code>
+<code class="go">Found possible branch point: file:///tmp/test-svn/trunk =&gt; file:///tmp/test-svn/branches/my-calc-branch, 75</code>
+<code class="go">Found branch parent: (refs/remotes/origin/my-calc-branch) 556a3e1e7ad1fde0a32823fc7e4d046bcfd86dae</code>
+<code class="go">Following parent with do_switch</code>
+<code class="go">Successfully followed parent</code>
+<code class="go">r76 = 0fb585761df569eaecd8146c71e58d70147460a2 (refs/remotes/origin/my-calc-branch)</code>
+<code class="go">Checked out HEAD:</code>
+<code class="go">  file:///tmp/test-svn/trunk r75</code>
+</pre>
+
+<p>Приведённая выше команда является композицией двух других — <code>git svn init</code> и <code>git svn fetch</code> для указанного URL.
+Процесс копирования займёт некоторое время.
+Тестовый проект невелик — всего 75 фиксаций — но Git вынужден последовательно скачивать SVN ревизии и превращать их в Git фиксации по одной за раз.
+Для проекта с сотней или тысячей ревизий это может занять часы или даже дни!</p>
+
+<p>Параметры <code>-T trunk -b branches -t tags</code> говорят Git о том, что клонируемый репозиторий следует стандартному, принятому в Subversion, расположению директорий с транком, ветками и метками.
+Если же директории названы по-другому, можно указать их явно, используя эти параметры.
+Большинство Subversion репозиториев следуют этому соглашению, поэтому для этой комбинации параметров существует сокращение <code>-s</code>, что означает "стандартное расположение директорий"
+Следующая команда эквивалентна приведённой выше:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn clone file:///tmp/test-svn -s
+</pre>
+
+<p>На этом этапе у вас должен быть обычный Git репозиторий с импортированными ветками и метками:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch -a
+<code class="go">* master</code>
+<code class="go">  remotes/origin/my-calc-branch</code>
+<code class="go">  remotes/origin/tags/2.0.2</code>
+<code class="go">  remotes/origin/tags/release-2.0.1</code>
+<code class="go">  remotes/origin/tags/release-2.0.2</code>
+<code class="go">  remotes/origin/tags/release-2.0.2rc1</code>
+<code class="go">  remotes/origin/trunk</code>
+</pre>
+
+<p>Обратите внимание, как <code>git svn</code> представляет метки Subversion в виде ссылок.
+<a data-type="indexterm" data-primary="git commands" data-secondary="show-ref" id="id-dPRc9"></a>
+Давайте посмотрим на это повнимательней, используя команду <code>show-ref</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git show-ref
+<code class="go">556a3e1e7ad1fde0a32823fc7e4d046bcfd86dae refs/heads/master</code>
+<code class="go">0fb585761df569eaecd8146c71e58d70147460a2 refs/remotes/origin/my-calc-branch</code>
+<code class="go">bfd2d79303166789fc73af4046651a4b35c12f0b refs/remotes/origin/tags/2.0.2</code>
+<code class="go">285c2b2e36e467dd4d91c8e3c0c0e1750b3fe8ca refs/remotes/origin/tags/release-2.0.1</code>
+<code class="go">cbda99cb45d9abcb9793db1d4f70ae562a969f1e refs/remotes/origin/tags/release-2.0.2</code>
+<code class="go">a9f074aa89e826d6f9d30808ce5ae3ffe711feda refs/remotes/origin/tags/release-2.0.2rc1</code>
+<code class="go">556a3e1e7ad1fde0a32823fc7e4d046bcfd86dae refs/remotes/origin/trunk</code>
+</pre>
+
+<p>При работе с Git репозиторием Git поступает иначе, вот как выглядит Git репозиторий сразу после клонирования:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git show-ref
+<code class="go">c3dcbe8488c6240392e8a5d7553bbffcb0f94ef0 refs/remotes/origin/master</code>
+<code class="go">32ef1d1c7cc8c603ab78416262cc421b80a8c2df refs/remotes/origin/branch-1</code>
+<code class="go">75f703a3580a9b81ead89fe1138e6da858c5ba18 refs/remotes/origin/branch-2</code>
+<code class="go">23f8588dde934e8f33c263c6d8359b2ae095f863 refs/tags/v0.1.0</code>
+<code class="go">7064938bd5e7ef47bfd79a685a62c1e2649e2ce7 refs/tags/v0.2.0</code>
+<code class="go">6dcb09b5b57875f334f61aebed695e2e4193db5e refs/tags/v1.0.0</code>
+</pre>
+
+<p>Заметили?
+Git помещает метки прямиком в <code>refs/tags</code>, но в случае с Subversion репозиторием они трактуются как удалённые ветки.</p>
+</section><section data-type="sect3" id="otpravka-izmenenij-v-subversion-lPguv"><h4>Отправка изменений в Subversion</h4>
+
+<p>Теперь, когда вы настроили репозиторий, можно проделать некую работу и отправить изменения обратно в Subversion, используя Git как SVN клиент.
+Если вы отредактируете какой-либо файл и зафиксируете изменения, полученная фиксация будет существовать в локальном Git репозитории, но не на сервере Subversion.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -am <code class="s1">'Adding git-svn instructions to the README'</code>
+<code class="go">[master 4af61fd] Adding git-svn instructions to the README</code>
+<code class="go"> 1 file changed, 5 insertions(+)</code>
+</pre>
+
+<p>Далее следует отправить изменения на сервер.
+Обратите внимание как это меняет привычный сценарий работы с Subversion: вы фиксируете изменения без связи с сервером, а затем отправляете их все при удобном случае.
+Чтобы отправить изменения на Subversion сервер, следует выполнить команду <code>git svn dcommit</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn dcommit
+<code class="go">Committing to file:///tmp/test-svn/trunk ...</code>
+<code class="go">    M	README.txt</code>
+<code class="go">Committed r77</code>
+<code class="go">    M	README.txt</code>
+<code class="go">r77 = 95e0222ba6399739834380eb10afcd73e0670bc5 (refs/remotes/origin/trunk)</code>
+<code class="go">No changes between 4af61fd05045e07598c553167e0f31c84fd6ffe1 and refs/remotes/origin/trunk</code>
+<code class="go">Resetting to the latest refs/remotes/origin/trunk</code>
+</pre>
+
+<p>Эта команда берёт все изменения, зафиксированные поверх последних ревизий с Subversion сервера, создаёт для каждого новую Subversion ревизию, а затем переписывает их, добавляя уникальный идентификатор.
+Это важно, потому что изменяются SHA-1 хеши фиксаций.
+Это одна из причин, почему не рекомендуется смешивать Subversion и Git сервер в одном проекте.
+Если посмотреть на последнюю фиксацию, вы увидите, что добавилась строка <code>git-svn-id</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -1
+<code class="go">commit 95e0222ba6399739834380eb10afcd73e0670bc5</code>
+<code class="go">Author: ben &lt;ben@0b684db3-b064-4277-89d1-21af03df0a68&gt;</code>
+<code class="go">Date:   Thu Jul 24 03:08:36 2014 +0000</code>
+
+<code class="go">    Adding git-svn instructions to the README</code>
+
+<code class="go">    git-svn-id: file:///tmp/test-svn/trunk@77 0b684db3-b064-4277-89d1-21af03df0a68</code>
+</pre>
+
+<p>Обратите внимание, что SHA-1 хеш, прежде начинавшийся с <code>4af61fd</code>, теперь начинается с <code>95e0222</code>.
+Если всё же хотите работать как с Git, так и с Subversion серверами в одном проекте, сначала следует отправлять (<code>dcommit</code>) изменения на Subversion сервер, так как это изменяет хеши.</p>
+</section><section data-type="sect3" id="poluchenie-novyh-izmenenij-avXF2"><h4>Получение новых изменений</h4>
+
+<p>Если вы работаете в команде, рано или поздно кто-то успеет отправить изменения раньше вас и вы не сможете отправить свои изменения на сервер не разрешив возникший конфликт.
+Ваши фиксации будут попросту отвергаться сервером, пока вы не произведёте слияние.
+В <code>git svn</code> это выглядит следующим образом:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn dcommit
+<code class="go">Committing to file:///tmp/test-svn/trunk ...</code>
+
+<code class="go">ERROR from SVN:</code>
+<code class="go">Transaction is out of date: File '/trunk/README.txt' is out of date</code>
+<code class="go">W: d5837c4b461b7c0e018b49d12398769d2bfc240a and refs/remotes/origin/trunk differ, using rebase:</code>
+<code class="go">:100644 100644 f414c433af0fd6734428cf9d2a9fd8ba00ada145 c80b6127dd04f5fcda218730ddf3a2da4eb39138 M	README.txt</code>
+<code class="go">Current branch master is up to date.</code>
+<code class="go">ERROR: Not all changes have been committed into SVN, however the committed</code>
+<code class="go">ones (if any) seem to be successfully integrated into the working tree.</code>
+<code class="go">Please see the above messages for details.</code>
+</pre>
+
+<p>Чтобы решить эту проблему запустите <code>git svn rebase</code>, которая заберёт все ревизии с сервера, которых у вас пока нет, и переместит (rebase) ваши локальные наработки на них:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn rebase
+<code class="go">Committing to file:///tmp/test-svn/trunk ...</code>
+
+<code class="go">ERROR from SVN:</code>
+<code class="go">Transaction is out of date: File '/trunk/README.txt' is out of date</code>
+<code class="go">W: eaa029d99f87c5c822c5c29039d19111ff32ef46 and refs/remotes/origin/trunk differ, using rebase:</code>
+<code class="go">:100644 100644 65536c6e30d263495c17d781962cfff12422693a b34372b25ccf4945fe5658fa381b075045e7702a M	README.txt</code>
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: update foo</code>
+<code class="go">Using index info to reconstruct a base tree...</code>
+<code class="go">M	README.txt</code>
+<code class="go">Falling back to patching base and 3-way merge...</code>
+<code class="go">Auto-merging README.txt</code>
+<code class="go">ERROR: Not all changes have been committed into SVN, however the committed</code>
+<code class="go">ones (if any) seem to be successfully integrated into the working tree.</code>
+<code class="go">Please see the above messages for details.</code>
+</pre>
+
+<p>Теперь история линейна и вы можете успешно выполнить <code>dcommit</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn dcommit
+<code class="go">Committing to file:///tmp/test-svn/trunk ...</code>
+<code class="go">    M	README.txt</code>
+<code class="go">Committed r85</code>
+<code class="go">    M	README.txt</code>
+<code class="go">r85 = 9c29704cc0bbbed7bd58160cfb66cb9191835cd8 (refs/remotes/origin/trunk)</code>
+<code class="go">No changes between 5762f56732a958d6cfda681b661d2a239cc53ef5 and refs/remotes/origin/trunk</code>
+<code class="go">Resetting to the latest refs/remotes/origin/trunk</code>
+</pre>
+
+<p>В отличие от Git, всегда требующего производить слияние свежих изменений из удалённого репозитория с локальными наработками, перед отправкой на сервер, <code>git svn</code> требует слияний только в случае конфликтующих изменений (так работает Subversion).
+Если кто-нибудь изменил один файл, а затем вы изменяете другой, <code>dcommit</code> сработает гладко:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn dcommit
+<code class="go">Committing to file:///tmp/test-svn/trunk ...</code>
+<code class="go">    M	configure.ac</code>
+<code class="go">Committed r87</code>
+<code class="go">    M	autogen.sh</code>
+<code class="go">r86 = d8450bab8a77228a644b7dc0e95977ffc61adff7 (refs/remotes/origin/trunk)</code>
+<code class="go">    M	configure.ac</code>
+<code class="go">r87 = f3653ea40cb4e26b6281cec102e35dcba1fe17c4 (refs/remotes/origin/trunk)</code>
+<code class="go">W: a0253d06732169107aa020390d9fefd2b1d92806 and refs/remotes/origin/trunk differ, using rebase:</code>
+<code class="go">:100755 100755 efa5a59965fbbb5b2b0a12890f1b351bb5493c18 e757b59a9439312d80d5d43bb65d4a7d0389ed6d M	autogen.sh</code>
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+</pre>
+
+<p>Важно помнить про это, потому что в результате такого поведения вы получаете непредсказуемое состояние проекта, до этого не существовавшее ни на одном из компьютеров.
+Если изменения были несовместимы между собой, но не вызывали конфликта слияния (например, логически противоречивые изменения в разных файлах) в результате подобного произвола могут возникнуть труднодиагностируемые проблемы.
+С Git сервером дела обстоят иначе: перед отправкой изменений в удалённый репозиторий вы можете полностью протестировать проект локально, в то время как в Subversion вы не можете быть уверенными, что состояние проекта до и после фиксации было одинаковым.</p>
+
+<p>Даже если вы не готовы зафиксировать собственные изменения, следует почаще забирать изменения с Subversion сервера.
+Для синхронизации можно использовать <code>git svn fetch</code>, или <code>git svn rebase</code>; последняя команда не только забирает все изменения из Subversion, но и переносит ваши локальные фиксации наверх.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn rebase
+<code class="go">    M	autogen.sh</code>
+<code class="go">r88 = c9c5f83c64bd755368784b444bc7a0216cc1e17b (refs/remotes/origin/trunk)</code>
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Fast-forwarded master to refs/remotes/origin/trunk.</code>
+</pre>
+
+<p>Выполнение <code>git svn rebase</code> актуализирует состояние локального репозитория.
+Для выполнения этой команды ваша рабочая директория не должна содержать незафиксированных изменений.
+Если это не так, вам следует либо "спрятать" (stash) свои наработки, либо на время зафиксировать: иначе <code>git svn rebase</code> прекратит выполнение в случае конфликта.</p>
+</section><section data-type="sect3" id="problemy-s-git-vetvleniem-R0VcG"><h4>Проблемы с Git-ветвлением</h4>
+
+<p>После того как вы привыкните к Git, вам понравится создавать тематические ветки, работать в них и сливать их основную ветку разработки.
+Если работаете с Subversion сервером через <code>git svn</code>, вам придётся перемещать изменения, а не проводить слияния.
+Причина кроется в линейности истории в Subversion — в нём принята несколько иная концепция ветвления и слияния — так что <code>git svn</code> учитывает лишь первого родителя любой фиксации при преобразовании её в SVN формат.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn dcommit
+<code class="go">Committing to file:///tmp/test-svn/trunk ...</code>
+<code class="go">    M	CHANGES.txt</code>
+<code class="go">Committed r89</code>
+<code class="go">    M	CHANGES.txt</code>
+<code class="go">r89 = 89d492c884ea7c834353563d5d913c6adf933981 (refs/remotes/origin/trunk)</code>
+<code class="go">    M	COPYING.txt</code>
+<code class="go">    M	INSTALL.txt</code>
+<code class="go">Committed r90</code>
+<code class="go">    M	INSTALL.txt</code>
+<code class="go">    M	COPYING.txt</code>
+<code class="go">r90 = cb522197870e61467473391799148f6721bcf9a0 (refs/remotes/origin/trunk)</code>
+<code class="go">No changes between 71af502c214ba13123992338569f4669877f55fd and refs/remotes/origin/trunk</code>
+<code class="go">Resetting to the latest refs/remotes/origin/trunk</code>
+</pre>
+
+<p>Выполнение команды <code>dcommit</code> на ветке с уже слитой историй пройдёт успешно, за исключением того момента, что при просмотре истории вы заметите, что фиксации из ветки <code>experiment</code> не были переписаны один за другим; вместо этого они схлопнулись в одну фиксацию-слияние.</p>
+
+<p>Когда кто-нибудь склонирует этот репозиторий, всё что он увидит — единственное слияние, в котором собраны все изменения, словно вы выполнили <code>git merge --squash</code>; они не увидят кто и когда производил фиксации.</p>
+</section><section data-type="sect3" id="subversion-vetvlenie-r75Se"><h4>Subversion-ветвление</h4>
+
+<p>Итак, ветвление в Subversion отличается от оного в Git; используйте его как можно реже.
+Тем не менее, используя <code>git svn</code>, вы можете создавать Subversion-ветки и фиксировать изменения в них.</p>
+</section><section data-type="sect3" id="sozdanie-novyh-svn-vetok-8ynIZ"><h4>Создание новых SVN-веток</h4>
+
+<p>Чтобы создать новую ветку в Subversion, выполните <code>git svn branch [имя ветки]</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn branch opera
+<code class="go">Copying file:///tmp/test-svn/trunk at r90 to file:///tmp/test-svn/branches/opera...</code>
+<code class="go">Found possible branch point: file:///tmp/test-svn/trunk =&gt; file:///tmp/test-svn/branches/opera, 90</code>
+<code class="go">Found branch parent: (refs/remotes/origin/opera) cb522197870e61467473391799148f6721bcf9a0</code>
+<code class="go">Following parent with do_switch</code>
+<code class="go">Successfully followed parent</code>
+<code class="go">r91 = f1b64a3855d3c8dd84ee0ef10fa89d27f1584302 (refs/remotes/origin/opera)</code>
+</pre>
+
+<p>Это эквивалентно выполнению команды <code>svn copy trunk branches/opera</code> в Subversion, при этом действия совершаются на Subversion сервере.
+Обратите внимание, что создание SVN ветки не переключает вас на неё; если сейчас зафиксировать какие-либо изменения и отправить их на сервер, они попадут в ветку <code>trunk</code>, а не <code>opera</code>.</p>
+</section><section data-type="sect3" id="pereklyuchenie-aktivnyh-vetok-dQDuW"><h4>Переключение активных веток</h4>
+
+<p>Git определяет ветку, в которую он отправит ваши фиксации при выполнении <code>dcommit</code>, ища верхушку Subversion-ветки в вашей истории — она должна быть одна и она должна быть последней в текущей истории веток, имеющей метку <code>git-svn-id</code>.</p>
+
+<p>Если вы хотите работать одновременно с несколькими ветками, вы можете настроить локальные ветки на внесение изменений через <code>dcommit</code> в конкретные ветки Subversion, отпочковывая их из импортированных SVN-ревизий нужных веток.
+Если вам нужна ветка <code>opera</code>, в которой вы можете поработать отдельно, можете выполнить:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch opera remotes/origin/opera
+</pre>
+
+<p>Теперь, если вы захотите слить ветку <code>opera</code> в <code>trunk</code> (<code>master</code>), вы сможете сделать это с помощью обычной команды <code>git merge</code>.
+Однако вам потребуется добавить подробное описание к фиксации (через параметр <code>-m</code>), иначе при слиянии комментарий будет иметь вид "Merge branch opera" вместо чего-нибудь полезного.</p>
+
+<p>Помните, что хотя вы и используете <code>git merge</code> для этой операции, и слияние, скорее всего, произойдёт намного проще, чем в Subversion (потому что Git автоматически определяет подходящую основу для слияния), оно не является обычным слиянием в Git.
+Вы должны передать данные обратно на сервер в Subversion, который не способен справиться с фиксацией, имеющей более одного родителя; так что после передачи она будет выглядеть как единое целое, куда будут затолканы все изменения из другой ветки.
+После того как вы сольёте одну ветку в другую, вы не сможете просто так вернуться к работе над ней, как могли бы в Git.
+Команда <code>dcommit</code> удаляет всю информацию о том, какая ветка была влита, так что последующие вычисления базы слияния будут неверными — команда <code>dcommit</code> сделает результаты выполнения <code>git merge</code> такими же, какими они были бы после выполнения <code>git merge --squash</code>.
+К сожалению, избежать подобной ситуации вряд ли удастся: Subversion не способен сохранять подобную информацию, так что вы всегда будете связаны этими ограничениями.
+Во избежание проблем вы должны удалить локальную ветку (в нашем случае <code>opera</code>) после того, как вы вольёте её в trunk.</p>
+</section><section data-type="sect3" id="komandy-subversion-GByT7"><h4>Команды Subversion</h4>
+
+<p>В <code>git svn</code> содержится несколько команд для облегчения перехода на Git путём предоставления схожей с Subversion функциональности.
+Ниже приведены несколько команд, которые дают вам то, что вы имели в Subversion.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect4" id="prosmotr-istorii-v-stile-svn-AQVIW"><h4>Просмотр истории в стиле SVN</h4>
+
+<p>Если вы привыкли к Subversion и хотите просматривать историю в стиле SVN, выполните команду <code>git svn log</code>, чтобы просматривать историю в таком же формате, как в SVN:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn log
+<code class="go">------------------------------------------------------------------------</code>
+<code class="go">r87 | schacon | 2014-05-02 16:07:37 -0700 (Sat, 02 May 2014) | 2 lines</code>
+
+<code class="go">autogen change</code>
+
+<code class="go">------------------------------------------------------------------------</code>
+<code class="go">r86 | schacon | 2014-05-02 16:00:21 -0700 (Sat, 02 May 2014) | 2 lines</code>
+
+<code class="go">Merge branch 'experiment'</code>
+
+<code class="go">------------------------------------------------------------------------</code>
+<code class="go">r85 | schacon | 2014-05-02 16:00:09 -0700 (Sat, 02 May 2014) | 2 lines</code>
+
+<code class="go">updated the changelog</code>
+</pre>
+
+<p>Вы должны знать две важные вещи о команде <code>git svn log</code>.
+Во-первых, для её работы не требуется доступ к сети, в отличие от оригинальной команды <code>svn log</code>, которая запрашивает информацию с Subversion сервера.
+Во-вторых, эта команда отображает только те фиксации, которые были переданы на Subversion сервер.
+Локальные Git фиксации, которые вы ещё не отправили с помощью <code>dcommit</code>, не будут отображаться, равно как и фиксации, отправленные на Subversion сервер другими людьми с момента последнего выполнения <code>dcommit</code>.
+Результат действия этой команды скорее похож на последнее известное состояние изменений на Subversion сервере.</p>
+</section><section data-type="sect4" id="svn-annotacii-pDlfl"><h4>SVN-Аннотации</h4>
+
+<p>Так же как команда <code>git svn log</code> эмулирует команду <code>svn log</code>, эквивалентом команды <code>svn annotate</code> является команда <code>git svn blame [ФАЙЛ]</code>.
+Вывод выглядит следующим образом:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn blame README.txt
+<code class="go"> 2   temporal Protocol Buffers - Google's data interchange format</code>
+<code class="go"> 2   temporal Copyright 2008 Google Inc.</code>
+<code class="go"> 2   temporal http://code.google.com/apis/protocolbuffers/</code>
+<code class="go"> 2   temporal</code>
+<code class="go">22   temporal C++ Installation - Unix</code>
+<code class="go">22   temporal =======================</code>
+<code class="go"> 2   temporal</code>
+<code class="go">79    schacon Committing in git-svn.</code>
+<code class="go">78    schacon</code>
+<code class="go"> 2   temporal To build and install the C++ Protocol Buffer runtime and the Protocol</code>
+<code class="go"> 2   temporal Buffer compiler (protoc) execute the following:</code>
+<code class="go"> 2   temporal</code>
+</pre>
+
+<p>Опять же, эта команда не показывает фиксации, которые вы сделали локально в Git или те, что были отправлены на Subversion сервер с момента последней связи с ним.</p>
+</section><section data-type="sect4" id="informaciya-o-svn-servere-2rbsZ"><h4>Информация о SVN-сервере</h4>
+
+<p>Вы можете получить ту же информацию, которую выдаёт <code>svn info</code>, выполнив команду <code>git svn info</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn info
+<code class="go">Path: .</code>
+<code class="go">URL: https://schacon-test.googlecode.com/svn/trunk</code>
+<code class="go">Repository Root: https://schacon-test.googlecode.com/svn</code>
+<code class="go">Repository UUID: 4c93b258-373f-11de-be05-5f7a86268029</code>
+<code class="go">Revision: 87</code>
+<code class="go">Node Kind: directory</code>
+<code class="go">Schedule: normal</code>
+<code class="go">Last Changed Author: schacon</code>
+<code class="go">Last Changed Rev: 87</code>
+<code class="go">Last Changed Date: 2009-05-02 16:07:37 -0700 (Sat, 02 May 2009)</code>
+</pre>
+
+<p>Так же, как <code>blame</code> и <code>log</code>, эта команда выполняется без доступа к сети и выводит информацию, актуальную на момент последнего обращения к серверу Subversion.</p>
+</section><section data-type="sect4" id="ignorirovanie-togo-chto-ignoriruet-subversion-9lPFM"><h4>Игнорирование того, что игнорирует Subversion</h4>
+
+<p>Если вы клонируете Subversion-репозиторий с установленными <code>svn:ignore</code> свойствами, скорее всего, вы захотите создать соответствующие им файлы <code>.gitignore</code>, чтобы ненароком не зафиксировать лишнего.
+Для решения этой проблемы в <code>git svn</code> имеется две команды.
+Первая — <code>git svn create-ignore</code> — автоматически создаст соответствующие файлы <code>.gitignore</code>, которые вы затем можете зафиксировать.</p>
+
+<p>Вторая команда — <code>git svn show-ignore</code> — выводит на стандартный вывод строки, которые следует включить в файл <code>.gitignore</code>; вы можете попросту перенаправить вывод этой команды в файл исключений:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git svn show-ignore &gt; .git/info/exclude
+</pre>
+
+<p>Поступая таким образом, вы не захламляете проект файлами <code>.gitignore</code>.
+Это хорошее решение в случае если вы являетесь единственным пользователем Git в команде, использующей Subversion, и ваши коллеги выступают против наличия файлов <code>.gitignore</code> в проекте.</p>
+</section></section><section data-type="sect3" id="zaklyuchenie-po-git-svn-kZNTg"><h4>Заключение по git-svn</h4>
+
+<p>Утилиты <code>git svn</code> полезны в том случае, если ваша разработка по каким-то причинам требует наличия рабочего Subversion-сервера.
+Однако, стоит воспринимать их как "функционально урезанный" Git, ибо при использовании всех возможностей Git вы столкнётесь с проблемами в преобразованиях, которые могут сбить с толку вас и ваших коллег.
+Чтобы избежать неприятностей, старайтесь следовать следующим рекомендациям:</p>
+
+<ul>
+<li>
+<p>Держите историю в Git линейной, чтобы она не содержала слияний, сделанных с помощью <code>git merge</code>.
+Перемещайте всю работу, которую вы выполняете вне основной ветки обратно в неё; не выполняйте слияний.</p>
+</li>
+<li>
+<p>Не устанавливайте отдельный Git-сервер для совместной работы.
+Можно иметь такой сервер для того, чтобы ускорить клонирование для новых разработчиков, но не отправляйте на него ничего, не имеющего записи <code>git-svn-id</code>.
+Возможно, стоит даже добавить перехватчик <code>pre-receive</code>, который будет проверять каждое изменение на наличие <code>git-svn-id</code> и отклонять фиксации, если они не имеют такой записи.</p>
+</li>
+</ul>
+<p>При следовании этим правилам, работа с Subversion сервером может быть более-менее сносной.
+Однако, если возможен перенос проекта на нормальный Git-сервер, преимущества от этого перехода дадут вашему проекту намного больше.</p>
+</section></section><section data-type="sect2" id="git-i-mercurial-oZ6TP"><h3 id="Git-и-Mercurial"><a href="#Git-и-Mercurial">Git и Mercurial</a></h3>
+
+<p><a data-type="indexterm" data-primary="Interoperation with other VCSs" data-secondary="Mercurial" id="id-kyRTw"></a>
+<a data-type="indexterm" data-primary="Mercurial" id="id-OMzCP"></a>
+Вселенная распределённых систем контроля версий не заканчивается на Git.
+На самом деле, существуют и другие системы, каждая со своим подходом к управлению версиями.
+На втором месте по популярности после Git’а находится Mercurial и у этих систем много общего.</p>
+
+<p>К счастью, если вам нравится Git, но приходится работать с Mercurial-репозиторием, существует способ использовать Git-клиент для работы с Mercurial.
+Учитывая тот факт, что Git работает с серверами через концепцию "удалённых репозиториев" (remotes), неудивительно, что работа с Mercurial-репозиторием происходит через своего рода обёртку над "удалённым репозиторием".
+Проект, добавляющий такую интероперабельность, называется <code>git-remote-hg</code> и расположен по адресу <a href="https://github.com/felipec/git-remote-hg"><em class="hyperlink">https://github.com/felipec/git-remote-hg</em></a>.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="git-remote-hg-eo9h9"><h4>git-remote-hg</h4>
+
+<p>Для начала необходимо установить <code>git-remote-hg</code>.
+Ничего особенного — просто поместите файл в место, откуда он будет виден другим программам, типа:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> curl -o ~/bin/git-remote-hg <code class="se">\</code>
+<code class="go">  https://raw.githubusercontent.com/felipec/git-remote-hg/master/git-remote-hg</code>
+<code class="gp">$</code> chmod +x ~/bin/git-remote-hg
+</pre>
+
+<p>…предполагая, что <code>~/bin</code> включён в <code>$PATH</code>.
+Есть ещё одна зависимость: библиотека <code>mercurial</code> для Python.
+Если у вас установлен Python, просто выполните:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> pip install mercurial
+</pre>
+
+<p>(Если же у вас ещё нет Python, пора исправить это: скачайте установщик с <a href="https://www.python.org/"><em class="hyperlink">https://www.python.org/</em></a>.)</p>
+
+<p>Ну и наконец понадобится сам клиент Mercurial.
+Если он ещё не установлен — скачайте и установите с <a href="http://mercurial.selenic.com/"><em class="hyperlink">http://mercurial.selenic.com/</em></a>.</p>
+
+<p>Теперь можно отжигать!
+Всё что потребуется — репозиторий Mercurial с которым вы можете работать.
+К счастью, подойдёт любой, так что мы воспользуемся репозиторием "привет, мир", используемом для обучения Mercurial’у.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg clone http://selenic.com/repo/hello /tmp/hello
+</pre>
+</section><section data-type="sect3" id="osnovy-nlZiK"><h4>Основы</h4>
+
+<p>Теперь, когда у нас есть подходящий "серверный" репозиторий, мы готовы разобрать типичные приёмы работы с Mercurial.
+Как вы увидите, эти две системы очень похожи, так что всё пройдёт гладко.</p>
+
+<p>Как и всегда, вначале мы клонируем репозиторий:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone hg::/tmp/hello /tmp/hello-git
+<code class="gp">$</code> <code class="nb">cd</code> /tmp/hello-git
+<code class="gp">$</code> git log --oneline --graph --decorate
+<code class="go">* ac7955c (HEAD, origin/master, origin/branches/default, origin/HEAD, refs/hg/origin/branches/default, refs/hg/origin/bookmarks/master, master) Create a makefile</code>
+<code class="go">* 65bb417 Create a standard "hello, world" program</code>
+</pre>
+
+<p>Наверняка вы обратили внимание, что мы использовали обыкновенный <code>git clone</code>.
+Это потому, что <code>git-remote-hg</code> работает на довольно низком уровне, подобно тому, как в Git реализован HTTP/S протокол (<code>git-remote-hg</code> служит как бы в качестве "помощника" для работы с удалённым репозиторием по новому протоколу (<code>hg</code>), расширяя базовые возможности Git).
+Подобно Git’у, Mercurial рассчитан на то, что каждый клиент хранит полную копию репозитория со всей историей, поэтому приведённая выше команда выполняет полное копирование со всей историей.
+Стоит отметить, что делает она это достаточно быстро.</p>
+
+<p><code>git log</code> показывает две фиксации, на последнюю из которых указывает довольно много ссылок.
+На самом деле, не все из них реально существуют.
+Давайте-ка посмотрим, что хранится внутри директории <code>.git</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> tree .git/refs
+<code class="go">.git/refs</code>
+<code class="go">├── heads</code>
+<code class="go">│   └── master</code>
+<code class="go">├── hg</code>
+<code class="go">│   └── origin</code>
+<code class="go">│       ├── bookmarks</code>
+<code class="go">│       │   └── master</code>
+<code class="go">│       └── branches</code>
+<code class="go">│           └── default</code>
+<code class="go">├── notes</code>
+<code class="go">│   └── hg</code>
+<code class="go">├── remotes</code>
+<code class="go">│   └── origin</code>
+<code class="go">│       └── HEAD</code>
+<code class="go">└── tags</code>
+
+<code class="go">9 directories, 5 files</code>
+</pre>
+
+<p><code>git-remote-hg</code> пытается нивелировать различия между Git и Mercurial, преобразовывая форматы за кулисами.
+Ссылки на объекты в удалённом репозитории хранятся в директории <code>refs/hg</code>.
+Например, <code>refs/hg/origin/branches/default</code> — это Git-ссылка, содержащая SHA-1 "ac7955c" — фиксация на который ссылается ветка <code>master</code>.
+Таким образом, директория <code>refs/hg</code> — это что-то типа <code>refs/remotes/origin</code>, с той разницей что здесь же отдельно хранятся Mercurial-закладки и ветки.</p>
+
+<p>Файл <code>notes/hg</code> — отправная точка для выяснения соответствия между хешами фиксаций в Git и идентификаторами ревизий в Mercurial.
+Давайте посмотрим что там:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat notes/hg
+<code class="go">d4c10386...</code>
+
+<code class="gp">$</code> git cat-file -p d4c10386...
+<code class="go">tree 1781c96...</code>
+<code class="go">author remote-hg &lt;&gt; 1408066400 -0800</code>
+<code class="go">committer remote-hg &lt;&gt; 1408066400 -0800</code>
+
+<code class="go">Notes for master</code>
+
+<code class="gp">$</code> git ls-tree 1781c96...
+<code class="go">100644 blob ac9117f...	65bb417...</code>
+<code class="go">100644 blob 485e178...	ac7955c...</code>
+
+<code class="gp">$</code> git cat-file -p ac9117f
+<code class="go">0a04b987be5ae354b710cefeba0e2d9de7ad41a9</code>
+</pre>
+
+<p>Итак, <code>refs/notes/hg</code> указывает на дерево, которое содержит список других объектов и имён.
+Команда <code>git ls-tree</code> выводит права доступа, тип, хеш и имя файла для содержимого дерева.
+Наконец, добравшись до первого элемента дерева, мы обнаружим, что это блоб с названием "ac9117f" (SHA-1 фиксации, на которую указывает ветка <code>master</code>), содержащий "0a04b98" (идентификатор последней ревизии ветки <code>default</code> в Mercurial).</p>
+
+<p>Всё это немного запутанно, но хорошие новости в том, что, по большому счёту, нам не нужно беспокоится об организации данных в git-remote-hg.
+В целом, работа с Mercurial сервером не сильно отличается от работы с Git сервером.</p>
+
+<p>Ещё одна вещь, которую следует учитывать: список игнорируемых файлов.
+Mercurial и Git используют очень похожие механизмы для таких списков, но всё же хранить <code>.gitignore</code> в Mercurial репозитории — не самая удачная идея.
+К счастью, в Git есть механизм игнорирования специфичных для локальной копии репозитория файлов, а формат списка исключений в Mercurial совместим с Git, так что можно просто скопировать <code>.hgignore</code> кое-куда:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cp .hgignore .git/info/exclude
+</pre>
+
+<p>Файл <code>.git/info/exclude</code> работает подобно <code>.gitignore</code>, но не фиксируется в истории изменений.</p>
+</section><section data-type="sect3" id="rabochij-process-2QxhZ"><h4>Рабочий процесс</h4>
+
+<p>Предположим, вы проделали некую работу, зафиксировали изменения в ветке <code>master</code> и готовы отправить изменения в удалённый репозиторий.
+Вот как выглядит репозиторий сейчас:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --graph --decorate
+<code class="go">* ba04a2a (HEAD, master) Update makefile</code>
+<code class="go">* d25d16f Goodbye</code>
+<code class="go">* ac7955c (origin/master, origin/branches/default, origin/HEAD, refs/hg/origin/branches/default, refs/hg/origin/bookmarks/master) Create a makefile</code>
+<code class="go">* 65bb417 Create a standard "hello, world" program</code>
+</pre>
+
+<p>Наша ветка <code>master</code> опережает <code>origin/master</code> на две фиксации, пока что они есть лишь в локальном репозитории.
+Давайте посмотрим, вдруг кто-нибудь сделал важные изменения:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch
+<code class="go">From hg::/tmp/hello</code>
+<code class="go">   ac7955c..df85e87  master     -&gt; origin/master</code>
+<code class="go">   ac7955c..df85e87  branches/default -&gt; origin/branches/default</code>
+<code class="gp">$</code> git log --oneline --graph --decorate --all
+<code class="go">* 7b07969 (refs/notes/hg) Notes for default</code>
+<code class="go">* d4c1038 Notes for master</code>
+<code class="go">* df85e87 (origin/master, origin/branches/default, origin/HEAD, refs/hg/origin/branches/default, refs/hg/origin/bookmarks/master) Add some documentation</code>
+<code class="go">| * ba04a2a (HEAD, master) Update makefile</code>
+<code class="go">| * d25d16f Goodbye</code>
+<code class="go">|/</code>
+<code class="go">* ac7955c Create a makefile</code>
+<code class="go">* 65bb417 Create a standard "hello, world" program</code>
+</pre>
+
+<p>Из-за того, что мы использовали флаг <code>--all</code>, выводятся ссылки "notes", используемые внутри <code>git-remote-hg</code>, можно не обращать на них внимания.
+В остальном, ничего необычного: <code>origin/master</code> продвинулся на одну фиксацию и история разошлась.
+В отличие от остальных систем контроля версий, рассматриваемых в этой главе, Mercurial умеет работать со слияниями, так что мы не будет вытворять никаких фокусов.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">Auto-merging hello.c</code>
+<code class="go">Merge made by the 'recursive' strategy.</code>
+<code class="go"> hello.c | 2 +-</code>
+<code class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</code>
+<code class="gp">$</code> git log --oneline --graph --decorate
+<code class="go">*   0c64627 (HEAD, master) Merge remote-tracking branch 'origin/master'</code>
+<code class="go">|\</code>
+<code class="go">| * df85e87 (origin/master, origin/branches/default, origin/HEAD, refs/hg/origin/branches/default, refs/hg/origin/bookmarks/master) Add some documentation</code>
+<code class="go">* | ba04a2a Update makefile</code>
+<code class="go">* | d25d16f Goodbye</code>
+<code class="go">|/</code>
+<code class="go">* ac7955c Create a makefile</code>
+<code class="go">* 65bb417 Create a standard "hello, world" program</code>
+</pre>
+
+<p>Отлично!
+Мы запустили все тесты, они прошли, так что всё готово для отправки изменений на удалённый сервер:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push
+<code class="go">To hg::/tmp/hello</code>
+<code class="go">   df85e87..0c64627  master -&gt; master</code>
+</pre>
+
+<p>Вот и всё!
+Если теперь посмотреть на Mercurial репозиторий, мы не увидим там ничего необычного:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg log -G --style compact
+<code class="go">o    5[tip]:4,2   dc8fa4f932b8   2014-08-14 19:33 -0700   ben</code>
+<code class="go">|\     Merge remote-tracking branch 'origin/master'</code>
+<code class="go">| |</code>
+<code class="go">| o  4   64f27bcefc35   2014-08-14 19:27 -0700   ben</code>
+<code class="go">| |    Update makefile</code>
+<code class="go">| |</code>
+<code class="go">| o  3:1   4256fc29598f   2014-08-14 19:27 -0700   ben</code>
+<code class="go">| |    Goodbye</code>
+<code class="go">| |</code>
+<code class="go">@ |  2   7db0b4848b3c   2014-08-14 19:30 -0700   ben</code>
+<code class="go">|/     Add some documentation</code>
+<code class="go">|</code>
+<code class="go">o  1   82e55d328c8c   2005-08-26 01:21 -0700   mpm</code>
+<code class="go">|    Create a makefile</code>
+<code class="go">|</code>
+<code class="go">o  0   0a04b987be5a   2005-08-26 01:20 -0700   mpm</code>
+<code class="go">     Create a standard "hello, world" program</code>
+</pre>
+
+<p>Набор изменений <em>2</em> был произведён Mercurial’ом, а изменения <em>3</em> и <em>4</em> внесены <code>git-remote-hg</code> после отправки изменений, сделанных через Git.</p>
+</section><section data-type="sect3" id="vetki-i-zakladki-gLosr"><h4>Ветки и закладки</h4>
+
+<p>В Git есть только один тип веток: указатель, который передвигается "вперёд" по мере фиксации изменений.
+В Mercurial такие указатели называются "закладки" и ведут себя схожим с Git образом.</p>
+
+<p>Понятие "ветка" в Mercurial означает немного другое.
+Название ветки, в которой происходят изменения, <em>записывается внутри каждого набора изменений</em> и, таким образом, навсегда остаётся в истории.
+Например, вот одна из фиксаций, произведённых в ветке <code>develop</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg log -l 1
+<code class="go">changeset:   6:8f65e5e02793</code>
+<code class="go">branch:      develop</code>
+<code class="go">tag:         tip</code>
+<code class="go">user:        Ben Straub &lt;ben@straub.cc&gt;</code>
+<code class="go">date:        Thu Aug 14 20:06:38 2014 -0700</code>
+<code class="go">summary:     More documentation</code>
+</pre>
+
+<p>Обратите внимание на строку, начинающуюся с "branch".
+Git устроен по-другому (на самом деле, оба типа веток могут быть представлены как ссылки в Git), но <code>git-remote-hg</code> вынужден понимать разницу, потому что нацелен на работу с Mercurial.</p>
+
+<p>Создание "закладок" Mercurial не сложнее создания простых веток в Git.
+Вот что мы делаем в Git:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b featureA
+<code class="go">Switched to a new branch 'featureA'</code>
+<code class="gp">$</code> git push origin featureA
+<code class="go">To hg::/tmp/hello</code>
+<code class="go"> * [new branch]      featureA -&gt; featureA</code>
+</pre>
+
+<p>А со стороны Mercurial это выглядит так:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg bookmarks
+<code class="go">   featureA                  5:bd5ac26f11f9</code>
+<code class="gp">$</code> hg log --style compact -G
+<code class="go">@  6[tip]   8f65e5e02793   2014-08-14 20:06 -0700   ben</code>
+<code class="go">|    More documentation</code>
+<code class="go">|</code>
+<code class="go">o    5[featureA]:4,2   bd5ac26f11f9   2014-08-14 20:02 -0700   ben</code>
+<code class="go">|\     Merge remote-tracking branch 'origin/master'</code>
+<code class="go">| |</code>
+<code class="go">| o  4   0434aaa6b91f   2014-08-14 20:01 -0700   ben</code>
+<code class="go">| |    update makefile</code>
+<code class="go">| |</code>
+<code class="go">| o  3:1   318914536c86   2014-08-14 20:00 -0700   ben</code>
+<code class="go">| |    goodbye</code>
+<code class="go">| |</code>
+<code class="go">o |  2   f098c7f45c4f   2014-08-14 20:01 -0700   ben</code>
+<code class="go">|/     Add some documentation</code>
+<code class="go">|</code>
+<code class="go">o  1   82e55d328c8c   2005-08-26 01:21 -0700   mpm</code>
+<code class="go">|    Create a makefile</code>
+<code class="go">|</code>
+<code class="go">o  0   0a04b987be5a   2005-08-26 01:20 -0700   mpm</code>
+<code class="go">     Create a standard "hello, world" program</code>
+</pre>
+
+<p>Обратите внимание на метку <code>[featureA]</code> на пятой ревизии.
+Таким образом, со стороны Git "закладки" выглядят как обычные ветки с одним лишь исключением: нельзя удалить закладку через Git (это одно из ограничений обёрток для взаимодействия с другими СКВ).</p>
+
+<p>Можно работать и с полноценными ветками Mercurial — просто поместите Git ветку в пространство имён <code>branches</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b branches/permanent
+<code class="go">Switched to a new branch 'branches/permanent'</code>
+<code class="gp">$</code> vi Makefile
+<code class="gp">$</code> git commit -am <code class="s1">'A permanent change'</code>
+<code class="gp">$</code> git push origin branches/permanent
+<code class="go">To hg::/tmp/hello</code>
+<code class="go"> * [new branch]      branches/permanent -&gt; branches/permanent</code>
+</pre>
+
+<p>Вот как это будет выглядеть со стороны Mercurial:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg branches
+<code class="go">permanent                      7:a4529d07aad4</code>
+<code class="go">develop                        6:8f65e5e02793</code>
+<code class="go">default                        5:bd5ac26f11f9 (inactive)</code>
+<code class="gp">$</code> hg log -G
+<code class="go">o  changeset:   7:a4529d07aad4</code>
+<code class="go">|  branch:      permanent</code>
+<code class="go">|  tag:         tip</code>
+<code class="go">|  parent:      5:bd5ac26f11f9</code>
+<code class="go">|  user:        Ben Straub &lt;ben@straub.cc&gt;</code>
+<code class="go">|  date:        Thu Aug 14 20:21:09 2014 -0700</code>
+<code class="go">|  summary:     A permanent change</code>
+<code class="go">|</code>
+<code class="go">| @  changeset:   6:8f65e5e02793</code>
+<code class="go">|/   branch:      develop</code>
+<code class="go">|    user:        Ben Straub &lt;ben@straub.cc&gt;</code>
+<code class="go">|    date:        Thu Aug 14 20:06:38 2014 -0700</code>
+<code class="go">|    summary:     More documentation</code>
+<code class="go">|</code>
+<code class="go">o    changeset:   5:bd5ac26f11f9</code>
+<code class="go">|\   bookmark:    featureA</code>
+<code class="go">| |  parent:      4:0434aaa6b91f</code>
+<code class="go">| |  parent:      2:f098c7f45c4f</code>
+<code class="go">| |  user:        Ben Straub &lt;ben@straub.cc&gt;</code>
+<code class="go">| |  date:        Thu Aug 14 20:02:21 2014 -0700</code>
+<code class="go">| |  summary:     Merge remote-tracking branch 'origin/master'</code>
+<code class="go">[...]</code>
+</pre>
+
+<p>Имя ветки "permanent" было записано внутри набора изменений с номером <em>7</em>.</p>
+
+<p>Итак, со стороны Git работа с обеими типами Mercurial веток выглядит одинаково: переключаемся на ветку, фиксируем изменения, забираем чужие наработки, производим слияния и отправляем изменения в репозиторий как обычно.
+И ещё: Mercurial не поддерживает изменение истории, только добавление новых изменений.
+Вот как будет выглядеть Mercurial репозиторий после интерактивного изменения истории и "насильной" её отправки назад:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> hg log --style compact -G
+<code class="go">o  10[tip]   99611176cbc9   2014-08-14 20:21 -0700   ben</code>
+<code class="go">|    A permanent change</code>
+<code class="go">|</code>
+<code class="go">o  9   f23e12f939c3   2014-08-14 20:01 -0700   ben</code>
+<code class="go">|    Add some documentation</code>
+<code class="go">|</code>
+<code class="go">o  8:1   c16971d33922   2014-08-14 20:00 -0700   ben</code>
+<code class="go">|    goodbye</code>
+<code class="go">|</code>
+<code class="go">| o  7:5   a4529d07aad4   2014-08-14 20:21 -0700   ben</code>
+<code class="go">| |    A permanent change</code>
+<code class="go">| |</code>
+<code class="go">| | @  6   8f65e5e02793   2014-08-14 20:06 -0700   ben</code>
+<code class="go">| |/     More documentation</code>
+<code class="go">| |</code>
+<code class="go">| o    5[featureA]:4,2   bd5ac26f11f9   2014-08-14 20:02 -0700   ben</code>
+<code class="go">| |\     Merge remote-tracking branch 'origin/master'</code>
+<code class="go">| | |</code>
+<code class="go">| | o  4   0434aaa6b91f   2014-08-14 20:01 -0700   ben</code>
+<code class="go">| | |    update makefile</code>
+<code class="go">| | |</code>
+<code class="go">+---o  3:1   318914536c86   2014-08-14 20:00 -0700   ben</code>
+<code class="go">| |      goodbye</code>
+<code class="go">| |</code>
+<code class="go">| o  2   f098c7f45c4f   2014-08-14 20:01 -0700   ben</code>
+<code class="go">|/     Add some documentation</code>
+<code class="go">|</code>
+<code class="go">o  1   82e55d328c8c   2005-08-26 01:21 -0700   mpm</code>
+<code class="go">|    Create a makefile</code>
+<code class="go">|</code>
+<code class="go">o  0   0a04b987be5a   2005-08-26 01:20 -0700   mpm</code>
+<code class="go">     Create a standard "hello, world" program</code>
+</pre>
+
+<p>Были созданы изменения <em>8</em>, <em>9</em> и <em>10</em> и теперь они принадлежат ветке <code>permanent</code>, но старые изменения никуда не делись.
+Это может <strong>очень</strong> удивить ваших коллег, привыкших к Mercurial, так что старайтесь так не делать.</p>
+</section><section data-type="sect3" id="zaklyuchenie-KbNUO"><h4>Заключение</h4>
+
+<p>Git и Mercurial довольно похожи, их относительно просто можно "подружить".
+Если вы будете избегать изменения уже опубликованной истории (это в целом хорошая идея, не только в контексте взаимодействия с Mercurial), вы даже не заметите что работаете с другой СКВ.</p>
+</section></section><section data-type="sect2" id="git-i-perforce-q4Nfa"><h3 id="Git-и-Perforce"><a href="#Git-и-Perforce">Git и Perforce</a></h3>
+
+<p><a data-type="indexterm" data-primary="Interoperation with other VCSs" data-secondary="Perforce" id="id-ZeafG"></a>
+<a data-type="indexterm" data-primary="Perforce" id="id-POKi2"></a>
+Perforce — очень распространённая система контроля версий в корпоративной среде.
+Она появилась в 1995 году, что делает её самой старой СКВ, рассматриваемой в этой главе.
+Perforce разработан в духе тех времён; он предполагает постоянное подключение к центральному серверу, а локально хранится одна-единственная версия файлов.
+На самом деле, его возможности, как и ограничения, разрабатывались для решения вполне конкретных проблем; хотя многие проекты, использующие Perforce сегодня, выиграли бы от перехода на Git.</p>
+
+<p>Существует два варианта совместного использования Git и Perforce.
+Первый — Git Fusion от разработчиков Perforce — позволяет выставлять субдеревья Perforce-депо в качестве удалённых Git репозиториев.
+Второй — <code>git-p4</code> — клиентская обёртка над Perforce для Git; она не требует дополнительной настройки Perforce сервера.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="_p4_git_fusion"><h4>Git Fusion</h4>
+
+<p><a data-type="indexterm" data-primary="Perforce" data-secondary="Git Fusion" id="id-Q4Lu7"></a>
+У создателей Perforce есть продукт, именуемый Git Fusion (доступен на <a href="http://www.perforce.com/git-fusion"><em class="hyperlink">http://www.perforce.com/git-fusion</em></a>), который синхронизирует Perforce сервер с Git репозиторием на стороне сервера.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect4" id="ustanovka-MNRUE"><h4>Установка</h4>
+
+<p>Для примера мы воспользуемся простейшим способом настройки Git Fusion — подготовленным образом для виртуальной машины с предустановленным Perforce демоном и собственно Git Fusion’ом.
+Вы можете скачать образ на <a href="http://www.perforce.com/downloads/Perforce/20-User"><em class="hyperlink">http://www.perforce.com/downloads/Perforce/20-User</em></a>, а затем импортировать его в ваше любимое средство виртуализации (мы будем использовать VirtualBox).</p>
+
+<p>Во время первого запуска вам потребуется сконфигурировать пароли трёх Linux пользователей (<code>root</code>, <code>perforce</code> и <code>git</code>) и имя хоста, которое будет идентифицировать компьютер в сети.
+По окончании вы увидите следующее:</p>
+
+<figure id="id-aMRCe"><img src="/book/en/v2/book/09-git-and-other-scms/images/git-fusion-boot.png" alt="Экран виртуальной машины Git Fusion."><figcaption><span class="label">Figure 9-1. </span>Экран виртуальной машины Git Fusion.</figcaption></figure><p>Запомните IP адрес, он пригодится в будущем.
+Далее, создадим пользователя Perforce.
+Выберите внизу опцию "Login" и нажмите <code>Enter</code> (или используйте SSH) и войдите как пользователь <code>root</code>.
+Используйте приведённые ниже команды, чтобы создать пользователя:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> p4 -p localhost:1666 -u super user -f john
+<code class="gp">$</code> p4 -p localhost:1666 -u john passwd
+<code class="gp">$</code> <code class="nb">exit</code>
+</pre>
+
+<p>Первая команда откроет редактор для уточнения данных пользователя, но вы можете принять настройки по умолчанию, введя <code>:wq</code> и нажав <code>Enter</code>.
+Вторая команда дважды попросит ввести пароль.
+Это всё, что требовалось выполнить в оболочке ОС, можете завершить сессию.</p>
+
+<p>Следующим шагом необходимо запретить Git проверять SSL сертификаты.
+Хотя виртуальная машина Git Fusion поставляется с сертификатом, он не привязан к домену и IP адресу виртуальной машины, так что Git будет отвергать соединения как небезопасные.
+Если вы собираетесь использовать эту виртуальную машину на постоянной основе, обратитесь к руководству по Git Fusion, чтобы узнать, как установить другой сертификат; для тестов же хватит следующего:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">export </code><code class="nv">GIT_SSL_NO_VERIFY</code><code class="o">=</code><code class="nb">true</code>
+</pre>
+
+<p>Теперь можете проверить что всё работает.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://10.0.1.254/Talkhouse
+<code class="go">Cloning into 'Talkhouse'...</code>
+<code class="go">Username for 'https://10.0.1.254': john</code>
+<code class="go">Password for 'https://john@10.0.1.254':</code>
+<code class="go">remote: Counting objects: 630, done.</code>
+<code class="go">remote: Compressing objects: 100% (581/581), done.</code>
+<code class="go">remote: Total 630 (delta 172), reused 0 (delta 0)</code>
+<code class="go">Receiving objects: 100% (630/630), 1.22 MiB | 0 bytes/s, done.</code>
+<code class="go">Resolving deltas: 100% (172/172), done.</code>
+<code class="go">Checking connectivity... done.</code>
+</pre>
+
+<p>На виртуальной машине уже настроен проект, который вы можете клонировать.
+Мы клонируем репозиторий по HTTPS протоколу, используя ранее созданного пользователя <code>john</code>; Git спросит пароль, но менеджер паролей запомнит его для последующих запросов.</p>
+</section><section data-type="sect4" id="nastrojka-fusion-MLRUE"><h4>Настройка Fusion</h4>
+
+<p>После установки Git Fusion вы, возможно, захотите настроить его.
+Это относительно несложно сделать, используя ваш любимый Perforce клиент; просто отобразите директорию <code>//.git-fusion</code> на Perforce сервере в ваше рабочее пространство.
+Структура файлов приведена ниже:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> tree
+<code class="go">.</code>
+<code class="go">├── objects</code>
+<code class="go">│   ├── repos</code>
+<code class="go">│   │   └── [...]</code>
+<code class="go">│   └── trees</code>
+<code class="go">│       └── [...]</code>
+<code class="go">│</code>
+<code class="go">├── p4gf_config</code>
+<code class="go">├── repos</code>
+<code class="go">│   └── Talkhouse</code>
+<code class="go">│       └── p4gf_config</code>
+<code class="go">└── users</code>
+<code class="go">    └── p4gf_usermap</code>
+
+<code class="go">498 directories, 287 files</code>
+</pre>
+
+<p>Директория <code>objects</code> используется Git Fusion для отображения объектов Perforce в Git и наоборот, вам не следует ничего здесь трогать.
+Внутри расположен глобальный конфигурационный файл <code>p4gf_config</code>, а также по одному такому же файлу для каждого репозитория — эти файлы и определяют поведение Git Fusion.
+Заглянем в тот, что в корне:</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[repo-creation]</code>
+<code class="na">charset</code> <code class="o">=</code> <code class="s">utf8</code>
+
+<code class="k">[git-to-perforce]</code>
+<code class="na">change-owner</code> <code class="o">=</code> <code class="s">author</code>
+<code class="na">enable-git-branch-creation</code> <code class="o">=</code> <code class="s">yes</code>
+<code class="na">enable-swarm-reviews</code> <code class="o">=</code> <code class="s">yes</code>
+<code class="na">enable-git-merge-commits</code> <code class="o">=</code> <code class="s">yes</code>
+<code class="na">enable-git-submodules</code> <code class="o">=</code> <code class="s">yes</code>
+<code class="na">preflight-commit</code> <code class="o">=</code> <code class="s">none</code>
+<code class="na">ignore-author-permissions</code> <code class="o">=</code> <code class="s">no</code>
+<code class="na">read-permission-check</code> <code class="o">=</code> <code class="s">none</code>
+<code class="na">git-merge-avoidance-after-change-num</code> <code class="o">=</code> <code class="s">12107</code>
+
+<code class="k">[perforce-to-git]</code>
+<code class="na">http-url</code> <code class="o">=</code> <code class="s">none</code>
+<code class="na">ssh-url</code> <code class="o">=</code> <code class="s">none</code>
+
+<code class="k">[@features]</code>
+<code class="na">imports</code> <code class="o">=</code> <code class="s">False</code>
+<code class="na">chunked-push</code> <code class="o">=</code> <code class="s">False</code>
+<code class="na">matrix2</code> <code class="o">=</code> <code class="s">False</code>
+<code class="na">parallel-push</code> <code class="o">=</code> <code class="s">False</code>
+
+<code class="k">[authentication]</code>
+<code class="na">email-case-sensitivity</code> <code class="o">=</code> <code class="s">no</code>
+</pre>
+
+<p>Мы не будем вдаваться в назначение каждой опции, просто обратите внимание, что это обыкновенный INI файл, подобный тем, что использует Git для конфигурации.
+Файл, рассмотренный выше, задаёт глобальные опции, которые могут быть переопределены внутри специфичных для репозитория файлов конфигурации, типа <code>repos/Talkhouse/p4gf_config</code>.
+Если откроете этот файл, увидите секцию <code>[@repo]</code>, переопределяющую некоторые глобальные настройки.
+Также, внутри есть секции, подобные этой:</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[Talkhouse-master]</code>
+<code class="na">git-branch-name</code> <code class="o">=</code> <code class="s">master</code>
+<code class="na">view</code> <code class="o">=</code> <code class="s">//depot/Talkhouse/main-dev/... ...</code>
+</pre>
+
+<p>Они задают соответствие между ветками Perforce и ветками Git.
+Названия таких секций могут быть произвольными; главное, чтобы они оставались уникальными.
+<code>git-branch-name</code> позволяет преобразовать пути внутри депо, которые смотрелись бы непривычно для Git пользователей.
+Параметр <code>view</code> управляет отображением Perforce файлов на Git репозиторий; используется стандартный синтаксис отображения видов.
+Может быть задано более одного отображения, как в примере ниже:</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[multi-project-mapping]</code>
+<code class="na">git-branch-name</code> <code class="o">=</code> <code class="s">master</code>
+<code class="na">view</code> <code class="o">=</code> <code class="s">//depot/project1/main/... project1/...</code>
+<code class="s">       //depot/project2/mainline/... project2/...</code>
+</pre>
+
+<p>Таким образом, если ваше отображение включает изменения в структуре директорий, вы можете реплицировать эти изменения здесь.</p>
+
+<p>Последний файл, который мы обсудим, это <code>users/p4gf_usermap</code>; в нём задаётся отображение пользователей Perforce на пользователей Git.
+Возможно, вам не пригодится этот файл.</p>
+
+<p>Когда Git Fusion преобразовывает набор изменений Perforce в Git фиксацию, он находит пользователя в этом файле и использует хранящиеся здесь адрес электронной почты и полное имя для заполнения полей "автор" и "применяющий изменения" в Git.
+При обратном процессе ищется пользователь Perforce с адресом электронной почты из поля "автор" Git фиксации и используется далее для изменения.</p>
+
+<p>В большинстве случаев это нормальное поведение, но что будет, если соответствия выглядят так:</p>
+
+<pre data-type="programlisting">john john@example.com "John Doe"
+john johnny@appleseed.net "John Doe"
+bob employeeX@example.com "Anon X. Mouse"
+joe employeeY@example.com "Anon Y. Mouse"</pre>
+
+<p>Каждая строка имеет формат <code>&lt;user&gt; &lt;email&gt; "&lt;full name&gt;"</code> и задаёт соответствие для одного пользователя.
+Первые две строчки отображают два разных адреса электронной почты на одного и того же пользователя.
+Это может быть полезным если вы фиксировали изменения в Git, используя разные адреса, или если вы поменяли адрес, но хотите отобразить эти изменения на одного и того же Perforce пользователя.
+При создании Git фиксаций Perforce используется информация из первой совпавшей строки.</p>
+
+<p>Последний две строки скрывают настоящие имена Боба и Джо в созданных Git фиксациях.
+Это может быть полезным, если вы хотите отдать внутренний проект в open-source, но не хотите раскрывать информацию о сотрудниках.
+Адреса электронной почты и полные имена должны быть уникальными если вы хотите хоть как-то различать авторов в полученном Git репозитории.</p>
+</section><section data-type="sect4" id="rabochij-process-OX9Hx"><h4>Рабочий процесс</h4>
+
+<p>Perforce Git Fusion — это двунаправленный "мост" между Perforce и Git.
+Давайте посмотрим, как выглядит работа со стороны Git.
+Предполагается, что мы настроили отображение проекта "Jam", используя приведённую выше конфигурацию.
+Тогда мы можем клонировать его:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://10.0.1.254/Jam
+<code class="go">Cloning into 'Jam'...</code>
+<code class="go">Username for 'https://10.0.1.254': john</code>
+<code class="go">Password for 'https://ben@10.0.1.254':</code>
+<code class="go">remote: Counting objects: 2070, done.</code>
+<code class="go">remote: Compressing objects: 100% (1704/1704), done.</code>
+<code class="go">Receiving objects: 100% (2070/2070), 1.21 MiB | 0 bytes/s, done.</code>
+<code class="go">remote: Total 2070 (delta 1242), reused 0 (delta 0)</code>
+<code class="go">Resolving deltas: 100% (1242/1242), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="gp">$</code> git branch -a
+<code class="go">* master</code>
+<code class="go">  remotes/origin/HEAD -&gt; origin/master</code>
+<code class="go">  remotes/origin/master</code>
+<code class="go">  remotes/origin/rel2.1</code>
+<code class="gp">$</code> git log --oneline --decorate --graph --all
+<code class="go">* 0a38c33 (origin/rel2.1) Create Jam 2.1 release branch.</code>
+<code class="go">| * d254865 (HEAD, origin/master, origin/HEAD, master) Upgrade to latest metrowerks on Beos -- the Intel one.</code>
+<code class="go">| * bd2f54a Put in fix for jam's NT handle leak.</code>
+<code class="go">| * c0f29e7 Fix URL in a jam doc</code>
+<code class="go">| * cc644ac Radstone's lynx port.</code>
+<code class="go">[...]</code>
+</pre>
+
+<p>В первый раз этот процесс может занять некоторое время.
+Git Fusion преобразовывает все наборы изменений Perforce в Git фиксации.
+Данные преобразуются локально на сервере, так что это вполне быстрый процесс; тем не менее, он может слегка затянуться, если у вас большая история изменений.
+Последующие скачивания требуют лишь инкрементального преобразования данных, таким образом скорость будет сравнима со скоростью работы обычного Git сервера.</p>
+
+<p>Как видите, наш репозиторий выглядит так же, как выглядел бы любой другой Git репозиторий.
+В нём три ветки и Git предусмотрительно создал локальную ветку <code>master</code>, отслеживающую <code>origin/master</code>.
+Давайте немного поработаем и зафиксируем изменения:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> ...
+<code class="gp">$</code> git log --oneline --decorate --graph --all
+<code class="go">* cfd46ab (HEAD, master) Add documentation for new feature</code>
+<code class="go">* a730d77 Whitespace</code>
+<code class="go">* d254865 (origin/master, origin/HEAD) Upgrade to latest metrowerks on Beos -- the Intel one.</code>
+<code class="go">* bd2f54a Put in fix for jam's NT handle leak.</code>
+<code class="go">[...]</code>
+</pre>
+
+<p>Теперь у нас две новых фиксации.
+Проверим, какие изменения внесли другие:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch
+<code class="go">remote: Counting objects: 5, done.</code>
+<code class="go">remote: Compressing objects: 100% (3/3), done.</code>
+<code class="go">remote: Total 3 (delta 2), reused 0 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (3/3), done.</code>
+<code class="go">From https://10.0.1.254/Jam</code>
+<code class="go">   d254865..6afeb15  master     -&gt; origin/master</code>
+<code class="gp">$</code> git log --oneline --decorate --graph --all
+<code class="go">* 6afeb15 (origin/master, origin/HEAD) Update copyright</code>
+<code class="go">| * cfd46ab (HEAD, master) Add documentation for new feature</code>
+<code class="go">| * a730d77 Whitespace</code>
+<code class="go">|/</code>
+<code class="go">* d254865 Upgrade to latest metrowerks on Beos -- the Intel one.</code>
+<code class="go">* bd2f54a Put in fix for jam's NT handle leak.</code>
+<code class="go">[...]</code>
+</pre>
+
+<p>Кто-то успел отправить свои изменения раньше нас!
+Конечно, из приведённого вывода команды <code>git fetch</code> не видно, но на самом деле фиксация с SHA-1 <code>6afeb15</code> была создана Perforce клиентом.
+Она выглядит так же, как и любая другая фиксация, и это именно то, для чего создан Git Fusion.
+Давайте посмотрим, как Perforce обработает фиксацию-слияние:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">Auto-merging README</code>
+<code class="go">Merge made by the 'recursive' strategy.</code>
+<code class="go"> README | 2 +-</code>
+<code class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</code>
+<code class="gp">$</code> git push
+<code class="go">Counting objects: 9, done.</code>
+<code class="go">Delta compression using up to 8 threads.</code>
+<code class="go">Compressing objects: 100% (9/9), done.</code>
+<code class="go">Writing objects: 100% (9/9), 917 bytes | 0 bytes/s, done.</code>
+<code class="go">Total 9 (delta 6), reused 0 (delta 0)</code>
+<code class="go">remote: Perforce: 100% (3/3) Loading commit tree into memory...</code>
+<code class="go">remote: Perforce: 100% (5/5) Finding child commits...</code>
+<code class="go">remote: Perforce: Running git fast-export...</code>
+<code class="go">remote: Perforce: 100% (3/3) Checking commits...</code>
+<code class="go">remote: Processing will continue even if connection is closed.</code>
+<code class="go">remote: Perforce: 100% (3/3) Copying changelists...</code>
+<code class="go">remote: Perforce: Submitting new Git commit objects to Perforce: 4</code>
+<code class="go">To https://10.0.1.254/Jam</code>
+<code class="go">   6afeb15..89cba2b  master -&gt; master</code>
+</pre>
+
+<p>Со стороны Git всё работает как положено.
+Давайте посмотрим на историю файла <code>README</code> со стороны Perforce, используя <code>p4v</code>:</p>
+
+<figure id="id-PRvil"><img src="/book/en/v2/book/09-git-and-other-scms/images/git-fusion-perforce-graph.png" alt="Граф ревизий Perforce после отправки данных из Git."><figcaption><span class="label">Figure 9-2. </span>Граф ревизий Perforce после отправки данных из Git.</figcaption></figure><p>Если вы ни разу не работали с Perforce это окно может показаться вам запутанным, но его концепция аналогичная <code>gitk</code>.
+Мы просматриваем историю файла <code>README</code>, так что дерево с директориями слева вверху показывает этот файл в разных ветках.
+Справа вверху мы видим граф зависимости разных ревизий файла, справа внизу этот же граф показан целиком для быстрого ориентирования.
+Оставшаяся часть окна отображает детали выбранной ревизии (в нашем случае это ревизия <code>2</code>).</p>
+
+<p>Граф выглядит в точно как в Git.
+У Perforce не было именованной ветки для сохранения фиксаций <code>1</code> и <code>2</code>, так что он создал "анонимную" ветку в директории <code>.git-fusion</code>.
+Git Fusion поступит так же для именованных Git веток не соответствующих веткам в Perforce, но вы можете задать соответствие в конфигурационном файле.</p>
+
+<p>Большинство происходящей магии скрыто от посторонних глаз, а в результате кто-то в команде может использовать Git, кто-то — Perforce и никто не будет подозревать о выборе других.</p>
+</section><section data-type="sect4" id="zaklyuchenie-po-git-fusion-d8xUW"><h4>Заключение по Git-Fusion</h4>
+
+<p>Если у вас есть (или вы можете получить) доступ к Perforce серверу, Git Fusion — это прекрасный способ подружить Git и Perforce.
+Конечно, требуется небольшая работа напильником, но в целом всё довольно интуитивно и просто.
+Это один из немногих разделов в этой главе, где мы не будем предупреждать вас об опасности использования всей функциональности Git.
+Но Perforce не всеяден: если вы попытаетесь переписать опубликованную историю, Git Fusion отклонит изменения.
+Тем не менее, Git Fusion будет стараться изо всех сил, чтобы не нарушать ваших привычек при работе с Git.
+Вы даже можете использовать подмодули Git (хотя они и будут выглядеть странными для Perforce пользователей) и сливать ветки (на стороне Perforce это будет выглядеть как интеграция).</p>
+
+<p>И даже в том случае, если вы не можете уговорить администратора настроить Git Fusion есть способ использовать Git и Perforce вместе.</p>
+</section></section><section data-type="sect3" id="git-p4-Y8RC8"><h4>Git-p4</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="p4" id="id-yv6c6"></a>
+Git-p4 — это двусторонний мост между Git и Perforce.
+Он работает на стороне клиента, так что вам не нужен будет доступ к Perforce серверу (разумеется, вам по-прежнему понадобятся логин и пароль).
+Git-p4 не так гибок и полнофункционален, как Git Fusion, но он позволяет совершать большинство необходимых действий.</p>
+<div data-type="note" id="id-yv2tZ">
+<h6>Note</h6>
+<p>Исполняемый файл <code>p4</code> должен быть доступен в <code>PATH</code> для использования <code>git-p4</code>.
+На момент написания книги он свободно доступен на <a href="http://www.perforce.com/downloads/Perforce/20-User"><em class="hyperlink">http://www.perforce.com/downloads/Perforce/20-User</em></a>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect4" id="nastrojka-AqqsW"><h4>Настройка</h4>
+
+<p>Мы будем использовать описанный выше образ виртуальной машины Git Fusion, но мы будем напрямую обращаться к Perforce, минуя Git Fusion.</p>
+
+<p>Для того, чтобы использовать команду <code>p4</code> (от которой зависит <code>git-p4</code>), вам нужно будет установить следующие переменные окружения:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">export </code><code class="nv">P4PORT</code><code class="o">=</code>10.0.1.254:1666
+<code class="gp">$</code> <code class="nb">export </code><code class="nv">P4USER</code><code class="o">=</code>john
+</pre>
+</section><section data-type="sect4" id="nachalo-raboty-QekFN"><h4>Начало работы</h4>
+
+<p>Как обычно при работе с Git, первая команда — это клонирование:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 clone //depot/www/live www-shallow
+<code class="go">Importing from //depot/www/live into www-shallow</code>
+<code class="go">Initialized empty Git repository in /private/tmp/www-shallow/.git/</code>
+<code class="go">Doing initial import of //depot/www/live/ from revision #head into refs/remotes/p4/master</code>
+</pre>
+
+<p>В терминах Git мы получим так называемую "поверхностную" копию: выкачивается лишь последняя ревизия.
+Помните, Perforce не предназначен для раздачи всех ревизий всем пользователям.
+Этого достаточно, чтобы использовать Git как Perforce клиент, но этого недостаточно для других задач.</p>
+
+<p>Как только клонирование завершится, у нас будет Git репозиторий:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>myproject
+<code class="gp">$</code> git log --oneline --all --graph --decorate
+<code class="go">* 70eaf78 (HEAD, p4/master, p4/HEAD, master) Initial import of //depot/www/live/ from the state at revision #head</code>
+</pre>
+
+<p>Обратите внимание на наличие удалённого репозитория "p4", соответствующего Perforce серверу; всё остальное выглядит как обычный клонированный репозиторий.
+Но давайте присмотримся повнимательней: на самом деле нет никакого удалённого репозитория!</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote -v
+</pre>
+
+<p>В этом репозитории нет удалённых серверов.
+<code>git-p4</code> создал несколько ссылок для представления состояния на сервере, и они выглядят как удалённый сервер для <code>git log</code>, но таковым не являются и вы не можете отправлять изменения в них.</p>
+</section><section data-type="sect4" id="rabochij-process-loVCv"><h4>Рабочий процесс</h4>
+
+<p>Что ж, приступим к работе.
+Предположим, вы сделали несколько изменений для очень важной фичи и готовы показать свои наработки остальным членам команды.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --all --graph --decorate
+<code class="go">* 018467c (HEAD, master) Change page title</code>
+<code class="go">* c0fb617 Update link</code>
+<code class="go">* 70eaf78 (p4/master, p4/HEAD) Initial import of //depot/www/live/ from the state at revision #head</code>
+</pre>
+
+<p>Мы подготовили две фиксации для отправки на Perforce сервер.
+Давайте посмотрим, успели ли другие члены команды проделать какую-либо работу:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 sync
+<code class="go">git p4 sync</code>
+<code class="go">Performing incremental import into refs/remotes/p4/master git branch</code>
+<code class="go">Depot paths: //depot/www/live/</code>
+<code class="go">Import destination: refs/remotes/p4/master</code>
+<code class="go">Importing revision 12142 (100%)</code>
+<code class="gp">$</code> git log --oneline --all --graph --decorate
+<code class="go">* 75cd059 (p4/master, p4/HEAD) Update copyright</code>
+<code class="go">| * 018467c (HEAD, master) Change page title</code>
+<code class="go">| * c0fb617 Update link</code>
+<code class="go">|/</code>
+<code class="go">* 70eaf78 Initial import of //depot/www/live/ from the state at revision #head</code>
+</pre>
+
+<p>Кажется, успели: <code>master</code> и <code>p4/master</code> разошлись.
+Система ветвления в Perforce <em>абсолютно</em> непохожа на Git, отправка слияний в Perforce не имеет смысла.
+<code>git-p4</code> рекомендует перемещать фиксации и даже предоставляет команду для этого:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 rebase
+<code class="go">Performing incremental import into refs/remotes/p4/master git branch</code>
+<code class="go">Depot paths: //depot/www/live/</code>
+<code class="go">No changes to import!</code>
+<code class="go">Rebasing the current branch onto remotes/p4/master</code>
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: Update link</code>
+<code class="go">Applying: Change page title</code>
+<code class="go"> index.html | 2 +-</code>
+<code class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</code>
+</pre>
+
+<p>Вы, возможно, скажете что <code>git p4 rebase</code> это всего лишь сокращение для <code>git p4 sync</code> с последующим <code>git rebase p4/master</code>.
+На самом деле, эта команда немного умнее, особенно при работе с несколькими ветками, но догадка вполне верна.</p>
+
+<p>Теперь наша история снова линейна и мы готовы отправить изменения в Perforce.
+Команда <code>git p4 submit</code> попытается создать новые Perforce ревизии для всех фиксаций в Git между <code>p4/master</code> и <code>master</code>.
+Её запуск откроет ваш любимый редактор с примерно таким содержимым:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">#</code> A Perforce Change Specification.
+<code class="gp">#</code>
+<code class="gp">#</code>  Change:      The change number. <code class="s1">'new'</code> on a new changelist.
+<code class="gp">#</code>  Date:        The date this specification was last modified.
+<code class="gp">#</code>  Client:      The client on which the changelist was created.  Read-only.
+<code class="gp">#</code>  User:        The user who created the changelist.
+<code class="gp">#</code>  Status:      Either <code class="s1">'pending'</code> or <code class="s1">'submitted'</code>. Read-only.
+<code class="gp">#</code>  Type:        Either <code class="s1">'public'</code> or <code class="s1">'restricted'</code>. Default is <code class="s1">'public'</code>.
+<code class="gp">#</code>  Description: Comments about the changelist.  Required.
+<code class="gp">#</code>  Jobs:        What opened <code class="nb">jobs </code>are to be closed by this changelist.
+<code class="gp">#</code>               You may delete <code class="nb">jobs </code>from this list.  <code class="o">(</code>New changelists only.<code class="o">)</code>
+<code class="gp">#</code>  Files:       What opened files from the default changelist are to be added
+<code class="gp">#</code>               to this changelist.  You may delete files from this list.
+<code class="gp">#</code>               <code class="o">(</code>New changelists only.<code class="o">)</code>
+
+<code class="go">Change:  new</code>
+
+<code class="go">Client:  john_bens-mbp_8487</code>
+
+<code class="go">User: john</code>
+
+<code class="go">Status:  new</code>
+
+<code class="go">Description:</code>
+<code class="go">   Update link</code>
+
+<code class="go">Files:</code>
+<code class="go">   //depot/www/live/index.html   # edit</code>
+
+
+<code class="gp">#</code><code class="c">####### git author ben@straub.cc does not match your p4 account.</code>
+<code class="gp">#</code><code class="c">####### Use option --preserve-user to modify authorship.</code>
+<code class="gp">#</code><code class="c">####### Variable git-p4.skipUserNameCheck hides this message.</code>
+<code class="gp">#</code><code class="c">####### everything below this line is just the diff #######</code>
+<code class="go">--- //depot/www/live/index.html  2014-08-31 18:26:05.000000000 0000</code>
+<code class="go">+++ /Users/ben/john_bens-mbp_8487/john_bens-mbp_8487/depot/www/live/index.html   2014-08-31 18:26:05.000000000 0000</code>
+<code class="go">@@ -60,7 +60,7 @@</code>
+<code class="go"> &lt;/td&gt;</code>
+<code class="go"> &lt;td valign=top&gt;</code>
+<code class="go"> Source and documentation for</code>
+<code class="go">-&lt;a href="http://www.perforce.com/jam/jam.html"&gt;</code>
+<code class="go">+&lt;a href="jam.html"&gt;</code>
+<code class="go"> Jam/MR&lt;/a&gt;,</code>
+<code class="go"> a software build tool.</code>
+<code class="go"> &lt;/td&gt;</code>
+</pre>
+
+<p>Это практически те же данные, что вы увидели бы, запустив <code>p4 submit</code>, за исключением нескольких строк в конце, любезно вставленных <code>git-p4</code>.
+<code>git-p4</code> старается учитывать Git и Perforce настройки когда нужно предоставить имя для фиксации, но в некоторых случаях вы захотите изменить его.
+Например, если фиксация в Git была создана человеком, у которого нет Perforce аккаунта, вы всё равно захотите сделать автором фиксации его, а не себя.</p>
+
+<p><code>git-p4</code> вставил сообщение из фиксации Git в содержимое набора изменений Perforce, так что всё что нам остаётся сделать — это дважды сохранить и закрыть редактор (по одному разу на каждую фиксацию).
+В результате мы получим такой вывод:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 submit
+<code class="go">Perforce checkout for depot path //depot/www/live/ located at /Users/ben/john_bens-mbp_8487/john_bens-mbp_8487/depot/www/live/</code>
+<code class="go">Synchronizing p4 checkout...</code>
+<code class="go">... - file(s) up-to-date.</code>
+<code class="go">Applying dbac45b Update link</code>
+<code class="go">//depot/www/live/index.html#4 - opened for edit</code>
+<code class="go">Change 12143 created with 1 open file(s).</code>
+<code class="go">Submitting change 12143.</code>
+<code class="go">Locking 1 files ...</code>
+<code class="go">edit //depot/www/live/index.html#5</code>
+<code class="go">Change 12143 submitted.</code>
+<code class="go">Applying 905ec6a Change page title</code>
+<code class="go">//depot/www/live/index.html#5 - opened for edit</code>
+<code class="go">Change 12144 created with 1 open file(s).</code>
+<code class="go">Submitting change 12144.</code>
+<code class="go">Locking 1 files ...</code>
+<code class="go">edit //depot/www/live/index.html#6</code>
+<code class="go">Change 12144 submitted.</code>
+<code class="go">All commits applied!</code>
+<code class="go">Performing incremental import into refs/remotes/p4/master git branch</code>
+<code class="go">Depot paths: //depot/www/live/</code>
+<code class="go">Import destination: refs/remotes/p4/master</code>
+<code class="go">Importing revision 12144 (100%)</code>
+<code class="go">Rebasing the current branch onto remotes/p4/master</code>
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="gp">$</code> git log --oneline --all --graph --decorate
+<code class="go">* 775a46f (HEAD, p4/master, p4/HEAD, master) Change page title</code>
+<code class="go">* 05f1ade Update link</code>
+<code class="go">* 75cd059 Update copyright</code>
+<code class="go">* 70eaf78 Initial import of //depot/www/live/ from the state at revision #head</code>
+</pre>
+
+<p>Выглядит так, словно мы только что выполнили <code>git push</code>, что на самом деле очень близко к тому, что произошло.</p>
+
+<p>Обратите внимание, что во время этого процесса каждая фиксация в Git превращается в отдельный набор изменений Perforce; если вы хотите слепить их воедино, вы можете сделать это с помощью интерактивного переноса фиксаций до выполнения <code>git p4 submit</code>.
+Ещё один важный момент: SHA-1 хеши фиксаций, превращённых в наборы изменений Perforce изменились: это произошло из-за того, что <code>git-p4</code> добавил строку в конец каждого сообщения:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -1
+<code class="go">commit 775a46f630d8b46535fc9983cf3ebe6b9aa53145</code>
+<code class="go">Author: John Doe &lt;john@example.com&gt;</code>
+<code class="go">Date:   Sun Aug 31 10:31:44 2014 -0800</code>
+
+<code class="go">    Change page title</code>
+
+<code class="go">    [git-p4: depot-paths = "//depot/www/live/": change = 12144]</code>
+</pre>
+
+<p>Что произойдёт если вы попробуете отправить фиксацию-слияние?
+Давайте попробуем.
+Допустим, мы имеем такую историю:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --all --graph --decorate
+<code class="go">* 3be6fd8 (HEAD, master) Correct email address</code>
+<code class="go">*   1dcbf21 Merge remote-tracking branch 'p4/master'</code>
+<code class="go">|\</code>
+<code class="go">| * c4689fc (p4/master, p4/HEAD) Grammar fix</code>
+<code class="go">* | cbacd0a Table borders: yes please</code>
+<code class="go">* | b4959b6 Trademark</code>
+<code class="go">|/</code>
+<code class="go">* 775a46f Change page title</code>
+<code class="go">* 05f1ade Update link</code>
+<code class="go">* 75cd059 Update copyright</code>
+<code class="go">* 70eaf78 Initial import of //depot/www/live/ from the state at revision #head</code>
+</pre>
+
+<p>История в Git разошлась с Perforce на фиксации <code>775a46f</code>.
+В Git мы имеем две дополнительные фиксации, затем слияние с состоянием Perforce, затем ещё одна фиксация.
+Мы собираемся отправить эту историю в Perforce.
+Давайте посмотрим, что произойдёт:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 submit -n
+<code class="go">Perforce checkout for depot path //depot/www/live/ located at /Users/ben/john_bens-mbp_8487/john_bens-mbp_8487/depot/www/live/</code>
+<code class="go">Would synchronize p4 checkout in /Users/ben/john_bens-mbp_8487/john_bens-mbp_8487/depot/www/live/</code>
+<code class="go">Would apply</code>
+<code class="go">  b4959b6 Trademark</code>
+<code class="go">  cbacd0a Table borders: yes please</code>
+<code class="go">  3be6fd8 Correct email address</code>
+</pre>
+
+<p>Флаг <code>-n</code> — это сокращение для <code>--dry-run</code>, который, в свою очередь, пытается вывести результат выполнения отправки, как если бы отправка на самом деле произошла.
+В этом случае, похоже мы создадим три ревизии в Perforce, по одной для каждой не являющейся слиянием фиксации в Git.
+Звучит логично, давайте посмотрим что произойдёт на самом деле:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 submit
+<code class="go">[…]</code>
+<code class="gp">$</code> git log --oneline --all --graph --decorate
+<code class="go">* dadbd89 (HEAD, p4/master, p4/HEAD, master) Correct email address</code>
+<code class="go">* 1b79a80 Table borders: yes please</code>
+<code class="go">* 0097235 Trademark</code>
+<code class="go">* c4689fc Grammar fix</code>
+<code class="go">* 775a46f Change page title</code>
+<code class="go">* 05f1ade Update link</code>
+<code class="go">* 75cd059 Update copyright</code>
+<code class="go">* 70eaf78 Initial import of //depot/www/live/ from the state at revision #head</code>
+</pre>
+
+<p>История стала линейной, словно мы переместили изменения перед отправкой (что на самом деле и произошло).
+Это означает, что вы можете свободно создавать ветки в Git, работать в них, сливать их, не боясь, что ваша история станет несовместима с Perforce.
+Если вы можете переместить изменения, вы можете отправить их на Perforce сервер.</p>
+</section><section data-type="sect4" id="_git_p4_branches"><h4>Ветвление</h4>
+
+<p>Если в вашем Perforce проекте несколько веток, не переживайте: <code>git-p4</code> может организовать работу с ними, не сложнее, чем с обычными Git ветками.
+Предположим, ваш Perforce репозиторий имеет следующую структуру:</p>
+
+<pre data-type="programlisting">//depot
+  └── project
+      ├── main
+      └── dev</pre>
+
+<p>Также предположим, что ветка <code>dev</code> настроена следующим образом:</p>
+
+<pre data-type="programlisting">//depot/project/main/... //depot/project/dev/...</pre>
+
+<p><code>git-p4</code> может автоматически распознать эту ситуацию и выполнить нужные действия:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git p4 clone --detect-branches //depot/project@all
+<code class="go">Importing from //depot/project@all into project</code>
+<code class="go">Initialized empty Git repository in /private/tmp/project/.git/</code>
+<code class="go">Importing revision 20 (50%)</code>
+<code class="go">    Importing new branch project/dev</code>
+
+<code class="go">    Resuming with change 20</code>
+<code class="go">Importing revision 22 (100%)</code>
+<code class="go">Updated branches: main dev</code>
+<code class="gp">$</code> <code class="nb">cd </code>project<code class="p">;</code> git log --oneline --all --graph --decorate
+<code class="go">* eae77ae (HEAD, p4/master, p4/HEAD, master) main</code>
+<code class="go">| * 10d55fb (p4/project/dev) dev</code>
+<code class="go">| * a43cfae Populate //depot/project/main/... //depot/project/dev/....</code>
+<code class="go">|/</code>
+<code class="go">* 2b83451 Project init</code>
+</pre>
+
+<p>Обратите внимание на "@all" в пути; она говорит <code>git-p4</code> клонировать не только последнюю ревизию для указанного субдерева, но все ревизии, затрагивающие указанные пути.
+Это ближе к оригинальной концепции клонирования в Git, но если вы работаете с большим репозиторием, это может занять некоторое время.</p>
+
+<p>Флаг <code>--detect-branches</code> указывает <code>git-p4</code> использовать настройки веток Perforce для отображения на Git ветки.
+Если же таких настроек на Perforce сервере нет (что вполне корректно для Perforce), вы можете можете указать их <code>git-p4</code> вручную, получив аналогичный результат:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git init project
+<code class="go">Initialized empty Git repository in /tmp/project/.git/</code>
+<code class="gp">$</code> <code class="nb">cd </code>project
+<code class="gp">$</code> git config git-p4.branchList main:dev
+<code class="gp">$</code> git clone --detect-branches //depot/project@all .
+</pre>
+
+<p>Задав конфигурационный параметр <code>git-p4.branchList</code> равным <code>main:dev</code> мы указали <code>git-p4</code>, что "main" и "dev" — это ветки, и что вторая является потомком первой.</p>
+
+<p>Если мы теперь выполним <code>git checkout -b dev p4/project/dev</code> и зафиксируем в ветке <code>dev</code> некоторые изменения, <code>git-p4</code> будет достаточно смышлёным, чтобы догадаться, в какую ветку отправлять изменения при выполнении <code>git p4 submit</code>.
+К сожалению, <code>git-p4</code> не позволяет использовать несколько веток в поверхностных копиях репозиториев; если у вас есть большой проект и вы хотите работать более чем в одной ветке, вам придётся выполнять <code>git p4 clone</code> для каждой ветки, в которую вы хотите отправлять изменения.</p>
+
+<p>Для создания и интеграции веток вам нужно будет использовать Perforce клиент.
+<code>git-p4</code> может только забирать изменения из Perforce и отправлять линейную историю обратно.
+Если вы произведёте слияние двух веток в Git и отправите изменения в Perforce, сохранятся лишь данные об изменении файлов, все метаданные об исходных ветках, участвующих в интеграции, будут потеряны.</p>
+</section></section><section data-type="sect3" id="zaklyuchenie-po-git-i-perforce-BQPt4"><h4>Заключение по Git и Perforce</h4>
+
+<p><code>git-p4</code> позволяет использовать Git для работы с Perforce и он достаточно хорош в этом.
+Тем не менее, не стоит забывать, что источником данных по-прежнему остаётся Perforce, а Git используется лишь для локальной работы.
+Будьте осторожны с публикацией Git фиксаций: если у вас есть удалённый репозиторий, который используют другие люди, не публикуйте в нём фиксации, не отправленные на Perforce сервер.</p>
+
+<p>Если вы хотите свободно смешивать Git и Perforce для контроля версий, уговорите администратора установить Git Fusion — он позволяет использовать Git в качестве полноценного клиента для Perforce сервера.</p>
+</section></section><section data-type="sect2" id="git-i-tfs-v7Afa"><h3 id="Git-и-TFS"><a href="#Git-и-TFS">Git и TFS</a></h3>
+
+<p><a data-type="indexterm" data-primary="Interoperation with other VCSs" data-secondary="TFS" id="id-8gvFj"></a>
+<a data-type="indexterm" data-primary="TFS" id="id-5qlT0"></a><a data-type="indexterm" data-primary="TFVC" data-see="TFS" id="id-Lo9Hw"></a>
+Git набирает популярность среди Windows-разработчиков и если вы один из них, то велика вероятность что вы пользовались Microsoft Team Foundation Server (TFS).
+TFS — это комплексное решение, включающее в себя систему отслеживание ошибок, систему учёта рабочего времени, решения для поддержки Scrum методологии, инструменты для проведения инспекции кода и собственно систему контроля версий.
+Здесь есть небольшая путаница: <strong>TFS</strong> — это сервер, поддерживающий управление версиями как с помощью Git, так и с помощью собственной СКВ — <strong>TFVC</strong> (Team Foundation Version Control).
+Поддержка Git появилась в TFS относительно недавно (начиная с 2013-й версии), так что когда идёт речь об управлении версиями в более ранних версиях TFS, имеется в виду именно TFVC.</p>
+
+<p>Если вы оказались в команде, работающей с TFVC, но хотите использовать Git для управления версиями, есть проект, способный вам помочь.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="instrumenty-dlya-raboty-s-tfvc-4rlho"><h4>Инструменты для работы с TFVC</h4>
+
+<p><a data-type="indexterm" data-primary="git-tf" id="id-Bwpte"></a><a data-type="indexterm" data-primary="git-tfs" id="id-MjVhX"></a>
+На самом деле, даже два проекта: <code>git-tf</code> и <code>git-tfs</code>.</p>
+
+<p><code>git-tfs</code> (расположившийся по адресу <a href="https://github.com/git-tfs/git-tfs"><em class="hyperlink">https://github.com/git-tfs/git-tfs</em></a>) написан на .NET и (на момент написания этой книги) работает только на Windows.
+Он использует .NET привязки для библиотеки libgit2 для работы с Git репозиториями; это очень гибкая и эффективная библиотека, позволяющая выполнять множество низкоуровневых операций с Git репозиторием.
+Но libgit2 не полностью покрывает функциональность Git, так что в некоторых случаях <code>git-tfs</code> вызывает консольный клиент Git, что делает его возможности по работе с репозиториями практически безграничными.
+Поддержка TFVC также впечатляет своей полнотой, ведь <code>git-tfs</code> использует "родные" .NET-сборки Visual Studio для работы с сервером.
+И это не означает, что вам нужен будет доступ к этим сборкам!
+Достаточно лишь установить свежую версию Visual Studio (любую, начиная с 2010-й, включая Express, начиная с 2012-й) или комплект средств разработки для Visual Studio (Visual Studio SDK).</p>
+
+<p><code>git-tf</code> (его можно найти на <a href="https://gittf.codeplex.com"><em class="hyperlink">https://gittf.codeplex.com</em></a>) написан на Java и его можно запустить практически на любом компьютере.
+Он взаимодействует с Git посредством библиотеки JGit (JVM-имплементация Git), что теоретически означает отсутствие каких-либо ограничение при работе с Git.
+К сожалению, поддержка TFVC не так полна, как у <code>git-tfs</code>: например, не поддерживаются ветки.</p>
+
+<p>Итак, у каждого из двух проектов есть сильные и слабые стороны и существуют ситуации, в которых один окажется предпочтительнее другого.
+В этой книге мы вкратце рассмотрим каждый из них.</p>
+<div data-type="note" id="id-nr0ix">
+<h6>Note</h6>
+<p>Если вы хотите опробовать примеры из книги, вам понадобится доступ к TFVC репозиторию.
+Они достаточно редко встречаются на просторах Интернета, возможно, вам придётся создать репозиторий самим.
+Можем посоветовать использовать Codeplex (<a href="https://www.codeplex.com"><em class="hyperlink">https://www.codeplex.com</em></a>) или Visual Studio Online (<a href="http://www.visualstudio.com"><em class="hyperlink">http://www.visualstudio.com</em></a>).</p>
+</div>
+</section><section data-type="sect3" id="nachalo-raboty-git-tf-jj4SK"><h4>Начало работы: <code>git-tf</code>
+</h4>
+
+<p>Как и в большинстве других примеров, первым делом мы клонируем репозиторий.
+Вот как это выглядит с использованием <code>git-tf</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tf clone https://tfs.codeplex.com:443/tfs/TFS13 <code class="nv">$/</code>myproject/Main project_git
+</pre>
+
+<p>Первый аргумент — это URL TFVC коллекции, второй представляет собой строку вида <code>$/project/branch</code>, и третий — это путь к локальному Git репозиторию, который будет создан (третий параметр опционален).
+<code>git-tf</code> поддерживает одновременную работу только с одной веткой; если вы хотите работать с разными TFVC ветками, вам потребуется несколько копий репозитория.</p>
+
+<p>Приведённая выше команда создаёт обыкновенный Git репозиторий:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>project_git
+<code class="gp">$</code> git log --all --oneline --decorate
+<code class="go">512e75a (HEAD, tag: TFS_C35190, origin_tfs/tfs, master) Checkin message</code>
+</pre>
+
+<p>Это так называемая <em>поверхностная</em> копия, что означает, что в ней есть только последняя ревизия проекта.
+TFVC не предусматривает наличия полной копии репозитория на каждом клиенте, так что <code>git-tf</code> по умолчанию скачивает лишь последнюю ревизию, что намного быстрее.</p>
+
+<p>Если вы никуда не торопитесь, можно выкачать и полную историю проекта, используя опцию <code>--deep</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tf clone https://tfs.codeplex.com:443/tfs/TFS13 <code class="nv">$/</code>myproject/Main <code class="se">\</code>
+<code class="go">  project_git --deep</code>
+<code class="go">Username: domain\user</code>
+<code class="go">Password:</code>
+<code class="go">Connecting to TFS...</code>
+<code class="go">Cloning $/myproject into /tmp/project_git: 100%, done.</code>
+<code class="go">Cloned 4 changesets. Cloned last changeset 35190 as d44b17a</code>
+<code class="gp">$</code> <code class="nb">cd </code>project_git
+<code class="gp">$</code> git log --all --oneline --decorate
+<code class="go">d44b17a (HEAD, tag: TFS_C35190, origin_tfs/tfs, master) Goodbye</code>
+<code class="go">126aa7b (tag: TFS_C35189)</code>
+<code class="go">8f77431 (tag: TFS_C35178) FIRST</code>
+<code class="go">0745a25 (tag: TFS_C35177) Created team project folder $/tfvctest via the \</code>
+<code class="go">        Team Project Creation Wizard</code>
+</pre>
+
+<p>Обратите внимание на метки типа <code>TFS_C35189</code>;  это помогает проассоциировать Git фиксации с наборами изменений TFVC.
+Это очень удобно, потому что вы можете узнать, какие из фиксаций ассоциированы со слепком в TFVC с помощью простой команды.
+Это не обязательное поведение (вы можете выключить его, вызвав <code>git config git-tf.tag false</code>) — <code>git-tf</code> и так хранит соответствия в файле <code>.git/git-tf</code>.</p>
+</section><section data-type="sect3" id="nachalo-raboty-git-tfs-DELCD"><h4>Начало работы: <code>git-tfs</code>
+</h4>
+
+<p>Клонирование в <code>git-tfs</code> слегка отличается.
+Взгляните-ка:</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">clone</code> <code class="p">-</code><code class="n">-with-branches</code> <code class="p">\</code>
+    <code class="n">https</code><code class="err">:</code><code class="p">//</code><code class="n">username</code><code class="p">.</code><code class="n">visualstudio</code><code class="p">.</code><code class="n">com</code><code class="p">/</code><code class="n">DefaultCollection</code> <code class="p">\</code>
+    <code class="p">$/</code><code class="n">project</code><code class="p">/</code><code class="n">Trunk</code> <code class="n">project_git</code>
+<code class="n">Initialized</code> <code class="n">empty</code> <code class="n">Git</code> <code class="n">repository</code> <code class="k">in</code> <code class="n">C</code><code class="err">:</code><code class="p">/</code><code class="n">Users</code><code class="p">/</code><code class="n">ben</code><code class="p">/</code><code class="n">project_git</code><code class="p">/.</code><code class="n">git</code><code class="p">/</code>
+<code class="n">C15</code> <code class="p">=</code> <code class="n">b75da1aba1ffb359d00e85c52acb261e4586b0c9</code>
+<code class="n">C16</code> <code class="p">=</code> <code class="n">c403405f4989d73a2c3c119e79021cb2104ce44a</code>
+<code class="n">Tfs</code> <code class="n">branches</code> <code class="n">found</code><code class="err">:</code>
+<code class="p">-</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">featureA</code>
+<code class="n">The</code> <code class="n">name</code> <code class="n">of</code> <code class="n">the</code> <code class="n">local</code> <code class="n">branch</code> <code class="n">will</code> <code class="n">be</code> <code class="err">:</code> <code class="n">featureA</code>
+<code class="n">C17</code> <code class="p">=</code> <code class="n">d202b53f67bde32171d5078968c644e562f1c439</code>
+<code class="n">C18</code> <code class="p">=</code> <code class="n">44cd729d8df868a8be20438fdeeefb961958b674</code>
+</pre>
+
+<p>Обратите внимание на флаг <code>--with-branches</code>.</p>
+
+<p><code>git-tfs</code> умеет сопоставлять ветки TFVC с ветками в Git и этот флаг говорит ему завести по локальной Git-ветке для каждой ветки в TFVC.
+Крайне рекомендуется использовать эту опцию, если вы использовали ветки в TFS.
+Но она не сработает для версий TFS ниже 2010-й: до этого релиза "ветки" были просто директориями и <code>git-tfs</code> неспособен отличить их от обычных директорий.</p>
+
+<p>Давайте посмотрим на получившийся репозиторий:</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">-oneline</code> <code class="p">-</code><code class="n">-graph</code> <code class="p">-</code><code class="n">-decorate</code> <code class="p">-</code><code class="n">-all</code>
+<code class="p">*</code> <code class="n">44cd729</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureA</code><code class="p">,</code> <code class="n">featureA</code><code class="p">)</code> <code class="n">Goodbye</code>
+<code class="p">*</code> <code class="n">d202b53</code> <code class="n">Branched</code> <code class="n">from</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">Trunk</code>
+<code class="p">*</code> <code class="n">c403405</code> <code class="p">(</code><code class="n">HEAD</code><code class="p">,</code> <code class="n">tfs</code><code class="p">/</code><code class="k">default</code><code class="p">,</code> <code class="n">master</code><code class="p">)</code> <code class="n">Hello</code>
+<code class="p">*</code> <code class="n">b75da1a</code> <code class="n">New</code> <code class="n">project</code>
+<code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">1</code>
+<code class="n">commit</code> <code class="n">c403405f4989d73a2c3c119e79021cb2104ce44a</code>
+<code class="n">Author</code><code class="err">:</code> <code class="n">Ben</code> <code class="n">Straub</code> <code class="p">&lt;</code><code class="n">ben</code><code class="nv">@straub</code><code class="p">.</code><code class="n">cc</code><code class="p">&gt;</code>
+<code class="n">Date</code><code class="err">:</code>   <code class="n">Fri</code> <code class="n">Aug</code> <code class="n">1</code> <code class="n">03</code><code class="err">:</code><code class="n">41</code><code class="err">:</code><code class="n">59</code> <code class="n">2014</code> <code class="p">+</code><code class="n">0000</code>
+
+    <code class="n">Hello</code>
+
+    <code class="n">git-tfs-id</code><code class="err">:</code> <code class="p">[</code><code class="n">https</code><code class="err">:</code><code class="p">//</code><code class="n">username</code><code class="p">.</code><code class="n">visualstudio</code><code class="p">.</code><code class="n">com</code><code class="p">/</code><code class="n">DefaultCollection</code><code class="p">]$/</code><code class="n">myproject</code><code class="p">/</code><code class="n">Trunk</code><code class="p">;</code><code class="n">C16</code>
+</pre>
+
+<p>Видим две локальные ветки — <code>master</code> и <code>featureA</code> — представляющие соответственно основную ветку разработки (<code>Trunk</code> в TFVC) и дочернюю ветку <code>featureA</code> в TFVC.
+Также вы можете видеть, что "удалённый репозиторий" <code>tfs</code> имеет две ссылки — <code>default</code> и <code>featureA</code> — соответствующие тем же веткам в TFVC.
+<code>git-tfs</code> также называет ветку с которой вы инициировали копирование <code>tfs/default</code>, имена остальных веток соответствуют таковым в TFVC.</p>
+
+<p>Ещё одна стоящая внимание вещь: строки <code>git-tfs-id:</code> в сообщениях фиксаций.
+<code>git-tfs</code> использует их вместо меток для сопоставления наборов изменений из TFVC и фиксаций в Git.
+Как результат, ваши фиксации будут иметь различные SHA-1 хеши до и после отправки в TFVC.</p>
+</section><section data-type="sect3" id="rabochij-process-s-git-tfs-AAQUW"><h4>Рабочий процесс с git-tf[s]</h4>
+<div data-type="note" id="id-Rbrfo">
+<h6>Note</h6>
+<p>Независимо от того, какой конкретный инструмент для работы с TFVC вы используете, вам следует задать некоторые конфигурационные параметры для избежания проблем.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config <code class="nb">set</code> --local core.ignorecase<code class="o">=</code><code class="nb">true</code>
+<code class="gp">$</code><code class="nb"> </code>git config <code class="nb">set</code> --local core.autocrlf<code class="o">=</code><code class="nb">false</code>
+</pre>
+</div>
+
+<p>Очевидно, после клонирования проекта вам захочется поработать над ним.
+Но в TFVC и TFS есть несколько особенностей, осложняющих рабочий процесс:</p>
+<ol>
+<li>
+<p>Функциональные ветки (feature branches), не представленные на TFVC сервере добавляют сложности.
+Всё из-за того, что TFVC имеет <strong>совершенно</strong> другую концепцию ветвления, нежели Git.</p>
+</li>
+<li>
+<p>Помните, что TFVC позволяет пользователям запретить изменения файлов другими пользователями.
+Разумеется, это не помешает вам изменить их в локальном репозитории, но вы не сможете отправить эти изменения на TFVC сервер пока не будет снят запрет.</p>
+</li>
+<li>
+<p>В TFS существует понятие "курируемых" наборов изменений; это означает, что прежде чем изменения будут приняты сервером, они должны успешно пройти фазы сборки и тестирования.
+При этом используется функциональность "откладывания изменений", не рассматриваемый нами в деталях.
+Вы можете вручную эмулировать подобное поведение в <code>git-tf</code>, а <code>git-tfs</code> предоставляет специальную команду <code>checkintool</code>, способную работать с "курируемыми" наборами изменений.</p>
+</li>
+
+</ol>
+<p>Для краткости мы рассмотрим здесь простой сценарий работы, избегающий описанных особенностей.</p>
+</section><section data-type="sect3" id="rabochij-process-v-git-tf-v9BTa"><h4>Рабочий процесс в <code>git-tf</code>
+</h4>
+
+<p>Предположим, вы проделали некую работу, зафиксировали несколько изменений в ветке <code>master</code> и готовы поделиться результатом.
+Вот как выглядит Git репозиторий:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log --oneline --graph --decorate --all
+<code class="go">* 4178a82 (HEAD, master) update code</code>
+<code class="go">* 9df2ae3 update readme</code>
+<code class="go">* d44b17a (tag: TFS_C35190, origin_tfs/tfs) Goodbye</code>
+<code class="go">* 126aa7b (tag: TFS_C35189)</code>
+<code class="go">* 8f77431 (tag: TFS_C35178) FIRST</code>
+<code class="go">* 0745a25 (tag: TFS_C35177) Created team project folder $/tfvctest via the \</code>
+<code class="go">          Team Project Creation Wizard</code>
+</pre>
+
+<p>Мы хотим взять слепок на момент фиксации <code>4178a82</code> и отправить его на TFVC сервер.
+Но для начала давайте проверим наличие наработок от других членов команды:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tf fetch
+<code class="go">Username: domain\user</code>
+<code class="go">Password:</code>
+<code class="go">Connecting to TFS...</code>
+<code class="go">Fetching $/myproject at latest changeset: 100%, done.</code>
+<code class="go">Downloaded changeset 35320 as commit 8ef06a8. Updated FETCH_HEAD.</code>
+<code class="gp">$</code> git log --oneline --graph --decorate --all
+<code class="go">* 8ef06a8 (tag: TFS_C35320, origin_tfs/tfs) just some text</code>
+<code class="go">| * 4178a82 (HEAD, master) update code</code>
+<code class="go">| * 9df2ae3 update readme</code>
+<code class="go">|/</code>
+<code class="go">* d44b17a (tag: TFS_C35190) Goodbye</code>
+<code class="go">* 126aa7b (tag: TFS_C35189)</code>
+<code class="go">* 8f77431 (tag: TFS_C35178) FIRST</code>
+<code class="go">* 0745a25 (tag: TFS_C35177) Created team project folder $/tfvctest via the \</code>
+<code class="go">          Team Project Creation Wizard</code>
+</pre>
+
+<p>Похоже, вы работаете над проектом не в одиночку.
+История разошлась.
+Git очень хорош в таких ситуациях, но в случае TFVC есть два пути:</p>
+<ol>
+<li>
+<p>Как пользователь Git, вы, наверняка, заходите создать фиксацию-слияние (в конце-концов именно так поступает <code>git pull</code>).
+В <code>git-tf</code> есть специальная команда для этого: <code>git tf pull</code>.
+Но помните, что TFVC сервер мыслит несколько иначе, и если вы отправите фиксацию-слияние, ваша история станет выглядеть по-разному со стороны Git и TFVC, что может привести к путанице.
+Хотя, если вы хотите отправить все изменения одним набором, это самый лёгкий способ.</p>
+</li>
+<li>
+<p>Перенос фиксаций сделает историю линейной, а значит мы сможем сопоставить каждой Git-фиксации набор изменений в TFVC.
+Мы рекомендуем использовать именно этот способ как наиболее гибкий.
+В <code>git-tf</code> для этого служит команда <code>git tf pull --rebase</code>.</p>
+</li>
+
+</ol>
+<p>Выбор за вами.
+Мы же последуем собственным советам:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rebase FETCH_HEAD
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: update readme</code>
+<code class="go">Applying: update code</code>
+<code class="gp">$</code> git log --oneline --graph --decorate --all
+<code class="go">* 5a0e25e (HEAD, master) update code</code>
+<code class="go">* 6eb3eb5 update readme</code>
+<code class="go">* 8ef06a8 (tag: TFS_C35320, origin_tfs/tfs) just some text</code>
+<code class="go">* d44b17a (tag: TFS_C35190) Goodbye</code>
+<code class="go">* 126aa7b (tag: TFS_C35189)</code>
+<code class="go">* 8f77431 (tag: TFS_C35178) FIRST</code>
+<code class="go">* 0745a25 (tag: TFS_C35177) Created team project folder $/tfvctest via the \</code>
+<code class="go">          Team Project Creation Wizard</code>
+</pre>
+
+<p>Теперь всё готово к отправке данных на TFVC сервер.
+<code>git-tf</code> предоставляет вам выбор: собрать все изменения воедино и сделать из них один набор изменений (опция <code>--shallow</code>, по умолчанию включённая), или создать отдельный набор изменений для каждой фиксации в Git (опция <code>--deep</code>).
+В этом примере мы создадим один набор изменений:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tf checkin -m <code class="s1">'Updating readme and code'</code>
+<code class="go">Username: domain\user</code>
+<code class="go">Password:</code>
+<code class="go">Connecting to TFS...</code>
+<code class="go">Checking in to $/myproject: 100%, done.</code>
+<code class="go">Checked commit 5a0e25e in as changeset 35348</code>
+<code class="gp">$</code> git log --oneline --graph --decorate --all
+<code class="go">* 5a0e25e (HEAD, tag: TFS_C35348, origin_tfs/tfs, master) update code</code>
+<code class="go">* 6eb3eb5 update readme</code>
+<code class="go">* 8ef06a8 (tag: TFS_C35320) just some text</code>
+<code class="go">* d44b17a (tag: TFS_C35190) Goodbye</code>
+<code class="go">* 126aa7b (tag: TFS_C35189)</code>
+<code class="go">* 8f77431 (tag: TFS_C35178) FIRST</code>
+<code class="go">* 0745a25 (tag: TFS_C35177) Created team project folder $/tfvctest via the \</code>
+<code class="go">          Team Project Creation Wizard</code>
+</pre>
+
+<p>Появилась новая метка <code>TFS_C35348</code>, указывающая на то, что TFVC сохранил слепок состояния <code>5a0e25e</code> под этим идентификатором.
+Обращаем ваше внимание, что не каждая фиксация в Git имеет аналог в TFVC; например <code>6eb3eb5</code> не представлена на сервере.</p>
+
+<p>Такой вот рабочий процесс.
+И ещё несколько важных моментов:</p>
+
+<ul>
+<li>
+<p>Нет веток.
+<code>git-tf</code> умеет создавать Git-репозитории, соответствующие единственной ветке в TFVC.</p>
+</li>
+<li>
+<p>Делитесь наработками либо через TFVC-сервер, либо через Git-сервер, не используйте их одновременно.
+Разные <code>git-tf</code> клоны одного и того же TFVC-репозитория могут иметь различные SHA-1 хеши, что сулит нескончаемую головную боль.</p>
+</li>
+<li>
+<p>Если ваш рабочий процесс выстроен таким образом, что вы делитесь наработками через Git и лишь периодически синхронизируетесь с TFVC, не используйте более одного Git репозитория.</p>
+</li>
+</ul></section><section data-type="sect3" id="rabochij-process-v-git-tfs-VXvC9"><h4>Рабочий процесс в <code>git-tfs</code>
+</h4>
+
+<p>Давайте пробежимся по тому же сценарию в <code>git-tfs</code>.
+Вот новые фиксации в ветке <code>master</code> в нашем Git репозитории:</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">-oneline</code> <code class="p">-</code><code class="n">-graph</code> <code class="p">-</code><code class="n">-all</code> <code class="p">-</code><code class="n">-decorate</code>
+<code class="p">*</code> <code class="n">c3bd3ae</code> <code class="p">(</code><code class="n">HEAD</code><code class="p">,</code> <code class="n">master</code><code class="p">)</code> <code class="n">update</code> <code class="n">code</code>
+<code class="p">*</code> <code class="n">d85e5a2</code> <code class="n">update</code> <code class="n">readme</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">44cd729</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureA</code><code class="p">,</code> <code class="n">featureA</code><code class="p">)</code> <code class="n">Goodbye</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">d202b53</code> <code class="n">Branched</code> <code class="n">from</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">Trunk</code>
+<code class="p">|/</code>
+<code class="p">*</code> <code class="n">c403405</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="k">default</code><code class="p">)</code> <code class="n">Hello</code>
+<code class="p">*</code> <code class="n">b75da1a</code> <code class="n">New</code> <code class="n">project</code>
+</pre>
+
+<p>Проверим, что успели сделать другие:</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">fetch</code>
+<code class="n">C19</code> <code class="p">=</code> <code class="n">aea74a0313de0a391940c999e51c5c15c381d91d</code>
+<code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">-all</code> <code class="p">-</code><code class="n">-oneline</code> <code class="p">-</code><code class="n">-graph</code> <code class="p">-</code><code class="n">-decorate</code>
+<code class="p">*</code> <code class="n">aea74a0</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="k">default</code><code class="p">)</code> <code class="n">update</code> <code class="n">documentation</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">c3bd3ae</code> <code class="p">(</code><code class="n">HEAD</code><code class="p">,</code> <code class="n">master</code><code class="p">)</code> <code class="n">update</code> <code class="n">code</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">d85e5a2</code> <code class="n">update</code> <code class="n">readme</code>
+<code class="p">|/</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">44cd729</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureA</code><code class="p">,</code> <code class="n">featureA</code><code class="p">)</code> <code class="n">Goodbye</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">d202b53</code> <code class="n">Branched</code> <code class="n">from</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">Trunk</code>
+<code class="p">|/</code>
+<code class="p">*</code> <code class="n">c403405</code> <code class="n">Hello</code>
+<code class="p">*</code> <code class="n">b75da1a</code> <code class="n">New</code> <code class="n">project</code>
+</pre>
+
+<p>В TFVC появились свежие изменения пока мы работали, соответствующие фиксации <code>aea74a0</code> и удалённая ветка <code>tfs/default</code> передвинулась.</p>
+
+<p>Как и в случае с <code>git-tf</code>, у нас есть два пути решения этой проблемы:</p>
+<ol>
+<li>
+<p>Переместить изменения и сделать историю линейной.</p>
+</li>
+<li>
+<p>Произвести слияние, сохранив историческую достоверность.</p>
+</li>
+
+</ol>
+<p>Мы хотим, чтобы каждой фиксации в Git соответствовал набор изменений в TFVC, так что мы будем перемещать изменения и делать историю линейной.</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">rebase</code> <code class="n">tfs</code><code class="p">/</code><code class="k">default</code>
+<code class="n">First</code><code class="p">,</code> <code class="n">rewinding</code> <code class="n">head</code> <code class="n">to</code> <code class="n">replay</code> <code class="n">your</code> <code class="n">work</code> <code class="n">on</code> <code class="n">top</code> <code class="n">of</code> <code class="n">it</code><code class="p">...</code>
+<code class="n">Applying</code><code class="err">:</code> <code class="n">update</code> <code class="n">readme</code>
+<code class="n">Applying</code><code class="err">:</code> <code class="n">update</code> <code class="n">code</code>
+<code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">-all</code> <code class="p">-</code><code class="n">-oneline</code> <code class="p">-</code><code class="n">-graph</code> <code class="p">-</code><code class="n">-decorate</code>
+<code class="p">*</code> <code class="n">10a75ac</code> <code class="p">(</code><code class="n">HEAD</code><code class="p">,</code> <code class="n">master</code><code class="p">)</code> <code class="n">update</code> <code class="n">code</code>
+<code class="p">*</code> <code class="n">5cec4ab</code> <code class="n">update</code> <code class="n">readme</code>
+<code class="p">*</code> <code class="n">aea74a0</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="k">default</code><code class="p">)</code> <code class="n">update</code> <code class="n">documentation</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">44cd729</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureA</code><code class="p">,</code> <code class="n">featureA</code><code class="p">)</code> <code class="n">Goodbye</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">d202b53</code> <code class="n">Branched</code> <code class="n">from</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">Trunk</code>
+<code class="p">|/</code>
+<code class="p">*</code> <code class="n">c403405</code> <code class="n">Hello</code>
+<code class="p">*</code> <code class="n">b75da1a</code> <code class="n">New</code> <code class="n">project</code>
+</pre>
+
+<p>Теперь мы готовы отправить наши наработки на TFVC сервер.
+Для этого мы используем команду <code>rcheckin</code>, которая сопоставляет каждой фиксации в Git новый набор изменений в TFVC (команда <code>checkin</code> создала бы только один набор изменений, примерно как опция <code>squash</code> при интерактивном перемещении изменений).</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">rcheckin</code>
+<code class="n">Working</code> <code class="n">with</code> <code class="n">tfs</code> <code class="n">remote</code><code class="err">:</code> <code class="k">default</code>
+<code class="n">Fetching</code> <code class="n">changes</code> <code class="n">from</code> <code class="n">TFS</code> <code class="n">to</code> <code class="n">minimize</code> <code class="n">possibility</code> <code class="n">of</code> <code class="n">late</code> <code class="n">conflict</code><code class="p">...</code>
+<code class="n">Starting</code> <code class="n">checkin</code> <code class="n">of</code> <code class="n">5cec4ab4</code> <code class="s1">'update readme'</code>
+ <code class="n">add</code> <code class="n">README</code><code class="p">.</code><code class="n">md</code>
+<code class="n">C20</code> <code class="p">=</code> <code class="n">71a5ddce274c19f8fdc322b4f165d93d89121017</code>
+<code class="n">Done</code> <code class="n">with</code> <code class="n">5cec4ab4b213c354341f66c80cd650ab98dcf1ed</code><code class="p">,</code> <code class="n">rebasing</code> <code class="n">tail</code> <code class="n">onto</code> <code class="n">new</code> <code class="n">TFS-commit</code><code class="p">...</code>
+<code class="n">Rebase</code> <code class="n">done</code> <code class="n">successfully</code><code class="p">.</code>
+<code class="n">Starting</code> <code class="n">checkin</code> <code class="n">of</code> <code class="n">b1bf0f99</code> <code class="s1">'update code'</code>
+ <code class="n">edit</code> <code class="p">.</code><code class="n">git</code><code class="p">\</code><code class="n">tfs</code><code class="p">\</code><code class="k">default</code><code class="p">\</code><code class="n">workspace</code><code class="p">\</code><code class="n">ConsoleApplication1</code><code class="p">/</code><code class="n">ConsoleApplication1</code><code class="p">/</code><code class="n">Program</code><code class="p">.</code><code class="n">cs</code>
+<code class="n">C21</code> <code class="p">=</code> <code class="n">ff04e7c35dfbe6a8f94e782bf5e0031cee8d103b</code>
+<code class="n">Done</code> <code class="n">with</code> <code class="n">b1bf0f9977b2d48bad611ed4a03d3738df05ea5d</code><code class="p">,</code> <code class="n">rebasing</code> <code class="n">tail</code> <code class="n">onto</code> <code class="n">new</code> <code class="n">TFS-commit</code><code class="p">...</code>
+<code class="n">Rebase</code> <code class="n">done</code> <code class="n">successfully</code><code class="p">.</code>
+<code class="n">No</code> <code class="n">more</code> <code class="n">to</code> <code class="n">rcheckin</code><code class="p">.</code>
+<code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">-all</code> <code class="p">-</code><code class="n">-oneline</code> <code class="p">-</code><code class="n">-graph</code> <code class="p">-</code><code class="n">-decorate</code>
+<code class="p">*</code> <code class="n">ff04e7c</code> <code class="p">(</code><code class="n">HEAD</code><code class="p">,</code> <code class="n">tfs</code><code class="p">/</code><code class="k">default</code><code class="p">,</code> <code class="n">master</code><code class="p">)</code> <code class="n">update</code> <code class="n">code</code>
+<code class="p">*</code> <code class="n">71a5ddc</code> <code class="n">update</code> <code class="n">readme</code>
+<code class="p">*</code> <code class="n">aea74a0</code> <code class="n">update</code> <code class="n">documentation</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">44cd729</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureA</code><code class="p">,</code> <code class="n">featureA</code><code class="p">)</code> <code class="n">Goodbye</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">d202b53</code> <code class="n">Branched</code> <code class="n">from</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">Trunk</code>
+<code class="p">|/</code>
+<code class="p">*</code> <code class="n">c403405</code> <code class="n">Hello</code>
+<code class="p">*</code> <code class="n">b75da1a</code> <code class="n">New</code> <code class="n">project</code>
+</pre>
+
+<p>Обратите внимание, как после каждой удачной ревизии на TFVC сервере <code>git-tfs</code> перемещает оставшиеся к отправке изменения на вновь созданные фиксации.
+Это необходимо, потому что <code>git-tfs</code> добавляет строку <code>git-tfs-id</code> к сообщениям фиксаций, меняя, таким образом, их SHA-1 хеши.
+Это запланированное поведение и вам не о чем беспокоиться, просто помните об этом, особенно если вы публикуете эти фиксации где-либо ещё.</p>
+
+<p>У TFS ещё много козырей в рукаве, типа курируемых наборов изменений, привязки ревизий к задачам, инспекция кода и прочее.
+Возможно, кому-то покажется сложной работа с этими возможностями через командную строку.
+К счастью, в <code>git-tfs</code> вы можете использовать графическую утилиту:</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">checkintool</code>
+<code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">ct</code>
+</pre>
+
+<p>Выглядит она примерно так:</p>
+
+<figure id="id-yMyGTn"><img src="/book/en/v2/book/09-git-and-other-scms/images/git-tfs-ct.png" alt="Графическая утилита `git-tfs`."><figcaption><span class="label">Figure 9-3. </span>Графическая утилита <code>git-tfs</code>.</figcaption></figure><p>Она покажется знакомой для пользователей TFS, потому что это тот же самый диалог, что вызывается из Visual Studio.</p>
+
+<p>Также <code>git-tfs</code> позволяет управлять ветками в TFVC из Git репозитория.
+Например, создадим новую ветку:</p>
+
+<pre data-type="programlisting" data-code-language="powershell"><code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">tfs</code> <code class="n">branch</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">featureBee</code>
+<code class="n">The</code> <code class="n">name</code> <code class="n">of</code> <code class="n">the</code> <code class="n">local</code> <code class="n">branch</code> <code class="n">will</code> <code class="n">be</code> <code class="err">:</code> <code class="n">featureBee</code>
+<code class="n">C26</code> <code class="p">=</code> <code class="n">1d54865c397608c004a2cadce7296f5edc22a7e5</code>
+<code class="n">PS</code><code class="p">&gt;</code> <code class="n">git</code> <code class="n">log</code> <code class="p">-</code><code class="n">-oneline</code> <code class="p">-</code><code class="n">-graph</code> <code class="p">-</code><code class="n">-decorate</code> <code class="p">-</code><code class="n">-all</code>
+<code class="p">*</code> <code class="n">1d54865</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureBee</code><code class="p">)</code> <code class="n">Creation</code> <code class="n">branch</code> <code class="p">$/</code><code class="n">myproject</code><code class="p">/</code><code class="n">featureBee</code>
+<code class="p">*</code> <code class="n">ff04e7c</code> <code class="p">(</code><code class="n">HEAD</code><code class="p">,</code> <code class="n">tfs</code><code class="p">/</code><code class="k">default</code><code class="p">,</code> <code class="n">master</code><code class="p">)</code> <code class="n">update</code> <code class="n">code</code>
+<code class="p">*</code> <code class="n">71a5ddc</code> <code class="n">update</code> <code class="n">readme</code>
+<code class="p">*</code> <code class="n">aea74a0</code> <code class="n">update</code> <code class="n">documentation</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">44cd729</code> <code class="p">(</code><code class="n">tfs</code><code class="p">/</code><code class="n">featureA</code><code class="p">,</code> <code class="n">featureA</code><code class="p">)</code> <code class="n">Goodbye</code>
+<code class="p">|</code> <code class="p">*</code> <code class="n">d202b53</code> <code class="n">Branched</code> <code class="n">from</code> <code class="p">$/</code><code class="n">tfvc-test</code><code class="p">/</code><code class="n">Trunk</code>
+<code class="p">|/</code>
+<code class="p">*</code> <code class="n">c403405</code> <code class="n">Hello</code>
+<code class="p">*</code> <code class="n">b75da1a</code> <code class="n">New</code> <code class="n">project</code>
+</pre>
+
+<p>Создание ветки в TFVC означает создание новой ревизии, с которой и стартует ветка, в Git это выглядит как очередная фиксация изменений.
+Обратите внимание, что <code>git-tfs</code> <strong>создал</strong> удалённую ветку <code>tfs/featureBee</code>, но указатель <code>HEAD</code> всё ещё находится на ветке <code>master</code>.
+Если вы хотите продолжать работу в новой ветке, вам нужно базировать новые изменения на фиксации <code>1d54865</code>, создав начиная с неё новую ветку.</p>
+</section><section data-type="sect3" id="zaklyuchenie-po-git-i-tfs-DKB2SD"><h4>Заключение по Git и TFS</h4>
+
+<p><code>git-tf</code> и <code>git-tfs</code> — отличные инструменты для взаимодействия с TFVC сервером.
+Они позволяют использовать преимущества Git для работы в локальном репозитории, избегая постоянных взаимодействий с центральным TFVC сервером.
+Это упрощает вашу жизнь, но не заставляет ваших коллег также переходить на Git.
+Если вы работаете под Windows (что вполне вероятно, раз уж вы используете TFS), тогда <code>git-tfs</code> будет наиболее разумным выбором, так как его функциональность наиболее полна; но если вы используете другую платформу, вам придётся использовать более ограниченный <code>git-tf</code>.
+Как и с большинством других описываемых в этой главе инструментов, вам следует выбрать единственный "источник правды": вы будете делиться наработками либо через Git, либо через TFVC, но никак не через обе системы сразу.</p>
+</section></section><div id="nav"><a href="/book/ru/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">prev</a> | <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

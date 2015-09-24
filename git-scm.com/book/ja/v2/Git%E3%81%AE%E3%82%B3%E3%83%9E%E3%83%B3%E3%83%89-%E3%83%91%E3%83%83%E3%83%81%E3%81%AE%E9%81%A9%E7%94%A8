@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":8,"applicationTime":313,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - パッチの適用</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">使い始める</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">バージョン管理に関して</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E7%95%A5%E5%8F%B2">Git略史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E5%9F%BA%E6%9C%AC">Gitの基本</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">コマンドライン</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Gitのインストール</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90">最初のGitの構成</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%98%E3%83%AB%E3%83%97%E3%82%92%E8%A6%8B%E3%82%8B">ヘルプを見る</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git の基本</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git リポジトリの取得</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%B8%E3%81%AE%E8%A8%98%E9%8C%B2">変更内容のリポジトリへの記録</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4%E3%81%AE%E9%96%B2%E8%A6%A7">コミット履歴の閲覧</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E4%BD%9C%E6%A5%AD%E3%81%AE%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%97">作業のやり直し</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD">リモートでの作業</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%BF%E3%82%B0">タグ</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">Git エイリアス</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">Git のブランチ機能</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">ブランチとは</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC">ブランチとマージの基本</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E7%AE%A1%E7%90%86">ブランチの管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">ブランチでの作業の流れ</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">リモートブランチ</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9">リベース</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">Gitサーバー</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">プロトコル</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%94%A8%E3%81%AE-Git-%E3%81%AE%E5%8F%96%E5%BE%97">サーバー用の Git の取得</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-SSH-%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E4%BD%9C%E6%88%90">SSH 公開鍵の作成</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">サーバーのセットアップ</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3">Git デーモン</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%89%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%81%AB%E3%82%88%E3%82%8B-Git-%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">サードパーティによる Git ホスティング</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">Git での分散作業</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">分散作業の流れ</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E9%81%8B%E5%96%B6">プロジェクトの運営</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ja/v2/GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%BA%96%E5%82%99%E3%81%A8%E8%A8%AD%E5%AE%9A">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ja/v2/GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%BA%96%E5%82%99%E3%81%A8%E8%A8%AD%E5%AE%9A">アカウントの準備と設定</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ja/v2/GitHub-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ja/v2/GitHub-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9">プロジェクトのメンテナンス</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ja/v2/GitHub-%E7%B5%84%E7%B9%94%E3%81%AE%E7%AE%A1%E7%90%86">組織の管理</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ja/v2/GitHub-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B-GitHub-%E3%81%AE%E6%93%8D%E4%BD%9C">スクリプトによる GitHub の操作</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ja/v2/GitHub-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">Git のさまざまなツール</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">リビジョンの選択</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0">対話的なステージング</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E3%81%AE%E9%9A%A0%E3%81%97%E3%81%8B%E3%81%9F%E3%81%A8%E6%B6%88%E3%81%97%E3%81%8B%E3%81%9F">作業の隠しかたと消しかた</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9%E3%81%B8%E3%81%AE%E7%BD%B2%E5%90%8D">作業内容への署名</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%A4%9C%E7%B4%A2">検索</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88">歴史の書き換え</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E8%A9%B3%E8%AA%AC">リセットコマンド詳説</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E9%AB%98%E5%BA%A6%E3%81%AA%E3%83%9E%E3%83%BC%E3%82%B8%E6%89%8B%E6%B3%95">高度なマージ手法</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">Git によるデバッグ</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">サブモジュール</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%90%E3%83%B3%E3%83%89%E3%83%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90">バンドルファイルの作成</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88">Git オブジェクトの置き換え</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%81%AE%E4%BF%9D%E5%AD%98">認証情報の保存</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git のカスタマイズ</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git の設定</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E5%B1%9E%E6%80%A7">Git の属性</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">Git フック</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E5%AE%9F%E6%96%BD%E4%BE%8B">Git ポリシーの実施例</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">Gitとその他のシステムの連携</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">Git をクライアントとして使用する</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%B8%E7%A7%BB%E8%A1%8C%E3%81%99%E3%82%8B">Git へ移行する</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">Gitの内側</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">配管（Plumbing）と磁器（Porcelain）</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">Gitオブジェクト</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%81%AE%E5%8F%82%E7%85%A7">Gitの参照</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">パックファイル</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E5%8F%82%E7%85%A7%E4%BB%95%E6%A7%98%EF%BC%88Refspec%EF%BC%89">参照仕様（Refspec）</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">トランスファープロトコル</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA">メインテナンスとデータリカバリ</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0">環境変数</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E8%A6%81%E7%B4%84">要約</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">その他の環境でのGit</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">グラフィカルインタフェース</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Visual-Studio%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">Visual StudioでGitを使う</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Eclipse%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">EclipseでGitを使う</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Bash%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">BashでGitを使う</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Zsh%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">ZshでGitを使う</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Powershell%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">PowershellでGitを使う</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Gitをあなたのアプリケーションに組み込む</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Gitのコマンドラインツールを使う方法</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Libgit2%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Libgit2を使う方法</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A">Gitのコマンド</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A">セットアップと設定</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E3%81%A8%E4%BD%9C%E6%88%90">プロジェクトの取得と作成</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88">基本的なスナップショット</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8">ブランチとマージ</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88">プロジェクトの共有とアップデート</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E6%A4%9C%E6%9F%BB%E3%81%A8%E6%AF%94%E8%BC%83">検査と比較</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">デバッグ</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%91%E3%83%83%E3%83%81%E3%81%AE%E9%81%A9%E7%94%A8">パッチの適用</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%A1%E3%83%BC%E3%83%AB">メール</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">外部システム</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%AE%A1%E7%90%86">システム管理</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E9%85%8D%E7%AE%A1%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">配管コマンド</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>A3.8 Gitのコマンド - パッチの適用</h1>
+  <div><a id="-zzvhV"></a><h2>パッチの適用</h2>
+
+<p>Gitのコマンドのうちいくつかは、コミットとはそれによっておこる修正のことであるという観点で捉え、また一連のコミットを一続きのパッチの集まりであるとみなす考え方を中心としています。これらのコマンドは、この考え方に従ってブランチを管理するのに役立ちます。</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="git-cherry-pick-kg3Sa"><h3 id="git-cherry-pick"><a href="#git-cherry-pick">git cherry-pick</a></h3>
+
+<p><code>git cherry-pick</code> コマンドは、あるコミットで行われた変更を取得して、それを現在のブランチへ新しいコミットとして取り込む場合に使用されます。これは、あるブランチをマージしてすべての変更を取り込むのではなく、そのブランチから一つか二つのコミットだけを個別に取り込みたい場合に役立ちます。</p>
+
+<p><a data-type="xref" href="1-distributed-git/_rebase_cherry_pick">リベースとチェリーピックのワークフロー</a> では、チェリーピックの説明を行い、実例を示しました。</p>
+</section><section data-type="sect2" id="git-rebase-6xzfK"><h3 id="git-rebase"><a href="#git-rebase">git rebase</a></h3>
+
+<p><code>git rebase</code> コマンドは、基本的には <code>cherry-pick</code> を自動化したものです。対象となる一連のコミットを決めた上で、それらを一つずつ、元と同じ順序となるように、どこか別の場所へチェリーピックします。</p>
+
+<p><a data-type="xref" href="1-git-branching/_rebasing">リベース</a> では、リベースについて詳しく取り上げました。ここでは、公開済みのブランチのリベースに関連した、共同作業の際の課題についても取り上げました。</p>
+
+<p><a data-type="xref" href="1-git-tools/_replace">Git オブジェクトの置き換え</a> では、歴史を分割して、二つの別々のリポジトリへ格納する例を通して、このコマンドの実用的な使い方を示しました。またその際に <code>--onto</code> フラグを使用しました。</p>
+
+<p><a data-type="xref" href="1-git-tools/_rerere">Rerere</a> では、リベース中に発生するマージコンフリクトについて見てきました。</p>
+
+<p><a data-type="xref" href="1-git-tools/_changing_multiple">複数のコミットメッセージの変更</a> では、 <code>-i</code> オプションを指定して、対話的スクリプティングモードを使用しました。</p>
+</section><section data-type="sect2" id="git-revert-Z08iW"><h3 id="git-revert"><a href="#git-revert">git revert</a></h3>
+
+<p><code>git revert</code> コマンドは、本質的には <code>git cherry-pick</code> コマンドの逆です。このコマンドは、コマンドの対象となるコミットで取り込まれた変更に対して、本質的にはそれを元に戻したり取り消したりすることで、そのコミットとは逆の変更を行うコミットを新規に作成します。</p>
+
+<p><a data-type="xref" href="1-git-tools/_reverse_commit">コミットの打ち消し</a> では、マージコミットを元に戻すのにこのコマンドを使用しました。</p>
+</section><div id="nav"><a href="/book/ja/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">prev</a> | <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%A1%E3%83%BC%E3%83%AB">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

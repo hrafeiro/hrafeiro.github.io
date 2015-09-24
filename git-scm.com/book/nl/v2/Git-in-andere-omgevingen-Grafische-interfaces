@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":2,"applicationTime":213,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Grafische interfaces</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>A1.1 Git in andere omgevingen - Grafische interfaces</h1>
+  <div><a id="idp34029696"></a><p>Als je het hele boek gelezen hebt, zal je erg veel geleerd hebben over het gebruik van Git op de commando regel.
+Je kunt met lokale bestanden werken, je repository verbinden met andere via een netwerk, en effectiever werken met
+ anderen.
+Maar daarmee houdt het verhaal niet op; Git wordt normaalgesproken gebruikt als onderdeel van een groter ecosysteem,
+ en het werkstation is niet altijd de beste manier om ermee te werken.
+We zullen nu een kijkje nemen naar andere soorten omgevingen waar Git nuttig kan zijn, en hoe andere applicaties
+ (inclusief de jouwe) zij aan zij samenwerken met Git.</p><a id="idp36933104"></a><h2>Grafische interfaces</h2>
+
+<p><a data-type="indexterm" data-primary="GUIs" id="idp36934576"></a><a data-type="indexterm" data-primary="Grafische tools" id="idp36935280"></a>
+De natuurlijke omgeving van Git is het werkstation.
+Nieuwe mogelijkheden verschijnen daar het eerst, en alleen op de commandoregel is de volle kracht van Git volledig
+ tot je beschikking.
+Maar platte tekst is niet de beste keuze voor alle taken; soms heb je gewoon een visuele representatie nodig, en
+ sommige gebruikers voelen zich veel meer op hun gemak bij een <em>point-and-click</em> interface.</p>
+
+<p>Het is belangrijk op te merken dat verschillende interfaces zijn toegesneden op andere workflows.
+Sommige clients laten slechts een verzameling zorgvuldig uitgekozen onderdelen van Git zien, dit om een specifieke
+ manier van werken te ondersteunen die de auteurs ervan beschouwen als effectief.
+Vanuit dat oogpunt gezien zijn geen van deze gereedschappen “beter” te noemen dan een ander, ze zijn gewoonweg
+ beter in staat om hun specifieke doel te dienen.
+Merk ook dat er niets is wat deze grafische clients kunnen doen wat niet vanaf de commando-regel te doen zou zijn; de
+ commando-regel is nog steeds de plaats waar je de meeste mogelijkheden en controle hebt als je met je repositories
+ werkt.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="gitk en git-gui" id="idp36938144"><h3>
+<code>gitk</code> en <code>git-gui</code>
+</h3>
+
+<p><a data-type="indexterm" data-primary="git commando’s" data-secondary="gitk" id="idp37152528"></a><a data-type="indexterm" data-primary="git commando’s" data-secondary="gui" id="idp37153504"></a><a data-type="indexterm" data-primary="gitk" id="idp37154448"></a>
+Als je Git installeert, krijg je de visuele gereedschappen erbij, zijnde <code>gitk</code> en <code>git-gui</code>.</p>
+
+<p><code>gitk</code> is een gereedschap waarmee je de geschiedenis grafisch kan bekijken.
+Zie het als een krachtige grafische schil over <code>git log</code> en <code>git grep</code>.
+Dit is het gereedschap die je gebruikt als je iets probeert te vinden wat in het verleden heeft plaatsgevinden, of de
+ historie van je project probeert te laten zien.</p>
+
+<p>Gitk is het eenvoudigste aan te roepen vanaf de commando-regel.
+Gewoon <code>cd</code> gebruiken om een Git repository in te gaan en dan dit typen:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> gitk <code class="o">[</code>git log options<code class="o">]</code></pre>
+
+<p>Gitk accepteert veel opties van de commando-regel, de meeste daarvan worden doorgegeven aan de onderliggende <code>git log</code>
+ actie.
+Een van de meest nuttige hiervan is de <code>--all</code> vlag, die gitk vertelt om commits te laten zien die vanuit <em>elke</em> ref
+ bereikbaar zijn, niet alleen HEAD.
+De interface van Gitk ziet er zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/A-git-in-other-environments/images/gitk.png" alt="De `gitk` historie viewer."></div>
+<figcaption>De <code>gitk</code> historie viewer.</figcaption></figure><p>Bovenaan is iets wat eruit ziet als de uitvoer van <code>git log --graph</code>; elke stip staat voor een commit, de lijntjes
+ stellen ouderrelaties voor, en refs worden getoond als gekleurde vierkantjes.
+De gele stip stelt HEAD voor, en de rode stippen stellen wijzigingen voor die nog een commit moeten worden.
+Onderaan is een voorstelling van de geselecteerde commit; de commentaren en patch staan links en een samenvatting
+ staat rechts.
+Hiertussen staat een verzameling van mogelijkheden om in de geschiedenis te zoeken.</p>
+
+<p><code>git-gui</code> daarentegen is primair een gereedschap om commits samen te stellen.
+Ook dit is het eenvoudigste om aan te roepen van de commando-regel:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git gui</pre>
+
+<p>En het ziet er ongeveer zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/A-git-in-other-environments/images/git-gui.png" alt="Het `git-gui` commit gereedschap."></div>
+<figcaption>Het <code>git-gui</code> commit gereedschap.</figcaption></figure><p>Links staat de index; wijzigingen die nog niet zijn gestaged staan bovenaan, wijzigingen die zijn gestaged staan
+ onderaan.
+Je kunt volledige bestanden tussen deze twee stadia verplaatsen door op hun icoontjes te klikken, of je selecteert
+ een bestand voor bekijken door op de naam te klikken.</p>
+
+<p>Rechtsboven wordt de diff getoond, hier worden de veranderingen getoond voor het bestand dat op dat moment is
+ geselecteerd.
+Je kunt individuele hunks stagen (of individuele regels) door in dit gebied rechts te klikken.</p>
+
+<p>Rechtsonder is het gedeelte waar het bericht en acties kunnen worden ingetypt. Tik je bericht in de tekst-box en klik
+ op “Commit” om iets vergelijkbaars te doen als <code>git commit</code>.
+Je kunt er ook voor kiezen om de laatste commit te amenderen door de “Amend” radio knop te klikken, wat het “Staged
+ Changes” gedeelte vult met de inhoud van de laatste commit.
+Daarna kan je eenvoudigweg bepaalde wijzigingen kunt stagen of unstagen, het commit bericht wijzigen en weer
+ “Commit” klikken om de oude commit te vervangen met een nieuwe.</p>
+
+<p><code>gitk</code> en <code>git-gui</code> zijn voorbeelden van taak-georiënteerde gereedschappen.
+Elk van deze is toegesneden op een specifieke doel (respectievelijk geschiedenis bekijken en commits maken), en zaken
+ die niet nodig zijn voor die taak zijn weggelaten.</p>
+</section><section data-type="sect2" data-pdf-bookmark="GitHub voor Mac en Windows" id="idp36938768"><h3 id="GitHub-voor-Mac-en-Windows"><a href="#GitHub-voor-Mac-en-Windows">GitHub voor Mac en Windows</a></h3>
+
+<p><a data-type="indexterm" data-primary="GitHub voor Mac" id="idp37186560"></a><a data-type="indexterm" data-primary="GitHub voor Windows" id="idp37187264"></a>
+GitHub heeft twee workflow-georiënteerde clients gemaakt: een voor Windows en een voor Mac.
+Deze clients zijn goede voorbeelden van workflow-georiënteerde gereedschappen - inplaats van <em>alle</em> functionaliteit
+ van Git beschikbaar te stellen, hebben ze zich gericht op een beperkte set van algemeen gebruikte functies die goed
+ samenwerken.
+Ze zien er zo uit:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/A-git-in-other-environments/images/github_mac.png" alt="GitHub voor Mac."></div>
+<figcaption>GitHub voor Mac.</figcaption></figure><figure><div class="border-box"><img src="/book/en/v2/book/A-git-in-other-environments/images/github_win.png" alt="GitHub voor Windows."></div>
+<figcaption>GitHub voor Windows.</figcaption></figure><p>Ze zijn ontworpen om zoveel mogelijk op dezelfde manier er uit te zien en te werken, dus we zullen ze in dit
+ hoofdstuk als een enkel product behandelen.
+We zullen hier geen gedetailleerde behandeling geven van deze gereedschappen (ze hebben hun eigen documentatie), maar
+ een snel overzicht van de “changes” view (waar je het meeste van je tijd zult besteden) is op zijn plaats.</p>
+
+<ul>
+<li>
+<p>Links staat de lijst van repositories die de client volgt (trackt); je kunt een repository toevoegen (hetzij door
+het te
+ clonen of door deze lokaal toe te voegen) door het “+” icoon te klikken die boven dit gebied staat.</p>
+</li>
+<li>
+<p>In het midden is een commit-invoer gebied, dit stelt je in staat om een commit bericht in te voeren, en de
+bestanden die hierin mee moeten te selecteren. (In Windows is de commit historie hier direct onder getoond; op Mac
+is het een aparte tab.)</p>
+</li>
+<li>
+<p>Rechts is een diff view, waar wordt getoond wat er in je werk directory is gewijzigd, of welke wijzigingen er in de
+geselecteerde commit zitten.</p>
+</li>
+<li>
+<p>Het laatste waar je op kunt letten is de “Sync” knop rechtsboven, wat de belangrijkste manier is waarmee je over
+het netwerk communiceert.</p>
+</li>
+</ul>
+<div data-type="note">
+<p>Je hebt geen GitHub account nodig om deze middelen te gebruiken.
+Alhoewel ze zijn ontworpen om de service van GitHub en aangeraden workflows in de aandacht te brengen, werken ze
+ prima met elke willekeurige ander repository, en zullen netwerk operaties met alle Git hosts uitvoeren.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="Installatie" id="idp37096320"><h4>Installatie</h4>
+
+<p>GitHub voor Windows kan worden gedownload van <a href="https://windows.github.com"><em class="hyperlink">https://windows.github.com</em></a>, en GitHub voor Mac van
+ <a href="https://mac.github.com"><em class="hyperlink">https://mac.github.com</em></a>.
+Als de applicatie voor het eerst wordt aangeroepen, voeren ze je door alle instellingen die nodig zijn om Git te laten
+ werken, zoals het invoeren van je naam en email adres, en beide stellen verstandige standaard instellingen voor,
+ voor veel gebruikte configuratie opties, zoals caches voor inloggegevens en CRLF gedrag.</p>
+
+<p>Beide zijn “overwinteraars” (“evergreen”) - updates worden gedownload en geïnstalleerd terwijl de applicaties in
+ gebruik zijn.
+Bij deze installatie zit ook een versie van Git ingesloten, wat betekent dat je je waarschijnlijk geen zorgen hoeft te
+ maken om het ooit handmatig te hoeven updaten.
+Op Windows heeft de client een shortcut om Powershell aan te roepen met Posh-git, waar we later in dit hoofdstuk meer
+ over zullen vertellen.</p>
+
+<p>De volgende stap is om de applicatie een aantal repositories te geven om mee te werken.
+De client toont je een lijst met repositories waar je toegang toe hebt op GitHub, en je kunt ze in één stap clonen.
+ALs je al een lokale repository hebt, kan je de directory hiervan vanuit de Finder of Windows Explorer in de GitHub
+ client slepen, en het zal in de lijst van repositories aan de linkerkant worden opgenomen.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Aangeraden workflow" id="idp37102080"><h4>Aangeraden workflow</h4>
+
+<p>Als het eenmaal is geïnstalleerd en geconfigureerd, kan je de GitHub client voor veel reguliere Git taken gebruiken.
+De tool is gemaakt met de workflow die “GitHub Flow” heet in gedachten.
+We zullen dit in meer detail behandelen in <a data-type="xref" href="ch06/_github_flow">“De GitHub flow”</a>, maar de achterliggende gedachte is dat (a) je naar een
+ branch gaat committen, en (b) dat je vrij regelmatig met een remote repository zult gaan synchroniseren.</p>
+
+<p>Branch beheer is een van de gebieden waar deze twee tools afwijken.
+Op Mac, is er een knop bovenaan in de window voor het maken van een nieuwe branch:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/A-git-in-other-environments/images/branch_widget_mac.png" alt="``Create Branch'' knop op Mac."></div>
+<figcaption>“Create Branch” knop op Mac.</figcaption></figure><p>In Windows wordt dit gedaan door de naam van de nieuwe branch in de branch-switching widget in te typen:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/A-git-in-other-environments/images/branch_widget_win.png" alt="Een branch aanmaken in Windows."></div>
+<figcaption>Een branch aanmaken in Windows.</figcaption></figure><p>Als je branch eenmaal is aangemaakt, is het maken van nieuwe commits min of meer rechttoe-rechtaan.
+Maak een aantal wijzigingen in je werk directory, en als je naar de GitHub client window gaat, zal het je laten zien
+ welke bestanden zijn veranderd.
+Vul een commit bericht in, selecteer de bestanden die je erin wilt plaatsen, en klik op de “Commit” knop
+ (ctrl-enter of ⌘-enter).</p>
+
+<p>De belangrijkste manier waarmee je met andere repositories samenwerkt via het netwerk is via de “Synch” functie.
+Git heeft intern verschillende operaties voor pushen, fetchen, mergen en rebasen, maar de GitHub clients vatten die
+ allemaal samen in een multi-stap functie.
+Hier is wat er gebeurt als je de Sync-knop klikt:</p>
+<ol>
+<li>
+<p><code>git pull --rebase</code>.
+Als dit mislukt omdat er een merge conflict is, val dan terug op <code>git pull --no-rebase</code>.</p>
+</li>
+<li>
+<p><code>git push</code>.</p>
+</li>
+
+</ol>
+<p>Dit is de meeste gebruikelijke volgorde van netwerk commando’s als je op deze manier werkt, dus als je ze in een
+ commando samenpropt bespaart het je veel tijd.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Samenvatting" id="idp37102640"><h4>Samenvatting</h4>
+
+<p>Deze gereedschappen zijn zeer geschikt voor de workflows waarvoor ze zijn ontworpen.
+Ontwikkelaars zowel als niet-ontwikkelaars kunnen op deze manier binnen een paar minuten met elkaar samenwerken op
+ een project, en veel van de <em>best practices</em> voor dit soort van workflows zijn in de gereedschappen ingebakken.
+Echter, als je workflow hiervan afwijkt, of als je meer controle wilt over hoe en welke netwerk operaties er gedaan
+ worden, raden we je een andere client of de commando-regel aan.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="Andere GUIs" id="idp37179936"><h3 id="Andere-GUIs"><a href="#Andere-GUIs">Andere GUIs</a></h3>
+
+<p>Er zijn een aantal andere grafische Git clients, en ze variëren van gespecialiseerde gereedschappen gemaakt voor één
+ specifiek doel tot aan applicaties die probereen alles wat Git kan beschikbaar te stellen.
+De officiële Git website heeft een onderhouden lijst van de meest populaire clients op
+ <a href="http://git-scm.com/downloads/guis"><em class="hyperlink">http://git-scm.com/downloads/guis</em></a>.
+Een uitgebreidere lijst is beschikbaar op de Git wiki, op
+ <a href="https://git.wiki.kernel.org/index.php/Interfaces,_frontends,_and_tools#Graphical_Interfaces"><em class="hyperlink">https://git.wiki.kernel.org/index.php/Interfaces,_frontends,_and_tools#Graphical_Interfaces</em></a>.</p>
+</section><div id="nav"><a href="/book/nl/Git-Binnenwerk-Samenvatting">prev</a> | <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

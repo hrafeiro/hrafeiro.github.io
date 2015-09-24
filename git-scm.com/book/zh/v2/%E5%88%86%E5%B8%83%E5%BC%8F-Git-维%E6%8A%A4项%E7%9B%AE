@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":6,"applicationTime":213,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - 维护项目</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/zh/2015-09-05-f8ba1/progit-zh.813.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/zh/2015-09-05-f8ba1/progit-zh.813.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/zh/2015-09-05-f8ba1/progit-zh.813.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">起步</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">关于版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E7%AE%80%E5%8F%B2">Git 简史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-Git-%E5%9F%BA%E7%A1%80">Git 基础</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%91%BD%E4%BB%A4%E8%A1%8C">命令行</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git">安装 Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE">初次运行 Git 前的配置</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E8%8E%B7%E5%8F%96%E5%B8%AE%E5%8A%A9">获取帮助</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%8E%B7%E5%8F%96-Git-%E4%BB%93%E5%BA%93">Git 基础</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%8E%B7%E5%8F%96-Git-%E4%BB%93%E5%BA%93">获取 Git 仓库</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93">记录每次更新到仓库</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2">查看提交历史</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C">撤消操作</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8">远程仓库的使用</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE">打标签</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-Git-%E5%88%AB%E5%90%8D">Git 别名</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%80%E4%BB%8B">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%80%E4%BB%8B">分支简介</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">分支的新建与合并</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86">分支管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E4%BD%9C%E6%B5%81">分支开发工作流</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">远程分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA">变基</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%8F%E8%AE%AE">服务器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%8F%E8%AE%AE">协议</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%90%AD%E5%BB%BA-Git">在服务器上搭建 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5">生成 SSH 公钥</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E5%99%A8">配置服务器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B">Git 守护进程</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%AC%AC%E4%B8%89%E6%96%B9%E6%89%98%E7%AE%A1%E7%9A%84%E9%80%89%E6%8B%A9">第三方托管的选择</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh/v2/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E5%88%86%E5%B8%83%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分布式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh/v2/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E5%88%86%E5%B8%83%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分布式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh/v2/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E5%90%91%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE">向一个项目贡献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh/v2/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E7%BB%B4%E6%8A%A4%E9%A1%B9%E7%9B%AE">维护项目</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh/v2/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh/v2/GitHub-%E8%B4%A6%E6%88%B7%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E9%85%8D%E7%BD%AE">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh/v2/GitHub-%E8%B4%A6%E6%88%B7%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E9%85%8D%E7%BD%AE">账户的创建和配置</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh/v2/GitHub-%E5%AF%B9%E9%A1%B9%E7%9B%AE%E5%81%9A%E5%87%BA%E8%B4%A1%E7%8C%AE">对项目做出贡献</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh/v2/GitHub-%E7%BB%B4%E6%8A%A4%E9%A1%B9%E7%9B%AE">维护项目</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh/v2/GitHub-%E7%AE%A1%E7%90%86%E7%BB%84%E7%BB%87">管理组织</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh/v2/GitHub-%E8%84%9A%E6%9C%AC-GitHub">脚本 GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh/v2/GitHub-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%80%89%E6%8B%A9%E4%BF%AE%E8%AE%A2%E7%89%88%E6%9C%AC">Git 工具</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%80%89%E6%8B%A9%E4%BF%AE%E8%AE%A2%E7%89%88%E6%9C%AC">选择修订版本</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E4%BA%A4%E4%BA%92%E5%BC%8F%E6%9A%82%E5%AD%98">交互式暂存</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%E4%B8%8E%E6%B8%85%E7%90%86">储藏与清理</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E7%AD%BE%E7%BD%B2%E5%B7%A5%E4%BD%9C">签署工作</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E6%90%9C%E7%B4%A2">搜索</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%86%99%E5%8E%86%E5%8F%B2">重写历史</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E7%BD%AE%E6%8F%AD%E5%AF%86">重置揭密</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%AB%98%E7%BA%A7%E5%90%88%E5%B9%B6">高级合并</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E8%B0%83%E8%AF%95">使用 Git 调试</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97">子模块</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E6%89%93%E5%8C%85">打包</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E6%9B%BF%E6%8D%A2">替换</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%87%AD%E8%AF%81%E5%AD%98%E5%82%A8">凭证存储</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git">自定义 Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git">配置 Git</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E5%B1%9E%E6%80%A7">Git 属性</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90">Git 钩子</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E4%BD%BF%E7%94%A8%E5%BC%BA%E5%88%B6%E7%AD%96%E7%95%A5%E7%9A%84%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90">使用强制策略的一个例子</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh/v2/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%BA%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84-Git">Git 与其他系统</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh/v2/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%BA%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84-Git">作为客户端的 Git</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh/v2/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E8%BF%81%E7%A7%BB%E5%88%B0-Git">迁移到 Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh/v2/Git-%E4%B8%8E%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4">Git 内部原理</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E5%92%8C%E9%AB%98%E5%B1%82%E5%91%BD%E4%BB%A4">底层命令和高层命令</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E5%AF%B9%E8%B1%A1">Git 对象</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E5%BC%95%E7%94%A8">Git 引用</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%8C%85%E6%96%87%E4%BB%B6">包文件</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BC%95%E7%94%A8%E8%A7%84%E6%A0%BC">引用规格</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">传输协议</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E7%BB%B4%E6%8A%A4%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D">维护与数据恢复</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2">其它环境中的 Git</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2">图形界面</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-Visual-Studio-%E4%B8%AD%E7%9A%84-Git">Visual Studio 中的 Git</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-Eclipse-%E4%B8%AD%E7%9A%84-Git">Eclipse 中的 Git</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-Bash-%E4%B8%AD%E7%9A%84-Git">Bash 中的 Git</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-Zsh-%E4%B8%AD%E7%9A%84-Git">Zsh 中的 Git</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-Powershell-%E4%B8%AD%E7%9A%84-Git">Powershell 中的 Git</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/zh/v2/%E5%85%B6%E5%AE%83%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84-Git-%E6%80%BB%E7%BB%93">总结</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/zh/v2/%E5%B0%86-Git-%E5%B5%8C%E5%85%A5%E4%BD%A0%E7%9A%84%E5%BA%94%E7%94%A8-%E5%91%BD%E4%BB%A4%E8%A1%8C-Git-%E6%96%B9%E5%BC%8F">将 Git 嵌入你的应用</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/zh/v2/%E5%B0%86-Git-%E5%B5%8C%E5%85%A5%E4%BD%A0%E7%9A%84%E5%BA%94%E7%94%A8-%E5%91%BD%E4%BB%A4%E8%A1%8C-Git-%E6%96%B9%E5%BC%8F">命令行 Git 方式</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/zh/v2/%E5%B0%86-Git-%E5%B5%8C%E5%85%A5%E4%BD%A0%E7%9A%84%E5%BA%94%E7%94%A8-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/zh/v2/%E5%B0%86-Git-%E5%B5%8C%E5%85%A5%E4%BD%A0%E7%9A%84%E5%BA%94%E7%94%A8-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E8%AE%BE%E7%BD%AE%E4%B8%8E%E9%85%8D%E7%BD%AE">Git 命令</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E8%AE%BE%E7%BD%AE%E4%B8%8E%E9%85%8D%E7%BD%AE">设置与配置</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E8%8E%B7%E5%8F%96%E4%B8%8E%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE">获取与创建项目</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E5%BF%AB%E7%85%A7%E5%9F%BA%E7%A1%80">快照基础</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E5%88%86%E6%94%AF%E4%B8%8E%E5%90%88%E5%B9%B6">分支与合并</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E9%A1%B9%E7%9B%AE%E5%88%86%E4%BA%AB%E4%B8%8E%E6%9B%B4%E6%96%B0">项目分享与更新</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E6%A3%80%E6%9F%A5%E4%B8%8E%E6%AF%94%E8%BE%83">检查与比较</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E8%B0%83%E8%AF%95">调试</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E8%A1%A5%E4%B8%81">补丁</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E9%82%AE%E4%BB%B6">邮件</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E5%A4%96%E9%83%A8%E7%B3%BB%E7%BB%9F">外部系统</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E7%AE%A1%E7%90%86">管理</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/zh/v2/Git-%E5%91%BD%E4%BB%A4-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4">底层命令</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>5.3 分布式 Git - 维护项目</h1>
+  <div><a id="-l89Id"></a><h2>维护项目</h2>
+
+<p><a data-type="indexterm" data-primary="maintaining a project" id="id-R2ZSw"></a>
+除了如何有效地参与一个项目的贡献之外，你可能也需要了解如何维护项目。
+这包含接受并应用别人使用 <code>format-patch</code> 生成并通过电子邮件发送过来的补丁，或对项目添加的远程版本库分支中的更改进行整合。
+但无论是管理版本库，还是帮忙验证、审核收到的补丁，都需要同其他贡献者约定某种长期可持续的工作方式。</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="-X4RHE"><h3 id="在特性分支中工作"><a href="#在特性分支中工作">在特性分支中工作</a></h3>
+
+<p><a data-type="indexterm" data-primary="branches" data-secondary="topic" id="id-nxbfy"></a>
+如果你想向项目中整合一些新东西，最好将这些尝试局限在特性分支——一种通常用来尝试新东西的临时分支中。
+这样便于单独调整补丁，如果遇到无法正常工作的情况，可以先不用管，等到有时间的时候再来处理。
+如果你基于你所尝试进行工作的特性为分支创建一个简单的名字，比如 <code>ruby_client</code> 或者具有类似描述性的其他名字，这样即使你必须暂时抛弃它，以后回来时也不会忘记。
+项目的维护者一般还会为这些分支附带命名空间，比如 <code>sc/ruby_client</code>（其中 <code>sc</code> 是贡献该项工作的人名称的简写）。
+你应该记得，可以使用如下方式基于 master 分支建立特性分支：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git branch sc/ruby_client master
+</pre>
+
+<p>或者如果你同时想立刻切换到新分支上的话，可以使用 <code>checkout -b</code> 选项：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b sc/ruby_client master
+</pre>
+
+<p>现在你已经准备好将别人贡献的工作加入到这个特性分支，并考虑是否将其合并到长期分支中去了。</p>
+</section><section data-type="sect2" id="_patches_from_email"><h3 id="应用来自邮件的补丁"><a href="#应用来自邮件的补丁">应用来自邮件的补丁</a></h3>
+
+<p><a data-type="indexterm" data-primary="email" data-secondary="applying patches from" id="id-X48I4"></a>
+如果你通过电子邮件收到了一个需要整合进入项目的补丁，你需要将其应用到特性分支中进行评估。
+有两种应用该种补丁的方法：使用 <code>git apply</code>，或者使用 <code>git am</code>。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="apply-18liB"><h4>使用 <code>apply</code> 命令应用补丁</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="apply" id="id-560To"></a>
+如果你收到了一个使用 <code>git diff</code> 或 Unix <code>diff</code> 命令（不推荐使用这种方式，具体见下一节）创建的补丁，可以使用 <code>git apply</code> 命令来应用。
+假设你将补丁保存在了 <code>/tmp/patch-ruby-client.patch</code> 中，可以这样应用补丁：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply /tmp/patch-ruby-client.patch
+</pre>
+
+<p>这会修改工作目录中的文件。
+它与运行 <code>patch -p1</code> 命令来应用补丁几乎是等效的，但是这种方式更加严格，相对于 patch 来说，它能够接受的模糊匹配更少。
+它也能够处理 <code>git diff</code> 格式文件所描述的文件添加、删除和重命名操作，而 <code>patch</code> 则不会。
+最后，<code>git apply</code> 命令采用了一种“全部应用，否则就全部撤销（apply all or abort all）”的模型，即补丁只有全部内容都被应用和完全不被应用两个状态，而 <code>patch</code> 可能会导致补丁文件被部分应用，最后使你的工作目录保持在一个比较奇怪的状态。
+总体来看，<code>git apply</code> 命令要比 <code>patch</code> 谨慎得多。
+并且，它不会为你创建提交——在运行之后，你需要手动暂存并提交补丁所引入的更改。</p>
+
+<p>在实际应用补丁前，你还可以使用 git apply 来检查补丁是否可以顺利应用——即对补丁运行 <code>git apply --check</code> 命令：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply --check 0001-seeing-if-this-helps-the-gem.patch
+<code class="go">error: patch failed: ticgit.gemspec:1</code>
+<code class="go">error: ticgit.gemspec: patch does not apply</code>
+</pre>
+
+<p>如果没有产生输出，则该补丁可以顺利应用。
+如果检查失败了，该命令还会以一个非零的状态退出，所以需要时你也可以在脚本中使用它。</p>
+</section><section data-type="sect3" id="_git_am"><h4>使用 <code>am</code> 命令应用补丁</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="am" id="id-o60T3"></a>
+如果补丁的贡献者也是一个 Git 用户，并且其能熟练使用 <code>format-patch</code> 命令来生成补丁，这样的话你的工作会变得更加轻松，因为这种补丁中包含了作者信息和提交信息供你参考。
+如果可能的话，请鼓励贡献者使用 <code>format-patch</code> 而不是 <code>diff</code> 来为你生成补丁。
+而只有对老式的补丁，你才必须使用 <code>git apply</code> 命令。</p>
+
+<p>要应用一个由 <code>format-patch</code> 命令生成的补丁，你应该使用 <code>git am</code> 命令。
+从技术的角度看，<code>git am</code> 是为了读取 mbox 文件而构建的，mbox 是一种用来在单个文本文件中存储一个或多个电子邮件消息的简单纯文本格式。
+其大致格式如下所示：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="go">From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001</code>
+<code class="go">From: Jessica Smith &lt;jessica@example.com&gt;</code>
+<code class="go">Date: Sun, 6 Apr 2008 10:17:23 -0700</code>
+<code class="go">Subject: [PATCH 1/2] add limit to log function</code>
+
+<code class="go">Limit log functionality to the first 20</code>
+</pre>
+
+<p>这其实就是你前面看到的 format-patch 命令输出的开始几行。
+而同时它也是有效的 mbox 电子邮件格式。
+如果有人使用 git send-email 命令将补丁以电子邮件的形式发送给你，你便可以将它下载为 mbox 格式的文件，之后将 git am 命令指向该文件，它会应用其中包含的所有补丁。
+如果你所使用的邮件客户端能够同时将多封邮件保存为 mbox 格式的文件，你甚至能够将一系列补丁打包为单个 mbox 文件，并利用 <code>git am</code> 命令将它们一次性全部应用。</p>
+
+<p>然而，如果贡献者将 <code>format-patch</code> 生成的补丁文件上传到类似 Request Ticket 的任务处理系统，你可以先将其保存到本地，之后通过 <code>git am</code> 来应用补丁：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am 0001-limit-log-function.patch
+<code class="go">Applying: add limit to log function</code>
+</pre>
+
+<p>你会看到补丁被顺利地应用，并且为你自动创建了一个新的提交。
+其中的作者信息来自于电子邮件头部的 <code>From</code> 和 <code>Date</code> 字段，提交消息则取自 <code>Subject</code> 和邮件正文中补丁之前的内容。
+比如，应用上面那个 mbox 示例后生成的提交是这样的：</p>
+
+<pre data-type="programlisting">$ git log --pretty=fuller -1
+commit 6c5e70b984a60b3cecd395edd5b48a7575bf58e0
+Author:     Jessica Smith &lt;jessica@example.com&gt;
+AuthorDate: Sun Apr 6 10:17:23 2008 -0700
+Commit:     Scott Chacon &lt;schacon@gmail.com&gt;
+CommitDate: Thu Apr 9 09:19:06 2009 -0700
+
+   add limit to log function
+
+   Limit log functionality to the first 20</pre>
+
+<p>其中 <code>Commit</code> 信息表示的是应用补丁的人和应用补丁的时间。
+<code>Author</code> 信息则表示补丁的原作者和原本的创建时间。</p>
+
+<p>但是，有时候无法顺利地应用补丁。
+这也许是因为你的主分支和创建补丁的分支相差较多，也有可能是因为这个补丁依赖于其他你尚未应用的补丁。
+这种情况下，<code>git am</code> 进程将会报错并且询问你要做什么：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am 0001-seeing-if-this-helps-the-gem.patch
+<code class="go">Applying: seeing if this helps the gem</code>
+<code class="go">error: patch failed: ticgit.gemspec:1</code>
+<code class="go">error: ticgit.gemspec: patch does not apply</code>
+<code class="go">Patch failed at 0001.</code>
+<code class="go">When you have resolved this problem run "git am --resolved".</code>
+<code class="go">If you would prefer to skip this patch, instead run "git am --skip".</code>
+<code class="go">To restore the original branch and stop patching run "git am --abort".</code>
+</pre>
+
+<p>该命令将会在所有出现问题的文件内加入冲突标记，就和发生冲突的合并或变基操作一样。
+而你解决问题的手段很大程度上也是一样的——即手动编辑那些文件来解决冲突，暂存新的文件，之后运行 <code>git am --resolved</code> 继续应用下一个补丁：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="o">(</code>fix the file<code class="o">)</code>
+<code class="gp">$</code> git add ticgit.gemspec
+<code class="gp">$</code> git am --resolved
+<code class="go">Applying: seeing if this helps the gem</code>
+</pre>
+
+<p>如果你希望 Git 能够尝试以更加智能的方式解决冲突，你可以对其传递 <code>-3</code> 选项来使 Git 尝试进行三方合并。
+该选项默认并没有打开，因为如果用于创建补丁的提交并不在你的版本库内的话，这样做是没有用处的。
+而如果你确实有那个提交的话——比如补丁是基于某个公共提交的——那么通常 <code>-3</code> 选项对于应用有冲突的补丁是更加明智的选择。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am -3 0001-seeing-if-this-helps-the-gem.patch
+<code class="go">Applying: seeing if this helps the gem</code>
+<code class="go">error: patch failed: ticgit.gemspec:1</code>
+<code class="go">error: ticgit.gemspec: patch does not apply</code>
+<code class="go">Using index info to reconstruct a base tree...</code>
+<code class="go">Falling back to patching base and 3-way merge...</code>
+<code class="go">No changes -- Patch already applied.</code>
+</pre>
+
+<p>比如上面这种情况，我在之前已经应用过同样的补丁。
+如果没有 <code>-3</code> 选项的话，这看起来就像是存在一个冲突。</p>
+
+<p>如果你正在利用一个 mbox 文件应用多个补丁，也可以在交互模式下运行 <code>am</code> 命令，这样在每个补丁之前，它会停住询问你是否要应用该补丁：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git am -3 -i mbox
+<code class="go">Commit Body is:</code>
+<code class="go">--------------------------</code>
+<code class="go">seeing if this helps the gem</code>
+<code class="go">--------------------------</code>
+<code class="go">Apply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all</code>
+</pre>
+
+<p>这在你保存的补丁较多时很好用，因为你可以在应用之前查看忘掉内容的补丁，并且跳过已经应用过的补丁。</p>
+
+<p>当与你的特性相关的所有补丁都被应用并提交到分支中之后，你就可以选择是否以及如何将其整合到更长期的分支中去了。</p>
+</section></section><section data-type="sect2" id="_checking_out_remotes"><h3 id="检出远程分支"><a href="#检出远程分支">检出远程分支</a></h3>
+
+<p><a data-type="indexterm" data-primary="branches" data-secondary="remote" id="id-pBzT8"></a>
+如果你的贡献者建立了自己的版本库，并且向其中推送了若干修改，之后将版本库的 URL 和包含更改的远程分支发送给你，那么你可以将其添加为一个远程分支，并且在本地进行合并。</p>
+
+<p>比如 Jessica 向你发送了一封电子邮件，内容是在她的版本库中的 <code>ruby-client</code> 分支中有一个很不错的新功能，为了测试该功能，你可以将其添加为一个远程分支，并在本地检出：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git remote add jessica git://github.com/jessica/myproject.git
+<code class="gp">$</code> git fetch jessica
+<code class="gp">$</code> git checkout -b rubyclient jessica/ruby-client
+</pre>
+
+<p>如果她再次发邮件说另一个分支中包含另一个优秀功能，因为之前已经设置好远程分支了，你就可以直接进行抓取及检出操作。</p>
+
+<p>这对于与他人长期合作工作来说很有用。
+而对于提交补丁频率较小的贡献者，相对于每个人维护自己的服务器，不断增删远程分支的做法，使用电子邮件来接收可能会比较省时。
+况且你也不会想要加入数百个只提供一两个补丁的远程分支。
+然而，脚本和托管服务在一定程度上可以简化这些工作——这很大程度上依赖于你和你的贡献者开发的方式。</p>
+
+<p>这种方式的另一种优点是你可以同时得到提交历史。
+虽然代码合并中可能会出现问题，但是你能获知他人的工作是基于你的历史中的具体哪一个位置；所以Git 会默认进行三方合并，不需要提供 <code>-3</code> 选项，你也不需要担心补丁是基于某个你无法访问的提交生成的。</p>
+
+<p>对于非持续性的合作，如果你依然想要以这种方式拉取数据的话，你可以对远程版本库的 URL 调用 <code>git pull</code> 命令。
+这会执行一个一次性的抓取，而不会将该 URL 存为远程引用：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git pull https://github.com/onetimeguy/project
+<code class="go">From https://github.com/onetimeguy/project</code>
+<code class="go"> * branch            HEAD       -&gt; FETCH_HEAD</code>
+<code class="go">Merge made by recursive.</code>
+</pre>
+</section><section data-type="sect2" id="_what_is_introduced"><h3 id="确定引入了哪些东西"><a href="#确定引入了哪些东西">确定引入了哪些东西</a></h3>
+
+<p><a data-type="indexterm" data-primary="branches" data-secondary="diffing" id="id-BW0t2"></a>
+你已经有了一个包含其他人贡献的特性分支。
+现在你可以决定如何处理它们了。
+本节回顾了若干命令，以便于你检查若将其合并入主分支所引入的更改。</p>
+
+<p>一般来说，你应该对该分支中所有 master 分支尚未包含的提交进行检查。
+通过在分支名称前加入 <code>--not</code> 选项，你可以排除 master 分支中的提交。
+这和我们之前使用的 <code>master..contrib</code> 格式是一样的。
+假设贡献者向你发送了两个补丁，为此你创建了一个名叫 <code>contrib</code> 的分支并在其上应用补丁，你可以运行：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log contrib --not master
+<code class="go">commit 5b6235bd297351589efc4d73316f0a68d484f118</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Fri Oct 24 09:53:59 2008 -0700</code>
+
+<code class="go">    seeing if this helps the gem</code>
+
+<code class="go">commit 7482e0d16d04bea79d0dba8988cc78df655f16a0</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Mon Oct 22 19:38:36 2008 -0700</code>
+
+<code class="go">    updated the gemspec to hopefully work better</code>
+</pre>
+
+<p>如果要查看每次提交所引入的具体修改，你应该记得可以给 <code>git log</code> 命令传递 <code>-p</code> 选项，这样它会在每次提交后面附加对应的差异（diff）。</p>
+
+<p>而要查看将该特性分支与另一个分支合并的完整 diff，你可能需要使用一个有些奇怪的技巧来得到正确的结果。
+你可能会想到这种方式：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff master
+</pre>
+
+<p>这个命令会输出一个 diff，但它可能并不是我们想要的。
+如果在你创建特性分支之后，<code>master</code> 分支向前移动了，你获得的结果就会显得有些不对。
+这是因为 Git 会直接将该特性分支与 <code>master</code> 分支的最新提交快照进行比较。
+比如说你在 <code>master</code> 分支中向某个文件添加了一行内容，那么直接比对最新快照的结果看上去就像是你在特性分支中将这一行删除了。</p>
+
+<p>如果 <code>master</code> 分支是你的特性分支的直接祖先，其实是没有任何问题的；但是一旦两个分支的历史产生了分叉，上述比对产生的 diff 看上去就像是将特性分支中所有的新东西加入，并且将 <code>master</code> 分支所独有的东西删除。</p>
+
+<p>而你真正想要检查的东西，实际上仅仅是特性分支所添加的更改——也就是该分支与 master 分支合并所要引入的工作。
+要达到此目的，你需要让 Git 对特性分支上最新的提交与该分支与 master 分支的首个公共祖先进行比较。</p>
+
+<p>从技术的角度讲，你可以以手工的方式找出公共祖先，并对其显式运行 diff 命令：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge-base contrib master
+<code class="go">36c7dba2c95e6bbb78dfa822519ecfec6e1ca649</code>
+<code class="gp">$</code> git diff 36c7db
+</pre>
+
+<p>然而，这种做法比较麻烦，所以 Git 提供了一种比较便捷的方式：三点语法。
+对于 <code>diff</code> 命令来说，你可以通过把 <code>...</code> 置于另一个分支名后来对该分支的最新提交与两个分支的共同祖先进行比较：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff master...contrib
+</pre>
+
+<p>该命令仅会显示自当前特性分支与 master 分支的共同祖先起，该分支中的工作。
+这个语法很有用，应该牢记。</p>
+</section><section data-type="sect2" id="-om6S5"><h3 id="将贡献的工作整合进来"><a href="#将贡献的工作整合进来">将贡献的工作整合进来</a></h3>
+
+<p><a data-type="indexterm" data-primary="integrating work" id="id-MDDTy"></a>
+当特性分支中所有的工作都已经准备好整合进入更靠近主线的分支时，接下来的问题就是如何进行整合了。
+此外，还有一个问题是，你想使用怎样的总体工作流来维护你的项目？
+你的选择有很多，我们会介绍其中的一部分。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="-a1yCp"><h4>合并工作流</h4>
+
+<p><a data-type="indexterm" data-primary="workflows" data-secondary="merging" id="id-bxAUl"></a>
+一种非常简单的工作流会直接将工作合并进入 <code>master</code> 分支。
+在这种情况下，<code>master</code> 分支包含的代码是基本稳定的。
+当你完成某个特性分支的工作，或审核通过了其他人所贡献的工作时，你会将其合并进入 master 分支，之后将特性分支删除，如此反复。
+如果我们的版本库包含类似 <a data-type="xref" href="ch00/merwf_a">Figure 5-20</a> 的两个名称分别为 <code>ruby_client</code> 和 <code>php_client</code> 的分支，并且我们先合并 <code>ruby_client</code> 分支，之后合并 <code>php_client</code> 分支，那么提交历史最后会变成 <a data-type="xref" href="ch00/merwf_b">Figure 5-21</a> 的样子。</p>
+
+<figure id="merwf_a"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-1.png" alt="包含若干特性分支的提交历史。"><figcaption><span class="label">Figure 5-20. </span>包含若干特性分支的提交历史。</figcaption></figure><figure id="merwf_b"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-2.png" alt="合并特性分支之后。"><figcaption><span class="label">Figure 5-21. </span>合并特性分支之后。</figcaption></figure><p>这也许是最简单的工作流了，但是当项目更大，或更稳定，你对自己所引入的工作更加在意时，它可能会带来问题。</p>
+
+<p>如果你的项目非常重要，你可能会使用两阶段合并循环。
+在这种情况下，你会维护两个长期分支，分别是 <code>master</code> 和 <code>develop</code>，<code>master</code> 分支只会在一个非常稳定的版本发布时才会更新，而所有的新代码会首先整合进入 <code>develop</code> 分支。
+你定期将这两个分支推送到公共版本库中。
+每次需要合并新的特性分支时（<a data-type="xref" href="ch00/merwf_c">Figure 5-22</a>），你都应该合并进入 <code>develop</code> 分支（<a data-type="xref" href="ch00/merwf_d">Figure 5-23</a>）；当打标签发布的时候，你会将 <code>master</code> 分支快进到已经稳定的 <code>develop</code> 分支（<a data-type="xref" href="ch00/merwf_e">Figure 5-24</a>）。</p>
+
+<figure id="merwf_c"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-3.png" alt="合并特性分支前。"><figcaption><span class="label">Figure 5-22. </span>合并特性分支前。</figcaption></figure><figure id="merwf_d"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-4.png" alt="合并特性分支后。"><figcaption><span class="label">Figure 5-23. </span>合并特性分支后。</figcaption></figure><figure id="merwf_e"><img src="/book/en/v2/book/05-distributed-git/images/merging-workflows-5.png" alt="一次发布之后。"><figcaption><span class="label">Figure 5-24. </span>一次发布之后。</figcaption></figure><p>这样当人们克隆你项目的版本库后，既可以检出 master 分支以构建最新的稳定版本并保持更新，也可以检出包含更多新东西的 develop 分支。
+你也可以扩展这个概念，维护一个将所有工作合并到一起的整合分支。
+当该分支的代码稳定并通过测试之后，将其合并进入 develop 分支；经过一段时间，确认其稳定之后，将其以快进的形式并入 master 分支。</p>
+</section><section data-type="sect3" id="-oM6H5"><h4>大项目合并工作流</h4>
+
+<p><a data-type="indexterm" data-primary="workflows" data-secondary="merging (large)" id="id-MlDsy"></a>
+Git 项目包含四个长期分支：<code>master</code>、<code>next</code>，用于新工作的 <code>pu</code>（proposed updates）和用于维护性向后移植工作（maintenance backports）的 <code>maint</code> 分支。
+贡献者的新工作会以类似之前所介绍的方式收入特性分支中（见 <a data-type="xref" href="ch00/merwf_f">Figure 5-25</a>）。
+之后对特性分支进行测试评估，检查其是否已经能够合并，或者仍需要更多工作。
+安全的特性分支会被合并入 <code>next</code> 分支，之后该分支会被推送使得所有人都可以尝试整合到一起的特性。</p>
+
+<figure id="merwf_f"><img src="/book/en/v2/book/05-distributed-git/images/large-merges-1.png" alt="管理复杂的一系列接收贡献的平行特性分支。"><figcaption><span class="label">Figure 5-25. </span>管理复杂的一系列接收贡献的平行特性分支。</figcaption></figure><p>如果特性分支需要更多工作，它则会被并入 <code>pu</code> 分支。
+当它们完全稳定之后，会被再次并入 <code>master</code> 分支。
+这意味着 <code>master</code> 分支始终在进行快进，<code>next</code> 分支偶尔会被变基，而 <code>pu</code> 分支的变基比较频繁：</p>
+
+<figure id="id-B0rTN"><img src="/book/en/v2/book/05-distributed-git/images/large-merges-2.png" alt="将贡献的特性分支并入长期整合分支。"><figcaption><span class="label">Figure 5-26. </span>将贡献的特性分支并入长期整合分支。</figcaption></figure><p>当特性分支最终被并入 <code>master</code> 分支后，便会被从版本库中删除掉。
+Git 项目还有一个从上一次发布中派生出来的 <code>maint</code> 分支来提供向后移植过来的补丁以供发布维护更新。
+因此，当你克隆 Git 的版本库之后，就会有四个可分别评估该项目开发的不同阶段的可检出的分支，检出哪个分支，取决于你需要多新的版本，或者你想要如何进行贡献；对于维护者来说，这套结构化的工作流能帮助它们审查新的贡献。</p>
+</section><section data-type="sect3" id="_rebase_cherry_pick"><h4>变基与拣选工作流</h4>
+
+<p><a data-type="indexterm" data-primary="workflows" data-secondary="rebasing and cherry-picking" id="id-X8MI4"></a>
+为了保持线性的提交历史，有些维护者更喜欢在 master 分支上对贡献过来的工作进行变基和拣选，而不是直接将其合并。
+当你完成了某个特性分支中的工作，并且决定要将其整合的时候，你可以在该分支中运行变基命令，在当前 master 分支（或者是 <code>develop</code> 等分支）的基础上重新构造修改。
+如果结果理想的话，你可以快进 <code>master</code> 分支，最后得到一个线性的项目提交历史。</p>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="cherry-pick" id="id-EPacL"></a>
+另一种将引入的工作转移到其他分支的方法是拣选。
+Git 中的拣选类似于对特定的某次提交的变基。
+它会提取该提交的补丁，之后尝试将其重新应用到当前分支上。
+这种方式在你只想引入特性分支中的某个提交，或者特性分支中只有一个提交，而你不想运行变基时很有用。
+举个例子，假设你的项目提交历史类似：</p>
+
+<figure id="id-N6rTG"><img src="/book/en/v2/book/05-distributed-git/images/rebasing-1.png" alt="拣选之前的示例历史。"><figcaption><span class="label">Figure 5-27. </span>拣选之前的示例历史。</figcaption></figure><p>如果你希望将提交 <code>e43a6</code> 拉取到 master 分支，你可以运行：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf
+<code class="go">Finished one cherry-pick.</code>
+<code class="go">[master]: created a0a41a9: "More friendly message when locking the index fails."</code>
+<code class="go"> 3 files changed, 17 insertions(+), 3 deletions(-)</code>
+</pre>
+
+<p>这样会拉取和 <code>e43a6</code> 相同的更改，但是因为应用的日期不同，你会得到一个新的提交 SHA-1 值。
+现在你的历史会变成这样：</p>
+
+<figure id="id-gjmTj"><img src="/book/en/v2/book/05-distributed-git/images/rebasing-2.png" alt="拣选特性分支中的一个提交后的历史。"><figcaption><span class="label">Figure 5-28. </span>拣选特性分支中的一个提交后的历史。</figcaption></figure><p>现在你可以删除这个特性分支，并丢弃不想拉入的提交。</p>
+</section><section data-type="sect3" id="rerere-WJJFe"><h4>Rerere</h4>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="rerere" id="id-LJEta"></a><a data-type="indexterm" data-primary="rerere" id="id-dMjtW"></a>
+如果你在进行大量的合并或变基，或维护一个长期的特性分支，Git 提供的一个叫做“rerere”的功能会有一些帮助。</p>
+
+<p>Rerere 是“重用已记录的冲突解决方案（reuse recorded resolution）”的意思——它是一种简化冲突解决的方法。
+当启用 rerere 时，Git 将会维护一些成功合并之前和之后的镜像，当 Git 发现之前已经修复过类似的冲突时，便会使用之前的修复方案，而不需要你的干预。</p>
+
+<p>这个功能包含两个部分：一个配置选项和一个命令。
+其中的配置选项是 <code>rerere.enabled</code>，把它放在全局配置中就可以了：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global rerere.enabled <code class="nb">true</code>
+</pre>
+
+<p>现在每当你进行一次需要解决冲突的合并时，解决方案都会被记录在缓存中，以备之后使用。</p>
+
+<p>如果你需要和 rerere 的缓存交互，你可以使用 <code>git rerere</code> 命令。
+当单独调用它时，Git 会检查解决方案数据库，尝试寻找一个和当前任一冲突相关的匹配项并解决冲突（尽管当 <code>rerere.enabled</code> 被设置为 <code>true</code> 时会自动进行）。
+它也有若干子命令，可用来查看记录项，删除特定解决方案和清除缓存全部内容等。
+我们将在 <a data-type="xref" href="1-git-tools/_rerere">Rerere</a> 中详细探讨。</p>
+</section></section><section data-type="sect2" id="_tagging_releases"><h3 id="为发布打标签"><a href="#为发布打标签">为发布打标签</a></h3>
+
+<p><a data-type="indexterm" data-primary="tags" id="id-KvYU2"></a><a data-type="indexterm" data-primary="tags" data-secondary="signing" id="id-nKgfy"></a>
+当你决定进行一次发布时，你可能想要留下一个标签，这样在之后的任何一个提交点都可以重新创建该发布。
+你在 <a data-type="xref" href="1-git-basics/_git_basics_chapter">Git 基础</a> 中已经了解了创建新标签的过程。
+作为一个维护者，如果你决定要为标签签名的话，打标签的过程应该是这样子的：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tag -s v1.5 -m <code class="s1">'my signed 1.5 tag'</code>
+<code class="go">You need a passphrase to unlock the secret key for</code>
+<code class="go">user: "Scott Chacon &lt;schacon@gmail.com&gt;"</code>
+<code class="go">1024-bit DSA key, ID F721C45A, created 2009-02-09</code>
+</pre>
+
+<p>如果你为标签签名了，你可能会遇到分发用来签名的 PGP 公钥的问题。
+Git 项目的维护者已经解决了这一问题，其方法是在版本库中以 blob 对象的形式包含他们的公钥，并添加一个直接指向该内容的标签。
+要完成这一任务，首先你可以通过运行 <code>gpg --list-keys</code> 找出你所想要的 key：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> gpg --list-keys
+<code class="go">/Users/schacon/.gnupg/pubring.gpg</code>
+<code class="go">---------------------------------</code>
+<code class="go">pub   1024D/F721C45A 2009-02-09 [expires: 2010-02-09]</code>
+<code class="go">uid                  Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">sub   2048g/45D02282 2009-02-09 [expires: 2010-02-09]</code>
+</pre>
+
+<p>之后你可以通过导出 key 并通过管道传递给 <code>git hash-object</code> 来直接将 key 导入到 Git 的数据库中，<code>git hash-object</code> 命令会向 Git 中写入一个包含其内容的新 blob 对象，并向你返回该 blob 对象的 SHA-1 值：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> gpg -a --export F721C45A <code class="p">|</code> git <code class="nb">hash</code>-object -w --stdin
+<code class="go">659ef797d181633c87ec71ac3f9ba29fe5775b92</code>
+</pre>
+
+<p>既然 Git 中已经包含你的 key 的内容了，你就可以通过指定由 <code>hash-object</code> 命令给出的新 SHA-1 值来创建一个直接指向它的标签：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tag -a maintainer-pgp-pub 659ef797d181633c87ec71ac3f9ba29fe5775b92
+</pre>
+
+<p>如果你运行 <code>git push --tags</code> 命令，那么 <code>maintainer-pgp-pub</code> 标签将会被共享给所有人。
+需要校验标签的人可以通过从数据库中直接拉取 blob 对象并导入到 GPG 中来导入 PGP key：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git show maintainer-pgp-pub <code class="p">|</code> gpg --import
+</pre>
+
+<p>人们可以使用这个 key 来校验所有由你签名的标签。
+另外，如果你在标签信息中包含了一些操作说明，用户可以通过运行 <code>git show &lt;tag&gt;</code> 来获取更多关于标签校验的说明。</p>
+</section><section data-type="sect2" id="_build_number"><h3 id="生成一个构建号"><a href="#生成一个构建号">生成一个构建号</a></h3>
+
+<p><a data-type="indexterm" data-primary="build numbers" id="id-Wv5c6"></a><a data-type="indexterm" data-primary="git commands" data-secondary="describe" id="id-YanuK"></a>
+Git 中不存在随每次提交递增的“v123”之类的数字序列，如果你想要为提交附上一个可读的名称，可以对其运行 <code>git describe</code> 命令。
+Git 将会给出一个字符串，它由最近的标签名、自该标签之后的提交数目和你所描述的提交的部分 SHA-1 值构成：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git describe master
+<code class="go">v1.6.2-rc1-20-g8c5b85c</code>
+</pre>
+
+<p>这样你在导出一个快照或构建时，可以给出一个便于人们理解的命名。
+实际上，如果你的 Git 是从 Git 自己的版本库克隆下来并构建的，那么 <code>git --version</code> 命令给出的结果是与此类似的。
+如果你所描述的提交自身就有一个标签，那么它将只会输出标签名，没有后面两项信息。</p>
+
+<p>注意 <code>git describe</code> 命令只适用于有注解的标签（即使用 <code>-a</code> 或 <code>-s</code> 选项创建的标签），所以如果你在使用 <code>git describe</code> 命令的话，为了确保能为标签生成合适的名称，打发布标签时都应该采用加注解的方式。
+你也可以使用这个字符串来调用 checkout 或 show 命令，但是这依赖于其末尾的简短 SHA-1 值，因此不一定一直有效。
+比如，最近 Linux 内核为了保证 SHA-1 值对象的唯一性，将其位数由 8 位扩展到了 10 位，导致以前的 <code>git describe</code> 输出全部失效。</p>
+</section><section data-type="sect2" id="_preparing_release"><h3 id="准备一次发布"><a href="#准备一次发布">准备一次发布</a></h3>
+
+<p><a data-type="indexterm" data-primary="releasing" id="id-ZE1FX"></a><a data-type="indexterm" data-primary="git commands" data-secondary="archive" id="id-XkGS4"></a>
+现在你可以发布一个构建了。
+其中一件事情就是为那些不使用 Git 的可怜包们创建一个最新的快照归档。
+使用 <code>git archive</code> 命令完成此工作：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git archive master --prefix<code class="o">=</code><code class="s1">'project/'</code> <code class="p">|</code> gzip &gt; <code class="sb">`</code>git describe master<code class="sb">`</code>.tar.gz
+<code class="gp">$</code> ls *.tar.gz
+<code class="go">v1.6.2-rc1-20-g8c5b85c.tar.gz</code>
+</pre>
+
+<p>如果有人将这个压缩包解压，他就可以得到你的项目文件夹的最新快照。
+你也可以以类似的方式创建一个 zip 压缩包，但此时你应该向 <code>git archive</code> 命令传递 <code>--format=zip</code> 选项：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git archive master --prefix<code class="o">=</code><code class="s1">'project/'</code> --format<code class="o">=</code>zip &gt; <code class="sb">`</code>git describe master<code class="sb">`</code>.zip
+</pre>
+
+<p>现在你有了本次发布的一个 tar 包和一个 zip 包，可以将其上传到网站或以电子邮件的形式发送给人们。</p>
+</section><section data-type="sect2" id="_the_shortlog"><h3 id="制作提交简报"><a href="#制作提交简报">制作提交简报</a></h3>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="shortlog" id="id-dDyUW"></a>
+现在是时候通知邮件列表里那些好奇你的项目发生了什么的人了。
+使用 <code>git shortlog</code> 命令可以快速生成一份包含从上次发布之后项目新增内容的修改日志（changelog）类文档。
+它会对你给定范围内的所有提交进行总结；比如，你的上一次发布名称是 v1.0.1，那么下面的命令可以给出上次发布以来所有提交的总结：</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git shortlog --no-merges master --not v1.0.1
+<code class="go">Chris Wanstrath (8):</code>
+<code class="go">      Add support for annotated tags to Grit::Tag</code>
+<code class="go">      Add packed-refs annotated tag support.</code>
+<code class="go">      Add Grit::Commit#to_patch</code>
+<code class="go">      Update version and History.txt</code>
+<code class="go">      Remove stray `puts`</code>
+<code class="go">      Make ls_tree ignore nils</code>
+
+<code class="go">Tom Preston-Werner (4):</code>
+<code class="go">      fix dates in history</code>
+<code class="go">      dynamic version method</code>
+<code class="go">      Version bump to 1.0.2</code>
+<code class="go">      Regenerated gemspec for version 1.0.2</code>
+</pre>
+
+<p>这份整洁的总结包括了自 v1.0.1 以来的所有提交，并且已经按照作者分好组，你可以通过电子邮件将其直接发送到列表中。</p>
+</section><div id="nav"><a href="/book/zh/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E5%90%91%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE">prev</a> | <a href="/book/zh/v2/%E5%88%86%E5%B8%83%E5%BC%8F-Git-%E6%80%BB%E7%BB%93">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

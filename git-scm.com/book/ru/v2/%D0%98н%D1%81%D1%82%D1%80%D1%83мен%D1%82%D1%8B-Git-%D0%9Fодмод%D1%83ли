@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":207,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Подмодули</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ru/2015-08-30-f2909/progit-ru.787.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Введение</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">О системе контроля версий</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D1%80%D0%B0%D1%82%D0%BA%D0%B0%D1%8F-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F-Git">Краткая история Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git">Основы Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0">Командная строка</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git">Установка Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git">Первоначальная настройка Git</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%3F">Как получить помощь?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Основы Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Git-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">Создание Git-репозитория</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9">Запись изменений в репозиторий</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2">Просмотр истории коммитов</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D1%8B">Операции отмены</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-Working-with-Remotes">Working with Remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Работа с метками</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BD%D0%B8%D0%BC%D1%8B-%D0%B2-Git">Псевдонимы в Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">Ветвление в Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B2-%D0%B4%D0%B2%D1%83%D1%85-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%85">О ветвлении в двух словах</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Основы ветвления и слияния</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8">Управление ветками</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Branching-Workflows">Branching Workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%A3%D0%B4%D0%B0%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%BA%D0%B8">Удалённые ветки</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ru/v2/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%98%D1%82%D0%BE%D0%B3%D0%B8">Итоги</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Git на сервере</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B">Протоколы</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Установка Git на сервер</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-SSH-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0">Генерация открытого SSH ключа</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80">Настраиваем сервер</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD">Git-демон</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%A3%D0%BC%D0%BD%D1%8B%D0%B9-HTTP">Умный HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-Git-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3">Git-хостинг</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ru/v2/Git-%D0%BD%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B5-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Распределенный Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Distributed-Workflows">Distributed Workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ru/v2/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ru/v2/GitHub-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D0%B9-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8">Настройка и конфигурация учетной записи</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ru/v2/GitHub-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">Внесение собственного вклада в проекты</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ru/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ru/v2/GitHub-Managing-an-organization">Managing an organization</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ru/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ru/v2/GitHub-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Инструменты Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%92%D1%8B%D0%B1%D0%BE%D1%80-%D1%80%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8">Выбор ревизии</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Интерактивное индексирование</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%B8%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0">Прибережение и очистка</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%B2%D0%B0%D1%88%D0%B5%D0%B9-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B">Подпись результатов вашей работы</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B8%D1%81%D0%BA">Поиск</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%98%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8">Исправление истории</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%82%D0%B0%D0%B9%D0%BD-reset">Раскрытие тайн reset</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5">Продвинутое слияние</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">Обнаружение ошибок с помощью Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">Подмодули</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">Создание пакетов</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0">Замена</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Хранилище учетных данных</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Настройка Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Configuration">Git Configuration</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ru/v2/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git и другие системы контроля версий</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-Git-%D0%BA%D0%B0%D0%BA-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82">Git как клиент</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%9C%D0%B8%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0-Git">Миграция на Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ru/v2/Git-%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Git изнутри</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%B8-%D0%A4%D0%B0%D1%80%D1%84%D0%BE%D1%80">Сантехника и Фарфор</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-Git">Объекты Git</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B2-Git">Ссылки в Git</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-Pack-%D1%84%D0%B0%D0%B9%D0%BB%D1%8B">Pack-файлы</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA">Спецификации ссылок</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Протоколы передачи данных</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%BC-%D0%B8-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">Уход за репозиторием и восстановление данных</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B">Переменные среды</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ru/v2/Git-%D0%B8%D0%B7%D0%BD%D1%83%D1%82%D1%80%D0%B8-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Git в других окружениях</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B">Графические интерфейсы</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio">Git в Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Eclipse">Git в Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Bash">Git в Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Zsh">Git в Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Powershell">Git в Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-%D0%97%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Заключение</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Встраивание Git’а в ваши приложения</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Git-%D0%B8%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">Git из командной строки</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ru/v2/%D0%92%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Git%E2%80%99%D0%B0-%D0%B2-%D0%B2%D0%B0%D1%88%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Команды Git</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F">Настройка и конфигурация</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9A%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B5%D0%B2">Клонирование и создание репозиториев</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Основные команды</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F">Ветвление и слияния</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2">Совместная работа и обновление проектов</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">Осмотр и сравнение</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0">Отладка</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9">Внесение исправлений</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BE%D1%87%D1%82%D1%8B">Работа с помощью электронной почты</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B">Внешние системы</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Администрирование</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ru/v2/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9D%D0%B8%D0%B7%D0%BA%D0%BE%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B">Низкоуровневые команды</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>7.11 Инструменты Git - Подмодули</h1>
+  <div><a id="_git_submodules"></a><h2>Подмодули</h2>
+
+<p>Часто при работе над одним проектом, возникает необходимость использовать в нем другой проект.
+Возможно, это библиотека, разрабатываемая сторонними разработчиками или вами, но в рамках отдельного проекта, и используемая в нескольких других проектах.
+Типичная проблема, возникающая при этом – вы хотите продолжать работать с двумя проектами по отдельности, но при этом использовать один из них в другом.</p>
+
+<p>Приведем пример.
+Предположим, вы разрабатываете веб-сайт и создаете ленту в формате Atom.
+Вместо написания собственного генератор Atom, вы решили использовать библиотеку.
+Вы, вероятно, должны либо включить нужный код из разделяемой библиотеки, например, модуля CPAN или Ruby gem, либо скопировать исходный код библиотеки в ваш проект.
+Проблема с использованием библиотеки состоит в сложной адаптации библиотеки под свои нужны и часто более сложным ее распространением, так как вам нужно быть уверенным, что каждому клиенту доступна такая библиотека.
+При включении кода библиотеки в свой проект проблема будет заключаться в сложном объединении ваших собственных изменений с изменениями в вышестоящем репозитории.</p>
+
+<p>Git решает эту проблему, предоставляя функциональность подмодулей.
+Подмодули позволяют вам сохранить один Git-репозиторий как поддиректорию другого Git-репозитория.
+Это дает вам возможность склонировать в ваш проект другой репозиторий, но фиксации при этом хранить отдельно.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="_starting_submodules"><h3 id="Начало-работы-с-подмодулями"><a href="#Начало-работы-с-подмодулями">Начало работы с подмодулями</a></h3>
+
+<p>Далее мы рассмотрим процесс разработки простого проекта, разбитого на один главный проект и несколько подпроектов.</p>
+
+<p>Давайте начнем с добавления существующего Git-репозитория, в качестве подмодуля репозитория, в котором мы работаем. Для добавления нового подмодуля используете команду <code>git submodule add</code> с URL проекта, который вы хотите начать отслеживать. В данном примере мы добавим библиотеку “DbConnector”.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule add https://github.com/chaconinc/DbConnector
+<code class="go">Cloning into 'DbConnector'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code>
+</pre>
+
+<p>По умолчанию подмодули добавляют подпроекты в директории, называемые так же, как и соответствующие репозитории, в нашем примере – “DbConnector”.</p>
+
+<p>Если в данный момент вы выполните <code>git status</code>, то заметите несколько моментов.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Changes to be committed:</code>
+<code class="go">  (use "git reset HEAD &lt;file&gt;..." to unstage)</code>
+
+<code class="go">	new file:   .gitmodules</code>
+<code class="go">	new file:   DbConnector</code>
+</pre>
+
+<p>Во-первых, вы должны заметить новый файл <code>.gitmodules</code>.
+Это конфигурационный файл, в котором хранится соответствие между URL проекта и локальной поддиректорией, в которую вы его выкачали:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat .gitmodules
+<code class="go">[submodule "DbConnector"]</code>
+<code class="go">	path = DbConnector</code>
+<code class="go">	url = https://github.com/chaconinc/DbConnector</code>
+</pre>
+
+<p>Если у вас несколько подмодулей, то и в этом файле у вас будет несколько записей.
+Важно заметить, что этот файл добавлен под управление Git так же, как и другие ваши файлы, например, ваш файл <code>.gitignore</code>.
+Этот файл можно получить или отправить на сервер вместе с остальными файлами проекта.
+Благодаря этому другие люди, который клонируют ваш проект, узнают откуда взять подмодули проекта.</p>
+<div data-type="note" id="id-RVNYFJ">
+<h6>Note</h6>
+<p>Поскольку другие люди первым делом будут пытаться выполнить команды <code>clone</code>/<code>fetch</code> по URL, указанным в файле .gitmodules, старайтесь проверять, что URL будут им доступны. Например, если вы выполняете отправку по URL отличному от того, по которому другие люди получают данные, то используйте URL, к которому у других участников будет доступ. Вы можете изменить это значение локально только для себя с помощью команды <code>git config submodule.DbConnector.url PRIVATE_URL</code>.</p>
+</div>
+
+<p>Следующим элементом вывода <code>git status</code> является сама директория проекта.
+Если вы выполните <code>git diff</code> для нее, то увидите кое-что интересное:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --cached DbConnector
+<code class="go">diff --git a/DbConnector b/DbConnector</code>
+<code class="go">new file mode 160000</code>
+<code class="go">index 0000000..c3f01dc</code>
+<code class="go">--- /dev/null</code>
+<code class="go">+++ b/DbConnector</code>
+<code class="go">@@ -0,0 +1 @@</code>
+<code class="go">+Subproject commit c3f01dc8862123d317dd46284b05b6892c7b29bc</code>
+</pre>
+
+<p>Хотя <code>DbConnector</code> является поддиректорией вашей рабочей директории, Git распознает ее как подмодуль и не отслеживает ее содержимое, когда вы не находитесь в этой директории.
+Вместо этого, Git видит ее как некоторую отдельную фиксацию из этого репозитория.</p>
+
+<p>Если вам нужен немного более понятный вывод, то можете передать команде <code>git diff</code> опцию <code>--submodule</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff --cached --submodule
+<code class="go">diff --git a/.gitmodules b/.gitmodules</code>
+<code class="go">new file mode 100644</code>
+<code class="go">index 0000000..71fc376</code>
+<code class="go">--- /dev/null</code>
+<code class="go">+++ b/.gitmodules</code>
+<code class="go">@@ -0,0 +1,3 @@</code>
+<code class="go">+[submodule "DbConnector"]</code>
+<code class="go">+       path = DbConnector</code>
+<code class="go">+       url = https://github.com/chaconinc/DbConnector</code>
+<code class="go">Submodule DbConnector 0000000...c3f01dc (new submodule)</code>
+</pre>
+
+<p>Когда вы выполните фиксацию, то увидите следующее:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git commit -am <code class="s1">'added DbConnector module'</code>
+<code class="go">[master fb9093c] added DbConnector module</code>
+<code class="go"> 2 files changed, 4 insertions(+)</code>
+<code class="go"> create mode 100644 .gitmodules</code>
+<code class="go"> create mode 160000 DbConnector</code>
+</pre>
+
+<p>Обратите внимание на права доступа <code>160000</code> у <code>DbConnector</code>.
+Это специальные права доступа в Git, которые, по сути, означают, что вы сохраняете фиксацию как элемента каталога, а не как поддиректорию или файл.</p>
+</section><section data-type="sect2" id="_cloning_submodules"><h3 id="Клонирование-проекта-с-подмодулями"><a href="#Клонирование-проекта-с-подмодулями">Клонирование проекта с подмодулями</a></h3>
+
+<p>Далее вы рассмотрим клонирование проекта, содержащего подмодули.
+Когда вы клонируете такой проект, по умолчанию вы получите директории, содержащие подмодули, но ни одного файла в них не будет:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone https://github.com/chaconinc/MainProject
+<code class="go">Cloning into 'MainProject'...</code>
+<code class="go">remote: Counting objects: 14, done.</code>
+<code class="go">remote: Compressing objects: 100% (13/13), done.</code>
+<code class="go">remote: Total 14 (delta 1), reused 13 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (14/14), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="gp">$</code> <code class="nb">cd </code>MainProject
+<code class="gp">$</code> ls -la
+<code class="go">total 16</code>
+<code class="go">drwxr-xr-x   9 schacon  staff  306 Sep 17 15:21 .</code>
+<code class="go">drwxr-xr-x   7 schacon  staff  238 Sep 17 15:21 ..</code>
+<code class="go">drwxr-xr-x  13 schacon  staff  442 Sep 17 15:21 .git</code>
+<code class="go">-rw-r--r--   1 schacon  staff   92 Sep 17 15:21 .gitmodules</code>
+<code class="go">drwxr-xr-x   2 schacon  staff   68 Sep 17 15:21 DbConnector</code>
+<code class="go">-rw-r--r--   1 schacon  staff  756 Sep 17 15:21 Makefile</code>
+<code class="go">drwxr-xr-x   3 schacon  staff  102 Sep 17 15:21 includes</code>
+<code class="go">drwxr-xr-x   4 schacon  staff  136 Sep 17 15:21 scripts</code>
+<code class="go">drwxr-xr-x   4 schacon  staff  136 Sep 17 15:21 src</code>
+<code class="gp">$</code> <code class="nb">cd </code>DbConnector/
+<code class="gp">$</code> ls
+<code class="gp">$</code>
+</pre>
+
+<p>Директория <code>DbConnector</code> присутствует, но они пустая.
+Вы должны выполнить две команды: <code>git submodule init</code> – для инициализации локального конфигурационного файла, и <code>git submodule update</code> – для извлечения всех данных этого проекта и переключения на соответствующую фиксацию, указанную в вашем основном проекте.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule init
+<code class="go">Submodule 'DbConnector' (https://github.com/chaconinc/DbConnector) registered for path 'DbConnector'</code>
+<code class="gp">$</code> git submodule update
+<code class="go">Cloning into 'DbConnector'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="go">Submodule path 'DbConnector': checked out 'c3f01dc8862123d317dd46284b05b6892c7b29bc'</code>
+</pre>
+
+<p>Теперь ваша директория <code>DbConnector</code> находятся в точно таком же состоянии, как и ранее при выполнении фиксации.</p>
+
+<p>Однако, существует другой немного более просто вариант сделать тоже самое. Если вы передадите опцию <code>--recursive</code> команде <code>git clone</code>, то она автоматически инициализирует и обновит каждый подмодуль в этом репозитории.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clone --recursive https://github.com/chaconinc/MainProject
+<code class="go">Cloning into 'MainProject'...</code>
+<code class="go">remote: Counting objects: 14, done.</code>
+<code class="go">remote: Compressing objects: 100% (13/13), done.</code>
+<code class="go">remote: Total 14 (delta 1), reused 13 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (14/14), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="go">Submodule 'DbConnector' (https://github.com/chaconinc/DbConnector) registered for path 'DbConnector'</code>
+<code class="go">Cloning into 'DbConnector'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code>
+<code class="go">Submodule path 'DbConnector': checked out 'c3f01dc8862123d317dd46284b05b6892c7b29bc'</code>
+</pre>
+</section><section data-type="sect2" id="rabota-nad-proektom-s-podmodulyami-bKqqix"><h3 id="Работа-над-проектом-с-подмодулями"><a href="#Работа-над-проектом-с-подмодулями">Работа над проектом с подмодулями</a></h3>
+
+<p>Теперь у нас есть копия проекта с подмодулями. Давайте рассмотрим, как мы будет работать совместно с нашими коллегами над основным проектом и над подпроектом.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="poluchenie-izmenenij-iz-vyshestoyashego-repozitoriya-Vlqghp"><h4>Получение изменений из вышестоящего репозитория</h4>
+
+<p>Простейший вариант использования подмодулей в проекте состоит в том, что вы просто получаете сам подпроект и хотите периодически получать обновления, но в своей копии проекта ничего не изменяете. Давай рассмотрим этот простой пример.</p>
+
+<p>Если вы хотите проверить наличие изменений в подмодуле, вы можете перейти в его директорию, выполнить <code>git fetch</code> и затем <code>git merge</code> для обновления локальной версии из вышестоящего репозитория.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   c3f01dc..d0354fc  master     -&gt; origin/master</code>
+<code class="gp">$</code> git merge origin/master
+<code class="go">Updating c3f01dc..d0354fc</code>
+<code class="go">Fast-forward</code>
+<code class="go"> scripts/connect.sh | 1 +</code>
+<code class="go"> src/db.c           | 1 +</code>
+<code class="go"> 2 files changed, 2 insertions(+)</code>
+</pre>
+
+<p>Теперь если вы вернетесь в основной проект и выполните <code>git diff --submodule</code>, то сможете увидеть, что подмодуль обновился, и получить список новых фиксаций. Если вы не хотите каждый раз при вызове <code>git diff</code> указывать опцию <code>--submodule</code>, то можете установить такой формат вывода по умолчанию, задав параметру <code>diff.submodule</code> значение “log”.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global diff.submodule log
+<code class="gp">$</code> git diff
+<code class="go">Submodule DbConnector c3f01dc..d0354fc:</code>
+<code class="go">  &gt; more efficient db routine</code>
+<code class="go">  &gt; better connection routine</code>
+</pre>
+
+<p>Если в данный момент вы создадите фиксацию, то таким образом сделаете доступным новый код в подмодуле для других людей.</p>
+
+<p>Если вы не хотите вручную извлекать и сливать изменения в поддиректорию, то для вас существует более простой способ сделать тоже самое. Если вы выполните <code>git submodule update --remote</code>, то Git сам перейдет в ваши подмодули, заберет изменения и обновит их для вас.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote DbConnector
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (2/2), done.</code>
+<code class="go">remote: Total 4 (delta 2), reused 4 (delta 2)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   3f19983..d0354fc  master     -&gt; origin/master</code>
+<code class="go">Submodule path 'DbConnector': checked out 'd0354fc054692d3906c85c3af05ddce39a1c0644'</code>
+</pre>
+
+<p>Эта команда по умолчанию предполагает, что вы хотите обновить локальную копию до состояние ветки <code>master</code> из репозитория подмодуля. Однако, по желанию вы можете изменить это. Например, если вы хотите, чтобы подмодуль DbConnector отслеживал ветку “stable” репозитория, то вы можете установить это либо в файле <code>.gitmodules</code> (тогда и другие люди также будут отслеживать эту ветку), либо в вашем локальном файле <code>.git/config</code>. Давайте настроим это в файле <code>.gitmodules</code>:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config -f .gitmodules submodule.DbConnector.branch stable
+
+<code class="gp">$</code> git submodule update --remote
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (2/2), done.</code>
+<code class="go">remote: Total 4 (delta 2), reused 4 (delta 2)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   27cf5d3..c87d55d  stable -&gt; origin/stable</code>
+<code class="go">Submodule path 'DbConnector': checked out 'c87d55d4c6d4b05ee34fbc8cb6f7bf4585ae6687'</code>
+</pre>
+
+<p>Если вы уберете <code>-f .gitmodules</code>, то команда сделает изменения локально только у вас, но, кажется, имеет смысл всё же отправлять эту информацию в репозиторий, так чтобы и все остальные участники имели к ней доступ.</p>
+
+<p>Если в данный момент мы выполним <code>git status</code>, то Git покажет нам, что у нас есть “новые фиксации” в подмодуле.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">  modified:   .gitmodules</code>
+<code class="go">  modified:   DbConnector (new commits)</code>
+
+<code class="go">no changes added to commit (use "git add" and/or "git commit -a")</code>
+</pre>
+
+<p>Если вы установите в настройках параметр <code>status.submodulesummary</code>, то Git будет также отображать краткое резюме об изменениях в ваших подмодулях:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config status.submodulesummary 1
+
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Changes not staged for commit:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to update what will be committed)</code>
+<code class="go">  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)</code>
+
+<code class="go">	modified:   .gitmodules</code>
+<code class="go">	modified:   DbConnector (new commits)</code>
+
+<code class="go">Submodules changed but not updated:</code>
+
+<code class="go">* DbConnector c3f01dc...c87d55d (4):</code>
+<code class="go">  &gt; catch non-null terminated lines</code>
+</pre>
+
+<p>Если сейчас вы выполните <code>git diff</code>, то сможете увидеть, что изменился наш файл <code>.gitmodules</code>, а также, что существует несколько полученных вами фиксаций, которые готовы для фиксации в проекте вашего подмодуля.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --git a/.gitmodules b/.gitmodules</code>
+<code class="go">index 6fc0b3d..fd1cc29 100644</code>
+<code class="go">--- a/.gitmodules</code>
+<code class="go">+++ b/.gitmodules</code>
+<code class="go">@@ -1,3 +1,4 @@</code>
+<code class="go"> [submodule "DbConnector"]</code>
+<code class="go">        path = DbConnector</code>
+<code class="go">        url = https://github.com/chaconinc/DbConnector</code>
+<code class="go">+       branch = stable</code>
+<code class="go"> Submodule DbConnector c3f01dc..c87d55d:</code>
+<code class="go">  &gt; catch non-null terminated lines</code>
+<code class="go">  &gt; more robust error handling</code>
+<code class="go">  &gt; more efficient db routine</code>
+<code class="go">  &gt; better connection routine</code>
+</pre>
+
+<p>Здорово, что мы может увидеть список подготовленных фиксаций в нашем подмодуле. Но после создания фиксации, вы также можете получить эту информацию, если выполните команду <code>git log -p</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git log -p --submodule
+<code class="go">commit 0a24cfc121a8a3c118e0105ae4ae4c00281cf7ae</code>
+<code class="go">Author: Scott Chacon &lt;schacon@gmail.com&gt;</code>
+<code class="go">Date:   Wed Sep 17 16:37:02 2014 +0200</code>
+
+<code class="go">    updating DbConnector for bug fixes</code>
+
+<code class="go">diff --git a/.gitmodules b/.gitmodules</code>
+<code class="go">index 6fc0b3d..fd1cc29 100644</code>
+<code class="go">--- a/.gitmodules</code>
+<code class="go">+++ b/.gitmodules</code>
+<code class="go">@@ -1,3 +1,4 @@</code>
+<code class="go"> [submodule "DbConnector"]</code>
+<code class="go">        path = DbConnector</code>
+<code class="go">        url = https://github.com/chaconinc/DbConnector</code>
+<code class="go">+       branch = stable</code>
+<code class="go">Submodule DbConnector c3f01dc..c87d55d:</code>
+<code class="go">  &gt; catch non-null terminated lines</code>
+<code class="go">  &gt; more robust error handling</code>
+<code class="go">  &gt; more efficient db routine</code>
+<code class="go">  &gt; better connection routine</code>
+</pre>
+
+<p>По умолчанию при выполнении команды <code>git submodule update --remote</code> Git будет пытаться обновить <strong>все</strong> ваши подмодули, поэтому если у вас их много, вы можете указать имя подмодуля, который вы хотите попробовать обновить.</p>
+</section><section data-type="sect3" id="rabota-s-podmodulem-dLD8Ib"><h4>Работа с подмодулем</h4>
+
+<p>Весьма вероятно, что вы используете подмодули, потому что хотите работать над кодом подмодуля (или нескольких подмодулей) во время работы над кодом основного проекта. Иначе бы вы, скорее всего, предпочли использовать более простую систему управлениям зависимостями (такую как Maven или Rubygems).</p>
+
+<p>Давайте теперь рассмотрим пример, в котором мы одновременно с изменениями в основном проекте внесем изменения в подмодуль, зафиксировав и опубликовав все эти изменения в одно и тоже время.</p>
+
+<p>До сих пор, когда мы выполняли команду <code>git submodule update</code> для извлечения изменений из репозиториев подмодуля, Git получал изменения и обновлял файлы в поддиректории, но оставлял подрепозиторий в состоянии, называемом “отделенный HEAD” (“detached HEAD”). Это значит, что локальная рабочая ветка (такая, например, как “master”), отслеживающая изменения, отсутствует. Таким образом, любые вносимые вами изменения не будет нормально отслеживаться.</p>
+
+<p>Для упрощения работы с подмодулями вам необходимо сделать две вещи. Вам нужно перейти в каждый подмодуль и переключиться на ветку, в которой будете в дальнейшем работать. Затем вам необходимо сообщить Git, что ему делать если вы внесли изменения, а затем командой <code>git submodule update --remote</code> получаете новые изменения из репозитория. Возможны два варианты – вы можете слить их в вашу локальную версию или попробовать перебазировать ваши локальные наработки поверх новых изменений.</p>
+
+<p>Первым делом, давайте перейдем в директорию нашего подмодуля и переключимся на нужную ветку.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout stable
+<code class="go">Switched to branch 'stable'</code>
+</pre>
+
+<p>Давайте попробуем воспользоваться опцией “merge” (“слияния”). Для того, чтобы задать ее вручную, мы может просто добавить опцию <code>--merge</code> в наш вызов команды <code>update</code>.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote --merge
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (2/2), done.</code>
+<code class="go">remote: Total 4 (delta 2), reused 4 (delta 2)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   c87d55d..92c7337  stable     -&gt; origin/stable</code>
+<code class="go">Updating c87d55d..92c7337</code>
+<code class="go">Fast-forward</code>
+<code class="go"> src/main.c | 1 +</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code>
+<code class="go">Submodule path 'DbConnector': merged in '92c7337b30ef9e0893e758dac2459d07362ab5ea'</code>
+</pre>
+
+<p>Если мы перейдем в директорию DbConnector, то увидим, что новые изменения уже слиты в нашу локальную ветку <code>stable</code>. Теперь давайте посмотрим, что случится, когда мы внесем свои собственные локальные изменения в библиотеку, а кто-то другой в это же время отправит другие изменения в вышестоящий репозиторий.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>DbConnector/
+<code class="gp">$</code> vim src/db.c
+<code class="gp">$</code> git commit -am <code class="s1">'unicode support'</code>
+<code class="go">[stable f906e16] unicode support</code>
+<code class="go"> 1 file changed, 1 insertion(+)</code>
+</pre>
+
+<p>Теперь если мы обновим наш подмодуль, то сможем увидеть, что случится, когда мы сделали локальные изменения, а вышестоящий репозиторий также имеет изменения, которые мы должны объединить.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote --rebase
+<code class="go">First, rewinding head to replay your work on top of it...</code>
+<code class="go">Applying: unicode support</code>
+<code class="go">Submodule path 'DbConnector': rebased into '5d60ef9bbebf5a0c1c1050f242ceeb54ad58da94'</code>
+</pre>
+
+<p>Если вы забудете указать опцию <code>--rebase</code> или <code>--merge</code>, то Git просто обновит ваш подмодуль, до состояния, что есть на сервере, и установит ваш проект в состояние отделенного HEAD.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote
+<code class="go">Submodule path 'DbConnector': checked out '5d60ef9bbebf5a0c1c1050f242ceeb54ad58da94'</code>
+</pre>
+
+<p>Не беспокойтесь, если такое случится, вы можете просто вернуться в директорию, переключиться обратно на вашу ветку (которая все еще будет содержать ваши наработки) и слить или перебазировать ветку <code>origin/stable</code> (или другую нужную вам удаленную ветку) вручную.</p>
+
+<p>Если вы не зафиксировали ваши изменения в подмодуле и выполнили его обновление, то это приведет к проблемам – Git извлечет изменения из вышестоящего репозитория, но не затрет несохраненные наработки в директории вашего подмодуля.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote
+<code class="go">remote: Counting objects: 4, done.</code>
+<code class="go">remote: Compressing objects: 100% (3/3), done.</code>
+<code class="go">remote: Total 4 (delta 0), reused 4 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (4/4), done.</code>
+<code class="go">From https://github.com/chaconinc/DbConnector</code>
+<code class="go">   5d60ef9..c75e92a  stable     -&gt; origin/stable</code>
+<code class="go">error: Your local changes to the following files would be overwritten by checkout:</code>
+<code class="go">	scripts/setup.sh</code>
+<code class="go">Please, commit your changes or stash them before you can switch branches.</code>
+<code class="go">Aborting</code>
+<code class="go">Unable to checkout 'c75e92a2b3855c9e5b66f915308390d9db204aca' in submodule path 'DbConnector'</code>
+</pre>
+
+<p>Если вы сделали изменения, которые конфликтуют с какими-то изменениями в вышестоящем репозитории, то Git сообщит вам об этом, когда вы запустите операцию обновление.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule update --remote --merge
+<code class="go">Auto-merging scripts/setup.sh</code>
+<code class="go">CONFLICT (content): Merge conflict in scripts/setup.sh</code>
+<code class="go">Recorded preimage for 'scripts/setup.sh'</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code>
+<code class="go">Unable to merge 'c75e92a2b3855c9e5b66f915308390d9db204aca' in submodule path 'DbConnector'</code>
+</pre>
+
+<p>Вы можете перейти в директорию подмодуля и исправить конфликт обычным образом.</p>
+</section><section data-type="sect3" id="_publishing_submodules"><h4>Публикация изменений в подмодуле</h4>
+
+<p>Теперь у нас есть некоторые изменения в директории нашего подмодуля. Некоторые из них мы получили при обновлении из вышестоящего репозитория, а другие были сделаны локально и пока никому не доступны, так как мы их еще никуда не отправили.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">Submodule DbConnector c87d55d..82d2ad3:</code>
+<code class="go">  &gt; Merge from origin/stable</code>
+<code class="go">  &gt; updated setup script</code>
+<code class="go">  &gt; unicode support</code>
+<code class="go">  &gt; remove unnessesary method</code>
+<code class="go">  &gt; add new option for conn pooling</code>
+</pre>
+
+<p>Если мы создадим фиксацию в основном проекте и отправим ее на сервер, не отправив при этом изменения в подмодуле, то другие люди, которые попытаются использовать наши изменения, столкнутся с проблемами, так как у них не будет возможности получить требуемые изменения подмодуля. Эти изменения будут присутствовать только в нашей локальной копии.</p>
+
+<p>Для того, чтобы гарантированно избежать этой проблемы, вы можете перед отправкой основного проекта попросить Git проверить, что все наши подмодули сами были корректно отправлены на серверы. Команда <code>git push</code> принимает аргумент <code>--recurse-submodules</code>, который может принимать значения “check” или “on-demand”. Использование значения “check” придет к тому, что <code>push</code> просто завершится неудачей, если какой-то из зафиксированных подмодулей не был отправлен на сервер.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push --recurse-submodules<code class="o">=</code>check
+<code class="go">The following submodule paths contain changes that can</code>
+<code class="go">not be found on any remote:</code>
+<code class="go">  DbConnector</code>
+
+<code class="go">Please try</code>
+
+<code class="go">	git push --recurse-submodules=on-demand</code>
+
+<code class="go">or cd to the path and use</code>
+
+<code class="go">	git push</code>
+
+<code class="go">to push them to a remote.</code>
+</pre>
+
+<p>Как видите, эта команда также дает нам некоторые полезные советы о том, что мы могли бы делать дальше. Самый простой вариант – это пройти по всем подмодулям и вручную отправить изменения на серверы, чтобы гарантировать доступность изменений другим людям, а зачем повторить первоначальную команду <code>push</code>.</p>
+
+<p>Другой вариант – это использовать значение “on-demand”, которое попытается сделать это все за вас.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git push --recurse-submodules<code class="o">=</code>on-demand
+<code class="go">Pushing submodule 'DbConnector'</code>
+<code class="go">Counting objects: 9, done.</code>
+<code class="go">Delta compression using up to 8 threads.</code>
+<code class="go">Compressing objects: 100% (8/8), done.</code>
+<code class="go">Writing objects: 100% (9/9), 917 bytes | 0 bytes/s, done.</code>
+<code class="go">Total 9 (delta 3), reused 0 (delta 0)</code>
+<code class="go">To https://github.com/chaconinc/DbConnector</code>
+<code class="go">   c75e92a..82d2ad3  stable -&gt; stable</code>
+<code class="go">Counting objects: 2, done.</code>
+<code class="go">Delta compression using up to 8 threads.</code>
+<code class="go">Compressing objects: 100% (2/2), done.</code>
+<code class="go">Writing objects: 100% (2/2), 266 bytes | 0 bytes/s, done.</code>
+<code class="go">Total 2 (delta 1), reused 0 (delta 0)</code>
+<code class="go">To https://github.com/chaconinc/MainProject</code>
+<code class="go">   3d6d338..9a377d1  master -&gt; master</code>
+</pre>
+
+<p>Как видите, перед отправкой на сервер основного проекта Git перешел в директорию модуля DbConnector и отправил на сервер его. Если отправка подмодуля по каким-то причинам завершилась неудачей, то и отправка основного проекта также завершится неудачей.</p>
+</section><section data-type="sect3" id="obuedinenie-izmenenij-podmodulya-z9bDsw"><h4>Объединение изменений подмодуля</h4>
+
+<p>Если вы измените ссылку на подмодуль одновременно с кем-то еще, то вы можете столкнуться с некоторыми проблемами. Такое случается если истории подмодуля разошлись и они зафиксированы в разошедшихся ветках основного проекта. Для исправления такой ситуации потребуются некоторые дополнительные действия.</p>
+
+<p>Если одна фиксация является прямым предком другой (слияние может быть выполнено перемоткой вперед), то Git просто выберет последнюю для выполнения слияния, то есть все отработает хорошо.</p>
+
+<p>Однако, Git не будет пытаться выполнить даже простейшего слияния. Если фиксации подмодуля разошлись и слияние необходимо, вы получите нечто подобное:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git pull
+<code class="go">remote: Counting objects: 2, done.</code>
+<code class="go">remote: Compressing objects: 100% (1/1), done.</code>
+<code class="go">remote: Total 2 (delta 1), reused 2 (delta 1)</code>
+<code class="go">Unpacking objects: 100% (2/2), done.</code>
+<code class="go">From https://github.com/chaconinc/MainProject</code>
+<code class="go">   9a377d1..eb974f8  master     -&gt; origin/master</code>
+<code class="go">Fetching submodule DbConnector</code>
+<code class="go">warning: Failed to merge submodule DbConnector (merge following commits not found)</code>
+<code class="go">Auto-merging DbConnector</code>
+<code class="go">CONFLICT (submodule): Merge conflict in DbConnector</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code>
+</pre>
+
+<p>Здесь говорится о том, что Git понял, что в этих двух ветках содержатся указатели на разошедшиеся записи в истории подмодуля и их необходимо слить. Git поясняет это как “merge following commits not found”, что несколько обескураживает, но мы объясним почему так происходит.</p>
+
+<p>Для решения этой проблемы, мы должны разобраться в каком состоянии должен находиться подмодуль. Странно, но Git не предоставляет вам для этого никакой вспомогательной информации, даже SHA-1 хешей фиксаций с обеих сторон истории. К счастью, получить эту информации несложно. Если вы выполните <code>git diff</code>, то получите SHA-1 хеши фиксаций из обеих сливаемых веток.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff
+<code class="go">diff --cc DbConnector</code>
+<code class="go">index eb41d76,c771610..0000000</code>
+<code class="go">--- a/DbConnector</code>
+<code class="go">+++ b/DbConnector</code>
+</pre>
+
+<p>Так, в данном примере <code>eb41d76</code> является <strong>нашей</strong> фиксацией в подмодуле, а <code>c771610</code> – фиксацией из вышестоящего репозитория. Если мы перейдем в директорию нашего подмодуля, то он должен быть на фиксации <code>eb41d76</code>, так как операция слияния его не изменяла. Если по каким-то причинам это не так, то вы можете просто переключиться на ветку (создав ее при необходимости), указывающую на эту фиксацию.</p>
+
+<p>Куда более важным является SHA-1 хеш фиксации другой стороны, которую мы должны будет слить. Вы можете либо просто выполнить слияние, указав непосредственно этот SHA-1 хеш, либо вы можете создать с ним отдельную ветку и затем уже сливать эту ветку. Мы предлагаем использовать последний вариант, хотя бы только из-за того, что сообщение фиксации слияния получается более читаемым.</p>
+
+<p>Итак, перейдите в директорию нашего подмодуля, создайте ветку на основе второго SHA-1 хеша из <code>git diff</code> и выполните слияние вручную.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>DbConnector
+
+<code class="gp">$</code> git rev-parse HEAD
+<code class="go">eb41d764bccf88be77aced643c13a7fa86714135</code>
+
+<code class="gp">$</code> git branch try-merge c771610
+<code class="go">(DbConnector) $ git merge try-merge</code>
+<code class="go">Auto-merging src/main.c</code>
+<code class="go">CONFLICT (content): Merge conflict in src/main.c</code>
+<code class="go">Recorded preimage for 'src/main.c'</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code>
+</pre>
+
+<p>Мы получили настоящий конфликт слияния, поэтому если мы разрешим его и создадим фиксацию, то, используя результат, сможем просто обновить основной проект.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> vim src/main.c &lt;a <code class="nv">class</code><code class="o">=</code><code class="s2">"co"</code> <code class="nv">id</code><code class="o">=</code><code class="s2">"co_____________git_CO1-1"</code> <code class="nv">href</code><code class="o">=</code><code class="s2">"#callout_____________git_CO1-1"</code>&gt;&lt;img <code class="nv">src</code><code class="o">=</code><code class="s2">"book/07-git-tools/callouts/1.png"</code> <code class="nv">alt</code><code class="o">=</code><code class="s2">"1"</code>/&gt;&lt;/a&gt;
+<code class="gp">$</code> git add src/main.c
+<code class="gp">$</code> git commit -am <code class="s1">'merged our changes'</code>
+<code class="go">Recorded resolution for 'src/main.c'.</code>
+<code class="go">[master 9fd905e] merged our changes</code>
+
+<code class="gp">$</code> <code class="nb">cd</code> .. &lt;a <code class="nv">class</code><code class="o">=</code><code class="s2">"co"</code> <code class="nv">id</code><code class="o">=</code><code class="s2">"co_____________git_CO1-2"</code> <code class="nv">href</code><code class="o">=</code><code class="s2">"#callout_____________git_CO1-2"</code>&gt;&lt;img <code class="nv">src</code><code class="o">=</code><code class="s2">"book/07-git-tools/callouts/2.png"</code> <code class="nv">alt</code><code class="o">=</code><code class="s2">"2"</code>/&gt;&lt;/a&gt;
+<code class="gp">$</code> git diff &lt;a <code class="nv">class</code><code class="o">=</code><code class="s2">"co"</code> <code class="nv">id</code><code class="o">=</code><code class="s2">"co_____________git_CO1-3"</code> <code class="nv">href</code><code class="o">=</code><code class="s2">"#callout_____________git_CO1-3"</code>&gt;&lt;img <code class="nv">src</code><code class="o">=</code><code class="s2">"book/07-git-tools/callouts/3.png"</code> <code class="nv">alt</code><code class="o">=</code><code class="s2">"3"</code>/&gt;&lt;/a&gt;
+<code class="go">diff --cc DbConnector</code>
+<code class="go">index eb41d76,c771610..0000000</code>
+<code class="go">--- a/DbConnector</code>
+<code class="go">+++ b/DbConnector</code>
+<code class="go">@@@ -1,1 -1,1 +1,1 @@@</code>
+<code class="go">- Subproject commit eb41d764bccf88be77aced643c13a7fa86714135</code>
+<code class="go"> -Subproject commit c77161012afbbe1f58b5053316ead08f4b7e6d1d</code>
+<code class="go">++Subproject commit 9fd905e5d7f45a0d4cbc43d1ee550f16a30e825a</code>
+<code class="gp">$</code> git add DbConnector &lt;a <code class="nv">class</code><code class="o">=</code><code class="s2">"co"</code> <code class="nv">id</code><code class="o">=</code><code class="s2">"co_____________git_CO1-4"</code> <code class="nv">href</code><code class="o">=</code><code class="s2">"#callout_____________git_CO1-4"</code>&gt;&lt;img <code class="nv">src</code><code class="o">=</code><code class="s2">"book/07-git-tools/callouts/4.png"</code> <code class="nv">alt</code><code class="o">=</code><code class="s2">"4"</code>/&gt;&lt;/a&gt;
+
+<code class="gp">$</code> git commit -m <code class="s2">"Merge Tom's Changes"</code> &lt;a <code class="nv">class</code><code class="o">=</code><code class="s2">"co"</code> <code class="nv">id</code><code class="o">=</code><code class="s2">"co_____________git_CO1-5"</code> <code class="nv">href</code><code class="o">=</code><code class="s2">"#callout_____________git_CO1-5"</code>&gt;&lt;img <code class="nv">src</code><code class="o">=</code><code class="s2">"book/07-git-tools/callouts/5.png"</code> <code class="nv">alt</code><code class="o">=</code><code class="s2">"5"</code>/&gt;&lt;/a&gt;
+<code class="go">[master 10d2c60] Merge Tom's Changes</code>
+</pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_____________git_CO1-1" href="ch00/co_____________git_CO1-1"><img src="/book/en/v2/book/07-git-tools/callouts/1.png" alt="1"></a></dt>
+<dd><p>Во-первых, мы разрешили конфликт</p></dd>
+<dt><a class="co" id="callout_____________git_CO1-2" href="ch00/co_____________git_CO1-2"><img src="/book/en/v2/book/07-git-tools/callouts/2.png" alt="2"></a></dt>
+<dd><p>Затем мы вернулись в директорию основного проекта</p></dd>
+<dt><a class="co" id="callout_____________git_CO1-3" href="ch00/co_____________git_CO1-3"><img src="/book/en/v2/book/07-git-tools/callouts/3.png" alt="3"></a></dt>
+<dd><p>Мы снова проверили SHA-1 хеши</p></dd>
+<dt><a class="co" id="callout_____________git_CO1-4" href="ch00/co_____________git_CO1-4"><img src="/book/en/v2/book/07-git-tools/callouts/4.png" alt="4"></a></dt>
+<dd><p>Разрешили сам конфликтовавший подмодуль</p></dd>
+<dt><a class="co" id="callout_____________git_CO1-5" href="ch00/co_____________git_CO1-5"><img src="/book/en/v2/book/07-git-tools/callouts/5.png" alt="5"></a></dt>
+<dd><p>Зафиксировали наше слияния</p></dd>
+</dl>
+<p>Это может немного запутать, но на самом деле здесь нет ничего сложного.</p>
+
+<p>Интересно, что существует еще один случай, который Git обрабатывает.
+Если существует какая-то фиксация слияния подмодуля, которая содержит в своей истории <strong>обе</strong> первоначальные фиксации, то Git предложит ее вам как возможное решение. Он видит, что в какой-то момент в подмодуле, кто-то уже слил ветки, содержащие эти две фиксации, поэтому, может быть, это то, что вы хотите.</p>
+
+<p>Именно поэтому выше сообщение об ошибке содержало “merge following commits not found” – Git не смог сделать <strong>это</strong> (найти такую фиксацию). Оно обескураживает – кто мог ожидать, что Git <strong>пытается</strong> сделать это?</p>
+
+<p>Если удастся найти единственную приемлемую фиксацию, то вы увидите нечто подобное:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git merge origin/master
+<code class="go">warning: Failed to merge submodule DbConnector (not fast-forward)</code>
+<code class="go">Found a possible merge resolution for the submodule:</code>
+<code class="go"> 9fd905e5d7f45a0d4cbc43d1ee550f16a30e825a: &gt; merged our changes</code>
+<code class="go">If this is correct simply add it to the index for example</code>
+<code class="go">by using:</code>
+
+<code class="go">  git update-index --cacheinfo 160000 9fd905e5d7f45a0d4cbc43d1ee550f16a30e825a "DbConnector"</code>
+
+<code class="go">which will accept this suggestion.</code>
+<code class="go">Auto-merging DbConnector</code>
+<code class="go">CONFLICT (submodule): Merge conflict in DbConnector</code>
+<code class="go">Automatic merge failed; fix conflicts and then commit the result.</code>
+</pre>
+
+<p>Здесь предполагается, что вы обновите индекс, выполнив команду <code>git add</code>, которая очищает список конфликтов и затем создает фиксацию. Хотя вы, наверное, не обязаны делать так. Вы можете также легко перейти в директорию подмодуля, просмотреть изменения, выполнить перемотку вперед до этой фиксации, выполнить необходимые проверки, а затем создать фиксацию.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> <code class="nb">cd </code>DbConnector/
+<code class="gp">$</code> git merge 9fd905e
+<code class="go">Updating eb41d76..9fd905e</code>
+<code class="go">Fast-forward</code>
+
+<code class="gp">$</code> <code class="nb">cd</code> ..
+<code class="gp">$</code> git add DbConnector
+<code class="gp">$</code> git commit -am <code class="s1">'Fast forwarded to a common submodule child'</code>
+</pre>
+
+<p>В этом случае выполняются те же вещи, что и в предыдущем, но так по завершению перемотки вы хотя бы сможете проверить, что все работает и вы получили правильный код в директории подмодуля.</p>
+</section></section><section data-type="sect2" id="poleznye-sovety-dlya-raboty-s-podmodulyami-YKqrfv"><h3 id="Полезные-советы-для-работы-с-подмодулями"><a href="#Полезные-советы-для-работы-с-подмодулями">Полезные советы для работы с подмодулями</a></h3>
+
+<p>Существует несколько хитростей, которые могут немного упростить вашу работу с подмодулями.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="foreach-dlya-podmodulej-X6eAiD"><h4>Foreach для подмодулей</h4>
+
+<p>Существует команда <code>foreach</code>, которая позволяет выполнить произвольную команду в каждом подмодуле. Это может быть, действительно, полезным если у вас в одном проекте присутствует большое количество подмодулей.</p>
+
+<p>Например, допустим, мы хотим начать работу над какой-то новой функциональностью или исправить какую-то ошибку и наша работа будет происходить в нескольких подмодулях. Мы можем легко приберечь все наработки во всех наших подмодулях.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule foreach <code class="s1">'git stash'</code>
+<code class="go">Entering 'CryptoLibrary'</code>
+<code class="go">No local changes to save</code>
+<code class="go">Entering 'DbConnector'</code>
+<code class="go">Saved working directory and index state WIP on stable: 82d2ad3 Merge from origin/stable</code>
+<code class="go">HEAD is now at 82d2ad3 Merge from origin/stable</code>
+</pre>
+
+<p>Затем мы можем создать новую ветку и переключиться на нее во всех наших подмодулях.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git submodule foreach <code class="s1">'git checkout -b featureA'</code>
+<code class="go">Entering 'CryptoLibrary'</code>
+<code class="go">Switched to a new branch 'featureA'</code>
+<code class="go">Entering 'DbConnector'</code>
+<code class="go">Switched to a new branch 'featureA'</code>
+</pre>
+
+<p>Подкинем вам еще одну идею. Действительно, полезная вещь, которую вы можете сделать с помощью этой команды – это создать комплексную дельту того, что изменилось в вашем основном проекте, а также и во всех подпроектах.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff<code class="p">;</code> git submodule foreach <code class="s1">'git diff'</code>
+<code class="go">Submodule DbConnector contains modified content</code>
+<code class="go">diff --git a/src/main.c b/src/main.c</code>
+<code class="go">index 210f1ae..1f0acdc 100644</code>
+<code class="go">--- a/src/main.c</code>
+<code class="go">+++ b/src/main.c</code>
+<code class="go">@@ -245,6 +245,8 @@ static int handle_alias(int *argcp, const char ***argv)</code>
+
+<code class="go">      commit_pager_choice();</code>
+
+<code class="go">+     url = url_decode(url_orig);</code>
+<code class="go">+</code>
+<code class="go">      /* build alias_argv */</code>
+<code class="go">      alias_argv = xmalloc(sizeof(*alias_argv) * (argc + 1));</code>
+<code class="go">      alias_argv[0] = alias_string + 1;</code>
+<code class="go">Entering 'DbConnector'</code>
+<code class="go">diff --git a/src/db.c b/src/db.c</code>
+<code class="go">index 1aaefb6..5297645 100644</code>
+<code class="go">--- a/src/db.c</code>
+<code class="go">+++ b/src/db.c</code>
+<code class="go">@@ -93,6 +93,11 @@ char *url_decode_mem(const char *url, int len)</code>
+<code class="go">        return url_decode_internal(&amp;url, len, NULL, &amp;out, 0);</code>
+<code class="go"> }</code>
+
+<code class="go">+char *url_decode(const char *url)</code>
+<code class="go">+{</code>
+<code class="go">+       return url_decode_mem(url, strlen(url));</code>
+<code class="go">+}</code>
+<code class="go">+</code>
+<code class="go"> char *url_decode_parameter_name(const char **query)</code>
+<code class="go"> {</code>
+<code class="go">        struct strbuf out = STRBUF_INIT;</code>
+</pre>
+
+<p>Здесь видно, что мы определили в подмодуле функцию и вызываем ее в основном проекте. Это, конечно, упрощенный пример, но надеемся, что мы смогли донести до вас всю полезность этой функции.</p>
+</section><section data-type="sect3" id="poleznye-psevdonimy-J1KZS3"><h4>Полезные псевдонимы</h4>
+
+<p>Возможно, вы захотите настроить псевдонимы для некоторых из этих команд, так как они могут быть, довольно, длинными, и вы не можете задать для большинства из их параметров значения по умолчанию. Мы рассмотрели настройку псевдонимов Git в <a data-type="xref" href="1-git-basics/_git_aliases">Псевдонимы в Git</a>, но ниже приведен пример того, что вы можете захотеть настроить, если планируете часто работать с подмодулями Git.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config alias.sdiff <code class="s1">'!'</code><code class="s2">"git diff &amp;&amp; git submodule foreach 'git diff'"</code>
+<code class="gp">$</code> git config alias.spush <code class="s1">'push --recurse-submodules=on-demand'</code>
+<code class="gp">$</code> git config alias.supdate <code class="s1">'submodule update --remote --merge'</code>
+</pre>
+
+<p>Таким образом при необходимости обновить ваши подмодули вы можете просто выполнить команду <code>git supdate</code>, а для отправки изменений с проверкой зависимостей подмодулей – команду <code>git spush</code>.</p>
+</section></section><section data-type="sect2" id="problemy-s-podmodulyami-dLbVtb"><h3 id="Проблемы-с-подмодулями"><a href="#Проблемы-с-подмодулями">Проблемы с подмодулями</a></h3>
+
+<p>Однако, использование подмодулей не обходится без небольших проблем.</p>
+
+<p>Например, переключение веток при использовании подмодулей может оказаться, довольно, запутанным.
+Если вы создадите новую ветку, добавите в ней подмодуль, а затем переключитесь обратно на ветку без подмодуля, то у вас все же останется директория подмодуля, как неотслеживаемая директория:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -b add-crypto
+<code class="go">Switched to a new branch 'add-crypto'</code>
+
+<code class="gp">$</code> git submodule add https://github.com/chaconinc/CryptoLibrary
+<code class="go">Cloning into 'CryptoLibrary'...</code>
+<code class="go">...</code>
+
+<code class="gp">$</code> git commit -am <code class="s1">'adding crypto library'</code>
+<code class="go">[add-crypto 4445836] adding crypto library</code>
+<code class="go"> 2 files changed, 4 insertions(+)</code>
+<code class="go"> create mode 160000 CryptoLibrary</code>
+
+<code class="gp">$</code> git checkout master
+<code class="go">warning: unable to rmdir CryptoLibrary: Directory not empty</code>
+<code class="go">Switched to branch 'master'</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="gp">$</code> git status
+<code class="go">On branch master</code>
+<code class="go">Your branch is up-to-date with 'origin/master'.</code>
+
+<code class="go">Untracked files:</code>
+<code class="go">  (use "git add &lt;file&gt;..." to include in what will be committed)</code>
+
+<code class="go">	CryptoLibrary/</code>
+
+<code class="go">nothing added to commit but untracked files present (use "git add" to track)</code>
+</pre>
+
+<p>Удалить директорию не сложно, но может показаться странным, что она вообще оказалась там. Если вы удалите директорию и переключитесь на ветку с подмодулем, то вам потребуется выполнить <code>submodule update --init</code> для повторного создания директории.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git clean -fdx
+<code class="go">Removing CryptoLibrary/</code>
+
+<code class="gp">$</code> git checkout add-crypto
+<code class="go">Switched to branch 'add-crypto'</code>
+
+<code class="gp">$</code> ls CryptoLibrary/
+
+<code class="gp">$</code> git submodule update --init
+<code class="go">Submodule path 'CryptoLibrary': checked out 'b8dda6aa182ea4464f3f3264b11e0268545172af'</code>
+
+<code class="gp">$</code> ls CryptoLibrary/
+<code class="go">Makefile	includes	scripts		src</code>
+</pre>
+
+<p>И снова это, на самом деле, не сильно сложно, но может немного сбивать с толку.</p>
+
+<p>Другая большая проблема возникает, когда люди переходят от использования поддиректорий к использованию подмодулей.
+Если у вас были отслеживаемые файлы в вашем проекте и вы хотите переместить их в подмодуль, то вы должны быть осторожны, иначе Git будет ругаться на вас.
+Предположим, у вас есть файлы в какой-то директории вашего проекта, и вы хотите переместить их в подмодуль.
+Если вы удалите поддиректорию, а затем выполните <code>submodule add</code>, то Git заругается на вас:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> rm -Rf CryptoLibrary/
+<code class="gp">$</code> git submodule add https://github.com/chaconinc/CryptoLibrary
+<code class="go">'CryptoLibrary' already exists in the index</code>
+</pre>
+
+<p>Сначала, вы должны удалить директорию <code>CryptoLibrary</code> из индекса.
+Затем вы можете добавить подмодуль:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git rm -r CryptoLibrary
+<code class="gp">$</code> git submodule add https://github.com/chaconinc/CryptoLibrary
+<code class="go">Cloning into 'CryptoLibrary'...</code>
+<code class="go">remote: Counting objects: 11, done.</code>
+<code class="go">remote: Compressing objects: 100% (10/10), done.</code>
+<code class="go">remote: Total 11 (delta 0), reused 11 (delta 0)</code>
+<code class="go">Unpacking objects: 100% (11/11), done.</code>
+<code class="go">Checking connectivity... done.</code>
+</pre>
+
+<p>Предположим, что вы сделали это в какой-то ветке.
+Если вы попробуете переключиться обратно на ветку, где эти файлы все еще находятся в основном проекте, а не в подмодуле, то вы получите ошибку:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout master
+<code class="go">error: The following untracked working tree files would be overwritten by checkout:</code>
+<code class="go">  CryptoLibrary/Makefile</code>
+<code class="go">  CryptoLibrary/includes/crypto.h</code>
+<code class="go">  ...</code>
+<code class="go">Please move or remove them before you can switch branches.</code>
+<code class="go">Aborting</code>
+</pre>
+
+<p>Вы все же можете переключить ветку принудительно, используя команду <code>checkout -f</code>, но удостоверьтесь, что у вас отсутствуют несохраненные изменения, так как они могут быть затерты этой командой.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout -f master
+<code class="go">warning: unable to rmdir CryptoLibrary: Directory not empty</code>
+<code class="go">Switched to branch 'master'</code>
+</pre>
+
+<p>Когда в дальнейшем вы переключитесь обратно, то по некоторой причине получите пустую директорию <code>CryptoLibrary</code> и команда <code>git submodule update</code> не сможет этого исправить. Вам может потребоваться перейти в директорию подмодуля и выполнить <code>git checkout .</code>, чтобы вернуть все ваши файлы. Для того, чтобы запустить эту команду для нескольких подмодулей, вы можете выполнять ее, используя <code>submodule foreach</code>.</p>
+
+<p>Важно отметить, что подмодули в данный момент сохраняют все служебные данные в директории <code>.git</code> основного проекта, поэтому в отличии от более старых версии Git, удаление директории подмодуля не приведет к потери каких-либо фиксаций или веток, которые у вас были.</p>
+
+<p>Все эти инструменты делают подмодули довольно простым и эффективным методом работы одновременно над несколькими связанными, но пока разделенными проектами.</p>
+</section><div id="nav"><a href="/book/ru/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-Git">prev</a> | <a href="/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":4,"applicationTime":531,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git の設定</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/ja/2015-09-08-d6b27/progit-ja.820.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">使い始める</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6">バージョン管理に関して</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E7%95%A5%E5%8F%B2">Git略史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E5%9F%BA%E6%9C%AC">Gitの基本</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">コマンドライン</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">Gitのインストール</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90">最初のGitの構成</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%98%E3%83%AB%E3%83%97%E3%82%92%E8%A6%8B%E3%82%8B">ヘルプを見る</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git の基本</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%8F%96%E5%BE%97">Git リポジトリの取得</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E5%A4%89%E6%9B%B4%E5%86%85%E5%AE%B9%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%B8%E3%81%AE%E8%A8%98%E9%8C%B2">変更内容のリポジトリへの記録</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4%E3%81%AE%E9%96%B2%E8%A6%A7">コミット履歴の閲覧</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E4%BD%9C%E6%A5%AD%E3%81%AE%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%97">作業のやり直し</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD">リモートでの作業</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%82%BF%E3%82%B0">タグ</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-Git-%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">Git エイリアス</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/ja/v2/Git-%E3%81%AE%E5%9F%BA%E6%9C%AC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">Git のブランチ機能</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF">ブランチとは</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC">ブランチとマージの基本</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%AE%E7%AE%A1%E7%90%86">ブランチの管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A7%E3%81%AE%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">ブランチでの作業の流れ</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">リモートブランチ</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9">リベース</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">Gitサーバー</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">プロトコル</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E7%94%A8%E3%81%AE-Git-%E3%81%AE%E5%8F%96%E5%BE%97">サーバー用の Git の取得</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-SSH-%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E4%BD%9C%E6%88%90">SSH 公開鍵の作成</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97">サーバーのセットアップ</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Git-%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3">Git デーモン</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-Smart-HTTP">Smart HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%89%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%81%AB%E3%82%88%E3%82%8B-Git-%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">サードパーティによる Git ホスティング</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/ja/v2/Git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">Git での分散作業</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%B5%81%E3%82%8C">分散作業の流れ</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E9%81%8B%E5%96%B6">プロジェクトの運営</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/ja/v2/Git-%E3%81%A7%E3%81%AE%E5%88%86%E6%95%A3%E4%BD%9C%E6%A5%AD-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/ja/v2/GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%BA%96%E5%82%99%E3%81%A8%E8%A8%AD%E5%AE%9A">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/ja/v2/GitHub-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%BA%96%E5%82%99%E3%81%A8%E8%A8%AD%E5%AE%9A">アカウントの準備と設定</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/ja/v2/GitHub-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%B8%E3%81%AE%E8%B2%A2%E7%8C%AE">プロジェクトへの貢献</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/ja/v2/GitHub-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9">プロジェクトのメンテナンス</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/ja/v2/GitHub-%E7%B5%84%E7%B9%94%E3%81%AE%E7%AE%A1%E7%90%86">組織の管理</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/ja/v2/GitHub-%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B-GitHub-%E3%81%AE%E6%93%8D%E4%BD%9C">スクリプトによる GitHub の操作</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/ja/v2/GitHub-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">Git のさまざまなツール</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%83%93%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AE%E9%81%B8%E6%8A%9E">リビジョンの選択</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E5%AF%BE%E8%A9%B1%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0">対話的なステージング</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E3%81%AE%E9%9A%A0%E3%81%97%E3%81%8B%E3%81%9F%E3%81%A8%E6%B6%88%E3%81%97%E3%81%8B%E3%81%9F">作業の隠しかたと消しかた</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9%E3%81%B8%E3%81%AE%E7%BD%B2%E5%90%8D">作業内容への署名</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%A4%9C%E7%B4%A2">検索</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88">歴史の書き換え</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E8%A9%B3%E8%AA%AC">リセットコマンド詳説</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E9%AB%98%E5%BA%A6%E3%81%AA%E3%83%9E%E3%83%BC%E3%82%B8%E6%89%8B%E6%B3%95">高度なマージ手法</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">Git によるデバッグ</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB">サブモジュール</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%83%90%E3%83%B3%E3%83%89%E3%83%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90">バンドルファイルの作成</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-Git-%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88">Git オブジェクトの置き換え</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%81%AE%E4%BF%9D%E5%AD%98">認証情報の保存</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git のカスタマイズ</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A">Git の設定</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E5%B1%9E%E6%80%A7">Git の属性</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">Git フック</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E5%AE%9F%E6%96%BD%E4%BE%8B">Git ポリシーの実施例</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">Gitとその他のシステムの連携</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%82%92%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B">Git をクライアントとして使用する</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-Git-%E3%81%B8%E7%A7%BB%E8%A1%8C%E3%81%99%E3%82%8B">Git へ移行する</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/ja/v2/Git%E3%81%A8%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E9%80%A3%E6%90%BA-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">Gitの内側</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E9%85%8D%E7%AE%A1%EF%BC%88Plumbing%EF%BC%89%E3%81%A8%E7%A3%81%E5%99%A8%EF%BC%88Porcelain%EF%BC%89">配管（Plumbing）と磁器（Porcelain）</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">Gitオブジェクト</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-Git%E3%81%AE%E5%8F%82%E7%85%A7">Gitの参照</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%91%E3%83%83%E3%82%AF%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB">パックファイル</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E5%8F%82%E7%85%A7%E4%BB%95%E6%A7%98%EF%BC%88Refspec%EF%BC%89">参照仕様（Refspec）</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%95%E3%82%A1%E3%83%BC%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB">トランスファープロトコル</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E3%81%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%AB%E3%83%90%E3%83%AA">メインテナンスとデータリカバリ</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0">環境変数</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/ja/v2/Git%E3%81%AE%E5%86%85%E5%81%B4-%E8%A6%81%E7%B4%84">要約</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">その他の環境でのGit</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%82%AB%E3%83%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">グラフィカルインタフェース</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Visual-Studio%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">Visual StudioでGitを使う</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Eclipse%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">EclipseでGitを使う</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Bash%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">BashでGitを使う</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Zsh%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">ZshでGitを使う</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-Powershell%E3%81%A7Git%E3%82%92%E4%BD%BF%E3%81%86">PowershellでGitを使う</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/ja/v2/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AEGit-%E3%81%BE%E3%81%A8%E3%82%81">まとめ</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Gitをあなたのアプリケーションに組み込む</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Gitのコマンドラインツールを使う方法</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-Libgit2%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95">Libgit2を使う方法</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/ja/v2/Git%E3%82%92%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E7%B5%84%E3%81%BF%E8%BE%BC%E3%82%80-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A">Gitのコマンド</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%A8%E8%A8%AD%E5%AE%9A">セットアップと設定</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E3%81%A8%E4%BD%9C%E6%88%90">プロジェクトの取得と作成</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%8A%E3%83%83%E3%83%97%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88">基本的なスナップショット</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8">ブランチとマージ</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%85%B1%E6%9C%89%E3%81%A8%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88">プロジェクトの共有とアップデート</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E6%A4%9C%E6%9F%BB%E3%81%A8%E6%AF%94%E8%BC%83">検査と比較</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%87%E3%83%90%E3%83%83%E3%82%B0">デバッグ</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%91%E3%83%83%E3%83%81%E3%81%AE%E9%81%A9%E7%94%A8">パッチの適用</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%A1%E3%83%BC%E3%83%AB">メール</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">外部システム</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%AE%A1%E7%90%86">システム管理</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/ja/v2/Git%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E9%85%8D%E7%AE%A1%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">配管コマンド</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>8.1 Git のカスタマイズ - Git の設定</h1>
+  <div><a id="_customizing_git"></a><p>ここまで本書では、Git の基本動作やその使用法について扱ってきました。また、Git をより簡単に効率よく使うためのさまざまなツールについても紹介しました。
+本章では、重要な設定項目やフックシステムを使用して、よりカスタマイズされた方法で Git を操作する方法について扱います。
+これらを利用すれば、みなさん自身やその勤務先、所属グループのニーズにあわせた方法で Git を活用できるようになるでしょう。</p><a id="_git_config"></a><h2>Git の設定</h2>
+
+<p><a data-type="indexterm" data-primary="git commands" data-secondary="config" id="id-3gVH5"></a></p>
+
+<p><a data-type="xref" href="1-introduction/_getting_started">使い始める</a> で手短にごらんいただいたように、<code>git config</code> コマンドで Git の設定をすることができます。
+まず最初にすることと言えば、名前とメールアドレスの設定でしょう。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global user.name <code class="s2">"John Doe"</code>
+<code class="gp">$</code> git config --global user.email johndoe@example.com
+</pre>
+
+<p>ここでは、同じようにして設定できるより興味深い項目をいくつか身につけ、Git をカスタマイズしてみましょう。</p>
+
+<p>まず、簡単におさらいしましょう。Git では、いくつかの設定ファイルを使ってデフォルト以外の挙動を定義します。
+まず最初に Git が見るのは <code>/etc/gitconfig</code> で、ここにはシステム上の全ユーザーの全リポジトリ向けの設定値を記述します。
+<code>git config</code> にオプション <code>--system</code> を指定すると、このファイルの読み書きを行います。</p>
+
+<p>次に Git が見るのは <code>~/.gitconfig</code> （または <code>~/.config/git/config</code> ）で、これは各ユーザー専用のファイルです。
+Git でこのファイルの読み書きをするには、<code>--global</code> オプションを指定します。</p>
+
+<p>最後に Git が設定値を探すのは、現在使用中のリポジトリの設定ファイル (<code>.git/config</code>) です。
+この値は、そのリポジトリだけで有効なものです。</p>
+
+<p>これらの “レベル” （システム、グローバル、ローカル）の間では、いずれも後から読んだ値がその前の値を上書きします。したがって、たとえば <code>.git/config</code> に書いた値は <code>/etc/gitconfig</code> での設定よりも優先されます。</p>
+<div data-type="note" id="id-3z0Cd">
+<h6>Note</h6>
+<p>Git の設定ファイルはプレーンテキストなので、これらのファイルを手動で編集し、正しい構文で内容を追加することで、上記のような設定を行うことも可能ですが、通常は <code>git config</code> コマンドを使ったほうが簡単です。</p>
+</div>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="-mJvI0"><h3 id="基本的なクライアントのオプション"><a href="#基本的なクライアントのオプション">基本的なクライアントのオプション</a></h3>
+
+<p>Git の設定オプションは、おおきく二種類に分類できます。クライアント側のオプションとサーバー側のオプションです。
+大半のオプションは、クライアント側のもの、つまり個人的な作業環境を設定するためのものとなります。
+大量の、<em>本当に大量の</em> オプションが使用できますが、ここでは、もっとも一般的で、もっともよく使われているものだけを取り上げます。
+その他のオプションの多くは特定の場合にのみ有用なものなので、ここでは扱いません。
+Git で使えるすべてのオプションを知りたい場合は、次のコマンドを実行しましょう。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> man git-config
+</pre>
+
+<p>このコマンドは、利用できるすべてのオプションを、簡単な説明とともに一覧表示します。
+この内容は、 <a href="http://git-scm.com/docs/git-config.html"><em class="hyperlink">http://git-scm.com/docs/git-config.html</em></a> にあるリファレンスでも見ることができます。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="coreeditor-3l6Tk"><h4><code>core.editor</code></h4>
+
+<p><a data-type="indexterm" data-primary="$EDITOR" id="id-3Q8t6"></a><a data-type="indexterm" data-primary="$VISUAL" data-secondary="see $EDITOR" id="id-RoqIw"></a></p>
+
+<p>デフォルトでは、コミットやタグのメッセージを編集するときには、ユーザーがデフォルトエディタとして設定したエディタ（ <code>$VISUAL</code> または <code>$EDITOR</code>）が使われます。デフォルトエディタが設定されていない場合は vi エディタが使われます。
+このデフォルト設定を別のものに変更するには <code>core.editor</code> を設定します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.editor emacs
+</pre>
+
+<p>これで、シェルのデフォルトエディタに関係なく、Git でメッセージを編集する際には Emacs が起動されるようになりました。</p>
+</section><section data-type="sect3" id="committemplate-Pgpcw"><h4><code>commit.template</code></h4>
+
+<p><a data-type="indexterm" data-primary="commit templates" id="id-lYzUd"></a></p>
+
+<p>システム上のファイルへのパスをここに設定すると、Git はそのファイルをコミット時のデフォルトメッセージとして使います。
+たとえば、次のようなテンプレートファイルを作って <code>~/.gitmessage.txt</code> においたとしましょう。</p>
+
+<pre data-type="programlisting" data-code-language="text">subject line
+
+what happened
+
+[ticket: X]
+</pre>
+
+<p><code>git commit</code> のときにエディタに表示されるデフォルトメッセージをこれにするには、<code>commit.template</code> の設定を変更します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global commit.template ~/.gitmessage.txt
+<code class="gp">$</code> git commit
+</pre>
+
+<p>すると、コミットメッセージの雛形としてこのような内容がエディタに表示されます。</p>
+
+<pre data-type="programlisting" data-code-language="text">subject line
+
+what happened
+
+[ticket: X]
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+# modified:   lib/test.rb
+#
+~
+~
+".git/COMMIT_EDITMSG" 14L, 297C
+</pre>
+
+<p>コミットメッセージについてチーム内に所定の決まりがあるのなら、その決まりに従ったテンプレートをシステム上に作って Git にそれを使わせるようにするとよいでしょう。そうすれば、その決まりに従ってもらいやすくなります。</p>
+</section><section data-type="sect3" id="corepager-ZlJCl"><h4><code>core.pager</code></h4>
+
+<p><a data-type="indexterm" data-primary="pager" id="id-Azyho"></a></p>
+
+<p>core.pager は、Git が <code>log</code> や <code>diff</code> などを出力するときに使うページャを設定します。
+<code>more</code> などのお好みのページャを設定したり (デフォルトは <code>less</code> です)、空文字列を設定してページャを使わないようにしたりすることができます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.pager <code class="s1">''</code>
+</pre>
+
+<p>これを実行すると、すべてのコマンドの出力を、どんなに長くなったとしても全部 Git が出力するようになります。</p>
+</section><section data-type="sect3" id="usersigningkey-lY6Ck"><h4><code>user.signingkey</code></h4>
+
+<p><a data-type="indexterm" data-primary="GPG" id="id-QN8s6"></a></p>
+
+<p>署名入りの注釈付きタグ (<a data-type="xref" href="1-git-tools/_signing">作業内容への署名</a> で取り上げました) を作る場合は、GPG 署名用の鍵を登録しておくと便利です。
+鍵の ID を設定するには、このようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global user.signingkey &lt;gpg-key-id&gt;
+</pre>
+
+<p>これで、<code>git tag</code> コマンドでいちいち鍵を指定しなくてもタグに署名できるようになりました。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git tag -s &lt;tag-name&gt;
+</pre>
+</section><section data-type="sect3" id="coreexcludesfile-PNpiw"><h4><code>core.excludesfile</code></h4>
+
+<p><a data-type="indexterm" data-primary="excludes" id="id-RnZIw"></a><a data-type="indexterm" data-primary=".gitignore" id="id-NGyIQ"></a></p>
+
+<p>プロジェクトごとの <code>.gitignore</code> ファイルでパターンを指定すると、<code>git add</code> したときに Git がそのファイルを無視してステージしないようになります。これについては <a data-type="xref" href="1-git-basics/_ignoring">ファイルの無視</a> で説明しました。</p>
+
+<p>ですが、作業中のすべてのリポジトリで、ある特定のファイルを無視したい場合もあります。
+Mac OS X を使っているのなら、 <code>.DS_Store</code> というファイルに見おぼえがあるでしょう。
+使っているエディタが Emacs か Vim なら、 <code>~</code> で終わるファイルのことを知っていることと思います。</p>
+
+<p>このような設定を行うには、グローバルな <code>.gitignore</code> のようなファイルが必要です。
+<code>~/.gitignore_global</code> ファイルへ次の内容を書き込んで、</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="err">*~</code>
+<code class="err">.DS_Store</code>
+</pre>
+
+<p>その上で <code>git config --global core.excludesfile ~/.gitignore_global</code> を実行すれば、これらのファイルで手を煩わすことは二度となくなります。</p>
+</section><section data-type="sect3" id="helpautocorrect-75yTj"><h4><code>help.autocorrect</code></h4>
+
+<p><a data-type="indexterm" data-primary="autocorrect" id="id-bNwtD"></a></p>
+
+<p>Git でコマンドを打ち間違えると、こんなふうに表示されます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git chekcout master
+<code class="go">git: 'chekcout' is not a git command. See 'git --help'.</code>
+
+<code class="go">Did you mean this?</code>
+<code class="go">    checkout</code>
+</pre>
+
+<p>Git は気を利かせて、何をしたかったのか推測はしてくれますが、実行まではしません。
+<code>help.autocorrect</code> を 1 にしておくと、 Git は実際にそのコマンドを実行しようとします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git chekcout master
+<code class="go">WARNING: You called a Git command named 'chekcout', which does not exist.</code>
+<code class="go">Continuing under the assumption that you meant 'checkout'</code>
+<code class="go">in 0.1 seconds automatically...</code>
+</pre>
+
+<p>“0.1 seconds” という箇所に注目してください。 <code>help.autocorrect</code> は整数値で、0.1秒単位での時間を表しています。
+そのため、仮に 50 を設定したなら、自動修正したコマンドが実行される前に 5 秒の猶予が与えられます。</p>
+</section></section><section data-type="sect2" id="git-5xEhJ"><h3 id="Git-における色"><a href="#Git-における色">Git における色</a></h3>
+
+<p><a data-type="indexterm" data-primary="color" id="id-yKQsW"></a></p>
+
+<p>Git では、ターミナルへの出力に色をつけることができます。ぱっと見て、すばやくお手軽に出力内容を把握できるようになるでしょう。
+さまざまなオプションで、お好みに合わせて色を設定しましょう。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="colorui-YoNh7"><h4><code>color.ui</code></h4>
+
+<p>Git は自動的に大半の出力に色づけをします。ですが、この挙動が気に入らないなら、そのためのマスタースイッチがあります。
+ターミナルへの出力への色付けをすべてオフにするなら、以下のようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global color.ui <code class="nb">false</code>
+</pre>
+
+<p>デフォルトの設定は <code>auto</code> で、直接ターミナルへ出力する場合には色付けを行いますが、パイプやファイルへリダイレクトした場合にはカラーコントロールコードを出力しません。</p>
+
+<p>また <code>always</code> を指定すると、ターミナルであってもパイプであっても色をつけます。
+<code>always</code> を使うことは、まずないでしょう。たいていの場合は、カラーコードを含む結果をリダイレクトしたければ、 Git コマンドに <code>--color</code> フラグを渡せばカラーコードの使用を強制できます。
+ふだんはデフォルトの設定で要望を満たせるでしょう。</p>
+</section><section data-type="sect3" id="color-KO4f5"><h4><code>color.*</code></h4>
+
+<p>どのコマンドをどのように色づけするかをより細やかに指定したい場合、コマンド単位の色づけ設定を使用します。
+これらの項目には <code>true</code>、<code>false</code> あるいは <code>always</code> を指定することができます。</p>
+<pre>color.branch
+color.diff
+color.interactive
+color.status</pre>
+
+<p>さらに、これらの項目ではサブ設定が使え、出力の一部について特定の色を使うように指定することもできます。
+たとえば、diff の出力で、メタ情報を黒地に青の太字で出力させたい場合は次のようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global color.diff.meta <code class="s2">"blue black bold"</code>
+</pre>
+
+<p>色として指定できる値は <code>normal</code>、 <code>black</code>、 <code>red、 `green</code>、 <code>yellow</code>、 <code>blue</code>、 <code>magenta</code>、 <code>cyan</code>、 <code>white</code> のいずれかです。先ほどの例の bold のように属性を指定することもできます。<code>bold</code>、 <code>dim</code>、 <code>ul</code> （下線つき）、 <code>blink</code>、 <code>reverse</code> （文字と背景の色を逆にする）のいずれかを指定できます。</p>
+</section></section><section data-type="sect2" id="_external_merge_tools"><h3 id="外部のマージツールおよび-diff-ツール"><a href="#外部のマージツールおよび-diff-ツール">外部のマージツールおよび diff ツール</a></h3>
+
+<p><a data-type="indexterm" data-primary="mergetool" id="id-y9QCW"></a><a data-type="indexterm" data-primary="difftool" id="id-0d0tA"></a></p>
+
+<p>Git には、内部的な diff の実装が組み込まれています。本書でこれまで見てきた内容は、それを使用しています。ですが、外部のツールを使うよう設定することもできます。
+また、コンフリクトを手動で解決するのではなくグラフィカルなコンフリクト解消ツールを使うよう設定することもできます。
+ここでは Perforce Visual Merge Tool (P4Merge) を使って diff の表示とマージの処理を行えるようにする例を示します。これはすばらしいグラフィカルツールで、しかも無料で使えるからです。</p>
+
+<p>P4Merge はすべての主要プラットフォーム上で動作するので、実際に試してみたい人は試してみるとよいでしょう。
+この例では、Mac や Linux 形式のパス名を例に使います。Windows の場合は、<code>/usr/local/bin</code> のところを環境に合わせたパスに置き換えてください。</p>
+
+<p>まず、P4Merge を <a href="http://www.perforce.com/downloads/Perforce/"><em class="hyperlink">http://www.perforce.com/downloads/Perforce/</em></a> からダウンロードします。
+次に、コマンドを実行するための外部ラッパースクリプトを用意します。
+この例では、Mac 用の実行パスを使います。他のシステムで使う場合は、<code>p4merge</code> のバイナリがインストールされた場所に置き換えてください。
+次のような内容のマージ用ラッパースクリプト <code>extMerge</code> を用意してください。これは、 <code>p4merge</code> にすべての引数を渡して呼び出します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /usr/local/bin/extMerge
+<code class="gp">#</code>!/bin/sh
+<code class="go">/Applications/p4merge.app/Contents/MacOS/p4merge $*</code>
+</pre>
+
+<p>diff のラッパーは、7 つの引数が渡されていることを確認したうえでそのうちのふたつをマージスクリプトに渡します。
+デフォルトでは、Git は次のような引数を diff プログラムに渡します。</p>
+
+<pre data-type="programlisting">path old-file old-hex old-mode new-file new-hex new-mode</pre>
+
+<p>ここで必要な引数は <code>old-file</code> と <code>new-file</code> だけなので、ラッパースクリプトではこれらを渡すようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /usr/local/bin/extDiff
+<code class="gp">#</code>!/bin/sh
+<code class="go">[ $# -eq 7 ] &amp;&amp; /usr/local/bin/extMerge "$2" "$5"</code>
+</pre>
+
+<p>また、これらのツールは実行可能にしておかなければなりません。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> sudo chmod +x /usr/local/bin/extMerge
+<code class="gp">$</code> sudo chmod +x /usr/local/bin/extDiff
+</pre>
+
+<p>これで、自前のマージツールや diff ツールを使えるように設定する準備が整いました。
+設定項目はひとつだけではありません。まず <code>merge.tool</code> でどんなツールを使うのかを Git に伝え、 <code>mergetool.&lt;tool&gt;.cmd</code> でそのコマンドを実行する方法を指定し、<code>mergetool.&lt;tool&gt;.trustExitCode</code> では「そのコマンドの終了コードでマージが成功したかどうかを判断できるのか」を指定し、<code>diff.external</code> では diff の際に実行するコマンドを指定します。つまり、このような 4 つのコマンドを実行することになります。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global merge.tool extMerge
+<code class="gp">$</code> git config --global mergetool.extMerge.cmd <code class="se">\</code>
+<code class="go">  'extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"'</code>
+<code class="gp">$</code> git config --global mergetool.extMerge.trustExitCode <code class="nb">false</code>
+<code class="gp">$</code><code class="nb"> </code>git config --global diff.external extDiff
+</pre>
+
+<p>あるいは、<code>~/.gitconfig</code> ファイルを編集してこのような行を追加します。</p>
+
+<pre data-type="programlisting" data-code-language="ini"><code class="k">[merge]</code>
+  <code class="na">tool</code> <code class="o">=</code> <code class="s">extMerge</code>
+<code class="k">[mergetool "extMerge"]</code>
+  <code class="na">cmd</code> <code class="o">=</code> <code class="s">extMerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"</code>
+<code class="s">  trustExitCode = false</code>
+<code class="k">[diff]</code>
+  <code class="na">external</code> <code class="o">=</code> <code class="s">extDiff</code>
+</pre>
+
+<p>すべて設定し終えたら、このような diff コマンドを実行すると、</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git diff 32d1776b1^ 32d1776b1
+</pre>
+
+<p>結果をコマンドラインに出力するかわりに、Git から P4Merge が呼び出され、次のようになります。</p>
+
+<figure id="id-QDJUM"><img src="/book/en/v2/book/08-customizing-git/images/p4merge.png" alt="P4Merge."><figcaption><span class="label">Figure 8-1. </span>P4Merge.</figcaption></figure><p>ふたつのブランチをマージしてコンフリクトが発生した場合は <code>git mergetool</code> を実行します。すると P4Merge が立ち上がり、コンフリクトの解決を GUI ツールで行えるようになります。</p>
+
+<p>このようなラッパーを設定しておくと、あとで diff ツールやマージツールを簡単に変更できます。
+たとえば <code>extDiff</code> や <code>extMerge</code> で KDiff3 を実行させるように変更するには <code>extMerge</code> ファイルをこのように変更するだけでよいのです。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> cat /usr/local/bin/extMerge
+<code class="gp">#</code>!/bin/sh
+<code class="go">/Applications/kdiff3.app/Contents/MacOS/kdiff3 $*</code>
+</pre>
+
+<p>これで、Git での diff の閲覧やコンフリクトの解決の際に KDiff3 が立ち上がるようになりました。</p>
+
+<p>Git にはさまざまなマージツール用の設定が事前に準備されており、特に設定しなくても利用することができます。
+サポートされているツールを確認するには、次のコマンドを実行します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git mergetool --tool-help
+<code class="go">'git mergetool --tool=&lt;tool&gt;' may be set to one of the following:</code>
+<code class="go">        emerge</code>
+<code class="go">        gvimdiff</code>
+<code class="go">        gvimdiff2</code>
+<code class="go">        opendiff</code>
+<code class="go">        p4merge</code>
+<code class="go">        vimdiff</code>
+<code class="go">        vimdiff2</code>
+
+<code class="go">The following tools are valid, but not currently available:</code>
+<code class="go">        araxis</code>
+<code class="go">        bc3</code>
+<code class="go">        codecompare</code>
+<code class="go">        deltawalker</code>
+<code class="go">        diffmerge</code>
+<code class="go">        diffuse</code>
+<code class="go">        ecmerge</code>
+<code class="go">        kdiff3</code>
+<code class="go">        meld</code>
+<code class="go">        tkdiff</code>
+<code class="go">        tortoisemerge</code>
+<code class="go">        xxdiff</code>
+
+<code class="go">Some of the tools listed above only work in a windowed</code>
+<code class="go">environment. If run in a terminal-only session, they will fail.</code>
+</pre>
+
+<p>KDiff3 を diff ツールとしてではなくマージのときにだけ使いたい場合は、kdiff3 コマンドにパスが通っている状態で次のコマンドを実行します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global merge.tool kdiff3
+</pre>
+
+<p><code>extMerge</code> や <code>extDiff</code> を準備せずにこのコマンドを実行すると、マージの解決の際には KDiff3 を立ち上げて diff の際には通常の Git の diff ツールを使うようになります。</p>
+</section><section data-type="sect2" id="-bEGI0"><h3 id="書式設定と空白文字"><a href="#書式設定と空白文字">書式設定と空白文字</a></h3>
+
+<p><a data-type="indexterm" data-primary="whitespace" id="id-9aRi6"></a></p>
+
+<p>書式設定や空白文字の問題は微妙にうっとうしいもので、とくにさまざまなプラットフォームで開発している人たちと共同作業をするときに問題になりがちです。
+使っているエディタが知らぬ間に空白文字を埋め込んでしまっていたり Windows で開発している人が行末にキャリッジリターンを付け加えてしまったりなどしてパッチが面倒な状態になってしまうことも多々あります。
+Git では、こういった問題に対処するための設定項目も用意しています。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="coreautocrlf-zQRFA"><h4><code>core.autocrlf</code></h4>
+
+<p><a data-type="indexterm" data-primary="crlf" id="id-ND9tQ"></a><a data-type="indexterm" data-primary="line endings" id="id-W2OI8"></a></p>
+
+<p>自分が Windows で開発している一方、チームの中に Windows 以外の環境で開発している人がいる場合（逆も同様）には、改行コードの問題に巻き込まれることがありがちです。
+Windows ではキャリッジリターンとラインフィードでファイルの改行を表すのですが、Mac や Linux ではラインフィードだけで改行を表すという違いが原因です。
+これはささいな違いではありますが、さまざまなプラットフォームにまたがる作業では非常に面倒なものです。Windows のエディタには、LFだけの改行をだまってCRLFに置き換えたり、ユーザがEnterキーを押下した際にCRとLFの両方を挿入したりするものが数多くあります。</p>
+
+<p>Git はこの問題に対処するために、コミットする際には行末の CRLF を LF に自動変換し、ファイルシステム上にチェックアウトするときには逆の変換を行うようにすることができます。
+この機能を使うには <code>core.autocrlf</code> を設定します。</p>
+
+<p>Windows で作業をするときにこれを <code>true</code> に設定すると、コードをチェックアウトするときに行末の LF を CRLF に自動変換してくれます。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.autocrlf <code class="nb">true</code>
+</pre>
+
+<p>Linux や Mac などの行末に LF を使うシステムで作業をしている場合は、Git にチェックアウト時の自動変換をされてしまうと困ります。しかし、行末が CRLF なファイルが紛れ込んでしまった場合には Git に自動修正してもらいたいものです。
+コミット時の CRLF から LF への変換はさせたいけれどもそれ以外の自動変換が不要な場合は、<code>core.autocrlf</code> を input に設定します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.autocrlf input
+</pre>
+
+<p>この設定は、Windows にチェックアウトしたときの CRLF への変換は行いますが、Mac や Linux へのチェックアウト時は LF のままにします。</p>
+
+<p>Windows のみのプロジェクトで作業をしているのなら、この機能を無効にしてキャリッジリターンをそのままリポジトリに記録してもよいでしょう。その場合は、値 <code>false</code> を設定します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.autocrlf <code class="nb">false</code>
+</pre>
+</section><section data-type="sect3" id="corewhitespace-6MdCo"><h4><code>core.whitespace</code></h4>
+
+<p>Git には、空白文字に関する問題を見つけて修正するための設定もあります。
+空白文字に関する主要な六つの問題に対応するもので、そのうち三つはデフォルトで有効になっています。残りの三つはデフォルトでは有効になっていませんが、有効化することができます。</p>
+
+<p>デフォルトで有効になっている設定は、行末の空白文字を見つける <code>blank-at-eol</code> 、ファイル末尾の空白文字を見つける <code>blank-at-eof</code> 、行頭のタブ文字より前にある空白文字を見つける <code>space-before-tab</code> です。</p>
+
+<p>デフォルトでは無効だけれども有効にすることもできる三つの設定は、行頭がタブ文字でなく空白文字になっている行を見つける <code>indent-with-non-tab</code> （空白文字の数は <code>tabwidth</code> オプションで制御可能）、行内のインデント部分にあるタブ文字を見つける <code>tab-in-indent</code> 、行末のキャリッジリターンを許容する <code>cr-at-eol</code> です。</p>
+
+<p>これらのオン・オフを切り替えるには、<code>core.whitespace</code> にカンマ区切りで項目を指定します。
+無効にしたい場合は、設定文字列でその項目を省略するか、あるいは項目名の前に <code>-</code> をつけます。
+たとえば <code>cr-at-eol</code> 以外のすべてを設定したい場合は、このようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --global core.whitespace <code class="se">\</code>
+<code class="go">    trailing-space,space-before-tab,indent-with-non-tab</code>
+</pre>
+
+<p><code>git diff</code> コマンドを実行したときに Git がこれらの問題を検出すると、その部分を色付けして表示します。修正してからコミットするようにしましょう。
+この設定は、<code>git apply</code> でパッチを適用する際にも助けとなります。
+空白に関する問題を含むパッチを適用するときに警告を発してほしい場合には、次のようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply --whitespace<code class="o">=</code>warn &lt;patch&gt;
+</pre>
+
+<p>あるいは、問題を自動的に修正してからパッチを適用したい場合は、次のようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git apply --whitespace<code class="o">=</code>fix &lt;patch&gt;
+</pre>
+
+<p>これらの設定は、<code>git rebase</code> コマンドにも適用されます。
+空白に関する問題を含むコミットをしたけれどまだそれを公開リポジトリにプッシュしていない場合は、 <code>git rebase --whitespace=fix</code> を実行すれば、パッチを書き換えて空白問題を自動修正してくれます。</p>
+</section></section><section data-type="sect2" id="-KbOH5"><h3 id="サーバーの設定"><a href="#サーバーの設定">サーバーの設定</a></h3>
+
+<p>Git のサーバー側の設定オプションはそれほど多くありませんが、いくつか興味深いものがあるので紹介します。</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="receivefsckobjects-2MKu9"><h4><code>receive.fsckObjects</code></h4>
+
+<p>デフォルトでは、Git はプッシュで受け取ったオブジェクトの SHA-1 チェックサムが一致していて有効なオブジェクトを指しているということをチェックさせることができます。
+ですが、デフォルトではこのチェックは行わないようになっています。このチェックは比較的重たい処理であり、リポジトリのサイズが大きかったりプッシュする量が多かったりすると、毎回チェックさせるのには時間がかかるでしょう。
+毎回のプッシュの際に Git にオブジェクトの一貫性をチェックさせたい場合は、<code>receive.fsckObjects</code> を true にして強制的にチェックさせるようにします。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --system receive.fsckObjects <code class="nb">true</code>
+</pre>
+
+<p>これで、Git がリポジトリの整合性を確認してからでないとプッシュが認められないようになります。壊れたデータをまちがって受け入れてしまうことがなくなりました。</p>
+</section><section data-type="sect3" id="receivedenynonfastforwards-yQEto"><h4><code>receive.denyNonFastForwards</code></h4>
+
+<p>すでにプッシュしたコミットをリベースしてもう一度プッシュした場合、あるいはリモートブランチが現在指しているコミットを含まないコミットをプッシュしようとした場合は、プッシュが拒否されます。
+これは悪くない方針でしょう。しかしリベースの場合は、自分が何をしているのかをきちんと把握していれば、プッシュの際に <code>-f</code> フラグを指定して強制的にリモートブランチを更新することができます。</p>
+
+<p>このような強制更新機能を無効にするには、<code>receive.denyNonFastForwards</code> を設定します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --system receive.denyNonFastForwards <code class="nb">true</code>
+</pre>
+
+<p>もうひとつの方法として、サーバー側の receive フックを使うこともできます。こちらの方法については後ほど簡単に説明します。
+receive フックを使えば、特定のユーザーだけ強制更新を無効にするなどより細やかな制御ができるようになります。</p>
+</section><section data-type="sect3" id="receivedenydeletes-9VPfl"><h4><code>receive.denyDeletes</code></h4>
+
+<p><code>denyNonFastForwards</code> の制限を回避する方法として、いったんブランチを削除してから新しいコミットを参照するブランチをプッシュしなおすことができます。
+これを無効にするには、 <code>receive.denyDeletes</code> を true に設定します。</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git config --system receive.denyDeletes <code class="nb">true</code>
+</pre>
+
+<p>これは、プッシュによるブランチやタグの削除を一切拒否し、誰も削除できないようにします。
+リモートブランチを削除するには、サーバー上の ref ファイルを手で削除しなければなりません。ACL を使って、ユーザー単位でこれを制限することもできますが、その方法は <a data-type="xref" href="ch00/_an_example_git_enforced_policy">Git ポリシーの実施例</a> で扱います。</p>
+</section></section><div id="nav"><a href="/book/ja/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%81%BE%E3%81%A8%E3%82%81">prev</a> | <a href="/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E5%B1%9E%E6%80%A7">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

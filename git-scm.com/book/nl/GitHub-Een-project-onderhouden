@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":261,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Een project onderhouden</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/nl/2015-06-23-4b1c4/progit-nl.560.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Aan de slag</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/nl/v2/Aan-de-slag-Over-versiebeheer">Over versiebeheer</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/nl/v2/Aan-de-slag-Een-kort-historisch-overzicht-van-Git">Een kort historisch overzicht van Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/nl/v2/Aan-de-slag-De-grondbeginselen-van-Git">De grondbeginselen van Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/nl/v2/Aan-de-slag-De-commando-regel">De commando-regel</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/nl/v2/Aan-de-slag-Git-installeren">Git installeren</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/nl/v2/Aan-de-slag-Git-klaarmaken-voor-eerste-gebruik">Git klaarmaken voor eerste gebruik</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/nl/v2/Aan-de-slag-Hulp-krijgen">Hulp krijgen</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/nl/v2/Aan-de-slag-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Git Basics</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/nl/v2/Git-Basics-Een-Git-repository-verkrijgen">Een Git repository verkrijgen</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen">Wijzigingen aan de repository vastleggen</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/nl/v2/Git-Basics-De-commit-geschiedenis-bekijken">De commit geschiedenis bekijken</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/nl/v2/Git-Basics-Dingen-ongedaan-maken">Dingen ongedaan maken</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/nl/v2/Git-Basics-Werken-met-remotes">Werken met remotes</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/nl/v2/Git-Basics-Taggen-Labelen">Taggen (Labelen)</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/nl/v2/Git-Basics-Git-aliassen">Git aliassen</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/nl/v2/Git-Basics-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branchen in Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-in-vogelvlucht">Branches in vogelvlucht</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/nl/v2/Branchen-in-Git-Eenvoudig-branchen-en-mergen">Eenvoudig branchen en mergen</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-beheer">Branch-beheer</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/nl/v2/Branchen-in-Git-Branch-workflows">Branch workflows</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/nl/v2/Branchen-in-Git-Branches-op-afstand-Remote-branches">Branches op afstand (Remote branches)</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/nl/v2/Branchen-in-Git-Rebasen">Rebasen</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/nl/v2/Branchen-in-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/nl/v2/Git-op-de-server-De-protocollen">Git op de server</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/nl/v2/Git-op-de-server-De-protocollen">De protocollen</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen">Git op een server krijgen</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/nl/v2/Git-op-de-server-Je-publieke-SSH-sleutel-genereren">Je publieke SSH sleutel genereren</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/nl/v2/Git-op-de-server-De-server-opzetten">De server opzetten</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/nl/v2/Git-op-de-server-Git-Daemon">Git Daemon</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/nl/v2/Git-op-de-server-Slimme-HTTP">Slimme HTTP</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/nl/v2/Git-op-de-server-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/nl/v2/Git-op-de-server-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/nl/v2/Git-op-de-server-Hosting-oplossingen-van-derden">Hosting oplossingen van derden</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/nl/v2/Git-op-de-server-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerd Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/nl/v2/Gedistribueerd-Git-Gedistribueerde-workflows">Gedistribueerde workflows</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/nl/v2/Gedistribueerd-Git-Bijdragen-aan-een-project">Bijdragen aan een project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/nl/v2/Gedistribueerd-Git-Het-beheren-van-een-project">Het beheren van een project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/nl/v2/Gedistribueerd-Git-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>6. <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/nl/v2/GitHub-Account-setup-en-configuratie">Account setup en configuratie</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/nl/v2/GitHub-Aan-een-project-bijdragen">Aan een project bijdragen</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/nl/v2/GitHub-Een-project-onderhouden">Een project onderhouden</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">Een organisatie beheren</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/nl/v2/GitHub-GitHub-Scripten">GitHub Scripten</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/nl/v2/GitHub-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/nl/v2/Git-Tools-Revisie-Selectie">Revisie Selectie</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/nl/v2/Git-Tools-Interactief-stagen">Interactief stagen</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/nl/v2/Git-Tools-Stashen-en-opschonen">Stashen en opschonen</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/nl/v2/Git-Tools-Je-werk-tekenen">Je werk tekenen</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/nl/v2/Git-Tools-Zoeken">Zoeken</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/nl/v2/Git-Tools-Geschiedenis-herschrijven">Geschiedenis herschrijven</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/nl/v2/Git-Tools-Reset-ontrafeld">Reset ontrafeld</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/nl/v2/Git-Tools-Mergen-voor-gevorderden">Mergen voor gevorderden</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/nl/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/nl/v2/Git-Tools-Debuggen-met-Git">Debuggen met Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/nl/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/nl/v2/Git-Tools-Bundelen">Bundelen</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/nl/v2/Git-Tools-Vervangen">Vervangen</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/nl/v2/Git-Tools-Het-opslaan-van-inloggegevens">Het opslaan van inloggegevens</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/nl/v2/Git-Tools-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git aanpassen</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/nl/v2/Git-aanpassen-Git-configuratie">Git configuratie</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/nl/v2/Git-aanpassen-Git-attributen">Git attributen</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/nl/v2/Git-aanpassen-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/nl/v2/Git-aanpassen-Een-voorbeeld-van-Git-afgedwongen-beleid">Een voorbeeld van Git-afgedwongen beleid</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/nl/v2/Git-aanpassen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git en andere systemen</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/nl/v2/Git-en-andere-systemen-Git-als-een-client">Git als een client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/nl/v2/Git-en-andere-systemen-Migreren-naar-Git">Migreren naar Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/nl/v2/Git-en-andere-systemen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Git Binnenwerk</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/nl/v2/Git-Binnenwerk-Binnenwerk-en-koetswerk-plumbing-and-porcelain">Binnenwerk en koetswerk (plumbing and porcelain)</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-objecten">Git objecten</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/nl/v2/Git-Binnenwerk-Git-Referenties">Git Referenties</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/nl/v2/Git-Binnenwerk-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/nl/v2/Git-Binnenwerk-De-Refspec">De Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/nl/v2/Git-Binnenwerk-Uitwisseling-protocollen">Uitwisseling protocollen</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/nl/v2/Git-Binnenwerk-Onderhoud-en-gegevensherstel">Onderhoud en gegevensherstel</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/nl/v2/Git-Binnenwerk-Omgevingsvariabelen">Omgevingsvariabelen</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/nl/v2/Git-Binnenwerk-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Git in andere omgevingen</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Grafische-interfaces">Grafische interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/nl/v2/Git-in-andere-omgevingen-Samenvatting">Samenvatting</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Git in je applicaties inbouwen</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Commando-regel-Git">Commando-regel Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/nl/v2/Git-in-je-applicaties-inbouwen-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Git Commando’s</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Setup-en-configuratie">Setup en configuratie</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-ophalen-en-maken">Projecten ophalen en maken</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Basic-snapshotten">Basic snapshotten</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Branchen-en-mergen">Branchen en mergen</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Projecten-delen-en-bijwerken">Projecten delen en bijwerken</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Inspectie-en-vergelijking">Inspectie en vergelijking</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Debuggen">Debuggen</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Patchen">Patchen</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Externe-systemen">Externe systemen</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Beheer">Beheer</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/nl/v2/Git-Commando%E2%80%99s-Binnenwerk-commando%E2%80%99s-plumbing-commando%E2%80%99s">Binnenwerk commando’s (plumbing commando’s)</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>6.3 GitHub - Een project onderhouden</h1>
+  <div><a id="_maintaining_gh_project"></a><h2>Een project onderhouden</h2>
+
+<p>Nu we ons op ons gemak voelen bij te dragen aan een project, laten we het eens van de andere kant bekijken: je eigen
+ project aanmaken, onderhouden en beheren.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Een nieuwe repository aanmaken" id="idp15847008"><h3 id="Een-nieuwe-repository-aanmaken"><a href="#Een-nieuwe-repository-aanmaken">Een nieuwe repository aanmaken</a></h3>
+
+<p>Laten we eens een nieuwe repository aanmaken waarmee we de code van ons project delen.
+Begin met het klikken op de “New repository” knop aan de rechterkant van het dashboard, of vanaf de <code>+</code> knop in de
+ bovenste toolbar naast je gebruikersnaam zoals te zien is in <a data-type="xref" href="ch00/_new_repo_dropdown">Figure 6-30</a>.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/newrepo.png" alt="Het ``Your repositories'' gebied."></div>
+<figcaption>Het “Your repositories” gebied.</figcaption></figure><figure id="_new_repo_dropdown"><div class="border-box"><img src="/book/en/v2/book/06-github/images/new-repo.png" alt="De ``New repository'' dropdown."></div>
+<figcaption>De “New repository” dropdown.</figcaption></figure><p>Dit leidt je naar het “new repository” formulier:</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/newrepoform.png" alt="Het ``new repository'' formulier."></div>
+<figcaption>Het “new repository” formulier.</figcaption></figure><p>Alles wat je echt moet doen is je project een naam geven, de overige velden zijn volledig optioneel.
+Voor nu klik je gewoon de “Create Repository” knop en boem - je hebt een nieuwe repository op GitHub, genaamd
+<code>&lt;gebruiker&gt;/&lt;project_naam&gt;</code>.</p>
+
+<p>Omdat er nog geen code is, zal GitHub je aanwijzigen geven hoe je een gloednieuwe Git repository maakt, of verbindt
+ met een bestaand Git project.
+We zullen het hier nog niet uitwerken, als je een opfrisser nodig hebt kijk dan nog eens naar <a data-type="xref" href="ch02/_git_basics_chapter">Chapter 2</a>.</p>
+
+<p>Nu je project op GitHub gehost wordt, kan je het URL aan iedereen geven waarmee je je project wilt delen.
+Elk project op GitHub is toegankelijk via HTTP als <code>https://github.com/&lt;gebruiker&gt;/&lt;project_naam&gt;</code>, en via SSH als
+ <code>git@github.com:&lt;gebruiker&gt;/&lt;project_naam&gt;</code>.
+Git kan fetchen van en pushen naar beide URLs, maar toegang wordt bepaald op basis van de gebruikersgegevens van de
+ gebruiker die ze benadert.</p>
+<div data-type="note">
+<p>Voor openbare projecten wordt vaak de voorkeur gegeven aan het delen middels de HTTP URL, omdat de gebruiker daarvoor
+ niet perse een GitHub account nodig heeft om het te clonen. Gebruikers moeten wel een account hebben en een
+ geüploade SSH sleutel om je project te benaderen als je ze het SSH URL geeft. De HTTP variant is exact dezelfde URL
+ die ze in hun browser zouden plakken als ze het project daar zouden willen  bekijken.</p>
+</div>
+</section><section data-type="sect2" data-pdf-bookmark="Medewerkers toevoegen" id="idp15847632"><h3 id="Medewerkers-toevoegen"><a href="#Medewerkers-toevoegen">Medewerkers toevoegen</a></h3>
+
+<p>Als je met andere mensen werkt die je commit toegang wilt geven, moet je ze als “collaborators” toevoegen.
+Als Ben, Jeff en Louise allemaal GitHub accounts aanvragen, en je wilt ze push toegang geven op jouw repository, kan
+ je ze toevoegen aan je project.
+Als je dit doet geeft je ze “push” toegang, wat inhoudt dat ze zowel lees als schrijf toegang hebben tot het
+ project en de Git repository.</p>
+
+<p>Klik op de “Settings” link onderaan in de rechter zijkolom.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/reposettingslink.png" alt="De repository settings link."></div>
+<figcaption>De repository settings link.</figcaption></figure><p>Kies daarna “Collaborators” op het menu aan de linker kant.
+Daarna type je gewoon een gebruikersnaam in het veld en klikt “Add collaborator.”
+Je kunt dit zo vaak herhalen als je toegang wilt verlenen aan iedereen die je maar wilt.
+Als je toegang wilt ontzeggen, klik je gewoon de “X” rechts van de betreffende rij.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/collaborators.png" alt="Het repository medewerkers veld."></div>
+<figcaption>Repository medewerkers.</figcaption></figure></section><section data-type="sect2" data-pdf-bookmark="Pull Requests beheren" id="idp15868752"><h3 id="Pull-Requests-beheren"><a href="#Pull-Requests-beheren">Pull Requests beheren</a></h3>
+
+<p>Nu je een project hebt met wat code erin en misschien zelfs een paar medewerkers die ook push toegang hebben, laten
+ we eens behandelen wat je moet doen als je zelf een Pull Request ontvangt.</p>
+
+<p>Pull Requests kunnen komen van een branch in een fork van jouw repository of ze kunnen komen van een andere branch in
+ dezefde repository. Het enige verschil is dat diegenen in een fork vaak van mensen komen waar jij niet naar hun
+ branch kan pushen en zij niet naar de jouwe, terwijl bij interne Pull Requests beide partijen over het algemeen de
+ branch kunnen benaderen.</p>
+
+<p>Voor de volgende voorbeelden, laten we aannemen dat jij “tonychacon” bent en dat je een nieuwe Arduino code project
+ genaamd “fade” gemaakt hebt.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="Email berichten" id="_email_notifications"><h4>Email berichten</h4>
+
+<p>Er is nu iemand die een wijziging op je code gemaakt heeft en die je een Pull Request stuurt. Je zou een email
+ bericht moeten krijgen die je over het nieuwe Pull Request bericht en die er ongeveer zo uitziet als <a data-type="xref" href="ch00/_email_pr">Figure 6-34</a>.</p>
+
+<figure id="_email_pr"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-01-email.png" alt="Pull Request email bericht"></div>
+<figcaption>Email bericht van een nieuwe Request.</figcaption></figure><p>Er zijn een aantal dingen te zien aan deze email. Het geeft je een kleine diffstat — een lijst met bestanden die
+ gewijzigd zijn in de Pull Request en hoezeer ze zijn gewijzigd. Het geeft je een link naar de Pull Request op GitHub.
+ Het geeft je ook een aantal URLs die je vanaf de commando regel kunt gebruiken.</p>
+
+<p>Als je de regel bekijkt waar <code>git pull &lt;url&gt; patch-1</code> staat, is dit een eenvoudige manier om een remote branch te
+ mergen zonder een remote toe te voegen. We hebben dit kort behandeld in <a data-type="xref" href="ch05/_checking_out_remotes">“Remote branches uitchecken”</a>.
+Als je wilt, kan je een topic branch maken en ernaar switchen en dit commando aanroepen om de Pull Request
+ wijzigingen erin te mergen.</p>
+
+<p>De andere interessante URLs zijn de <code>.diff</code> en <code>.patch</code> URLs, die zoals je kunt vermoeden, de unified diff en patch
+ versies van de Pull Request geven. Je zou technisch gesproken de Pull Request in je werk mergen met zoiets als dit:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> curl http://github.com/tonychacon/fade/pull/1.patch <code class="p">|</code> git am</pre>
+</section><section data-type="sect3" data-pdf-bookmark="Samenwerken op basis van de Pull Request" id="idp15973280"><h4>Samenwerken op basis van de Pull Request</h4>
+
+<p>Zoals behandeld in <a data-type="xref" href="ch00/_github_flow">“De GitHub flow”</a>, kan je nu een conversatie voeren met de persoon die de Pull Request geopend
+ heeft. Je kunt commentaar geven op specifieke regels code, commentaar geven op hele commits of commentaar geven over
+ de gehele Pull Request; waarbij de GitHub smaak van Markdown overal gebruikt kan worden.</p>
+
+<p>Elke keer als iemand anders commentaar geeft op de Pull Request blijf je email berichten ontvangn zodat je weet dat
+ er activiteit plaatsvindt. Alle betrokkenen krijgen een link naar de Pull Request waar de activiteit op plaatsvindt
+ en je kunt ook reageren op de email om commentaar op de Pull Request converstatie te geven.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-03-email-resp.png" alt="Antwoord via email"></div>
+<figcaption>Antwoorden op de emails worden in de converstatie betrokken.</figcaption></figure><p>Zodra de code goed genoeg is en je het wilt mergen, kan je ofwel de code lokaal pullen en mergen - met de <code>git pull
+ &lt;url&gt; &lt;branch&gt;</code> syntax die we eerder zagen, of door de fork als remote toe te voegen en dan te fetchen en mergen.</p>
+
+<p>Als de merge triviaal is, kan je ook gewoon de “Merge” knop op de GitHub site klikken. Dit zal een
+ “non-fast-forward” merge uitvoeren, waardoor een merge commit wordt gemaakt zelfs als er een fast-forward merge
+ mogelijk was. Dit houdt in dat hoe dan ook, elke keer als je de merge knop klikt een merge commit gemaakt wordt.
+ Zoals je kunt zien in <a data-type="xref" href="ch00/_merge_button">Figure 6-36</a>, geeft GitHub je al deze informatie als je de hint link klikt.</p>
+
+<figure id="_merge_button"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-02-merge.png" alt="Merge knop"></div>
+<figcaption>Merge knop en instructies hoe je een Pull Request handmatig merged.</figcaption></figure><p>Als je besluit dat je het niet wilt mergen, kan je ook gewoon het Pull Request sluiten en de persoon die het geopend heeft krijgt een berichtje.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Pull Request Refs (Pull Request referenties)" id="_pr_refs"><h4>Pull Request Refs (Pull Request referenties)</h4>
+
+<p>Als je te maken hebt met <strong>veel</strong> Pull Requests en niet elke keer een aantal remotes wilt toevoegen of eenmalige pulls
+ wilt doen, is er een aardige truuk die GitHub je toestaat te doen. Dit is een beetje een truuk voor gevorderden en
+ we zullen de details beter behandelen in <a data-type="xref" href="ch10/_refspec">“De Refspec”</a>, maar het kan behoorlijk handig zijn.</p>
+
+<p>GitHub presenteert de Pull Request branches voor een repository als een soort van pseudo-branches op de server.
+ Standaard zal je ze niet krijgen als je cloont, maar ze zijn er wel op een verborgen manier en je kunt ze op een
+ redelijk eenvoudige wijze benaderen.</p>
+
+<p>Om dit te demonstreren, zullen we een low-level (laag niveau) commando (waar vaak aan wordt gerefereerd als een
+ “sanitaire voorziening” (plumbing) commando, waar we meer over zullen lezen in <a data-type="xref" href="ch10/_plumbing_porcelain">“Binnenwerk en koetswerk (plumbing and porcelain)”</a>) genaamd
+ <code>ls-remote</code> gebruiken. Dit commando wordt over het algemeen niet gebruikt in de dagelijks Git operaties maar het is
+ handig om te laten zien welke referenties er zich op de server bevinden.</p>
+
+<p>Als we dit commando gebruiken met de “blink” repository die we eerder zagen, krijgen we een lijst van alle
+ branches, tags en andere refernties in de repository.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git ls-remote https://github.com/schacon/blink
+<code class="go">10d539600d86723087810ec636870a504f4fee4d	HEAD</code>
+<code class="go">10d539600d86723087810ec636870a504f4fee4d	refs/heads/master</code>
+<code class="go">6a83107c62950be9453aac297bb0193fd743cd6e	refs/pull/1/head</code>
+<code class="go">afe83c2d1a70674c9505cc1d8b7d380d5e076ed3	refs/pull/1/merge</code>
+<code class="go">3c8d735ee16296c242be7a9742ebfbc2665adec1	refs/pull/2/head</code>
+<code class="go">15c9f4f80973a2758462ab2066b6ad9fe8dcf03d	refs/pull/2/merge</code>
+<code class="go">a5a7751a33b7e86c5e9bb07b26001bb17d775d1a	refs/pull/4/head</code>
+<code class="go">31a45fc257e8433c8d8804e3e848cf61c9d3166c	refs/pull/4/merge</code></pre>
+
+<p>Natuurlijk, als je in je repository bent en je gebruikt <code>git ls-remote origin</code> of welke remote je ook wilt
+ controleren, zal het je iets vergelijkbaars laten zien.</p>
+
+<p>Als de repository op GitHub is en er zijn Pull Requests die open staan, zal je deze referenties krijgen die een
+ prefix <code>refs/pull/</code> hebben. Dit zijn eigenlijk branches, maar omdat deze niet onder <code>refs/heads/</code> vermeld staan
+ krijg je ze normaalgesproken niet als je van de server cloont of fetcht — het proces van fetchen negeert ze
+ gewoonlijk.</p>
+
+<p>Er zijn twee referenties per Pull Request - degene die op <code>/head</code> eindigt wijst naar precies dezelfde commit als de
+ laatste commitin de Pull Request branch. Dus als iemand in onze repository een Pull Request opent en zijn branch
+ heeft de naam <code>bug-fix`</code> en deze wijst naar commit <code>a5a775</code>, dan zal <strong>onze</strong> repository geen branch <code>bug-fix</code>
+ aanwezig zijn (omdat deze in hun fork zit), maar we hebben <em>wel</em> <code>pull/&lt;pr#&gt;/head</code> die wijst naar <code>a5a775</code>. Dit
+ betekent dat we redelijk eenvoudig in één keer elke Pull Request branch kunnen pullen zonder daarvoor een zooitje
+ remotes hoeven toe te voegen.</p>
+
+<p>Nu kan je iets doen wat lijkt op het direct fetchen van de referentie.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin refs/pull/958/head
+<code class="go">From https://github.com/libgit2/libgit2</code>
+<code class="go"> * branch            refs/pull/958/head -&gt; FETCH_HEAD</code></pre>
+
+<p>Dit zegt tegen Git, “Maak contact met de <code>origin</code> remote, en download de ref genaamd <code>refs/pull/958/head</code>.”
+Git gehoorzaamt trouw, en zal alles downloaden wat je nodig hebt om die ref samen te stellen, en zal een verwijzing
+ naar de commit die je wilt onder <code>.git/FETCH_HEAD</code> zetten.
+Je kunt daarna een <code>git merge FETCH_HEAD</code> doen in een branch waar je dit in wilt testen, maar dat merge commit
+ bericht zal er wat vreemd uitzien.
+Daarnaast, als je <strong>veel</strong> pull requests zal reviewen, wordt dit erg vervelend.</p>
+
+<p>Er is ook een manier om <em>alle</em> pull requests te fetchen en ze up-to-date te houden elke keer als je contact maakt met
+ de remote.
+Open <code>.git/config</code> in je favoriete editor, en ga op zoek naar de <code>origin</code> remote.
+Dat zou er zo ongeveer uit moeten zien:</p>
+
+<pre data-type="programlisting">[remote "origin"]
+    url = https://github.com/libgit2/libgit2
+    fetch = +refs/heads/*:refs/remotes/origin/*</pre>
+
+<p>De regel die begint met <code>fetch =</code> is een “refspec.”
+Het is een manier om namen op de remote te mappen met namen in je lokale <code>.git</code> directory.
+Deze specifieke zegt tegen Git: “de spullen op de remote die onder <code>refs/heads</code> staan moeten in mijn lokale
+ repository onder <code>refs/remotes/origin</code> worden geplaatst.”
+Je kan deze sectie wijzigen door een andere refspec toe te voegen:</p>
+
+<pre data-type="programlisting">[remote "origin"]
+    url = https://github.com/libgit2/libgit2.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*</pre>
+
+<p>Die laatste regel vertelt Git, “Alle refs die er als <code>refs/pull/123/head</code> uitzien moeten lokaal worden opgeslagen
+ als <code>refs/remotes/origin/pr/123</code>.”
+Als je dit bestand nu opslaat en een <code>git fetch</code> uitvoert:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch
+<code class="gp">#</code> …
+<code class="go"> * [new ref]         refs/pull/1/head -&gt; origin/pr/1</code>
+<code class="go"> * [new ref]         refs/pull/2/head -&gt; origin/pr/2</code>
+<code class="go"> * [new ref]         refs/pull/4/head -&gt; origin/pr/4</code>
+<code class="gp">#</code> …</pre>
+
+<p>Nu worden alle remote pull request lokaal vertegenwoordigt met refs die zich vrijwel hetzelfde gedragen als tracking
+ branches: ze zijn alleen-lezen, en ze worden geüpdatet als je een fetch doet.
+Dat maakt het enorm makkelijk om de code van een pull request lokaal uit te checken:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout pr/2
+<code class="go">Checking out files: 100% (3769/3769), done.</code>
+<code class="go">Branch pr/2 set up to track remote branch pr/2 from origin.</code>
+<code class="go">Switched to a new branch 'pr/2'</code></pre>
+
+<p>De oplettende lezers tussen jullie zullen de <code>head</code> aan het eind van het remote deel van de refspec hebben opgemerkt.
+Er is ook een <code>refs/pull/#/merge</code> ref aan de GitHub kant, welke de commit vertegenwoordigt die het resultaat zou zijn
+ als je op de “merge” knop op de site zou klikken. Dit stelt je in staat de merge te testen zelfs voordat je de
+ knop klikt.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Pull Requests op Pull Requests" id="idp15894400"><h4>Pull Requests op Pull Requests</h4>
+
+<p>Je kunt niet alleen Pull Requests openen die de main of <code>master</code> branch betreffen, je kunt zelfs een Pull Request
+ openen die betrekking heeft op elke willekeurige branch in het netwerk. Je kunt zelfs een Pull Request openen op een
+ andere Pull Request.</p>
+
+<p>Als je een Pull Request ziet die de juiste kant op gaat en je hebt een idee voor een verandering die daarvan
+ afhankelijk is of je weet niet zeker of het een goed idee is, of je hebt domweg geen push-toegang op de doelbranch,
+ kan je een Pull Request direct op de Pull Request openen.</p>
+
+<p>Als je een Pull Request opent, is er een invoerveld bovenaan op de pagina die aangeeft naar welke branch je wilt laten
+ pullen en welke je het van wilt laten pullen. Als je de “Edit” knop rechts van dat invoerveld klikt kan je niet
+ alleen de branches wijzigen, maar ook welke fork.</p>
+
+<figure id="_pr_targets"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-04-target.png" alt="PR doelen"></div>
+<figcaption>Handmatig de Pull Request doelfork en -branch wijzigen.</figcaption></figure><p>Hier kan je redelijk eenvoudig aangeven om jouw nieuwe branch in een andere Pull Request te mergen of in een andere
+ fork van het project.</p>
+</section></section><section data-type="sect2" data-pdf-bookmark="Vermeldingen en meldingen" id="idp15926784"><h3 id="Vermeldingen-en-meldingen"><a href="#Vermeldingen-en-meldingen">Vermeldingen en meldingen</a></h3>
+
+<p>GitHub heeft ook een redelijk aardig ingebouwde meldingen systeem die handig kan worden als je vragen hebt of
+ terugkoppeling wilt van specifiek individuen of teams.</p>
+
+<p>In elk commentaar kan je een <code>@</code> teken  typen en een automatische aanvulling met de namen en gebruikersnamen van
+ mensen die medewerkers of bijdragers in het project zal beginnen.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-05-mentions.png" alt="Vermeldingen"></div>
+<figcaption>Begin @ te typen om iemand te vermelden.</figcaption></figure><p>Je kunt ook een gebruiker vermelden die niet in die dropdown staat, maar kan de automatische aanvuller het sneller
+ maken.</p>
+
+<p>Als je eenmaal een commentaar hebt gepost met een gebruikersvermelding, zal die gebruiker een berichtje krijgen. Dat
+ houdt in dat dit een erg effectieve manier is om iemand in een discussie te betrekken in plaats van ze actief hierop
+ te laten controleren. Het gebeurt heel vaak op GitHub dat mensen anderen via Pull Requests anderen in hun team of
+ bedrijf erbij betrekken om een Issue of Pull Request te laten reviewen.</p>
+
+<p>Als iemand vermeld wordt in een Pull Request of Issue, worden ze erop “geabonneerd” en blijven meldingen krijgen
+ voor elke activiteit die erop plaatsvindt. Je wordt ook geabonneerd op iets wat je geopend hebt, als je een
+ repository volgt of als je ergens commentaar op geeft. Als je niet langer deze meldingen wilt krijgen, is er een
+ “Unsubscribe” (Afmeld) knop op de pagina die je kunt klikken om de meldingen te stoppen.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-06-unsubscribe.png" alt="Afmelden"></div>
+<figcaption>Afmelden van een Issue of Pull Request.</figcaption></figure><section data-type="sect3" data-pdf-bookmark="De meldingen pagina" id="idp15993824"><h4>De meldingen pagina</h4>
+
+<p>Als we hier over “meldingen” spreken in de context van GitHub, bedoelen we de specifieke manier waarop GitHub
+ probeert om met je in contact te blijven als er gebeurtenissen zijn en er zijn een aantal manieren waarop je dit
+ kunt configureren.
+Als je naar de “Notification center” tab van de instellingen pagina gaat, kan je een aantal opties zien die je hebt.</p>
+
+<figure><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-07-notifications.png" alt="Notification center"></div>
+<figcaption>Notification center opties.</figcaption></figure><p>De twee keuzes zijn om de berichten via “Email” en via “Web” te ontvangen en je kunt een van twee, geen of beide
+ selecteren als je actief deelneemt aan zaken en voor activiteiten op repositories die je volgt.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect4" data-pdf-bookmark="Web Meldingen" id="idp16011696"><h4>Web Meldingen</h4>
+
+<p>Web meldingen bestaan alleen binnen GitHub en je kunt ze alleen op GitHub controleren. Als je deze optie geselecteerd
+ hebt in je voorkeuren en een bericht wordt voor je gemaakt, zie je een kleine blauwe stip boven je meldingen ikoon
+ boven in je scherm zoals getoond in <a data-type="xref" href="ch00/_not_center">Figure 6-41</a>.
+  icon at the top of your screen as seen in <a data-type="xref" href="ch00/_not_center">Figure 6-41</a>.</p>
+
+<figure id="_not_center"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-08-notifications-page.png" alt="Notification center"></div>
+<figcaption>Notification center.</figcaption></figure><p>Als je hierop klikt, zal je een lijst met alle items zien waar je voor wordt bericht, gegroepeerd per project. Je
+ kunt de meldingen van een specifiek project filtreren door op de naam te klikken in de kolom links. Je kunt ook de
+ meldingen bevestigen door het vink-ikoon te klikken naast elke melding, of <em>alle</em> meldingen in een project
+ bevestigen door de vink boven in de groep te klikken. Er is ook een demp (mute) knop naast elke vinkteken die je
+ kunt klikken om geen enkel bericht meer voor dat bericht te ontvangen.</p>
+
+<p>Al deze instrumenten zijn erg handig voor het afhandelen van grote aantallen meldingen. Veel gevorderde GitHub
+gebruikers zullen eenvoudigweg alle email berichten uitschakelen en al hun meldingen via dit scherm afhandelen.</p>
+</section><section data-type="sect4" data-pdf-bookmark="Email meldingen" id="idp16019376"><h4>Email meldingen</h4>
+
+<p>Email meldingen zijn de andere manier waarop je berichten kunt afhandelen via GitHub. Als je deze ingeschakeld hebt,
+ krijg je per melding een email. We hebben hiervan voorbeelden gezien in <a data-type="xref" href="ch00/_email_notification">???</a> en <a data-type="xref" href="ch00/_email_pr">Figure 6-34</a>. De
+ emails zullen ook juist geketend (threaded) worden, wat handig is als jee een zgn. threading email client gebruikt.
+  emails will also be threaded properly, which is nice if you’re using a threading email client.</p>
+
+<p>Er zit ook een behoorlijk aantal metadata in de headers van de emails die GitHub je stuurt, deze kunnen heel handig
+ zijn voor het inrichten van zelfgemaakte filters en regels.</p>
+
+<p>Bijvoorbeeld, als we een kijkje nemen naar de daadwerkelijke email headers die aan Tony zijn gestuurd in de email in
+ <a data-type="xref" href="ch00/_email_pr">Figure 6-34</a>, zullen we hetvolgende zien in de gestuurde gegevens:</p>
+
+<pre data-type="programlisting" data-code-language="mbox">To: tonychacon/fade &lt;fade@noreply.github.com&gt;
+Message-ID: &lt;tonychacon/fade/pull/1@github.com&gt;
+Subject: [fade] Wait longer to see the dimming effect better (#1)
+X-GitHub-Recipient: tonychacon
+List-ID: tonychacon/fade &lt;fade.tonychacon.github.com&gt;
+List-Archive: https://github.com/tonychacon/fade
+List-Post: &lt;mailto:reply+i-4XXX@reply.github.com&gt;
+List-Unsubscribe: &lt;mailto:unsub+i-XXX@reply.github.com&gt;,...
+X-GitHub-Recipient-Address: tchacon@example.com</pre>
+
+<p>Hier zijn een aantal interessante dingen. Als je emails wilt vlaggen of routeren naar dit specifieke project of zelfs
+ Pull Request, geeft de informatie in <code>Message-ID</code> je alle gegevens in <code>&lt;user&gt;/&lt;project&gt;/&lt;type&gt;/&lt;id&gt;</code> formaat. Als
+ dit bijvoorbeeld een issue zou zijn zou het <code>&lt;type&gt;</code> veld “issues” zijn niet “pull”.</p>
+
+<p>De <code>List-Post</code> en <code>List-Unsubscribe</code> velden houden in dat als je een mail client hebt die deze velden begrijpt, je
+ eenvoudig een bericht kan sturen naar de thread of ervan kunt “Unsubscriben”. Dat zou effectief hetzelfde zijn als
+  de “mute” knop klikken op de web versie van de melding of “Unsubscribe” op het Issue of Pull Request pagina zelf.</p>
+
+<p>Het is ook de moeite om te vermelden dat als je zowel email als web meldingen aan hebt staan en je de email versie
+ van de melding gelezen hebt, de webversie ook als gelezen wordt gemarkeerd als je plaatjes toestaat in je mail client.</p>
+</section></section></section><section data-type="sect2" data-pdf-bookmark="Speciale Bestanden" id="idp15504800"><h3 id="Speciale-Bestanden"><a href="#Speciale-Bestanden">Speciale Bestanden</a></h3>
+
+<p>Er zijn een aantal speciale bestanden die GitHub zal opmerken als ze in je repository staan.</p>
+</section><section data-type="sect2" data-pdf-bookmark="README" id="idp16063984"><h3 id="README"><a href="#README">README</a></h3>
+
+<p>Het eerste is de <code>README</code> file, die kan ongeveer elk formaat hebben die GitHub herkent als vrije tekst. Bijvoorbeeld
+ het zou <code>README</code>, <code>README.md</code>, <code>README.asciidoc</code>, etc. kunnen zijn. Als GitHub een README bestand in je broncode
+ vindt, zal het dit op de ingangspagina van het project tonen.</p>
+
+<p>Veel teams gebruiken dit bestand om alle relevante project informatie te bevatten ter informatie voor iemand die
+ nieuw is binnen de repository of het project. Over het algemeen bevat het zaken als:</p>
+
+<ul>
+<li>
+<p>Waartoe dient het project</p>
+</li>
+<li>
+<p>Hoe deze te configureren en te installeren</p>
+</li>
+<li>
+<p>Een voorbeeld hoe het te gebruiken of het aan te lopen te krijgen</p>
+</li>
+<li>
+<p>De licentie waaronder het project wordt aangeboden</p>
+</li>
+<li>
+<p>Hoe er aan bij te dragen</p>
+</li>
+</ul>
+<p>Omdat GitHub dit bestand toont, kan je plaatjes of links er in opnemen voor het verhogen van het begrip.</p>
+</section><section data-type="sect2" data-pdf-bookmark="CONTRIBUTING" id="idp16073792"><h3 id="CONTRIBUTING"><a href="#CONTRIBUTING">CONTRIBUTING</a></h3>
+
+<p>Het andere speciale bestand dat GitHub herkent is het <code>CONTRIBUTING</code> bestand. Als je een bestand genaamd
+ <code>CONTRIBUTING</code> met een willekeurige extentie, zal GitHub <a data-type="xref" href="ch00/_contrib_file">Figure 6-42</a> tonen als iemand een Pull Request gaat
+ openen.</p>
+
+<figure id="_contrib_file"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-09-contrib.png" alt="Contributing melding"></div>
+<figcaption>Een Pull Request openen als er een CONTRIBUTING file bestaan.</figcaption></figure><p>Het idee hierachter is dat je specifieke zaken kunt aangeven die je wel of niet wilt in een Pull Request die aan je
+ project wordt gestuurd. Op deze manier zouden mensen de richtlijnen misschien echt lezen voordat ze een Pull Request
+  openen.</p>
+</section><section data-type="sect2" data-pdf-bookmark="Project Beheer" id="idp16079936"><h3 id="Project-Beheer"><a href="#Project-Beheer">Project Beheer</a></h3>
+
+<p>Over het algemeen zijn er niet veel beheersmatige zaken die je kunt doen met een enkel project,  maar er zijn een
+ aantal dingen die van belang kunnen zijn.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="De standaard branch wijzigen" id="idp16081568"><h4>De standaard branch wijzigen</h4>
+
+<p>Als je een branch anders dan “master” gebruikt als je standaard branch waarvan je wilt dat mensen er Pull Requests
+ op openen of die ze standaard zien, kan je dat in de instellingen pagina van je repository wijzigen onder de
+ “Options” tab.</p>
+
+<figure id="_default_branch"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-10-default-branch.png" alt="Standaard branch"></div>
+<figcaption>De default branch van een project wijzigen.</figcaption></figure><p>Eenvoudigweg de standaard branch in de dropdown wijzigen en dat wordt vanaf dat moment de standaard branch voor alle
+belangrijke handelingen, inclusief welke branch er standaard uitgechecked wordt als iemand de repository cloont.</p>
+</section><section data-type="sect3" data-pdf-bookmark="Een project overdragen" id="idp16086048"><h4>Een project overdragen</h4>
+
+<p>Als je een project wilt overdragen aan een andere gebruiker of organisatie in GitHub, is er een “Transfer
+ ownership” optie onderaan dezelfde “Options” tab van de instellingen pagina van je repository die je dat kan
+ laten doen.</p>
+
+<figure id="_transfer_project"><div class="border-box"><img src="/book/en/v2/book/06-github/images/maint-11-transfer.png" alt="Overdragen"></div>
+<figcaption>Draag een project over aan een andere GitHub gebruiker of organisatie.</figcaption></figure><p>Dit is handig als je een project verlaat en iemand anders wilt het overnemen, of je project wordt groter en je wilt
+ het in een organisatie onderbrengen.</p>
+
+<p>Niet alleen verplaatst dit de repostory met al zijn volgers en sterren naar een andere plaats, het richt ook een
+redirect (doorverwijzing) van jouw URL naar de nieuwe plaats. Het zal ook de clones en fetches van Git doorverwijzen,
+ niet alleen de web-aanvragen.</p>
+</section></section><div id="nav"><a href="/book/nl/GitHub-Aan-een-project-bijdragen">prev</a> | <a href="/book/nl/v2/GitHub-Een-organisatie-beheren">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":220,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Mantenimiento de un proyecto</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/es/2015-09-03-7fc4b/progit-es.806.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/es/2015-09-03-7fc4b/progit-es.806.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/es/2015-09-03-7fc4b/progit-es.806.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones">Inicio - Sobre el Control de Versiones</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Acerca-del-Control-de-Versiones">Acerca del Control de Versiones</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Una-breve-historia-de-Git">Una breve historia de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git">Fundamentos de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-La-L%C3%ADnea-de-Comandos">La Línea de Comandos</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git">Instalación de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez">Configurando Git por primera vez</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-%C2%BFC%C3%B3mo-obtener-ayuda%3F">¿Cómo obtener ayuda?</a>
+          </li>
+          <li>
+            1.8
+            <a href="/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git">Fundamentos de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/es/v2/Fundamentos-de-Git-Obteniendo-un-repositorio-Git">Obteniendo un repositorio Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/es/v2/Fundamentos-de-Git-Guardando-cambios-en-el-Repositorio">Guardando cambios en el Repositorio</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones">Ver el Historial de Confirmaciones</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/es/v2/Fundamentos-de-Git-Deshacer-Cosas">Deshacer Cosas</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/es/v2/Fundamentos-de-Git-Trabajar-con-Remotos">Trabajar con Remotos</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/es/v2/Fundamentos-de-Git-Etiquetado">Etiquetado</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/es/v2/Fundamentos-de-Git-Alias-de-Git">Alias de Git</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/es/v2/Fundamentos-de-Git-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/es/v2/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F">Ramificaciones en Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/es/v2/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F">¿Qué es una rama?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar">Procedimientos Básicos para Ramificar y Fusionar</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/es/v2/Ramificaciones-en-Git-Gesti%C3%B3n-de-Ramas">Gestión de Ramas</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/es/v2/Ramificaciones-en-Git-Flujos-de-Trabajo-Ramificados">Flujos de Trabajo Ramificados</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/es/v2/Ramificaciones-en-Git-Ramas-Remotas">Ramas Remotas</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/es/v2/Ramificaciones-en-Git-Reorganizar-el-Trabajo-Realizado">Reorganizar el Trabajo Realizado</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/es/v2/Ramificaciones-en-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/es/v2/Git-en-el-Servidor-Los-Protocolos">Git en el Servidor</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/es/v2/Git-en-el-Servidor-Los-Protocolos">Los Protocolos</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/es/v2/Git-en-el-Servidor-Configurando-Git-en-un-servidor">Configurando Git en un servidor</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/es/v2/Git-en-el-Servidor-Generando-tu-clave-p%C3%BAblica-SSH">Generando tu clave pública SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/es/v2/Git-en-el-Servidor-Configurando-el-servidor">Configurando el servidor</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/es/v2/Git-en-el-Servidor-El-demonio-Git">El demonio Git</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/es/v2/Git-en-el-Servidor-HTTP-Inteligente">HTTP Inteligente</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/es/v2/Git-en-el-Servidor-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/es/v2/Git-en-el-Servidor-GitLab">GitLab</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/es/v2/Git-en-el-Servidor-Git-en-un-alojamiento-externo">Git en un alojamiento externo</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/es/v2/Git-en-el-Servidor-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/es/v2/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">Git en entornos distribuidos</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/es/v2/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">Flujos de trabajo distribuidos</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/es/v2/Git-en-entornos-distribuidos-Contributing-to-a-Project">Contributing to a Project</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/es/v2/Git-en-entornos-distribuidos-Maintaining-a-Project">Maintaining a Project</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/es/v2/Git-en-entornos-distribuidos-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/es/v2/GitHub-Creaci%C3%B3n-y-configuraci%C3%B3n-de-la-cuenta">GitHub</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/es/v2/GitHub-Creaci%C3%B3n-y-configuraci%C3%B3n-de-la-cuenta">Creación y configuración de la cuenta</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/es/v2/GitHub-Participando-en-Proyectos">Participando en Proyectos</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/es/v2/GitHub-Mantenimiento-de-un-proyecto">Mantenimiento de un proyecto</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/es/v2/GitHub-Gesti%C3%B3n-de-una-organizaci%C3%B3n">Gestión de una organización</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/es/v2/GitHub-Scripting-en-GitHub">Scripting en GitHub</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/es/v2/GitHub-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/es/v2/Git-Tools-Revision-Selection">Git Tools</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/es/v2/Git-Tools-Revision-Selection">Revision Selection</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/es/v2/Git-Tools-Interactive-Staging">Interactive Staging</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/es/v2/Git-Tools-Stashing-and-Cleaning">Stashing and Cleaning</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/es/v2/Git-Tools-Signing-Your-Work">Signing Your Work</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/es/v2/Git-Tools-Searching">Searching</a>
+          </li>
+          <li>
+            7.6
+            <a href="/book/es/v2/Git-Tools-Rewriting-History">Rewriting History</a>
+          </li>
+          <li>
+            7.7
+            <a href="/book/es/v2/Git-Tools-Reset-Demystified">Reset Demystified</a>
+          </li>
+          <li>
+            7.8
+            <a href="/book/es/v2/Git-Tools-Advanced-Merging">Advanced Merging</a>
+          </li>
+          <li>
+            7.9
+            <a href="/book/es/v2/Git-Tools-Rerere">Rerere</a>
+          </li>
+          <li>
+            7.10
+            <a href="/book/es/v2/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+          </li>
+          <li>
+            7.11
+            <a href="/book/es/v2/Git-Tools-Submodules">Submodules</a>
+          </li>
+          <li>
+            7.12
+            <a href="/book/es/v2/Git-Tools-Bundling">Bundling</a>
+          </li>
+          <li>
+            7.13
+            <a href="/book/es/v2/Git-Tools-Replace">Replace</a>
+          </li>
+          <li>
+            7.14
+            <a href="/book/es/v2/Git-Tools-Credential-Storage">Credential Storage</a>
+          </li>
+          <li>
+            7.15
+            <a href="/book/es/v2/Git-Tools-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/es/v2/Personalizaci%C3%B3n-de-Git-Configuraci%C3%B3n-de-Git">Personalización de Git</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/es/v2/Personalizaci%C3%B3n-de-Git-Configuraci%C3%B3n-de-Git">Configuración de Git</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/es/v2/Personalizaci%C3%B3n-de-Git-Git-Attributes">Git Attributes</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/es/v2/Personalizaci%C3%B3n-de-Git-Puntos-de-enganche-en-Git">Puntos de enganche en Git</a>
+          </li>
+          <li>
+            8.4
+            <a href="/book/es/v2/Personalizaci%C3%B3n-de-Git-Un-ejemplo-de-implantaci%C3%B3n-de-una-determinada-pol%C3%ADtica-en-Git">Un ejemplo de implantación de una determinada política en Git</a>
+          </li>
+          <li>
+            8.5
+            <a href="/book/es/v2/Personalizaci%C3%B3n-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/es/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/es/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/es/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/es/v2/Git-and-Other-Systems-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>10. <a href="/book/es/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+    <ol>
+          <li>
+            10.1
+            <a href="/book/es/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+          </li>
+          <li>
+            10.2
+            <a href="/book/es/v2/Git-Internals-Git-Objects">Git Objects</a>
+          </li>
+          <li>
+            10.3
+            <a href="/book/es/v2/Git-Internals-Git-References">Git References</a>
+          </li>
+          <li>
+            10.4
+            <a href="/book/es/v2/Git-Internals-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            10.5
+            <a href="/book/es/v2/Git-Internals-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            10.6
+            <a href="/book/es/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+          </li>
+          <li>
+            10.7
+            <a href="/book/es/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+          </li>
+          <li>
+            10.8
+            <a href="/book/es/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+          </li>
+          <li>
+            10.9
+            <a href="/book/es/v2/Git-Internals-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/es/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/es/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/es/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/es/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/es/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/es/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/es/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/es/v2/Git-in-Other-Environments-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/es/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/es/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/es/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/es/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/es/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/es/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/es/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/es/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/es/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/es/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/es/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/es/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/es/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/es/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/es/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/es/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/es/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A1. <a href="/book/es/v2/Git-en-otros-entornos-Interfaces-gr%C3%A1ficas">Git en otros entornos</a></h2>
+    <ol>
+          <li>
+            A1.1
+            <a href="/book/es/v2/Git-en-otros-entornos-Interfaces-gr%C3%A1ficas">Interfaces gráficas</a>
+          </li>
+          <li>
+            A1.2
+            <a href="/book/es/v2/Git-en-otros-entornos-Git-en-Visual-Studio">Git en Visual Studio</a>
+          </li>
+          <li>
+            A1.3
+            <a href="/book/es/v2/Git-en-otros-entornos-Git-en-Eclipse">Git en Eclipse</a>
+          </li>
+          <li>
+            A1.4
+            <a href="/book/es/v2/Git-en-otros-entornos-Git-in-Bash">Git in Bash</a>
+          </li>
+          <li>
+            A1.5
+            <a href="/book/es/v2/Git-en-otros-entornos-Git-in-Zsh">Git in Zsh</a>
+          </li>
+          <li>
+            A1.6
+            <a href="/book/es/v2/Git-en-otros-entornos-Git-in-Powershell">Git in Powershell</a>
+          </li>
+          <li>
+            A1.7
+            <a href="/book/es/v2/Git-en-otros-entornos-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A2. <a href="/book/es/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+    <ol>
+          <li>
+            A2.1
+            <a href="/book/es/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+          </li>
+          <li>
+            A2.2
+            <a href="/book/es/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+          </li>
+          <li>
+            A2.3
+            <a href="/book/es/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>A3. <a href="/book/es/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+    <ol>
+          <li>
+            A3.1
+            <a href="/book/es/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+          </li>
+          <li>
+            A3.2
+            <a href="/book/es/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+          </li>
+          <li>
+            A3.3
+            <a href="/book/es/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+          </li>
+          <li>
+            A3.4
+            <a href="/book/es/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+          </li>
+          <li>
+            A3.5
+            <a href="/book/es/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+          </li>
+          <li>
+            A3.6
+            <a href="/book/es/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+          </li>
+          <li>
+            A3.7
+            <a href="/book/es/v2/Git-Commands-Debugging">Debugging</a>
+          </li>
+          <li>
+            A3.8
+            <a href="/book/es/v2/Git-Commands-Patching">Patching</a>
+          </li>
+          <li>
+            A3.9
+            <a href="/book/es/v2/Git-Commands-Email">Email</a>
+          </li>
+          <li>
+            A3.10
+            <a href="/book/es/v2/Git-Commands-External-Systems">External Systems</a>
+          </li>
+          <li>
+            A3.11
+            <a href="/book/es/v2/Git-Commands-Administration">Administration</a>
+          </li>
+          <li>
+            A3.12
+            <a href="/book/es/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      2nd Edition
+    </span>
+</div>
+
+<div id='main' class="book edition2">
+    <h1>6.3 GitHub - Mantenimiento de un proyecto</h1>
+  <div><a id="_maintaining_gh_project"></a><h2>Mantenimiento de un proyecto</h2>
+
+<p>Ahora que ya sabes cómo ayudar a un proyecto, veamos el otro lado: cómo
+puedes crear, administrar y mantener tu propio proyecto.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" id="creacion-de-un-repositorio-a8wTP"><h3 id="Creación-de-un-repositorio"><a href="#Creación-de-un-repositorio">Creación de un repositorio</a></h3>
+
+<p>Vamos a crear un nuevo repositorio para compartir nuestro código en él.
+Comienza pulsando el botón “New repository” en el lado derecho de tu
+página principal, o bien desde el botón <code>+</code> en la barra de botones cercano
+a tu nombre de usuario, tal como se ve en <a data-type="xref" href="ch00/_new_repo_dropdown">Figure 6-30</a>.</p>
+
+<figure id="id-nxoh4"><img src="/book/en/v2/book/06-github/images/newrepo.png" alt="La zona ``Your repositories''."><figcaption><span class="label">Figure 6-29. </span>La zona “Your repositories”.</figcaption></figure><figure id="_new_repo_dropdown"><img src="/book/en/v2/book/06-github/images/new-repo.png" alt="Desplegable ``New repository''."><figcaption><span class="label">Figure 6-30. </span>Desplegable “New repository”.</figcaption></figure><p>Esto te llevará al formulario para crear un nuevo repositorio:</p>
+
+<figure id="id-vNLfK"><img src="/book/en/v2/book/06-github/images/newrepoform.png" alt="Formulario para crear repositorio."><figcaption><span class="label">Figure 6-31. </span>Formulario para crear repositorio.</figcaption></figure><p>Todo lo que tienes que hacer aquí es darle un nombre al proyecto; el resto
+de campos es totalmente opcional. Por ahora, pulsa en el botón “Create
+Repository” y listo: se habrá creado el repositorio en GitHub, con el
+nombre <code>&lt;usuario&gt;/&lt;proyecto&gt;</code></p>
+
+<p>Dado que no tiene todavía contenido, GitHub te mostrará instrucciones para
+crear el repositorio Git, o para conectarlo a un proyecto Git existente.
+No entraremos aquí en esto; si necesitas refrescarlo,
+revisa el capítulo <a data-type="xref" href="1-git-basics/_git_basics_chapter">Fundamentos de Git</a>.</p>
+
+<p>Ahora que el proyecto está alojado en GitHub, puedes dar la URL a cualquiera
+con quien quieras compartirlo. Cada proyecto en GitHub es accesible mediante
+HTTP como <code>https://github.com/&lt;usuario&gt;/&lt;proyecto&gt;</code>, y también con SSH
+con la dirección <code>git@github.com:&lt;usuario&gt;/&lt;proyecto&gt;</code>.
+Git puede obtener y enviar cambios en ambas URL, ya que tienen control de
+acceso basado en las credenciales del usuario.</p>
+<div data-type="note" id="id-NJ8U1">
+<h6>Note</h6>
+<p>Suele ser preferible compartir la URL de tipo HTTP de los proyectos públicos,
+puesto que así el usuario no necesitará una cuenta GitHub para clonar el
+proyecto. Si das la dirección SSH, los usuarios necesitarán una cuenta
+GitHub y subir una clave SSH para acceder. Además, la URL HTTP es exactamente
+la misma que usamos para ver la página web del proyecto.</p>
+</div>
+</section><section data-type="sect2" id="anadir-colaboradores-23QTq"><h3 id="Añadir-colaboradores"><a href="#Añadir-colaboradores">Añadir colaboradores</a></h3>
+
+<p>Si estás trabajando con otras personas y quieres darle acceso de escritura,
+necesitarás añadirlas como “colaboradores”. Si Ben, Jeff y Louise se crean
+cuentas en GitHub, y quieres darles acceso de escritura a tu repositorio,
+los tienes que añadir al proyecto.
+Al hacerlo le darás permiso de “push”, que significa que tendrán tanto
+acceso de lectura como de escritura, en el proyecto y en el repositorio Git.</p>
+
+<figure id="id-Vm6TL"><img src="/book/en/v2/book/06-github/images/reposettingslink.png" alt="Enlace a ajustes del repositorio."><figcaption><span class="label">Figure 6-32. </span>Enlace a ajustes del repositorio.</figcaption></figure><p>Selecciona “Collaborators” del menú del lado izquierdo. Simplemente, teclea
+el usuario en la caja, y pulsa en “Add collaborator.”
+Puedes repetir esto las veces que necesites para dar acceso a otras personas.
+Si necesitas quitar un acceso, pulsa en la “X” del lado derecho del usuario.</p>
+
+<figure id="id-kqmfX"><img src="/book/en/v2/book/06-github/images/collaborators.png" alt="Colaboradores del repositorio."><figcaption><span class="label">Figure 6-33. </span>Colaboradores del repositorio.</figcaption></figure></section><section data-type="sect2" id="gestion-de-los-pull-requests-bmKFD"><h3 id="Gestión-de-los-Pull-Requests"><a href="#Gestión-de-los-Pull-Requests">Gestión de los Pull Requests</a></h3>
+
+<p>Ahora que tienes un proyecto con algo de código, y probablemente algunos
+colaboradores con acceso de escritura, veamos qué pasa cuando alguien te
+hace un Pull Request.</p>
+
+<p>Los Pull Requests pueden venir de una rama en una bifurcación del repositorio,
+o pueden venir de una rama pero del mismo repositorio. La única diferencia
+es que, en el primer, caso procede de gente que no tiene acceso de escritura
+a tu proyecto y quiere integrar en el tuyo cambios interesantes, mientras que
+en el segundo caso procede de gente con acceso al repositorio.</p>
+
+<p>En los siguientes ejemplos, supondremos que eres “tonychacon” y has
+creado un nuevo proyecto para Arduino llamado “fade”.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="_email_notifications"><h4>Notificaciones por correo electrónico</h4>
+
+<p>Cuando alguien realiza un cambio en el código y te crea un Pull Request,
+debes recibir una notificación por correo electrónico avisándote, con un
+aspecto similar a <a data-type="xref" href="ch00/_email_pr">Figure 6-34</a>.</p>
+
+<figure id="_email_pr"><img src="/book/en/v2/book/06-github/images/maint-01-email.png" alt="Notificación por correo de nuevo Pull Request"><figcaption><span class="label">Figure 6-34. </span>Notificación por correo de nuevo Pull Request.</figcaption></figure><p>Hay algunas cosas a destacar en este correo. En primer lugar, te dará
+un pequeño diffstat (es decir, una lista de ficheros cambiados y en qué
+medida). Además, trae un enlace al Pull Request y algunas URL que puedes
+usar desde la línea de comandos.</p>
+
+<p>Si observas la línea que dice <code>git pull &lt;url&gt; patch-1</code>, es una forma simple
+de fusionar una rama remota sin tener que añadirla localmente. Lo vimos esto
+rápidamente en <a data-type="xref" href="1-distributed-git/_checking_out_remotes">Checking Out Remote Branches</a>. Si lo deseas, puedes crear y
+cambiar a una rama y luego ejecutar el comando para fusionar los cambios
+del Pull Request.</p>
+
+<p>Las otras URL interesantes son las de <code>.diff</code> y <code>.patch</code>, que como su nombre
+indican, proporcionan diff unificados y formatos de parche del Pull Request.
+Técnicamente, podrías fusionar con algo como:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> curl http://github.com/tonychacon/fade/pull/1.patch <code class="p">|</code> git am
+</pre>
+</section><section data-type="sect3" id="colaboracion-en-el-pull-request-a95HP"><h4>Colaboración en el Pull Request</h4>
+
+<p>Como hemos visto en <a data-type="xref" href="ch00/_github_flow">El Flujo de Trabajo en GitHub</a>, puedes participar en una discusión con
+la persona que generó el Pull Request. Puedes comentar líneas concretas de
+código, comentar commits completos o comentar el Pull Request en sí mismo,
+utilizando donde quieras el formato Markdown.</p>
+
+<p>Cada vez que alguien comenta, recibirás nuevas notificaciones por correo,
+lo que te permite vigilar todo lo que pasa. Cada correo tendrá un enlace
+a la actividad que ha tenido lugar, y además puedes responder al comentario
+simplemente contestando al correo.</p>
+
+<figure id="id-nQ1h4"><img src="/book/en/v2/book/06-github/images/maint-03-email-resp.png" alt="Respuesta a correo-e"><figcaption><span class="label">Figure 6-35. </span>Las respuestas a correos se incluyen en el hilo de discusión.</figcaption></figure><p>Una vez que el código está como quieres y quieres fusionarlo, puedes copiar
+el código y fusionarlo localmente, mediante la sintaxis ya conocida de
+<code>git pull &lt;url&gt; &lt;branch&gt;</code>, o bien añadiendo el fork como nuevo remoto,
+bajándotelo y luego fusionándolo.</p>
+
+<p>Si la fusión es trivial, también puedes pulsar el botón “Merge” en GitHub.
+Esto realizará una fusión “sin avance rápido”, creando un commit de fusión
+incluso si era posible una fusión con avance rápido. Esto significa que
+cada vez que pulses el botón Merge, se creará un commit de fusión. Como verás
+en <a data-type="xref" href="ch00/_merge_button">Figure 6-36</a>, GitHub te da toda esta información si pulsas el el enlace
+de ayuda.</p>
+
+<figure id="_merge_button"><img src="/book/en/v2/book/06-github/images/maint-02-merge.png" alt="Botón Merge"><figcaption><span class="label">Figure 6-36. </span>Botón Merge e instrucciones para fusionar manualmente un Pull Request.</figcaption></figure><p>Si decides que no quieres fusionar, también puedes cerrar el Pull Request
+y la persona que lo creó será notificada.</p>
+</section><section data-type="sect3" id="_pr_refs"><h4>Referencias de Pull Request</h4>
+
+<p>Si tienes muchos Pull Request y no quieres añadir un montón de remotos o
+hacer muchos cada vez, hay un pequeño truco que GitHub te permite. Es
+un poco avanzado y lo veremos en detalle después en <a data-type="xref" href="1-git-internals/_refspec">The Refspec</a>, pero puede
+ser bastante útil.</p>
+
+<p>En GitHub tenemos que las ramas de Pull Request son una especie de
+pseudo-ramas del servidor. De forma predeterminada no las obtendrás cuando
+hagas un clonado, pero hay una forma algo oscura de acceder a ellos.</p>
+
+<p>Para demostrarlo, usaremos un comando de bajo nivel (conocido como de
+“fontanería”, sabremos más sobre esto en <a data-type="xref" href="1-git-internals/_plumbing_porcelain">Plumbing and Porcelain</a>) llamado
+<code>ls-remote</code>. Este comando no se suele usar en el día a día de Git pero es
+útil para ver las referencias presentes en el servidor.</p>
+
+<p>Si ejecutamos este comando sobre el repositorio “blink” que hemos estado
+usando antes, obtendremos una lista de ramas, etiquetas y otras referencias
+del repositorio.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git ls-remote https://github.com/schacon/blink
+<code class="go">10d539600d86723087810ec636870a504f4fee4d	HEAD</code>
+<code class="go">10d539600d86723087810ec636870a504f4fee4d	refs/heads/master</code>
+<code class="go">6a83107c62950be9453aac297bb0193fd743cd6e	refs/pull/1/head</code>
+<code class="go">afe83c2d1a70674c9505cc1d8b7d380d5e076ed3	refs/pull/1/merge</code>
+<code class="go">3c8d735ee16296c242be7a9742ebfbc2665adec1	refs/pull/2/head</code>
+<code class="go">15c9f4f80973a2758462ab2066b6ad9fe8dcf03d	refs/pull/2/merge</code>
+<code class="go">a5a7751a33b7e86c5e9bb07b26001bb17d775d1a	refs/pull/4/head</code>
+<code class="go">31a45fc257e8433c8d8804e3e848cf61c9d3166c	refs/pull/4/merge</code>
+</pre>
+
+<p>Por supuesto, si estás en tu repositorio y tecleas <code>git ls-remote origin</code>
+podrás ver algo similar pero para el remoto etiquetado como <code>origin</code>.</p>
+
+<p>Si el repositorio está en GitHub y tienes Pull Requests abiertos, tendrás estas
+referencias con el prefijo <code>refs/pull</code>. Básicamente, son ramas, pero ya que
+no están bajo <code>refs/heads/</code>, no las obtendrás normalmente cuando clonas o
+te bajas el repositorio del servidor, ya que el proceso de obtención las
+ignora.</p>
+
+<p>Hay dos refeerencias por cada Pull Request, la que termina en <code>/head</code> apunta
+exactamente al último commit de la rama del Pull Request. Así si alguien abre
+un Pull Request en el repositorio y su rama se llama <code>bug-fix</code> apuntando al
+commit <code>a5a775</code>, en nuestro repositorio no tendremos una rama <code>bug-fix</code> (puesto
+que está en el fork) pero tendremos el <code>pull/&lt;pr#&gt;/head</code> apuntando a
+<code>a5a775</code>. Esto significa que podemos obtener fácilmente cada Pull Request sin
+tener que añadir un montón de remotos.</p>
+
+<p>Ahora puedes obtenerlo directamente.</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch origin refs/pull/958/head
+<code class="go">From https://github.com/libgit2/libgit2</code>
+<code class="go"> * branch            refs/pull/958/head -&gt; FETCH_HEAD</code>
+</pre>
+
+<p>Esto dice a Git, “Conecta al remoto <code>origin</code> y descarga la referencia
+llamada <code>refs/pull/958/head</code>.” Git obedece y descarga todo lo necesario para
+construir esa referencia, y deja un puntero al commit que quieres bajo
+<code>.git/FETCH_HEAD</code>.
+Puedes realizar operaciones como <code>git merge FETCH_HEAD</code> aunque el mensaje
+del commit será un poco confuso. Además, si estás revisando un montón de
+pull requests, se convertirá en algo tedioso.</p>
+
+<p>Hay también una forma de obtener <em>todos</em> los pull requests, y mantenerlos
+actualizados cada vez que conectas al remoto. Para ello abre el fichero
+<code>.git/config</code> y busca la línea <code>origin</code>. Será similar a esto:</p>
+
+<pre data-type="programlisting">[remote "origin"]
+    url = https://github.com/libgit2/libgit2
+    fetch = +refs/heads/*:refs/remotes/origin/*</pre>
+
+<p>La línea que comienza con <code>fetch =</code> es un “refspec.”
+Es una forma de mapear nombres del remoto con nombres de tu copia local.
+Este caso concreto dice a Git, que "las cosas en el remoto bajo
+<code>refs/heads</code> deben ir en mi repositorio bajo <code>refs/remotes/origin</code>."
+Puedes modificar esta sección añadiendo otra refspec:</p>
+
+<pre data-type="programlisting">[remote "origin"]
+    url = https://github.com/libgit2/libgit2.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*</pre>
+
+<p>Con esta última línea decimos a Git, “Todas las referencias del tipo
+<code>refs/pull/123/head</code> deben guardarse localmente como
+<code>refs/remotes/origin/pr/123</code>.”
+Ahora, si guardas el fichero y ejecutas un <code>git fetch</code> tendremos:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git fetch
+<code class="gp">#</code> …
+<code class="go"> * [new ref]         refs/pull/1/head -&gt; origin/pr/1</code>
+<code class="go"> * [new ref]         refs/pull/2/head -&gt; origin/pr/2</code>
+<code class="go"> * [new ref]         refs/pull/4/head -&gt; origin/pr/4</code>
+<code class="gp">#</code> …
+</pre>
+
+<p>Ya tienes todos los pull request en local de forma parecida a las ramas; son
+solo-lectura y se actualizan cada vez que haces un fetch. Pero hace muy fácil
+probar el código de un pull request en local:</p>
+
+<pre data-type="programlisting" data-code-language="console"><code class="gp">$</code> git checkout pr/2
+<code class="go">Checking out files: 100% (3769/3769), done.</code>
+<code class="go">Branch pr/2 set up to track remote branch pr/2 from origin.</code>
+<code class="go">Switched to a new branch 'pr/2'</code>
+</pre>
+
+<p>La referencia <code>refs/pull/#/merge</code> de GitHub representa el commit que resultaría
+si pulsamos el botón “merge”. Esto te permite probar la fusión del pull
+request sin llegar a pulsar dicho botón.</p>
+</section><section data-type="sect3" id="pull-requests-sobre-pull-requests-12AHO"><h4>Pull Requests sobre Pull Requests</h4>
+
+<p>No solamente se puede abrir Pull Requests en la rama <code>master</code>, también se
+pueden abrir sobre cualquier rama de la red. De hecho, puedes poner como
+objetivo otro Pull Request.</p>
+
+<p>Si ves que un Pull Request va en la buena dirección y tienes una idea para
+hacer un cambio que depende de él, o bien no estás seguro de que sea una
+buena idea, o no tienes acceso de escritura en la rama objetivo, puedes
+abrir un Pull Request directamente.</p>
+
+<p>Cuando vas a abrir el Pull Request, hay una caja en la parte superior de la
+página que especifica qué rama quieres usar y desde qué rama quieres hacer
+la petición. Si pulsas el botón “Edit” en el lado derecho de la caja,
+puedes cambiar no solo las ramas sino también la bifurcación.</p>
+
+<figure id="_pr_targets"><img src="/book/en/v2/book/06-github/images/maint-04-target.png" alt="objetivos de PR"><figcaption><span class="label">Figure 6-37. </span>Cambio manual de la rama o del fork en un pull request.</figcaption></figure><p>Aquí puedes fácilmente especificar la fusión de tu nueva rama en otro
+Pull Request o en otrá bifurcación del proyecto.</p>
+</section></section><section data-type="sect2" id="menciones-y-notificaciones-W8YIP"><h3 id="Menciones-y-notificaciones"><a href="#Menciones-y-notificaciones">Menciones y notificaciones</a></h3>
+
+<p>GitHub tiene un sistema de notificaciones que resulta útil cuando necesitas
+pedir ayuda o necesitas la opinión de otros usuarios o equipos concretos.</p>
+
+<p>En cualquier comentario, si comienzas una palabra comenzando con el carácter
+<code>@</code>, intentará auto-completar nombres de usuario de personas que sean
+colaboradores o responsables en el proyecto.</p>
+
+<figure id="id-d6muw"><img src="/book/en/v2/book/06-github/images/maint-05-mentions.png" alt="Menciones"><figcaption><span class="label">Figure 6-38. </span>Empieza tecleando @ para mencionar a alguien.</figcaption></figure><p>También puedes mencionar a un usuario que no esté en la lista desplegable,
+pero normalmente el autocompletado lo hará más rápido.</p>
+
+<p>Una vez que envías un comentario con mención a un usuario, el usuario citado
+recibirá una notificación. Es decir, es una forma de implicar más gente en
+una conversación. Esto es muy común en los Pull Requests para invitar a terceros
+a que participen en la revisión de una incidencia o un pull request.</p>
+
+<p>Si alguien es mencionado en un Pull request o incidencia, quedará además
+“suscrito” y recibirá desde este momento las notificaciones que genere
+su actividad. Del mismo modo, el usuario que crea la incidencia o el Pull request
+queda automáticamente suscrito para recibir las notificaciones, disponiendo
+todos de un botón “Unsubscribe” para dejar de recibirlas.</p>
+
+<figure id="id-GVOC7"><img src="/book/en/v2/book/06-github/images/maint-06-unsubscribe.png" alt="Quitar suscripción"><figcaption><span class="label">Figure 6-39. </span>Quitar suscripción de un pull request o incidencia.</figcaption></figure><section data-type="sect3" id="pagina-de-notificaciones-8B7ho"><h4>Página de notificaciones</h4>
+
+<p>Cuando decimos “notificaciones”, nos referimos a una forma por la que
+GitHub intenta contactar contigo cuando tienen lugar eventos, y éstas pueden
+ser configuradas de diferentes formas.
+Si te vas al enlace “Notification center” de la página de ajustes, verás las
+diferentes opciones disponibles.</p>
+
+<figure id="id-O2WCD"><img src="/book/en/v2/book/06-github/images/maint-07-notifications.png" alt="Notification center"><figcaption><span class="label">Figure 6-40. </span>Opciones de Notification center.</figcaption></figure><p>Para cada tipo, puedes elegir tener notificaciones de “Email” o de “Web”,
+y puedes elegir tener una de ellas, ambas o ninguna.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect4" id="notificaciones-web-qXbuD"><h4>Notificaciones Web</h4>
+
+<p>Las notificaciones web se muestran en la página de Github. Si las tienes activas
+verás un pequeño punto azul sobre el icono de notificaciones en la parte
+superior de la pantalla, en <a data-type="xref" href="ch00/_not_center">Figure 6-41</a>.</p>
+
+<figure id="_not_center"><img src="/book/en/v2/book/06-github/images/maint-08-notifications-page.png" alt="Centro de notificaciones"><figcaption><span class="label">Figure 6-41. </span>Centro de notificaciones.</figcaption></figure><p>Si pulsas en él, verás una lista de todos los elementos sobre los que se te
+notifica, agrupados por proyecto. Puedes filtrar para un proyecto específico
+pulsando en el nombre en el lado izquierdo. También puedes reconocer (marcar como
+leída) una notificación pulsando en el icono de check en una notificación, o
+reconocerlas <em>todas</em> pulsando en el icono de check de todo el grupo. Hay también
+un botón “mute” para silenciarlas, que puedes pulsar para no recibir nuevas
+notificaciones de ese elemento en el futuro.</p>
+
+<p>Todas estas utilidades son útiles para manejar un gran número de notificaciones.
+Muchos usuarios avanzados de GitHub suelen desactivar las notificaciones por
+correo y manejarlas todas mediante esta pantalla.</p>
+</section><section data-type="sect4" id="notificaciones-por-correo-xv2CW"><h4>Notificaciones por correo</h4>
+
+<p>Las notificaciones por correo electrónico son la otra manera de gestionar
+notificaciones con GitHub. Si las tienes activa, recibirás los correos de cada
+notificación. Vimos ya algún ejemplo en <a data-type="xref" href="ch00/_email_notification">Figure 6-13</a> y <a data-type="xref" href="ch00/_email_pr">Figure 6-34</a>.
+Los correos también serán agrupados correctamente en conversaciones,
+con lo que estará bien que uses un cliente de correo que maneje las
+conversaciones.</p>
+
+<p>En las cabeceras de estos correos se incluyen también algunos metadatos, que
+serán útiles para crear filtros y reglas adecuados.</p>
+
+<p>Por ejemplo, si miramos las cabeceras de los correos enviados a Tony en el
+correo visto en <a data-type="xref" href="ch00/_email_pr">Figure 6-34</a>, veremos que se envió la siguiente información:</p>
+
+<pre data-type="programlisting" data-code-language="mbox">To: tonychacon/fade &lt;fade@noreply.github.com&gt;
+Message-ID: &lt;tonychacon/fade/pull/1@github.com&gt;
+Subject: [fade] Wait longer to see the dimming effect better (#1)
+X-GitHub-Recipient: tonychacon
+List-ID: tonychacon/fade &lt;fade.tonychacon.github.com&gt;
+List-Archive: https://github.com/tonychacon/fade
+List-Post: &lt;mailto:reply+i-4XXX@reply.github.com&gt;
+List-Unsubscribe: &lt;mailto:unsub+i-XXX@reply.github.com&gt;,...
+X-GitHub-Recipient-Address: tchacon@example.com</pre>
+
+<p>Vemos en primer lugar que la información de la cabecera <code>Message-Id</code> nos da
+los datos que necesitamos para identificar usuario, proyecto y demás en formato
+<code>&lt;usuario&gt;/&lt;proyecto&gt;/&lt;tipo&gt;/&lt;id&gt;</code>. Si se tratase de una incidencia, la palabra
+“pull” habría sido reemplazada por “issues”.</p>
+
+<p>Las cabeceras <code>List-Post</code> y <code>List-Unsubscribe</code> sirven a clientes de correo
+capaces de interpretarlas ayudarnos a solicitar dejar de recibir nuevas
+notificaciones de ese tema. Esto es similar a pulsar el botón “mute” que vimos
+en la versión web, o en “Unsubscribe” en la página de la incidencia o el
+Pull Request.</p>
+
+<p>También merece la pena señalar que si tienes activadas las notificaciones tanto
+en la web como por correo, y marcas como leído el correo, en la web también se
+marcará como leído siempre que permitas las imágenes en el cliente de correo.</p>
+</section></section></section><section data-type="sect2" id="ficheros-especiales-aj6UP"><h3 id="Ficheros-especiales"><a href="#Ficheros-especiales">Ficheros especiales</a></h3>
+
+<p>Hay dos ficheros especiales que GitHub detecta y maneja si están presentes
+en el repositorio.</p>
+</section><section data-type="sect2" id="readme-7DvhL"><h3 id="README"><a href="#README">README</a></h3>
+
+<p>En primer lugar tenemos el fichero <code>README</code>, que puede estar en varios formatos.
+Puede estar con el nombre <code>README</code>, <code>README.md</code>, <code>README.asciidoc</code> y alguno más.
+Cuando GitHub detecta la presencia del proyecto, lo muestra en la página
+principal, con el <em>renderizado</em> que corresponda a su formato.</p>
+
+<p>En muchos casos este fichero se usa para mostrar información relevante a
+cualquiera que sea nuevo en el proyecto o repositorio. Esto incluye
+normalmente cosas como:</p>
+
+<ul>
+<li>
+<p>Para qué es el proyecto</p>
+</li>
+<li>
+<p>Cómo se configura y se instala</p>
+</li>
+<li>
+<p>Ejemplo de uso</p>
+</li>
+<li>
+<p>Licencia del código del proyecto</p>
+</li>
+<li>
+<p>Cómo participar en su desarrollo</p>
+</li>
+</ul>
+<p>Puesto que GitHub hace un renderizado del fichero, puedes incluir imágenes
+o enlaces en él para facilitar su comprensión.</p>
+</section><section data-type="sect2" id="contributing-2gLFq"><h3 id="CONTRIBUTING"><a href="#CONTRIBUTING">CONTRIBUTING</a></h3>
+
+<p>El otro fichero que GitHub reconoce es el fichero <code>CONTRIBUTING</code>. Si tienes
+un fichero con ese nombre y cualquier extensión, GitHub mostrará
+algo como <a data-type="xref" href="ch00/_contrib_file">Figure 6-42</a> cuando se intente abrir un Pull Request.</p>
+
+<figure id="_contrib_file"><img src="/book/en/v2/book/06-github/images/maint-09-contrib.png" alt="Nota sobre cómo participar"><figcaption><span class="label">Figure 6-42. </span>Apertura de un Pull Request cuando existe el fichero CONTRIBUTING.</figcaption></figure><p>La idea es que indiques cosas a considerar a la hora de recibir un Pull Request.
+La gente lo debe leer a modo de guía sobre cómo abrir la petición.</p>
+</section><section data-type="sect2" id="administracion-del-proyecto-JM2im"><h3 id="Administración-del-proyecto"><a href="#Administración-del-proyecto">Administración del proyecto</a></h3>
+
+<p>Por lo general, no hay muchas cosas que administrar en un proyecto
+concreto, pero sí un par de cosas que pueden ser interesantes.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" id="cambiar-la-rama-predeterminada-v8OfA"><h4>Cambiar la rama predeterminada</h4>
+
+<p>Si usas como rama predeterminada una que no sea “master”, por ejemplo
+para que sea objetivo de los Pull Requests, puedes cambiarla en las opciones
+de configuración del repositorio, en donde pone “Options”.</p>
+
+<figure id="_default_branch"><img src="/book/en/v2/book/06-github/images/maint-10-default-branch.png" alt="Rama predeterminada"><figcaption><span class="label">Figure 6-43. </span>Cambio de la rama predeterminada del proyecto.</figcaption></figure><p>Simplemente cambia la rama predeterminada en la lista desplegable, y ésta será
+la elegida para la mayoría de las operaciones, así mismo será la que sea visible
+al principio (“checked-out”) cuando alguien clona el repositorio.</p>
+</section><section data-type="sect3" id="transferencia-de-un-proyecto-1bZcO"><h4>Transferencia de un proyecto</h4>
+
+<p>Si quieres transferir la propiedad de un proyecto a otro usuario u
+organización de GitHub, hay una opción para ello al final de “Options” llamada
+“Transfer ownership”.</p>
+
+<figure id="_transfer_project"><img src="/book/en/v2/book/06-github/images/maint-11-transfer.png" alt="Transferir"><figcaption><span class="label">Figure 6-44. </span>Transferir propiedad de un proyecto.</figcaption></figure><p>Esto es útil si vas a abandonar el proyecto y quieres que alguien continúe, o
+bien se ha vuelto muy grande y prefieres que se gestione desde una
+organización.</p>
+
+<p>Esta transferencia, supone un cambio de URL. Para evitar que nadie se pierda,
+genera una redirección web en la URL antigua. Esta redirección funciona también
+con las operaciones de clonado o de copia desde Git.</p>
+</section></section><div id="nav"><a href="/book/es/GitHub-Participando-en-Proyectos">prev</a> | <a href="/book/es/v2/GitHub-Gesti%C3%B3n-de-una-organizaci%C3%B3n">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

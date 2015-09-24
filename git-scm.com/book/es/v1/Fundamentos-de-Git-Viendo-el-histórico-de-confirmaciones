@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":3,"applicationTime":275,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Viendo el histórico de confirmaciones</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/es/v1/Empezando">Empezando</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/es/v1/Empezando-Acerca-del-control-de-versiones">Acerca del control de versiones</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/es/v1/Empezando-Una-breve-historia-de-Git">Una breve historia de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/es/v1/Empezando-Fundamentos-de-Git">Fundamentos de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/es/v1/Empezando-Instalando-Git">Instalando Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/es/v1/Empezando-Configurando-Git-por-primera-vez">Configurando Git por primera vez</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/es/v1/Empezando-Obteniendo-ayuda">Obteniendo ayuda</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/es/v1/Empezando-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/es/v1/Fundamentos-de-Git">Fundamentos de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git">Obteniendo un repositorio Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio">Guardando cambios en el repositorio</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones">Viendo el histórico de confirmaciones</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/es/v1/Fundamentos-de-Git-Deshaciendo-cosas">Deshaciendo cosas</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos">Trabajando con repositorios remotos</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/es/v1/Fundamentos-de-Git-Creando-etiquetas">Creando etiquetas</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/es/v1/Fundamentos-de-Git-Consejos-y-trucos">Consejos y trucos</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/es/v1/Fundamentos-de-Git-Resumen">Resumen</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/es/v1/Ramificaciones-en-Git">Ramificaciones en Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/es/v1/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F">¿Qué es una rama?</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/es/v1/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar">Procedimientos básicos para ramificar y fusionar</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/es/v1/Ramificaciones-en-Git-Gesti%C3%B3n-de-ramificaciones">Gestión de ramificaciones</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/es/v1/Ramificaciones-en-Git-Flujos-de-trabajo-ramificados">Flujos de trabajo ramificados</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas">Ramas Remotas</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/es/v1/Ramificaciones-en-Git-Reorganizando-el-trabajo-realizado">Reorganizando el trabajo realizado</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/es/v1/Ramificaciones-en-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/es/v1/Git-en-un-servidor">Git en un servidor</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/es/v1/Git-en-un-servidor-Los-Protocolos">Los Protocolos</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/es/v1/Git-en-un-servidor-Poniendo-Git-en-un-Servidor">Poniendo Git en un Servidor</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/es/v1/Git-en-un-servidor-Generando-tu-clave-p%C3%BAblica-SSH">Generando tu clave pública SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/es/v1/Git-en-un-servidor-Preparando-el-servidor">Preparando el servidor</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/es/v1/Git-en-un-servidor-Acceso-p%C3%BAblico">Acceso público</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/es/v1/Git-en-un-servidor-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/es/v1/Git-en-un-servidor-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/es/v1/Git-en-un-servidor-El-demonio-Git">El demonio Git</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/es/v1/Git-en-un-servidor-Git-en-un-alojamiento-externo">Git en un alojamiento externo</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/es/v1/Git-en-un-servidor-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/es/v1/Git-en-entornos-distribuidos">Git en entornos distribuidos</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos">Flujos de trabajo distribuidos</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Contribuyendo-a-un-proyecto">Contribuyendo a un proyecto</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto">Gestionando un proyecto</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/es/v1/Git-en-entornos-distribuidos-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/es/v1/Las-herramientas-de-Git">Las herramientas de Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/es/v1/Las-herramientas-de-Git-Selecci%C3%B3n-de-confirmaciones-de-cambios-concretas">Selección de confirmaciones de cambios concretas</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/es/v1/Las-herramientas-de-Git-Preparaci%C3%B3n-interactiva">Preparación interactiva</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/es/v1/Las-herramientas-de-Git-Guardado-r%C3%A1pido-provisional">Guardado rápido provisional</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/es/v1/Las-herramientas-de-Git-Reescribiendo-la-historia">Reescribiendo la historia</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git">Depuración con Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/es/v1/Las-herramientas-de-Git-Subm%C3%B3dulos">Submódulos</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/es/v1/Las-herramientas-de-Git-Fusi%C3%B3n-de-sub%C3%A1rboles">Fusión de subárboles</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/es/v1/Las-herramientas-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/es/v1/Personalizando-Git">Personalizando Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/es/v1/Personalizando-Git-Configuraci%C3%B3n-de-Git">Configuración de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/es/v1/Personalizando-Git-Atributos-de-Git">Atributos de Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/es/v1/Personalizando-Git-Puntos-de-enganche-Git">Puntos de enganche Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/es/v1/Personalizando-Git-Un-ejemplo-de-implantaci%C3%B3n-de-una-determinada-pol%C3%ADtica-en-Git">Un ejemplo de implantación de una determinada política en Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/es/v1/Personalizando-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/es/v1/Git-y-Otros-Sistemas">Git y Otros Sistemas</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Git-y-Subversion">Git y Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Migrating-to-Git">Migrating to Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/es/v1/Git-y-Otros-Sistemas-Summary">Summary</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/es/v1/Los-entresijos-internos-de-Git">Los entresijos internos de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Fontaneria-y-porcelana">Fontaneria y porcelana</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Los-objetos-Git">Los objetos Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Referencias-Git">Referencias Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Archivos-empaquetadores">Archivos empaquetadores</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Las-especificaciones-para-hacer-referencia-a-refspec">Las especificaciones para hacer referencia a...  (refspec)</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Protocolos-de-transferencia">Protocolos de transferencia</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Mantenimiento-y-recuperaci%C3%B3n-de-datos">Mantenimiento y recuperación de datos</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/es/v1/Los-entresijos-internos-de-Git-Recapitulaci%C3%B3n">Recapitulación</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>2.3 Fundamentos de Git - Viendo el histórico de confirmaciones</h1>
+  <div><h2>Viendo el histórico de confirmaciones</h2>
+
+<p>Después de haber hecho varias confirmaciones, o si has clonado un repositorio que ya tenía un histórico de confirmaciones, probablemente quieras mirar atrás para ver qué modificaciones se han llevado a cabo. La herramienta más básica y potente para hacer esto es el comando <code>git log</code>.</p>
+
+<p>Estos ejemplos usan un proyecto muy sencillo llamado simplegit que suelo usar para hacer demostraciones. Para clonar el proyecto, ejecuta:</p>
+
+<pre><code>git clone git://github.com/schacon/simplegit-progit.git
+</code></pre>
+
+<p>Cuando ejecutes <code>git log</code> sobre este proyecto, deberías ver una salida similar a esta:</p>
+
+<pre><code>$ git log
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    first commit
+</code></pre>
+
+<p>Por defecto, si no pasas ningún argumento, <code>git log</code> lista las confirmaciones hechas sobre ese repositorio en orden cronológico inverso. Es decir, las confirmaciones más recientes se muestran al principio. Como puedes ver, este comando lista cada confirmación con su suma de comprobación SHA-1, el nombre y dirección de correo del autor, la fecha y el mensaje de confirmación.</p>
+
+<p>El comando <code>git log</code> proporciona gran cantidad de opciones para mostrarte exactamente lo que buscas. Aquí veremos algunas de las más usadas.</p>
+
+<p>Una de las opciones más útiles es <code>-p</code>, que muestra las diferencias introducidas en cada confirmación. También puedes usar la opción <code>-2</code>, que hace que se muestren únicamente las dos últimas entradas del histórico:</p>
+
+<pre><code>$ git log –p -2
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -5,7 +5,7 @@ require &#39;rake/gempackagetask&#39;
+ spec = Gem::Specification.new do |s|
+-    s.version   =   &quot;0.1.0&quot;
++    s.version   =   &quot;0.1.1&quot;
+     s.author    =   &quot;Scott Chacon&quot;
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index a0a60ae..47c6340 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -18,8 +18,3 @@ class SimpleGit
+     end
+
+ end
+-
+-if $0 == __FILE__
+-  git = SimpleGit.new
+-  puts git.show
+-end
+\ No newline at end of file
+</code></pre>
+
+<p>Esta opción muestra la misma información, pero añadiendo tras cada entrada las diferencias que le corresponden. Esto resulta muy útil para revisiones de código, o para visualizar rápidamente lo que ha pasado en las confirmaciones enviadas por un colaborador.</p>
+
+<p>A veces es más fácil revisar cambios a nivel de palabra que a nivel de línea. Git dispone de la opción <code>--word-diff</code>, que se puede añadir al comando <code>git log -p</code> para obtener las diferencias por palabras en lugar de las diferencias línea por línea. Formatear las diferencias a nivel de palabra es bastante inusual cuando se aplica a código fuente, pero resulta muy práctico cuando se aplica a grandes archivos de texto, como libros o tu propia tesis. He aquí un ejemplo:</p>
+
+<pre><code>$ git log -U1 --word-diff
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+diff --git a/Rakefile b/Rakefile
+index a874b73..8f94139 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -7,3 +7,3 @@ spec = Gem::Specification.new do |s|
+    s.name      =   &quot;simplegit&quot;
+    s.version   =   [-&quot;0.1.0&quot;-]{+&quot;0.1.1&quot;+}
+    s.author    =   &quot;Scott Chacon&quot;
+</code></pre>
+
+<p>Como se puede ver, no aparecen líneas añadidas o eliminadas en la salida como en las diferencias normales. Se puede ver la palabra añadida encerrada en <code>{+ +}</code> y la eliminada en <code>[- -]</code>. Puede que se quiera reducir las usuales tres líneas de contexto en las diferencias a sólo una línea puesto que el contexto es ahora de palabras, no de líneas. Se puede hacer esto con <code>-U1</code>, como hicimos en el ejemplo de arriba.</p>
+
+<p>También puedes usar con <code>git log</code> una serie de opciones de resumen. Por ejemplo, si quieres ver algunas estadísticas de cada confirmación, puedes usar la opción <code>--stat</code>:</p>
+
+<pre><code>$ git log --stat
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    changed the version number
+
+ Rakefile |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 16:40:33 2008 -0700
+
+    removed unnecessary test code
+
+ lib/simplegit.rb |    5 -----
+ 1 files changed, 0 insertions(+), 5 deletions(-)
+
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Sat Mar 15 10:31:28 2008 -0700
+
+    first commit
+
+ README           |    6 ++++++
+ Rakefile         |   23 +++++++++++++++++++++++
+ lib/simplegit.rb |   25 +++++++++++++++++++++++++
+ 3 files changed, 54 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>Como puedes ver, la opción <code>--stat</code> imprime tras cada confirmación una lista de archivos modificados, indicando cuántos han sido modificados y cuántas líneas han sido añadidas y eliminadas para cada uno de ellos, y un resumen de toda esta información.</p>
+
+<p>Otra opción realmente útil es <code>--pretty</code>, que modifica el formato de la salida. Tienes unos cuantos estilos disponibles. La opción <code>oneline</code> imprime cada confirmación en una única línea, lo que puede resultar útil si estás analizando gran cantidad de confirmaciones. Otras opciones son <code>short</code>, <code>full</code> y <code>fuller</code>, que muestran la salida en un formato parecido, pero añadiendo menos o más información, respectivamente:</p>
+
+<pre><code>$ git log --pretty=oneline
+ca82a6dff817ec66f44342007202690a93763949 changed the version number
+085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test code
+a11bef06a3f659402fe7563abf99ad00de2209e6 first commit
+</code></pre>
+
+<p>La opción más interesante es <code>format</code>, que te permite especificar tu propio formato. Esto resulta especialmente útil si estás generando una salida para que sea analizada por otro programa —como especificas el formato explícitamente, sabes que no cambiará en futuras actualizaciones de Git—:</p>
+
+<pre><code>$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;
+ca82a6d - Scott Chacon, 11 months ago : changed the version number
+085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code
+a11bef0 - Scott Chacon, 11 months ago : first commit
+</code></pre>
+
+<p>La Tabla 2-1 lista algunas de las opciones más útiles aceptadas por <code>format</code>.</p>
+
+<table class='ref'><thead>
+<tr>
+<th>Opción</th>
+<th>Descripción de la salida</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>%H</code></td>
+<td>Hash de la confirmación</td>
+</tr>
+<tr>
+<td><code>%h</code></td>
+<td>Hash de la confirmación abreviado</td>
+</tr>
+<tr>
+<td><code>%T</code></td>
+<td>Hash del árbol</td>
+</tr>
+<tr>
+<td><code>%t</code></td>
+<td>Hash del árbol abreviado</td>
+</tr>
+<tr>
+<td><code>%P</code></td>
+<td>Hashes de las confirmaciones padre</td>
+</tr>
+<tr>
+<td><code>%p</code></td>
+<td>Hashes de las confirmaciones padre abreviados</td>
+</tr>
+<tr>
+<td><code>%an</code></td>
+<td>Nombre del autor</td>
+</tr>
+<tr>
+<td><code>%ae</code></td>
+<td>Dirección de correo del autor</td>
+</tr>
+<tr>
+<td><code>%ad</code></td>
+<td>Fecha de autoría (el formato respeta la opción <code>-–date</code>)</td>
+</tr>
+<tr>
+<td><code>%ar</code></td>
+<td>Fecha de autoría, relativa</td>
+</tr>
+<tr>
+<td><code>%cn</code></td>
+<td>Nombre del confirmador</td>
+</tr>
+<tr>
+<td><code>%ce</code></td>
+<td>Dirección de correo del confirmador</td>
+</tr>
+<tr>
+<td><code>%cd</code></td>
+<td>Fecha de confirmación</td>
+</tr>
+<tr>
+<td><code>%cr</code></td>
+<td>Fecha de confirmación, relativa</td>
+</tr>
+<tr>
+<td><code>%s</code></td>
+<td>Asunto</td>
+</tr>
+</tbody></table>
+
+<p>Puede que te estés preguntando la diferencia entre <em>autor</em> (<em>author</em>) y <em>confirmador</em> (<em>committer</em>). El autor es la persona que escribió originalmente el trabajo, mientras que el confirmador es quien lo aplicó. Por tanto, si mandas un parche a un proyecto, y uno de sus miembros lo aplica, ambos recibiréis reconocimiento —tú como autor, y el miembro del proyecto como confirmador—. Veremos esta distinción en mayor profundidad en el Capítulo 5.</p>
+
+<p>Las opciones <code>oneline</code> y <code>format</code> son especialmente útiles combinadas con otra opción llamada <code>--graph</code>. Ésta añade un pequeño gráfico ASCII mostrando tu histórico de ramificaciones y uniones, como podemos ver en nuestra copia del repositorio del proyecto Grit:</p>
+
+<pre><code>$ git log --pretty=format:&quot;%h %s&quot; --graph
+* 2d3acf9 ignore errors from SIGCHLD on trap
+*  5e3ee11 Merge branch &#39;master&#39; of git://github.com/dustin/grit
+|\
+| * 420eac9 Added a method for getting the current branch.
+* | 30e367c timeout code and tests
+* | 5a09431 add timeout protection to grit
+* | e1193f8 support for heads with slashes in them
+|/
+* d6016bc require time for xmlschema
+*  11d191e Merge branch &#39;defunkt&#39; into local
+</code></pre>
+
+<p>Éstas son sólo algunas de las opciones para formatear la salida de <code>git log</code> —existen muchas más. La Tabla 2-2 lista las opciones vistas hasta ahora, y algunas otras opciones de formateo que pueden resultarte útiles, así como su efecto sobre la salida.</p>
+
+<table class='ref'><thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>-p</code></td>
+<td>Muestra el parche introducido en cada confirmación.</td>
+</tr>
+<tr>
+<td><code>--word-diff</code></td>
+<td>Muestra el parche en formato de una palabra.</td>
+</tr>
+<tr>
+<td><code>--stat</code></td>
+<td>Muestra estadísticas sobre los archivos modificados en cada confirmación.</td>
+</tr>
+<tr>
+<td><code>--shortstat</code></td>
+<td>Muestra solamente la línea de resumen de la opción <code>--stat</code>.</td>
+</tr>
+<tr>
+<td><code>--name-only</code></td>
+<td>Muestra la lista de archivos afectados.</td>
+</tr>
+<tr>
+<td><code>--name-status</code></td>
+<td>Muestra la lista de archivos afectados, indicando además si fueron añadidos, modificados o eliminados.</td>
+</tr>
+<tr>
+<td><code>--abbrev-commit</code></td>
+<td>Muestra solamente los primeros caracteres de la suma SHA-1, en vez de los 40 caracteres de que se compone.</td>
+</tr>
+<tr>
+<td><code>--relative-date</code></td>
+<td>Muestra la fecha en formato relativo (por ejemplo, “2 weeks ago” (“hace 2 semanas”)) en lugar del formato completo.</td>
+</tr>
+<tr>
+<td><code>--graph</code></td>
+<td>Muestra un gráfico ASCII con la historia de ramificaciones y uniones.</td>
+</tr>
+<tr>
+<td><code>--pretty</code></td>
+<td>Muestra las confirmaciones usando un formato alternativo. Posibles opciones son oneline, short, full, fuller y format (mediante el cual puedes especificar tu propio formato).</td>
+</tr>
+<tr>
+<td><code>--oneline</code></td>
+<td>Un cómodo acortamiento de la opción <code>--pretty=oneline --abbrev-commit</code>.</td>
+</tr>
+</tbody></table>
+
+<h3 id="Limitando-la-salida-del-histórico"><a href="#Limitando-la-salida-del-histórico">Limitando la salida del histórico</a></h3>
+
+<p>Además de las opciones de formateo, <code>git log</code> acepta una serie de opciones para limitar su salida —es decir, opciones que te permiten mostrar únicamente parte de las confirmaciones—. Ya has visto una de ellas, la opción <code>-2</code>, que muestra sólo las dos últimas confirmaciones. De hecho, puedes hacer <code>-&lt;n&gt;</code>, siendo <code>n</code> cualquier entero, para mostrar las últimas <code>n</code> confirmaciones. En realidad es poco probable que uses esto con frecuencia, ya que Git por defecto pagina su salida para que veas cada página del histórico por separado.</p>
+
+<p>Sin embargo, las opciones temporales como <code>--since</code> (desde) y <code>--until</code> (hasta) sí que resultan muy útiles. Por ejemplo, este comando lista todas las confirmaciones hechas durante las dos últimas semanas:</p>
+
+<pre><code>$ git log --since=2.weeks
+</code></pre>
+
+<p>Este comando acepta muchos formatos. Puedes indicar una fecha concreta (“2008-01-15”), o relativa, como “2 years 1 day 3 minutes ago” (“hace 2 años, 1 día y 3 minutos”).</p>
+
+<p>También puedes filtrar la lista para que muestre sólo aquellas confirmaciones que cumplen ciertos criterios. La opción <code>--author</code> te permite filtrar por autor, y <code>--grep</code> te permite buscar palabras clave entre los mensajes de confirmación. (Ten en cuenta que si quieres aplicar ambas opciones simultáneamente, tienes que añadir <code>--all-match</code>, o el comando mostrará las confirmaciones que cumplan cualquiera de las dos, no necesariamente las dos a la vez.)</p>
+
+<!-- The prior paragraph was changed in English version for the following two in commit 60e261895a77951a6541470c9438f32a1e5b7fd0. It has not been trasnlated yet:
+
+You can also filter the list to commits that match some search criteria. The `--author` option allows you to filter on a specific author, and the `--grep` option lets you search for keywords in the commit messages. (Note that if you specify both author and grep options, the command will match commits with both.)
+
+If you want to specify multiple grep options, you have to add `--all-match` or the command will match commits with either.
+-->
+
+<p>La última opción verdaderamente útil para filtrar la salida de <code>git log</code> es especificar una ruta. Si especificas la ruta de un directorio o archivo, puedes limitar la salida a aquellas confirmaciones que introdujeron un cambio en dichos archivos. Ésta debe ser siempre la última opción, y suele ir precedida de dos guiones (<code>--</code>) para separar la ruta del resto de opciones.</p>
+
+<p>En la Tabla 2-3 se listan estas opciones, y algunas otras bastante comunes, a modo de referencia.</p>
+
+<table class='ref'><thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>-(n)</code></td>
+<td>Muestra solamente las últimas n confirmaciones</td>
+</tr>
+<tr>
+<td><code>--since, --after</code></td>
+<td>Muestra aquellas confirmaciones hechas después de la fecha especificada.</td>
+</tr>
+<tr>
+<td><code>--until, --before</code></td>
+<td>Muestra aquellas confirmaciones hechas antes de la fecha especificada.</td>
+</tr>
+<tr>
+<td><code>--author</code></td>
+<td>Muestra sólo aquellas confirmaciones cuyo autor coincide con la cadena especificada.</td>
+</tr>
+<tr>
+<td><code>--committer</code></td>
+<td>Muestra sólo aquellas confirmaciones cuyo confirmador coincide con la cadena especificada.</td>
+</tr>
+</tbody></table>
+
+<p>Por ejemplo, si quieres ver cuáles de las confirmaciones hechas sobre archivos de prueba del código fuente de Git fueron enviadas por Junio Hamano, y no fueron uniones, en el mes de octubre de 2008, ejecutarías algo así:</p>
+
+<pre><code>$ git log --pretty=&quot;%h - %s&quot; --author=gitster --since=&quot;2008-10-01&quot; \
+   --before=&quot;2008-11-01&quot; --no-merges -- t/
+5610e3b - Fix testcase failure when extended attribute
+acd3b9e - Enhance hold_lock_file_for_{update,append}()
+f563754 - demonstrate breakage of detached checkout wi
+d1a43f2 - reset --hard/read-tree --reset -u: remove un
+51a94af - Fix &quot;checkout --track -b newbranch&quot; on detac
+b0ad11e - pull: allow &quot;git pull origin $something:$cur
+</code></pre>
+
+<p>De las casi 20.000 confirmaciones en la historia del código fuente de Git, este comando muestra las 6 que cumplen estas condiciones.</p>
+
+<h3 id="Usando-un-interfaz-gráfico-para-visualizar-el-histórico"><a href="#Usando-un-interfaz-gráfico-para-visualizar-el-histórico">Usando un interfaz gráfico para visualizar el histórico</a></h3>
+
+<p>Si deseas utilizar una herramienta más gráfica para visualizar el histórico de confirmaciones, puede que quieras echarle un ojo a un programa Tcl/Tk llamado gitk que se distribuye junto con Git. Gitk es básicamente un <code>git log</code> visual, y acepta casi todas las opciones de filtrado que acepta <code>git log</code>. Si tecleas <code>gitk</code> en la línea de comandos dentro de tu proyecto, deberías ver algo como lo de la Figura 2-2.</p>
+
+<p><center><img src="/figures/18333fig0202-tn.png"></center><br/>
+Figura 2-2. El visualizador de histórico gitk.</p>
+
+<p>Puedes ver el histórico de confirmaciones en la mitad superior de la ventana, junto con un gráfico de ascendencia. El visor de diferencias de la mitad inferior muestra las modificaciones introducidas en cada confirmación que selecciones.</p>
+
+<div id="nav"><a href="/book/es/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio">prev</a> | <a href="/book/es/v1/Fundamentos-de-Git-Deshaciendo-cosas">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

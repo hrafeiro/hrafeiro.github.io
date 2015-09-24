@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":198,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Git 強制策略實例</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>fast-version-control
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B">開始</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E9%97%9C%E6%96%BC%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">關於版本控制</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E7%9A%84%E7%B0%A1%E5%8F%B2">Git 的簡史</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-Git-%E5%9F%BA%E7%A4%8E%E8%A6%81%E9%BB%9E">Git 基礎要點</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit">安裝Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%88%9D%E6%AC%A1%E8%A8%AD%E5%AE%9AGit">初次設定Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%8F%96%E5%BE%97%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6">取得說明文件</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E">Git 基礎</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97Git%E5%84%B2%E5%AD%98%E5%BA%AB">取得Git儲存庫</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E4%BA%A4%E6%9B%B4%E6%96%B0%E5%88%B0%E5%84%B2%E5%AD%98%E5%BA%AB">提交更新到儲存庫</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%AA%A2%E8%A6%96%E6%8F%90%E4%BA%A4%E7%9A%84%E6%AD%B7%E5%8F%B2%E8%A8%98%E9%8C%84">檢視提交的歷史記錄</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E5%BE%A9%E5%8E%9F">復原</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E8%88%87%E9%81%A0%E7%AB%AF%E5%8D%94%E5%90%8C%E5%B7%A5%E4%BD%9C">與遠端協同工作</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%A8%99%E7%B1%A4">標籤</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E6%8F%90%E7%A4%BA%E5%92%8C%E6%8A%80%E5%B7%A7">提示和技巧</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/zh-tw/v1/Git-%E5%9F%BA%E7%A4%8E-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF">Git 分支</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E4%BD%95%E8%AC%82%E5%88%86%E6%94%AF">何謂分支</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E8%88%87%E5%90%88%E4%BD%B5">分支的新建與合併</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E7%AE%A1%E7%90%86">分支的管理</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%A9%E7%94%A8%E5%88%86%E6%94%AF%E9%80%B2%E8%A1%8C%E9%96%8B%E7%99%BC%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">利用分支進行開發的工作流程</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E9%81%A0%E7%AB%AF%E5%88%86%E6%94%AF">遠端分支</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88">分支的衍合</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/zh-tw/v1/Git-%E5%88%86%E6%94%AF-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>4. <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git">伺服器上的 Git</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%94%E8%AD%B0">協議</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%9C%A8%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2-Git">在伺服器上部署 Git</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%96%8B%E9%87%91%E9%91%B0">生成 SSH 公開金鑰</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E6%9E%B6%E8%A8%AD%E4%BC%BA%E6%9C%8D%E5%99%A8">架設伺服器</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%85%AC%E5%85%B1%E8%A8%AA%E5%95%8F">公共訪問</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E5%AE%88%E8%AD%B7%E9%80%B2%E7%A8%8B">Git 守護進程</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-Git-%E8%A8%97%E7%AE%A1%E6%9C%8D%E5%8B%99">Git 託管服務</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/zh-tw/v1/%E4%BC%BA%E6%9C%8D%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>5. <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git">分散式 Git</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%88%86%E6%95%A3%E5%BC%8F%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B">分散式工作流程</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E7%82%BA%E5%B0%88%E6%A1%88%E4%BD%9C%E8%B2%A2%E7%8D%BB">為專案作貢獻</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86">專案的管理</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%8F%E7%B5%90">小結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7">Git 工具</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%81%B8%E6%93%87%E4%BF%AE%E8%A8%82%E7%89%88%E6%9C%AC">選擇修訂版本</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%9A%AB%E5%AD%98">互動式暫存</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%84%B2%E8%97%8F-Stashing">儲藏 (Stashing)</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%AF%AB%E6%AD%B7%E5%8F%B2">重寫歷史</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E5%81%9A-Debug">使用 Git 做 Debug</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E7%B5%84-Submodules">子模組 (Submodules)</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%B9%E5%90%88%E4%BD%B5">子樹合併</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/zh-tw/v1/Git-%E5%B7%A5%E5%85%B7-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>7. <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96">Git 客製化</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E9%85%8D%E7%BD%AE">Git 配置</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%B1%AC%E6%80%A7">Git 屬性</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">Git Hooks</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-%E5%BC%B7%E5%88%B6%E7%AD%96%E7%95%A5%E5%AF%A6%E4%BE%8B">Git 強制策略實例</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1">Git 與其他系統</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-Git-%E8%88%87-Subversion">Git 與 Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E9%81%B7%E7%A7%BB%E5%88%B0-Git">遷移到 Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/zh-tw/v1/Git-%E8%88%87%E5%85%B6%E4%BB%96%E7%B3%BB%E7%B5%B1-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>9. <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86">Git 內部原理</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%A4%E5%91%BD%E4%BB%A4-Plumbing-%E5%92%8C%E9%AB%98%E5%B1%A4%E5%91%BD%E4%BB%A4-Porcelain">底層命令 (Plumbing) 和高層命令 (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E7%89%A9%E4%BB%B6">Git 物件</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Git-References">Git References</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-The-Refspec">The Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E5%82%B3%E8%BC%B8%E5%8D%94%E8%AD%B0">傳輸協議</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B6%AD%E8%AD%B7%E5%8F%8A%E8%B3%87%E6%96%99%E5%BE%A9%E5%8E%9F">維護及資料復原</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/zh-tw/v1/Git-%E5%85%A7%E9%83%A8%E5%8E%9F%E7%90%86-%E7%B8%BD%E7%B5%90">總結</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>7.4 Git 客製化 - Git 強制策略實例</h1>
+  <div><h2>Git 強制策略實例</h2>
+
+<p>在本節中，我們應用前面學到的知識建立這樣一個 Git 工作流程：檢查提交資訊的格式，只接受純 fast-forward 內容的推送，並且指定專案中的某些特定用戶只能修改某些特定子目錄。我們將撰寫一個用戶端腳本來提示開發人員他們推送的內容是否會被拒絕，以及一個伺服端腳本來實際執行這些策略。 </p>
+
+<p>我使用 Ruby 來撰寫這些腳本，一方面因為它是我喜好的指令碼語言(scripting language)，也因為我覺得它是最接近偽代碼(pseudocode-looking)的指令碼語言；因而即便你不使用 Ruby 也能大致看懂。不過任何其他語言也一樣適用。所有 Git 自帶的範例腳本都是用 Perl 或 Bash 寫的，所以從這些腳本中能找到相當多的這兩種語言的掛鉤範例。</p>
+
+<h3 id="服務端掛鉤"><a href="#服務端掛鉤">服務端掛鉤</a></h3>
+
+<p>所有服務端的工作都在 hooks（掛鉤）目錄的 update（更新）腳本中制定。update 腳本為每一個得到推送的分支運行一次；它接受推送目標的索引(reference)、該分支原來指向的位置、以及被推送的新內容。如果推送是通過 SSH 進行的，還可以獲取發出此次操作的用戶。如果設定所有操作都通過公鑰授權的單一帳號（比如＂git＂）進行，就有必要通過一個 shell 包裝(wrapper)依據公鑰來判斷用戶的身份，並且設定環境變數來表示該使用者的身份。下面假設嘗試連接的使用者儲存在 <code>$USER</code> 環境變數裡，我們的 update 腳本首先搜集一切需要的資訊： </p>
+
+<pre><code>#!/usr/bin/env ruby
+
+refname = ARGV[0]
+oldrev  = ARGV[1]
+newrev  = ARGV[2]
+user    = ENV[&#39;USER&#39;]
+
+puts &quot;Enforcing Policies... \n(#{refname}) (#{oldrev[0,6]}) (#{newrev[0,6]})&quot;
+</code></pre>
+
+<h4>強制特定的提交資訊格式</h4>
+
+<p>我們的第一項任務是指定每一條提交資訊都必須遵循某種特殊的格式。只是設定一個目標，假定每一條資訊必須包含一條形似 “ref: 1234” 這樣的字串，因為我們需要把每一次提交連結到專案問題追蹤系統裏面的工作項目。我們要逐一檢查每一條推送上來的提交內容，看看提交資訊是否包含這麼一個字串，然後，如果該提交裡不包含這個字串，以非零返回值退出從而拒絕此次推送。</p>
+
+<p>把 <code>$newrev</code> 和 <code>$oldrev</code> 變數的值傳給一個叫做 <code>git rev-list</code> 的 Git plumbing 命令可以獲取所有提交內容 SHA-1 值的列表。<code>git rev-list</code> 基本上是個 <code>git log</code> 命令，但它預設只輸出 SHA-1 值而已，沒有其他資訊。所以要獲取由 SHA 值表示的從一次提交到另一次提交之間的所有 SHA 值，可以執行： </p>
+
+<pre><code>$ git rev-list 538c33..d14fc7
+d14fc7c847ab946ec39590d87783c69b031bdfb7
+9f585da4401b0a3999e84113824d15245c13f0be
+234071a1be950e2a8d078e6141f5cd20c1e61ad3
+dfa04c9ef3d5197182f13fb5b9b1fb7717d2222a
+17716ec0f1ff5c77eff40b7fe912f9f6cfd0e475
+</code></pre>
+
+<p>取得這些輸出內容，迴圈遍歷其中每一個提交的 SHA 值，找出與之對應的提交資訊，然後用規則運算式(regular expression)來測試該資訊是否符合某個 pattern。</p>
+
+<p>下面要搞定如何從所有的提交內容中提取出提交資訊。使用另一個叫做 <code>git cat-file</code> 的 Git plumbing 工具可以獲得原始的提交資料。我們將在第九章瞭解到這些 plumbing 工具的細節；現在暫時先看一下這條命令會給你什麼： </p>
+
+<pre><code>$ git cat-file commit ca82a6
+tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+parent 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+author Scott Chacon &lt;schacon@gmail.com&gt; 1205815931 -0700
+committer Scott Chacon &lt;schacon@gmail.com&gt; 1240030591 -0700
+
+changed the version number
+</code></pre>
+
+<p>通過 SHA-1 值獲得提交內容中的提交資訊的一個簡單辦法是找到提交的第一個空白行，然後取出它之後的所有內容。可以使用 Unix 系統的 <code>sed</code> 命令來實現這個效果： </p>
+
+<pre><code>$ git cat-file commit ca82a6 | sed &#39;1,/^$/d&#39;
+changed the version number
+</code></pre>
+
+<p>這條咒語從每一個待提交內容裡提取提交訊息，並且會在提交訊息不符合要求的情況下退出。為了退出腳本和拒絕此次推送，返回一個非零值。整個 method 大致如下： </p>
+
+<pre><code>$regex = /\[ref: (\d+)\]/
+
+# enforced custom commit message format
+def check_message_format
+  missed_revs = `git rev-list #{$oldrev}..#{$newrev}`.split(&quot;\n&quot;)
+  missed_revs.each do |rev|
+    message = `git cat-file commit #{rev} | sed &#39;1,/^$/d&#39;`
+    if !$regex.match(message)
+      puts &quot;[POLICY] Your message is not formatted correctly&quot;
+      exit 1
+    end
+  end
+end
+check_message_format
+</code></pre>
+
+<p>把這一段放在 <code>update</code> 腳本裡，所有包含不符合指定規則的提交都會遭到拒絕。 </p>
+
+<h4>實現基於使用者的存取權限控制清單（ACL）系統</h4>
+
+<p>假設你需要添加一個使用存取權限控制列表 (access control list, ACL) 的機制來指定哪些使用者對專案的哪些部分有推送許可權。某些使用者具有全部的存取權，其他人只對某些子目錄或者某些特定的檔案具有推送許可權。要搞定這一點，所有的規則將被寫入一個位於伺服器的原始 Git 倉庫的 <code>acl</code> 檔。我們讓 update 掛鉤檢閱這些規則，審視推送的提交內容中需要修改的所有檔案，然後判定執行推送的用戶是否對所有這些檔案都有許可權。 </p>
+
+<p>我們首先要創建這個列表。這裡使用的格式和 CVS 的 ACL 機制十分類似：它由若干行構成，第一欄的內容是 <code>avail</code> 或者 <code>unavail</code>；下一欄是由逗號分隔的使用者清單，列出這條規則會對哪些使用者生效；最後一欄是這條規則會對哪個目錄生效（空白表示開放訪問）。這些欄位由 pipe (<code>|</code>) 字元隔開。 </p>
+
+<p>下例中，我們指定幾個管理員，幾個對 <code>doc</code> 目錄具有許可權的文件作者，以及一個只對 <code>lib</code> 和 <code>tests</code> 目錄具有許可權的開發人員，ACL 檔看起來像這樣： </p>
+
+<pre><code>avail|nickh,pjhyett,defunkt,tpw
+avail|usinclair,cdickens,ebronte|doc
+avail|schacon|lib
+avail|schacon|tests
+</code></pre>
+
+<p>首先把這些資料讀入到你所能使用的資料結構中。本例中，為保持簡潔，我們暫時只實做 <code>avail</code> 的規則（譯注：也就是省略了 unavail 部分）。下面這個 method 產生一個關聯式陣列，它的主鍵是用戶名，對應的值是一個該用戶有寫入許可權的所有目錄組成的陣列： </p>
+
+<pre><code>def get_acl_access_data(acl_file)
+  # read in ACL data
+  acl_file = File.read(acl_file).split(&quot;\n&quot;).reject { |line| line == &#39;&#39; }
+  access = {}
+  acl_file.each do |line|
+    avail, users, path = line.split(&#39;|&#39;)
+    next unless avail == &#39;avail&#39;
+    users.split(&#39;,&#39;).each do |user|
+      access[user] ||= []
+      access[user] &lt;&lt; path
+    end
+  end
+  access
+end
+</code></pre>
+
+<p>針對之前給出的 ACL 規則檔，這個 <code>get_acl_access_data</code> method 回傳的資料結構如下： </p>
+
+<pre><code>{&quot;defunkt&quot;=&gt;[nil],
+ &quot;tpw&quot;=&gt;[nil],
+ &quot;nickh&quot;=&gt;[nil],
+ &quot;pjhyett&quot;=&gt;[nil],
+ &quot;schacon&quot;=&gt;[&quot;lib&quot;, &quot;tests&quot;],
+ &quot;cdickens&quot;=&gt;[&quot;doc&quot;],
+ &quot;usinclair&quot;=&gt;[&quot;doc&quot;],
+ &quot;ebronte&quot;=&gt;[&quot;doc&quot;]}
+</code></pre>
+
+<p>搞定了使用者許可權的資料，下面需要找出這次推送的提交之中，哪些位置被修改，從而確保試圖推送的使用者對這些位置都有許可權。 </p>
+
+<p>使用 <code>git log</code> 的 <code>--name-only</code> 選項（在第二章裡簡單的提過）我們可以輕而易舉的找出一次提交裡有哪些被修改的檔案： </p>
+
+<pre><code>$ git log -1 --name-only --pretty=format:&#39;&#39; 9f585d
+
+README
+lib/test.rb
+</code></pre>
+
+<p>使用 <code>get_acl_access_data</code> 回傳的 ACL 結構來一一核對每一次提交修改的檔案列表，就能判定該用戶是否有許可權推送所有的提交內容: </p>
+
+<pre><code># only allows certain users to modify certain subdirectories in a project
+def check_directory_perms
+  access = get_acl_access_data(&#39;acl&#39;)
+
+  # see if anyone is trying to push something they can&#39;t
+  new_commits = `git rev-list #{$oldrev}..#{$newrev}`.split(&quot;\n&quot;)
+  new_commits.each do |rev|
+    files_modified = `git log -1 --name-only --pretty=format:&#39;&#39; #{rev}`.split(&quot;\n&quot;)
+    files_modified.each do |path|
+      next if path.size == 0
+      has_file_access = false
+      access[$user].each do |access_path|
+        if !access_path || # user has access to everything
+          (path.index(access_path) == 0) # access to this path
+          has_file_access = true
+        end
+      end
+      if !has_file_access
+        puts &quot;[POLICY] You do not have access to push to #{path}&quot;
+        exit 1
+      end
+    end
+  end
+end
+
+check_directory_perms
+</code></pre>
+
+<p>以上的大部分內容應該還算容易理解。通過 <code>git rev-list</code> 獲取推送到伺服器的提交清單。然後，針對其中每一項，找出它試圖修改的檔案，然後確保執行推送的用戶對這些檔案具有許可權。一個不太容易理解的 Ruby 技巧是 <code>path.index(access_path) ==0</code> 這句，如果路徑以 <code>access_path</code> 開頭，它會回傳 True——這是為了確保 <code>access_path</code> 並不是只在允許的路徑之一，而是所有准許全選的目錄都在該目錄之下。</p>
+
+<p>現在，如果提交資訊的格式不對的話，或是修改的檔案在允許的路徑之外的話，你的用戶就不能推送這些提交。 </p>
+
+<h4>只允許 Fast-Forward 類型的推送</h4>
+
+<p>剩下的最後一項任務是指定只接受 fast-forward 的推送。在 Git 1.6 或者較新的版本裡，只需要設定 <code>receive.denyDeletes</code> 和 <code>receive.denyNonFastForwards</code> 選項就可以了。但是用掛鉤來實做這個功能，便可以在舊版本的 Git 上運作，並且通過一定的修改，它可以做到只針對某些用戶執行，或者更多以後可能用到的規則。</p>
+
+<p>檢查的邏輯是看看是否有任何的提交在舊版本(revision)裡能找到、但在新版本裡卻找不到。如果沒有，那這是一次純 fast-forward 的推送；如果有，那我們拒絕此次推送： </p>
+
+<pre><code># enforces fast-forward only pushes
+def check_fast_forward
+  missed_refs = `git rev-list #{$newrev}..#{$oldrev}`
+  missed_ref_count = missed_refs.split(&quot;\n&quot;).size
+  if missed_ref_count &gt; 0
+    puts &quot;[POLICY] Cannot push a non fast-forward reference&quot;
+    exit 1
+  end
+end
+
+check_fast_forward
+</code></pre>
+
+<p>一切都設定好了。如果現在執行 <code>chmod u+x .git/hooks/update</code> —— 這是包含以上內容的案，我們修改它的許可權，然後嘗試推送一個包含非 fast-forward 類型的索引，會得到類似如下： </p>
+
+<pre><code>$ git push -f origin master
+Counting objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+Enforcing Policies...
+(refs/heads/master) (8338c5) (c5b616)
+[POLICY] Cannot push a non fast-forward reference
+error: hooks/update exited with error code 1
+error: hook declined to update refs/heads/master
+To git@gitserver:project.git
+ ! [remote rejected] master -> master (hook declined)
+error: failed to push some refs to &#39;git@gitserver:project.git&#39;
+</code></pre>
+
+<p>這裡有幾個有趣的資訊。首先，我們可以看到掛鉤執行的起點： </p>
+
+<pre><code>Enforcing Policies...
+(refs/heads/master) (8338c5) (c5b616)
+</code></pre>
+
+<p>注意這是你在 update 腳本一開頭的地方印出到標準輸出的東西。所有從腳本印出到 stdout 的東西都會發送到用戶端，這點很重要。 </p>
+
+<p>下一個值得注意的部分是錯誤資訊。 </p>
+
+<pre><code>[POLICY] Cannot push a non fast-forward reference
+error: hooks/update exited with error code 1
+error: hook declined to update refs/heads/master
+</code></pre>
+
+<p>第一行是我們的腳本輸出的，在往下是 Git 在告訴我們 update 腳本退出時傳回了非零值，因而推送遭到了拒絕。最後一點：</p>
+
+<pre><code>To git@gitserver:project.git
+ ! [remote rejected] master -> master (hook declined)
+error: failed to push some refs to &#39;git@gitserver:project.git&#39;
+</code></pre>
+
+<p>每一個被掛鉤拒絕的索引(reference)，你都會看到一條遠端拒絕訊息，解釋它被拒絕是因為一個掛鉤失敗的原因。 </p>
+
+<p>而且，如果 ref 標記字串(譯註: 例如 ref: 1234)沒有包含在任何的提交裡，我們將看到前面腳本裡印出的錯誤資訊： </p>
+
+<pre><code>[POLICY] Your message is not formatted correctly
+</code></pre>
+
+<p>又或者某人想修改一個自己不具備許可權的檔，然後推送了一個包含它的提交，他將看到類似的提示。比如，一個文件作者嘗試推送一個修改了 <code>lib</code> 目錄下某些東西的提交，他會看到 </p>
+
+<pre><code>[POLICY] You do not have access to push to lib/test.rb
+</code></pre>
+
+<p>都做好了。從這裡開始，只要 <code>update</code> 腳本存在並且可執行，我們的倉庫永遠都不會遭到回轉(rewound)，或者包含不符合要求資訊的提交內容，並且使用者都被鎖在了沙箱裡面。 </p>
+
+<h3 id="用戶端掛鉤"><a href="#用戶端掛鉤">用戶端掛鉤</a></h3>
+
+<p>這種方法的缺點在於使用者推送內容遭到拒絕後幾乎無法避免的抱怨。辛辛苦苦寫成的代碼在最後時刻慘遭拒絕是令人十分沮喪、迷惑的；更可憐的是他們不得不修改提交歷史來解決問題，有時候這可不是隨便哪個人都做得來的。</p>
+
+<p>這種兩難境地的解答是提供一些用戶端的掛鉤，讓使用者可以用來在他們作出伺服器可能會拒絕的事情時給以警告。這樣的話，用戶們就能在提交--問題變得更難修正之前修正問題。由於掛鉤本身不跟隨 clone 的專案副本分發，所以必須通過其他途徑把這些掛鉤分發到用戶的 <code>.git/hooks</code> 目錄並設為可執行檔。雖然可以在專案裏或用另一個專案分發這些掛鉤，不過全自動的解決方案是不存在的。</p>
+
+<p>首先，你應該在每次提交前檢查你的提交說明訊息，這樣你才能確保伺服器不會因為不合格式的提交說明訊息而拒絕你的更改。為了達到這個目的，你可以增加 <code>commit-msg</code> 掛鉤。如果你使用該掛鉤來讀取第一個參數傳遞的檔案裏的訊息，並且與規定的模式(pattern)作對比，你就可以使 Git 在提交說明訊息不符合條件的情況下，拒絕執行提交。</p>
+
+<pre><code>#!/usr/bin/env ruby
+message_file = ARGV[0]
+message = File.read(message_file)
+
+$regex = /\[ref: (\d+)\]/
+
+if !$regex.match(message)
+  puts &quot;[POLICY] Your message is not formatted correctly&quot;
+  exit 1
+end
+</code></pre>
+
+<p>如果這個腳本放在這個位置 (<code>.git/hooks/commit-msg</code>) 並且是可執行的, 而你的提交說明訊息沒有做適當的格式化，你會看到： </p>
+
+<pre><code>$ git commit -am &#39;test&#39;
+[POLICY] Your message is not formatted correctly
+</code></pre>
+
+<p>在這個實例中，提交沒有成功。然而如果你的提交說明訊息符合要求的，Git 會允許你提交： </p>
+
+<pre><code>$ git commit -am &#39;test [ref: 132]&#39;
+[master e05c914] test [ref: 132]
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>接下來我們要保證沒有修改到 ACL 允許範圍之外的檔案。如果你的專案 <code>.git</code> 目錄裡有前面使用過的 ACL 檔，那麼以下的 <code>pre-commit</code> 腳本將執行裡面的限制規定：</p>
+
+<pre><code>#!/usr/bin/env ruby
+
+$user    = ENV[&#39;USER&#39;]
+
+# [ insert acl_access_data method from above ]
+
+# only allows certain users to modify certain subdirectories in a project
+def check_directory_perms
+  access = get_acl_access_data(&#39;.git/acl&#39;)
+
+  files_modified = `git diff-index --cached --name-only HEAD`.split(&quot;\n&quot;)
+  files_modified.each do |path|
+    next if path.size == 0
+    has_file_access = false
+    access[$user].each do |access_path|
+    if !access_path || (path.index(access_path) == 0)
+      has_file_access = true
+    end
+    if !has_file_access
+      puts &quot;[POLICY] You do not have access to push to #{path}&quot;
+      exit 1
+    end
+  end
+end
+
+check_directory_perms
+</code></pre>
+
+<p>這和服務端的腳本幾乎一樣，除了兩個重要區別。第一，ACL 檔的位置不同，因為這個腳本在當前工作目錄執行，而非 Git 目錄。ACL 檔的目錄必須由這個</p>
+
+<pre><code>access = get_acl_access_data(&#39;acl&#39;)
+</code></pre>
+
+<p>改成這個:</p>
+
+<pre><code>access = get_acl_access_data(&#39;.git/acl&#39;)
+</code></pre>
+
+<p>另一個重要區別是獲取「被修改檔案清單」的方式。在服務端的時候使用了查看提交紀錄的方式，可是目前的提交都還沒被記錄下來呢，所以這個清單只能從暫存區域獲取。原來是這樣：</p>
+
+<pre><code>files_modified = `git log -1 --name-only --pretty=format:&#39;&#39; #{ref}`
+</code></pre>
+
+<p>現在要用這樣：</p>
+
+<pre><code>files_modified = `git diff-index --cached --name-only HEAD`
+</code></pre>
+
+<p>不同的就只有這兩點——除此之外，該腳本完全相同。一個小陷阱在於它假設在本地執行的帳戶和推送到遠端服務端的相同。如果這二者不一樣，則需要手動設置一下 <code>$user</code> 變數。</p>
+
+<p>最後一項任務是檢查確認推送內容中不包含非 fast-forward 類型的索引(reference)，不過這個需求比較少見。以下情況會得到一個非 fast-forward 類型的索引，要麼在某個已經推送過的提交上做衍合，要麼從本地不同分支推送到遠端相同的分支上。</p>
+
+<p>既然伺服器會告訴你不能推送非 fast-forward 內容，而且上面的掛鉤也能阻止強制的推送，唯一剩下的潛在問題就是衍合已經推送過的提交內容。</p>
+
+<p>下面是一個檢查這個問題的 pre-rabase 腳本的例子。它獲取一個所有即將重寫的提交內容的清單，然後檢查它們是否在遠端的索引(reference)裡已經存在。一旦發現某個提交可以從遠端索引裡衍變過來，它就放棄衍合操作：</p>
+
+<pre><code>#!/usr/bin/env ruby
+
+base_branch = ARGV[0]
+if ARGV[1]
+  topic_branch = ARGV[1]
+else
+  topic_branch = &quot;HEAD&quot;
+end
+
+target_shas = `git rev-list #{base_branch}..#{topic_branch}`.split(&quot;\n&quot;)
+remote_refs = `git branch -r`.split(&quot;\n&quot;).map { |r| r.strip }
+
+target_shas.each do |sha|
+  remote_refs.each do |remote_ref|
+    shas_pushed = `git rev-list ^#{sha}^@ refs/remotes/#{remote_ref}`
+    if shas_pushed.split(&quot;\n&quot;).include?(sha)
+      puts &quot;[POLICY] Commit #{sha} has already been pushed to #{remote_ref}&quot;
+      exit 1
+    end
+  end
+end
+</code></pre>
+
+<p>這個腳本利用了一個第六章「修訂版本選擇」一節中不曾提到的語法。執行這個命令可以獲得一個所有已經完成推送的提交的列表：</p>
+
+<pre><code>git rev-list ^#{sha}^@ refs/remotes/#{remote_ref}
+</code></pre>
+
+<p><code>SHA^@</code> 語法解析該次提交的所有祖先。我們尋找任何一個提交，這個提交可以從遠端最後一次提交衍變獲得(reachable)，但從我們嘗試推送的任何一個提交的 SHA 值的任何一個祖先都無法衍變獲得——也就是 fast-forward 的內容。</p>
+
+<p>這個解決方案的缺點在於它可能會很慢而且通常是沒有必要的——只要不用 -f 來強制推送，伺服器會自動給出警告並且拒絕推送內容。然而，這是個不錯的練習，而且理論上能幫助用戶避免一個將來不得不回頭修改的衍合操作。</p>
+
+<div id="nav"><a href="/book/zh-tw/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-Git-Hooks">prev</a> | <a href="/book/zh-tw/v1/Git-%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%B8%BD%E7%B5%90">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>

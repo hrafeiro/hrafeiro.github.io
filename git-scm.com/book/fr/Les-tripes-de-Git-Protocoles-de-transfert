@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":7,"applicationTime":246,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Protocoles de transfert</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>distributed-even-if-your-workflow-isnt
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='book-chapters'>
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="#">Chapters ▾</a>
+<div class='dropdown-panel' id='chapters-dropdown'>
+  <div class="three-column">
+    <div class='column-left'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>1. <a href="/book/fr/v1/D%C3%A9marrage-rapide">Démarrage rapide</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version">À propos de la gestion de version</a>
+          </li>
+          <li>
+            1.2
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Une-rapide-histoire-de-Git">Une rapide histoire de Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Rudiments-de-Git">Rudiments de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git">Installation de Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Paramétrage à la première utilisation de Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-Obtenir-de-l-aide">Obtenir de l&#39;aide</a>
+          </li>
+          <li>
+            1.7
+            <a href="/book/fr/v1/D%C3%A9marrage-rapide-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>2. <a href="/book/fr/v1/Les-bases-de-Git">Les bases de Git</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="/book/fr/v1/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git">Démarrer un dépôt Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="/book/fr/v1/Les-bases-de-Git-Enregistrer-des-modifications-dans-le-d%C3%A9p%C3%B4t">Enregistrer des modifications dans le dépôt</a>
+          </li>
+          <li>
+            2.3
+            <a href="/book/fr/v1/Les-bases-de-Git-Visualiser-l-historique-des-validations">Visualiser l&#39;historique des validations</a>
+          </li>
+          <li>
+            2.4
+            <a href="/book/fr/v1/Les-bases-de-Git-Annuler-des-actions">Annuler des actions</a>
+          </li>
+          <li>
+            2.5
+            <a href="/book/fr/v1/Les-bases-de-Git-Travailler-avec-des-d%C3%A9p%C3%B4ts-distants">Travailler avec des dépôts distants</a>
+          </li>
+          <li>
+            2.6
+            <a href="/book/fr/v1/Les-bases-de-Git-%C3%89tiquetage">Étiquetage</a>
+          </li>
+          <li>
+            2.7
+            <a href="/book/fr/v1/Les-bases-de-Git-Trucs-et-astuces">Trucs et astuces</a>
+          </li>
+          <li>
+            2.8
+            <a href="/book/fr/v1/Les-bases-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>3. <a href="/book/fr/v1/Les-branches-avec-Git">Les branches avec Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="/book/fr/v1/Les-branches-avec-Git-Ce-qu-est-une-branche">Ce qu&#39;est une branche</a>
+          </li>
+          <li>
+            3.2
+            <a href="/book/fr/v1/Les-branches-avec-Git-Brancher-et-fusionner%C2%A0%3A-les-bases">Brancher et fusionner : les bases</a>
+          </li>
+          <li>
+            3.3
+            <a href="/book/fr/v1/Les-branches-avec-Git-Gestion-de-branches">Gestion de branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="/book/fr/v1/Les-branches-avec-Git-Travailler-avec-les-branches">Travailler avec les branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="/book/fr/v1/Les-branches-avec-Git-Les-branches-distantes">Les branches distantes</a>
+          </li>
+          <li>
+            3.6
+            <a href="/book/fr/v1/Les-branches-avec-Git-Rebaser">Rebaser</a>
+          </li>
+          <li>
+            3.7
+            <a href="/book/fr/v1/Les-branches-avec-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>4. <a href="/book/fr/v1/Git-sur-le-serveur">Git sur le serveur</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="/book/fr/v1/Git-sur-le-serveur-Protocoles">Protocoles</a>
+          </li>
+          <li>
+            4.2
+            <a href="/book/fr/v1/Git-sur-le-serveur-Installation-de-Git-sur-un-serveur">Installation de Git sur un serveur</a>
+          </li>
+          <li>
+            4.3
+            <a href="/book/fr/v1/Git-sur-le-serveur-G%C3%A9n%C3%A9ration-des-cl%C3%A9s-publiques-SSH">Génération des clés publiques SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="/book/fr/v1/Git-sur-le-serveur-Mise-en-place-du-serveur">Mise en place du serveur</a>
+          </li>
+          <li>
+            4.5
+            <a href="/book/fr/v1/Git-sur-le-serveur-Acc%C3%A8s-public">Accès public</a>
+          </li>
+          <li>
+            4.6
+            <a href="/book/fr/v1/Git-sur-le-serveur-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="/book/fr/v1/Git-sur-le-serveur-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="/book/fr/v1/Git-sur-le-serveur-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="/book/fr/v1/Git-sur-le-serveur-Le-%3Cem%3Edaemon%3C%2Fem%3E-Git">Le <em>daemon</em> Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="/book/fr/v1/Git-sur-le-serveur-Git-h%C3%A9berg%C3%A9">Git hébergé</a>
+          </li>
+          <li>
+            4.11
+            <a href="/book/fr/v1/Git-sur-le-serveur-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-middle'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>5. <a href="/book/fr/v1/Git-distribu%C3%A9">Git distribué</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="/book/fr/v1/Git-distribu%C3%A9-D%C3%A9veloppements-distribu%C3%A9s">Développements distribués</a>
+          </li>
+          <li>
+            5.2
+            <a href="/book/fr/v1/Git-distribu%C3%A9-Contribution-%C3%A0-un-projet">Contribution à un projet</a>
+          </li>
+          <li>
+            5.3
+            <a href="/book/fr/v1/Git-distribu%C3%A9-Maintenance-d-un-projet">Maintenance d&#39;un projet</a>
+          </li>
+          <li>
+            5.4
+            <a href="/book/fr/v1/Git-distribu%C3%A9-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>6. <a href="/book/fr/v1/Utilitaires-Git">Utilitaires Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="/book/fr/v1/Utilitaires-Git-S%C3%A9lection-des-versions">Sélection des versions</a>
+          </li>
+          <li>
+            6.2
+            <a href="/book/fr/v1/Utilitaires-Git-Indexation-interactive">Indexation interactive</a>
+          </li>
+          <li>
+            6.3
+            <a href="/book/fr/v1/Utilitaires-Git-Le-remisage">Le remisage</a>
+          </li>
+          <li>
+            6.4
+            <a href="/book/fr/v1/Utilitaires-Git-R%C3%A9%C3%A9crire-l-historique">Réécrire l&#39;historique</a>
+          </li>
+          <li>
+            6.5
+            <a href="/book/fr/v1/Utilitaires-Git-Deboguer-avec-Git">Deboguer avec Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="/book/fr/v1/Utilitaires-Git-Sous-modules">Sous-modules</a>
+          </li>
+          <li>
+            6.7
+            <a href="/book/fr/v1/Utilitaires-Git-Fusion-de-sous-arborescences">Fusion de sous-arborescences</a>
+          </li>
+          <li>
+            6.8
+            <a href="/book/fr/v1/Utilitaires-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>7. <a href="/book/fr/v1/Personnalisation-de-Git">Personnalisation de Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="/book/fr/v1/Personnalisation-de-Git-Configuration-de-Git">Configuration de Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="/book/fr/v1/Personnalisation-de-Git-Attributs-Git">Attributs Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="/book/fr/v1/Personnalisation-de-Git-Crochets-Git">Crochets Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="/book/fr/v1/Personnalisation-de-Git-Exemple-de-politique-g%C3%A9r%C3%A9e-par-Git">Exemple de politique gérée par Git</a>
+          </li>
+          <li>
+            7.5
+            <a href="/book/fr/v1/Personnalisation-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>8. <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes">Git et les autres systèmes</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-Git-et-Subversion">Git et Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-Migrer-sur-Git">Migrer sur Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="/book/fr/v1/Git-et-les-autres-syst%C3%A8mes-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class='column-right'>
+      <ol class='book-toc'>
+  <li class='chapter'>
+  <h2>9. <a href="/book/fr/v1/Les-tripes-de-Git">Les tripes de Git</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="/book/fr/v1/Les-tripes-de-Git-Plomberie-et-porcelaine">Plomberie et porcelaine</a>
+          </li>
+          <li>
+            9.2
+            <a href="/book/fr/v1/Les-tripes-de-Git-Les-objets-Git">Les objets Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="/book/fr/v1/Les-tripes-de-Git-R%C3%A9f%C3%A9rences-Git">Références Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="/book/fr/v1/Les-tripes-de-Git-Fichiers-group%C3%A9s">Fichiers groupés</a>
+          </li>
+          <li>
+            9.5
+            <a href="/book/fr/v1/Les-tripes-de-Git-Les-r%C3%A9f%C3%A9rences-sp%C3%A9cifiques">Les références spécifiques</a>
+          </li>
+          <li>
+            9.6
+            <a href="/book/fr/v1/Les-tripes-de-Git-Protocoles-de-transfert">Protocoles de transfert</a>
+          </li>
+          <li>
+            9.7
+            <a href="/book/fr/v1/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">Maintenance et récupération de données</a>
+          </li>
+          <li>
+            9.8
+            <a href="/book/fr/v1/Les-tripes-de-Git-R%C3%A9sum%C3%A9">Résumé</a>
+          </li>
+    </ol>
+  </li>
+  <li class='chapter'>
+  <h2>. <a href="/book/fr/v1/Notes-on-the-french-translation-process">Notes on the french translation process</a></h2>
+    <ol>
+          <li>
+            .1
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Repository">Repository</a>
+          </li>
+          <li>
+            .2
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Check-in">Check in</a>
+          </li>
+          <li>
+            .3
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-check-in">To check in</a>
+          </li>
+          <li>
+            .4
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Check-out">Check out</a>
+          </li>
+          <li>
+            .5
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-check-out">To check out</a>
+          </li>
+          <li>
+            .6
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-commit">To commit</a>
+          </li>
+          <li>
+            .7
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Stage-area">Stage area</a>
+          </li>
+          <li>
+            .8
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-stage">To stage</a>
+          </li>
+          <li>
+            .9
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-unstage">To unstage</a>
+          </li>
+          <li>
+            .10
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Change">Change</a>
+          </li>
+          <li>
+            .11
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-stash">stash</a>
+          </li>
+          <li>
+            .12
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-stash">To stash</a>
+          </li>
+          <li>
+            .13
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Checksum">Checksum</a>
+          </li>
+          <li>
+            .14
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Hash">Hash</a>
+          </li>
+          <li>
+            .15
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Workflow">Workflow</a>
+          </li>
+          <li>
+            .16
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Snapshot">Snapshot</a>
+          </li>
+          <li>
+            .17
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-Diff">Diff</a>
+          </li>
+          <li>
+            .18
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-track">To track</a>
+          </li>
+          <li>
+            .19
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-untracked">untracked</a>
+          </li>
+          <li>
+            .20
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-unmodified">unmodified</a>
+          </li>
+          <li>
+            .21
+            <a href="/book/fr/v1/Notes-on-the-french-translation-process-To-update">To update</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id='main' class="book edition1">
+    <h1>9.6 Les tripes de Git - Protocoles de transfert</h1>
+  <div><h2>Protocoles de transfert</h2>
+
+<p>Git peut transférer des données entre deux dépôts, de deux façons principales : via HTTP et via un protocole dit « intelligent » utilisé par les transports <code>file://</code>, <code>ssh://</code> et <code>git://</code>.
+Cette section fait un tour d&#39;horizon du fonctionnement de ces deux protocoles.</p>
+
+<h3 id="Protocole-stupide"><a href="#Protocole-stupide">Protocole stupide</a></h3>
+
+<p>On parle souvent du transfert Git sur HTTP comme étant un protocole stupide, car il ne nécessite aucun code spécifique à Git côté serveur durant le transfert.
+Le processus de récupération est une série de requêtes GET, où le client devine la structure du dépôt Git présent sur le serveur.
+Suivons le processus <code>http-fetch</code> pour la bibliothèque simplegit :</p>
+
+<pre><code>$ git clone http://github.com/schacon/simplegit-progit.git
+</code></pre>
+
+<p>La première chose que fait cette commande est de récupérer le fichier <code>info/refs</code>.
+Ce fichier est écrit par la commande <code>update-server-info</code> et c&#39;est pour cela qu&#39;il faut activer le crochet <code>post-receive</code>, sinon le transfert HTTP ne fonctionnera pas correctement :</p>
+
+<pre><code>=&gt; GET info/refs
+ca82a6dff817ec66f44342007202690a93763949     refs/heads/master
+</code></pre>
+
+<p>On possède maintenant une liste des références distantes et empreintes SHA1.
+Ensuite, on regarde vers quoi pointe HEAD, pour savoir sur quelle branche se placer quand on aura fini :</p>
+
+<pre><code>=&gt; GET HEAD
+ref: refs/heads/master
+</code></pre>
+
+<p>On aura besoin de se placer sur la branche <code>master</code>, quand le processus sera terminé.
+On est maintenant prêt à démarrer le processus de parcours.
+Puisque votre point de départ est l&#39;objet <em>commit</em> <code>ca82a6</code> que vous avez vu dans le fichier <code>info/refs</code>, vous commencez par le récupérer :</p>
+
+<pre><code>=&gt; GET objects/ca/82a6dff817ec66f44342007202690a93763949
+(179 bytes of binary data)
+</code></pre>
+
+<p>Vous obtenez un objet, cet objet est dans le format brut sur le serveur et vous l&#39;avez récupéré à travers une requête HTTP GET statique.
+Vous pouvez le décompresser avec zlib, ignorer l&#39;en-tête et regarder le contenu du <em>commit</em> :</p>
+
+<pre><code>$ git cat-file -p ca82a6dff817ec66f44342007202690a93763949
+tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+parent 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+author Scott Chacon &lt;schacon@gmail.com&gt; 1205815931 -0700
+committer Scott Chacon &lt;schacon@gmail.com&gt; 1240030591 -0700
+
+changed the version number
+</code></pre>
+
+<p>Puis, vous avez deux autres objets supplémentaires à récupérer : <code>cfda3b</code> qui est l&#39;arbre du contenu sur lequel pointe le <em>commit</em> que nous venons de récupérer et <code>085bb3</code> qui est le <em>commit</em> parent :</p>
+
+<pre><code>=&gt; GET objects/08/5bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+(179 bytes of data)
+</code></pre>
+
+<p>Cela vous donne l&#39;objet du prochain <em>commit</em>.
+Récupérez l&#39;objet arbre :</p>
+
+<pre><code>=&gt; GET objects/cf/da3bf379e4f8dba8717dee55aab78aef7f4daf
+(404 - Not Found)
+</code></pre>
+
+<p>Oups, on dirait que l&#39;objet arbre n&#39;est pas au format brut sur le serveur, vous obtenez donc une réponse 404.
+On peut en déduire certaines raisons : l&#39;objet peut être dans un dépôt suppléant ou il peut être dans un fichier groupé de ce dépôt.
+Git vérifie la liste des dépôts suppléants d&#39;abord :</p>
+
+<pre><code>=&gt; GET objects/info/http-alternates
+(empty file)
+</code></pre>
+
+<p>Si la réponse contenait une liste d&#39;URL suppléantes, Git aurait cherché les fichiers bruts et les fichiers groupés à ces emplacements, c&#39;est un mécanisme sympathique pour les projets qui ont dérivés d&#39;un autre pour partager les objets sur le disque.
+Cependant, puisqu&#39;il n&#39;y a pas de suppléants listés dans ce cas, votre objet doit se trouver dans un fichier groupé.
+Pour voir quels fichiers groupés sont disponibles sur le serveur, vous avez besoin de récupérer le fichier <code>objects/info/packs</code>, qui en contient la liste (générée également par <code>update-server-info</code>) :</p>
+
+<pre><code>=&gt; GET objects/info/packs
+P pack-816a9b2334da9953e530f27bcac22082a9f5b835.pack
+</code></pre>
+
+<p>Il n&#39;existe qu&#39;un seul fichier groupé sur le serveur, votre objet se trouve évidemment dedans, mais vous allez tout de même vérifier l&#39;index pour être sûr.
+C&#39;est également utile lorsque vous avez plusieurs fichiers groupés sur le serveur, vous pouvez donc voir quel fichier groupé contient l&#39;objet dont vous avez besoin :</p>
+
+<pre><code>=&gt; GET objects/pack/pack-816a9b2334da9953e530f27bcac22082a9f5b835.idx
+(4k of binary data)
+</code></pre>
+
+<p>Maintenant que vous avez l&#39;index du fichier groupé, vous pouvez vérifier si votre objet est bien dedans car l&#39;index liste les empreintes SHA-1 des objets contenus dans ce fichier groupé et des emplacements de ces objets.
+Votre objet est là, allez donc récupérer le fichier groupé complet :</p>
+
+<pre><code>=&gt; GET objects/pack/pack-816a9b2334da9953e530f27bcac22082a9f5b835.pack
+(13k of binary data)
+</code></pre>
+
+<p>Vous avez votre objet arbre, vous continuez donc le chemin des <em>commits</em>.
+Ils sont également tous contenus dans votre fichier groupé que vous venez de télécharger, vous n&#39;avez donc pas d&#39;autres requêtes à faire au serveur.
+Git récupère une copie de travail de votre branche <code>master</code> qui été référencée par HEAD que vous avez téléchargé au début.</p>
+
+<p>La sortie complète de cette procédure ressemble à :</p>
+
+<pre><code>$ git clone http://github.com/schacon/simplegit-progit.git
+Initialized empty Git repository in /private/tmp/simplegit-progit/.git/
+got ca82a6dff817ec66f44342007202690a93763949
+walk ca82a6dff817ec66f44342007202690a93763949
+got 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Getting alternates list for http://github.com/schacon/simplegit-progit.git
+Getting pack list for http://github.com/schacon/simplegit-progit.git
+Getting index for pack 816a9b2334da9953e530f27bcac22082a9f5b835
+Getting pack 816a9b2334da9953e530f27bcac22082a9f5b835
+ which contains cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+walk 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+walk a11bef06a3f659402fe7563abf99ad00de2209e6
+</code></pre>
+
+<h3 id="Protocole-intelligent"><a href="#Protocole-intelligent">Protocole intelligent</a></h3>
+
+<p>La méthode HTTP est simple mais un peu inefficace.
+Utiliser des protocoles intelligents est une méthode plus habituelles pour transférer des données.
+Ces protocoles ont un exécutable du côté distant qui connaît Git, il peut lire les données locales et deviner ce que le client a ou ce dont il a besoin pour générer des données personnalisées pour lui.
+Il y a deux ensembles d&#39;exécutables pour transférer les données : une paire pour téléverser des données et une paire pour en télécharger.</p>
+
+<h4>Téléverser des données</h4>
+
+<p>Pour téléverser des données vers un exécutable distant, Git utilise les exécutables <code>send-pack</code> et <code>receive-pack</code>.
+L&#39;exécutable <code>send-pack</code> tourne sur le client et se connecte à l&#39;exécutable <code>receive-pack</code> du côté serveur.</p>
+
+<p>Par exemple, disons que vous exécutez <code>git push origin master</code> dans votre projet et <code>origin</code> est défini comme une URL qui utilise le protocole SSH.
+Git appelle l&#39;exécutable <code>send-pack</code>, qui initialise une connexion à travers SSH vers votre serveur.
+Il essaye d&#39;exécuter une commande sur le serveur distant via un appel SSH qui ressemble à :</p>
+
+<pre><code>$ ssh -x git@github.com &quot;git-receive-pack &#39;schacon/simplegit-progit.git&#39;&quot;
+005bca82a6dff817ec66f4437202690a93763949 refs/heads/master report-status delete-refs
+003e085bb3bcb608e1e84b2432f8ecbe6306e7e7 refs/heads/topic
+0000
+</code></pre>
+
+<p>La commande <code>git-receive-pack</code> répond immédiatement avec une ligne pour chaque référence qu&#39;elle connaît actuellement, dans ce cas, uniquement la branche <code>master</code> et ses empreintes SHA.
+La première ligne contient également une liste des compétences du serveur (ici : <code>report-status</code> et <code>delete-refs</code>).</p>
+
+<p>Chaque ligne commence avec une valeur hexadécimale sur 4 octets, spécifiant le reste de la longueur de la ligne.
+La première ligne, ici, commence avec <code>005b</code>, soit 91 en hexadécimal, ce qui signifie qu&#39;il y a 91 octets restants sur cette ligne.
+La ligne suivante commence avec <code>003e</code>, soit 62, vous lisez donc les 62 octets restants.
+La ligne d&#39;après est <code>0000</code>, signifiant que le serveur a fini de lister ses références.</p>
+
+<p>Maintenant que vous connaissez l&#39;état du serveur, votre exécutable <code>send-pack</code> détermine quels <em>commits</em> il a que le serveur n&#39;a pas.
+L&#39;exécutable <code>send-pack</code> envoie alors à l&#39;exécutable <code>receive-pack</code>, les informations concernant chaque référence que cette commande <code>push</code> va mettre à jour.
+Par exemple, si vous mettez à jour la branche <code>master</code> et ajoutez la branche <code>experiment</code>, la réponse de <code>send-pack</code> ressemblera à quelque chose comme :</p>
+
+<pre><code>0085ca82a6dff817ec66f44342007202690a93763949  15027957951b64cf874c3557a0f3547bd83b3ff6 refs/heads/master report-status
+00670000000000000000000000000000000000000000 cdfdb42577e2506715f8cfeacdbabc092bf63e8d refs/heads/experiment
+0000
+</code></pre>
+
+<p>La valeur SHA-1 remplie de &#39;0&#39; signifie qu&#39;il n&#39;y avait rien à cet endroit avant, car vous êtes en train d&#39;ajouter la référence <code>experiment</code>.
+Si vous étiez en train de supprimer une référence, vous verriez l&#39;opposé : que des &#39;0&#39; du côté droit.</p>
+
+<p>Git envoie une ligne pour chaque référence que l&#39;on met à jour avec l&#39;ancien SHA, le nouveau SHA et la référence en train d&#39;être mise à jour.
+La première ligne contient également les compétences du client.
+Puis, le client téléverse un fichier groupé de tous les objets que le serveur n&#39;a pas encore.
+Finalement, le serveur répond avec une indication de succès (ou d&#39;échec) :</p>
+
+<pre><code>000Aunpack ok
+</code></pre>
+
+<h4>Téléchargement des données</h4>
+
+<p>Lorsque vous téléchargez des données, les exécutables <code>fetch-pack</code> et <code>upload-pack</code> entrent en jeu.
+Le client initialise un exécutable <code>fetch-pack</code> qui se connecte à un exécutable <code>upload-pack</code> du côté serveur pour négocier quelles données seront remontées.</p>
+
+<p>Il y a plusieurs manières d&#39;initialiser l&#39;exécutable <code>upload-pack</code> sur le dépôt distant.
+Vous pouvez passer par SSH de la même manière qu&#39;avec l&#39;exécutable <code>receive-pack</code>.
+Vous pouvez également initialiser l&#39;exécutable à travers le <em>daemon</em> Git, qui écoute sur le port 9418 du serveur par défaut.
+L&#39;exécutable <code>fetch-pack</code> envoie des données qui ressemblent à cela juste après la connexion :</p>
+
+<pre><code>003fgit-upload-pack schacon/simplegit-progit.git\0host=myserver.com\0
+</code></pre>
+
+<p>Cela commence par les 4 octets désignant la quantité de données qui suit, puis la commande à exécuter suivie par un octet nul, puis le nom d&#39;hôte du serveur suivi d&#39;un octet nul final.
+Le <em>daemon</em> Git vérifie que la commande peut être exécutée, que le dépôt existe et est accessible publiquement.
+Si tout va bien, il appelle l&#39;exécutable <code>upload-pack</code> et lui passe la main.</p>
+
+<p>Si vous êtes en train de tirer (<em>fetch</em>) à travers SSH, <code>fetch-pack</code> exécute plutôt quelque chose du genre :</p>
+
+<pre><code>$ ssh -x git@github.com &quot;git-upload-pack &#39;schacon/simplegit-progit.git&#39;&quot;
+</code></pre>
+
+<p>Dans tous les cas, après que <code>fetch-pack</code> se connecte, <code>upload-pack</code> lui répond quelque chose du style :</p>
+
+<pre><code>0088ca82a6dff817ec66f44342007202690a93763949 HEAD\0multi_ack thin-pack \
+  side-band side-band-64k ofs-delta shallow no-progress include-tag
+003fca82a6dff817ec66f44342007202690a93763949 refs/heads/master
+003e085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 refs/heads/topic
+0000
+</code></pre>
+
+<p>C&#39;est très proche de ce que répondait <code>receive-pack</code> mais les compétences sont différentes.
+En plus, il vous répond la référence HEAD, afin que le client sache quoi récupérer dans le cas d&#39;un clone.</p>
+
+<p>À ce moment, l&#39;exécutable <code>fetch-pack</code> regarde quels objets il a et répond avec les objets dont il a besoin en envoyant « want » (vouloir) suivi du SHA qu&#39;il veut.
+Il envoie tous les objets qu&#39;il a déjà avec « have » suivi du SHA.
+À la fin de la liste, il écrit « done » pour inciter l&#39;exécutable <code>upload-pack</code> à commencer à envoyer le fichier groupé des données demandées :</p>
+
+<pre><code>0054want ca82a6dff817ec66f44342007202690a93763949 ofs-delta
+0032have 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+0000
+0009done
+</code></pre>
+
+<p>C&#39;est le cas basique d&#39;un protocole de transfert.
+Dans des cas plus complexes, le client a des compétences <code>multi_ack</code> (plusieurs réponses) ou <code>side-band</code> (plusieurs connexions), mais cet exemple vous montre les bases du protocole intelligent.</p>
+
+<div id="nav"><a href="/book/fr/Les-tripes-de-Git-Les-r%C3%A9f%C3%A9rences-sp%C3%A9cifiques">prev</a> | <a href="/book/fr/v1/Les-tripes-de-Git-Maintenance-et-r%C3%A9cup%C3%A9ration-de-donn%C3%A9es">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>
