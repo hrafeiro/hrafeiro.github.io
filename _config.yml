@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Humberto Rafeiro"
 title_separator          : "-"
 name                     : &name "Humberto Rafeiro"
-description              : &description "Associate Professor of Mathematics at United Arab Emirates University"
+description              : &description "Associate Professor at United Arab Emirates University"
 url                      : https://hrafeiro.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hrafeiro.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Humberto Rafeiro"
   avatar           : "profile.png"
-  bio              : "Associate Professor of Mathematics at United Arab Emirates University"
+  bio              : "Associate Professor at United Arab Emirates University"
   location         : "Al Ain, UAE"
   employer         :
   pubmed           : 
