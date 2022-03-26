@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Short Bio"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,9 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Habilitation in Mathematics, [University of Aveiro](http://www.ua.pt), 2021
+* Doctorate in Mathematics, [University of Algarve](http://www.ualg.pt), 2010
+* Bachelor in Mathematics, [University of Algarve](http://www.ualg.pt), 2006
+
+
 
 Work experience
 ======
