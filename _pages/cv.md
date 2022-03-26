@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Habilitation in Mathematics, [University of Aveiro](http://www.ua.pt), 2021
-* доктор физико-математических наук, , 2021.
+#* Habilitation in Mathematics, [University of Aveiro](http://www.ua.pt), 2021
+#* доктор физико-математических наук, , 2021.
 * Doctorate in Mathematics, [University of Algarve](http://www.ualg.pt), 2010
 * Bachelor in Mathematics, [University of Algarve](http://www.ualg.pt), 2006
 
