@@ -15,7 +15,7 @@ Education, Degrees, and Academic Titles
 * Dr.Sc. in Physics and Mathematics,  2021
 * Associate Professor, 2017
 * Ph.D. in Mathematics, 2010
-* B.Sc. in Mathematics, 2004
+
 
 
 
