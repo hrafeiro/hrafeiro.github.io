@@ -9,12 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Academic degrees
 ======
-# * Habilitation in Mathematics, University of Aveiro, 2021
-# * доктор физико-математических наук, Academy of Sciences of Uzbekistan , 2021.
-* Doctorate in Mathematics, University of Algarve, 2010
-* Bachelor in Mathematics, University of Algarve, 2006
+* Agregação in Mathematics, University of Aveiro, 2021
+* д.ф.-м.н., Academy of Sciences of Uzbekistan , 2021
+* Ph.D. in Mathematics, University of Algarve, 2010
+
 
 
 
