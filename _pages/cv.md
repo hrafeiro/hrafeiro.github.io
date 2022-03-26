@@ -12,7 +12,7 @@ redirect_from:
 Academic degrees
 ======
 * Agregação in Mathematics, University of Aveiro, 2021
-* Dr.Sc., Academy of Sciences of Uzbekistan, 2021
+* Dr.Sc. in Physics and Mathematics, Academy of Sciences of Uzbekistan, 2021
 * Ph.D. in Mathematics, University of Algarve, 2010
 
 
