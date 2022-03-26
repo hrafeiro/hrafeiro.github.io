@@ -9,11 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-Academic degrees
+Education, Degrees, and Academic Titles
 ======
 * Agregação in Mathematics, 2021
 * Dr.Sc. in Physics and Mathematics,  2021
-* Ph.D. in Mathematics,  2010
+* Associate Professor, 2017
+* Ph.D. in Mathematics, 2010
+* B.Sc. in Mathematics, 2004
 
 
 
