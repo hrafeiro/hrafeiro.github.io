@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education, Degrees, and Academic Titles
+Degrees and Academic Titles
 ======
 * Agregação in Mathematics, 2021
 * Dr.Sc. in Physics and Mathematics,  2021
