@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Associate Professor at the Department of Mathematical Sciences at the [United Arab Emirates University](http://www.uaeu.ac.ae/en). The areas of my scientific interests include:
+I am an Associate Professor at the [Department of Mathematical Sciences](https://cos.uaeu.ac.ae/en/departments/mathematical/) at the [United Arab Emirates University](http://www.uaeu.ac.ae/en). The areas of my scientific interests include:
 - Harmonic Analysis and Operator Theory in Variable Exponent Function Spaces
 - Function spaces
 - Potential type operators
