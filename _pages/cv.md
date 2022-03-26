@@ -13,7 +13,7 @@ Education, Degrees, and Academic Titles
 ======
 * Agregação in Mathematics, 2021
 * Dr.Sc. in Physics and Mathematics,  2021
-* Associate Professor, 2017
+* Associate Professor, 2016
 * Ph.D. in Mathematics, 2010
 
 
