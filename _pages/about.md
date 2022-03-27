@@ -11,7 +11,7 @@ redirect_from:
 Academic Degrees
 ======
 - [Agregação](https://pt.wikipedia.org/wiki/T%C3%ADtulo_de_agregado) in Mathematics, 2021
-- [Dr.Sc. in Physics and Mathematics](https://en.wikipedia.org/wiki/Doctor_of_Sciences), 2021
+- [Dr.Sc.](https://en.wikipedia.org/wiki/Doctor_of_Sciences) in Physics and Mathematics, 2021
 - Ph.D. in Mathematics, , 2010.
 
 Professional Experience and Education
