@@ -13,11 +13,11 @@ Academic Degrees
 - [Dr.Sc.](https://en.wikipedia.org/wiki/Doctor_of_Sciences) in Physics and Mathematics, 2021
 - [Ph.D.](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) in Mathematics, , 2010
 
-Professional Experience and Education
+Professional Experience
 ====== 
-- [Associate Professor, United Arab Emirates University](https://cos.uaeu.ac.ae/en/profile.shtml?email=Rafeiro@uaeu.ac.ae), 2018-present
-- Associate Professor, Pontificia Universidad Javeriana, 2017-2018 
-- Assistant Professor, Pontificia Universidad Javeriana, 2012-2016 
+- *2018-present* - [Associate Professor, United Arab Emirates University](https://cos.uaeu.ac.ae/en/profile.shtml?email=Rafeiro@uaeu.ac.ae)
+- *2017-2018* - Associate Professor, Pontificia Universidad Javerian
+- *2012-2016* - Assistant Professor, Pontificia Universidad Javeriana
 
 Highlights
 ======
