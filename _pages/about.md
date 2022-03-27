@@ -24,7 +24,7 @@ Professional Experience
 
 Highlights
 ======
-- Four published monographs
+- Two published research monographs
 - More than 70 research papers
 - Member of Editorial Boards of International Scientific Journals
 - Referee at various International Mathematical Journals
