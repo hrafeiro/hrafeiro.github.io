@@ -26,8 +26,8 @@ Highlights
 ======
 - Two published research monographs
 - More than 70 research papers
-- Member of Editorial Boards of International Scientific Journals
-- Referee at various International Mathematical Journals
+- Member of editorial boards of several international scientific journals
+- Referee at various international mathematical journals
 
 News
 ======
