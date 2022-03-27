@@ -25,6 +25,9 @@ Professional Experience and Education
 
 Highlights
 ======
+
+--- 
+
 - Four published monographs
 - More than 70 research papers
 - Member of Editorial Boards of International Scientific Journals
