@@ -8,6 +8,19 @@ redirect_from:
   - /about.html
 ---
 
+Academic Degrees
+======
+- Agregação in Mathematics, 2021
+- [Dr.Sc. in Physics and Mathematics](https://en.wikipedia.org/wiki/Doctor_of_Sciences), 2021
+- Ph.D. in Mathematics, , 2010.
+
+Professional Experience and Education
+====== 
+- 2018-present Associate Professor, United Arab Emirates University.
+- 2017-2018 Associate Professor, Pontificia Universidad Javeriana.
+- 2012-2016 Assistant Professor, Pontificia Universidad Javeriana.
+
+
 I am an Associate Professor at the [Department of Mathematical Sciences](https://cos.uaeu.ac.ae/en/departments/mathematical/) at the [United Arab Emirates University](http://www.uaeu.ac.ae/en). The areas of my scientific interests include:
 - Harmonic Analysis and Operator Theory in Variable Exponent Function Spaces,
 - Function spaces,
