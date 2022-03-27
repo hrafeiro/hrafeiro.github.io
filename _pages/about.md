@@ -16,7 +16,7 @@ Academic Degrees
 
 Professional Experience and Education
 ====== 
-- 2018-present Associate Professor, United Arab Emirates University.
+- 2018-present [Associate Professor, United Arab Emirates University](https://cos.uaeu.ac.ae/en/profile.shtml?email=Rafeiro@uaeu.ac.ae).
 - 2017-2018 Associate Professor, Pontificia Universidad Javeriana.
 - 2012-2016 Assistant Professor, Pontificia Universidad Javeriana.
 
