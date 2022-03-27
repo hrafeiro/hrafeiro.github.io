@@ -11,7 +11,7 @@ redirect_from:
 Academic Degrees
 ======
 
----
+___
 
 - [Agregação](https://pt.wikipedia.org/wiki/T%C3%ADtulo_de_agregado) in Mathematics, 2021
 - [Dr.Sc.](https://en.wikipedia.org/wiki/Doctor_of_Sciences) in Physics and Mathematics, 2021
@@ -19,6 +19,9 @@ Academic Degrees
 
 Professional Experience and Education
 ====== 
+
+___
+
 - [Associate Professor, United Arab Emirates University](https://cos.uaeu.ac.ae/en/profile.shtml?email=Rafeiro@uaeu.ac.ae), 2018-present
 - Associate Professor, Pontificia Universidad Javeriana, 2017-2018 
 - Assistant Professor, Pontificia Universidad Javeriana, 2012-2016 
