@@ -11,7 +11,7 @@ redirect_from:
 Academic Degrees
 ======
 - Dr.Sc. in Physics and Mathematics, 2021
-- Ph.D. in Mathematics, , 2010
+- Ph.D. in Mathematics, 2010
 
 Professional Experience
 ====== 
