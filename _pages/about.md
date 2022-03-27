@@ -31,5 +31,5 @@ Highlights
 
 News
 ======
- - I am co-organizing the workshop [Recent Advances in Analysis and Applications](https://conferences.uaeu.ac.ae/raaa2022/en/), UAEU, Al Ain, 19-20 October, 2022.
+ - I am co-organizing the workshop *[Recent Advances in Analysis and Applications](https://conferences.uaeu.ac.ae/raaa2022/en/)*, UAEU, Al Ain, 19-20 October, 2022.
 
