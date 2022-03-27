@@ -10,8 +10,8 @@ redirect_from:
 
 Academic Degrees
 ======
-- [Dr.Sc.](https://en.wikipedia.org/wiki/Doctor_of_Sciences) in Physics and Mathematics, 2021
-- [Ph.D.](https://en.wikipedia.org/wiki/Doctor_of_Philosophy) in Mathematics, , 2010
+- Dr.Sc. in Physics and Mathematics, 2021
+- Ph.D. in Mathematics, , 2010
 
 Professional Experience
 ====== 
