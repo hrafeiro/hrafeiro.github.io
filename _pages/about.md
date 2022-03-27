@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-🎓 Academic Degrees
+Academic Degrees
 ======
 - DSc[^1] in Physics and Mathematics, 2021
 - PhD in Mathematics, 2010
