@@ -11,7 +11,7 @@ redirect_from:
 Academic Degrees
 ======
 - DSc[^1] in Physics and Mathematics, 2021
-- Doutor[^2] in Mathematics, 2010
+- Doctorate[^2] in Mathematics, 2010
 
 [^1]: A post-doctoral degree called Doctor of Sciences is given to reflect second advanced research qualifications or higher doctorates in ISCED 2011.
 [^2]: According to the International Standard Classification of Education (ISCED) 2011, Doutor belongs to ISCED level 8 - "doctoral or equivalent", together with PhD, DPhil, D.Lit, D.Sc, LL.D, Doctorate or similar. 
