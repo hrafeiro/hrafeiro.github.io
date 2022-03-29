@@ -1,7 +1,7 @@
 
 ---
 layout: archive
-# title: "Short Bio"
+# title: "Resources"
 permalink: /resources/
 author_profile: true
 redirect_from:
