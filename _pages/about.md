@@ -10,8 +10,8 @@ redirect_from:
 
 Academic Degrees
 ======
-- DrSc[^1] in Physics and Mathematics, 2021
-- PhD in Mathematics, 2010
+- Dr.Sci.[^1] (Phys.-Math.), 2021
+- Ph.D. (Math.), 2010
 
 [^1]: A post-doctoral degree called Doctor of Sciences is given to reflect second advanced research qualifications or higher doctorates in ISCED 2011.
 
